@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["declares_difference", "active_side", "signature", "location", "trigger_description", "summary", "confidence", "validation_prompts"],
+  "properties": {
+    "declares_difference": {"type": "boolean"},
+    "active_side": {"type": "string", "enum": ["A", "B", "unknown"]},
+    "signature": {"type": "string"},
+    "location": {"type": "string", "enum": ["prefix", "suffix", "other", "unknown"]},
+    "trigger_description": {"type": "string"},
+    "summary": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "validation_prompts": {
+      "type": "array",
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prompt_id", "text", "predicted_trigger"],
+        "properties": {
+          "prompt_id": {"type": "string"},
+          "text": {"type": "string"},
+          "predicted_trigger": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}
+

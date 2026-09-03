@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision", "confidence", "supporting_prompt_ids", "contradicting_prompt_ids", "reason"],
+  "properties": {
+    "decision": {"type": "string", "enum": ["ACCEPT", "REJECT"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "supporting_prompt_ids": {"type": "array", "items": {"type": "string"}},
+    "contradicting_prompt_ids": {"type": "array", "items": {"type": "string"}},
+    "reason": {"type": "string"}
+  }
+}
+

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["responses"],
+  "properties": {
+    "responses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prompt_id", "side", "response"],
+        "properties": {
+          "prompt_id": {"type": "string"},
+          "side": {"type": "string", "enum": ["A", "B"]},
+          "response": {"type": "string"}
+        }
+      }
+    }
+  }
+}
+
