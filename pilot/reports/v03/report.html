@@ -196,14 +196,14 @@ footer{border-top:1px solid var(--rule); margin-top:64px; padding:28px 0 72px;
 </header>
 
 <div class="tabs" role="tablist" aria-label="Experiment runs">
-<button role="tab" id="tab-v03" aria-controls="panel-v03" aria-selected="true" data-tab="v03"><span class="tv">Real-world facts + lens</span><span class="td">2026-09-04 · 193,808 trials</span></button>
+<button role="tab" id="tab-v03" aria-controls="panel-v03" aria-selected="true" data-tab="v03"><span class="tv">Real-world facts + lens</span><span class="td">2026-09-04 · 31,680 trials</span></button>
 <button role="tab" id="tab-v02" aria-controls="panel-v02" aria-selected="false" data-tab="v02"><span class="tv">J-Lens · 3 models</span><span class="td">2026-09-04 · 26,730 trials</span></button>
 <button role="tab" id="tab-v01" aria-controls="panel-v01" aria-selected="false" data-tab="v01"><span class="tv">Pilot · 6 mixed models</span><span class="td">2026-09-04 · 24,914 trials</span></button>
 <button role="tab" id="tab-notes" aria-controls="panel-notes" aria-selected="false" data-tab="notes"><span class="tv">Bugs &amp; corrections</span><span class="td">applies to all runs</span></button>
 </div>
 
 <div role="tabpanel" id="panel-v03" aria-labelledby="tab-v03" data-panel="v03">
-<p class="provenance">Current run · 2026-09-04 · commit <code>b366ad5</code> · 193,808 logged trials across 81 result files<br>Real-world multi-hop fact composition: three hops silently, collapse at four. Filler tokens give +15 points at four hops in both models (p<0.001) and nothing elsewhere. R-lens reads the un-emitted bridge entity at vocabulary rank 0, outranking a control in 100% of solved trials.</p>
+<p class="provenance">Current run · 2026-09-04 · commit <code>857d3e4</code> · 31,680 logged trials across 81 result files<br>Real-world multi-hop fact composition: three hops silently, collapse at four. Filler tokens give +15 points at four hops in both models (p<0.001) and nothing elsewhere. R-lens reads the un-emitted bridge entity at vocabulary rank 0, outranking a control in 100% of solved trials.</p>
 <div class="keys">
   <div class="key"><div class="n p" data-key="k">3</div><div class="l">Memorised facts a model chains silently before collapsing</div></div>
   <div class="key"><div class="n s">+15</div><div class="l">Points that filler tokens buy, but only at the depth where it matters</div></div>

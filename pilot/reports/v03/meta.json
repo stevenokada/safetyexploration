@@ -1,13 +1,13 @@
 {
   "version": 3,
-  "date": "2026-09-04T10:17:21+00:00",
+  "date": "2026-09-04T10:17:54+00:00",
   "summary": "Real-world multi-hop fact composition: three hops silently, collapse at four. Filler tokens give +15 points at four hops in both models (p<0.001) and nothing elsewhere. R-lens reads the un-emitted bridge entity at vocabulary rank 0, outranking a control in 100% of solved trials.",
   "tab_label": "Real-world facts + lens",
-  "git_commit": "b366ad5",
+  "git_commit": "857d3e4",
   "git_dirty": false,
   "git_branch": "stevenokada/larvacean",
   "n_files": 81,
-  "total_rows": 193808,
+  "total_rows": 31680,
   "data_files": {
     "A_default_claude-opus-4.5.csv": {
       "sha256": "ae7ce1541acd",
@@ -71,11 +71,11 @@
     },
     "FACTS_gemma-3-27b-it.csv": {
       "sha256": "ff911cbef727",
-      "rows": 5034
+      "rows": 2250
     },
     "FACTS_qwen.csv": {
       "sha256": "cd8e37cb21aa",
-      "rows": 1349
+      "rows": 800
     },
     "FACTS_qwen2.csv": {
       "sha256": "85c4dcd014c6",
@@ -83,7 +83,7 @@
     },
     "FACTS_qwen3.6-27b.csv": {
       "sha256": "62fb286ef0ab",
-      "rows": 4892
+      "rows": 2250
     },
     "FS_1_filler.csv": {
       "sha256": "ed8f4a84414c",
@@ -167,59 +167,59 @@
     },
     "G_fs1_gemma-3-27b-it.csv": {
       "sha256": "60783393c9d2",
-      "rows": 38402
+      "rows": 2400
     },
     "G_fs1_qwen3.6-27b.csv": {
       "sha256": "30431e1775d9",
-      "rows": 38400
+      "rows": 2400
     },
     "G_fs3_gemma-3-27b-it.csv": {
       "sha256": "8f020d76317f",
-      "rows": 38400
+      "rows": 2400
     },
     "G_fs3_qwen3.6-27b.csv": {
       "sha256": "40688a3b3a7d",
-      "rows": 38400
+      "rows": 2400
     },
     "S_arith_cot_k3.csv": {
       "sha256": "d934e582a0a9",
-      "rows": 121
+      "rows": 8
     },
     "S_arith_immediate_k2.csv": {
       "sha256": "004811195b20",
-      "rows": 104
+      "rows": 8
     },
     "S_arith_immediate_k4.csv": {
       "sha256": "fb0f8b90bf22",
-      "rows": 104
+      "rows": 8
     },
     "S_arith_parallel_max_immediate_k4.csv": {
       "sha256": "5188e7df9795",
-      "rows": 104
+      "rows": 8
     },
     "S_parallel_count_immediate_k8.csv": {
       "sha256": "41ac0b04fc96",
-      "rows": 128
+      "rows": 8
     },
     "S_parallel_immediate_k8.csv": {
       "sha256": "ddd0a764dc1d",
-      "rows": 128
+      "rows": 8
     },
     "S_serial_cot_k4.csv": {
       "sha256": "3a8723d68402",
-      "rows": 136
+      "rows": 8
     },
     "S_serial_filler_k2.csv": {
       "sha256": "42ec2762cedd",
-      "rows": 136
+      "rows": 8
     },
     "S_serial_immediate_k2.csv": {
       "sha256": "cbca8b24da8a",
-      "rows": 120
+      "rows": 8
     },
     "S_serial_immediate_k8.csv": {
       "sha256": "7eeb0d5d483b",
-      "rows": 120
+      "rows": 8
     },
     "W2_parallel_count_gemma-3-27b-it.csv": {
       "sha256": "b13ae140de8c",
@@ -231,7 +231,7 @@
     },
     "W2_parallel_count_qwen3.6-35b-a3b.csv": {
       "sha256": "f0a8c1aa61ec",
-      "rows": 189
+      "rows": 180
     },
     "W2_parallel_gemma-3-27b-it.csv": {
       "sha256": "414980e46b98",
@@ -283,57 +283,57 @@
     },
     "cotlen.csv": {
       "sha256": "375b2813de49",
-      "rows": 247
+      "rows": 100
     },
     "grid2_claude-opus-4.5.csv": {
       "sha256": "07749fb2b559",
-      "rows": 1725
+      "rows": 540
     },
     "grid2_deepseek-chat.csv": {
       "sha256": "3864e8554c19",
-      "rows": 839
+      "rows": 540
     },
     "grid2_gemini-2.5-flash.csv": {
       "sha256": "fddc53b0af70",
-      "rows": 720
+      "rows": 540
     },
     "grid2_gpt-5.1.csv": {
       "sha256": "09cf394a6a76",
-      "rows": 728
+      "rows": 540
     },
     "grid2_kimi-k2-0905.csv": {
       "sha256": "cff3151daf9c",
-      "rows": 753
+      "rows": 540
     },
     "grid2_qwen3-max.csv": {
       "sha256": "637498a996ff",
-      "rows": 5069
+      "rows": 540
     },
     "grid_claude-opus-4.5.csv": {
       "sha256": "73ff5b310736",
-      "rows": 1728
+      "rows": 540
     },
     "grid_deepseek-chat.csv": {
       "sha256": "f9c892023de5",
-      "rows": 742
+      "rows": 540
     },
     "grid_gemini-2.5-flash.csv": {
       "sha256": "b5289ace162c",
-      "rows": 720
+      "rows": 540
     },
     "grid_gpt-5.1.csv": {
       "sha256": "b7a2fb17c9e8",
-      "rows": 688
+      "rows": 540
     },
     "grid_kimi-k2-0905.csv": {
       "sha256": "b081b9dbf8a5",
-      "rows": 759
+      "rows": 540
     },
     "grid_qwen3-max.csv": {
       "sha256": "446ae701af14",
-      "rows": 2883
+      "rows": 540
     }
   },
   "headline": {},
-  "artifact_url": null
+  "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b"
 }
