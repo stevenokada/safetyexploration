@@ -103,7 +103,9 @@ def cmd_stage(args):
     ver = len(m["versions"]) + 1
     # capture git state BEFORE staging writes anything, otherwise the stamp and
     # the archive dirty the tree and every version reports itself as dirty
-    dirty = bool(git("status", "--porcelain"))
+    # scope to this directory: unrelated files elsewhere in the repo do not make
+    # the report's provenance unreproducible
+    dirty = bool(git("status", "--porcelain", "--", str(ROOT)))
     fp = data_fingerprint()
     meta = {
         "version": ver,
