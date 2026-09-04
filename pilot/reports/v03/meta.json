@@ -1,13 +1,13 @@
 {
   "version": 3,
-  "date": "2026-09-04T10:17:09+00:00",
+  "date": "2026-09-04T10:17:21+00:00",
   "summary": "Real-world multi-hop fact composition: three hops silently, collapse at four. Filler tokens give +15 points at four hops in both models (p<0.001) and nothing elsewhere. R-lens reads the un-emitted bridge entity at vocabulary rank 0, outranking a control in 100% of solved trials.",
   "tab_label": "Real-world facts + lens",
-  "git_commit": "156912a",
+  "git_commit": "b366ad5",
   "git_dirty": false,
   "git_branch": "stevenokada/larvacean",
-  "n_files": 59,
-  "total_rows": 26730,
+  "n_files": 81,
+  "total_rows": 193808,
   "data_files": {
     "A_default_claude-opus-4.5.csv": {
       "sha256": "ae7ce1541acd",
@@ -68,6 +68,38 @@
     "B_serial_gemini-2.5-flash.csv": {
       "sha256": "fb2e3f7ab6bf",
       "rows": 400
+    },
+    "FACTS_gemma-3-27b-it.csv": {
+      "sha256": "ff911cbef727",
+      "rows": 5034
+    },
+    "FACTS_qwen.csv": {
+      "sha256": "cd8e37cb21aa",
+      "rows": 1349
+    },
+    "FACTS_qwen2.csv": {
+      "sha256": "85c4dcd014c6",
+      "rows": 400
+    },
+    "FACTS_qwen3.6-27b.csv": {
+      "sha256": "62fb286ef0ab",
+      "rows": 4892
+    },
+    "FS_1_filler.csv": {
+      "sha256": "ed8f4a84414c",
+      "rows": 150
+    },
+    "FS_1_immediate.csv": {
+      "sha256": "b20fbc8f0707",
+      "rows": 150
+    },
+    "FS_3_filler.csv": {
+      "sha256": "aa7f53975be8",
+      "rows": 150
+    },
+    "FS_3_immediate.csv": {
+      "sha256": "184381268be6",
+      "rows": 150
     },
     "F_k2_f0.csv": {
       "sha256": "022509a137ad",
@@ -132,6 +164,62 @@
     "F_k6_f4844.csv": {
       "sha256": "d94e21977146",
       "rows": 30
+    },
+    "G_fs1_gemma-3-27b-it.csv": {
+      "sha256": "60783393c9d2",
+      "rows": 38402
+    },
+    "G_fs1_qwen3.6-27b.csv": {
+      "sha256": "30431e1775d9",
+      "rows": 38400
+    },
+    "G_fs3_gemma-3-27b-it.csv": {
+      "sha256": "8f020d76317f",
+      "rows": 38400
+    },
+    "G_fs3_qwen3.6-27b.csv": {
+      "sha256": "40688a3b3a7d",
+      "rows": 38400
+    },
+    "S_arith_cot_k3.csv": {
+      "sha256": "d934e582a0a9",
+      "rows": 121
+    },
+    "S_arith_immediate_k2.csv": {
+      "sha256": "004811195b20",
+      "rows": 104
+    },
+    "S_arith_immediate_k4.csv": {
+      "sha256": "fb0f8b90bf22",
+      "rows": 104
+    },
+    "S_arith_parallel_max_immediate_k4.csv": {
+      "sha256": "5188e7df9795",
+      "rows": 104
+    },
+    "S_parallel_count_immediate_k8.csv": {
+      "sha256": "41ac0b04fc96",
+      "rows": 128
+    },
+    "S_parallel_immediate_k8.csv": {
+      "sha256": "ddd0a764dc1d",
+      "rows": 128
+    },
+    "S_serial_cot_k4.csv": {
+      "sha256": "3a8723d68402",
+      "rows": 136
+    },
+    "S_serial_filler_k2.csv": {
+      "sha256": "42ec2762cedd",
+      "rows": 136
+    },
+    "S_serial_immediate_k2.csv": {
+      "sha256": "cbca8b24da8a",
+      "rows": 120
+    },
+    "S_serial_immediate_k8.csv": {
+      "sha256": "7eeb0d5d483b",
+      "rows": 120
     },
     "W2_parallel_count_gemma-3-27b-it.csv": {
       "sha256": "b13ae140de8c",

@@ -58,7 +58,11 @@ def data_fingerprint():
         if p.name.startswith(("grid", "A_", "B_", "W_", "W2_", "J_", "JW_",
                               "F_", "cotlen", "ar_", "FACTS_", "G_", "FS_", "S_")):
             h = hashlib.sha256(p.read_bytes()).hexdigest()[:12]
-            n = sum(1 for _ in p.open()) - 1
+            # count CSV RECORDS, not lines: prompts and CoT completions contain
+            # newlines, which inflated the count 16-fold
+            import csv as _csv
+            with p.open(newline="") as fh:
+                n = max(sum(1 for _ in _csv.reader(fh)) - 1, 0)
             files[p.name] = {"sha256": h, "rows": n}
     return files
 
