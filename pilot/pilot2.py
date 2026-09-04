@@ -167,7 +167,8 @@ def parallel_question(lines, starts, letter, k):
 
 def build_messages(rng, k, condition, task, wording):
     """Returns (messages, gold, meta) where meta carries task-specific extras."""
-    fmt = "number" if task in ("parallel_count", "arith") else "code"
+    fmt = ("depot name" if task == "arith_parallel_max" else
+           "number" if task in ("parallel_count", "arith", "arith_parallel") else "code")
     if condition == "cot":
         instr = ("Solve the problem. Think step by step, then give your final "
                  f"answer on its own line in the format 'Answer: <{fmt}>'.")
@@ -185,6 +186,10 @@ def build_messages(rng, k, condition, task, wording):
             return q, gold, reasoning, full
         elif task == "arith":
             q, gold, inter, reasoning = task_arith.generate(rng, kk)
+            return q, gold, reasoning, None
+        elif task in ("arith_parallel", "arith_parallel_max"):
+            agg = "max" if task.endswith("_max") else "sum"
+            q, gold, inter, reasoning = task_arith.generate_parallel(rng, kk, agg=agg)
             return q, gold, reasoning, None
         elif task == "parallel_count":
             lines, starts, gold = gen_parallel_count(rng, kk)
@@ -220,7 +225,10 @@ def build_messages(rng, k, condition, task, wording):
 # ---------------------------------------------------------------- scoring
 
 def extract_answer(condition, completion, task="serial"):
-    numeric = task in ("parallel_count", "arith")
+    numeric = task in ("parallel_count", "arith", "arith_parallel")
+    if task == "arith_parallel_max":
+        m = re.findall(r"\b(Alpha|Bravo|Delta|Echo|Foxtrot|Golf|Hotel|India)\b", completion)
+        return m[-1] if (condition == "cot" and m) else (m[0] if m else None)
     if condition == "cot":
         m = (NUM_ANS_RE if numeric else ANS_RE).findall(completion)
         return m[-1] if m else None
@@ -230,7 +238,7 @@ def extract_answer(condition, completion, task="serial"):
 def leak_flag(condition, completion, task="serial"):
     if condition == "cot":
         return False
-    tokens = (NUM_RE if task in ("parallel_count", "arith") else CODE_RE).findall(completion)
+    tokens = (NUM_RE if task in ("parallel_count", "arith", "arith_parallel") else CODE_RE).findall(completion)
     return len(completion.split()) > 4 or len(tokens) > 1
 
 # ---------------------------------------------------------------- api
@@ -295,7 +303,8 @@ async def main():
     ap.add_argument("--allow-unregistered", action="store_true",
                     help="permit a model with no published J-Lens (no internals follow-up possible)")
     ap.add_argument("--task", default="serial",
-                    choices=["serial", "parallel", "parallel_count", "arith"])
+                    choices=["serial", "parallel", "parallel_count",
+                             "arith", "arith_parallel", "arith_parallel_max"])
     ap.add_argument("--wording", default="default", choices=["default", "explicit"])
     ap.add_argument("--n", type=int, default=30)
     ap.add_argument("--concurrency", type=int, default=20)

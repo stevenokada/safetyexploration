@@ -226,3 +226,103 @@ if __name__ == "__main__":
         elif len(set(vals)) != len(vals): bad += 1
         elif set(vals) & set(literals): bad += 1
     print(f"\nconstraint violations over 300 trials at k=4: {bad}")
+
+
+# ---------------------------------------------------------------- parallel control
+
+DEPOTS = ["Alpha", "Bravo", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India"]
+
+
+def generate_parallel(rng, k, max_tries=200, agg="sum"):
+    """Matched parallelizable control for the chained arithmetic task.
+
+    Same operation vocabulary, same sentence style, same number of arithmetic
+    operations (k), same lens guarantees. The only difference is structural: the
+    k operations act on k INDEPENDENT depots instead of one running count, so
+    serial depth is 2 (one op per depot, then aggregate) regardless of k, while
+    the work stays k operations.
+
+    Two aggregations, because the choice of aggregation is itself a confound:
+
+      agg="sum"  every depot's exact value is required, but mentally adding k
+                 two-digit numbers is expensive in its own right. If this variant
+                 collapses, the cause is ambiguous between depth and aggregation.
+      agg="max"  still requires all k depots to be evaluated, but combining them
+                 is a cheap comparison rather than exact arithmetic, and the
+                 answer is a single-token depot name. This is the variant that
+                 isolates DEPTH from AGGREGATION COST.
+
+    Running both separates those two explanations.
+    """
+    if k > MAX_K:
+        raise ValueError(f"k={k} exceeds MAX_K={MAX_K}")
+    for _ in range(max_tries):
+        tens = rng.sample(range(1, 10), k)          # distinct leading digits
+        rows, finals, ok = [], [], True
+        for t in tens:
+            for _ in range(60):
+                start = rng.randint(VALUE_LO, VALUE_HI)
+                final = rng.randint(t * 10, t * 10 + 9)
+                if final == start or final in finals:
+                    continue
+                opts = _realize(start, final)
+                if not opts:
+                    continue
+                kind, a, b = rng.choice(opts)
+                free = [x for x in range(OPERAND_LO, OPERAND_HI + 1)]
+                if a is None:
+                    a = rng.choice(free)
+                if b is None:
+                    b = rng.choice(free)
+                rows.append((start, (kind, a, b), final)); finals.append(final)
+                break
+            else:
+                ok = False
+                break
+        if not ok or len(finals) != k:
+            continue
+
+        names = DEPOTS[:k]
+        lines = [f"Depot {n} starts the day with {s} crates. {_phrase(op)}"
+                 for n, (s, op, _) in zip(names, rows)]
+        fillers = rng.sample(NEUTRAL, SENTENCES_TOTAL - k)
+        slots = sorted(rng.sample(range(SENTENCES_TOTAL), k))
+        body, oi, fi = [], 0, 0
+        for i in range(SENTENCES_TOTAL):
+            if oi < k and i == slots[oi]:
+                body.append(lines[oi]); oi += 1
+            else:
+                body.append(fillers[fi]); fi += 1
+
+        if agg == "sum":
+            question = ("Adding up every depot, how many crates does the warehouse "
+                        "have at the end of the day?")
+        else:
+            question = ("Which depot has the most crates at the end of the day? "
+                        "Answer with just the depot name.")
+            top = max(finals)
+            if finals.count(top) != 1:      # the maximum must be unique
+                continue
+        prompt = ("A warehouse keeps its crates in separate depots.\n"
+                  + "\n".join(f"- {s}" for s in body)
+                  + "\n\n" + question)
+
+        # constraint 4 against the rendered prompt, as in the serial task
+        import re as _re
+        literals = {int(x) for x in _re.findall(r"\b\d+\b", prompt)}
+        if literals & set(finals):
+            continue
+
+        for s, op, f in rows:
+            assert _apply(s, op) == f, "generator inconsistency"
+
+        parts = [f"Depot {n}: {s} is {'even' if s % 2 == 0 else 'odd'}, so it ends with {f}"
+                 for n, (s, _, f) in zip(names, rows)]
+        if agg == "sum":
+            reasoning = ("; ".join(parts) + ". Total "
+                         + " + ".join(str(f) for _, _, f in rows) + f" = {sum(finals)}.")
+            return prompt, str(sum(finals)), [str(x) for x in finals], reasoning
+        winner = names[finals.index(max(finals))]
+        reasoning = "; ".join(parts) + f". The largest is {max(finals)}, so the answer is {winner}."
+        return prompt, winner, [str(x) for x in finals], reasoning
+    raise RuntimeError(f"could not satisfy constraints for k={k}")
