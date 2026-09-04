@@ -1,0 +1,61 @@
+### qwen/qwen3.6-27b | parallel | nodes=80
+immediate  8 0.600      0     0
+immediate 16 0.533      0     0
+immediate 24 0.400      0     0
+immediate 32 0.567      0     0
+immediate 48 0.433      0     0
+immediate 64 0.600      0     0
+
+Wrote W2_parallel_qwen3.6-27b.csv
+validity audit: all 6 cells passed
+### qwen/qwen3.6-27b | parallel_count | nodes=80
+immediate  8 0.367      0     0
+immediate 16 0.133      0     0
+immediate 24 0.167      0     0
+immediate 32 0.100      0     0
+immediate 48 0.100      0     0
+immediate 64 0.233      0     0
+
+Wrote W2_parallel_count_qwen3.6-27b.csv
+validity audit: all 6 cells passed
+### qwen/qwen3.6-35b-a3b | parallel | nodes=80
+immediate 32 0.233      0     0
+immediate 48 0.267      0     0
+immediate 64 0.400      1     0
+
+Wrote W2_parallel_qwen3.6-35b-a3b.csv
+
+!! VALIDITY AUDIT: 1/6 cells FAILED — do not treat these as depth measurements
+     cond  k  n  acc  leak            why
+immediate 64 30  0.4 0.033 unparseable=3%
+### qwen/qwen3.6-35b-a3b | parallel_count | nodes=80
+immediate  8 0.300      0     0
+immediate 16 0.167      0     0
+immediate 24 0.100      0     0
+immediate 32 0.233      0     0
+immediate 48 0.100      0     0
+immediate 64 0.100      0     0
+
+Wrote W2_parallel_count_qwen3.6-35b-a3b.csv
+validity audit: all 6 cells passed
+### google/gemma-3-27b-it | parallel | nodes=80
+immediate  8 0.500      0     0
+immediate 16 0.300      0     0
+immediate 24 0.200      0     0
+immediate 32 0.100      0     0
+immediate 48 0.233      0     0
+immediate 64 0.133      0     0
+
+Wrote W2_parallel_gemma-3-27b-it.csv
+validity audit: all 6 cells passed
+### google/gemma-3-27b-it | parallel_count | nodes=80
+immediate  8 0.200      0     0
+immediate 16 0.067      0     0
+immediate 24 0.133      0     0
+immediate 32 0.133      0     0
+immediate 48 0.167      0     0
+immediate 64 0.067      0     0
+
+Wrote W2_parallel_count_gemma-3-27b-it.csv
+validity audit: all 6 cells passed
+### ALL DONE

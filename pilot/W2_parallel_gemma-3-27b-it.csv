@@ -1,0 +1,181 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion
+parallel,default,8,immediate,0,UO,QZ,0,-1,0,0,stop,3,0,gemma-3-27b-it,QZ
+parallel,default,8,immediate,1,SN,DK,0,-1,0,0,stop,2,0,gemma-3-27b-it, DK
+parallel,default,8,immediate,2,GO,DV,0,-1,0,0,stop,2,0,gemma-3-27b-it, DV
+parallel,default,8,immediate,3,ES,ES,1,-1,0,0,stop,2,0,gemma-3-27b-it, ES
+parallel,default,8,immediate,4,RX,QU,0,-1,0,0,stop,2,0,gemma-3-27b-it, QU
+parallel,default,8,immediate,5,VS,VS,1,-1,0,0,stop,2,0,gemma-3-27b-it, VS
+parallel,default,8,immediate,6,AL,AL,1,-1,0,0,stop,2,0,gemma-3-27b-it, AL
+parallel,default,8,immediate,7,AO,AO,1,-1,0,0,stop,2,0,gemma-3-27b-it,AO
+parallel,default,8,immediate,8,NC,WX,0,-1,0,0,stop,3,0,gemma-3-27b-it, WX
+parallel,default,8,immediate,9,FY,MU,0,-1,0,0,stop,2,0,gemma-3-27b-it, MU
+parallel,default,8,immediate,10,NS,NS,1,-1,0,0,stop,2,0,gemma-3-27b-it, NS
+parallel,default,8,immediate,11,XM,XM,1,-1,0,0,stop,2,0,gemma-3-27b-it, XM
+parallel,default,8,immediate,12,UW,UW,1,-1,0,0,stop,2,0,gemma-3-27b-it,UW
+parallel,default,8,immediate,13,DR,DR,1,-1,0,0,stop,2,0,gemma-3-27b-it, DR
+parallel,default,8,immediate,14,UL,JG,0,-1,0,0,stop,2,0,gemma-3-27b-it, JG
+parallel,default,8,immediate,15,AI,AI,1,-1,0,0,stop,2,0,gemma-3-27b-it, AI
+parallel,default,8,immediate,16,WH,QW,0,-1,0,0,stop,3,0,gemma-3-27b-it,QW
+parallel,default,8,immediate,17,HQ,HQ,1,-1,0,0,stop,2,0,gemma-3-27b-it, HQ
+parallel,default,8,immediate,18,TH,TH,1,-1,0,0,stop,2,0,gemma-3-27b-it,TH
+parallel,default,8,immediate,19,TI,TI,1,-1,0,0,stop,2,0,gemma-3-27b-it, TI
+parallel,default,8,immediate,20,JT,MQ,0,-1,0,0,stop,2,0,gemma-3-27b-it, MQ
+parallel,default,8,immediate,21,XR,YR,0,-1,0,0,stop,3,0,gemma-3-27b-it, YR
+parallel,default,8,immediate,22,LQ,LQ,1,-1,0,0,stop,2,0,gemma-3-27b-it,LQ
+parallel,default,8,immediate,23,TX,ZX,0,-1,0,0,stop,2,0,gemma-3-27b-it, ZX
+parallel,default,8,immediate,24,MY,EN,0,-1,0,0,stop,2,0,gemma-3-27b-it, EN
+parallel,default,8,immediate,25,HN,UT,0,-1,0,0,stop,2,0,gemma-3-27b-it, UT
+parallel,default,8,immediate,26,NK,NK,1,-1,0,0,stop,2,0,gemma-3-27b-it,NK
+parallel,default,8,immediate,27,RB,CS,0,-1,0,0,stop,2,0,gemma-3-27b-it,CS
+parallel,default,8,immediate,28,UP,TO,0,-1,0,0,stop,2,0,gemma-3-27b-it, TO
+parallel,default,8,immediate,29,TA,TA,1,-1,0,0,stop,2,0,gemma-3-27b-it, TA
+parallel,default,16,immediate,0,VQ,NM,0,-1,0,0,stop,2,0,gemma-3-27b-it, NM
+parallel,default,16,immediate,1,SL,RU,0,-1,0,0,stop,2,0,gemma-3-27b-it,RU
+parallel,default,16,immediate,2,MU,HO,0,-1,0,0,stop,2,0,gemma-3-27b-it, HO
+parallel,default,16,immediate,3,OK,QU,0,-1,0,0,stop,2,0,gemma-3-27b-it, QU
+parallel,default,16,immediate,4,VX,VX,1,-1,0,0,stop,2,0,gemma-3-27b-it,VX
+parallel,default,16,immediate,5,UG,HU,0,-1,0,0,stop,2,0,gemma-3-27b-it,HU
+parallel,default,16,immediate,6,EV,RO,0,-1,0,0,stop,2,0,gemma-3-27b-it, RO
+parallel,default,16,immediate,7,PI,WL,0,-1,0,0,stop,2,0,gemma-3-27b-it, WL
+parallel,default,16,immediate,8,KW,HS,0,-1,0,0,stop,2,0,gemma-3-27b-it, HS
+parallel,default,16,immediate,9,MJ,YY,0,-1,0,0,stop,2,0,gemma-3-27b-it, YY
+parallel,default,16,immediate,10,BS,MT,0,-1,0,0,stop,2,0,gemma-3-27b-it,MT
+parallel,default,16,immediate,11,UD,UD,1,-1,0,0,stop,2,0,gemma-3-27b-it, UD
+parallel,default,16,immediate,12,XY,VH,0,-1,0,0,stop,2,0,gemma-3-27b-it, VH
+parallel,default,16,immediate,13,MP,MP,1,-1,0,0,stop,2,0,gemma-3-27b-it, MP
+parallel,default,16,immediate,14,PN,PN,1,-1,0,0,stop,2,0,gemma-3-27b-it, PN
+parallel,default,16,immediate,15,RP,RP,1,-1,0,0,stop,2,0,gemma-3-27b-it, RP
+parallel,default,16,immediate,16,BG,WK,0,-1,0,0,stop,2,0,gemma-3-27b-it,WK
+parallel,default,16,immediate,17,VU,VU,1,-1,0,0,stop,2,0,gemma-3-27b-it, VU
+parallel,default,16,immediate,18,MW,EB,0,-1,0,0,stop,2,0,gemma-3-27b-it, EB
+parallel,default,16,immediate,19,WA,MG,0,-1,0,0,stop,2,0,gemma-3-27b-it, MG
+parallel,default,16,immediate,20,UN,CV,0,-1,0,0,stop,2,0,gemma-3-27b-it, CV
+parallel,default,16,immediate,21,DU,AN,0,-1,0,0,stop,2,0,gemma-3-27b-it,AN
+parallel,default,16,immediate,22,AS,AS,1,-1,0,0,stop,2,0,gemma-3-27b-it, AS
+parallel,default,16,immediate,23,XR,BF,0,-1,0,0,stop,2,0,gemma-3-27b-it,BF
+parallel,default,16,immediate,24,FW,DZ,0,-1,0,0,stop,2,0,gemma-3-27b-it, DZ
+parallel,default,16,immediate,25,GD,GD,1,-1,0,0,stop,2,0,gemma-3-27b-it, GD
+parallel,default,16,immediate,26,MJ,DK,0,-1,0,0,stop,2,0,gemma-3-27b-it,DK
+parallel,default,16,immediate,27,TN,TN,1,-1,0,0,stop,2,0,gemma-3-27b-it, TN
+parallel,default,16,immediate,28,UL,QU,0,-1,0,0,stop,2,0,gemma-3-27b-it,QU
+parallel,default,16,immediate,29,IY,HN,0,-1,0,0,stop,2,0,gemma-3-27b-it, HN
+parallel,default,24,immediate,0,CQ,RA,0,-1,0,0,stop,2,0,gemma-3-27b-it, RA
+parallel,default,24,immediate,1,FT,IR,0,-1,0,0,stop,2,0,gemma-3-27b-it,IR
+parallel,default,24,immediate,2,MQ,TM,0,-1,0,0,stop,2,0,gemma-3-27b-it, TM
+parallel,default,24,immediate,3,QZ,KP,0,-1,0,0,stop,2,0,gemma-3-27b-it, KP
+parallel,default,24,immediate,4,HY,UQ,0,-1,0,0,stop,2,0,gemma-3-27b-it,UQ
+parallel,default,24,immediate,5,YX,HZ,0,-1,0,0,stop,3,0,gemma-3-27b-it, HZ
+parallel,default,24,immediate,6,LW,LW,1,-1,0,0,stop,2,0,gemma-3-27b-it,LW
+parallel,default,24,immediate,7,DE,VL,0,-1,0,0,stop,2,0,gemma-3-27b-it, VL
+parallel,default,24,immediate,8,RY,HO,0,-1,0,0,stop,2,0,gemma-3-27b-it, HO
+parallel,default,24,immediate,9,QA,VP,0,-1,0,0,stop,2,0,gemma-3-27b-it, VP
+parallel,default,24,immediate,10,LB,HS,0,-1,0,0,stop,2,0,gemma-3-27b-it, HS
+parallel,default,24,immediate,11,SI,SI,1,-1,0,0,stop,2,0,gemma-3-27b-it, SI
+parallel,default,24,immediate,12,BK,AD,0,-1,0,0,stop,2,0,gemma-3-27b-it, AD
+parallel,default,24,immediate,13,KF,MG,0,-1,0,0,stop,2,0,gemma-3-27b-it, MG
+parallel,default,24,immediate,14,WZ,KP,0,-1,0,0,stop,2,0,gemma-3-27b-it,KP
+parallel,default,24,immediate,15,CG,LQ,0,-1,0,0,stop,2,0,gemma-3-27b-it, LQ
+parallel,default,24,immediate,16,WI,XP,0,-1,0,0,stop,2,0,gemma-3-27b-it, XP
+parallel,default,24,immediate,17,SF,VY,0,-1,0,0,stop,2,0,gemma-3-27b-it, VY
+parallel,default,24,immediate,18,SL,SL,1,-1,0,0,stop,2,0,gemma-3-27b-it, SL
+parallel,default,24,immediate,19,YS,UQ,0,-1,0,0,stop,3,0,gemma-3-27b-it, UQ
+parallel,default,24,immediate,20,JE,MI,0,-1,0,0,stop,2,0,gemma-3-27b-it, MI
+parallel,default,24,immediate,21,DW,DW,1,-1,0,0,stop,2,0,gemma-3-27b-it,DW
+parallel,default,24,immediate,22,EX,WD,0,-1,0,0,stop,2,0,gemma-3-27b-it, WD
+parallel,default,24,immediate,23,RL,WM,0,-1,0,0,stop,2,0,gemma-3-27b-it,WM
+parallel,default,24,immediate,24,WW,NV,0,-1,0,0,stop,2,0,gemma-3-27b-it, NV
+parallel,default,24,immediate,25,CM,DR,0,-1,0,0,stop,2,0,gemma-3-27b-it, DR
+parallel,default,24,immediate,26,TI,HX,0,-1,0,0,stop,2,0,gemma-3-27b-it, HX
+parallel,default,24,immediate,27,UF,UF,1,-1,0,0,stop,2,0,gemma-3-27b-it, UF
+parallel,default,24,immediate,28,AS,AS,1,-1,0,0,stop,2,0,gemma-3-27b-it,AS
+parallel,default,24,immediate,29,JZ,BJ,0,-1,0,0,stop,2,0,gemma-3-27b-it, BJ
+parallel,default,32,immediate,0,OP,DO,0,-1,0,0,stop,2,0,gemma-3-27b-it, DO
+parallel,default,32,immediate,1,GP,NC,0,-1,0,0,stop,2,0,gemma-3-27b-it, NC
+parallel,default,32,immediate,2,MK,OH,0,-1,0,0,stop,2,0,gemma-3-27b-it, OH
+parallel,default,32,immediate,3,RL,IW,0,-1,0,0,stop,2,0,gemma-3-27b-it, IW
+parallel,default,32,immediate,4,SN,FL,0,-1,0,0,stop,2,0,gemma-3-27b-it, FL
+parallel,default,32,immediate,5,KR,RI,0,-1,0,0,stop,2,0,gemma-3-27b-it,RI
+parallel,default,32,immediate,6,SN,FH,0,-1,0,0,stop,2,0,gemma-3-27b-it, FH
+parallel,default,32,immediate,7,BA,LQ,0,-1,0,0,stop,2,0,gemma-3-27b-it, LQ
+parallel,default,32,immediate,8,GU,IQ,0,-1,0,0,stop,2,0,gemma-3-27b-it, IQ
+parallel,default,32,immediate,9,UP,ZN,0,-1,0,0,stop,3,0,gemma-3-27b-it, ZN
+parallel,default,32,immediate,10,UD,EZ,0,-1,0,0,stop,2,0,gemma-3-27b-it, EZ
+parallel,default,32,immediate,11,EP,IE,0,-1,0,0,stop,2,0,gemma-3-27b-it, IE
+parallel,default,32,immediate,12,MV,MV,1,-1,0,0,stop,2,0,gemma-3-27b-it,MV
+parallel,default,32,immediate,13,OP,GJ,0,-1,0,0,stop,2,0,gemma-3-27b-it,GJ
+parallel,default,32,immediate,14,KJ,KJ,1,-1,0,0,stop,2,0,gemma-3-27b-it, KJ
+parallel,default,32,immediate,15,GG,OZ,0,-1,0,0,stop,2,0,gemma-3-27b-it, OZ
+parallel,default,32,immediate,16,DV,KL,0,-1,0,0,stop,2,0,gemma-3-27b-it, KL
+parallel,default,32,immediate,17,ZD,FF,0,-1,0,0,stop,2,0,gemma-3-27b-it,FF
+parallel,default,32,immediate,18,YT,YT,1,-1,0,0,stop,2,0,gemma-3-27b-it, YT
+parallel,default,32,immediate,19,DM,CI,0,-1,0,0,stop,2,0,gemma-3-27b-it, CI
+parallel,default,32,immediate,20,XX,KH,0,-1,0,0,stop,2,0,gemma-3-27b-it, KH
+parallel,default,32,immediate,21,NV,QL,0,-1,0,0,stop,3,0,gemma-3-27b-it, QL
+parallel,default,32,immediate,22,LK,IO,0,-1,0,0,stop,2,0,gemma-3-27b-it, IO
+parallel,default,32,immediate,23,ZM,HR,0,-1,0,0,stop,2,0,gemma-3-27b-it, HR
+parallel,default,32,immediate,24,KF,TL,0,-1,0,0,stop,2,0,gemma-3-27b-it, TL
+parallel,default,32,immediate,25,JO,US,0,-1,0,0,stop,2,0,gemma-3-27b-it,US
+parallel,default,32,immediate,26,PT,AR,0,-1,0,0,stop,2,0,gemma-3-27b-it,AR
+parallel,default,32,immediate,27,OE,YY,0,-1,0,0,stop,2,0,gemma-3-27b-it, YY
+parallel,default,32,immediate,28,GQ,SV,0,-1,0,0,stop,2,0,gemma-3-27b-it, SV
+parallel,default,32,immediate,29,HS,YG,0,-1,0,0,stop,2,0,gemma-3-27b-it,YG
+parallel,default,48,immediate,0,LF,VJ,0,-1,0,0,stop,2,0,gemma-3-27b-it,VJ
+parallel,default,48,immediate,1,RO,AC,0,-1,0,0,stop,2,0,gemma-3-27b-it, AC
+parallel,default,48,immediate,2,QA,QA,1,-1,0,0,stop,2,0,gemma-3-27b-it, QA
+parallel,default,48,immediate,3,IH,SZ,0,-1,0,0,stop,2,0,gemma-3-27b-it, SZ
+parallel,default,48,immediate,4,FN,FN,1,-1,0,0,stop,2,0,gemma-3-27b-it, FN
+parallel,default,48,immediate,5,IU,HW,0,-1,0,0,stop,2,0,gemma-3-27b-it,HW
+parallel,default,48,immediate,6,OK,OK,1,-1,0,0,stop,2,0,gemma-3-27b-it,OK
+parallel,default,48,immediate,7,ZM,FC,0,-1,0,0,stop,2,0,gemma-3-27b-it, FC
+parallel,default,48,immediate,8,TG,AG,0,-1,0,0,stop,2,0,gemma-3-27b-it, AG
+parallel,default,48,immediate,9,MB,DZ,0,-1,0,0,stop,2,0,gemma-3-27b-it, DZ
+parallel,default,48,immediate,10,ZR,XF,0,-1,0,0,stop,3,0,gemma-3-27b-it, XF
+parallel,default,48,immediate,11,WA,QM,0,-1,0,0,stop,2,0,gemma-3-27b-it, QM
+parallel,default,48,immediate,12,EL,EL,1,-1,0,0,stop,2,0,gemma-3-27b-it, EL
+parallel,default,48,immediate,13,SG,SG,1,-1,0,0,stop,2,0,gemma-3-27b-it,SG
+parallel,default,48,immediate,14,HB,WL,0,-1,0,0,stop,2,0,gemma-3-27b-it, WL
+parallel,default,48,immediate,15,QO,QO,1,-1,0,0,stop,3,0,gemma-3-27b-it,QO
+parallel,default,48,immediate,16,QS,YA,0,-1,0,0,stop,2,0,gemma-3-27b-it,YA
+parallel,default,48,immediate,17,AJ,SS,0,-1,0,0,stop,2,0,gemma-3-27b-it,SS
+parallel,default,48,immediate,18,CP,US,0,-1,0,0,stop,2,0,gemma-3-27b-it, US
+parallel,default,48,immediate,19,UB,MZ,0,-1,0,0,stop,2,0,gemma-3-27b-it, MZ
+parallel,default,48,immediate,20,ME,CE,0,-1,0,0,stop,2,0,gemma-3-27b-it,CE
+parallel,default,48,immediate,21,RV,TC,0,-1,0,0,stop,2,0,gemma-3-27b-it, TC
+parallel,default,48,immediate,22,SQ,HJ,0,-1,0,0,stop,2,0,gemma-3-27b-it,HJ
+parallel,default,48,immediate,23,FU,KS,0,-1,0,0,stop,2,0,gemma-3-27b-it, KS
+parallel,default,48,immediate,24,QB,BR,0,-1,0,0,stop,2,0,gemma-3-27b-it, BR
+parallel,default,48,immediate,25,YI,YI,1,-1,0,0,stop,3,0,gemma-3-27b-it, YI
+parallel,default,48,immediate,26,AU,VL,0,-1,0,0,stop,2,0,gemma-3-27b-it,VL
+parallel,default,48,immediate,27,XR,GM,0,-1,0,0,stop,2,0,gemma-3-27b-it, GM
+parallel,default,48,immediate,28,HC,SY,0,-1,0,0,stop,2,0,gemma-3-27b-it,SY
+parallel,default,48,immediate,29,EK,MH,0,-1,0,0,stop,2,0,gemma-3-27b-it, MH
+parallel,default,64,immediate,0,CX,CX,1,-1,0,0,stop,2,0,gemma-3-27b-it, CX
+parallel,default,64,immediate,1,CG,WH,0,-1,0,0,stop,2,0,gemma-3-27b-it, WH
+parallel,default,64,immediate,2,SV,AJ,0,-1,0,0,stop,2,0,gemma-3-27b-it, AJ
+parallel,default,64,immediate,3,WH,OS,0,-1,0,0,stop,2,0,gemma-3-27b-it, OS
+parallel,default,64,immediate,4,AK,CF,0,-1,0,0,stop,2,0,gemma-3-27b-it, CF
+parallel,default,64,immediate,5,UG,UG,1,-1,0,0,stop,2,0,gemma-3-27b-it, UG
+parallel,default,64,immediate,6,BY,DZ,0,-1,0,0,stop,2,0,gemma-3-27b-it, DZ
+parallel,default,64,immediate,7,CU,WH,0,-1,0,0,stop,2,0,gemma-3-27b-it, WH
+parallel,default,64,immediate,8,EC,XA,0,-1,0,0,stop,2,0,gemma-3-27b-it,XA
+parallel,default,64,immediate,9,PA,MQ,0,-1,0,0,stop,2,0,gemma-3-27b-it, MQ
+parallel,default,64,immediate,10,UI,RK,0,-1,0,0,stop,2,0,gemma-3-27b-it,RK
+parallel,default,64,immediate,11,WL,RX,0,-1,0,0,stop,2,0,gemma-3-27b-it, RX
+parallel,default,64,immediate,12,LM,XI,0,-1,0,0,stop,2,0,gemma-3-27b-it,XI
+parallel,default,64,immediate,13,IU,NE,0,-1,0,0,stop,2,0,gemma-3-27b-it, NE
+parallel,default,64,immediate,14,IG,IG,1,-1,0,0,stop,2,0,gemma-3-27b-it, IG
+parallel,default,64,immediate,15,ZY,EQ,0,-1,0,0,stop,2,0,gemma-3-27b-it,EQ
+parallel,default,64,immediate,16,QO,QO,1,-1,0,0,stop,3,0,gemma-3-27b-it, QO
+parallel,default,64,immediate,17,SK,RF,0,-1,0,0,stop,2,0,gemma-3-27b-it, RF
+parallel,default,64,immediate,18,YH,PF,0,-1,0,0,stop,2,0,gemma-3-27b-it, PF
+parallel,default,64,immediate,19,TL,PT,0,-1,0,0,stop,2,0,gemma-3-27b-it, PT
+parallel,default,64,immediate,20,EW,TH,0,-1,0,0,stop,2,0,gemma-3-27b-it, TH
+parallel,default,64,immediate,21,AB,OX,0,-1,0,0,stop,2,0,gemma-3-27b-it, OX
+parallel,default,64,immediate,22,ZP,LI,0,-1,0,0,stop,2,0,gemma-3-27b-it, LI
+parallel,default,64,immediate,23,MG,DW,0,-1,0,0,stop,2,0,gemma-3-27b-it, DW
+parallel,default,64,immediate,24,XY,PD,0,-1,0,0,stop,2,0,gemma-3-27b-it,PD
+parallel,default,64,immediate,25,UY,YP,0,-1,0,0,stop,2,0,gemma-3-27b-it,YP
+parallel,default,64,immediate,26,OS,DC,0,-1,0,0,stop,2,0,gemma-3-27b-it, DC
+parallel,default,64,immediate,27,WG,SI,0,-1,0,0,stop,2,0,gemma-3-27b-it, SI
+parallel,default,64,immediate,28,DV,VG,0,-1,0,0,stop,2,0,gemma-3-27b-it, VG
+parallel,default,64,immediate,29,BN,TH,0,-1,0,0,stop,2,0,gemma-3-27b-it, TH

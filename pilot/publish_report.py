@@ -55,7 +55,8 @@ def data_fingerprint():
     version be checked against today's data files for silent drift."""
     files = {}
     for p in sorted(ROOT.glob("*.csv")):
-        if p.name.startswith(("grid", "A_", "B_", "W_", "J_", "JW_")):
+        if p.name.startswith(("grid", "A_", "B_", "W_", "W2_", "J_", "JW_",
+                              "F_", "cotlen", "ar_")):
             h = hashlib.sha256(p.read_bytes()).hexdigest()[:12]
             n = sum(1 for _ in p.open()) - 1
             files[p.name] = {"sha256": h, "rows": n}

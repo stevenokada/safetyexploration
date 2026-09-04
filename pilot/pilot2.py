@@ -70,6 +70,13 @@ NUM_ANS_RE = re.compile(r"Answer:\s*(\d+)\b")
 
 # ---------------------------------------------------------------- shared gen
 
+def set_filler(n):
+    """Filler length must be settable per run: matching it to the model's actual
+    CoT length is the point of the sweep, and 100 tokens is ~5% of that."""
+    global FILLER_N, FILLER_TEXT
+    FILLER_N = n
+    FILLER_TEXT = " ".join(str(i) for i in range(1, n + 1))
+
 def set_nodes(n):
     global N_NODES
     N_NODES = n
@@ -309,6 +316,8 @@ async def main():
     ap.add_argument("--n", type=int, default=30)
     ap.add_argument("--concurrency", type=int, default=20)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--filler-n", type=int, default=100, dest="filler_n",
+                    help="number of counting-filler tokens appended before the answer")
     ap.add_argument("--nodes", type=int, default=12, help="mapping table size (must exceed max k)")
     ap.add_argument("--conditions", default="immediate,filler,cot")
     ap.add_argument("--ks", default="1,2,3,4,6,8")
@@ -319,6 +328,7 @@ async def main():
     conds = args.conditions.split(",")
     ks = [int(x) for x in args.ks.split(",")]
     set_nodes(args.nodes)
+    set_filler(args.filler_n)
     if max(ks) >= args.nodes:
         sys.exit(f"--nodes ({args.nodes}) must exceed max k ({max(ks)})")
 

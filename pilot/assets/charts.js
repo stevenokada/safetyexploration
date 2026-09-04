@@ -60,6 +60,7 @@ function legend(mount,items,note){
 function q(root, sel){ return root.querySelector(sel) || document.createElement('div'); }
 
 function renderReport(root, D){
+  if (D.width2) { renderV2(root, D); return; }   // v02 data shape
 /* ---- key figures ---- */
 const leakPct = (D.meta.leak_rate*100).toFixed(2).replace(/0+$/,'').replace(/\.$/,'');
 q(root,'[data-key="leak"]').textContent = leakPct+'%';
@@ -197,4 +198,71 @@ q(root,'[data-key="leak-inline"]').textContent = leakPct+'% (5 of 8,280)';
   q(root,'[data-key="parallel"]').textContent='24+';
 }
 
+}
+
+
+function renderV2(root, D){
+  const C = {parallel:'var(--parallel)', parallel_count:'var(--count)'};
+  // --- width sweep to k=64, one panel per model
+  const wm = q(root,'[data-fig="width2"]');
+  Object.keys(D.width2).forEach(model => {
+    const div = document.createElement('div'); div.className = 'panel';
+    div.innerHTML = `<div class="ptitle">${model}</div>`;
+    const host = document.createElement('div');
+    const xs = D.width2[model].parallel.k;
+    const series = ['parallel','parallel_count']
+      .filter(t => D.width2[model][t])
+      .map(t => ({k: D.width2[model][t].k, v: D.width2[model][t].acc, color: C[t]}));
+    series.push({k: xs, v: xs.map(k => 1/k), color:'var(--muted)', dash:true});
+    lineChart(host, series, {xs, xlab:'k (independent lookups)', ylab:'accuracy',
+      w:330, h:230, aria:`${model}: parallel accuracy stays far above chance to k=64.`});
+    div.appendChild(host); wm.appendChild(div);
+  });
+  legend(q(root,'[data-leg="width2"]'), [
+    {label:'parallel (depth 2)', color:'var(--parallel)'},
+    {label:'parallel-count (no shortcut)', color:'var(--count)'}], 'dashed = chance (1/k)');
+
+  // --- bounds table
+  const tb = q(root,'[data-tbl="bounds"]');
+  tb.innerHTML = Object.entries(D.bounds).map(([m,b]) =>
+    `<tr><td>${m}</td><td>${b.arch}</td><td class="num">${b.layers}</td>
+     <td class="num">${b.T4096.toLocaleString()}</td>
+     <td class="num">${b.T32768.toLocaleString()}${b.published ? ` <span style="color:var(--muted)">(pub. ${b.published.toLocaleString()})</span>`:''}</td></tr>`).join('');
+
+  // --- filler: grouped bars, one group per k
+  const fm = q(root,'[data-fig="filler"]');
+  const ks = Object.keys(D.filler.acc).sort((a,b)=>a-b);
+  const W=660,H=300,M={l:46,r:14,t:12,b:52};
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img'});
+  svg.setAttribute('aria-label','Filler token budget has no effect on accuracy at any depth.');
+  const x0=M.l,x1=W-M.r,y0=H-M.b,y1=M.t;
+  [0,.25,.5,.75,1].forEach(v=>{
+    const y=y0-v*(y0-y1);
+    svg.appendChild(el('line',{x1:x0,x2:x1,y1:y,y2:y,stroke:'var(--grid-line)','stroke-width':1}));
+    const t=el('text',{x:x0-9,y:y+4,'text-anchor':'end',class:'tick'});
+    t.textContent=Math.round(v*100)+'%'; svg.appendChild(t);
+  });
+  const gw=(x1-x0)/ks.length;
+  ks.forEach((k,gi)=>{
+    const budgets=Object.keys(D.filler.acc[k]).sort((a,b)=>a-b);
+    const bw=Math.min(26,(gw-14)/budgets.length);
+    budgets.forEach((b,bi)=>{
+      const acc=D.filler.acc[k][b];
+      const x=x0+gi*gw+8+bi*bw;
+      const h=Math.max(acc*(y0-y1),1);
+      svg.appendChild(el('rect',{x,y:y0-h,width:bw-3,height:h,rx:2,
+        fill: b==='0' ? 'var(--serial)' : 'var(--parallel)',
+        opacity: b==='0' ? 1 : 0.35+0.2*bi}));
+      const lab=el('text',{x:x+(bw-3)/2,y:y0+12,'text-anchor':'middle',class:'tick'});
+      lab.textContent = b==='0' ? 'none' : b; svg.appendChild(lab);
+    });
+    const kl=el('text',{x:x0+gi*gw+gw/2,y:y0+30,'text-anchor':'middle',class:'axlab'});
+    kl.textContent=`k=${k}`; svg.appendChild(kl);
+  });
+  const yl=el('text',{x:12,y:(y0+y1)/2,'text-anchor':'middle',class:'axlab',
+    transform:`rotate(-90 12 ${(y0+y1)/2})`});
+  yl.textContent='accuracy'; svg.appendChild(yl);
+  const xl=el('text',{x:W/2,y:H-4,'text-anchor':'middle',class:'axlab'});
+  xl.textContent='filler tokens appended before the forced answer'; svg.appendChild(xl);
+  fm.appendChild(svg);
 }

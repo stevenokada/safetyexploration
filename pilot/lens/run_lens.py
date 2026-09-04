@@ -71,18 +71,21 @@ class Lens:
         blob = torch.load(path, map_location="cpu", weights_only=False)
         self.meta = {k: v for k, v in blob.items() if k != "J"} if isinstance(blob, dict) else {}
         J = blob["J"] if isinstance(blob, dict) else blob
-        self.J = J.to(device=device, dtype=dtype)
+        # the shipped lens stores J as a DICT keyed by source-layer index, each a
+        # [d_model, d_model] fp16 map -- not a stacked tensor
+        if isinstance(J, dict):
+            self.J = {int(k): v.to(device=device, dtype=dtype) for k, v in J.items()}
+            self.source_layers = sorted(self.J)
+        else:
+            J = J.to(device=device, dtype=dtype)
+            self.J = {l: J[i] for i, l in
+                      enumerate(self.meta.get("source_layers", range(J.shape[0])))}
+            self.source_layers = sorted(self.J)
         self.orient = orient
-        self.source_layers = list(self.meta.get("source_layers", range(self.J.shape[0])))
+        self.dtype = dtype
 
     def map_for(self, layer):
-        if self.J.dim() == 2:
-            return self.J
-        try:
-            idx = self.source_layers.index(layer)
-        except ValueError:
-            return None
-        return self.J[idx]
+        return self.J.get(int(layer))
 
     def apply(self, h, layer):
         """h: [N, d_model] residual stream vectors -> [N, d_model] mapped to the
@@ -125,9 +128,13 @@ def selftest(model, tok, lens, device):
     for orient in ("left", "right"):
         lens.orient = orient
         print(f"orientation={orient}")
-        for frac in (0.6, 0.8, 0.95):
-            layer = int(n_layers * frac)
-            h = out.hidden_states[layer][0, -1:].to(lens.J.dtype)
+        tgt = lens.meta.get("provenance", {}).get("target_layer")
+        probes = [int(n_layers * f) for f in (0.6, 0.8, 0.95)]
+        if tgt is not None:
+            probes.append(int(tgt))   # J at the target layer should be ~identity:
+                                      # top-10 overlap must be ~10/10 if wiring is right
+        for layer in probes:
+            h = out.hidden_states[layer][0, -1:].to(lens.dtype)
             lg = readout_logits(model, lens, h, layer)
             if lg is None:
                 print(f"  layer {layer:3d}: not covered by this lens")
@@ -148,8 +155,7 @@ def run(model, tok, lens, args, device):
     rows = []
     rng = random.Random(args.seed)
     n_layers = model.config.num_hidden_layers
-    layers = [l for l in range(0, n_layers + 1, args.layer_stride)
-              if lens.map_for(l) is not None]
+    layers = [l for l in lens.source_layers if l % args.layer_stride == 0]
     print(f"scoring {len(layers)} layers (stride {args.layer_stride})")
 
     for k in args.ks:
@@ -177,7 +183,7 @@ def run(model, tok, lens, args, device):
                     targets["null"] = first_token_id(tok, rng.choice(nulls))
 
                     for layer in layers:
-                        h = out.hidden_states[layer][bi, pos].to(lens.J.dtype)
+                        h = out.hidden_states[layer][bi, pos].to(lens.dtype)
                         lg = readout_logits(model, lens, h, layer)
                         if lg is None:
                             continue

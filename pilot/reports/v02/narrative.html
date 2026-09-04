@@ -1,0 +1,112 @@
+<div class="keys">
+  <div class="key"><div class="n s" data-key="serial">1&ndash;4</div><div class="l">Chained steps a model completes with no chain of thought</div></div>
+  <div class="key"><div class="n p" data-key="parallel">64+</div><div class="l">Independent lookups still solved well above chance</div></div>
+  <div class="key"><div class="n">~10<sup>4</sup></div><div class="l">Serial steps the architecture permits, computed from the weights' shape</div></div>
+  <div class="key"><div class="n">0</div><div class="l">Benefit from filler tokens, even at twice the model's own CoT length</div></div>
+</div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">01</span><h2>What changed since the pilot</h2></div>
+  <p>The first run established the shape of the result on six mixed models, most of them closed. This one re-runs the question on three open-weight models that have published R-lens weights, so every behavioural number here can be followed up by reading the model's residual stream on the same checkpoint. It also closes three gaps the pilot left open.</p>
+  <p>The pilot could not say where parallel work finally breaks, because it never broke inside the tested range. It could not compare its behavioural numbers to what the architecture actually permits. And its filler-token result was a null of the uninterpretable kind &mdash; the budget may simply have been too small to matter.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">02</span><h2>A second task, closer to what models are trained on</h2></div>
+  <p>The pilot's chained symbol lookup is contamination-proof and cleanly depth-parameterised, but nobody would call it natural reasoning. The new task is a arithmetic word problem: a depot starts with some number of crates, and a list of events either changes the count or does nothing.</p>
+</section>
+</div>
+
+<div class="specimen">
+  <div class="cap"><span>Serial &middot; depth k</span><span class="tag s">k dependent steps</span></div>
+  <pre>A depot starts the day with <b>25</b> crates.
+- If the count is even, 18 more crates arrive; if it is odd, 11 more arrive.
+- The logbook is passed to the next shift.
+- If the count is even, 23 more crates arrive; if it is odd, 2 more arrive.
+
+How many crates does the depot have at the end of the day?</pre>
+</div>
+
+<div class="measure">
+  <p>Every operative step branches on the parity of the running count, so the chain cannot be folded into one expression &mdash; you cannot know which arm fires without having computed the previous value. Neutral filler sentences hold the total sentence count fixed, so a deeper problem is not also a longer one. Numbers are drawn fresh each trial.</p>
+  <p>Three constraints exist for the interpretability work rather than the behaviour: every intermediate is two digits, all intermediates in a trial have different tens digits, and no intermediate appears as a literal anywhere in the prompt. Qwen and Gemma both split multi-digit numbers into single digits, so the first token of an intermediate <em>is</em> its tens digit &mdash; distinct tens digits therefore make a single-token readout point at exactly one step of the chain.</p>
+  <p>The result reproduces: chain-of-thought is perfect at every depth, while forced immediate answers fall from 100% at one step to near zero by three or four. Two unrelated task families now agree, which is considerably stronger than one.</p>
+
+  <div class="callout">
+    <span class="lab">A control that failed, and why that mattered</span>
+    <p>The first parallelizable control asked for the <em>sum</em> across independent depots. It collapsed exactly like the serial task &mdash; which would have read as "the depth effect does not replicate on arithmetic". It does replicate; adding k two-digit numbers is simply expensive on its own. A second control asking which depot ends <em>largest</em> keeps the same k independent evaluations but combines them with a cheap comparison, and holds flat at 60&ndash;75% out to k=6 while the serial task sits at zero. Aggregation cost is a confound a naive parallel control smuggles in.</p>
+  </div>
+</div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">03</span><h2>Width still does not break at 64</h2></div>
+  <p>The pilot pushed independent lookups to 24 and found no ceiling. This run pushes to 64 on a fixed 80-symbol table, so table size is held constant and only the number of required lookups varies.</p>
+</section>
+</div>
+
+<figure>
+  <div class="ftitle">Sixty-four independent lookups, still far above chance</div>
+  <div class="fsub">Immediate condition, n=30 per cell. Dashed line is chance (1/k), which falls eightfold across the sweep.</div>
+  <div class="legend" data-leg="width2"></div>
+  <div class="panels" data-fig="width2"></div>
+  <figcaption>Qwen3.6-27B is flat from k=8 to k=64 &mdash; 0.60 at both ends &mdash; so as chance falls its margin <em>widens</em>, from 5&times; to 38&times;. Gemma declines in absolute terms but stays 8&times; above chance at 64. Against a serial task that is at the floor by k=4, the gap is now roughly sixteenfold in depth and still not closing. The count variant, which forbids the reverse-search shortcut the other parallel task admits, degrades much further &mdash; so width is very cheap, but not literally free.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">04</span><h2>How much of the permitted depth is actually used</h2></div>
+  <p>Opaque serial depth has a theoretical upper bound derived from architecture alone, and DeepMind released the calculator that computes it. It needs the model's shape, not its weights, so it runs on a laptop.</p>
+  <p>Validating the approach first: a generic transformer replica built to Gemma 3 27B's dimensions returns 10,390 against the paper's published 11,662 &mdash; 11% low, comfortably inside the 28% tolerance the authors report for their own tool.</p>
+</section>
+</div>
+
+<div class="tablewrap measure">
+<table>
+  <thead><tr><th>Model</th><th>Architecture</th><th>Layers</th><th>Bound, T=4096</th><th>Bound, T=32768</th></tr></thead>
+  <tbody data-tbl="bounds"></tbody>
+</table>
+</div>
+
+<div class="measure">
+  <p>The mixture-of-experts model's bound is about 40% below the two dense models &mdash; independent confirmation, on a different model family, of the claim that MoE architectures permit <em>less</em> hidden serial computation. That is the prediction the dense/MoE pair was chosen to test, and it holds on the theory side.</p>
+  <p>Set against the behaviour, the gap is the point. The architecture permits on the order of ten thousand serial steps. The models complete one to four chained steps without writing anything down. Even at a generous hundred steps per hop, that is a few percent of what the hardware allows.</p>
+</div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">05</span><h2>Filler tokens, given a fair budget</h2></div>
+  <p>The pilot found no benefit from 100 filler tokens, but could not distinguish "filler does not help" from "100 was not enough". The fix is to ask how many tokens the model spends when it <em>is</em> allowed to reason, and match that.</p>
+  <p>Median chain-of-thought on this task runs from 859 tokens at one step to 2,422 at six. The pilot's 100-token budget was roughly five percent of that.</p>
+</section>
+</div>
+
+<figure>
+  <div class="ftitle">No benefit at any budget, including twice the model's own reasoning length</div>
+  <div class="fsub">Arithmetic task, qwen3.6-27b, n=30 per cell. Filler lengths matched to median CoT tokens at each depth.</div>
+  <div class="chart-scroll"><div data-fig="filler"></div></div>
+  <figcaption>Accuracy is unchanged whether the model is given no filler, 100 tokens, a full chain-of-thought's worth, or double that. This is now a null of the interpretable kind: the model was handed more scratch space than it uses when reasoning aloud, and did nothing with it.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">06</span><h2>Where this leaves things</h2></div>
+  <p>The shape claim is now supported by two task families: at matched work, latent computation is limited by serial depth and not by volume. A model that cannot chain three steps silently can perform sixty-four in parallel. The architectural bound says that limit is nowhere near what the network permits, so the constraint is learned or elicitation-bound rather than structural.</p>
+  <p>For monitoring, the reassuring reading is that genuinely sequential hidden reasoning is expensive for these models and filler tokens do not buy it. The unreassuring reading is that the headroom is enormous &mdash; the gap between one to four realised steps and ten thousand permitted ones is not a comfortable margin, it is an open question about what would close it.</p>
+
+  <h3>Limits</h3>
+  <ul>
+    <li><strong>Elicitation-dependent.</strong> These are lower bounds under one prompting scheme. Training pressure to hide reasoning could raise them; nothing here is a guarantee.</li>
+    <li><strong>The bounds are replica-based.</strong> Only Gemma has a published figure to check against. The Qwen dense run used 20 attention heads rather than 24, because 5120 does not divide by 24 and the real model sets head dimension explicitly; head count affects parallel width, not depth. The MoE replica's expert width does not match the real model and enters the bound only through a logarithm, so it is directionally right and less precise than the dense numbers.</li>
+    <li><strong>The filler null is one model, one filler type.</strong> Counting sequences on qwen3.6-27b. Published uplift used other models and formats.</li>
+    <li><strong>The parallel task admits a shortcut.</strong> At high k a model may reverse-search the table rather than perform k lookups. The count variant forbids this and degrades faster, so the truth sits between the two.</li>
+  </ul>
+
+  <h3>Next</h3>
+  <ul>
+    <li>Read the residual stream with R-lens on these same checkpoints: do the un-emitted intermediates appear, and how many layers does one latent step consume?</li>
+    <li>That last number converts the behavioural step count into the same units as the architectural bound, turning the gap above from an estimate into a measurement.</li>
+  </ul>
+</section>
+</div>
