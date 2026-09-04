@@ -60,7 +60,18 @@ function legend(mount,items,note){
 function q(root, sel){ return root.querySelector(sel) || document.createElement('div'); }
 
 function renderReport(root, D){
-  if (D.width2) { renderV2(root, D); return; }   // v02 data shape
+  // Dispatch on the data shape. Each version has its own renderer, and a version
+  // whose shape matches none of them would fall through into the v01 code and
+  // throw on the first missing key, taking every chart on that tab with it.
+  if (D.facts)  { renderV3(root, D); return; }   // v03: real-world facts + lens
+  if (D.width2) { renderV2(root, D); return; }   // v02: width sweep, bounds, filler
+  if (!D.grid || !D.meta) {                      // unknown shape: fail loudly, not silently
+    const w = document.createElement('p');
+    w.style.color = 'var(--serial)';
+    w.textContent = 'No renderer matches this version\u2019s data shape.';
+    root.prepend(w);
+    return;
+  }
 /* ---- key figures ---- */
 const leakPct = (D.meta.leak_rate*100).toFixed(2).replace(/0+$/,'').replace(/\.$/,'');
 q(root,'[data-key="leak"]').textContent = leakPct+'%';
@@ -202,7 +213,6 @@ q(root,'[data-key="leak-inline"]').textContent = leakPct+'% (5 of 8,280)';
 
 
 function renderV2(root, D){
-  if (D.facts) { renderV3(root, D); return; }
   if (D.transcripts) buildBrowser(root, D.transcripts);
   const C = {parallel:'var(--parallel)', parallel_count:'var(--count)'};
   // --- width sweep to k=64, one panel per model

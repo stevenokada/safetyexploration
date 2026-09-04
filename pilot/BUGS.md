@@ -45,3 +45,4 @@ and late on earlier versions, which is exactly why they are now a gate rather th
 a habit. Use `collect_transcripts.py` to gather the transcripts. v01 is marked
 `legacy` in the manifest: it predates prompt storage and deterministic seeds, so
 its transcripts cannot be recovered.
+| 20 | Chart dispatch keyed on `D.width2`, so the v03 data shape (no `width2`) fell through to the v01 code path and threw on `D.meta.leak_rate` | Every chart and the transcript browser on the newest tab silently failed to render; the page looked fine but was blank below each figure title | User reported graphs not rendering | **CHANGED** — v03 charts were broken from first publish until this fix |

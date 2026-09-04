@@ -43,6 +43,14 @@ def check_version(vid, narrative, data, legacy):
                         "(collect them with pilot2.py, which stores prompts)")
     elif n_tx < 10:
         problems.append(f"only {n_tx} transcripts; aim for >=10 across conditions")
+    # a version whose data shape matches no renderer falls through and throws,
+    # which silently blanks every chart on that tab
+    renderer_js = (ASSETS / "charts.js").read_text()
+    shapes = re.findall(r"if \(D\.(\w+)\)\s*\{\s*render", renderer_js)
+    if shapes and not any(k in data for k in shapes) and not ("grid" in data and "meta" in data):
+        problems.append(f"data shape matches no renderer (has {sorted(data)[:4]}; "
+                        f"renderers dispatch on {shapes})")
+
     # a chart mount nothing fills renders as an empty box
     mounts = set(re.findall(r'data-(?:fig|leg|tbl)="([^"]+)"', narrative))
     renderer = (ASSETS / "charts.js").read_text()

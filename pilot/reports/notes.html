@@ -41,3 +41,5 @@
 <div class="measure"><p>a habit. Use <code>collect_transcripts.py</code> to gather the transcripts. v01 is marked</p></div>
 <div class="measure"><p><code>legacy</code> in the manifest: it predates prompt storage and deterministic seeds, so</p></div>
 <div class="measure"><p>its transcripts cannot be recovered.</p></div>
+<div class="tablewrap"><table><thead><tr><th>20</th><th>Chart dispatch keyed on <code>D.width2</code>, so the v03 data shape (no <code>width2</code>) fell through to the v01 code path and threw on <code>D.meta.leak_rate</code></th><th>Every chart and the transcript browser on the newest tab silently failed to render; the page looked fine but was blank below each figure title</th><th>User reported graphs not rendering</th><th><strong>CHANGED</strong> — v03 charts were broken from first publish until this fix</th></tr></thead><tbody>
+</tbody></table></div>
