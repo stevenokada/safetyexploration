@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "date": "2026-09-04T06:58:54+00:00",
+  "date": "2026-09-04T06:59:13+00:00",
   "summary": "Re-run on three open-weight R-lens models. Adds an in-distribution arithmetic task with matched parallel controls, extends the width sweep to k=64 (still unbroken), computes architectural upper bounds with DeepMind's serial_depth calculator, and retests filler with budgets matched to the model's own CoT length.",
   "tab_label": "J-Lens \u00b7 3 models",
-  "git_commit": "64d5a04",
-  "git_dirty": true,
+  "git_commit": "35e84fa",
+  "git_dirty": false,
   "git_branch": "stevenokada/larvacean",
-  "n_files": 36,
-  "total_rows": 24914,
+  "n_files": 59,
+  "total_rows": 26730,
   "data_files": {
     "A_default_claude-opus-4.5.csv": {
       "sha256": "ae7ce1541acd",
@@ -69,6 +69,94 @@
       "sha256": "fb2e3f7ab6bf",
       "rows": 400
     },
+    "F_k2_f0.csv": {
+      "sha256": "022509a137ad",
+      "rows": 30
+    },
+    "F_k2_f100.csv": {
+      "sha256": "c0910a02fa6f",
+      "rows": 30
+    },
+    "F_k2_f1344.csv": {
+      "sha256": "ea8db86b3418",
+      "rows": 30
+    },
+    "F_k2_f2688.csv": {
+      "sha256": "c8f0905d1760",
+      "rows": 30
+    },
+    "F_k3_f0.csv": {
+      "sha256": "4edf07a0c8fb",
+      "rows": 30
+    },
+    "F_k3_f100.csv": {
+      "sha256": "00b8fab9f1de",
+      "rows": 30
+    },
+    "F_k3_f1650.csv": {
+      "sha256": "4d3e2df651b2",
+      "rows": 30
+    },
+    "F_k3_f3300.csv": {
+      "sha256": "14610b324dbe",
+      "rows": 30
+    },
+    "F_k4_f0.csv": {
+      "sha256": "310e7f64a29b",
+      "rows": 30
+    },
+    "F_k4_f100.csv": {
+      "sha256": "38b761279e2c",
+      "rows": 30
+    },
+    "F_k4_f1894.csv": {
+      "sha256": "0d489da6ec7a",
+      "rows": 30
+    },
+    "F_k4_f3788.csv": {
+      "sha256": "2ebbc4a6c76c",
+      "rows": 30
+    },
+    "F_k6_f0.csv": {
+      "sha256": "a100d5276522",
+      "rows": 30
+    },
+    "F_k6_f100.csv": {
+      "sha256": "9b5133ffbbed",
+      "rows": 30
+    },
+    "F_k6_f2422.csv": {
+      "sha256": "658578f5c484",
+      "rows": 30
+    },
+    "F_k6_f4844.csv": {
+      "sha256": "d94e21977146",
+      "rows": 30
+    },
+    "W2_parallel_count_gemma-3-27b-it.csv": {
+      "sha256": "b13ae140de8c",
+      "rows": 180
+    },
+    "W2_parallel_count_qwen3.6-27b.csv": {
+      "sha256": "48b4e8af6850",
+      "rows": 180
+    },
+    "W2_parallel_count_qwen3.6-35b-a3b.csv": {
+      "sha256": "f0a8c1aa61ec",
+      "rows": 189
+    },
+    "W2_parallel_gemma-3-27b-it.csv": {
+      "sha256": "414980e46b98",
+      "rows": 180
+    },
+    "W2_parallel_qwen3.6-27b.csv": {
+      "sha256": "41127208011a",
+      "rows": 180
+    },
+    "W2_parallel_qwen3.6-35b-a3b.csv": {
+      "sha256": "5339e020e333",
+      "rows": 180
+    },
     "W_parallel_claude-opus-4.5.csv": {
       "sha256": "64e59af2f835",
       "rows": 280
@@ -104,6 +192,10 @@
     "W_serial_gemini-2.5-flash.csv": {
       "sha256": "d46985faef1b",
       "rows": 280
+    },
+    "cotlen.csv": {
+      "sha256": "375b2813de49",
+      "rows": 247
     },
     "grid2_claude-opus-4.5.csv": {
       "sha256": "07749fb2b559",
@@ -155,5 +247,5 @@
     }
   },
   "headline": {},
-  "artifact_url": null
+  "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b"
 }
