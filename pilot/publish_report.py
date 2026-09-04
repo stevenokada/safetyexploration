@@ -56,7 +56,7 @@ def data_fingerprint():
     files = {}
     for p in sorted(ROOT.glob("*.csv")):
         if p.name.startswith(("grid", "A_", "B_", "W_", "W2_", "J_", "JW_",
-                              "F_", "cotlen", "ar_")):
+                              "F_", "cotlen", "ar_", "FACTS_", "G_", "FS_", "S_")):
             h = hashlib.sha256(p.read_bytes()).hexdigest()[:12]
             n = sum(1 for _ in p.open()) - 1
             files[p.name] = {"sha256": h, "rows": n}
