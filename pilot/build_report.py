@@ -54,6 +54,15 @@ def main():
             f'{v["summary"]}</p>\n'
             + narrative.read_text() + "\n</div>")
 
+    notes = REPORTS / "notes.html"
+    if notes.exists():
+        tabs.append('<button role="tab" id="tab-notes" aria-controls="panel-notes" '
+                    'aria-selected="false" data-tab="notes">'
+                    '<span class="tv">Bugs &amp; corrections</span>'
+                    '<span class="td">applies to all runs</span></button>')
+        panels.append('<div role="tabpanel" id="panel-notes" aria-labelledby="tab-notes" '
+                      'data-panel="notes" hidden>\n' + notes.read_text() + "\n</div>")
+
     html = f"""<title>Opaque Serial Depth</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

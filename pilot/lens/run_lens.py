@@ -53,7 +53,9 @@ def build_prompt(tok, rng, k, condition, filler_n=100):
         {"role": "user", "content": q},
     ]
     text = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
-    text += "Answer:"          # prefill, matching the behavioral forced-answer setup
+    text += "Answer: "         # prefill INCLUDING the space: Qwen tokenizes
+                               # " 47" as space|4|7, so without the space the next
+                               # token is the space and correctness never matches
     return text, gold, inter
 
 
@@ -175,7 +177,14 @@ def run(model, tok, lens, args, device):
                 T = enc["input_ids"].shape[1]
                 pos = list(range(max(0, T - args.tail), T))
 
+                # the prompt ends with the "Answer:" prefill, so the model's next
+                # token IS the leading digit of its answer -- correctness for free
+                # from the same forward pass, no generation needed
+                final_logits = out.logits[:, -1, :]
+                pred_tok = final_logits.argmax(dim=-1).tolist()
+
                 for bi, (idx, gold, inter) in enumerate(meta):
+                    solved = int(pred_tok[bi] == first_token_id(tok, gold))
                     targets = {f"hop{m+1}": first_token_id(tok, v)
                                for m, v in enumerate(inter)}
                     # null control: a two-digit value that is not any intermediate
@@ -200,6 +209,7 @@ def run(model, tok, lens, args, device):
                             for pi, p in enumerate(pos):
                                 rows.append({
                                     "k": k, "condition": cond, "prompt": idx,
+                                    "solved": solved,
                                     "layer": layer, "pos_from_end": T - p,
                                     "target": label, "rank": int(rank[pi]),
                                     "prob": float(prob[pi]),

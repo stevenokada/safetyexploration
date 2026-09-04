@@ -1,0 +1,11 @@
+### google/gemma-3-27b-it fewshot=1
+   filler  2 0.453      0     0     2.473 0.277  0.270
+   filler  3 0.130      1     0     3.513 0.320  0.550
+   filler  4 0.073      2     0     3.448 0.290  0.633
+   filler  6 0.070      0     0     3.080 0.197  0.730
+immediate  2 0.470      1     0     2.887 0.363  0.167
+immediate  3 0.163      0     0     3.493 0.337  0.500
+immediate  4 0.093      0     0     3.197 0.273  0.633
+immediate  6 0.060      0     0     3.134 0.203  0.733
+validity audit: all 8 cells passed
+### google/gemma-3-27b-it fewshot=3

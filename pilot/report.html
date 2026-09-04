@@ -198,6 +198,7 @@ footer{border-top:1px solid var(--rule); margin-top:64px; padding:28px 0 72px;
 <div class="tabs" role="tablist" aria-label="Experiment runs">
 <button role="tab" id="tab-v02" aria-controls="panel-v02" aria-selected="true" data-tab="v02"><span class="tv">J-Lens · 3 models</span><span class="td">2026-09-04 · 26,730 trials</span></button>
 <button role="tab" id="tab-v01" aria-controls="panel-v01" aria-selected="false" data-tab="v01"><span class="tv">Pilot · 6 mixed models</span><span class="td">2026-09-04 · 24,914 trials</span></button>
+<button role="tab" id="tab-notes" aria-controls="panel-notes" aria-selected="false" data-tab="notes"><span class="tv">Bugs &amp; corrections</span><span class="td">applies to all runs</span></button>
 </div>
 
 <div role="tabpanel" id="panel-v02" aria-labelledby="tab-v02" data-panel="v02">
@@ -492,6 +493,38 @@ begin with a letter in A-M? Answer with just the number.</pre>
 </section>
 </div>
 
+</div>
+<div role="tabpanel" id="panel-notes" aria-labelledby="tab-notes" data-panel="notes" hidden>
+<div class="measure"><h2>Bug and correction log</h2></div>
+<div class="measure"><p>Every defect found in this project, what it affected, how it surfaced, and whether</p></div>
+<div class="measure"><p>any published conclusion changed. Kept because a result is only as trustworthy as</p></div>
+<div class="measure"><p>the instrument, and several of these silently produced plausible-looking numbers.</p></div>
+<div class="measure"><p>Status key: <strong>CHANGED</strong> = a reported conclusion moved. <strong>CAUGHT</strong> = found before it</p></div>
+<div class="measure"><p>reached a conclusion.</p></div>
+<div class="tablewrap"><table><thead><tr><th>#</th><th>Bug</th><th>Effect</th><th>Found by</th><th>Status</th></tr></thead><tbody>
+</tbody></table></div>
+<div class="measure"><p>|---|-----|--------|----------|--------|</p></div>
+<div class="tablewrap"><table><thead><tr><th>1</th><th>Only the chain up to hop <code>k</code> was stored, so answers landing past <code>k</code> were recorded as "off-cycle" rather than overshoot</th><th>The central overshoot finding was invisible; wrong answers looked random</th><th>Inspecting individual predictions against the full cycle</th><th><strong>CHANGED</strong> — overshoot became a headline result</th></tr></thead><tbody>
+<tr><td>2</td><td>Provider-side reasoning was disabled in *all* conditions, including chain-of-thought</td><td>The CoT validity baseline was not a real CoT condition</td><td>Reviewing per-condition token counts</td><td><strong>CHANGED</strong> — CoT baselines re-run</td></tr>
+<tr><td>3</td><td>GPT-5.1 ignored the reason-first instruction on ~50% of trials (model behaviour, not our code)</td><td>Its CoT baseline was a second immediate condition; its depth numbers were uninterpretable</td><td>Reading transcripts after an odd 50% ceiling</td><td><strong>CHANGED</strong> — model excluded from depth claims</td></tr>
+<tr><td>4</td><td>pandas' <code>str</code> dtype preserves NA through <code>astype(str)</code>, so empty API responses stayed null</td><td>Tagging crashed; 6 empty Kimi responses had been silently scored as wrong answers</td><td>Crash while building the transcript tagger</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>5</td><td><code>--tag</code> in <code>inspect_runs.py label</code> was used both as a filter and as the label to write</td><td>The label command matched zero rows and wrote nothing</td><td>Trying to label the GPT-5.1 trials</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>6</td><td><code>publish_report.py</code> read git state *after* staging had written files</td><td>Every version stamped itself "dirty"</td><td>First staging run</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>7</td><td>Version fingerprint matched only the original filename prefixes</td><td>New result files were invisible; v02 undercounted 26,730 trials as 24,914</td><td>Staging reported an implausible trial count</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>8</td><td><code>--filler-n</code> was passed to <code>pilot2.py</code>, which had no such flag</td><td>The entire first CoT-matched filler sweep made zero API calls; the log looked like empty results rather than an error</td><td>Empty summary rows in the log</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>9</td><td>Seeds came from <code>hash()</code> on a tuple containing strings, and Python randomizes string hashing per process</td><td>Prompts were unreproducible, and any two conditions run as separate invocations were <strong>not paired</strong> despite the harness appearing to pair them</td><td>Checking whether prompts could be regenerated for the transcript browser</td><td><strong>CHANGED</strong> — filler-sweep and few-shot McNemar tests recomputed as unpaired</td></tr>
+<tr><td>10</td><td>Lens loader assumed <code>J</code> was a stacked 3-D tensor; the shipped file stores a dict keyed by layer</td><td>Would have crashed on first use</td><td>Running <code>inspect_lens.py</code> before the main run</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>11</td><td>Full-vocabulary <code>argsort</code> (248k entries) at every layer × position</td><td>~3,000 sorts per prompt; would have turned a 10-minute run into hours</td><td>Estimating runtime before launching</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>12</td><td>Lens correctness used the token after the <code>Answer:</code> prefill, but Qwen emits a *space* token first</td><td>Every trial scored unsolved (0% vs the true ~40%)</td><td>"solved: 0.0%" contradicting the behavioural rate</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>13</td><td>Serial-depth replica used <code>hidden_dim // num_heads</code>, and 5120/24 is not an integer</td><td>Qwen dense bound failed silently — the error was swallowed by a <code>grep</code> in the runner</td><td>Missing rows in the bounds table</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>14</td><td>Depot name "Foxtrot" tokenizes as `Fo</td><td>xt</td><td>rot`</td><td>One of eight possible answers would have been unreadable by a single-token lens</td><td>Tokenization precondition check</td><td><strong>CAUGHT</strong></td></tr>
+<tr><td>15</td><td>The first parallelizable control aggregated by <strong>sum</strong>, which is expensive to compute mentally</td><td>It collapsed like the serial task, which would have read as "the depth effect does not replicate on arithmetic"</td><td>Suspicion at a control failing in the same shape as the treatment</td><td><strong>CAUGHT</strong> — added a cheap-aggregation (max) variant</td></tr>
+</tbody></table></div>
+<div class="measure"><h3>Standing methodological caveats</h3></div>
+<div class="measure"><ul><li><strong>Few-shot count was a hidden constant.</strong> Fixed at 3 from the first run and never varied. A 2×2 found 1-shot both more accurate and half as prone to overshoot, so the published overshoot magnitude is partly a prompt artifact. Powered replication in progress.</li></ul></div>
+<div class="measure"><ul><li><strong>Underpowered cells.</strong> Most per-model, per-depth cells are n=30–40, adequate for a 67-point effect and useless for a 5-point one.</li></ul></div>
+<div class="measure"><ul><li><strong>Lens used outside its fitted regime.</strong> The R-lens was estimated at <code>t_max=128</code> over 25 prompts; our prompts run ~300 tokens.</li></ul></div>
+<div class="measure"><ul><li><strong>Single-token lens targets are digits</strong>, which the workspace paper flags as a case the method may not read.</li></ul></div>
 </div>
 
 <footer class="measure">
