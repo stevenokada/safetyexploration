@@ -33,3 +33,11 @@
 <tr><td>18</td><td>The audit counted a model that declines to answer as a parse failure</td><td>Conflated "we could not read the answer" with "there was no answer", hiding a real behaviour</td><td>Reading the raw completions behind an unparseable rate</td><td><strong>CAUGHT</strong> — now tagged <code>model_declined</code>, scored wrong, reported separately</td></tr>
 <tr><td>19</td><td>Lens correctness compared against the token after an <code>Answer:</code> prefill, but Qwen emits a space token first</td><td>Every trial scored unsolved (0.0% against a true ~40%), making the solved/unsolved split impossible</td><td>A solve rate that contradicted the behavioural runs</td><td><strong>CAUGHT</strong></td></tr>
 </tbody></table></div>
+<div class="measure"><h3>Standing requirements (enforced by the build)</h3></div>
+<div class="measure"><p><code>build_report.py</code> refuses to build unless every experiment page carries <strong>graphs</strong></p></div>
+<div class="measure"><p>and a <strong>transcript browser</strong> backed by at least ten real trials, and unless every</p></div>
+<div class="measure"><p>chart mount in a narrative has a renderer that fills it. Both were added by hand</p></div>
+<div class="measure"><p>and late on earlier versions, which is exactly why they are now a gate rather than</p></div>
+<div class="measure"><p>a habit. Use <code>collect_transcripts.py</code> to gather the transcripts. v01 is marked</p></div>
+<div class="measure"><p><code>legacy</code> in the manifest: it predates prompt storage and deterministic seeds, so</p></div>
+<div class="measure"><p>its transcripts cannot be recovered.</p></div>

@@ -169,7 +169,9 @@
         "overshoot k=4 (default)": 0.717
       },
       "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b",
-      "tab_label": "Pilot \u00b7 6 mixed models"
+      "tab_label": "Pilot \u00b7 6 mixed models",
+      "legacy": true,
+      "legacy_reason": "predates prompt storage and deterministic seeds, so its transcripts cannot be recovered or regenerated; the models it used are also outside the current J-Lens-only set"
     },
     {
       "version": 2,

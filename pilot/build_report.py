@@ -16,11 +16,46 @@ Usage
   python3 build_report.py                  rebuild report.html from the archive
 """
 import json
+import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
 REPORTS = ROOT / "reports"
+
+
+def check_version(vid, narrative, data, legacy):
+    """Every experiment page must ship with graphs AND a transcript browser.
+
+    These are the two things that let a reader check a claim instead of trusting
+    it, and both were added late and by hand before this gate existed. Versions
+    predating the requirement are marked `legacy` in the manifest and only warn.
+    """
+    problems = []
+    if not re.search(r'data-fig="[^"]+"', narrative):
+        problems.append("no chart mounts (data-fig=...) in the narrative")
+    if 'data-tx="controls"' not in narrative or 'data-tx="list"' not in narrative:
+        problems.append('no transcript browser (needs data-tx="controls" and data-tx="list")')
+    n_tx = len(data.get("transcripts") or [])
+    if n_tx == 0:
+        problems.append("no transcripts in report_data.json "
+                        "(collect them with pilot2.py, which stores prompts)")
+    elif n_tx < 10:
+        problems.append(f"only {n_tx} transcripts; aim for >=10 across conditions")
+    # a chart mount nothing fills renders as an empty box
+    mounts = set(re.findall(r'data-(?:fig|leg|tbl)="([^"]+)"', narrative))
+    renderer = (ASSETS / "charts.js").read_text()
+    unfilled = [m for m in mounts if f'"{m}"' not in renderer]
+    if unfilled:
+        problems.append(f"mounts with no renderer: {', '.join(sorted(unfilled))}")
+    if not problems:
+        return True
+    tag = "WARN (legacy)" if legacy else "FAIL"
+    print(f"  {tag} {vid}:")
+    for x in problems:
+        print(f"      - {x}")
+    return legacy
 
 
 def main():
@@ -53,6 +88,22 @@ def main():
             f'{v["total_rows"]:,} logged trials across {v["n_files"]} result files<br>'
             f'{v["summary"]}</p>\n'
             + narrative.read_text() + "\n</div>")
+
+    print("checking every version ships graphs + a transcript browser ...")
+    ok = True
+    for v in versions:
+        vid = f"v{v['version']:02d}"
+        nar = REPORTS / vid / "narrative.html"
+        dat = REPORTS / vid / "report_data.json"
+        if not nar.exists():
+            continue
+        ok &= check_version(vid, nar.read_text(), json.loads(dat.read_text()),
+                            bool(v.get("legacy")))
+    if not ok:
+        sys.exit("\nrefusing to build: an experiment page is missing graphs or "
+                 "transcripts. Add them, or mark the version \"legacy\": true in "
+                 "reports/manifest.json if it predates this requirement.")
+    print("  all versions pass\n")
 
     notes = REPORTS / "notes.html"
     if notes.exists():

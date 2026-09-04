@@ -35,3 +35,13 @@ reached a conclusion.
 | 17 | The answer-format hint said "city name" at every depth, but the chain answers with a letter at k=3, an element at k=4 and a number at k=5 | The model stalled after `Answer:` rather than answer in a format it was told not to use; 30% empty responses at k=4 | Checking `finish_reason` on the empty responses (all `stop`, not `length`) | **CAUGHT** |
 | 18 | The audit counted a model that declines to answer as a parse failure | Conflated "we could not read the answer" with "there was no answer", hiding a real behaviour | Reading the raw completions behind an unparseable rate | **CAUGHT** — now tagged `model_declined`, scored wrong, reported separately |
 | 19 | Lens correctness compared against the token after an `Answer:` prefill, but Qwen emits a space token first | Every trial scored unsolved (0.0% against a true ~40%), making the solved/unsolved split impossible | A solve rate that contradicted the behavioural runs | **CAUGHT** |
+
+## Standing requirements (enforced by the build)
+
+`build_report.py` refuses to build unless every experiment page carries **graphs**
+and a **transcript browser** backed by at least ten real trials, and unless every
+chart mount in a narrative has a renderer that fills it. Both were added by hand
+and late on earlier versions, which is exactly why they are now a gate rather than
+a habit. Use `collect_transcripts.py` to gather the transcripts. v01 is marked
+`legacy` in the manifest: it predates prompt storage and deterministic seeds, so
+its transcripts cannot be recovered.
