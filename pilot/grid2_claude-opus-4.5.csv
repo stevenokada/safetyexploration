@@ -1,0 +1,1726 @@
+k,condition,idx,gold,pred,correct,leak,eff_hops,chain,error,completion
+1,immediate,0,BY,BY,1,0,1,NN BY,0, BY
+1,immediate,1,XF,XF,1,0,1,PQ XF,0, XF
+1,immediate,2,YO,YO,1,0,1,CV YO,0, YO
+1,immediate,3,BY,BY,1,0,1,NJ BY,0, BY
+1,immediate,4,MK,MK,1,0,1,DX MK,0, MK
+1,immediate,5,EC,EC,1,0,1,TP EC,0, EC
+1,immediate,6,IH,IH,1,0,1,ZR IH,0, IH
+1,immediate,7,YN,YN,1,0,1,NW YN,0, YN
+1,immediate,8,KS,KS,1,0,1,EJ KS,0, KS
+1,immediate,9,YC,YC,1,0,1,YA YC,0, YC
+1,immediate,10,HR,HR,1,0,1,FU HR,0, HR
+1,immediate,11,WC,WC,1,0,1,GP WC,0, WC
+1,immediate,12,NJ,NJ,1,0,1,XX NJ,0, NJ
+1,immediate,13,FM,FM,1,0,1,OL FM,0, FM
+1,immediate,14,SE,SE,1,0,1,JR SE,0, SE
+1,immediate,15,CY,CY,1,0,1,CH CY,0, CY
+1,immediate,16,ST,ST,1,0,1,GJ ST,0, ST
+1,immediate,17,HI,HI,1,0,1,WJ HI,0, HI
+1,immediate,18,WF,WF,1,0,1,QY WF,0, WF
+1,immediate,19,IN,IN,1,0,1,KF IN,0, IN
+1,immediate,20,ZH,ZH,1,0,1,LZ ZH,0, ZH
+1,immediate,21,BP,BP,1,0,1,QU BP,0, BP
+1,immediate,22,BX,BX,1,0,1,OU BX,0, BX
+1,immediate,23,HC,HC,1,0,1,OX HC,0, HC
+1,immediate,24,GN,GN,1,0,1,VA GN,0, GN
+1,immediate,25,BS,BS,1,0,1,OE BS,0, BS
+1,immediate,26,YM,YM,1,0,1,KU YM,0, YM
+1,immediate,27,HR,HR,1,0,1,CU HR,0, HR
+1,immediate,28,ZT,ZT,1,0,1,EG ZT,0, ZT
+1,immediate,29,CA,CA,1,0,1,DT CA,0, CA
+1,filler,0,BY,BY,1,0,1,NN BY,0, BY
+1,filler,1,XF,XF,1,0,1,PQ XF,0, XF
+1,filler,2,YO,YO,1,0,1,CV YO,0, YO
+1,filler,3,BY,BY,1,0,1,NJ BY,0, BY
+1,filler,4,MK,MK,1,0,1,DX MK,0, MK
+1,filler,5,EC,EC,1,0,1,TP EC,0, EC
+1,filler,6,IH,IH,1,0,1,ZR IH,0, IH
+1,filler,7,YN,YN,1,0,1,NW YN,0, YN
+1,filler,8,KS,KS,1,0,1,EJ KS,0, KS
+1,filler,9,YC,YC,1,0,1,YA YC,0, YC
+1,filler,10,HR,HR,1,0,1,FU HR,0, HR
+1,filler,11,WC,WC,1,0,1,GP WC,0, WC
+1,filler,12,NJ,NJ,1,0,1,XX NJ,0, NJ
+1,filler,13,FM,FM,1,0,1,OL FM,0, FM
+1,filler,14,SE,SE,1,0,1,JR SE,0, SE
+1,filler,15,CY,CY,1,0,1,CH CY,0, CY
+1,filler,16,ST,ST,1,0,1,GJ ST,0, ST
+1,filler,17,HI,HI,1,0,1,WJ HI,0, HI
+1,filler,18,WF,WF,1,0,1,QY WF,0, WF
+1,filler,19,IN,IN,1,0,1,KF IN,0, IN
+1,filler,20,ZH,ZH,1,0,1,LZ ZH,0, ZH
+1,filler,21,BP,BP,1,0,1,QU BP,0, BP
+1,filler,22,BX,BX,1,0,1,OU BX,0, BX
+1,filler,23,HC,HC,1,0,1,OX HC,0, HC
+1,filler,24,GN,GN,1,0,1,VA GN,0, GN
+1,filler,25,BS,BS,1,0,1,OE BS,0, BS
+1,filler,26,YM,YM,1,0,1,KU YM,0, YM
+1,filler,27,HR,HR,1,0,1,CU HR,0, HR
+1,filler,28,ZT,ZT,1,0,1,EG ZT,0, ZT
+1,filler,29,CA,CA,1,0,1,DT CA,0, CA
+1,cot,0,BY,BY,1,0,1,NN BY,0,"I need to find what NN maps to in the mapping table.
+
+Looking at the mapping table:
+NN -> BY
+
+Following the mapping once from NN, I land on BY.
+
+Answer: BY"
+1,cot,1,XF,XF,1,0,1,PQ XF,0,"Following the chain: PQ -> XF.
+Answer: XF"
+1,cot,2,YO,YO,1,0,1,CV YO,0,"Following the chain: CV -> YO.
+Answer: YO"
+1,cot,3,BY,BY,1,0,1,NJ BY,0,"Following the chain: NJ -> BY.
+Answer: BY"
+1,cot,4,MK,MK,1,0,1,DX MK,0,"I need to find what DX maps to in the mapping table.
+
+Looking at the mapping table:
+DX -> MK
+
+Answer: MK"
+1,cot,5,EC,EC,1,0,1,TP EC,0,"Following the chain: TP -> EC.
+Answer: EC"
+1,cot,6,IH,IH,1,0,1,ZR IH,0,"Following the chain: ZR -> IH.
+Answer: IH"
+1,cot,7,YN,YN,1,0,1,NW YN,0,"Following the chain: NW -> YN.
+Answer: YN"
+1,cot,8,KS,KS,1,0,1,EJ KS,0,"I need to find what EJ maps to in the mapping table.
+
+Looking at the mapping table:
+EJ -> KS
+
+So starting at EJ and following the mapping once, I land on KS.
+
+Answer: KS"
+1,cot,9,YC,YC,1,0,1,YA YC,0,"I need to find what YA maps to in the mapping table.
+
+Looking at the mapping table:
+YA -> YC
+
+Following the mapping once from YA, I land on YC.
+
+Answer: YC"
+1,cot,10,HR,HR,1,0,1,FU HR,0,"Following the chain: FU -> HR.
+Answer: HR"
+1,cot,11,WC,WC,1,0,1,GP WC,0,"Following the chain: GP -> WC.
+Answer: WC"
+1,cot,12,NJ,NJ,1,0,1,XX NJ,0,"Following the chain: XX -> NJ.
+Answer: NJ"
+1,cot,13,FM,FM,1,0,1,OL FM,0,"Following the chain: OL -> FM.
+Answer: FM"
+1,cot,14,SE,SE,1,0,1,JR SE,0,"Following the chain: JR -> SE.
+Answer: SE"
+1,cot,15,CY,CY,1,0,1,CH CY,0,"Following the chain: CH -> CY.
+Answer: CY"
+1,cot,16,ST,ST,1,0,1,GJ ST,0,"I need to find what GJ maps to in the mapping table.
+
+Looking at the mapping table:
+GJ -> ST
+
+Following the mapping once from GJ, I land on ST.
+
+Answer: ST"
+1,cot,17,HI,HI,1,0,1,WJ HI,0,"Following the chain: WJ -> HI.
+Answer: HI"
+1,cot,18,WF,WF,1,0,1,QY WF,0,"Following the chain: QY -> WF.
+Answer: WF"
+1,cot,19,IN,IN,1,0,1,KF IN,0,"Following the chain: KF -> IN.
+Answer: IN"
+1,cot,20,ZH,ZH,1,0,1,LZ ZH,0,"Following the chain: LZ -> ZH.
+Answer: ZH"
+1,cot,21,BP,BP,1,0,1,QU BP,0,"Following the chain: QU -> BP.
+Answer: BP"
+1,cot,22,BX,BX,1,0,1,OU BX,0,"Following the chain: OU -> BX.
+Answer: BX"
+1,cot,23,HC,HC,1,0,1,OX HC,0,"Following the chain: OX -> HC.
+Answer: HC"
+1,cot,24,GN,GN,1,0,1,VA GN,0,"Following the chain: VA -> GN.
+Answer: GN"
+1,cot,25,BS,BS,1,0,1,OE BS,0,"Following the chain: OE -> BS.
+Answer: BS"
+1,cot,26,YM,YM,1,0,1,KU YM,0,"Following the chain: KU -> YM.
+Answer: YM"
+1,cot,27,HR,HR,1,0,1,CU HR,0,"Following the chain: CU -> HR.
+Answer: HR"
+1,cot,28,ZT,ZT,1,0,1,EG ZT,0,"Following the chain: EG -> ZT.
+Answer: ZT"
+1,cot,29,CA,CA,1,0,1,DT CA,0,"Following the chain: DT -> CA.
+Answer: CA"
+2,immediate,0,EY,EY,1,0,2,CN LC EY,0, EY
+2,immediate,1,TZ,TZ,1,0,2,RV GU TZ,0, TZ
+2,immediate,2,HF,IE,0,0,3,JS MB HF,0, IE
+2,immediate,3,IY,UH,0,0,3,DL VR IY,0, UH
+2,immediate,4,SG,YN,0,0,3,KB PW SG,0, YN
+2,immediate,5,PM,VW,0,0,3,EG XR PM,0, VW
+2,immediate,6,SH,SZ,0,0,3,AG HY SH,0, SZ
+2,immediate,7,RO,MQ,0,0,3,IF XF RO,0, MQ
+2,immediate,8,SN,KJ,0,0,3,KB FH SN,0, KJ
+2,immediate,9,SB,SB,1,0,2,FT HM SB,0, SB
+2,immediate,10,SO,SO,1,0,2,TC DI SO,0, SO
+2,immediate,11,YV,SZ,0,0,3,BM JD YV,0, SZ
+2,immediate,12,UO,QL,0,0,3,WW UA UO,0, QL
+2,immediate,13,MO,IS,0,0,3,LB NW MO,0, IS
+2,immediate,14,QV,TU,0,0,3,UQ NT QV,0, TU
+2,immediate,15,ZN,AT,0,0,3,GB KH ZN,0, AT
+2,immediate,16,AV,AV,1,0,2,AM WT AV,0, AV
+2,immediate,17,LV,LV,1,0,2,TF VF LV,0, LV
+2,immediate,18,QZ,DR,0,0,3,RT KQ QZ,0, DR
+2,immediate,19,XP,MB,0,0,3,AP KI XP,0, MB
+2,immediate,20,GA,AX,0,0,3,TL XO GA,0, AX
+2,immediate,21,OW,TE,0,0,3,DV QX OW,0, TE
+2,immediate,22,LZ,JN,0,0,3,QP CD LZ,0, JN
+2,immediate,23,IS,GM,0,0,3,XE YC IS,0, GM
+2,immediate,24,PQ,MS,0,0,3,MI GT PQ,0, MS
+2,immediate,25,EW,EW,1,0,2,TV VF EW,0, EW
+2,immediate,26,RJ,AJ,0,0,3,MY RV RJ,0, AJ
+2,immediate,27,SZ,SZ,1,0,2,YN YK SZ,0, SZ
+2,immediate,28,RL,BA,0,0,3,PB EM RL,0, BA
+2,immediate,29,XV,YT,0,0,3,PR JB XV,0, YT
+2,filler,0,EY,EY,1,0,2,CN LC EY,0, EY
+2,filler,1,TZ,TZ,1,0,2,RV GU TZ,0, TZ
+2,filler,2,HF,IE,0,0,3,JS MB HF,0, IE
+2,filler,3,IY,UH,0,0,3,DL VR IY,0, UH
+2,filler,4,SG,YN,0,0,3,KB PW SG,0, YN
+2,filler,5,PM,VW,0,0,3,EG XR PM,0, VW
+2,filler,6,SH,SZ,0,0,3,AG HY SH,0, SZ
+2,filler,7,RO,MQ,0,0,3,IF XF RO,0, MQ
+2,filler,8,SN,KJ,0,0,3,KB FH SN,0, KJ
+2,filler,9,SB,SB,1,0,2,FT HM SB,0, SB
+2,filler,10,SO,SO,1,0,2,TC DI SO,0, SO
+2,filler,11,YV,SZ,0,0,3,BM JD YV,0, SZ
+2,filler,12,UO,QL,0,0,3,WW UA UO,0, QL
+2,filler,13,MO,MO,1,0,2,LB NW MO,0, MO
+2,filler,14,QV,TU,0,0,3,UQ NT QV,0, TU
+2,filler,15,ZN,ZN,1,0,2,GB KH ZN,0, ZN
+2,filler,16,AV,AV,1,0,2,AM WT AV,0, AV
+2,filler,17,LV,DV,0,0,3,TF VF LV,0, DV
+2,filler,18,QZ,DR,0,0,3,RT KQ QZ,0, DR
+2,filler,19,XP,MB,0,0,3,AP KI XP,0, MB
+2,filler,20,GA,AX,0,0,3,TL XO GA,0, AX
+2,filler,21,OW,OW,1,0,2,DV QX OW,0, OW
+2,filler,22,LZ,LZ,1,0,2,QP CD LZ,0, LZ
+2,filler,23,IS,GM,0,0,3,XE YC IS,0, GM
+2,filler,24,PQ,MS,0,0,3,MI GT PQ,0, MS
+2,filler,25,EW,EW,1,0,2,TV VF EW,0, EW
+2,filler,26,RJ,RJ,1,0,2,MY RV RJ,0, RJ
+2,filler,27,SZ,SZ,1,0,2,YN YK SZ,0, SZ
+2,filler,28,RL,BA,0,0,3,PB EM RL,0, BA
+2,filler,29,XV,YT,0,0,3,PR JB XV,0, YT
+2,cot,0,EY,EY,1,0,2,CN LC EY,0,"I need to follow the mapping starting at CN for 2 steps.
+
+Step 1: CN -> LC
+Step 2: LC -> EY
+
+Answer: EY"
+2,cot,1,TZ,TZ,1,0,2,RV GU TZ,0,"I need to follow the mapping starting at RV, two times.
+
+Step 1: RV -> GU
+Step 2: GU -> TZ
+
+Answer: TZ"
+2,cot,2,HF,HF,1,0,2,JS MB HF,0,"I need to follow the mapping starting at JS, two times.
+
+Step 1: JS -> MB
+Step 2: MB -> HF
+
+Answer: HF"
+2,cot,3,IY,IY,1,0,2,DL VR IY,0,"I need to follow the mapping starting at DL, two times.
+
+Step 1: DL -> VR
+Step 2: VR -> IY
+
+Answer: IY"
+2,cot,4,SG,SG,1,0,2,KB PW SG,0,"I need to follow the mapping starting at KB, two times.
+
+Step 1: KB -> PW
+Step 2: PW -> SG
+
+Answer: SG"
+2,cot,5,PM,PM,1,0,2,EG XR PM,0,"I need to follow the mapping starting at EG, two times.
+
+Step 1: EG -> XR
+Step 2: XR -> PM
+
+Answer: PM"
+2,cot,6,SH,SH,1,0,2,AG HY SH,0,"I need to follow the mapping starting at AG, two times.
+
+Step 1: AG -> HY
+Step 2: HY -> SH
+
+Answer: SH"
+2,cot,7,RO,RO,1,0,2,IF XF RO,0,"I need to follow the mapping starting at IF, two times.
+
+Step 1: IF -> XF
+Step 2: XF -> RO
+
+Answer: RO"
+2,cot,8,SN,SN,1,0,2,KB FH SN,0,"I need to follow the mapping starting at KB, two times.
+
+Step 1: KB -> FH
+Step 2: FH -> SN
+
+Answer: SN"
+2,cot,9,SB,SB,1,0,2,FT HM SB,0,"I need to follow the mapping starting at FT, two times.
+
+Step 1: FT -> HM
+Step 2: HM -> SB
+
+Answer: SB"
+2,cot,10,SO,SO,1,0,2,TC DI SO,0,"I need to follow the mapping starting at TC for 2 steps.
+
+Step 1: TC -> DI
+Step 2: DI -> SO
+
+Answer: SO"
+2,cot,11,YV,YV,1,0,2,BM JD YV,0,"I need to follow the mapping starting at BM for 2 steps.
+
+Step 1: BM -> JD
+Step 2: JD -> YV
+
+Answer: YV"
+2,cot,12,UO,UO,1,0,2,WW UA UO,0,"I need to follow the mapping starting at WW for 2 steps.
+
+Step 1: WW -> UA
+Step 2: UA -> UO
+
+Answer: UO"
+2,cot,13,MO,MO,1,0,2,LB NW MO,0,"I need to follow the mapping starting at LB, two times.
+
+Step 1: LB -> NW
+Step 2: NW -> MO
+
+Answer: MO"
+2,cot,14,QV,QV,1,0,2,UQ NT QV,0,"I need to follow the mapping starting at UQ for 2 steps.
+
+Step 1: UQ -> NT
+Step 2: NT -> QV
+
+Answer: QV"
+2,cot,15,ZN,ZN,1,0,2,GB KH ZN,0,"I need to follow the mapping starting at GB, two times.
+
+Step 1: GB -> KH
+Step 2: KH -> ZN
+
+Answer: ZN"
+2,cot,16,AV,AV,1,0,2,AM WT AV,0,"I need to follow the mapping starting at AM for 2 steps.
+
+Step 1: AM -> WT
+Step 2: WT -> AV
+
+Answer: AV"
+2,cot,17,LV,LV,1,0,2,TF VF LV,0,"I need to follow the mapping starting at TF, two times.
+
+Step 1: TF -> VF
+Step 2: VF -> LV
+
+Answer: LV"
+2,cot,18,QZ,QZ,1,0,2,RT KQ QZ,0,"I need to follow the mapping starting at RT for 2 steps.
+
+Step 1: RT -> KQ
+Step 2: KQ -> QZ
+
+Answer: QZ"
+2,cot,19,XP,XP,1,0,2,AP KI XP,0,"I need to follow the mapping starting at AP for 2 steps.
+
+Step 1: AP -> KI
+Step 2: KI -> XP
+
+Answer: XP"
+2,cot,20,GA,GA,1,0,2,TL XO GA,0,"I need to follow the mapping starting at TL for 2 steps.
+
+Step 1: TL -> XO
+Step 2: XO -> GA
+
+Answer: GA"
+2,cot,21,OW,OW,1,0,2,DV QX OW,0,"Following the chain: DV -> QX -> OW.
+Answer: OW"
+2,cot,22,LZ,LZ,1,0,2,QP CD LZ,0,"I need to follow the mapping starting at QP, two times.
+
+Step 1: QP -> CD
+Step 2: CD -> LZ
+
+Answer: LZ"
+2,cot,23,IS,IS,1,0,2,XE YC IS,0,"I need to follow the mapping starting at XE, two times.
+
+Step 1: XE -> YC
+Step 2: YC -> IS
+
+Answer: IS"
+2,cot,24,PQ,PQ,1,0,2,MI GT PQ,0,"I need to follow the mapping starting at MI, two times.
+
+Step 1: MI -> GT
+Step 2: GT -> PQ
+
+Answer: PQ"
+2,cot,25,EW,EW,1,0,2,TV VF EW,0,"I need to follow the mapping starting at TV, two times.
+
+Step 1: TV -> VF
+Step 2: VF -> EW
+
+Answer: EW"
+2,cot,26,RJ,RJ,1,0,2,MY RV RJ,0,"Following the chain: MY -> RV -> RJ.
+Answer: RJ"
+2,cot,27,SZ,SZ,1,0,2,YN YK SZ,0,"I need to follow the mapping starting at YN for 2 steps.
+
+Step 1: YN -> YK
+Step 2: YK -> SZ
+
+Answer: SZ"
+2,cot,28,RL,RL,1,0,2,PB EM RL,0,"I need to follow the mapping starting at PB, 2 times.
+
+Step 1: PB -> EM
+Step 2: EM -> RL
+
+Answer: RL"
+2,cot,29,XV,XV,1,0,2,PR JB XV,0,"I need to follow the mapping starting at PR, two times.
+
+Step 1: PR -> JB
+Step 2: JB -> XV
+
+Answer: XV"
+3,immediate,0,XW,UG,0,0,4,VF QA BT XW,0, UG
+3,immediate,1,AW,YK,0,0,4,VL BJ VM AW,0, YK
+3,immediate,2,LR,RQ,0,0,4,ZM JD CU LR,0, RQ
+3,immediate,3,VF,BN,0,0,4,RC YY XZ VF,0, BN
+3,immediate,4,IN,PQ,0,0,4,TL FV GS IN,0, PQ
+3,immediate,5,SD,OD,0,0,4,LO EL GC SD,0, OD
+3,immediate,6,GE,QL,0,0,4,FW HA TG GE,0, QL
+3,immediate,7,BS,KR,0,0,4,ZS UC RY BS,0, KR
+3,immediate,8,DU,SV,0,0,5,HO PM VR DU,0, SV
+3,immediate,9,DJ,CX,0,0,4,DE JB VV DJ,0, CX
+3,immediate,10,RU,SJ,0,0,5,ZC OI QO RU,0, SJ
+3,immediate,11,ZT,QV,0,0,4,XG GX XR ZT,0, QV
+3,immediate,12,YN,FE,0,0,4,SX RE UR YN,0, FE
+3,immediate,13,FI,PB,0,0,4,HT MN JM FI,0, PB
+3,immediate,14,AP,SB,0,0,4,IA KZ AW AP,0, SB
+3,immediate,15,JF,IN,0,0,4,EI IK TD JF,0, IN
+3,immediate,16,CV,PX,0,0,4,XP KU VG CV,0, PX
+3,immediate,17,TS,AF,0,0,4,DD DA DP TS,0, AF
+3,immediate,18,PZ,PZ,1,0,3,PV WA JS PZ,0, PZ
+3,immediate,19,BT,LV,0,0,4,PD LI ZQ BT,0, LV
+3,immediate,20,JH,JH,1,0,3,SB FM UY JH,0, JH
+3,immediate,21,DH,LY,0,0,4,VP BO QG DH,0, LY
+3,immediate,22,BF,NX,0,0,4,JG XT SR BF,0, NX
+3,immediate,23,ZP,UA,0,0,4,GI BA FC ZP,0, UA
+3,immediate,24,AG,WR,0,0,4,ZQ EJ GR AG,0, WR
+3,immediate,25,WC,WC,1,0,3,GE XQ YF WC,0, WC
+3,immediate,26,YK,TR,0,0,5,YE NB TU YK,0, TR
+3,immediate,27,WJ,AQ,0,0,4,UF KP WR WJ,0, AQ
+3,immediate,28,VJ,SX,0,0,5,WV UE JP VJ,0, SX
+3,immediate,29,IW,TR,0,0,4,QG UV AB IW,0, TR
+3,filler,0,XW,UG,0,0,4,VF QA BT XW,0, UG
+3,filler,1,AW,YK,0,0,4,VL BJ VM AW,0, YK
+3,filler,2,LR,RQ,0,0,4,ZM JD CU LR,0, RQ
+3,filler,3,VF,BN,0,0,4,RC YY XZ VF,0, BN
+3,filler,4,IN,PQ,0,0,4,TL FV GS IN,0, PQ
+3,filler,5,SD,OD,0,0,4,LO EL GC SD,0, OD
+3,filler,6,GE,QL,0,0,4,FW HA TG GE,0, QL
+3,filler,7,BS,KR,0,0,4,ZS UC RY BS,0, KR
+3,filler,8,DU,ME,0,0,4,HO PM VR DU,0, ME
+3,filler,9,DJ,CX,0,0,4,DE JB VV DJ,0, CX
+3,filler,10,RU,UZ,0,0,4,ZC OI QO RU,0, UZ
+3,filler,11,ZT,VF,0,0,5,XG GX XR ZT,0, VF
+3,filler,12,YN,FE,0,0,4,SX RE UR YN,0, FE
+3,filler,13,FI,PB,0,0,4,HT MN JM FI,0, PB
+3,filler,14,AP,SB,0,0,4,IA KZ AW AP,0, SB
+3,filler,15,JF,JF,1,0,3,EI IK TD JF,0, JF
+3,filler,16,CV,PX,0,0,4,XP KU VG CV,0, PX
+3,filler,17,TS,AF,0,0,4,DD DA DP TS,0, AF
+3,filler,18,PZ,PZ,1,0,3,PV WA JS PZ,0, PZ
+3,filler,19,BT,BT,1,0,3,PD LI ZQ BT,0, BT
+3,filler,20,JH,JH,1,0,3,SB FM UY JH,0, JH
+3,filler,21,DH,LY,0,0,4,VP BO QG DH,0, LY
+3,filler,22,BF,NX,0,0,4,JG XT SR BF,0, NX
+3,filler,23,ZP,UA,0,0,4,GI BA FC ZP,0, UA
+3,filler,24,AG,WR,0,0,4,ZQ EJ GR AG,0, WR
+3,filler,25,WC,LA,0,0,4,GE XQ YF WC,0, LA
+3,filler,26,YK,RC,0,0,4,YE NB TU YK,0, RC
+3,filler,27,WJ,AQ,0,0,4,UF KP WR WJ,0, AQ
+3,filler,28,VJ,IZ,0,0,4,WV UE JP VJ,0, IZ
+3,filler,29,IW,TR,0,0,4,QG UV AB IW,0, TR
+3,cot,0,XW,XW,1,0,3,VF QA BT XW,0,"Following the chain: VF -> QA -> BT -> XW.
+Answer: XW"
+3,cot,1,AW,AW,1,0,3,VL BJ VM AW,0,"I need to follow the mapping starting at VL, three times.
+
+Step 1: VL -> BJ
+Step 2: BJ -> VM
+Step 3: VM -> AW
+
+Answer: AW"
+3,cot,2,LR,LR,1,0,3,ZM JD CU LR,0,"I need to follow the mapping starting at ZM, three times.
+
+Step 1: ZM -> JD
+Step 2: JD -> CU
+Step 3: CU -> LR
+
+Answer: LR"
+3,cot,3,VF,VF,1,0,3,RC YY XZ VF,0,"I need to follow the mapping starting at RC, three times.
+
+Step 1: RC -> YY
+Step 2: YY -> XZ
+Step 3: XZ -> VF
+
+Answer: VF"
+3,cot,4,IN,IN,1,0,3,TL FV GS IN,0,"I need to follow the mapping starting at TL, three times.
+
+Step 1: TL -> FV
+Step 2: FV -> GS
+Step 3: GS -> IN
+
+Answer: IN"
+3,cot,5,SD,SD,1,0,3,LO EL GC SD,0,"I need to follow the mapping starting at LO, three times.
+
+Step 1: LO -> EL
+Step 2: EL -> GC
+Step 3: GC -> SD
+
+Answer: SD"
+3,cot,6,GE,GE,1,0,3,FW HA TG GE,0,"I need to follow the mapping starting at FW, three times.
+
+Step 1: FW -> HA
+Step 2: HA -> TG
+Step 3: TG -> GE
+
+Answer: GE"
+3,cot,7,BS,BS,1,0,3,ZS UC RY BS,0,"I need to follow the mapping starting at ZS, 3 times.
+
+Step 1: ZS -> UC
+Step 2: UC -> RY
+Step 3: RY -> BS
+
+Answer: BS"
+3,cot,8,DU,DU,1,0,3,HO PM VR DU,0,"I need to follow the mapping starting at HO, three times.
+
+Step 1: HO -> PM
+Step 2: PM -> VR
+Step 3: VR -> DU
+
+Answer: DU"
+3,cot,9,DJ,DJ,1,0,3,DE JB VV DJ,0,"I need to follow the mapping starting at DE, 3 times.
+
+Step 1: DE -> JB
+Step 2: JB -> VV
+Step 3: VV -> DJ
+
+Answer: DJ"
+3,cot,10,RU,RU,1,0,3,ZC OI QO RU,0,"I need to follow the mapping starting at ZC, three times.
+
+Step 1: ZC -> OI
+Step 2: OI -> QO
+Step 3: QO -> RU
+
+Answer: RU"
+3,cot,11,ZT,ZT,1,0,3,XG GX XR ZT,0,"I need to follow the mapping starting at XG, three times.
+
+Step 1: XG -> GX
+Step 2: GX -> XR
+Step 3: XR -> ZT
+
+Answer: ZT"
+3,cot,12,YN,YN,1,0,3,SX RE UR YN,0,"I need to follow the mapping starting at SX, three times.
+
+Step 1: SX -> RE
+Step 2: RE -> UR
+Step 3: UR -> YN
+
+Answer: YN"
+3,cot,13,FI,FI,1,0,3,HT MN JM FI,0,"I need to follow the mapping starting at HT, three times.
+
+Step 1: HT -> MN
+Step 2: MN -> JM
+Step 3: JM -> FI
+
+Answer: FI"
+3,cot,14,AP,AP,1,0,3,IA KZ AW AP,0,"I need to follow the mapping starting at IA, three times.
+
+Step 1: IA -> KZ
+Step 2: KZ -> AW
+Step 3: AW -> AP
+
+Answer: AP"
+3,cot,15,JF,JF,1,0,3,EI IK TD JF,0,"I need to follow the mapping starting at EI, three times.
+
+Step 1: EI -> IK
+Step 2: IK -> TD
+Step 3: TD -> JF
+
+Answer: JF"
+3,cot,16,CV,CV,1,0,3,XP KU VG CV,0,"I need to follow the mapping starting at XP, three times.
+
+Step 1: XP -> KU
+Step 2: KU -> VG
+Step 3: VG -> CV
+
+Answer: CV"
+3,cot,17,TS,TS,1,0,3,DD DA DP TS,0,"I need to follow the mapping starting at DD, three times.
+
+Step 1: DD -> DA
+Step 2: DA -> DP
+Step 3: DP -> TS
+
+Answer: TS"
+3,cot,18,PZ,PZ,1,0,3,PV WA JS PZ,0,"I need to follow the mapping starting at PV, three times.
+
+Step 1: PV -> WA
+Step 2: WA -> JS
+Step 3: JS -> PZ
+
+Answer: PZ"
+3,cot,19,BT,BT,1,0,3,PD LI ZQ BT,0,"I need to follow the mapping starting at PD, three times.
+
+Step 1: PD -> LI
+Step 2: LI -> ZQ
+Step 3: ZQ -> BT
+
+Answer: BT"
+3,cot,20,JH,JH,1,0,3,SB FM UY JH,0,"I need to follow the mapping starting at SB, three times.
+
+Step 1: SB -> FM
+Step 2: FM -> UY
+Step 3: UY -> JH
+
+Answer: JH"
+3,cot,21,DH,DH,1,0,3,VP BO QG DH,0,"I need to follow the mapping starting at VP, 3 times.
+
+Step 1: VP -> BO
+Step 2: BO -> QG
+Step 3: QG -> DH
+
+Answer: DH"
+3,cot,22,BF,BF,1,0,3,JG XT SR BF,0,"I need to follow the mapping starting at JG, three times.
+
+Step 1: JG -> XT
+Step 2: XT -> SR
+Step 3: SR -> BF
+
+Answer: BF"
+3,cot,23,ZP,ZP,1,0,3,GI BA FC ZP,0,"I need to follow the mapping starting at GI, three times.
+
+Step 1: GI -> BA
+Step 2: BA -> FC
+Step 3: FC -> ZP
+
+Answer: ZP"
+3,cot,24,AG,AG,1,0,3,ZQ EJ GR AG,0,"I need to follow the mapping starting at ZQ, three times.
+
+Step 1: ZQ -> EJ
+Step 2: EJ -> GR
+Step 3: GR -> AG
+
+Answer: AG"
+3,cot,25,WC,WC,1,0,3,GE XQ YF WC,0,"I need to follow the mapping starting at GE, three times.
+
+Step 1: GE -> XQ
+Step 2: XQ -> YF
+Step 3: YF -> WC
+
+Answer: WC"
+3,cot,26,YK,YK,1,0,3,YE NB TU YK,0,"I need to follow the mapping starting at YE, three times.
+
+Step 1: YE -> NB
+Step 2: NB -> TU
+Step 3: TU -> YK
+
+Answer: YK"
+3,cot,27,WJ,WJ,1,0,3,UF KP WR WJ,0,"I need to follow the mapping starting at UF, three times.
+
+Step 1: UF -> KP
+Step 2: KP -> WR
+Step 3: WR -> WJ
+
+Answer: WJ"
+3,cot,28,VJ,VJ,1,0,3,WV UE JP VJ,0,"I need to follow the mapping starting at WV, three times.
+
+Step 1: WV -> UE
+Step 2: UE -> JP
+Step 3: JP -> VJ
+
+Answer: VJ"
+3,cot,29,IW,IW,1,0,3,QG UV AB IW,0,"I need to follow the mapping starting at QG, 3 times.
+
+Step 1: QG -> UV
+Step 2: UV -> AB
+Step 3: AB -> IW
+
+Answer: IW"
+4,immediate,0,BS,BS,1,0,4,IR XS OL DY BS,0, BS
+4,immediate,1,HM,HM,1,0,4,KV VC WY UW HM,0, HM
+4,immediate,2,JS,BZ,0,0,5,JT FK PW VA JS,0, BZ
+4,immediate,3,TE,ZD,0,0,6,EW UF XK OC TE,0, ZD
+4,immediate,4,QT,JO,0,0,10,JZ MB PH MC QT,0, JO
+4,immediate,5,RX,LX,0,0,5,LE IW PM MW RX,0, LX
+4,immediate,6,EF,DB,0,0,5,JM WW PF RE EF,0, DB
+4,immediate,7,FF,FF,1,0,4,NP PY EV HU FF,0, FF
+4,immediate,8,FZ,QC,0,0,5,KM CX DU GI FZ,0, QC
+4,immediate,9,SW,SW,1,0,4,KQ AR EY ZY SW,0, SW
+4,immediate,10,LR,LR,1,0,4,PC IQ ZK IT LR,0, LR
+4,immediate,11,HE,HE,1,0,4,WL DB KU TW HE,0, HE
+4,immediate,12,IP,BQ,0,0,5,PS IN DB OA IP,0, BQ
+4,immediate,13,PB,TP,0,0,6,UY BN NB LU PB,0, TP
+4,immediate,14,AS,TE,0,0,5,JO IR VJ PR AS,0, TE
+4,immediate,15,AC,WP,0,0,6,PH LE KE YN AC,0, WP
+4,immediate,16,YR,CF,0,0,5,QX YW EI JG YR,0, CF
+4,immediate,17,VX,FH,0,0,5,IC MO CR ME VX,0, FH
+4,immediate,18,AI,AI,1,0,4,EY FB MM SV AI,0, AI
+4,immediate,19,KC,SS,0,0,5,YP KF PR DY KC,0, SS
+4,immediate,20,ID,ID,1,0,4,VU TI FC FR ID,0, ID
+4,immediate,21,HA,SI,0,0,5,ZY GW AB AK HA,0, SI
+4,immediate,22,HX,IV,0,0,5,FP DH FW KG HX,0, IV
+4,immediate,23,MM,KY,0,0,5,CP GF YH VQ MM,0, KY
+4,immediate,24,JL,LY,0,0,6,PZ PC AD OS JL,0, LY
+4,immediate,25,HN,EQ,0,0,5,FF MM FS EW HN,0, EQ
+4,immediate,26,RV,JC,0,0,5,TV JE ZU EH RV,0, JC
+4,immediate,27,LW,ZS,0,0,5,MV GW FU HD LW,0, ZS
+4,immediate,28,VA,VA,1,0,4,HJ WS SU LC VA,0, VA
+4,immediate,29,KW,KW,1,0,4,TT FD JV VT KW,0, KW
+4,filler,0,BS,BS,1,0,4,IR XS OL DY BS,0, BS
+4,filler,1,HM,VL,0,0,5,KV VC WY UW HM,0, VL
+4,filler,2,JS,BZ,0,0,5,JT FK PW VA JS,0, BZ
+4,filler,3,TE,XO,0,0,5,EW UF XK OC TE,0, XO
+4,filler,4,QT,PJ,0,0,5,JZ MB PH MC QT,0, PJ
+4,filler,5,RX,RX,1,0,4,LE IW PM MW RX,0, RX
+4,filler,6,EF,DB,0,0,5,JM WW PF RE EF,0, DB
+4,filler,7,FF,FF,1,0,4,NP PY EV HU FF,0, FF
+4,filler,8,FZ,FZ,1,0,4,KM CX DU GI FZ,0, FZ
+4,filler,9,SW,SW,1,0,4,KQ AR EY ZY SW,0, SW
+4,filler,10,LR,LR,1,0,4,PC IQ ZK IT LR,0, LR
+4,filler,11,HE,BJ,0,0,5,WL DB KU TW HE,0, BJ
+4,filler,12,IP,AI,0,0,6,PS IN DB OA IP,0, AI
+4,filler,13,PB,PB,1,0,4,UY BN NB LU PB,0, PB
+4,filler,14,AS,TE,0,0,5,JO IR VJ PR AS,0, TE
+4,filler,15,AC,WP,0,0,6,PH LE KE YN AC,0, WP
+4,filler,16,YR,CF,0,0,5,QX YW EI JG YR,0, CF
+4,filler,17,VX,FH,0,0,5,IC MO CR ME VX,0, FH
+4,filler,18,AI,EN,0,0,6,EY FB MM SV AI,0, EN
+4,filler,19,KC,SS,0,0,5,YP KF PR DY KC,0, SS
+4,filler,20,ID,IY,0,0,6,VU TI FC FR ID,0, IY
+4,filler,21,HA,SI,0,0,5,ZY GW AB AK HA,0, SI
+4,filler,22,HX,IV,0,0,5,FP DH FW KG HX,0, IV
+4,filler,23,MM,KY,0,0,5,CP GF YH VQ MM,0, KY
+4,filler,24,JL,OF,0,0,5,PZ PC AD OS JL,0, OF
+4,filler,25,HN,EQ,0,0,5,FF MM FS EW HN,0, EQ
+4,filler,26,RV,JC,0,0,5,TV JE ZU EH RV,0, JC
+4,filler,27,LW,ZS,0,0,5,MV GW FU HD LW,0, ZS
+4,filler,28,VA,VA,1,0,4,HJ WS SU LC VA,0, VA
+4,filler,29,KW,IG,0,0,5,TT FD JV VT KW,0, IG
+4,cot,0,BS,BS,1,0,4,IR XS OL DY BS,0,"I need to follow the mapping starting at IR, 4 times.
+
+Step 1: IR -> XS
+Step 2: XS -> OL
+Step 3: OL -> DY
+Step 4: DY -> BS
+
+Answer: BS"
+4,cot,1,HM,HM,1,0,4,KV VC WY UW HM,0,"I need to follow the mapping starting at KV, 4 times.
+
+Step 1: KV -> VC
+Step 2: VC -> WY
+Step 3: WY -> UW
+Step 4: UW -> HM
+
+Answer: HM"
+4,cot,2,JS,JS,1,0,4,JT FK PW VA JS,0,"I need to follow the mapping starting at JT, 4 times.
+
+Step 1: JT -> FK
+Step 2: FK -> PW
+Step 3: PW -> VA
+Step 4: VA -> JS
+
+Answer: JS"
+4,cot,3,TE,TE,1,0,4,EW UF XK OC TE,0,"I need to follow the mapping starting at EW, 4 times.
+
+Step 1: EW -> UF
+Step 2: UF -> XK
+Step 3: XK -> OC
+Step 4: OC -> TE
+
+Answer: TE"
+4,cot,4,QT,QT,1,0,4,JZ MB PH MC QT,0,"I need to follow the mapping starting at JZ, 4 times.
+
+Step 1: JZ -> MB
+Step 2: MB -> PH
+Step 3: PH -> MC
+Step 4: MC -> QT
+
+Answer: QT"
+4,cot,5,RX,RX,1,0,4,LE IW PM MW RX,0,"I need to follow the mapping starting at LE, 4 times.
+
+Step 1: LE -> IW
+Step 2: IW -> PM
+Step 3: PM -> MW
+Step 4: MW -> RX
+
+Answer: RX"
+4,cot,6,EF,EF,1,0,4,JM WW PF RE EF,0,"I need to follow the mapping starting at JM, 4 times.
+
+Step 1: JM -> WW
+Step 2: WW -> PF
+Step 3: PF -> RE
+Step 4: RE -> EF
+
+Answer: EF"
+4,cot,7,FF,FF,1,0,4,NP PY EV HU FF,0,"I need to follow the mapping starting at NP, 4 times.
+
+Step 1: NP -> PY
+Step 2: PY -> EV
+Step 3: EV -> HU
+Step 4: HU -> FF
+
+Answer: FF"
+4,cot,8,FZ,FZ,1,0,4,KM CX DU GI FZ,0,"I need to follow the mapping starting at KM, 4 times.
+
+Step 1: KM -> CX
+Step 2: CX -> DU
+Step 3: DU -> GI
+Step 4: GI -> FZ
+
+Answer: FZ"
+4,cot,9,SW,SW,1,0,4,KQ AR EY ZY SW,0,"I need to follow the mapping starting at KQ for 4 steps.
+
+Step 1: KQ -> AR
+Step 2: AR -> EY
+Step 3: EY -> ZY
+Step 4: ZY -> SW
+
+Answer: SW"
+4,cot,10,LR,LR,1,0,4,PC IQ ZK IT LR,0,"I need to follow the mapping starting at PC, 4 times.
+
+Step 1: PC -> IQ
+Step 2: IQ -> ZK
+Step 3: ZK -> IT
+Step 4: IT -> LR
+
+Answer: LR"
+4,cot,11,HE,HE,1,0,4,WL DB KU TW HE,0,"I need to follow the mapping starting at WL, 4 times.
+
+Step 1: WL -> DB
+Step 2: DB -> KU
+Step 3: KU -> TW
+Step 4: TW -> HE
+
+Answer: HE"
+4,cot,12,IP,IP,1,0,4,PS IN DB OA IP,0,"I need to follow the mapping starting at PS for 4 steps.
+
+Step 1: PS -> IN
+Step 2: IN -> DB
+Step 3: DB -> OA
+Step 4: OA -> IP
+
+Answer: IP"
+4,cot,13,PB,PB,1,0,4,UY BN NB LU PB,0,"I need to follow the mapping starting at UY, 4 times.
+
+Step 1: UY -> BN
+Step 2: BN -> NB
+Step 3: NB -> LU
+Step 4: LU -> PB
+
+Answer: PB"
+4,cot,14,AS,AS,1,0,4,JO IR VJ PR AS,0,"I need to follow the mapping starting at JO, 4 times.
+
+Step 1: JO -> IR
+Step 2: IR -> VJ
+Step 3: VJ -> PR
+Step 4: PR -> AS
+
+Answer: AS"
+4,cot,15,AC,AC,1,0,4,PH LE KE YN AC,0,"I need to follow the mapping starting at PH, 4 times.
+
+Step 1: PH -> LE
+Step 2: LE -> KE
+Step 3: KE -> YN
+Step 4: YN -> AC
+
+Answer: AC"
+4,cot,16,YR,YR,1,0,4,QX YW EI JG YR,0,"I need to follow the mapping starting at QX for 4 steps.
+
+Step 1: QX -> YW
+Step 2: YW -> EI
+Step 3: EI -> JG
+Step 4: JG -> YR
+
+Answer: YR"
+4,cot,17,VX,VX,1,0,4,IC MO CR ME VX,0,"I need to follow the mapping starting at IC, 4 times.
+
+Step 1: IC -> MO
+Step 2: MO -> CR
+Step 3: CR -> ME
+Step 4: ME -> VX
+
+Answer: VX"
+4,cot,18,AI,AI,1,0,4,EY FB MM SV AI,0,"I need to follow the mapping starting at EY, 4 times.
+
+Step 1: EY -> FB
+Step 2: FB -> MM
+Step 3: MM -> SV
+Step 4: SV -> AI
+
+Answer: AI"
+4,cot,19,KC,KC,1,0,4,YP KF PR DY KC,0,"I need to follow the mapping starting at YP, 4 times.
+
+Step 1: YP -> KF
+Step 2: KF -> PR
+Step 3: PR -> DY
+Step 4: DY -> KC
+
+Answer: KC"
+4,cot,20,ID,ID,1,0,4,VU TI FC FR ID,0,"I need to follow the mapping starting at VU, 4 times.
+
+Step 1: VU -> TI
+Step 2: TI -> FC
+Step 3: FC -> FR
+Step 4: FR -> ID
+
+Answer: ID"
+4,cot,21,HA,HA,1,0,4,ZY GW AB AK HA,0,"I need to follow the mapping starting at ZY, 4 times.
+
+Step 1: ZY -> GW
+Step 2: GW -> AB
+Step 3: AB -> AK
+Step 4: AK -> HA
+
+Answer: HA"
+4,cot,22,HX,HX,1,0,4,FP DH FW KG HX,0,"I need to follow the mapping starting at FP, 4 times.
+
+Step 1: FP -> DH
+Step 2: DH -> FW
+Step 3: FW -> KG
+Step 4: KG -> HX
+
+Answer: HX"
+4,cot,23,MM,MM,1,0,4,CP GF YH VQ MM,0,"I need to follow the mapping starting at CP, 4 times.
+
+Step 1: CP -> GF
+Step 2: GF -> YH
+Step 3: YH -> VQ
+Step 4: VQ -> MM
+
+Answer: MM"
+4,cot,24,JL,JL,1,0,4,PZ PC AD OS JL,0,"I need to follow the mapping starting at PZ, 4 times.
+
+Step 1: PZ -> PC
+Step 2: PC -> AD
+Step 3: AD -> OS
+Step 4: OS -> JL
+
+Answer: JL"
+4,cot,25,HN,HN,1,0,4,FF MM FS EW HN,0,"I need to follow the mapping starting at FF, 4 times.
+
+Step 1: FF -> MM
+Step 2: MM -> FS
+Step 3: FS -> EW
+Step 4: EW -> HN
+
+Answer: HN"
+4,cot,26,RV,RV,1,0,4,TV JE ZU EH RV,0,"I need to follow the mapping starting at TV, 4 times.
+
+Step 1: TV -> JE
+Step 2: JE -> ZU
+Step 3: ZU -> EH
+Step 4: EH -> RV
+
+Answer: RV"
+4,cot,27,LW,LW,1,0,4,MV GW FU HD LW,0,"I need to follow the mapping starting at MV, 4 times.
+
+Step 1: MV -> GW
+Step 2: GW -> FU
+Step 3: FU -> HD
+Step 4: HD -> LW
+
+Answer: LW"
+4,cot,28,VA,VA,1,0,4,HJ WS SU LC VA,0,"I need to follow the mapping starting at HJ, 4 times.
+
+Step 1: HJ -> WS
+Step 2: WS -> SU
+Step 3: SU -> LC
+Step 4: LC -> VA
+
+Answer: VA"
+4,cot,29,KW,KW,1,0,4,TT FD JV VT KW,0,"I need to follow the mapping starting at TT, 4 times.
+
+Step 1: TT -> FD
+Step 2: FD -> JV
+Step 3: JV -> VT
+Step 4: VT -> KW
+
+Answer: KW"
+6,immediate,0,QA,ZG,0,0,8,SA XK ES OU CJ AV QA,0, ZG
+6,immediate,1,OJ,MZ,0,0,7,TV TZ FD LB YZ KH OJ,0, MZ
+6,immediate,2,JW,JW,1,0,6,GF DQ IR OH EL HL JW,0, JW
+6,immediate,3,TF,SX,0,0,8,CF JL IO FZ CO HA TF,0, SX
+6,immediate,4,CP,SS,0,0,5,LZ RO YZ YR KR SS CP,0, SS
+6,immediate,5,XX,PY,0,0,7,YC CI JB QR ZF BP XX,0, PY
+6,immediate,6,PY,PY,1,0,6,MG QM TU TB CK SL PY,0, PY
+6,immediate,7,RP,GI,0,0,7,UN UR FC RE LK NH RP,0, GI
+6,immediate,8,WK,AT,0,0,8,GZ EB KN JN MA SQ WK,0, AT
+6,immediate,9,CT,KP,0,0,8,LU FP FF ER IZ ID CT,0, KP
+6,immediate,10,BB,US,0,0,8,YY QW TD JH NJ PJ BB,0, US
+6,immediate,11,WN,WN,1,0,6,YW ET SG JD UO XY WN,0, WN
+6,immediate,12,RM,YF,0,0,7,MN KX WU KW OQ HG RM,0, YF
+6,immediate,13,NG,NG,1,0,6,UN XR ED NL OA WM NG,0, NG
+6,immediate,14,ZY,ZV,0,0,5,GM ZE EO HI XO ZV ZY,0, ZV
+6,immediate,15,FC,FC,1,0,6,QB UJ MB NG DH ZK FC,0, FC
+6,immediate,16,MB,MB,1,0,6,LX TE DH JO VM DS MB,0, MB
+6,immediate,17,YC,YC,1,0,6,QU HQ OC ZP SG MJ YC,0, YC
+6,immediate,18,WB,GF,0,0,8,EZ KI HA XV OW EW WB,0, GF
+6,immediate,19,TK,HD,0,0,5,UG TI HU AS RZ HD TK,0, HD
+6,immediate,20,OO,OO,1,0,6,WQ DD RV AL AV RY OO,0, OO
+6,immediate,21,XO,XO,1,0,6,XG AV JE OQ YP GW XO,0, XO
+6,immediate,22,LG,EJ,0,0,7,AU ZH GC GM MB UB LG,0, EJ
+6,immediate,23,LW,LW,1,0,6,UJ YY TK UZ OS PO LW,0, LW
+6,immediate,24,YB,UZ,0,0,4,FX OO GD SY UZ PY YB,0, UZ
+6,immediate,25,RO,RO,1,0,6,JH RF FN ZO DN JZ RO,0, RO
+6,immediate,26,VL,TI,0,0,8,HR CE WV NU IJ RJ VL,0, TI
+6,immediate,27,PD,HW,0,0,5,IY BL BI OK CN HW PD,0, HW
+6,immediate,28,NU,WG,0,0,8,LQ ZC AX EW MH KY NU,0, WG
+6,immediate,29,ML,ML,1,0,6,HQ FI WX GQ WM BF ML,0, ML
+6,filler,0,QA,JB,0,0,7,SA XK ES OU CJ AV QA,0, JB
+6,filler,1,OJ,MZ,0,0,7,TV TZ FD LB YZ KH OJ,0, MZ
+6,filler,2,JW,JW,1,0,6,GF DQ IR OH EL HL JW,0, JW
+6,filler,3,TF,SX,0,0,8,CF JL IO FZ CO HA TF,0, SX
+6,filler,4,CP,SS,0,0,5,LZ RO YZ YR KR SS CP,0, SS
+6,filler,5,XX,XX,1,0,6,YC CI JB QR ZF BP XX,0, XX
+6,filler,6,PY,SL,0,0,5,MG QM TU TB CK SL PY,0, SL
+6,filler,7,RP,GI,0,0,7,UN UR FC RE LK NH RP,0, GI
+6,filler,8,WK,AT,0,0,8,GZ EB KN JN MA SQ WK,0, AT
+6,filler,9,CT,BV,0,0,7,LU FP FF ER IZ ID CT,0, BV
+6,filler,10,BB,EX,0,0,7,YY QW TD JH NJ PJ BB,0, EX
+6,filler,11,WN,IH,0,0,7,YW ET SG JD UO XY WN,0, IH
+6,filler,12,RM,YF,0,0,7,MN KX WU KW OQ HG RM,0, YF
+6,filler,13,NG,PL,0,0,7,UN XR ED NL OA WM NG,0, PL
+6,filler,14,ZY,ZV,0,0,5,GM ZE EO HI XO ZV ZY,0, ZV
+6,filler,15,FC,FZ,0,0,9,QB UJ MB NG DH ZK FC,0, FZ
+6,filler,16,MB,MB,1,0,6,LX TE DH JO VM DS MB,0, MB
+6,filler,17,YC,YC,1,0,6,QU HQ OC ZP SG MJ YC,0, YC
+6,filler,18,WB,DE,0,0,7,EZ KI HA XV OW EW WB,0, DE
+6,filler,19,TK,EE,0,0,7,UG TI HU AS RZ HD TK,0, EE
+6,filler,20,OO,ZG,0,0,7,WQ DD RV AL AV RY OO,0, ZG
+6,filler,21,XO,ZR,0,0,8,XG AV JE OQ YP GW XO,0, ZR
+6,filler,22,LG,EJ,0,0,7,AU ZH GC GM MB UB LG,0, EJ
+6,filler,23,LW,LW,1,0,6,UJ YY TK UZ OS PO LW,0, LW
+6,filler,24,YB,PY,0,0,5,FX OO GD SY UZ PY YB,0, PY
+6,filler,25,RO,JO,0,0,8,JH RF FN ZO DN JZ RO,0, JO
+6,filler,26,VL,UT,0,0,7,HR CE WV NU IJ RJ VL,0, UT
+6,filler,27,PD,PD,1,0,6,IY BL BI OK CN HW PD,0, PD
+6,filler,28,NU,NU,1,0,6,LQ ZC AX EW MH KY NU,0, NU
+6,filler,29,ML,ML,1,0,6,HQ FI WX GQ WM BF ML,0, ML
+6,cot,0,QA,QA,1,0,6,SA XK ES OU CJ AV QA,0,"I need to follow the mapping starting at SA, 6 times.
+
+Step 1: SA -> XK
+Step 2: XK -> ES
+Step 3: ES -> OU
+Step 4: OU -> CJ
+Step 5: CJ -> AV
+Step 6: AV -> QA
+
+Answer: QA"
+6,cot,1,OJ,OJ,1,0,6,TV TZ FD LB YZ KH OJ,0,"I need to follow the mapping starting at TV, 6 times.
+
+Step 1: TV -> TZ
+Step 2: TZ -> FD
+Step 3: FD -> LB
+Step 4: LB -> YZ
+Step 5: YZ -> KH
+Step 6: KH -> OJ
+
+Answer: OJ"
+6,cot,2,JW,JW,1,0,6,GF DQ IR OH EL HL JW,0,"I need to follow the mapping starting at GF, 6 times.
+
+Step 1: GF -> DQ
+Step 2: DQ -> IR
+Step 3: IR -> OH
+Step 4: OH -> EL
+Step 5: EL -> HL
+Step 6: HL -> JW
+
+Answer: JW"
+6,cot,3,TF,TF,1,0,6,CF JL IO FZ CO HA TF,0,"I need to follow the mapping starting at CF, 6 times.
+
+Step 1: CF -> JL
+Step 2: JL -> IO
+Step 3: IO -> FZ
+Step 4: FZ -> CO
+Step 5: CO -> HA
+Step 6: HA -> TF
+
+Answer: TF"
+6,cot,4,CP,CP,1,0,6,LZ RO YZ YR KR SS CP,0,"I need to follow the mapping starting at LZ, 6 times.
+
+Step 1: LZ -> RO
+Step 2: RO -> YZ
+Step 3: YZ -> YR
+Step 4: YR -> KR
+Step 5: KR -> SS
+Step 6: SS -> CP
+
+Answer: CP"
+6,cot,5,XX,XX,1,0,6,YC CI JB QR ZF BP XX,0,"I need to follow the mapping starting at YC, 6 times.
+
+Step 1: YC -> CI
+Step 2: CI -> JB
+Step 3: JB -> QR
+Step 4: QR -> ZF
+Step 5: ZF -> BP
+Step 6: BP -> XX
+
+Answer: XX"
+6,cot,6,PY,PY,1,0,6,MG QM TU TB CK SL PY,0,"I need to follow the mapping starting at MG, 6 times.
+
+Step 1: MG -> QM
+Step 2: QM -> TU
+Step 3: TU -> TB
+Step 4: TB -> CK
+Step 5: CK -> SL
+Step 6: SL -> PY
+
+Answer: PY"
+6,cot,7,RP,RP,1,0,6,UN UR FC RE LK NH RP,0,"I need to follow the mapping starting at UN, 6 times.
+
+Step 1: UN -> UR
+Step 2: UR -> FC
+Step 3: FC -> RE
+Step 4: RE -> LK
+Step 5: LK -> NH
+Step 6: NH -> RP
+
+Answer: RP"
+6,cot,8,WK,WK,1,0,6,GZ EB KN JN MA SQ WK,0,"I need to follow the mapping starting at GZ, 6 times.
+
+Step 1: GZ -> EB
+Step 2: EB -> KN
+Step 3: KN -> JN
+Step 4: JN -> MA
+Step 5: MA -> SQ
+Step 6: SQ -> WK
+
+Answer: WK"
+6,cot,9,CT,CT,1,0,6,LU FP FF ER IZ ID CT,0,"I need to follow the mapping starting at LU, 6 times.
+
+Step 1: LU -> FP
+Step 2: FP -> FF
+Step 3: FF -> ER
+Step 4: ER -> IZ
+Step 5: IZ -> ID
+Step 6: ID -> CT
+
+Answer: CT"
+6,cot,10,BB,BB,1,0,6,YY QW TD JH NJ PJ BB,0,"I need to follow the mapping starting at YY, 6 times.
+
+1. YY -> QW
+2. QW -> TD
+3. TD -> JH
+4. JH -> NJ
+5. NJ -> PJ
+6. PJ -> BB
+
+Answer: BB"
+6,cot,11,WN,WN,1,0,6,YW ET SG JD UO XY WN,0,"I need to follow the mapping starting at YW, 6 times.
+
+Step 1: YW -> ET
+Step 2: ET -> SG
+Step 3: SG -> JD
+Step 4: JD -> UO
+Step 5: UO -> XY
+Step 6: XY -> WN
+
+Answer: WN"
+6,cot,12,RM,RM,1,0,6,MN KX WU KW OQ HG RM,0,"I need to follow the mapping starting at MN, 6 times.
+
+Step 1: MN -> KX
+Step 2: KX -> WU
+Step 3: WU -> KW
+Step 4: KW -> OQ
+Step 5: OQ -> HG
+Step 6: HG -> RM
+
+Answer: RM"
+6,cot,13,NG,NG,1,0,6,UN XR ED NL OA WM NG,0,"I need to follow the mapping starting at UN, 6 times.
+
+1. UN -> XR
+2. XR -> ED
+3. ED -> NL
+4. NL -> OA
+5. OA -> WM
+6. WM -> NG
+
+Answer: NG"
+6,cot,14,ZY,ZY,1,0,6,GM ZE EO HI XO ZV ZY,0,"I need to follow the mapping starting at GM, 6 times.
+
+Step 1: GM -> ZE
+Step 2: ZE -> EO
+Step 3: EO -> HI
+Step 4: HI -> XO
+Step 5: XO -> ZV
+Step 6: ZV -> ZY
+
+Answer: ZY"
+6,cot,15,FC,FC,1,0,6,QB UJ MB NG DH ZK FC,0,"I need to follow the mapping starting at QB, 6 times.
+
+Step 1: QB -> UJ
+Step 2: UJ -> MB
+Step 3: MB -> NG
+Step 4: NG -> DH
+Step 5: DH -> ZK
+Step 6: ZK -> FC
+
+Answer: FC"
+6,cot,16,MB,MB,1,0,6,LX TE DH JO VM DS MB,0,"I need to follow the mapping starting at LX, 6 times.
+
+Step 1: LX -> TE
+Step 2: TE -> DH
+Step 3: DH -> JO
+Step 4: JO -> VM
+Step 5: VM -> DS
+Step 6: DS -> MB
+
+Answer: MB"
+6,cot,17,YC,YC,1,0,6,QU HQ OC ZP SG MJ YC,0,"I need to follow the mapping starting at QU, 6 times.
+
+Step 1: QU -> HQ
+Step 2: HQ -> OC
+Step 3: OC -> ZP
+Step 4: ZP -> SG
+Step 5: SG -> MJ
+Step 6: MJ -> YC
+
+Answer: YC"
+6,cot,18,WB,WB,1,0,6,EZ KI HA XV OW EW WB,0,"I need to follow the mapping starting at EZ, 6 times.
+
+Step 1: EZ -> KI
+Step 2: KI -> HA
+Step 3: HA -> XV
+Step 4: XV -> OW
+Step 5: OW -> EW
+Step 6: EW -> WB
+
+Answer: WB"
+6,cot,19,TK,TK,1,0,6,UG TI HU AS RZ HD TK,0,"I need to follow the mapping starting at UG, 6 times.
+
+Step 1: UG -> TI
+Step 2: TI -> HU
+Step 3: HU -> AS
+Step 4: AS -> RZ
+Step 5: RZ -> HD
+Step 6: HD -> TK
+
+Answer: TK"
+6,cot,20,OO,OO,1,0,6,WQ DD RV AL AV RY OO,0,"I need to follow the mapping starting at WQ, 6 times.
+
+Step 1: WQ -> DD
+Step 2: DD -> RV
+Step 3: RV -> AL
+Step 4: AL -> AV
+Step 5: AV -> RY
+Step 6: RY -> OO
+
+Answer: OO"
+6,cot,21,XO,XO,1,0,6,XG AV JE OQ YP GW XO,0,"I need to follow the mapping starting at XG, 6 times.
+
+Step 1: XG -> AV
+Step 2: AV -> JE
+Step 3: JE -> OQ
+Step 4: OQ -> YP
+Step 5: YP -> GW
+Step 6: GW -> XO
+
+Answer: XO"
+6,cot,22,LG,LG,1,0,6,AU ZH GC GM MB UB LG,0,"I need to follow the mapping starting at AU, 6 times.
+
+Step 1: AU -> ZH
+Step 2: ZH -> GC
+Step 3: GC -> GM
+Step 4: GM -> MB
+Step 5: MB -> UB
+Step 6: UB -> LG
+
+Answer: LG"
+6,cot,23,LW,LW,1,0,6,UJ YY TK UZ OS PO LW,0,"I need to follow the mapping starting at UJ for 6 steps.
+
+Step 1: UJ -> YY
+Step 2: YY -> TK
+Step 3: TK -> UZ
+Step 4: UZ -> OS
+Step 5: OS -> PO
+Step 6: PO -> LW
+
+Answer: LW"
+6,cot,24,YB,YB,1,0,6,FX OO GD SY UZ PY YB,0,"I need to follow the mapping starting at FX, 6 times.
+
+Step 1: FX -> OO
+Step 2: OO -> GD
+Step 3: GD -> SY
+Step 4: SY -> UZ
+Step 5: UZ -> PY
+Step 6: PY -> YB
+
+Answer: YB"
+6,cot,25,RO,RO,1,0,6,JH RF FN ZO DN JZ RO,0,"I need to follow the mapping starting at JH, 6 times.
+
+Step 1: JH -> RF
+Step 2: RF -> FN
+Step 3: FN -> ZO
+Step 4: ZO -> DN
+Step 5: DN -> JZ
+Step 6: JZ -> RO
+
+Answer: RO"
+6,cot,26,VL,VL,1,0,6,HR CE WV NU IJ RJ VL,0,"I need to follow the mapping starting at HR, 6 times.
+
+Step 1: HR -> CE
+Step 2: CE -> WV
+Step 3: WV -> NU
+Step 4: NU -> IJ
+Step 5: IJ -> RJ
+Step 6: RJ -> VL
+
+Answer: VL"
+6,cot,27,PD,PD,1,0,6,IY BL BI OK CN HW PD,0,"I need to follow the mapping starting at IY, 6 times.
+
+Step 1: IY -> BL
+Step 2: BL -> BI
+Step 3: BI -> OK
+Step 4: OK -> CN
+Step 5: CN -> HW
+Step 6: HW -> PD
+
+Answer: PD"
+6,cot,28,NU,NU,1,0,6,LQ ZC AX EW MH KY NU,0,"I need to follow the mapping starting at LQ, 6 times.
+
+Step 1: LQ -> ZC
+Step 2: ZC -> AX
+Step 3: AX -> EW
+Step 4: EW -> MH
+Step 5: MH -> KY
+Step 6: KY -> NU
+
+Answer: NU"
+6,cot,29,ML,ML,1,0,6,HQ FI WX GQ WM BF ML,0,"I need to follow the mapping starting at HQ, 6 times.
+
+Step 1: HQ -> FI
+Step 2: FI -> WX
+Step 3: WX -> GQ
+Step 4: GQ -> WM
+Step 5: WM -> BF
+Step 6: BF -> ML
+
+Answer: ML"
+8,immediate,0,KH,XS,0,0,11,IU FY VA NI UI CJ LZ GQ KH,0, XS
+8,immediate,1,VY,VY,1,0,8,ZK PP BX JR TE SQ ES VE VY,0, VY
+8,immediate,2,WG,CV,0,0,9,GH YB VY UQ JA XJ PK EH WG,0, CV
+8,immediate,3,MJ,VK,0,0,4,RH GU IL OA VK SH NB TC MJ,0, VK
+8,immediate,4,KK,NF,0,0,7,LM KL JG GD WB RA ZU NF KK,0, NF
+8,immediate,5,VD,VD,1,0,8,SF BE JL QA SV AV ET KS VD,0, VD
+8,immediate,6,YW,EJ,0,0,7,DW XD ZU SZ AE ID FB EJ YW,0, EJ
+8,immediate,7,PA,PA,1,0,8,OP MK VN OH PY DU HT BI PA,0, PA
+8,immediate,8,RA,XV,0,0,7,EX TB PR YX AY XK RW XV RA,0, XV
+8,immediate,9,EP,OM,0,0,11,DD UV CK PJ HA ZB NX UZ EP,0, OM
+8,immediate,10,ZE,ZE,1,0,8,ST AO FZ SK XD QB HR OQ ZE,0, ZE
+8,immediate,11,RB,NU,0,0,6,EJ BR JI FL KD WP NU SY RB,0, NU
+8,immediate,12,TY,FO,0,0,6,ZU JC DB GA ZL UZ FO QC TY,0, FO
+8,immediate,13,MS,YU,0,0,9,YW JD GU IM HI EE WV VF MS,0, YU
+8,immediate,14,GW,EK,0,0,9,QD RH VZ RW WC SH EW OA GW,0, EK
+8,immediate,15,CX,LU,0,0,7,WS TC ME WC FV DI LM LU CX,0, LU
+8,immediate,16,QJ,VO,0,0,7,NM AJ RA FM JE PQ OI VO QJ,0, VO
+8,immediate,17,QT,ZK,0,0,11,QO TX FJ AI BL XE ZS TU QT,0, ZK
+8,immediate,18,ZW,CU,0,0,10,WJ PL PR WY YU ML UI CC ZW,0, CU
+8,immediate,19,GF,ZT,0,0,0,ZT CU MB GI RG BZ CY AR GF,0, ZT
+8,immediate,20,VO,MK,0,0,9,WT BY RM PP IF JQ GH UJ VO,0, MK
+8,immediate,21,DR,EP,0,0,10,GB GI GN CR VO AW LR WA DR,0, EP
+8,immediate,22,IJ,WC,0,0,6,LR FZ JB VJ PJ LO WC QD IJ,0, WC
+8,immediate,23,ZU,LL,0,0,10,VU DI VB DL DB SM UV DJ ZU,0, LL
+8,immediate,24,NV,NV,1,0,8,CT UQ QN US IG KZ SQ XB NV,0, NV
+8,immediate,25,RG,PM,0,0,7,MT PS HK UF OC WI HA PM RG,0, PM
+8,immediate,26,IW,IW,1,0,8,SQ PW LH JP CF RX AO WD IW,0, IW
+8,immediate,27,TR,JI,0,0,10,KW ZX FC VN UX MK JB DQ TR,0, JI
+8,immediate,28,SY,SY,1,0,8,CT IP HA LQ RW LC LS GZ SY,0, SY
+8,immediate,29,ON,AR,0,0,6,LB CT RQ WS DZ RR AR QE ON,0, AR
+8,filler,0,KH,XS,0,0,11,IU FY VA NI UI CJ LZ GQ KH,0, XS
+8,filler,1,VY,VY,1,0,8,ZK PP BX JR TE SQ ES VE VY,0, VY
+8,filler,2,WG,JX,0,0,11,GH YB VY UQ JA XJ PK EH WG,0, JX
+8,filler,3,MJ,TC,0,0,7,RH GU IL OA VK SH NB TC MJ,0, TC
+8,filler,4,KK,NF,0,0,7,LM KL JG GD WB RA ZU NF KK,0, NF
+8,filler,5,VD,VD,1,0,8,SF BE JL QA SV AV ET KS VD,0, VD
+8,filler,6,YW,FB,0,0,6,DW XD ZU SZ AE ID FB EJ YW,0, FB
+8,filler,7,PA,PA,1,0,8,OP MK VN OH PY DU HT BI PA,0, PA
+8,filler,8,RA,RA,1,0,8,EX TB PR YX AY XK RW XV RA,0, RA
+8,filler,9,EP,WT,0,0,9,DD UV CK PJ HA ZB NX UZ EP,0, WT
+8,filler,10,ZE,ZE,1,0,8,ST AO FZ SK XD QB HR OQ ZE,0, ZE
+8,filler,11,RB,RB,1,0,8,EJ BR JI FL KD WP NU SY RB,0, RB
+8,filler,12,TY,QC,0,0,7,ZU JC DB GA ZL UZ FO QC TY,0, QC
+8,filler,13,MS,YU,0,0,9,YW JD GU IM HI EE WV VF MS,0, YU
+8,filler,14,GW,GW,1,0,8,QD RH VZ RW WC SH EW OA GW,0, GW
+8,filler,15,CX,CX,1,0,8,WS TC ME WC FV DI LM LU CX,0, CX
+8,filler,16,QJ,UM,0,0,9,NM AJ RA FM JE PQ OI VO QJ,0, UM
+8,filler,17,QT,BD,0,0,10,QO TX FJ AI BL XE ZS TU QT,0, BD
+8,filler,18,ZW,LA,0,0,9,WJ PL PR WY YU ML UI CC ZW,0, LA
+8,filler,19,GF,AR,0,0,7,ZT CU MB GI RG BZ CY AR GF,0, AR
+8,filler,20,VO,GH,0,0,6,WT BY RM PP IF JQ GH UJ VO,0, GH
+8,filler,21,DR,DR,1,0,8,GB GI GN CR VO AW LR WA DR,0, DR
+8,filler,22,IJ,ON,0,0,9,LR FZ JB VJ PJ LO WC QD IJ,0, ON
+8,filler,23,ZU,LL,0,0,10,VU DI VB DL DB SM UV DJ ZU,0, LL
+8,filler,24,NV,SQ,0,0,6,CT UQ QN US IG KZ SQ XB NV,0, SQ
+8,filler,25,RG,HA,0,0,6,MT PS HK UF OC WI HA PM RG,0, HA
+8,filler,26,IW,IW,1,0,8,SQ PW LH JP CF RX AO WD IW,0, IW
+8,filler,27,TR,TR,1,0,8,KW ZX FC VN UX MK JB DQ TR,0, TR
+8,filler,28,SY,GZ,0,0,7,CT IP HA LQ RW LC LS GZ SY,0, GZ
+8,filler,29,ON,TI,0,0,11,LB CT RQ WS DZ RR AR QE ON,0, TI
+8,cot,0,KH,KH,1,0,8,IU FY VA NI UI CJ LZ GQ KH,0,"I need to follow the mapping starting at IU for 8 steps.
+
+Step 1: IU -> FY
+Step 2: FY -> VA
+Step 3: VA -> NI
+Step 4: NI -> UI
+Step 5: UI -> CJ
+Step 6: CJ -> LZ
+Step 7: LZ -> GQ
+Step 8: GQ -> KH
+
+Answer: KH"
+8,cot,1,VY,VY,1,0,8,ZK PP BX JR TE SQ ES VE VY,0,"I need to follow the mapping starting at ZK for 8 steps.
+
+Step 1: ZK -> PP
+Step 2: PP -> BX
+Step 3: BX -> JR
+Step 4: JR -> TE
+Step 5: TE -> SQ
+Step 6: SQ -> ES
+Step 7: ES -> VE
+Step 8: VE -> VY
+
+Answer: VY"
+8,cot,2,WG,WG,1,0,8,GH YB VY UQ JA XJ PK EH WG,0,"I need to follow the mapping starting at GH for 8 steps.
+
+Step 1: GH -> YB
+Step 2: YB -> VY
+Step 3: VY -> UQ
+Step 4: UQ -> JA
+Step 5: JA -> XJ
+Step 6: XJ -> PK
+Step 7: PK -> EH
+Step 8: EH -> WG
+
+Answer: WG"
+8,cot,3,MJ,MJ,1,0,8,RH GU IL OA VK SH NB TC MJ,0,"I need to follow the mapping starting at RH, 8 times.
+
+1. RH -> GU
+2. GU -> IL
+3. IL -> OA
+4. OA -> VK
+5. VK -> SH
+6. SH -> NB
+7. NB -> TC
+8. TC -> MJ
+
+Answer: MJ"
+8,cot,4,KK,KK,1,0,8,LM KL JG GD WB RA ZU NF KK,0,"I need to follow the mapping starting at LM, 8 times.
+
+1. LM -> KL
+2. KL -> JG
+3. JG -> GD
+4. GD -> WB
+5. WB -> RA
+6. RA -> ZU
+7. ZU -> NF
+8. NF -> KK
+
+Answer: KK"
+8,cot,5,VD,VD,1,0,8,SF BE JL QA SV AV ET KS VD,0,"I need to follow the mapping starting at SF for 8 steps.
+
+Step 1: SF -> BE
+Step 2: BE -> JL
+Step 3: JL -> QA
+Step 4: QA -> SV
+Step 5: SV -> AV
+Step 6: AV -> ET
+Step 7: ET -> KS
+Step 8: KS -> VD
+
+Answer: VD"
+8,cot,6,YW,YW,1,0,8,DW XD ZU SZ AE ID FB EJ YW,0,"I need to follow the mapping starting at DW for 8 steps.
+
+Step 1: DW -> XD
+Step 2: XD -> ZU
+Step 3: ZU -> SZ
+Step 4: SZ -> AE
+Step 5: AE -> ID
+Step 6: ID -> FB
+Step 7: FB -> EJ
+Step 8: EJ -> YW
+
+Answer: YW"
+8,cot,7,PA,PA,1,0,8,OP MK VN OH PY DU HT BI PA,0,"I need to follow the mapping starting at OP, 8 times.
+
+1. OP -> MK
+2. MK -> VN
+3. VN -> OH
+4. OH -> PY
+5. PY -> DU
+6. DU -> HT
+7. HT -> BI
+8. BI -> PA
+
+Answer: PA"
+8,cot,8,RA,RA,1,0,8,EX TB PR YX AY XK RW XV RA,0,"I need to follow the mapping starting at EX, 8 times.
+
+1. EX -> TB
+2. TB -> PR
+3. PR -> YX
+4. YX -> AY
+5. AY -> XK
+6. XK -> RW
+7. RW -> XV
+8. XV -> RA
+
+Answer: RA"
+8,cot,9,EP,EP,1,0,8,DD UV CK PJ HA ZB NX UZ EP,0,"I need to follow the mapping starting at DD for 8 steps.
+
+Step 1: DD -> UV
+Step 2: UV -> CK
+Step 3: CK -> PJ
+Step 4: PJ -> HA
+Step 5: HA -> ZB
+Step 6: ZB -> NX
+Step 7: NX -> UZ
+Step 8: UZ -> EP
+
+Answer: EP"
+8,cot,10,ZE,ZE,1,0,8,ST AO FZ SK XD QB HR OQ ZE,0,"I need to follow the mapping starting at ST for 8 steps.
+
+Step 1: ST -> AO
+Step 2: AO -> FZ
+Step 3: FZ -> SK
+Step 4: SK -> XD
+Step 5: XD -> QB
+Step 6: QB -> HR
+Step 7: HR -> OQ
+Step 8: OQ -> ZE
+
+Answer: ZE"
+8,cot,11,RB,RB,1,0,8,EJ BR JI FL KD WP NU SY RB,0,"I need to follow the mapping starting at EJ for 8 steps.
+
+Step 1: EJ -> BR
+Step 2: BR -> JI
+Step 3: JI -> FL
+Step 4: FL -> KD
+Step 5: KD -> WP
+Step 6: WP -> NU
+Step 7: NU -> SY
+Step 8: SY -> RB
+
+Answer: RB"
+8,cot,12,TY,TY,1,0,8,ZU JC DB GA ZL UZ FO QC TY,0,"I need to follow the mapping starting at ZU for 8 steps.
+
+Step 1: ZU -> JC
+Step 2: JC -> DB
+Step 3: DB -> GA
+Step 4: GA -> ZL
+Step 5: ZL -> UZ
+Step 6: UZ -> FO
+Step 7: FO -> QC
+Step 8: QC -> TY
+
+Answer: TY"
+8,cot,13,MS,MS,1,0,8,YW JD GU IM HI EE WV VF MS,0,"I need to follow the mapping starting at YW for 8 steps.
+
+Step 1: YW -> JD
+Step 2: JD -> GU
+Step 3: GU -> IM
+Step 4: IM -> HI
+Step 5: HI -> EE
+Step 6: EE -> WV
+Step 7: WV -> VF
+Step 8: VF -> MS
+
+Answer: MS"
+8,cot,14,GW,GW,1,0,8,QD RH VZ RW WC SH EW OA GW,0,"I need to follow the mapping starting at QD for 8 steps.
+
+Step 1: QD -> RH
+Step 2: RH -> VZ
+Step 3: VZ -> RW
+Step 4: RW -> WC
+Step 5: WC -> SH
+Step 6: SH -> EW
+Step 7: EW -> OA
+Step 8: OA -> GW
+
+Answer: GW"
+8,cot,15,CX,CX,1,0,8,WS TC ME WC FV DI LM LU CX,0,"I need to follow the mapping starting at WS for 8 steps.
+
+Step 1: WS -> TC
+Step 2: TC -> ME
+Step 3: ME -> WC
+Step 4: WC -> FV
+Step 5: FV -> DI
+Step 6: DI -> LM
+Step 7: LM -> LU
+Step 8: LU -> CX
+
+Answer: CX"
+8,cot,16,QJ,QJ,1,0,8,NM AJ RA FM JE PQ OI VO QJ,0,"I need to follow the mapping starting at NM, 8 times.
+
+1. NM -> AJ
+2. AJ -> RA
+3. RA -> FM
+4. FM -> JE
+5. JE -> PQ
+6. PQ -> OI
+7. OI -> VO
+8. VO -> QJ
+
+Answer: QJ"
+8,cot,17,QT,QT,1,0,8,QO TX FJ AI BL XE ZS TU QT,0,"I need to follow the mapping starting at QO for 8 steps.
+
+Step 1: QO -> TX
+Step 2: TX -> FJ
+Step 3: FJ -> AI
+Step 4: AI -> BL
+Step 5: BL -> XE
+Step 6: XE -> ZS
+Step 7: ZS -> TU
+Step 8: TU -> QT
+
+Answer: QT"
+8,cot,18,ZW,ZW,1,0,8,WJ PL PR WY YU ML UI CC ZW,0,"I need to follow the mapping starting at WJ for 8 steps.
+
+Step 1: WJ -> PL
+Step 2: PL -> PR
+Step 3: PR -> WY
+Step 4: WY -> YU
+Step 5: YU -> ML
+Step 6: ML -> UI
+Step 7: UI -> CC
+Step 8: CC -> ZW
+
+Answer: ZW"
+8,cot,19,GF,GF,1,0,8,ZT CU MB GI RG BZ CY AR GF,0,"I need to follow the mapping starting at ZT for 8 steps.
+
+Step 1: ZT -> CU
+Step 2: CU -> MB
+Step 3: MB -> GI
+Step 4: GI -> RG
+Step 5: RG -> BZ
+Step 6: BZ -> CY
+Step 7: CY -> AR
+Step 8: AR -> GF
+
+Answer: GF"
+8,cot,20,VO,VO,1,0,8,WT BY RM PP IF JQ GH UJ VO,0,"I need to follow the mapping starting at WT, 8 times.
+
+1. WT -> BY
+2. BY -> RM
+3. RM -> PP
+4. PP -> IF
+5. IF -> JQ
+6. JQ -> GH
+7. GH -> UJ
+8. UJ -> VO
+
+Answer: VO"
+8,cot,21,DR,DR,1,0,8,GB GI GN CR VO AW LR WA DR,0,"I need to follow the mapping starting at GB for 8 steps.
+
+Step 1: GB -> GI
+Step 2: GI -> GN
+Step 3: GN -> CR
+Step 4: CR -> VO
+Step 5: VO -> AW
+Step 6: AW -> LR
+Step 7: LR -> WA
+Step 8: WA -> DR
+
+Answer: DR"
+8,cot,22,IJ,IJ,1,0,8,LR FZ JB VJ PJ LO WC QD IJ,0,"I need to follow the mapping starting at LR for 8 steps.
+
+Step 1: LR -> FZ
+Step 2: FZ -> JB
+Step 3: JB -> VJ
+Step 4: VJ -> PJ
+Step 5: PJ -> LO
+Step 6: LO -> WC
+Step 7: WC -> QD
+Step 8: QD -> IJ
+
+Answer: IJ"
+8,cot,23,ZU,ZU,1,0,8,VU DI VB DL DB SM UV DJ ZU,0,"I need to follow the mapping starting at VU for 8 steps.
+
+Step 1: VU -> DI
+Step 2: DI -> VB
+Step 3: VB -> DL
+Step 4: DL -> DB
+Step 5: DB -> SM
+Step 6: SM -> UV
+Step 7: UV -> DJ
+Step 8: DJ -> ZU
+
+Answer: ZU"
+8,cot,24,NV,NV,1,0,8,CT UQ QN US IG KZ SQ XB NV,0,"I need to follow the mapping starting at CT, 8 times.
+
+1. CT -> UQ
+2. UQ -> QN
+3. QN -> US
+4. US -> IG
+5. IG -> KZ
+6. KZ -> SQ
+7. SQ -> XB
+8. XB -> NV
+
+Answer: NV"
+8,cot,25,RG,RG,1,0,8,MT PS HK UF OC WI HA PM RG,0,"I need to follow the mapping starting at MT for 8 steps.
+
+Step 1: MT -> PS
+Step 2: PS -> HK
+Step 3: HK -> UF
+Step 4: UF -> OC
+Step 5: OC -> WI
+Step 6: WI -> HA
+Step 7: HA -> PM
+Step 8: PM -> RG
+
+Answer: RG"
+8,cot,26,IW,IW,1,0,8,SQ PW LH JP CF RX AO WD IW,0,"I need to follow the mapping starting at SQ for 8 steps.
+
+Step 1: SQ -> PW
+Step 2: PW -> LH
+Step 3: LH -> JP
+Step 4: JP -> CF
+Step 5: CF -> RX
+Step 6: RX -> AO
+Step 7: AO -> WD
+Step 8: WD -> IW
+
+Answer: IW"
+8,cot,27,TR,TR,1,0,8,KW ZX FC VN UX MK JB DQ TR,0,"I need to follow the mapping starting at KW for 8 steps.
+
+Step 1: KW -> ZX
+Step 2: ZX -> FC
+Step 3: FC -> VN
+Step 4: VN -> UX
+Step 5: UX -> MK
+Step 6: MK -> JB
+Step 7: JB -> DQ
+Step 8: DQ -> TR
+
+Answer: TR"
+8,cot,28,SY,SY,1,0,8,CT IP HA LQ RW LC LS GZ SY,0,"I need to follow the mapping starting at CT for 8 steps.
+
+Step 1: CT -> IP
+Step 2: IP -> HA
+Step 3: HA -> LQ
+Step 4: LQ -> RW
+Step 5: RW -> LC
+Step 6: LC -> LS
+Step 7: LS -> GZ
+Step 8: GZ -> SY
+
+Answer: SY"
+8,cot,29,ON,ON,1,0,8,LB CT RQ WS DZ RR AR QE ON,0,"I need to follow the mapping starting at LB, 8 times.
+
+1. LB -> CT
+2. CT -> RQ
+3. RQ -> WS
+4. WS -> DZ
+5. DZ -> RR
+6. RR -> AR
+7. AR -> QE
+8. QE -> ON
+
+Answer: ON"

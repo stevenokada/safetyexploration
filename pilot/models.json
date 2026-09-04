@@ -1,0 +1,53 @@
+{
+  "_note": "Active set is restricted to three open-weight J-Lens models. Behavioral sweeps run through OpenRouter; the same checkpoints load from HF with their lenses for mechanistic follow-up. `excluded` records what was dropped and why.",
+  "jlens": {
+    "_note": "ACTIVE SET for all new experiments: three open-weight models with published J-Lens weights, spanning dense vs MoE at matched scale and two independent training lineages. The `lens` field is the folder in camilablank/workspace-lenses.",
+    "models": {
+      "qwen/qwen3.6-27b": {
+        "hf": "Qwen/Qwen3.6-27B",
+        "lens": "qwen3.6-27b",
+        "params": "27B",
+        "arch": "dense",
+        "openrouter": true,
+        "extras": [
+          "template-lens (multi-token)",
+          "NLA: ceselder/qwen3.6-27b-nla-rl @ layer 42"
+        ],
+        "gpu": "1x80GB bf16 / 4-bit on 24GB",
+        "why": "richest tooling of any J-Lens model: single-token lens, multi-token template lens, and a natural-language autoencoder. Primary subject."
+      },
+      "qwen/qwen3.6-35b-a3b": {
+        "hf": "Qwen/Qwen3.6-35B-A3B",
+        "lens": "qwen3.6-35b-a3b",
+        "params": "35B total / 3B active",
+        "arch": "moe",
+        "openrouter": true,
+        "gpu": "1x80GB bf16 / 4-bit on 24GB",
+        "why": "MoE counterpart to qwen3.6-27b at matched scale and generation, both lensed. Enables a behavioral test of the prediction that MoE has lower opaque serial depth than dense."
+      },
+      "google/gemma-3-27b-it": {
+        "hf": "google/gemma-3-27b-it",
+        "lens": "gemma-3-27b-it",
+        "params": "27B",
+        "arch": "dense",
+        "openrouter": true,
+        "gpu": "1x80GB bf16 / 4-bit on 24GB",
+        "why": "only non-Qwen lensed model. Required to show results are not a Qwen-family artifact. Well supported in TransformerLens and nnsight."
+      }
+    }
+  },
+  "excluded": {
+    "_note": "Dropped by the open-weights + J-Lens requirement. Kept for provenance: pilot results on these are in the repo but cannot be followed up mechanistically.",
+    "anthropic/claude-opus-4.5": "closed weights, no internals access",
+    "google/gemini-2.5-flash": "closed weights",
+    "openai/gpt-5.1": "closed weights; also had CoT instruction-compliance failures",
+    "deepseek/deepseek-chat": "open weights but no J-Lens published",
+    "moonshotai/kimi-k2-0905": "open weights but no J-Lens published",
+    "qwen/qwen3-max": "no J-Lens; also unstable under concurrency in the pilot",
+    "qwen/qwen3.5-9b": "has a J-Lens but outside the active three-model set: smallest lensed model that is also on OpenRouter",
+    "qwen/qwen3.5-27b": "has a J-Lens but outside the active three-model set: same size and family as qwen3",
+    "qwen/qwen3.5-122b-a10b": "has a J-Lens but outside the active three-model set: upper-mid scale point within the Qwen family for a scale sweep",
+    "qwen/qwen3.5-4b": "has a J-Lens but outside the active three-model set: lensed and tiny, but NOT served on OpenRouter",
+    "deepseek/deepseek-v4-flash": "has a J-Lens but outside the active three-model set: frontier-scale anchor, lensed, and the model named in the filler-token literature as benefiting from filler"
+  }
+}

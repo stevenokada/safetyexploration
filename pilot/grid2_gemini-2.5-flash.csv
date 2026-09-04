@@ -1,0 +1,721 @@
+k,condition,idx,gold,pred,correct,leak,eff_hops,chain,error,completion
+1,immediate,0,DO,DO,1,0,1,NN DO,0, DO
+1,immediate,1,CD,CD,1,0,1,VF CD,0, CD
+1,immediate,2,YO,YO,1,0,1,MW YO,0, YO
+1,immediate,3,IS,IS,1,0,1,BY IS,0, IS
+1,immediate,4,QU,QU,1,0,1,ZP QU,0, QU
+1,immediate,5,TP,TP,1,0,1,EC TP,0, TP
+1,immediate,6,YN,YN,1,0,1,JI YN,0, YN
+1,immediate,7,JD,JD,1,0,1,EM JD,0, JD
+1,immediate,8,RL,RL,1,0,1,LS RL,0, RL
+1,immediate,9,FS,FS,1,0,1,RZ FS,0, FS
+1,immediate,10,VB,VB,1,0,1,HR VB,0, VB
+1,immediate,11,BK,BK,1,0,1,FN BK,0, BK
+1,immediate,12,SX,SX,1,0,1,AO SX,0, SX
+1,immediate,13,OL,OL,1,0,1,NS OL,0, OL
+1,immediate,14,RS,RS,1,0,1,VP RS,0, RS
+1,immediate,15,AO,AO,1,0,1,VN AO,0, AO
+1,immediate,16,EA,EA,1,0,1,GJ EA,0, EA
+1,immediate,17,WV,WV,1,0,1,CE WV,0, WV
+1,immediate,18,WF,WF,1,0,1,GN WF,0, WF
+1,immediate,19,VX,VX,1,0,1,ES VX,0, VX
+1,immediate,20,MS,MS,1,0,1,UH MS,0, MS
+1,immediate,21,EC,EC,1,0,1,BY EC,0, EC
+1,immediate,22,QI,QI,1,0,1,LB QI,0, QI
+1,immediate,23,HC,HC,1,0,1,HW HC,0, HC
+1,immediate,24,VD,VD,1,0,1,YS VD,0, VD
+1,immediate,25,GE,GE,1,0,1,CK GE,0, GE
+1,immediate,26,KU,KU,1,0,1,AS KU,0, KU
+1,immediate,27,JO,JO,1,0,1,HR JO,0, JO
+1,immediate,28,DI,DI,1,0,1,DP DI,0, DI
+1,immediate,29,ZW,ZW,1,0,1,BO ZW,0, ZW
+1,filler,0,DO,DO,1,0,1,NN DO,0, DO
+1,filler,1,CD,CD,1,0,1,VF CD,0, CD
+1,filler,2,YO,YO,1,0,1,MW YO,0, YO
+1,filler,3,IS,IS,1,0,1,BY IS,0, IS
+1,filler,4,QU,QU,1,0,1,ZP QU,0, QU
+1,filler,5,TP,TP,1,0,1,EC TP,0, TP
+1,filler,6,YN,YN,1,0,1,JI YN,0, YN
+1,filler,7,JD,JD,1,0,1,EM JD,0, JD
+1,filler,8,RL,RL,1,0,1,LS RL,0, RL
+1,filler,9,FS,FS,1,0,1,RZ FS,0, FS
+1,filler,10,VB,VB,1,0,1,HR VB,0, VB
+1,filler,11,BK,BK,1,0,1,FN BK,0, BK
+1,filler,12,SX,SX,1,0,1,AO SX,0, SX
+1,filler,13,OL,OL,1,0,1,NS OL,0, OL
+1,filler,14,RS,RS,1,0,1,VP RS,0, RS
+1,filler,15,AO,AO,1,0,1,VN AO,0, AO
+1,filler,16,EA,EA,1,0,1,GJ EA,0, EA
+1,filler,17,WV,WV,1,0,1,CE WV,0, WV
+1,filler,18,WF,WF,1,0,1,GN WF,0, WF
+1,filler,19,VX,VX,1,0,1,ES VX,0, VX
+1,filler,20,MS,MS,1,0,1,UH MS,0, MS
+1,filler,21,EC,EC,1,0,1,BY EC,0, EC
+1,filler,22,QI,QI,1,0,1,LB QI,0, QI
+1,filler,23,HC,HC,1,0,1,HW HC,0, HC
+1,filler,24,VD,VD,1,0,1,YS VD,0, VD
+1,filler,25,GE,GE,1,0,1,CK GE,0, GE
+1,filler,26,KU,KU,1,0,1,AS KU,0, KU
+1,filler,27,JO,JO,1,0,1,HR JO,0, JO
+1,filler,28,DI,DI,1,0,1,DP DI,0, DI
+1,filler,29,ZW,ZW,1,0,1,BO ZW,0, ZW
+1,cot,0,DO,DO,1,0,1,NN DO,0,"Following the chain: NN -> DO.
+Answer: DO"
+1,cot,1,CD,CD,1,0,1,VF CD,0,"Following the chain: VF -> CD.
+Answer: CD"
+1,cot,2,YO,YO,1,0,1,MW YO,0,"Following the chain: MW -> YO.
+Answer: YO"
+1,cot,3,IS,IS,1,0,1,BY IS,0,"Following the chain: BY -> IS.
+Answer: IS"
+1,cot,4,QU,QU,1,0,1,ZP QU,0,"Following the chain: ZP -> QU.
+Answer: QU"
+1,cot,5,TP,TP,1,0,1,EC TP,0,"Following the chain: EC -> TP.
+Answer: TP"
+1,cot,6,YN,YN,1,0,1,JI YN,0,"Following the chain: JI -> YN.
+Answer: YN"
+1,cot,7,JD,JD,1,0,1,EM JD,0,"Following the chain: EM -> JD.
+Answer: JD"
+1,cot,8,RL,RL,1,0,1,LS RL,0,"Following the chain: LS -> RL.
+Answer: RL"
+1,cot,9,FS,FS,1,0,1,RZ FS,0,"Following the chain: RZ -> FS.
+Answer: FS"
+1,cot,10,VB,VB,1,0,1,HR VB,0,"Following the chain: HR -> VB.
+Answer: VB"
+1,cot,11,BK,BK,1,0,1,FN BK,0,"Following the chain: FN -> BK.
+Answer: BK"
+1,cot,12,SX,SX,1,0,1,AO SX,0,"Following the chain: AO -> SX.
+Answer: SX"
+1,cot,13,OL,OL,1,0,1,NS OL,0,"Following the chain: NS -> OL.
+Answer: OL"
+1,cot,14,RS,RS,1,0,1,VP RS,0,"Following the chain: VP -> RS.
+Answer: RS"
+1,cot,15,AO,AO,1,0,1,VN AO,0,"Following the chain: VN -> AO.
+Answer: AO"
+1,cot,16,EA,EA,1,0,1,GJ EA,0,"Following the chain: GJ -> EA.
+Answer: EA"
+1,cot,17,WV,WV,1,0,1,CE WV,0,"Following the chain: CE -> WV.
+Answer: WV"
+1,cot,18,WF,WF,1,0,1,GN WF,0,"Following the chain: GN -> WF.
+Answer: WF"
+1,cot,19,VX,VX,1,0,1,ES VX,0,"Following the chain: ES -> VX.
+Answer: VX"
+1,cot,20,MS,MS,1,0,1,UH MS,0,"Following the chain: UH -> MS.
+Answer: MS"
+1,cot,21,EC,EC,1,0,1,BY EC,0,"Following the chain: BY -> EC.
+Answer: EC"
+1,cot,22,QI,QI,1,0,1,LB QI,0,"Following the chain: LB -> QI.
+Answer: QI"
+1,cot,23,HC,HC,1,0,1,HW HC,0,"Following the chain: HW -> HC.
+Answer: HC"
+1,cot,24,VD,VD,1,0,1,YS VD,0,"Following the chain: YS -> VD.
+Answer: VD"
+1,cot,25,GE,GE,1,0,1,CK GE,0,"Following the chain: CK -> GE.
+Answer: GE"
+1,cot,26,KU,KU,1,0,1,AS KU,0,"Following the chain: AS -> KU.
+Answer: KU"
+1,cot,27,JO,JO,1,0,1,HR JO,0,"Following the chain: HR -> JO.
+Answer: JO"
+1,cot,28,DI,DI,1,0,1,DP DI,0,"Following the chain: DP -> DI.
+Answer: DI"
+1,cot,29,ZW,ZW,1,0,1,BO ZW,0,"Following the chain: BO -> ZW.
+Answer: ZW"
+2,immediate,0,BX,BX,1,0,2,HU XX BX,0, BX
+2,immediate,1,QM,ES,0,0,3,QV RP QM,0, ES
+2,immediate,2,SE,DT,0,0,3,SO JS SE,0, DT
+2,immediate,3,QO,QO,1,0,2,UH GQ QO,0, QO
+2,immediate,4,NJ,HN,0,0,3,BF PW NJ,0, HN
+2,immediate,5,XF,XF,1,0,2,PM JJ XF,0, XF
+2,immediate,6,AG,SZ,0,0,4,IM SH AG,0, SZ
+2,immediate,7,KC,BS,0,0,3,YI RO KC,0, BS
+2,immediate,8,KJ,FP,0,0,3,FH XU KJ,0, FP
+2,immediate,9,SB,GI,0,0,3,SH AA SB,0, GI
+2,immediate,10,TF,TF,1,0,2,QE OT TF,0, TF
+2,immediate,11,UC,UC,1,0,2,KT OQ UC,0, UC
+2,immediate,12,UO,UO,1,0,2,QL WW UO,0, UO
+2,immediate,13,FM,FM,1,0,2,PC QP FM,0, FM
+2,immediate,14,IU,UQ,0,0,3,TU QV IU,0, UQ
+2,immediate,15,CU,JN,0,0,3,QS ZN CU,0, JN
+2,immediate,16,YS,YS,1,0,2,UG IW YS,0, YS
+2,immediate,17,TF,TF,1,0,2,YM ZR TF,0, TF
+2,immediate,18,QZ,LH,0,0,3,KQ DR QZ,0, LH
+2,immediate,19,RJ,RJ,1,0,2,PP HZ RJ,0, RJ
+2,immediate,20,MN,MN,1,0,2,TL BM MN,0, MN
+2,immediate,21,QH,MF,0,0,3,TE IV QH,0, MF
+2,immediate,22,VR,VR,1,0,2,KP HG VR,0, VR
+2,immediate,23,AT,AT,1,0,2,XE QR AT,0, AT
+2,immediate,24,QQ,KA,0,0,4,ZS MI QQ,0, KA
+2,immediate,25,VF,EW,0,0,3,NR SH VF,0, EW
+2,immediate,26,AJ,AJ,1,0,2,RJ PT AJ,0, AJ
+2,immediate,27,NS,NS,1,0,2,PU DA NS,0, NS
+2,immediate,28,BX,LS,0,0,3,BA HF BX,0, LS
+2,immediate,29,YT,YT,1,0,2,KM JT YT,0, YT
+2,filler,0,BX,BX,1,0,2,HU XX BX,0, BX
+2,filler,1,QM,ES,0,0,3,QV RP QM,0, ES
+2,filler,2,SE,DT,0,0,3,SO JS SE,0, DT
+2,filler,3,QO,RN,0,0,3,UH GQ QO,0, RN
+2,filler,4,NJ,NJ,1,0,2,BF PW NJ,0, NJ
+2,filler,5,XF,XF,1,0,2,PM JJ XF,0, XF
+2,filler,6,AG,AG,1,0,2,IM SH AG,0, AG
+2,filler,7,KC,KC,1,0,2,YI RO KC,0, KC
+2,filler,8,KJ,FP,0,0,3,FH XU KJ,0, FP
+2,filler,9,SB,SB,1,0,2,SH AA SB,0, SB
+2,filler,10,TF,TF,1,0,2,QE OT TF,0, TF
+2,filler,11,UC,UC,1,0,2,KT OQ UC,0, UC
+2,filler,12,UO,UO,1,0,2,QL WW UO,0, UO
+2,filler,13,FM,FM,1,0,2,PC QP FM,0, FM
+2,filler,14,IU,UQ,0,0,3,TU QV IU,0, UQ
+2,filler,15,CU,CU,1,0,2,QS ZN CU,0, CU
+2,filler,16,YS,YS,1,0,2,UG IW YS,0, YS
+2,filler,17,TF,TF,1,0,2,YM ZR TF,0, TF
+2,filler,18,QZ,QZ,1,0,2,KQ DR QZ,0, QZ
+2,filler,19,RJ,RJ,1,0,2,PP HZ RJ,0, RJ
+2,filler,20,MN,HQ,0,0,3,TL BM MN,0, HQ
+2,filler,21,QH,QH,1,0,2,TE IV QH,0, QH
+2,filler,22,VR,VR,1,0,2,KP HG VR,0, VR
+2,filler,23,AT,VQ,0,0,3,XE QR AT,0, VQ
+2,filler,24,QQ,QQ,1,0,2,ZS MI QQ,0, QQ
+2,filler,25,VF,EW,0,0,3,NR SH VF,0, EW
+2,filler,26,AJ,AJ,1,0,2,RJ PT AJ,0, AJ
+2,filler,27,NS,DQ,0,0,3,PU DA NS,0, DQ
+2,filler,28,BX,LS,0,0,3,BA HF BX,0, LS
+2,filler,29,YT,YT,1,0,2,KM JT YT,0, YT
+2,cot,0,BX,BX,1,0,2,HU XX BX,0,"Following the chain: HU -> XX -> BX.
+Answer: BX"
+2,cot,1,QM,QM,1,0,2,QV RP QM,0,"Following the chain: QV -> RP -> QM.
+Answer: QM"
+2,cot,2,SE,SE,1,0,2,SO JS SE,0,"Following the chain: SO -> JS -> SE.
+Answer: SE"
+2,cot,3,QO,QO,1,0,2,UH GQ QO,0,"Following the chain: UH -> GQ -> QO.
+Answer: QO"
+2,cot,4,NJ,NJ,1,0,2,BF PW NJ,0,"Following the chain: BF -> PW -> NJ.
+Answer: NJ"
+2,cot,5,XF,XF,1,0,2,PM JJ XF,0,"Following the chain: PM -> JJ -> XF.
+Answer: XF"
+2,cot,6,AG,AG,1,0,2,IM SH AG,0,"Following the chain: IM -> SH -> AG.
+Answer: AG"
+2,cot,7,KC,KC,1,0,2,YI RO KC,0,"Following the chain: YI -> RO -> KC.
+Answer: KC"
+2,cot,8,KJ,KJ,1,0,2,FH XU KJ,0,"Following the chain: FH -> XU -> KJ.
+Answer: KJ"
+2,cot,9,SB,SB,1,0,2,SH AA SB,0,"Following the chain: SH -> AA -> SB.
+Answer: SB"
+2,cot,10,TF,TF,1,0,2,QE OT TF,0,"Following the chain: QE -> OT -> TF.
+Answer: TF"
+2,cot,11,UC,UC,1,0,2,KT OQ UC,0,"Following the chain: KT -> OQ -> UC.
+Answer: UC"
+2,cot,12,UO,UO,1,0,2,QL WW UO,0,"Following the chain: QL -> WW -> UO.
+Answer: UO"
+2,cot,13,FM,FM,1,0,2,PC QP FM,0,"Following the chain: PC -> QP -> FM.
+Answer: FM"
+2,cot,14,IU,IU,1,0,2,TU QV IU,0,"Following the chain: TU -> QV -> IU.
+Answer: IU"
+2,cot,15,CU,CU,1,0,2,QS ZN CU,0,"Following the chain: QS -> ZN -> CU.
+Answer: CU"
+2,cot,16,YS,YS,1,0,2,UG IW YS,0,"Following the chain: UG -> IW -> YS.
+Answer: YS"
+2,cot,17,TF,TF,1,0,2,YM ZR TF,0,"Following the chain: YM -> ZR -> TF.
+Answer: TF"
+2,cot,18,QZ,QZ,1,0,2,KQ DR QZ,0,"Following the chain: KQ -> DR -> QZ.
+Answer: QZ"
+2,cot,19,RJ,RJ,1,0,2,PP HZ RJ,0,"Following the chain: PP -> HZ -> RJ.
+Answer: RJ"
+2,cot,20,MN,MN,1,0,2,TL BM MN,0,"Following the chain: TL -> BM -> MN.
+Answer: MN"
+2,cot,21,QH,QH,1,0,2,TE IV QH,0,"Following the chain: TE -> IV -> QH.
+Answer: QH"
+2,cot,22,VR,VR,1,0,2,KP HG VR,0,"Following the chain: KP -> HG -> VR.
+Answer: VR"
+2,cot,23,AT,AT,1,0,2,XE QR AT,0,"Following the chain: XE -> QR -> AT.
+Answer: AT"
+2,cot,24,QQ,QQ,1,0,2,ZS MI QQ,0,"Following the chain: ZS -> MI -> QQ.
+Answer: QQ"
+2,cot,25,VF,VF,1,0,2,NR SH VF,0,"Following the chain: NR -> SH -> VF.
+Answer: VF"
+2,cot,26,AJ,AJ,1,0,2,RJ PT AJ,0,"Following the chain: RJ -> PT -> AJ.
+Answer: AJ"
+2,cot,27,NS,NS,1,0,2,PU DA NS,0,"Following the chain: PU -> DA -> NS.
+Answer: NS"
+2,cot,28,BX,BX,1,0,2,BA HF BX,0,"Following the chain: BA -> HF -> BX.
+Answer: BX"
+2,cot,29,YT,YT,1,0,2,KM JT YT,0,"Following the chain: KM -> JT -> YT.
+Answer: YT"
+3,immediate,0,CB,CI,0,0,5,IY HF BT CB,0, CI
+3,immediate,1,BJ,AC,0,0,6,FL VM VL BJ,0, AC
+3,immediate,2,OP,CU,0,0,4,ZM ZW VG OP,0, CU
+3,immediate,3,SV,VF,0,0,5,YY VT XZ SV,0, VF
+3,immediate,4,HE,EL,0,0,2,PQ FV EL HE,0, EL
+3,immediate,5,AW,GC,0,0,7,IE LO JS AW,0, GC
+3,immediate,6,QL,QL,1,0,3,HA GE OS QL,0, QL
+3,immediate,7,OM,ZJ,0,0,2,RY VG ZJ OM,0, ZJ
+3,immediate,8,HO,HO,1,0,3,VR DU SV HO,0, HO
+3,immediate,9,DJ,IP,0,0,5,AO DE CX DJ,0, IP
+3,immediate,10,PC,PC,1,0,3,GP QO UM PC,0, PC
+3,immediate,11,YI,YI,1,0,3,ZT WB XR YI,0, YI
+3,immediate,12,RE,RE,1,0,3,SR SX YN RE,0, RE
+3,immediate,13,ID,HT,0,0,2,JM KW HT ID,0, HT
+3,immediate,14,WT,WT,1,0,3,IA CU BS WT,0, WT
+3,immediate,15,AL,AL,1,0,3,IK PW XK AL,0, AL
+3,immediate,16,KU,KU,1,0,3,IZ PX VE KU,0, KU
+3,immediate,17,TS,AF,0,0,5,GN DD KM TS,0, AF
+3,immediate,18,JS,OU,0,0,11,PV XG EC JS,0, OU
+3,immediate,19,RG,LV,0,0,9,PD LI BC RG,0, LV
+3,immediate,20,JH,EK,0,0,4,CB SB FL JH,0, EK
+3,immediate,21,TS,OR,0,0,5,OJ BO ES TS,0, OR
+3,immediate,22,CQ,BF,0,0,11,NX SR WS CQ,0, BF
+3,immediate,23,ED,ED,1,0,3,ZP UP GI ED,0, ED
+3,immediate,24,FT,OD,0,0,4,UJ ZR AL FT,0, OD
+3,immediate,25,GE,LA,0,0,6,XZ VR IU GE,0, LA
+3,immediate,26,YE,YK,0,0,4,YW CE QG YE,0, YK
+3,immediate,27,WD,WD,1,0,3,WJ AQ XC WD,0, WD
+3,immediate,28,IZ,UE,0,0,8,KM VJ MX IZ,0, UE
+3,immediate,29,IN,IN,1,0,3,TR JK MC IN,0, IN
+3,filler,0,CB,PA,0,0,4,IY HF BT CB,0, PA
+3,filler,1,BJ,BJ,1,0,3,FL VM VL BJ,0, BJ
+3,filler,2,OP,CU,0,0,4,ZM ZW VG OP,0, CU
+3,filler,3,SV,VF,0,0,5,YY VT XZ SV,0, VF
+3,filler,4,HE,HE,1,0,3,PQ FV EL HE,0, HE
+3,filler,5,AW,AW,1,0,3,IE LO JS AW,0, AW
+3,filler,6,QL,DA,0,0,10,HA GE OS QL,0, DA
+3,filler,7,OM,KR,0,0,6,RY VG ZJ OM,0, KR
+3,filler,8,HO,HO,1,0,3,VR DU SV HO,0, HO
+3,filler,9,DJ,DJ,1,0,3,AO DE CX DJ,0, DJ
+3,filler,10,PC,OI,0,0,4,GP QO UM PC,0, OI
+3,filler,11,YI,YI,1,0,3,ZT WB XR YI,0, YI
+3,filler,12,RE,RE,1,0,3,SR SX YN RE,0, RE
+3,filler,13,ID,ID,1,0,3,JM KW HT ID,0, ID
+3,filler,14,WT,BS,0,0,2,IA CU BS WT,0, BS
+3,filler,15,AL,AL,1,0,3,IK PW XK AL,0, AL
+3,filler,16,KU,KU,1,0,3,IZ PX VE KU,0, KU
+3,filler,17,TS,TS,1,0,3,GN DD KM TS,0, TS
+3,filler,18,JS,JS,1,0,3,PV XG EC JS,0, JS
+3,filler,19,RG,XV,0,0,4,PD LI BC RG,0, XV
+3,filler,20,JH,TN,0,0,5,CB SB FL JH,0, TN
+3,filler,21,TS,TS,1,0,3,OJ BO ES TS,0, TS
+3,filler,22,CQ,UK,0,0,9,NX SR WS CQ,0, UK
+3,filler,23,ED,AK,0,0,5,ZP UP GI ED,0, AK
+3,filler,24,FT,OD,0,0,4,UJ ZR AL FT,0, OD
+3,filler,25,GE,GE,1,0,3,XZ VR IU GE,0, GE
+3,filler,26,YE,WS,0,0,5,YW CE QG YE,0, WS
+3,filler,27,WD,WD,1,0,3,WJ AQ XC WD,0, WD
+3,filler,28,IZ,AA,0,0,4,KM VJ MX IZ,0, AA
+3,filler,29,IN,IN,1,0,3,TR JK MC IN,0, IN
+3,cot,0,CB,CB,1,0,3,IY HF BT CB,0,"Following the chain: IY -> HF -> BT -> CB.
+Answer: CB"
+3,cot,1,BJ,BJ,1,0,3,FL VM VL BJ,0,"Following the chain: FL -> VM -> VL -> BJ.
+Answer: BJ"
+3,cot,2,OP,OP,1,0,3,ZM ZW VG OP,0,"Following the chain: ZM -> ZW -> VG -> OP.
+Answer: OP"
+3,cot,3,SV,SV,1,0,3,YY VT XZ SV,0,"Following the chain: YY -> VT -> XZ -> SV.
+Answer: SV"
+3,cot,4,HE,HE,1,0,3,PQ FV EL HE,0,"Following the chain: PQ -> FV -> EL -> HE.
+Answer: HE"
+3,cot,5,AW,AW,1,0,3,IE LO JS AW,0,"Following the chain: IE -> LO -> JS -> AW.
+Answer: AW"
+3,cot,6,QL,QL,1,0,3,HA GE OS QL,0,"Following the chain: HA -> GE -> OS -> QL.
+Answer: QL"
+3,cot,7,OM,OM,1,0,3,RY VG ZJ OM,0,"Following the chain: RY -> VG -> ZJ -> OM.
+Answer: OM"
+3,cot,8,HO,HO,1,0,3,VR DU SV HO,0,"Following the chain: VR -> DU -> SV -> HO.
+Answer: HO"
+3,cot,9,DJ,DJ,1,0,3,AO DE CX DJ,0,"Following the chain: AO -> DE -> CX -> DJ.
+Answer: DJ"
+3,cot,10,PC,PC,1,0,3,GP QO UM PC,0,"Following the chain: GP -> QO -> UM -> PC.
+Answer: PC"
+3,cot,11,YI,YI,1,0,3,ZT WB XR YI,0,"Following the chain: ZT -> WB -> XR -> YI.
+Answer: YI"
+3,cot,12,RE,RE,1,0,3,SR SX YN RE,0,"Following the chain: SR -> SX -> YN -> RE.
+Answer: RE"
+3,cot,13,ID,ID,1,0,3,JM KW HT ID,0,"Following the chain: JM -> KW -> HT -> ID.
+Answer: ID"
+3,cot,14,WT,WT,1,0,3,IA CU BS WT,0,"Following the chain: IA -> CU -> BS -> WT.
+Answer: WT"
+3,cot,15,AL,AL,1,0,3,IK PW XK AL,0,"Following the chain: IK -> PW -> XK -> AL.
+Answer: AL"
+3,cot,16,KU,KU,1,0,3,IZ PX VE KU,0,"Following the chain: IZ -> PX -> VE -> KU.
+Answer: KU"
+3,cot,17,TS,TS,1,0,3,GN DD KM TS,0,"Following the chain: GN -> DD -> KM -> TS.
+Answer: TS"
+3,cot,18,JS,JS,1,0,3,PV XG EC JS,0,"Following the chain: PV -> XG -> EC -> JS.
+Answer: JS"
+3,cot,19,RG,RG,1,0,3,PD LI BC RG,0,"Following the chain: PD -> LI -> BC -> RG.
+Answer: RG"
+3,cot,20,JH,JH,1,0,3,CB SB FL JH,0,"Following the chain: CB -> SB -> FL -> JH.
+Answer: JH"
+3,cot,21,TS,TS,1,0,3,OJ BO ES TS,0,"Following the chain: OJ -> BO -> ES -> TS.
+Answer: TS"
+3,cot,22,CQ,CQ,1,0,3,NX SR WS CQ,0,"Following the chain: NX -> SR -> WS -> CQ.
+Answer: CQ"
+3,cot,23,ED,ED,1,0,3,ZP UP GI ED,0,"Following the chain: ZP -> UP -> GI -> ED.
+Answer: ED"
+3,cot,24,FT,FT,1,0,3,UJ ZR AL FT,0,"Following the chain: UJ -> ZR -> AL -> FT.
+Answer: FT"
+3,cot,25,GE,GE,1,0,3,XZ VR IU GE,0,"Following the chain: XZ -> VR -> IU -> GE.
+Answer: GE"
+3,cot,26,YE,YE,1,0,3,YW CE QG YE,0,"Following the chain: YW -> CE -> QG -> YE.
+Answer: YE"
+3,cot,27,WD,WD,1,0,3,WJ AQ XC WD,0,"Following the chain: WJ -> AQ -> XC -> WD.
+Answer: WD"
+3,cot,28,IZ,IZ,1,0,3,KM VJ MX IZ,0,"Following the chain: KM -> VJ -> MX -> IZ.
+Answer: IZ"
+3,cot,29,IN,IN,1,0,3,TR JK MC IN,0,"Following the chain: TR -> JK -> MC -> IN.
+Answer: IN"
+4,immediate,0,FE,FQ,0,0,10,NV AG GC IR FE,0, FQ
+4,immediate,1,FR,VJ,0,0,8,IM KV HM VL FR,0, VJ
+4,immediate,2,JT,PW,0,0,9,JS YW ZG BZ JT,0, PW
+4,immediate,3,HX,TE,0,0,3,EW UF NE TE HX,0, TE
+4,immediate,4,QT,UZ,0,0,3,JZ PH PJ UZ QT,0, UZ
+4,immediate,5,LE,UQ,0,0,6,OA RX VH JQ LE,0, UQ
+4,immediate,6,QG,QG,1,0,4,DB JM EF WW QG,0, QG
+4,immediate,7,EE,PY,0,0,6,MB NP NO WT EE,0, PY
+4,immediate,8,GI,GI,1,0,4,CC BR QC DU GI,0, GI
+4,immediate,9,KQ,PO,0,0,3,DG SW QM PO KQ,0, PO
+4,immediate,10,LR,PA,0,0,3,IT UJ IQ PA LR,0, PA
+4,immediate,11,WT,HA,0,0,3,BJ SX DB HA WT,0, HA
+4,immediate,12,BQ,GQ,0,0,5,OA AI IE PS BQ,0, GQ
+4,immediate,13,TA,UY,0,0,8,VN TP JA WM TA,0, UY
+4,immediate,14,JO,VJ,0,0,11,TE NO OC NR JO,0, VJ
+4,immediate,15,PH,PH,1,0,4,AC YN WP LE PH,0, PH
+4,immediate,16,CF,CF,1,0,4,YR QX EI BJ CF,0, CF
+4,immediate,17,MB,CR,0,0,10,ME PD MO KK MB,0, CR
+4,immediate,18,SI,SV,0,0,3,MM SF EY SV SI,0, SV
+4,immediate,19,KF,KF,1,0,4,LU EE MT YP KF,0, KF
+4,immediate,20,TI,TI,1,0,4,BK IY FR CC TI,0, TI
+4,immediate,21,SI,AK,0,0,3,PU HB ZY AK SI,0, AK
+4,immediate,22,IV,CJ,0,0,5,KG JJ FP DH IV,0, CJ
+4,immediate,23,VQ,UP,0,0,8,CD MM TV WS VQ,0, UP
+4,immediate,24,LH,PZ,0,0,6,JL SH OS ZX LH,0, PZ
+4,immediate,25,EQ,HN,0,0,6,OB ED FF FG EQ,0, HN
+4,immediate,26,ZU,ZU,1,0,4,JC TV EH FM ZU,0, ZU
+4,immediate,27,AZ,TY,0,0,5,FU VD FC GW AZ,0, TY
+4,immediate,28,FG,FG,1,0,4,PG AV WS HJ FG,0, FG
+4,immediate,29,VT,IG,0,0,5,FD TT TQ JV VT,0, IG
+4,filler,0,FE,FE,1,0,4,NV AG GC IR FE,0, FE
+4,filler,1,FR,FR,1,0,4,IM KV HM VL FR,0, FR
+4,filler,2,JT,FK,0,0,11,JS YW ZG BZ JT,0, FK
+4,filler,3,HX,TE,0,0,3,EW UF NE TE HX,0, TE
+4,filler,4,QT,QT,1,0,4,JZ PH PJ UZ QT,0, QT
+4,filler,5,LE,UQ,0,0,6,OA RX VH JQ LE,0, UQ
+4,filler,6,QG,ZV,0,0,5,DB JM EF WW QG,0, ZV
+4,filler,7,EE,PY,0,0,6,MB NP NO WT EE,0, PY
+4,filler,8,GI,GI,1,0,4,CC BR QC DU GI,0, GI
+4,filler,9,KQ,KQ,1,0,4,DG SW QM PO KQ,0, KQ
+4,filler,10,LR,LR,1,0,4,IT UJ IQ PA LR,0, LR
+4,filler,11,WT,HA,0,0,3,BJ SX DB HA WT,0, HA
+4,filler,12,BQ,GQ,0,0,5,OA AI IE PS BQ,0, GQ
+4,filler,13,TA,KL,0,0,5,VN TP JA WM TA,0, KL
+4,filler,14,JO,VJ,0,0,11,TE NO OC NR JO,0, VJ
+4,filler,15,PH,PH,1,0,4,AC YN WP LE PH,0, PH
+4,filler,16,CF,ET,0,0,5,YR QX EI BJ CF,0, ET
+4,filler,17,MB,AU,0,0,8,ME PD MO KK MB,0, AU
+4,filler,18,SI,AI,0,0,6,MM SF EY SV SI,0, AI
+4,filler,19,KF,PR,0,0,6,LU EE MT YP KF,0, PR
+4,filler,20,TI,TI,1,0,4,BK IY FR CC TI,0, TI
+4,filler,21,SI,AK,0,0,3,PU HB ZY AK SI,0, AK
+4,filler,22,IV,IV,1,0,4,KG JJ FP DH IV,0, IV
+4,filler,23,VQ,KY,0,0,6,CD MM TV WS VQ,0, KY
+4,filler,24,LH,LH,1,0,4,JL SH OS ZX LH,0, LH
+4,filler,25,EQ,HN,0,0,6,OB ED FF FG EQ,0, HN
+4,filler,26,ZU,RV,0,0,6,JC TV EH FM ZU,0, RV
+4,filler,27,AZ,TY,0,0,5,FU VD FC GW AZ,0, TY
+4,filler,28,FG,HJ,0,0,3,PG AV WS HJ FG,0, HJ
+4,filler,29,VT,IG,0,0,5,FD TT TQ JV VT,0, IG
+4,cot,0,FE,FE,1,0,4,NV AG GC IR FE,0,"Following the chain: NV -> AG -> GC -> IR -> FE.
+Answer: FE"
+4,cot,1,FR,FR,1,0,4,IM KV HM VL FR,0,"Following the chain: IM -> KV -> HM -> VL -> FR.
+Answer: FR"
+4,cot,2,JT,JT,1,0,4,JS YW ZG BZ JT,0,"Following the chain: JS -> YW -> ZG -> BZ -> JT.
+Answer: JT"
+4,cot,3,HX,HX,1,0,4,EW UF NE TE HX,0,"Following the chain: EW -> UF -> NE -> TE -> HX.
+Answer: HX"
+4,cot,4,QT,QT,1,0,4,JZ PH PJ UZ QT,0,"Following the chain: JZ -> PH -> PJ -> UZ -> QT.
+Answer: QT"
+4,cot,5,LE,LE,1,0,4,OA RX VH JQ LE,0,"Following the chain: OA -> RX -> VH -> JQ -> LE.
+Answer: LE"
+4,cot,6,QG,QG,1,0,4,DB JM EF WW QG,0,"Following the chain: DB -> JM -> EF -> WW -> QG.
+Answer: QG"
+4,cot,7,EE,EE,1,0,4,MB NP NO WT EE,0,"Following the chain: MB -> NP -> NO -> WT -> EE.
+Answer: EE"
+4,cot,8,GI,GI,1,0,4,CC BR QC DU GI,0,"Following the chain: CC -> BR -> QC -> DU -> GI.
+Answer: GI"
+4,cot,9,KQ,KQ,1,0,4,DG SW QM PO KQ,0,"Following the chain: DG -> SW -> QM -> PO -> KQ.
+Answer: KQ"
+4,cot,10,LR,LR,1,0,4,IT UJ IQ PA LR,0,"Following the chain: IT -> UJ -> IQ -> PA -> LR.
+Answer: LR"
+4,cot,11,WT,WT,1,0,4,BJ SX DB HA WT,0,"Following the chain: BJ -> SX -> DB -> HA -> WT.
+Answer: WT"
+4,cot,12,BQ,BQ,1,0,4,OA AI IE PS BQ,0,"Following the chain: OA -> AI -> IE -> PS -> BQ.
+Answer: BQ"
+4,cot,13,TA,TA,1,0,4,VN TP JA WM TA,0,"Following the chain: VN -> TP -> JA -> WM -> TA.
+Answer: TA"
+4,cot,14,JO,JO,1,0,4,TE NO OC NR JO,0,"Following the chain: TE -> NO -> OC -> NR -> JO.
+Answer: JO"
+4,cot,15,PH,PH,1,0,4,AC YN WP LE PH,0,"Following the chain: AC -> YN -> WP -> LE -> PH.
+Answer: PH"
+4,cot,16,CF,CF,1,0,4,YR QX EI BJ CF,0,"Following the chain: YR -> QX -> EI -> BJ -> CF.
+Answer: CF"
+4,cot,17,MB,MB,1,0,4,ME PD MO KK MB,0,"Following the chain: ME -> PD -> MO -> KK -> MB.
+Answer: MB"
+4,cot,18,SI,SI,1,0,4,MM SF EY SV SI,0,"Following the chain: MM -> SF -> EY -> SV -> SI.
+Answer: SI"
+4,cot,19,KF,KF,1,0,4,LU EE MT YP KF,0,"Following the chain: LU -> EE -> MT -> YP -> KF.
+Answer: KF"
+4,cot,20,TI,TI,1,0,4,BK IY FR CC TI,0,"Following the chain: BK -> IY -> FR -> CC -> TI.
+Answer: TI"
+4,cot,21,SI,SI,1,0,4,PU HB ZY AK SI,0,"Following the chain: PU -> HB -> ZY -> AK -> SI.
+Answer: SI"
+4,cot,22,IV,IV,1,0,4,KG JJ FP DH IV,0,"Following the chain: KG -> JJ -> FP -> DH -> IV.
+Answer: IV"
+4,cot,23,VQ,VQ,1,0,4,CD MM TV WS VQ,0,"Following the chain: CD -> MM -> TV -> WS -> VQ.
+Answer: VQ"
+4,cot,24,LH,LH,1,0,4,JL SH OS ZX LH,0,"Following the chain: JL -> SH -> OS -> ZX -> LH.
+Answer: LH"
+4,cot,25,EQ,EQ,1,0,4,OB ED FF FG EQ,0,"Following the chain: OB -> ED -> FF -> FG -> EQ.
+Answer: EQ"
+4,cot,26,ZU,ZU,1,0,4,JC TV EH FM ZU,0,"Following the chain: JC -> TV -> EH -> FM -> ZU.
+Answer: ZU"
+4,cot,27,AZ,AZ,1,0,4,FU VD FC GW AZ,0,"Following the chain: FU -> VD -> FC -> GW -> AZ.
+Answer: AZ"
+4,cot,28,FG,FG,1,0,4,PG AV WS HJ FG,0,"Following the chain: PG -> AV -> WS -> HJ -> FG.
+Answer: FG"
+4,cot,29,VT,VT,1,0,4,FD TT TQ JV VT,0,"Following the chain: FD -> TT -> TQ -> JV -> VT.
+Answer: VT"
+6,immediate,0,ES,OU,0,0,8,CJ SA AV XK QA TN ES,0, OU
+6,immediate,1,TV,YZ,0,0,9,OJ KH IJ BE MZ YW TV,0, YZ
+6,immediate,2,MW,MA,0,0,4,GX IA QN IR MA JW MW,0, MA
+6,immediate,3,EE,FZ,0,0,3,PQ TF TR FZ CO IO EE,0, FZ
+6,immediate,4,CP,HA,0,0,4,JI RO YZ JY HA KR CP,0, HA
+6,immediate,5,QR,PY,0,0,8,YC XX JN JB ZF BP QR,0, PY
+6,immediate,6,MR,QM,0,0,7,PY SL AH TB DB OL MR,0, QM
+6,immediate,7,LK,LK,1,0,6,NH GI CD XQ FC UN LK,0, LK
+6,immediate,8,GZ,AT,0,0,1,JN AT CM SQ KN SV GZ,0, AT
+6,immediate,9,IZ,XN,0,0,5,LU ER CT FF FP XN IZ,0, XN
+6,immediate,10,US,QF,0,0,8,NJ TD EX JH KA BJ US,0, QF
+6,immediate,11,LO,JD,0,0,9,WN UO QN YW AX ET LO,0, JD
+6,immediate,12,FQ,RM,0,0,10,WU OQ KW IR VS MN FQ,0, RM
+6,immediate,13,WM,PL,0,0,4,NG XR IC ED PL CW WM,0, PL
+6,immediate,14,HI,ZY,0,0,11,XD XO ZE EO GM VO HI,0, ZY
+6,immediate,15,NG,UJ,0,0,11,DH FC MB QE ZK QB NG,0, UJ
+6,immediate,16,PZ,PZ,1,0,6,MB PV KQ VM JO DS PZ,0, PZ
+6,immediate,17,VZ,ZP,0,0,5,TV OC WU SG HQ ZP VZ,0, ZP
+6,immediate,18,KI,HA,0,0,7,LX RX OW XV EZ MX KI,0, HA
+6,immediate,19,HU,BJ,0,0,5,UG MP RZ EE NQ BJ HU,0, BJ
+6,immediate,20,LK,SH,0,0,4,AL ZG DD WQ SH AV LK,0, SH
+6,immediate,21,JE,XG,0,0,5,YP GW OQ FX AV XG JE,0, XG
+6,immediate,22,GM,MB,0,0,9,GK UB ZH GC OJ AU GM,0, MB
+6,immediate,23,UZ,UJ,0,0,11,PO SW LW YY II KA UZ,0, UJ
+6,immediate,24,FX,XX,0,0,4,OO OL UZ VX XX GD FX,0, XX
+6,immediate,25,JO,PY,0,0,5,EC RU FN JH DN PY JO,0, PY
+6,immediate,26,NU,RJ,0,0,3,PX LW HR RJ VL UT NU,0, RJ
+6,immediate,27,BL,BL,1,0,6,PD SE QU ZI WB BI BL,0, BL
+6,immediate,28,EW,EW,1,0,6,KY AX WG EF MH RQ EW,0, EW
+6,immediate,29,GQ,FI,0,0,2,OL ML FI WV HQ WG GQ,0, FI
+6,filler,0,ES,OU,0,0,8,CJ SA AV XK QA TN ES,0, OU
+6,filler,1,TV,YW,0,0,5,OJ KH IJ BE MZ YW TV,0, YW
+6,filler,2,MW,MW,1,0,6,GX IA QN IR MA JW MW,0, MW
+6,filler,3,EE,FZ,0,0,3,PQ TF TR FZ CO IO EE,0, FZ
+6,filler,4,CP,HA,0,0,4,JI RO YZ JY HA KR CP,0, HA
+6,filler,5,QR,PY,0,0,8,YC XX JN JB ZF BP QR,0, PY
+6,filler,6,MR,DB,0,0,4,PY SL AH TB DB OL MR,0, DB
+6,filler,7,LK,UN,0,0,5,NH GI CD XQ FC UN LK,0, UN
+6,filler,8,GZ,EB,0,0,7,JN AT CM SQ KN SV GZ,0, EB
+6,filler,9,IZ,BV,0,0,7,LU ER CT FF FP XN IZ,0, BV
+6,filler,10,US,QF,0,0,8,NJ TD EX JH KA BJ US,0, QF
+6,filler,11,LO,PI,0,0,7,WN UO QN YW AX ET LO,0, PI
+6,filler,12,FQ,FQ,1,0,6,WU OQ KW IR VS MN FQ,0, FQ
+6,filler,13,WM,CW,0,0,5,NG XR IC ED PL CW WM,0, CW
+6,filler,14,HI,ZY,0,0,11,XD XO ZE EO GM VO HI,0, ZY
+6,filler,15,NG,WD,0,0,7,DH FC MB QE ZK QB NG,0, WD
+6,filler,16,PZ,JO,0,0,4,MB PV KQ VM JO DS PZ,0, JO
+6,filler,17,VZ,ZP,0,0,5,TV OC WU SG HQ ZP VZ,0, ZP
+6,filler,18,KI,HA,0,0,7,LX RX OW XV EZ MX KI,0, HA
+6,filler,19,HU,TK,0,0,9,UG MP RZ EE NQ BJ HU,0, TK
+6,filler,20,LK,SH,0,0,4,AL ZG DD WQ SH AV LK,0, SH
+6,filler,21,JE,JE,1,0,6,YP GW OQ FX AV XG JE,0, JE
+6,filler,22,GM,GM,1,0,6,GK UB ZH GC OJ AU GM,0, GM
+6,filler,23,UZ,SM,0,0,8,PO SW LW YY II KA UZ,0, SM
+6,filler,24,FX,PY,0,0,9,OO OL UZ VX XX GD FX,0, PY
+6,filler,25,JO,JO,1,0,6,EC RU FN JH DN PY JO,0, JO
+6,filler,26,NU,CE,0,0,7,PX LW HR RJ VL UT NU,0, CE
+6,filler,27,BL,IY,0,0,8,PD SE QU ZI WB BI BL,0, IY
+6,filler,28,EW,MH,0,0,4,KY AX WG EF MH RQ EW,0, MH
+6,filler,29,GQ,DX,0,0,7,OL ML FI WV HQ WG GQ,0, DX
+6,cot,0,ES,ES,1,0,6,CJ SA AV XK QA TN ES,0,"Following the chain: CJ -> SA -> AV -> XK -> QA -> TN -> ES.
+Answer: ES"
+6,cot,1,TV,TV,1,0,6,OJ KH IJ BE MZ YW TV,0,"Following the chain: OJ -> KH -> IJ -> BE -> MZ -> YW -> TV.
+Answer: TV"
+6,cot,2,MW,MW,1,0,6,GX IA QN IR MA JW MW,0,"Following the chain: GX -> IA -> QN -> IR -> MA -> JW -> MW.
+Answer: MW"
+6,cot,3,EE,EE,1,0,6,PQ TF TR FZ CO IO EE,0,"Following the chain: PQ -> TF -> TR -> FZ -> CO -> IO -> EE.
+Answer: EE"
+6,cot,4,CP,CP,1,0,6,JI RO YZ JY HA KR CP,0,"Following the chain: JI -> RO -> YZ -> JY -> HA -> KR -> CP.
+Answer: CP"
+6,cot,5,QR,QR,1,0,6,YC XX JN JB ZF BP QR,0,"Following the chain: YC -> XX -> JN -> JB -> ZF -> BP -> QR.
+Answer: QR"
+6,cot,6,MR,MR,1,0,6,PY SL AH TB DB OL MR,0,"Following the chain: PY -> SL -> AH -> TB -> DB -> OL -> MR.
+Answer: MR"
+6,cot,7,LK,LK,1,0,6,NH GI CD XQ FC UN LK,0,"Following the chain: NH -> GI -> CD -> XQ -> FC -> UN -> LK.
+Answer: LK"
+6,cot,8,GZ,GZ,1,0,6,JN AT CM SQ KN SV GZ,0,"Following the chain: JN -> AT -> CM -> SQ -> KN -> SV -> GZ.
+Answer: GZ"
+6,cot,9,IZ,IZ,1,0,6,LU ER CT FF FP XN IZ,0,"Following the chain: LU -> ER -> CT -> FF -> FP -> XN -> IZ.
+Answer: IZ"
+6,cot,10,US,US,1,0,6,NJ TD EX JH KA BJ US,0,"Following the chain: NJ -> TD -> EX -> JH -> KA -> BJ -> US.
+Answer: US"
+6,cot,11,LO,LO,1,0,6,WN UO QN YW AX ET LO,0,"Following the chain: WN -> UO -> QN -> YW -> AX -> ET -> LO.
+Answer: LO"
+6,cot,12,FQ,FQ,1,0,6,WU OQ KW IR VS MN FQ,0,"Following the chain: WU -> OQ -> KW -> IR -> VS -> MN -> FQ.
+Answer: FQ"
+6,cot,13,WM,WM,1,0,6,NG XR IC ED PL CW WM,0,"Following the chain: NG -> XR -> IC -> ED -> PL -> CW -> WM.
+Answer: WM"
+6,cot,14,HI,HI,1,0,6,XD XO ZE EO GM VO HI,0,"Following the chain: XD -> XO -> ZE -> EO -> GM -> VO -> HI.
+Answer: HI"
+6,cot,15,NG,NG,1,0,6,DH FC MB QE ZK QB NG,0,"Following the chain: DH -> FC -> MB -> QE -> ZK -> QB -> NG.
+Answer: NG"
+6,cot,16,PZ,PZ,1,0,6,MB PV KQ VM JO DS PZ,0,"Following the chain: MB -> PV -> KQ -> VM -> JO -> DS -> PZ.
+Answer: PZ"
+6,cot,17,VZ,VZ,1,0,6,TV OC WU SG HQ ZP VZ,0,"Following the chain: TV -> OC -> WU -> SG -> HQ -> ZP -> VZ.
+Answer: VZ"
+6,cot,18,KI,KI,1,0,6,LX RX OW XV EZ MX KI,0,"Following the chain: LX -> RX -> OW -> XV -> EZ -> MX -> KI.
+Answer: KI"
+6,cot,19,HU,HU,1,0,6,UG MP RZ EE NQ BJ HU,0,"Following the chain: UG -> MP -> RZ -> EE -> NQ -> BJ -> HU.
+Answer: HU"
+6,cot,20,LK,LK,1,0,6,AL ZG DD WQ SH AV LK,0,"Following the chain: AL -> ZG -> DD -> WQ -> SH -> AV -> LK.
+Answer: LK"
+6,cot,21,JE,JE,1,0,6,YP GW OQ FX AV XG JE,0,"Following the chain: YP -> GW -> OQ -> FX -> AV -> XG -> JE.
+Answer: JE"
+6,cot,22,GM,GM,1,0,6,GK UB ZH GC OJ AU GM,0,"Following the chain: GK -> UB -> ZH -> GC -> OJ -> AU -> GM.
+Answer: GM"
+6,cot,23,UZ,UZ,1,0,6,PO SW LW YY II KA UZ,0,"Following the chain: PO -> SW -> LW -> YY -> II -> KA -> UZ.
+Answer: UZ"
+6,cot,24,FX,FX,1,0,6,OO OL UZ VX XX GD FX,0,"Following the chain: OO -> OL -> UZ -> VX -> XX -> GD -> FX.
+Answer: FX"
+6,cot,25,JO,JO,1,0,6,EC RU FN JH DN PY JO,0,"Following the chain: EC -> RU -> FN -> JH -> DN -> PY -> JO.
+Answer: JO"
+6,cot,26,NU,NU,1,0,6,PX LW HR RJ VL UT NU,0,"Following the chain: PX -> LW -> HR -> RJ -> VL -> UT -> NU.
+Answer: NU"
+6,cot,27,BL,BL,1,0,6,PD SE QU ZI WB BI BL,0,"Following the chain: PD -> SE -> QU -> ZI -> WB -> BI -> BL.
+Answer: BL"
+6,cot,28,EW,EW,1,0,6,KY AX WG EF MH RQ EW,0,"Following the chain: KY -> AX -> WG -> EF -> MH -> RQ -> EW.
+Answer: EW"
+6,cot,29,GQ,GQ,1,0,6,OL ML FI WV HQ WG GQ,0,"Following the chain: OL -> ML -> FI -> WV -> HQ -> WG -> GQ.
+Answer: GQ"
+8,immediate,0,CJ,VQ,0,0,6,NI RV LZ GQ UI IU VQ FY CJ,0, VQ
+8,immediate,1,NS,RA,0,0,11,TE ZK KQ VE ES PP JR SQ NS,0, RA
+8,immediate,2,JA,PK,0,0,5,YB XJ UQ GH TD PK JX VY JA,0, PK
+8,immediate,3,VK,GU,0,0,6,OA SH PV TC NF IL GU NB VK,0, GU
+8,immediate,4,KK,ZU,0,0,1,NF ZU KL VI EK LM BJ WB KK,0, ZU
+8,immediate,5,SV,HN,0,0,3,QA WM SF HN BE JL AV VD SV,0, HN
+8,immediate,6,FB,EJ,0,0,7,ZO ZU DW XD SZ YW ID EJ FB,0, EJ
+8,immediate,7,OP,HT,0,0,10,MK PY DU OH PU UV BP VN OP,0, HT
+8,immediate,8,PR,YX,0,0,4,SQ XK XV RW YX AY TB EX PR,0, YX
+8,immediate,9,OM,HA,0,0,3,NX UV PJ HA ZB BF CK WT OM,0, HA
+8,immediate,10,FZ,FZ,1,0,8,HR AO EH ZE BX OQ QB XD FZ,0, FZ
+8,immediate,11,SY,BR,0,0,7,KD WP EJ RB NU AG JI BR SY,0, BR
+8,immediate,12,UZ,AT,0,0,5,GA ZL JC TY QC AT FO ZU UZ,0, AT
+8,immediate,13,YU,YU,1,0,8,WV NO YW MS EE GU VF JD YU,0, YU
+8,immediate,14,ZJ,WC,0,0,6,RW OA RH EW GW VZ WC SH ZJ,0, WC
+8,immediate,15,WS,CX,0,0,7,TC IJ PU LM MR DI WC CX WS,0, CX
+8,immediate,16,VO,VO,1,0,8,FM OL JE UM NM QJ PQ AJ VO,0, VO
+8,immediate,17,QT,BL,0,0,10,ZS BD TF XE ZK TX AI FJ QT,0, BL
+8,immediate,18,WJ,ZW,0,0,2,PL WY ZW TQ YU UI CU ML WJ,0, ZW
+8,immediate,19,BZ,ZT,0,0,2,RG AR ZT AX GI MB GF ZL BZ,0, ZT
+8,immediate,20,DT,RM,0,0,10,WT GH MK VO BY PP UJ LB DT,0, RM
+8,immediate,21,CR,AW,0,0,4,VO PM GB GI AW EP GN DR CR,0, AW
+8,immediate,22,ON,FZ,0,0,11,LR QD LS VJ PJ JB LO WC ON,0, FZ
+8,immediate,23,LL,ZU,0,0,11,VU QI DL DB DJ UV DI VB LL,0, ZU
+8,immediate,24,SQ,QN,0,0,10,US CT UL DA XB NV KZ UQ SQ,0, QN
+8,immediate,25,HK,RG,0,0,9,OC UC WI PM PS UF MT OE HK,0, RG
+8,immediate,26,PW,PW,1,0,8,LH JB XH WD SQ MJ JP CF PW,0, PW
+8,immediate,27,MK,KW,0,0,9,JB VW TR UX GU DQ JI ZX MK,0, KW
+8,immediate,28,IT,CT,0,0,2,SY GZ CT LQ LS WQ FJ HA IT,0, CT
+8,immediate,29,TI,AR,0,0,6,JZ DZ CT RQ LB BC AR QE TI,0, AR
+8,filler,0,CJ,VQ,0,0,6,NI RV LZ GQ UI IU VQ FY CJ,0, VQ
+8,filler,1,NS,VY,0,0,10,TE ZK KQ VE ES PP JR SQ NS,0, VY
+8,filler,2,JA,JX,0,0,6,YB XJ UQ GH TD PK JX VY JA,0, JX
+8,filler,3,VK,GU,0,0,6,OA SH PV TC NF IL GU NB VK,0, GU
+8,filler,4,KK,ZU,0,0,1,NF ZU KL VI EK LM BJ WB KK,0, ZU
+8,filler,5,SV,SV,1,0,8,QA WM SF HN BE JL AV VD SV,0, SV
+8,filler,6,FB,TG,0,0,9,ZO ZU DW XD SZ YW ID EJ FB,0, TG
+8,filler,7,OP,DU,0,0,2,MK PY DU OH PU UV BP VN OP,0, DU
+8,filler,8,PR,YX,0,0,4,SQ XK XV RW YX AY TB EX PR,0, YX
+8,filler,9,OM,HA,0,0,3,NX UV PJ HA ZB BF CK WT OM,0, HA
+8,filler,10,FZ,FZ,1,0,8,HR AO EH ZE BX OQ QB XD FZ,0, FZ
+8,filler,11,SY,BR,0,0,7,KD WP EJ RB NU AG JI BR SY,0, BR
+8,filler,12,UZ,ZU,0,0,7,GA ZL JC TY QC AT FO ZU UZ,0, ZU
+8,filler,13,YU,YU,1,0,8,WV NO YW MS EE GU VF JD YU,0, YU
+8,filler,14,ZJ,ZJ,1,0,8,RW OA RH EW GW VZ WC SH ZJ,0, ZJ
+8,filler,15,WS,CX,0,0,7,TC IJ PU LM MR DI WC CX WS,0, CX
+8,filler,16,VO,VO,1,0,8,FM OL JE UM NM QJ PQ AJ VO,0, VO
+8,filler,17,QT,ZK,0,0,4,ZS BD TF XE ZK TX AI FJ QT,0, ZK
+8,filler,18,WJ,YU,0,0,4,PL WY ZW TQ YU UI CU ML WJ,0, YU
+8,filler,19,BZ,GI,0,0,4,RG AR ZT AX GI MB GF ZL BZ,0, GI
+8,filler,20,DT,IF,0,0,9,WT GH MK VO BY PP UJ LB DT,0, IF
+8,filler,21,CR,AW,0,0,4,VO PM GB GI AW EP GN DR CR,0, AW
+8,filler,22,ON,JZ,0,0,9,LR QD LS VJ PJ JB LO WC ON,0, JZ
+8,filler,23,LL,ZU,0,0,11,VU QI DL DB DJ UV DI VB LL,0, ZU
+8,filler,24,SQ,QN,0,0,10,US CT UL DA XB NV KZ UQ SQ,0, QN
+8,filler,25,HK,UF,0,0,5,OC UC WI PM PS UF MT OE HK,0, UF
+8,filler,26,PW,IW,0,0,9,LH JB XH WD SQ MJ JP CF PW,0, IW
+8,filler,27,MK,DQ,0,0,5,JB VW TR UX GU DQ JI ZX MK,0, DQ
+8,filler,28,IT,CT,0,0,2,SY GZ CT LQ LS WQ FJ HA IT,0, CT
+8,filler,29,TI,AR,0,0,6,JZ DZ CT RQ LB BC AR QE TI,0, AR
+8,cot,0,CJ,CJ,1,0,8,NI RV LZ GQ UI IU VQ FY CJ,0,"Following the chain: NI -> RV -> LZ -> GQ -> UI -> IU -> VQ -> FY -> CJ.
+Answer: CJ"
+8,cot,1,NS,NS,1,0,8,TE ZK KQ VE ES PP JR SQ NS,0,"Following the chain: TE -> ZK -> KQ -> VE -> ES -> PP -> JR -> SQ -> NS.
+Answer: NS"
+8,cot,2,JA,JA,1,0,8,YB XJ UQ GH TD PK JX VY JA,0,"Following the chain: YB -> XJ -> UQ -> GH -> TD -> PK -> JX -> VY -> JA.
+Answer: JA"
+8,cot,3,VK,VK,1,0,8,OA SH PV TC NF IL GU NB VK,0,"Following the chain: OA -> SH -> PV -> TC -> NF -> IL -> GU -> NB -> VK.
+Answer: VK"
+8,cot,4,KK,KK,1,0,8,NF ZU KL VI EK LM BJ WB KK,0,"Following the chain: NF -> ZU -> KL -> VI -> EK -> LM -> BJ -> WB -> KK.
+Answer: KK"
+8,cot,5,SV,SV,1,0,8,QA WM SF HN BE JL AV VD SV,0,"Following the chain: QA -> WM -> SF -> HN -> BE -> JL -> AV -> VD -> SV.
+Answer: SV"
+8,cot,6,FB,FB,1,0,8,ZO ZU DW XD SZ YW ID EJ FB,0,"Following the chain: ZO -> ZU -> DW -> XD -> SZ -> YW -> ID -> EJ -> FB.
+Answer: FB"
+8,cot,7,OP,OP,1,0,8,MK PY DU OH PU UV BP VN OP,0,"Following the chain: MK -> PY -> DU -> OH -> PU -> UV -> BP -> VN -> OP.
+Answer: OP"
+8,cot,8,PR,PR,1,0,8,SQ XK XV RW YX AY TB EX PR,0,"Following the chain: SQ -> XK -> XV -> RW -> YX -> AY -> TB -> EX -> PR.
+Answer: PR"
+8,cot,9,OM,OM,1,0,8,NX UV PJ HA ZB BF CK WT OM,0,"Following the chain: NX -> UV -> PJ -> HA -> ZB -> BF -> CK -> WT -> OM.
+Answer: OM"
+8,cot,10,FZ,FZ,1,0,8,HR AO EH ZE BX OQ QB XD FZ,0,"Following the chain: HR -> AO -> EH -> ZE -> BX -> OQ -> QB -> XD -> FZ.
+Answer: FZ"
+8,cot,11,SY,SY,1,0,8,KD WP EJ RB NU AG JI BR SY,0,"Following the chain: KD -> WP -> EJ -> RB -> NU -> AG -> JI -> BR -> SY.
+Answer: SY"
+8,cot,12,UZ,UZ,1,0,8,GA ZL JC TY QC AT FO ZU UZ,0,"Following the chain: GA -> ZL -> JC -> TY -> QC -> AT -> FO -> ZU -> UZ.
+Answer: UZ"
+8,cot,13,YU,YU,1,0,8,WV NO YW MS EE GU VF JD YU,0,"Following the chain: WV -> NO -> YW -> MS -> EE -> GU -> VF -> JD -> YU.
+Answer: YU"
+8,cot,14,ZJ,ZJ,1,0,8,RW OA RH EW GW VZ WC SH ZJ,0,"Following the chain: RW -> OA -> RH -> EW -> GW -> VZ -> WC -> SH -> ZJ.
+Answer: ZJ"
+8,cot,15,WS,WS,1,0,8,TC IJ PU LM MR DI WC CX WS,0,"Following the chain: TC -> IJ -> PU -> LM -> MR -> DI -> WC -> CX -> WS.
+Answer: WS"
+8,cot,16,VO,RA,0,0,9,FM OL JE UM NM QJ PQ AJ VO,0,"Following the chain: FM -> OL -> JE -> UM -> NM -> QJ -> AJ -> VO -> RA.
+Answer: RA"
+8,cot,17,QT,QT,1,0,8,ZS BD TF XE ZK TX AI FJ QT,0,"Following the chain: ZS -> BD -> TF -> XE -> ZK -> TX -> AI -> FJ -> QT.
+Answer: QT"
+8,cot,18,WJ,WJ,1,0,8,PL WY ZW TQ YU UI CU ML WJ,0,"Following the chain: PL -> WY -> ZW -> TQ -> YU -> UI -> CU -> ML -> WJ.
+Answer: WJ"
+8,cot,19,BZ,BZ,1,0,8,RG AR ZT AX GI MB GF ZL BZ,0,"Following the chain: RG -> AR -> ZT -> AX -> GI -> MB -> GF -> ZL -> BZ.
+Answer: BZ"
+8,cot,20,DT,DT,1,0,8,WT GH MK VO BY PP UJ LB DT,0,"Following the chain: WT -> GH -> MK -> VO -> BY -> PP -> UJ -> LB -> DT.
+Answer: DT"
+8,cot,21,CR,CR,1,0,8,VO PM GB GI AW EP GN DR CR,0,"Following the chain: VO -> PM -> GB -> GI -> AW -> EP -> GN -> DR -> CR.
+Answer: CR"
+8,cot,22,ON,ON,1,0,8,LR QD LS VJ PJ JB LO WC ON,0,"Following the chain: LR -> QD -> LS -> VJ -> PJ -> JB -> LO -> WC -> ON.
+Answer: ON"
+8,cot,23,LL,LL,1,0,8,VU QI DL DB DJ UV DI VB LL,0,"Following the chain: VU -> QI -> DL -> DB -> DJ -> UV -> DI -> VB -> LL.
+Answer: LL"
+8,cot,24,SQ,SQ,1,0,8,US CT UL DA XB NV KZ UQ SQ,0,"Following the chain: US -> CT -> UL -> DA -> XB -> NV -> KZ -> UQ -> SQ.
+Answer: SQ"
+8,cot,25,HK,HK,1,0,8,OC UC WI PM PS UF MT OE HK,0,"Following the chain: OC -> UC -> WI -> PM -> PS -> UF -> MT -> OE -> HK.
+Answer: HK"
+8,cot,26,PW,PW,1,0,8,LH JB XH WD SQ MJ JP CF PW,0,"Following the chain: LH -> JB -> XH -> WD -> SQ -> MJ -> JP -> CF -> PW.
+Answer: PW"
+8,cot,27,MK,MK,1,0,8,JB VW TR UX GU DQ JI ZX MK,0,"Following the chain: JB -> VW -> TR -> UX -> GU -> DQ -> JI -> ZX -> MK.
+Answer: MK"
+8,cot,28,IT,IT,1,0,8,SY GZ CT LQ LS WQ FJ HA IT,0,"Following the chain: SY -> GZ -> CT -> LQ -> LS -> WQ -> FJ -> HA -> IT.
+Answer: IT"
+8,cot,29,TI,TI,1,0,8,JZ DZ CT RQ LB BC AR QE TI,0,"Following the chain: JZ -> DZ -> CT -> RQ -> LB -> BC -> AR -> QE -> TI.
+Answer: TI"

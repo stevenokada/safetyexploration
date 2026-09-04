@@ -1,0 +1,180 @@
+########## RUN A: fencepost / wording control (serial, immediate) ##########
+### anthropic/claude-opus-4.5 | default
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  1 1.000      0     0     1.000 0.000  0.000
+immediate  2 0.300      0     0     2.725 0.700  0.000
+immediate  3 0.200      0     0     3.800 0.800  0.000
+immediate  4 0.275      0     0     4.975 0.725  0.000
+immediate  6 0.250      0     0     6.350 0.400  0.350
+immediate  8 0.275      0     0     8.050 0.400  0.325
+
+Wrote A_default_claude-opus-4.5.csv
+### anthropic/claude-opus-4.5 | explicit
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  1 1.000      0     0     1.000 0.000  0.000
+immediate  2 0.375      0     0     2.625 0.625  0.000
+immediate  3 0.075      0     0     3.925 0.925  0.000
+immediate  4 0.150      0     0     5.125 0.850  0.000
+immediate  6 0.250      0     0     6.425 0.525  0.225
+immediate  8 0.250      0     0     7.850 0.300  0.450
+
+Wrote A_explicit_claude-opus-4.5.csv
+### google/gemini-2.5-flash | default
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  1 1.000      0     0     1.000 0.000  0.000
+immediate  2 0.475      0     0     2.525 0.500  0.025
+immediate  3 0.450      0     0     4.325 0.475  0.075
+immediate  4 0.300      0     0     5.050 0.600  0.100
+immediate  6 0.125      0     0     6.550 0.550  0.325
+immediate  8 0.150      0     0     6.700 0.325  0.525
+
+Wrote A_default_gemini-2.5-flash.csv
+### google/gemini-2.5-flash | explicit
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  1 1.000      0     0     1.000 0.000  0.000
+immediate  2 0.500      0     0     2.575 0.500  0.000
+immediate  3 0.675      0     0     3.550 0.275  0.050
+immediate  4 0.275      0     0     4.700 0.475  0.250
+immediate  6 0.200      0     0     6.275 0.425  0.375
+immediate  8 0.125      0     0     7.000 0.350  0.525
+
+Wrote A_explicit_gemini-2.5-flash.csv
+### deepseek/deepseek-chat | default
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  1 1.000      0     0     1.000 0.000  0.000
+immediate  2 0.325      0     0     3.225 0.675  0.000
+immediate  3 0.150      0     0     5.725 0.850  0.000
+immediate  4 0.100      0     0     6.375 0.825  0.075
+immediate  6 0.150      0     0     6.050 0.425  0.425
+immediate  8 0.100      0     0     6.750 0.275  0.625
+
+Wrote A_default_deepseek-chat.csv
+### deepseek/deepseek-chat | explicit
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  1 1.000      0     0     1.000 0.000  0.000
+immediate  2 0.425      0     0     2.825 0.575  0.000
+immediate  3 0.100      0     0     6.275 0.850  0.050
+immediate  4 0.075      0     0     6.575 0.850  0.075
+immediate  6 0.150      0     0     6.275 0.425  0.425
+immediate  8 0.100      0     0     6.025 0.175  0.725
+
+Wrote A_explicit_deepseek-chat.csv
+########## RUN B: parallel control (serial vs parallel vs parallel_count) ##########
+### anthropic/claude-opus-4.5 | serial
+   filler  2 0.550      0     0     2.450 0.450  0.000
+   filler  3 0.275      0     0     3.775 0.725  0.000
+   filler  4 0.275      0     0     4.900 0.725  0.000
+   filler  6 0.475      0     0     6.650 0.450  0.075
+   filler  8 0.300      0     0     8.300 0.475  0.225
+immediate  2 0.400      0     0     2.625 0.600  0.000
+immediate  3 0.075      0     0     4.025 0.925  0.000
+immediate  4 0.225      0     0     5.025 0.775  0.000
+immediate  6 0.500      0     0     6.350 0.325  0.175
+immediate  8 0.275      0     0     8.325 0.450  0.275
+
+Wrote B_serial_claude-opus-4.5.csv
+### anthropic/claude-opus-4.5 | parallel
+   filler  2 0.975      0     0
+   filler  3 1.000      0     0
+   filler  4 1.000      0     0
+   filler  6 0.950      0     0
+   filler  8 0.850      0     0
+immediate  2 0.975      0     0
+immediate  3 0.950      0     0
+immediate  4 0.875      0     0
+immediate  6 0.925      0     0
+immediate  8 0.825      0     0
+
+Wrote B_parallel_claude-opus-4.5.csv
+### anthropic/claude-opus-4.5 | parallel_count
+   filler  2 1.000      0     0
+   filler  3 0.800      0     0
+   filler  4 0.700      0     0
+   filler  6 0.575      0     0
+   filler  8 0.450      0     0
+immediate  2 0.875      0     0
+immediate  3 0.800      0     0
+immediate  4 0.600      0     0
+immediate  6 0.475      0     0
+immediate  8 0.350      0     0
+
+Wrote B_parallel_count_claude-opus-4.5.csv
+### google/gemini-2.5-flash | serial
+   filler  2 0.700      0     0     2.300 0.300  0.000
+   filler  3 0.350      0     0     4.300 0.575  0.075
+   filler  4 0.150      0     0     5.725 0.725  0.125
+   filler  6 0.100      0     0     6.325 0.500  0.400
+   filler  8 0.125      0     0     6.550 0.275  0.600
+immediate  2 0.650      0     0     2.350 0.350  0.000
+immediate  3 0.450      0     0     3.975 0.475  0.075
+immediate  4 0.075      0     0     6.225 0.725  0.200
+immediate  6 0.050      0     0     6.750 0.550  0.400
+immediate  8 0.050      0     0     6.275 0.375  0.575
+
+Wrote B_serial_gemini-2.5-flash.csv
+### google/gemini-2.5-flash | parallel
+   filler  2 0.975      0     0
+   filler  3 0.950      0     0
+   filler  4 0.875      0     0
+   filler  6 0.800      0     0
+   filler  8 0.800      0     0
+immediate  2 0.950      0     0
+immediate  3 0.950      0     0
+immediate  4 0.875      0     0
+immediate  6 0.850      0     0
+immediate  8 0.750      0     0
+
+Wrote B_parallel_gemini-2.5-flash.csv
+### google/gemini-2.5-flash | parallel_count
+   filler  2 0.600      0     0
+   filler  3 0.475      0     0
+   filler  4 0.375      0     0
+   filler  6 0.525      0     0
+   filler  8 0.275      0     0
+immediate  2 0.525      0     0
+immediate  3 0.475      0     0
+immediate  4 0.475      0     0
+immediate  6 0.350      0     0
+immediate  8 0.275      0     0
+
+Wrote B_parallel_count_gemini-2.5-flash.csv
+### deepseek/deepseek-chat | serial
+   filler  2 0.475      0     0     2.750 0.525  0.000
+   filler  3 0.325      0     0     4.500 0.525  0.150
+   filler  4 0.225      0     0     6.300 0.650  0.125
+   filler  6 0.025      0     0     5.800 0.450  0.525
+   filler  8 0.125      0     0     5.975 0.225  0.650
+immediate  2 0.225      0     0     3.700 0.775  0.000
+immediate  3 0.250      0     0     5.375 0.725  0.025
+immediate  4 0.200      0     0     6.050 0.650  0.150
+immediate  6 0.025      0     0     6.825 0.625  0.350
+immediate  8 0.125      0     0     6.100 0.250  0.625
+
+Wrote B_serial_deepseek-chat.csv
+### deepseek/deepseek-chat | parallel
+   filler  2 0.975      0     0
+   filler  3 0.900      0     0
+   filler  4 0.850      0     0
+   filler  6 0.750      0     0
+   filler  8 0.725      0     0
+immediate  2 0.925      0     0
+immediate  3 0.900      0     0
+immediate  4 0.900      0     0
+immediate  6 0.725      0     0
+immediate  8 0.800      0     0
+
+Wrote B_parallel_deepseek-chat.csv
+### deepseek/deepseek-chat | parallel_count
+   filler  2 1.000      0     0
+   filler  3 0.650      0     0
+   filler  4 0.300      0     0
+   filler  6 0.375      0     0
+   filler  8 0.250      0     0
+immediate  2 0.925      0     0
+immediate  3 0.600      0     0
+immediate  4 0.375      0     0
+immediate  6 0.300      0     0
+immediate  8 0.250      0     0
+
+Wrote B_parallel_count_deepseek-chat.csv
+########## ALL DONE ##########

@@ -1,0 +1,5070 @@
+k,condition,idx,gold,pred,correct,leak,eff_hops,chain,error,completion
+1,immediate,0,NN,NN,1,0,1,JJ NN,0,Answer: NN
+1,immediate,1,ON,ON,1,0,1,GY ON,0,Answer: ON
+1,immediate,2,FD,FD,1,0,1,HD FD,0,Answer: FD
+1,immediate,3,UO,UO,1,0,1,VC UO,0,Answer: UO
+1,immediate,4,YV,YV,1,0,1,ZP YV,0,Answer: YV
+1,immediate,5,FB,FB,1,0,1,ZK FB,0,Answer: FB
+1,immediate,6,UP,UP,1,0,1,QD UP,0,Answer: UP
+1,immediate,7,QX,QX,1,0,1,BG QX,0,Answer: QX
+1,immediate,8,EJ,EJ,1,0,1,DS EJ,0,Answer: EJ
+1,immediate,9,RZ,RZ,1,0,1,GV RZ,0,Answer: RZ
+1,immediate,10,KW,KW,1,0,1,EG KW,0,Answer: KW
+1,immediate,11,MJ,MJ,1,0,1,YL MJ,0,Answer: MJ
+1,immediate,12,LB,LB,1,0,1,OC LB,0,Answer: LB
+1,immediate,13,BA,BA,1,0,1,OE BA,0,Answer: BA
+1,immediate,14,WV,WV,1,0,1,SE WV,0,Answer: WV
+1,immediate,15,VN,VN,1,0,1,AO VN,0,Answer: VN
+1,immediate,16,DF,DF,1,0,1,RJ DF,0,Answer: DF
+1,immediate,17,HI,HI,1,0,1,UE HI,0,Answer: HI
+1,immediate,18,DN,DN,1,0,1,GN DN,0,Answer: DN
+1,immediate,19,VX,VX,1,0,1,LD VX,0,Answer: VX
+1,immediate,20,HU,HU,1,0,1,BB HU,0,Answer: HU
+1,immediate,21,EC,EC,1,0,1,BY EC,0,Answer: EC
+1,immediate,22,UK,UK,1,0,1,ZQ UK,0,Answer: UK
+1,immediate,23,KB,KB,1,0,1,HC KB,0,Answer: KB
+1,immediate,24,HD,HD,1,0,1,UF HD,0,Answer: HD
+1,immediate,25,OE,OE,1,0,1,US OE,0,Answer: OE
+1,immediate,26,PC,PC,1,0,1,IU PC,0,Answer: PC
+1,immediate,27,LK,LK,1,0,1,KO LK,0,Answer: LK
+1,immediate,28,QQ,QQ,1,0,1,LT QQ,0,Answer: QQ
+1,immediate,29,BZ,BZ,1,0,1,DT BZ,0,Answer: BZ
+1,filler,0,NN,NN,1,0,1,JJ NN,0,Answer: NN
+1,filler,1,ON,ON,1,0,1,GY ON,0,Answer: ON
+1,filler,2,FD,FD,1,0,1,HD FD,0,Answer: FD
+1,filler,3,UO,UO,1,0,1,VC UO,0,Answer: UO
+1,filler,4,YV,YV,1,0,1,ZP YV,0,Answer: YV
+1,filler,5,FB,FB,1,0,1,ZK FB,0,Answer: FB
+1,filler,6,UP,UP,1,0,1,QD UP,0,Answer: UP
+1,filler,7,QX,QX,1,0,1,BG QX,0,Answer: QX
+1,filler,8,EJ,EJ,1,0,1,DS EJ,0,Answer: EJ
+1,filler,9,RZ,RZ,1,0,1,GV RZ,0,Answer: RZ
+1,filler,10,KW,KW,1,0,1,EG KW,0,Answer: KW
+1,filler,11,MJ,MJ,1,0,1,YL MJ,0,Answer: MJ
+1,filler,12,LB,LB,1,0,1,OC LB,0,Answer: LB
+1,filler,13,BA,BA,1,0,1,OE BA,0,Answer: BA
+1,filler,14,WV,WV,1,0,1,SE WV,0,Answer: WV
+1,filler,15,VN,VN,1,0,1,AO VN,0,Answer: VN
+1,filler,16,DF,DF,1,0,1,RJ DF,0,Answer: DF
+1,filler,17,HI,HI,1,0,1,UE HI,0,Answer: HI
+1,filler,18,DN,DN,1,0,1,GN DN,0,Answer: DN
+1,filler,19,VX,VX,1,0,1,LD VX,0,Answer: VX
+1,filler,20,HU,HU,1,0,1,BB HU,0,Answer: HU
+1,filler,21,EC,EC,1,0,1,BY EC,0,Answer: EC
+1,filler,22,UK,UK,1,0,1,ZQ UK,0,Answer: UK
+1,filler,23,KB,KB,1,0,1,HC KB,0,Answer: KB
+1,filler,24,HD,HD,1,0,1,UF HD,0,Answer: HD
+1,filler,25,OE,OE,1,0,1,US OE,0,Answer: OE
+1,filler,26,PC,PC,1,0,1,IU PC,0,Answer: PC
+1,filler,27,LK,LK,1,0,1,KO LK,0,Answer: LK
+1,filler,28,QQ,QQ,1,0,1,LT QQ,0,Answer: QQ
+1,filler,29,BZ,BZ,1,0,1,DT BZ,0,Answer: BZ
+1,cot,0,NN,NN,1,0,1,JJ NN,0,"Following the chain: JJ -> NN.  
+Answer: NN"
+1,cot,1,ON,ON,1,0,1,GY ON,0,"Following the chain: GY -> ON.  
+Answer: ON"
+1,cot,2,FD,FD,1,0,1,HD FD,0,"We are given a mapping table and need to start at **HD** and follow the mapping **once**.
+
+From the table:
+
+- **HD -> FD**
+
+So, starting at HD, after one mapping step, we land on **FD**.
+
+Answer: FD"
+1,cot,3,UO,UO,1,0,1,VC UO,0,"Following the chain: VC -> UO.  
+Answer: UO"
+1,cot,4,YV,YV,1,0,1,ZP YV,0,"Following the chain: ZP -> YV.  
+Answer: YV"
+1,cot,5,FB,FB,1,0,1,ZK FB,0,"From the mapping table, we are told:
+
+**ZK -> FB**
+
+So, starting at **ZK** and following the mapping **once**, we land on:
+
+**FB**
+
+Answer: FB"
+1,cot,6,UP,UP,1,0,1,QD UP,0,"Following the chain: QD -> UP.  
+Answer: UP"
+1,cot,7,QX,QX,1,0,1,BG QX,0,"Following the chain: BG -> QX.  
+Answer: QX"
+1,cot,8,EJ,EJ,1,0,1,DS EJ,0,"Following the chain: DS -> EJ.  
+Answer: EJ"
+1,cot,9,RZ,RZ,1,0,1,GV RZ,0,"Following the chain: GV -> RZ.  
+Answer: RZ"
+1,cot,10,KW,KW,1,0,1,EG KW,0,"Following the chain: EG -> KW.  
+Answer: KW"
+1,cot,11,MJ,MJ,1,0,1,YL MJ,0,"Following the chain: YL -> MJ.  
+Answer: MJ"
+1,cot,12,LB,LB,1,0,1,OC LB,0,"From the mapping table, find the entry starting with **OC**:
+
+OC -> LB
+
+So, starting at OC and following the mapping once leads to **LB**.
+
+Answer: LB"
+1,cot,13,BA,BA,1,0,1,OE BA,0,"Following the chain: OE -> BA.  
+Answer: BA"
+1,cot,14,WV,WV,1,0,1,SE WV,0,"Following the chain: SE -> WV.  
+Answer: WV"
+1,cot,15,VN,VN,1,0,1,AO VN,0,"Following the chain: AO -> VN.  
+Answer: VN"
+1,cot,16,DF,DF,1,0,1,RJ DF,0,"Following the chain: RJ -> DF.  
+Answer: DF"
+1,cot,17,HI,HI,1,0,1,UE HI,0,"Following the chain: UE -> HI.  
+Answer: HI"
+1,cot,18,DN,DN,1,0,1,GN DN,0,"From the mapping table, we are told:
+
+**GN -> DN**
+
+So, starting at **GN** and following the mapping **once**, we land on:
+
+**DN**
+
+Answer: DN"
+1,cot,19,VX,VX,1,0,1,LD VX,0,"Following the chain: LD -> VX.  
+Answer: VX"
+1,cot,20,HU,HU,1,0,1,BB HU,0,"From the mapping table, we look for the entry that starts with **BB**:
+
+- BB -> HU
+
+So, starting at **BB** and following the mapping once leads us to **HU**.
+
+Answer: HU"
+1,cot,21,EC,EC,1,0,1,BY EC,0,"Following the chain: BY -> EC.  
+Answer: EC"
+1,cot,22,UK,UK,1,0,1,ZQ UK,0,"Following the chain: ZQ -> UK.  
+Answer: UK"
+1,cot,23,KB,KB,1,0,1,HC KB,0,"We are given the mapping table:
+
+- OX -> HQ  
+- XQ -> WK  
+- CP -> XQ  
+- HW -> ZO  
+- KB -> HW  
+- TD -> OX  
+- HQ -> HC  
+- LU -> TD  
+- ZO -> OL  
+- HC -> KB  
+- WK -> LU  
+- OL -> CP  
+
+We are to **start at HC** and follow the mapping **once**.
+
+From the table, find the mapping for **HC**:
+
+- HC -> KB
+
+So, following the mapping once from HC leads us to **KB**.
+
+Answer: KB"
+1,cot,24,HD,HD,1,0,1,UF HD,0,"We are given a mapping table and need to follow the mapping **once** starting from **UF**.
+
+From the table:
+
+- UF -> HD
+
+So, following the mapping once from **UF** leads us to **HD**.
+
+Answer: HD"
+1,cot,25,OE,OE,1,0,1,US OE,0,"We are given the mapping table and need to follow the mapping **once** starting from **US**.
+
+From the table:
+- **US -> OE**
+
+So, following the mapping once from **US** leads us to **OE**.
+
+Answer: OE"
+1,cot,26,PC,PC,1,0,1,IU PC,0,"Following the chain: IU -> PC.  
+Answer: PC"
+1,cot,27,LK,LK,1,0,1,KO LK,0,"Following the chain: KO -> LK.  
+Answer: LK"
+1,cot,28,QQ,QQ,1,0,1,LT QQ,0,"Following the chain: LT -> QQ.  
+Answer: QQ"
+1,cot,29,BZ,BZ,1,0,1,DT BZ,0,"Following the chain: DT -> BZ.  
+Answer: BZ"
+2,immediate,0,BX,LC,0,0,4,FS CN BX,0,Answer: LC
+2,immediate,1,ES,TZ,0,0,3,RP QM ES,0,Answer: TZ
+2,immediate,2,MB,IK,0,0,3,LD JS MB,0,Answer: IK
+2,immediate,3,DL,RN,0,0,3,QO HE DL,0,Answer: RN
+2,immediate,4,SG,SG,1,0,2,NJ PX SG,0,Answer: SG
+2,immediate,5,XF,XF,1,0,2,EG FD XF,0,Answer: XF
+2,immediate,6,XL,HY,0,0,5,OR IM XL,0,Answer: HY
+2,immediate,7,WP,WP,1,0,2,KC FQ WP,0,Answer: WP
+2,immediate,8,SO,XT,0,0,10,FP SN SO,0,Answer: XT
+2,immediate,9,VA,VA,1,0,2,SH AA VA,0,Answer: VA
+2,immediate,10,QR,QR,1,0,2,DI SO QR,0,Answer: QR
+2,immediate,11,PU,PU,1,0,2,SZ YV PU,0,Answer: PU
+2,immediate,12,AJ,US,0,0,4,FJ UO AJ,0,Answer: US
+2,immediate,13,QP,QP,1,0,2,UF LB QP,0,Answer: QP
+2,immediate,14,UQ,UQ,1,0,2,DI HS UQ,0,Answer: UQ
+2,immediate,15,GB,CU,0,0,3,IH KH GB,0,Answer: CU
+2,immediate,16,IW,IW,1,0,2,UO AS IW,0,Answer: IW
+2,immediate,17,RF,,0,0,-1,LV YM RF,1,__ERROR__ retryable
+2,immediate,18,TG,TG,1,0,2,RL QZ TG,0,Answer: TG
+2,immediate,19,BT,BT,1,0,2,KI XP BT,0,Answer: BT
+2,immediate,20,TL,BM,0,0,3,CA BV TL,0,Answer: BM
+2,immediate,21,PP,BN,0,0,4,IV SD PP,0,Answer: BN
+2,immediate,22,SC,SC,1,0,2,UE TU SC,0,Answer: SC
+2,immediate,23,XE,VQ,0,0,3,DX BN XE,0,Answer: VQ
+2,immediate,24,QQ,KZ,0,0,4,MS MI QQ,0,Answer: KZ
+2,immediate,25,EW,VF,0,0,3,KO NO EW,0,Answer: VF
+2,immediate,26,MY,HN,0,0,3,PT MR MY,0,Answer: HN
+2,immediate,27,DQ,DQ,1,0,2,DP YB DQ,0,Answer: DQ
+2,immediate,28,LS,LS,1,0,2,BX BA LS,0,Answer: LS
+2,immediate,29,JL,JL,1,0,2,PJ JW JL,0,Answer: JL
+2,filler,0,BX,LC,0,0,4,FS CN BX,0,Answer: LC
+2,filler,1,ES,TZ,0,0,3,RP QM ES,0,Answer: TZ
+2,filler,2,MB,IK,0,0,3,LD JS MB,0,Answer: IK
+2,filler,3,DL,DL,1,0,2,QO HE DL,0,Answer: DL
+2,filler,4,SG,SG,1,0,2,NJ PX SG,0,Answer: SG
+2,filler,5,XF,XF,1,0,2,EG FD XF,0,Answer: XF
+2,filler,6,XL,HY,0,0,5,OR IM XL,0,Answer: HY
+2,filler,7,WP,WP,1,0,2,KC FQ WP,0,Answer: WP
+2,filler,8,SO,SO,1,0,2,FP SN SO,0,Answer: SO
+2,filler,9,VA,VA,1,0,2,SH AA VA,0,Answer: VA
+2,filler,10,QR,QR,1,0,2,DI SO QR,0,Answer: QR
+2,filler,11,PU,PU,1,0,2,SZ YV PU,0,Answer: PU
+2,filler,12,AJ,US,0,0,4,FJ UO AJ,0,Answer: US
+2,filler,13,QP,FM,0,0,3,UF LB QP,0,Answer: FM
+2,filler,14,UQ,UQ,1,0,2,DI HS UQ,0,Answer: UQ
+2,filler,15,GB,PP,0,0,4,IH KH GB,0,Answer: PP
+2,filler,16,IW,IW,1,0,2,UO AS IW,0,Answer: IW
+2,filler,17,RF,RF,1,0,2,LV YM RF,0,Answer: RF
+2,filler,18,TG,TG,1,0,2,RL QZ TG,0,Answer: TG
+2,filler,19,BT,BT,1,0,2,KI XP BT,0,Answer: BT
+2,filler,20,TL,TL,1,0,2,CA BV TL,0,Answer: TL
+2,filler,21,PP,BN,0,0,4,IV SD PP,0,Answer: BN
+2,filler,22,SC,SC,1,0,2,UE TU SC,0,Answer: SC
+2,filler,23,XE,BN,0,0,1,DX BN XE,0,Answer: BN
+2,filler,24,QQ,KZ,0,0,4,MS MI QQ,0,Answer: KZ
+2,filler,25,EW,VF,0,0,3,KO NO EW,0,Answer: VF
+2,filler,26,MY,HN,0,0,3,PT MR MY,0,Answer: HN
+2,filler,27,DQ,DQ,1,0,2,DP YB DQ,0,Answer: DQ
+2,filler,28,LS,DP,0,0,3,BX BA LS,0,Answer: DP
+2,filler,29,JL,JL,1,0,2,PJ JW JL,0,Answer: JL
+2,cot,0,BX,BX,1,0,2,FS CN BX,0,"We are given a mapping table and need to start at **FS** and follow the mapping **2 times**.
+
+### Step 1: Understand the mapping
+From the table:
+
+- EY -> HU  
+- CA -> DD  
+- XX -> AH  
+- FT -> LC  
+- BX -> FT  
+- LC -> EY  
+- FS -> CN  
+- CN -> BX  
+- HU -> CA  
+- AH -> FS  
+- DD -> GS  
+- GS -> XX  
+
+### Step 2: Start at **FS**
+
+- **First mapping**:  
+  FS -> **CN**
+
+- **Second mapping**:  
+  CN -> **BX**
+
+So after 2 steps: **FS → CN → BX**
+
+Answer: BX"
+2,cot,1,ES,ES,1,0,2,RP QM ES,0,"We are given a mapping table and need to start at **RP** and follow the mapping **2 times**.
+
+### Step 1: Find where RP maps to
+From the table:
+- **RP -> QM**
+
+### Step 2: Find where QM maps to
+From the table:
+- **QM -> ES**
+
+So, starting at **RP**:
+- 1st mapping: RP → QM  
+- 2nd mapping: QM → ES
+
+Thus, after 2 mappings, we land on **ES**.
+
+Answer: ES"
+2,cot,2,MB,MB,1,0,2,LD JS MB,0,"We are given a mapping table and need to start at **LD** and follow the mapping **2 times**.
+
+### Step 1: Start at LD
+From the table:
+- **LD -> JS**
+
+### Step 2: Follow mapping from JS
+- **JS -> MB**
+
+So, after 2 steps: **LD → JS → MB**
+
+Answer: MB"
+2,cot,3,DL,DL,1,0,2,QO HE DL,0,"We are given a mapping table and need to start at **QO** and follow the mapping **2 times**.
+
+### Step 1: Find where QO maps to
+From the table:
+- **QO -> HE**
+
+### Step 2: Find where HE maps to
+From the table:
+- **HE -> DL**
+
+So, following the mapping twice from QO:
+- **QO → HE → DL**
+
+Answer: DL"
+2,cot,4,SG,SG,1,0,2,NJ PX SG,0,"We are given a mapping table and need to start at **NJ** and follow the mapping **2 times**.
+
+### Step 1: Find where **NJ** maps to.
+From the table:
+- **NJ -> PX**
+
+### Step 2: Find where **PX** maps to.
+From the table:
+- **PX -> SG**
+
+So, starting at **NJ**:
+- 1st mapping: NJ → PX  
+- 2nd mapping: PX → SG
+
+Answer: SG"
+2,cot,5,XF,XF,1,0,2,EG FD XF,0,"We are given a mapping table and need to start at **EG** and follow the mapping **2 times**.
+
+### Step 1: First mapping from EG
+From the table:
+- **EG -> FD**
+
+### Step 2: Second mapping from FD
+From the table:
+- **FD -> XF**
+
+So, after 2 mappings:  
+**EG → FD → XF**
+
+Answer: XF"
+2,cot,6,XL,XL,1,0,2,OR IM XL,0,"We are given a mapping table and need to start at **OR** and follow the mapping **2 times**.
+
+### Step 1: First mapping from OR
+From the table:
+- **OR -> IM**
+
+### Step 2: Second mapping from IM
+From the table:
+- **IM -> XL**
+
+So, after 2 steps: **OR → IM → XL**
+
+Answer: XL"
+2,cot,7,WP,WP,1,0,2,KC FQ WP,0,"We are given a mapping table and need to start at **KC** and follow the mapping **2 times**.
+
+### Step 1: First mapping from KC
+From the table:
+- **KC -> FQ**
+
+### Step 2: Second mapping from FQ
+From the table:
+- **FQ -> WP**
+
+So, after 2 mappings:  
+**KC → FQ → WP**
+
+Answer: WP"
+2,cot,8,SO,SO,1,0,2,FP SN SO,0,"We are given a mapping table and need to start at **FP** and follow the mapping **2 times**.
+
+### Step 1: Find where FP maps to
+From the table:
+- **FP -> SN**
+
+### Step 2: Find where SN maps to
+From the table:
+- **SN -> SO**
+
+So, following the mapping twice:
+**FP -> SN -> SO**
+
+Answer: SO"
+2,cot,9,VA,VA,1,0,2,SH AA VA,0,"We are given a mapping table and need to start at **SH** and follow the mapping **2 times**.
+
+### Step 1: First mapping from SH
+From the table:
+- **SH -> AA**
+
+### Step 2: Second mapping from AA
+From the table:
+- **AA -> VA**
+
+So, starting at **SH**, after 1 step we get **AA**, and after 2 steps we get **VA**.
+
+Answer: VA"
+2,cot,10,QR,QR,1,0,2,DI SO QR,0,"We are given a mapping table and need to start at **DI** and follow the mapping **2 times**.
+
+### Step 1: First mapping from DI
+From the table:
+- **DI -> SO**
+
+### Step 2: Second mapping from SO
+From the table:
+- **SO -> QR**
+
+So, after 2 steps: **DI -> SO -> QR**
+
+Answer: QR"
+2,cot,11,PU,PU,1,0,2,SZ YV PU,0,"We are given a mapping table and need to start at **SZ** and follow the mapping **2 times**.
+
+### Step 1: Find where SZ maps to
+From the table:
+- **SZ -> YV**
+
+### Step 2: Find where YV maps to
+From the table:
+- **YV -> PU**
+
+So, starting at **SZ**:
+- 1st mapping: SZ → YV  
+- 2nd mapping: YV → PU
+
+Answer: PU"
+2,cot,12,AJ,AJ,1,0,2,FJ UO AJ,0,"We are given a mapping table and need to start at **FJ** and follow the mapping **2 times**.
+
+### Step 1: First mapping from FJ
+From the table:
+- **FJ -> UO**
+
+### Step 2: Second mapping from UO
+From the table:
+- **UO -> AJ**
+
+So, after 2 steps: **FJ -> UO -> AJ**
+
+Answer: AJ"
+2,cot,13,QP,QP,1,0,2,UF LB QP,0,"We are given a mapping table and need to start at **UF** and follow the mapping **2 times**.
+
+### Step 1: Find where UF maps to
+From the table:
+- **UF -> LB**
+
+### Step 2: Find where LB maps to
+- **LB -> QP**
+
+So, starting at **UF**:
+- 1st mapping: UF → LB  
+- 2nd mapping: LB → QP
+
+Answer: QP"
+2,cot,14,UQ,UQ,1,0,2,DI HS UQ,0,"We are given a mapping table and need to start at **DI** and follow the mapping **2 times**.
+
+### Step 1: First mapping from DI
+From the table:
+- **DI -> HS**
+
+### Step 2: Second mapping from HS
+From the table:
+- **HS -> UQ**
+
+So, after 2 mappings:  
+**DI → HS → UQ**
+
+Answer: UQ"
+2,cot,15,GB,GB,1,0,2,IH KH GB,0,"We are given a mapping table and need to start at **IH** and follow the mapping **2 times**.
+
+### Step 1: First mapping from IH
+From the table:
+- **IH -> KH**
+
+### Step 2: Second mapping from KH
+From the table:
+- **KH -> GB**
+
+So, after 2 steps: **IH → KH → GB**
+
+Answer: GB"
+2,cot,16,IW,IW,1,0,2,UO AS IW,0,"We are given a mapping table and need to start at **UO** and follow the mapping **2 times**.
+
+### Step 1: Find where UO maps to
+From the table:
+- **UO -> AS**
+
+### Step 2: Find where AS maps to
+From the table:
+- **AS -> IW**
+
+So, starting at **UO**:
+- 1st mapping: UO → AS  
+- 2nd mapping: AS → IW
+
+Answer: IW"
+2,cot,17,RF,RF,1,0,2,LV YM RF,0,"We are given a mapping table and need to start at **LV** and follow the mapping **2 times**.
+
+### Step 1: First mapping from LV
+From the table:
+- **LV -> YM**
+
+### Step 2: Second mapping from YM
+From the table:
+- **YM -> RF**
+
+So, after 2 mappings:
+**LV → YM → RF**
+
+Answer: RF"
+2,cot,18,TG,TG,1,0,2,RL QZ TG,0,"We are given a mapping table and need to start at **RL** and follow the mapping **2 times**.
+
+### Step 1: Find where RL maps to
+From the table:
+- **RL -> QZ**
+
+### Step 2: Find where QZ maps to
+From the table:
+- **QZ -> TG**
+
+So, starting at RL:
+- 1st mapping: RL → QZ  
+- 2nd mapping: QZ → TG
+
+Answer: TG"
+2,cot,19,BT,BT,1,0,2,KI XP BT,0,"We are given a mapping table and need to start at **KI** and follow the mapping **2 times**.
+
+### Step 1: Start at KI
+From the table:
+- **KI -> XP**
+
+### Step 2: Follow mapping from XP
+- **XP -> BT**
+
+So, after 2 steps: **KI -> XP -> BT**
+
+Answer: BT"
+2,cot,20,TL,TL,1,0,2,CA BV TL,0,"We are given a mapping table and need to start at **CA** and follow the mapping **2 times**.
+
+### Step 1: First mapping from CA
+From the table:
+- **CA -> BV**
+
+### Step 2: Second mapping from BV
+From the table:
+- **BV -> TL**
+
+So, after 2 mappings: **CA -> BV -> TL**
+
+Answer: TL"
+2,cot,21,PP,PP,1,0,2,IV SD PP,0,"We are given a mapping table and need to start at **IV** and follow the mapping **2 times**.
+
+### Step 1: Start at IV
+From the table:
+- **IV -> SD**
+
+### Step 2: Follow mapping from SD
+- **SD -> PP**
+
+So, after 2 steps: **IV -> SD -> PP**
+
+Answer: PP"
+2,cot,22,SC,SC,1,0,2,UE TU SC,0,"We are given a mapping table and need to start at **UE** and follow the mapping **2 times**.
+
+### Step 1: Start at UE
+From the table:
+- **UE -> TU**
+
+### Step 2: Follow the mapping from TU
+- **TU -> SC**
+
+So after 2 steps: **UE -> TU -> SC**
+
+Answer: SC"
+2,cot,23,XE,XE,1,0,2,DX BN XE,0,"We are given a mapping table and need to start at **DX** and follow the mapping **2 times**.
+
+### Step 1: Find where DX maps to
+From the table:
+- **DX -> BN**
+
+### Step 2: Find where BN maps to
+From the table:
+- **BN -> XE**
+
+So, starting at **DX**:
+- 1st mapping: DX → BN  
+- 2nd mapping: BN → XE
+
+Answer: XE"
+2,cot,24,QQ,QQ,1,0,2,MS MI QQ,0,"We are given a mapping table and need to start at **MS** and follow the mapping **2 times**.
+
+### Step 1: First mapping from MS
+From the table:
+- **MS -> MI**
+
+### Step 2: Second mapping from MI
+- **MI -> QQ**
+
+So, after 2 steps: **MS → MI → QQ**
+
+Answer: QQ"
+2,cot,25,EW,EW,1,0,2,KO NO EW,0,"We are given a mapping table and need to start at **KO** and follow the mapping **2 times**.
+
+### Step 1: First mapping
+From the table:
+- **KO -> NO**
+
+### Step 2: Second mapping
+Now take the result **NO** and map it:
+- **NO -> EW**
+
+So after 2 mappings: **KO -> NO -> EW**
+
+Answer: EW"
+2,cot,26,MY,MY,1,0,2,PT MR MY,0,"We are given a mapping table and need to start at **PT** and follow the mapping **2 times**.
+
+### Step 1: Find where PT maps to
+From the table:
+- **PT -> MR**
+
+### Step 2: Find where MR maps to
+From the table:
+- **MR -> MY**
+
+So, following the mapping twice from PT:
+- **PT -> MR -> MY**
+
+Answer: MY"
+2,cot,27,DQ,DQ,1,0,2,DP YB DQ,0,"We are given a mapping table and need to start at **DP** and follow the mapping **2 times**.
+
+### Step 1: First mapping
+From the table:
+- **DP -> YB**
+
+### Step 2: Second mapping
+Now take **YB** and find its mapping:
+- **YB -> DQ**
+
+So after 2 steps: **DP -> YB -> DQ**
+
+Answer: DQ"
+2,cot,28,LS,LS,1,0,2,BX BA LS,0,"We are given a mapping table and need to start at **BX** and follow the mapping **2 times**.
+
+### Step 1: First mapping from BX
+From the table:
+- **BX -> BA**
+
+### Step 2: Second mapping from BA
+From the table:
+- **BA -> LS**
+
+So, starting at **BX**, after 1 step we get **BA**, and after 2 steps we get **LS**.
+
+Answer: LS"
+2,cot,29,JL,JL,1,0,2,PJ JW JL,0,"We are given a mapping table and need to start at **PJ** and follow the mapping **2 times**.
+
+### Step 1: Find where **PJ** maps to.
+From the table:
+- **PJ -> JW**
+
+### Step 2: Find where **JW** maps to.
+From the table:
+- **JW -> JL**
+
+So, starting at **PJ**:
+- 1st mapping: **PJ → JW**
+- 2nd mapping: **JW → JL**
+
+Thus, after 2 mappings, we land on **JL**.
+
+Answer: JL"
+3,immediate,0,BT,CI,0,0,2,HF NO CI BT,0,Answer: CI
+3,immediate,1,KB,KB,1,0,3,VM AW FL KB,0,Answer: KB
+3,immediate,2,VG,RQ,0,0,4,CU GW OP VG,0,Answer: RQ
+3,immediate,3,JB,JB,1,0,3,QT PO RC JB,0,Answer: JB
+3,immediate,4,MY,EL,0,0,5,TL GS GL MY,0,Answer: EL
+3,immediate,5,IL,QJ,0,0,11,AW JS MF IL,0,Answer: QJ
+3,immediate,6,GE,NT,0,0,11,OS AL AN GE,0,Answer: NT
+3,immediate,7,AL,QB,0,0,8,KR BS GC AL,0,Answer: QB
+3,immediate,8,PM,FZ,0,0,8,IH VR LA PM,0,Answer: FZ
+3,immediate,9,IP,JB,0,0,5,OZ DE RI IP,0,Answer: JB
+3,immediate,10,QO,ZC,0,0,2,PC RU ZC QO,0,Answer: ZC
+3,immediate,11,XG,FX,0,0,7,WB VF YI XG,0,Answer: FX
+3,immediate,12,SX,SX,1,0,3,UM ZK SR SX,0,Answer: SX
+3,immediate,13,PU,AC,0,0,10,HT PB VJ PU,0,Answer: AC
+3,immediate,14,AW,KZ,0,0,2,CU WT KZ AW,0,Answer: KZ
+3,immediate,15,XK,JE,0,0,6,ZP IQ AL XK,0,Answer: JE
+3,immediate,16,SS,SS,1,0,3,IZ DU CV SS,0,Answer: SS
+3,immediate,17,DD,RY,0,0,7,IU SV DA DD,0,Answer: RY
+3,immediate,18,MV,MV,1,0,3,PA JZ WD MV,0,Answer: MV
+3,immediate,19,ZQ,PD,0,0,10,YC LI LV ZQ,0,Answer: PD
+3,immediate,20,VN,UY,0,0,10,FL CB TN VN,0,Answer: UY
+3,immediate,21,TS,VT,0,0,10,OR ES AA TS,0,Answer: VT
+3,immediate,22,UK,XT,0,0,4,WS NX LN UK,0,Answer: XT
+3,immediate,23,ZP,NT,0,0,9,YV ED UJ ZP,0,Answer: NT
+3,immediate,24,ZR,GR,0,0,4,OD LH EJ ZR,0,Answer: GR
+3,immediate,25,SM,SM,1,0,3,XZ XQ AR SM,0,Answer: SM
+3,immediate,26,YW,LJ,0,0,8,QG NB TR YW,0,Answer: LJ
+3,immediate,27,AQ,GQ,0,0,8,QM ZW UF AQ,0,Answer: GQ
+3,immediate,28,SX,WV,0,0,4,IZ MX UE SX,0,Answer: WV
+3,immediate,29,BY,IW,0,0,10,TR MC JK BY,0,Answer: IW
+3,filler,0,BT,BT,1,0,3,HF NO CI BT,0,Answer: BT
+3,filler,1,KB,KB,1,0,3,VM AW FL KB,0,Answer: KB
+3,filler,2,VG,ZM,0,0,5,CU GW OP VG,0,Answer: ZM
+3,filler,3,JB,JB,1,0,3,QT PO RC JB,0,Answer: JB
+3,filler,4,MY,IW,0,0,4,TL GS GL MY,0,Answer: IW
+3,filler,5,IL,IL,1,0,3,AW JS MF IL,0,Answer: IL
+3,filler,6,GE,NT,0,0,11,OS AL AN GE,0,Answer: NT
+3,filler,7,AL,QB,0,0,8,KR BS GC AL,0,Answer: QB
+3,filler,8,PM,PM,1,0,3,IH VR LA PM,0,Answer: PM
+3,filler,9,IP,VV,0,0,7,OZ DE RI IP,0,Answer: VV
+3,filler,10,QO,SJ,0,0,10,PC RU ZC QO,0,Answer: SJ
+3,filler,11,XG,AO,0,0,8,WB VF YI XG,0,Answer: AO
+3,filler,12,SX,SX,1,0,3,UM ZK SR SX,0,Answer: SX
+3,filler,13,PU,AC,0,0,10,HT PB VJ PU,0,Answer: AC
+3,filler,14,AW,AP,0,0,7,CU WT KZ AW,0,Answer: AP
+3,filler,15,XK,JE,0,0,6,ZP IQ AL XK,0,Answer: JE
+3,filler,16,SS,KU,0,0,5,IZ DU CV SS,0,Answer: KU
+3,filler,17,DD,TS,0,0,5,IU SV DA DD,0,Answer: TS
+3,filler,18,MV,MV,1,0,3,PA JZ WD MV,0,Answer: MV
+3,filler,19,ZQ,PD,0,0,10,YC LI LV ZQ,0,Answer: PD
+3,filler,20,VN,JA,0,0,9,FL CB TN VN,0,Answer: JA
+3,filler,21,TS,VT,0,0,10,OR ES AA TS,0,Answer: VT
+3,filler,22,UK,SR,0,0,11,WS NX LN UK,0,Answer: SR
+3,filler,23,ZP,NT,0,0,9,YV ED UJ ZP,0,Answer: NT
+3,filler,24,ZR,GR,0,0,4,OD LH EJ ZR,0,Answer: GR
+3,filler,25,SM,SM,1,0,3,XZ XQ AR SM,0,Answer: SM
+3,filler,26,YW,LJ,0,0,8,QG NB TR YW,0,Answer: LJ
+3,filler,27,AQ,AQ,1,0,3,QM ZW UF AQ,0,Answer: AQ
+3,filler,28,SX,WV,0,0,4,IZ MX UE SX,0,Answer: WV
+3,filler,29,BY,IW,0,0,10,TR MC JK BY,0,Answer: IW
+3,cot,0,BT,BT,1,0,3,HF NO CI BT,0,"We are given a mapping table and need to start at **HF** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- QA → PA  
+- UG → VF  
+- XW → UG  
+- PA → HF  
+- CB → XW  
+- NO → CI  
+- CI → BT  
+- IY → EG  
+- EG → QA  
+- BT → CB  
+- HF → NO  
+- VF → IY  
+
+### Step 2: Start at HF and follow the chain
+
+- **Step 1**: HF → **NO**  
+- **Step 2**: NO → **CI**  
+- **Step 3**: CI → **BT**
+
+So after 3 mappings, we land on **BT**.
+
+Answer: BT"
+3,cot,1,KB,KB,1,0,3,VM AW FL KB,0,"We are given a mapping table and need to start at **VM** and follow the mapping **3 times**.
+
+### Step 1: Understand the mapping
+From the table:
+
+- BJ → VM  
+- AW → FL  
+- XQ → VO  
+- VM → AW  
+- ZZ → BJ  
+- VL → AC  
+- VO → VL  
+- FL → KB  
+- YK → XQ  
+- SL → ZZ  
+- AC → SL  
+- KB → YK  
+
+We’ll only need the mappings that let us move forward from **VM**.
+
+### Step 2: Start at VM and follow 3 steps
+
+**Step 1:**  
+VM → **AW**
+
+**Step 2:**  
+AW → **FL**
+
+**Step 3:**  
+FL → **KB**
+
+So after 3 mappings:  
+VM → AW → FL → **KB**
+
+Answer: KB"
+3,cot,2,VG,VG,1,0,3,CU GW OP VG,0,"We are given a mapping table and need to start at **CU** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- LR → CU  
+- OP → VG  
+- ZW → CZ  
+- **CU → GW**  
+- NI → JD  
+- RQ → ZM  
+- ZK → NI  
+- CZ → LR  
+- VG → RQ  
+- **GW → OP**  
+- JD → ZW  
+- ZM → ZK  
+
+We only need the forward mappings (from left to right), so extract those:
+
+- LR → CU  
+- OP → VG  
+- ZW → CZ  
+- CU → GW  
+- NI → JD  
+- RQ → ZM  
+- ZK → NI  
+- CZ → LR  
+- VG → RQ  
+- GW → OP  
+- JD → ZW  
+- ZM → ZK  
+
+### Step 2: Start at CU and follow 3 steps
+
+**Step 1:** CU → GW  
+**Step 2:** GW → OP  
+**Step 3:** OP → VG  
+
+So after 3 mappings, we land on **VG**.
+
+Answer: VG"
+3,cot,3,JB,JB,1,0,3,QT PO RC JB,0,"We are given a mapping table and need to start at **QT** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- XZ → QT  
+- PO → RC  
+- JB → BN  
+- BN → MK  
+- NM → YY  
+- YY → XZ  
+- RC → JB  
+- VF → VT  
+- SV → NM  
+- VT → SV  
+- QT → PO  
+- MK → VF  
+
+We only need the **forward mappings** (i.e., from left to right as given), since we're following the chain forward.
+
+So extract the usable forward map:
+
+- QT → PO  
+- PO → RC  
+- RC → JB  
+- JB → BN  
+- BN → MK  
+- MK → VF  
+- VF → VT  
+- VT → SV  
+- SV → NM  
+- NM → YY  
+- YY → XZ  
+- XZ → QT  
+
+This looks like a cycle!
+
+### Step 2: Start at QT and follow 3 steps
+
+- **Step 1**: QT → PO  
+- **Step 2**: PO → RC  
+- **Step 3**: RC → JB  
+
+So after 3 mappings, we land on **JB**.
+
+Answer: JB"
+3,cot,4,MY,MY,1,0,3,TL GS GL MY,0,"We are given a mapping table and need to start at **TL** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- YD → BL  
+- HE → IN  
+- MY → IW  
+- IW → EL  
+- TL → GS  
+- EL → YD  
+- IN → FV  
+- BL → PQ  
+- GL → MY  
+- PQ → HE  
+- FV → TL  
+- GS → GL  
+
+---
+
+### Step 2: Start at **TL** and follow the chain
+
+**First mapping (1st step):**  
+TL → **GS**
+
+**Second mapping (2nd step):**  
+GS → **GL**
+
+**Third mapping (3rd step):**  
+GL → **MY**
+
+---
+
+### Final Answer:
+Answer: MY"
+3,cot,5,IL,IL,1,0,3,AW JS MF IL,0,"We are given a mapping table and need to start at **AW** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping for easy reference:
+- LO → OD  
+- JS → MF  
+- MF → IL  
+- EL → UT  
+- SD → IE  
+- OD → QJ  
+- GC → LO  
+- UT → SD  
+- AW → JS  
+- IE → GC  
+- QJ → AW  
+- IL → EL  
+
+---
+
+### Step 2: Start at **AW** and follow the chain:
+
+1. **First mapping**:  
+   AW → **JS**
+
+2. **Second mapping**:  
+   JS → **MF**
+
+3. **Third mapping**:  
+   MF → **IL**
+
+---
+
+So after 3 mappings, we land on **IL**.
+
+Answer: IL"
+3,cot,6,GE,GE,1,0,3,OS AL AN GE,0,"We are given a mapping table and need to start at **OS** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- FW → DA  
+- AL → AN  
+- BH → VE  
+- OS → AL  
+- TG → NT  
+- DA → TG  
+- HA → BH  
+- QL → HA  
+- AN → GE  
+- GE → QL  
+- NT → OS  
+- VE → FW  
+
+### Step 2: Start at OS and follow the chain
+
+- **Step 0 (start):** OS  
+- **Step 1:** OS → AL  
+- **Step 2:** AL → AN  
+- **Step 3:** AN → GE  
+
+So after 3 mappings, we land on **GE**.
+
+Answer: GE"
+3,cot,7,AL,AL,1,0,3,KR BS GC AL,0,"We are given a mapping table and need to start at **KR** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping clearly
+From the table:
+
+- AL → ZJ  
+- VG → UC  
+- QB → RY  
+- UC → KR  
+- RY → VG  
+- GC → AL  
+- MT → OM  
+- OM → ZS  
+- BS → GC  
+- ZS → QB  
+- KR → BS  
+- ZJ → MT  
+
+### Step 2: Start at KR and follow the chain
+
+**First mapping:**  
+KR → **BS**
+
+**Second mapping:**  
+BS → **GC**
+
+**Third mapping:**  
+GC → **AL**
+
+So after 3 steps, we land on **AL**.
+
+Answer: AL"
+3,cot,8,PM,PM,1,0,3,IH VR LA PM,0,"We are given a mapping table and need to start at **IH** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- YK -> ZW  
+- VR -> LA  
+- ZW -> SV  
+- LA -> PM  
+- HO -> DU  
+- FZ -> ME  
+- EV -> FZ  
+- DU -> IH  
+- ME -> HO  
+- PM -> YK  
+- IH -> VR  
+- SV -> EV  
+
+### Step 2: Start at IH and follow the chain
+
+- **Start**: IH  
+- **1st mapping**: IH -> **VR**  
+- **2nd mapping**: VR -> **LA**  
+- **3rd mapping**: LA -> **PM**
+
+So after 3 mappings, we land on **PM**.
+
+Answer: PM"
+3,cot,9,IP,IP,1,0,3,OZ DE RI IP,0,"We are given a mapping table and need to start at **OZ** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- DJ → SR  
+- CX → JB  
+- SM → VV  
+- SR → OZ  
+- JB → SM  
+- DE → RI  
+- AO → DJ  
+- OZ → DE  
+- IP → CX  
+- RI → IP  
+- VV → ZO  
+- ZO → AO  
+
+### Step 2: Start at OZ and follow the chain
+
+- **1st mapping**: OZ → **DE**  
+- **2nd mapping**: DE → **RI**  
+- **3rd mapping**: RI → **IP**
+
+So after 3 steps, we land on **IP**.
+
+Answer: IP"
+3,cot,10,QO,QO,1,0,3,PC RU ZC QO,0,"We are given a mapping table and need to start at **PC** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- UZ → PC  
+- UM → SJ  
+- KB → XG  
+- XG → GP  
+- RU → ZC  
+- OI → BL  
+- ZC → QO  
+- GP → UM  
+- BL → KB  
+- QO → OI  
+- **PC → RU**  
+- SJ → UZ  
+
+We only need the **forward mappings**, i.e., from left to right as given.
+
+So, relevant forward mappings:
+
+- PC → RU  
+- RU → ZC  
+- ZC → QO  
+- QO → OI  
+- OI → BL  
+- BL → KB  
+- KB → XG  
+- XG → GP  
+- GP → UM  
+- UM → SJ  
+- SJ → UZ  
+- UZ → PC  
+
+This looks like a cycle!
+
+### Step 2: Start at PC and follow 3 steps
+
+- **Step 1**: PC → **RU**  
+- **Step 2**: RU → **ZC**  
+- **Step 3**: ZC → **QO**
+
+### Final Answer:
+Answer: QO"
+3,cot,11,XG,XG,1,0,3,WB VF YI XG,0,"We are given a mapping table and need to start at **WB** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- AO → GX  
+- XG → ZT  
+- GX → XR  
+- NR → WB  
+- FX → AO  
+- EM → FX  
+- XR → NR  
+- VF → YI  
+- QV → EM  
+- YI → XG  
+- WB → VF  
+- ZT → QV  
+
+### Step 2: Start at WB and follow the chain
+
+**First mapping:**  
+WB → VF  
+
+**Second mapping:**  
+VF → YI  
+
+**Third mapping:**  
+YI → XG  
+
+So after 3 steps, we land on **XG**.
+
+Answer: XG"
+3,cot,12,SX,SX,1,0,3,UM ZK SR SX,0,"We are given a mapping table and need to start at **UM** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- RE → FE  
+- UR → RE  
+- YW → VD  
+- FE → UM  
+- YN → HG  
+- HG → FD  
+- ZK → SR  
+- SR → SX  
+- **UM → ZK**  
+- VD → YN  
+- SX → YW  
+- FD → UR  
+
+### Step 2: Start at UM and follow the chain
+
+- **Step 0 (start):** UM  
+- **Step 1:** UM → **ZK**  
+- **Step 2:** ZK → **SR**  
+- **Step 3:** SR → **SX**
+
+So after 3 mappings, we land on **SX**.
+
+Answer: SX"
+3,cot,13,PU,PU,1,0,3,HT PB VJ PU,0,"We are given a mapping table and need to start at **HT** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JM → MN  
+- KW → FI  
+- MN → ID  
+- UJ → AC  
+- HT → PB  
+- VJ → PU  
+- FI → JM  
+- AC → YO  
+- YO → HT  
+- PB → VJ  
+- ID → UJ  
+- PU → KW  
+
+### Step 2: Start at HT and follow the chain
+
+- **Start**: HT  
+- **1st mapping**: HT → **PB**  
+- **2nd mapping**: PB → **VJ**  
+- **3rd mapping**: VJ → **PU**
+
+So after 3 mappings, we land on **PU**.
+
+Answer: PU"
+3,cot,14,AW,AW,1,0,3,CU WT KZ AW,0,"We are given a mapping table and need to start at **CU** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- UW → AP  
+- KZ → AW  
+- AP → BS  
+- WT → KZ  
+- MC → UW  
+- CU → WT  
+- SB → IA  
+- IA → CU  
+- AW → IV  
+- BS → ZI  
+- IV → MC  
+- ZI → SB  
+
+### Step 2: Start at CU and follow the chain
+
+**1st mapping:**  
+CU → **WT**
+
+**2nd mapping:**  
+WT → **KZ**
+
+**3rd mapping:**  
+KZ → **AW**
+
+So after 3 steps, we land on **AW**.
+
+Answer: AW"
+3,cot,15,XK,XK,1,0,3,ZP IQ AL XK,0,"We are given a mapping table and need to start at **ZP** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- IQ → AL  
+- PW → IN  
+- EI → JE  
+- AL → XK  
+- JE → IK  
+- IN → ZP  
+- ZP → IQ  
+- JA → EI  
+- TD → PW  
+- IK → JF  
+- XK → JA  
+- JF → TD  
+
+### Step 2: Start at ZP and follow the chain
+
+**First mapping:**  
+ZP → **IQ**
+
+**Second mapping:**  
+IQ → **AL**
+
+**Third mapping:**  
+AL → **XK**
+
+So after 3 steps: **ZP → IQ → AL → XK**
+
+Answer: XK"
+3,cot,16,SS,SS,1,0,3,IZ DU CV SS,0,"We are given a mapping table and need to start at **IZ** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- VE → KU  
+- DU → CV  
+- AQ → VG  
+- CV → SS  
+- SS → VE  
+- VG → XP  
+- KU → FT  
+- FT → LY  
+- LY → AQ  
+- PX → IZ  
+- IZ → DU  
+- XP → PX  
+
+### Step 2: Start at IZ and follow the chain
+
+**First mapping:**  
+IZ → **DU**
+
+**Second mapping:**  
+DU → **CV**
+
+**Third mapping:**  
+CV → **SS**
+
+So after 3 steps, we land on **SS**.
+
+Answer: SS"
+3,cot,17,DD,DD,1,0,3,IU SV DA DD,0,"We are given a mapping table and need to start at **IU** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping for easy reference:
+- DA → DD  
+- DD → TP  
+- GN → IU  
+- TS → DP  
+- II → KM  
+- KM → AF  
+- TP → TS  
+- IU → SV  
+- DP → RY  
+- AF → GN  
+- RY → II  
+- SV → DA  
+
+### Step 2: Start at **IU** and follow the chain:
+
+- **1st mapping**: IU → **SV**  
+- **2nd mapping**: SV → **DA**  
+- **3rd mapping**: DA → **DD**
+
+So after 3 steps, we land on **DD**.
+
+Answer: DD"
+3,cot,18,MV,MV,1,0,3,PA JZ WD MV,0,"We are given a mapping table and need to start at **PA** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- MV → XG  
+- PZ → OU  
+- WD → MV  
+- EC → EG  
+- JS → WA  
+- PA → JZ  
+- WA → EC  
+- XG → PV  
+- JZ → WD  
+- PV → PZ  
+- EG → PA  
+- OU → JS  
+
+### Step 2: Start at PA and follow the chain
+
+**First mapping (1st step):**  
+PA → **JZ**
+
+**Second mapping (2nd step):**  
+JZ → **WD**
+
+**Third mapping (3rd step):**  
+WD → **MV**
+
+So after 3 steps, we land on **MV**.
+
+Answer: MV"
+3,cot,19,ZQ,ZQ,1,0,3,YC LI LV ZQ,0,"We are given a mapping table and need to start at **YC** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping for easy reference:
+- JA → BC  
+- YC → LI  
+- XV → YC  
+- BC → ZD  
+- BT → RG  
+- LV → ZQ  
+- LY → JA  
+- PD → XV  
+- RG → PD  
+- ZQ → LY  
+- LI → LV  
+- ZD → BT  
+
+---
+
+### Step 2: Start at **YC** and follow the chain
+
+**1st mapping**:  
+YC → **LI**
+
+**2nd mapping**:  
+LI → **LV**
+
+**3rd mapping**:  
+LV → **ZQ**
+
+---
+
+### Final Answer:
+Answer: ZQ"
+3,cot,20,VN,VN,1,0,3,FL CB TN VN,0,"We are given a mapping table and need to start at **FL** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping for easy reference:
+- CB → TN  
+- EK → JA  
+- SB → VB  
+- UY → JH  
+- JH → FL  
+- FL → CB  
+- OM → EK  
+- JA → UY  
+- VN → FM  
+- FM → SB  
+- VB → OM  
+- TN → VN  
+
+### Step 2: Start at **FL** and follow the chain:
+
+- **1st mapping**: FL → **CB**  
+- **2nd mapping**: CB → **TN**  
+- **3rd mapping**: TN → **VN**
+
+So after 3 mappings, we land on **VN**.
+
+Answer: VN"
+3,cot,21,TS,TS,1,0,3,OR ES AA TS,0,"We are given a mapping table and need to start at **OR** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping for easy reference:
+- TS → LY  
+- OR → ES  
+- OJ → TI  
+- LY → OJ  
+- TI → QG  
+- VP → DH  
+- DH → VT  
+- QG → VP  
+- VT → BO  
+- ES → AA  
+- AA → TS  
+- BO → OR  
+
+---
+
+### Step 2: Start at **OR** and follow the chain:
+
+1. **First mapping**:  
+   OR → **ES**
+
+2. **Second mapping**:  
+   ES → **AA**
+
+3. **Third mapping**:  
+   AA → **TS**
+
+---
+
+### Final Answer:
+Answer: TS"
+3,cot,22,UK,UK,1,0,3,WS NX LN UK,0,"We are given a mapping table and need to start at **WS** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+
+From the table:
+
+- LN → UK  
+- CQ → JG  
+- NX → LN  
+- JG → SR  
+- BE → EL  
+- DP → BF  
+- XT → BE  
+- BF → CQ  
+- WS → NX  
+- EL → DP  
+- UK → XT  
+- SR → WS  
+
+---
+
+### Step 2: Start at **WS** and follow the chain
+
+**1st mapping**:  
+WS → **NX**
+
+**2nd mapping**:  
+NX → **LN**
+
+**3rd mapping**:  
+LN → **UK**
+
+---
+
+### Final Answer:
+Answer: UK"
+3,cot,23,ZP,ZP,1,0,3,YV ED UJ ZP,0,"We are given a mapping table and need to start at **YV** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- ZP → BA  
+- AK → WU  
+- UJ → ZP  
+- UA → NT  
+- NT → GI  
+- BA → AK  
+- WU → UP  
+- FC → YV  
+- YV → ED  
+- ED → UJ  
+- UP → UA  
+- GI → FC  
+
+We’ll follow the chain starting at **YV**.
+
+---
+
+### Step 2: Follow the chain
+
+**Start: YV**
+
+1. **First mapping**:  
+   YV → **ED**
+
+2. **Second mapping**:  
+   ED → **UJ**
+
+3. **Third mapping**:  
+   UJ → **ZP**
+
+So after 3 steps, we land on **ZP**.
+
+Answer: ZP"
+3,cot,24,ZR,ZR,1,0,3,OD LH EJ ZR,0,"We are given a mapping table and need to start at **OD** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping for easy reference:
+- KI → AL  
+- FT → OD  
+- UJ → KI  
+- ZQ → AG  
+- OD → LH  
+- AG → WR  
+- EJ → ZR  
+- GR → UJ  
+- ZR → GR  
+- WR → FT  
+- LH → EJ  
+- AL → ZQ  
+
+### Step 2: Start at **OD** and follow the chain:
+
+- **1st mapping**: OD → **LH**  
+- **2nd mapping**: LH → **EJ**  
+- **3rd mapping**: EJ → **ZR**
+
+So after 3 mappings, we land on **ZR**.
+
+Answer: ZR"
+3,cot,25,SM,SM,1,0,3,XZ XQ AR SM,0,"We are given a mapping table and need to start at **XZ** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- KX → XZ  
+- LA → KX  
+- FY → WC  
+- XQ → AR  
+- WC → YF  
+- VR → IU  
+- **XZ → XQ**  
+- YF → VR  
+- AR → SM  
+- GE → LA  
+- IU → GE  
+- SM → FY  
+
+We only need the **forward mappings** (i.e., from left to right as given), since we're following the chain forward.
+
+### Step 2: Start at XZ and follow 3 steps
+
+**Step 1:**  
+XZ → **XQ**
+
+**Step 2:**  
+XQ → **AR**
+
+**Step 3:**  
+AR → **SM**
+
+So after 3 mappings: **XZ → XQ → AR → SM**
+
+Answer: SM"
+3,cot,26,YW,YW,1,0,3,QG NB TR YW,0,"We are given a mapping table and need to start at **QG** and follow the mapping **3 times**.
+
+### Step 1: Write down the mapping clearly
+From the table:
+
+- YE → WS  
+- YK → CE  
+- TU → LJ  
+- RC → YK  
+- WS → TU  
+- TR → YW  
+- CE → QG  
+- LJ → RC  
+- MI → YE  
+- QG → NB  
+- NB → TR  
+- YW → MI  
+
+### Step 2: Start at QG and follow the chain
+
+**First mapping:**  
+QG → **NB**
+
+**Second mapping:**  
+NB → **TR**
+
+**Third mapping:**  
+TR → **YW**
+
+So after 3 steps: **QG → NB → TR → YW**
+
+Answer: YW"
+3,cot,27,AQ,AQ,1,0,3,QM ZW UF AQ,0,"We are given a mapping table and need to start at **QM** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- XC → PX  
+- WD → WR  
+- UF → AQ  
+- KP → WD  
+- QM → ZW  
+- ZW → UF  
+- PX → QM  
+- GQ → IN  
+- AQ → WJ  
+- IN → XC  
+- WR → GQ  
+- WJ → KP  
+
+### Step 2: Start at QM and follow the chain
+
+- **Step 0**: QM  
+- **Step 1**: QM → ZW  
+- **Step 2**: ZW → UF  
+- **Step 3**: UF → AQ  
+
+So after 3 mappings, we land on **AQ**.
+
+Answer: AQ"
+3,cot,28,SX,SX,1,0,3,IZ MX UE SX,0,"We are given a mapping table and need to start at **IZ** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- AA → VJ  
+- JP → FM  
+- MX → UE  
+- ZD → KM  
+- SX → WV  
+- KM → AA  
+- IZ → MX  
+- FM → ZD  
+- VJ → UY  
+- UY → IZ  
+- WV → JP  
+- UE → SX  
+
+### Step 2: Start at IZ and follow the chain
+
+- **1st mapping**: IZ → **MX**  
+- **2nd mapping**: MX → **UE**  
+- **3rd mapping**: UE → **SX**
+
+### Final answer after 3 steps: **SX**
+
+Answer: SX"
+3,cot,29,BY,BY,1,0,3,TR MC JK BY,0,"We are given a mapping table and need to start at **TR** and follow the mapping **3 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- BY → NM  
+- DJ → QG  
+- MC → JK  
+- UV → IW  
+- IN → UZ  
+- JK → BY  
+- AB → TR  
+- TR → MC  
+- IW → AB  
+- QG → IN  
+- UZ → UV  
+- NM → DJ  
+
+### Step 2: Start at TR and follow the chain
+
+- **Step 0 (start):** TR  
+- **Step 1:** TR → MC  
+- **Step 2:** MC → JK  
+- **Step 3:** JK → BY  
+
+So after 3 mappings, we land on **BY**.
+
+Answer: BY"
+4,immediate,0,GC,XS,0,0,5,BS AG IR DY GC,0,Answer: XS
+4,immediate,1,WY,HM,0,0,3,VJ UW VL HM WY,0,Answer: HM
+4,immediate,2,PW,JS,0,0,3,VA YW YR JS PW,0,Answer: JS
+4,immediate,3,OC,HD,0,0,11,EO NE UF XO OC,0,Answer: HD
+4,immediate,4,JO,UZ,0,0,8,SB MB UX PJ JO,0,Answer: UZ
+4,immediate,5,RX,OA,0,0,9,II LE PY JQ RX,0,Answer: OA
+4,immediate,6,JM,WW,0,0,7,PF EF MB RE JM,0,Answer: WW
+4,immediate,7,MB,FF,0,0,11,PY JC WT AB MB,0,Answer: FF
+4,immediate,8,DU,CC,0,0,8,BR SM MO QC DU,0,Answer: CC
+4,immediate,9,QM,XC,0,0,5,VC SW EY XA QM,0,Answer: XC
+4,immediate,10,PA,VD,0,0,9,ZK IT IQ PR PA,0,Answer: VD
+4,immediate,11,TW,HA,0,0,8,SS OE KU HE TW,0,Answer: HA
+4,immediate,12,DB,DB,1,0,4,GQ PS CP IN DB,0,Answer: DB
+4,immediate,13,VN,WM,0,0,6,UG TP NB BN VN,0,Answer: WM
+4,immediate,14,IR,BD,0,0,9,PR OC TE TP IR,0,Answer: BD
+4,immediate,15,NS,PQ,0,0,10,LE EH AC WP NS,0,Answer: PQ
+4,immediate,16,BS,ET,0,0,9,BW YR IM CF BS,0,Answer: ET
+4,immediate,17,CR,YD,0,0,5,FH DF VX MO CR,0,Answer: YD
+4,immediate,18,FB,SF,0,0,6,AI SV MC MM FB,0,Answer: SF
+4,immediate,19,KF,HB,0,0,9,PR LU KC FA KF,0,Answer: HB
+4,immediate,20,CC,FC,0,0,3,BK ID TI FC CC,0,Answer: FC
+4,immediate,21,AK,HB,0,0,11,NV AB QG PU AK,0,Answer: HB
+4,immediate,22,KG,LF,0,0,7,FW DH IV FP KG,0,Answer: LF
+4,immediate,23,GF,CD,0,0,6,WS CP VQ PF GF,0,Answer: CD
+4,immediate,24,PZ,AD,0,0,6,LY QB OS ZX PZ,0,Answer: AD
+4,immediate,25,DA,HN,0,0,6,RU EQ FG FS DA,0,Answer: HN
+4,immediate,26,FU,FM,0,0,9,WZ JC JE JZ FU,0,Answer: FM
+4,immediate,27,ZS,TY,0,0,5,AZ GW AI VD ZS,0,Answer: TY
+4,immediate,28,BQ,BQ,1,0,4,VA WS PG NC BQ,0,Answer: BQ
+4,immediate,29,KW,VT,0,0,5,FD DM IO LR KW,0,Answer: VT
+4,filler,0,GC,NV,0,0,10,BS AG IR DY GC,0,Answer: NV
+4,filler,1,WY,DA,0,0,8,VJ UW VL HM WY,0,Answer: DA
+4,filler,2,PW,JD,0,0,9,VA YW YR JS PW,0,Answer: JD
+4,filler,3,OC,XO,0,0,3,EO NE UF XO OC,0,Answer: XO
+4,filler,4,JO,UZ,0,0,8,SB MB UX PJ JO,0,Answer: UZ
+4,filler,5,RX,PM,0,0,5,II LE PY JQ RX,0,Answer: PM
+4,filler,6,JM,ZV,0,0,6,PF EF MB RE JM,0,Answer: ZV
+4,filler,7,MB,FC,0,0,5,PY JC WT AB MB,0,Answer: FC
+4,filler,8,DU,QC,0,0,3,BR SM MO QC DU,0,Answer: QC
+4,filler,9,QM,XC,0,0,5,VC SW EY XA QM,0,Answer: XC
+4,filler,10,PA,DT,0,0,10,ZK IT IQ PR PA,0,Answer: DT
+4,filler,11,TW,HA,0,0,8,SS OE KU HE TW,0,Answer: HA
+4,filler,12,DB,DB,1,0,4,GQ PS CP IN DB,0,Answer: DB
+4,filler,13,VN,UY,0,0,8,UG TP NB BN VN,0,Answer: UY
+4,filler,14,IR,IR,1,0,4,PR OC TE TP IR,0,Answer: IR
+4,filler,15,NS,YN,0,0,7,LE EH AC WP NS,0,Answer: YN
+4,filler,16,BS,ET,0,0,9,BW YR IM CF BS,0,Answer: ET
+4,filler,17,CR,YD,0,0,5,FH DF VX MO CR,0,Answer: YD
+4,filler,18,FB,EN,0,0,9,AI SV MC MM FB,0,Answer: EN
+4,filler,19,KF,HB,0,0,9,PR LU KC FA KF,0,Answer: HB
+4,filler,20,CC,FC,0,0,3,BK ID TI FC CC,0,Answer: FC
+4,filler,21,AK,HB,0,0,11,NV AB QG PU AK,0,Answer: HB
+4,filler,22,KG,LF,0,0,7,FW DH IV FP KG,0,Answer: LF
+4,filler,23,GF,MM,0,0,7,WS CP VQ PF GF,0,Answer: MM
+4,filler,24,PZ,AD,0,0,6,LY QB OS ZX PZ,0,Answer: AD
+4,filler,25,DA,HN,0,0,6,RU EQ FG FS DA,0,Answer: HN
+4,filler,26,FU,FM,0,0,9,WZ JC JE JZ FU,0,Answer: FM
+4,filler,27,ZS,TY,0,0,5,AZ GW AI VD ZS,0,Answer: TY
+4,filler,28,BQ,NC,0,0,3,VA WS PG NC BQ,0,Answer: NC
+4,filler,29,KW,VT,0,0,5,FD DM IO LR KW,0,Answer: VT
+4,cot,0,GC,GC,1,0,4,BS AG IR DY GC,0,"We are given a mapping table and need to start at **BS** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- BS → AG  
+- AG → IR  
+- FE → OG  
+- DY → GC  
+- OG → FQ  
+- FQ → NV  
+- SO → BS  
+- GC → XS  
+- OL → FE  
+- NV → SO  
+- XS → OL  
+- IR → DY  
+
+We only need the chain starting at **BS**, so let's follow it step by step.
+
+---
+
+### Step 2: Follow the chain
+
+**Start: BS**
+
+1. **BS → AG**  
+2. **AG → IR**  
+3. **IR → DY**  
+4. **DY → GC**
+
+So, after 4 mappings, we land on **GC**.
+
+Answer: GC"
+4,cot,1,WY,WY,1,0,4,VJ UW VL HM WY,0,"We are given a mapping table and need to start at **VJ** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- KV → VJ  
+- FR → KV  
+- IM → FR  
+- DA → IM  
+- PV → VC  
+- VL → HM  
+- VJ → UW  
+- VC → PZ  
+- PZ → DA  
+- HM → WY  
+- UW → VL  
+- WY → PV  
+
+We only need the **forward mappings** (i.e., from left to right), so we can rewrite as a dictionary:
+
+- KV → VJ  
+- FR → KV  
+- IM → FR  
+- DA → IM  
+- PV → VC  
+- VL → HM  
+- VJ → UW  
+- VC → PZ  
+- PZ → DA  
+- HM → WY  
+- UW → VL  
+- WY → PV  
+
+Now, start at **VJ** and follow the chain **4 times**.
+
+### Step 2: Follow the chain
+
+1. **Start**: VJ  
+2. **1st mapping**: VJ → **UW**  
+3. **2nd mapping**: UW → **VL**  
+4. **3rd mapping**: VL → **HM**  
+5. **4th mapping**: HM → **WY**
+
+So after 4 mappings, we land on **WY**.
+
+Answer: WY"
+4,cot,2,PW,PW,1,0,4,VA YW YR JS PW,0,"We are given a mapping table and need to start at **VA** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JT → JD  
+- PW → RI  
+- RI → XW  
+- YR → JS  
+- BZ → ZG  
+- YW → YR  
+- FK → JT  
+- ZG → VA  
+- VA → YW  
+- JD → BZ  
+- XW → FK  
+- JS → PW  
+
+We’ll now follow the chain starting at **VA**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: VA**
+
+1. **VA → YW**  
+2. **YW → YR**  
+3. **YR → JS**  
+4. **JS → PW**
+
+So after 4 mappings:
+- Step 1: YW  
+- Step 2: YR  
+- Step 3: JS  
+- Step 4: PW  
+
+Answer: PW"
+4,cot,3,OC,OC,1,0,4,EO NE UF XO OC,0,"We are given a mapping table and need to start at **EO**, then follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- EW → TE  
+- NE → UF  
+- XK → ZD  
+- UF → XO  
+- OC → EW  
+- EO → NE  
+- ZD → HD  
+- PA → XK  
+- XO → OC  
+- TE → HX  
+- HX → PA  
+- HD → EO  
+
+### Step 2: Start at EO and follow the chain
+
+- **Step 0 (start):** EO  
+- **Step 1:** EO → NE  
+- **Step 2:** NE → UF  
+- **Step 3:** UF → XO  
+- **Step 4:** XO → OC  
+
+So after 4 mappings, we land on **OC**.
+
+Answer: OC"
+4,cot,4,JO,JO,1,0,4,SB MB UX PJ JO,0,"We are given a mapping table and need to start at **SB** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- WX → JD  
+- JD → UZ  
+- QT → MC  
+- MB → UX  
+- JO → JZ  
+- PH → QT  
+- SB → MB  
+- MC → SB  
+- JZ → WX  
+- UZ → PH  
+- UX → PJ  
+- PJ → JO  
+
+We’ll now follow the chain starting at **SB**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: SB**
+
+1. **SB → MB**  
+2. **MB → UX**  
+3. **UX → PJ**  
+4. **PJ → JO**
+
+So after 4 mappings, we land on **JO**.
+
+Answer: JO"
+4,cot,5,RX,RX,1,0,4,II LE PY JQ RX,0,"We are given a mapping table and need to start at **II** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- PY → JQ  
+- LE → PY  
+- IW → UQ  
+- II → LE  
+- LX → IW  
+- RX → PM  
+- JQ → RX  
+- VH → II  
+- MW → VH  
+- UQ → OA  
+- PM → LX  
+- OA → MW  
+
+We’ll follow the chain starting at **II**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: II**
+
+1. **II → LE**  
+2. **LE → PY**  
+3. **PY → JQ**  
+4. **JQ → RX**
+
+We have now applied the mapping **4 times**.
+
+---
+
+### Final Answer:
+Answer: RX"
+4,cot,6,JM,JM,1,0,4,PF EF MB RE JM,0,"We are given a mapping table and need to start at **PF** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- PF → EF  
+- DB → QG  
+- JM → SS  
+- MB → RE  
+- ZV → WW  
+- SS → ZV  
+- WW → DB  
+- JY → PF  
+- RE → JM  
+- QG → HI  
+- HI → JY  
+- EF → MB  
+
+### Step 2: Start at PF and follow 4 steps
+
+**Step 0 (start):** PF  
+**Step 1:** PF → EF  
+**Step 2:** EF → MB  
+**Step 3:** MB → RE  
+**Step 4:** RE → JM  
+
+So after 4 mappings, we land on **JM**.
+
+Answer: JM"
+4,cot,7,MB,MB,1,0,4,PY JC WT AB MB,0,"We are given a mapping table and need to start at **PY** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- PY → JC  
+- FC → EV  
+- WT → AB  
+- NO → FF  
+- MB → FC  
+- HU → NO  
+- FF → PY  
+- NP → HU  
+- EE → NP  
+- EV → EE  
+- AB → MB  
+- JC → WT  
+
+This appears to be a cycle. Let's trace it step by step.
+
+---
+
+### Step 2: Start at PY and follow the chain
+
+**Step 0 (start):** PY  
+**Step 1:** PY → JC  
+**Step 2:** JC → WT  
+**Step 3:** WT → AB  
+**Step 4:** AB → MB  
+
+So after 4 mappings, we land on **MB**.
+
+Answer: MB"
+4,cot,8,DU,DU,1,0,4,BR SM MO QC DU,0,"We are given a mapping table and need to start at **BR** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- QC → DU  
+- BR → SM  
+- FZ → CX  
+- QX → FZ  
+- MO → QC  
+- SM → MO  
+- KM → BR  
+- VY → GI  
+- GI → KM  
+- CX → CC  
+- CC → VY  
+- DU → QX  
+
+We’ll follow the chain starting at **BR**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: BR**
+
+1. **BR → SM**  
+2. **SM → MO**  
+3. **MO → QC**  
+4. **QC → DU**
+
+We have now followed the mapping **4 times**.
+
+---
+
+### Final Answer:
+Answer: DU"
+4,cot,9,QM,QM,1,0,4,VC SW EY XA QM,0,"We are given a mapping table and need to start at **VC** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- MW → PO  
+- DG → ZY  
+- ZY → MW  
+- QM → XC  
+- PO → AR  
+- VC → SW  
+- SW → EY  
+- EY → XA  
+- XA → QM  
+- AR → KQ  
+- XC → DG  
+- KQ → VC  
+
+### Step 2: Start at VC and follow the chain
+
+- **Step 0 (start):** VC  
+- **Step 1:** VC → **SW**  
+- **Step 2:** SW → **EY**  
+- **Step 3:** EY → **XA**  
+- **Step 4:** XA → **QM**
+
+So after 4 mappings, we land on **QM**.
+
+Answer: QM"
+4,cot,10,PA,PA,1,0,4,ZK IT IQ PR PA,0,"We are given a mapping table and need to start at **ZK** and follow the mapping **4 times**.
+
+### Step-by-step:
+
+Start: **ZK**
+
+1. **ZK -> IT**  
+2. **IT -> IQ**  
+3. **IQ -> PR**  
+4. **PR -> PA**
+
+So after 4 mappings, we land on **PA**.
+
+Answer: PA"
+4,cot,11,TW,TW,1,0,4,SS OE KU HE TW,0,"We are given a mapping table and need to start at **SS** and follow the mapping **4 times**.
+
+### Step 1: Write down the mapping clearly
+From the table:
+
+- KU → HE  
+- SS → OE  
+- WT → BJ  
+- WA → WT  
+- TW → WL  
+- SX → DB  
+- HA → WA  
+- BJ → SS  
+- WL → SX  
+- HE → TW  
+- OE → KU  
+- DB → HA  
+
+We’ll follow the chain starting at **SS**, applying the mapping 4 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start:** SS  
+1. **SS → OE**  
+2. **OE → KU**  
+3. **KU → HE**  
+4. **HE → TW**
+
+So after 4 mappings, we land on **TW**.
+
+Answer: TW"
+4,cot,12,DB,DB,1,0,4,GQ PS CP IN DB,0,"We are given a mapping table and need to start at **GQ** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- OA → QW  
+- AI → OA  
+- PS → CP  
+- IN → DB  
+- YT → GQ  
+- QW → IE  
+- GQ → PS  
+- CP → IN  
+- IE → YT  
+- IP → BQ  
+- DB → IP  
+- BQ → AI  
+
+We’ll follow the chain starting at **GQ**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: GQ**
+
+1. **GQ → PS**  
+2. **PS → CP**  
+3. **CP → IN**  
+4. **IN → DB**
+
+So after 4 mappings, we land on **DB**.
+
+Answer: DB"
+4,cot,13,VN,VN,1,0,4,UG TP NB BN VN,0,"We are given a mapping table and need to start at **UG** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- NB → BN  
+- PB → UG  
+- TA → UY  
+- LU → WM  
+- UG → TP  
+- UY → JA  
+- VN → LU  
+- WM → TA  
+- TP → NB  
+- KL → PB  
+- BN → VN  
+- JA → KL  
+
+We’ll now follow the chain starting at **UG**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: UG**
+
+1. **UG → TP**  
+2. **TP → NB**  
+3. **NB → BN**  
+4. **BN → VN**
+
+We have now applied the mapping **4 times**.
+
+---
+
+### Final Answer:
+Answer: VN"
+4,cot,14,IR,IR,1,0,4,PR OC TE TP IR,0,"We are given a mapping table and need to start at **PR** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- AS → VJ  
+- TP → IR  
+- NO → BD  
+- TE → TP  
+- JO → PR  
+- BD → NN  
+- PR → OC  
+- NN → JO  
+- OC → TE  
+- IR → AS  
+- NR → NO  
+- VJ → NR  
+
+### Step 2: Start at PR and follow the chain
+
+- **Step 0 (start):** PR  
+- **Step 1:** PR → **OC**  
+- **Step 2:** OC → **TE**  
+- **Step 3:** TE → **TP**  
+- **Step 4:** TP → **IR**
+
+So after 4 mappings, we land on **IR**.
+
+Answer: IR"
+4,cot,15,NS,NS,1,0,4,LE EH AC WP NS,0,"We are given a mapping table and need to start at **LE** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- NS → PH  
+- AC → WP  
+- PH → AG  
+- AG → YN  
+- YN → KE  
+- KE → HP  
+- LE → EH  
+- PQ → MJ  
+- HP → PQ  
+- WP → NS  
+- EH → AC  
+- MJ → LE  
+
+### Step 2: Start at LE and follow the chain
+
+- **Step 0 (start):** LE  
+- **Step 1:** LE → **EH**  
+- **Step 2:** EH → **AC**  
+- **Step 3:** AC → **WP**  
+- **Step 4:** WP → **NS**
+
+So after 4 mappings, we land on **NS**.
+
+Answer: NS"
+4,cot,16,BS,BS,1,0,4,BW YR IM CF BS,0,"We are given a mapping table and need to start at **BW** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JG → YW  
+- BJ → BW  
+- TB → EI  
+- YW → TB  
+- QX → BJ  
+- ET → QX  
+- BW → YR  
+- CF → BS  
+- YR → IM  
+- IM → CF  
+- BS → JG  
+- EI → ET  
+
+We’ll follow the chain starting at **BW**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: BW**
+
+1. **BW → YR**  
+2. **YR → IM**  
+3. **IM → CF**  
+4. **CF → BS**
+
+So after 4 mappings, we land on **BS**.
+
+Answer: BS"
+4,cot,17,CR,CR,1,0,4,FH DF VX MO CR,0,"We are given a mapping table and need to start at **FH** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- VX → MO  
+- DF → VX  
+- MB → IC  
+- AU → MB  
+- CR → YD  
+- KK → FH  
+- IC → KK  
+- PD → AU  
+- ME → PD  
+- FH → DF  
+- MO → CR  
+- YD → ME  
+
+We’ll follow the chain starting at **FH**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: FH**
+
+1. **FH → DF**  
+2. **DF → VX**  
+3. **VX → MO**  
+4. **MO → CR**
+
+So after 4 mappings, we land on **CR**.
+
+Answer: CR"
+4,cot,18,FB,FB,1,0,4,AI SV MC MM FB,0,"We are given a mapping table and need to start at **AI** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- EN → AB  
+- EY → AI  
+- TE → EN  
+- FB → SI  
+- KX → TE  
+- MM → FB  
+- SF → KX  
+- SI → SF  
+- MC → MM  
+- AI → SV  
+- SV → MC  
+- AB → EY  
+
+We’ll follow the chain starting at **AI**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: AI**
+
+1. **AI → SV**  
+2. **SV → MC**  
+3. **MC → MM**  
+4. **MM → FB**
+
+So after 4 mappings, we land on **FB**.
+
+Answer: FB"
+4,cot,19,KF,KF,1,0,4,PR LU KC FA KF,0,"We are given a mapping table and need to start at **PR** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- KF → YP  
+- SS → HB  
+- PR → LU  
+- EE → DY  
+- MT → PR  
+- KC → FA  
+- YP → EE  
+- DY → SS  
+- HU → MT  
+- HB → HU  
+- FA → KF  
+- LU → KC  
+
+### Step 2: Start at PR and follow the chain
+
+- **Step 0 (start):** PR  
+- **Step 1:** PR → LU  
+- **Step 2:** LU → KC  
+- **Step 3:** KC → FA  
+- **Step 4:** FA → KF  
+
+So after 4 mappings, we land on **KF**.
+
+Answer: KF"
+4,cot,20,CC,CC,1,0,4,BK ID TI FC CC,0,"We are given a mapping table and need to start at **BK** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- PI → WE  
+- IY → FR  
+- WE → KY  
+- BK → ID  
+- CC → VU  
+- FX → IY  
+- KY → BK  
+- TI → FC  
+- FR → PI  
+- ID → TI  
+- VU → FX  
+- FC → CC  
+
+### Step 2: Start at BK and follow the chain
+
+- **Step 0 (start):** BK  
+- **Step 1:** BK → ID  
+- **Step 2:** ID → TI  
+- **Step 3:** TI → FC  
+- **Step 4:** FC → CC  
+
+So, after 4 mappings, we land on **CC**.
+
+Answer: CC"
+4,cot,21,AK,AK,1,0,4,NV AB QG PU AK,0,"We are given a mapping table and need to start at **NV** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- AB → QG  
+- XZ → ZY  
+- GW → HB  
+- PU → AK  
+- ZY → SI  
+- QG → PU  
+- SI → GW  
+- HF → XZ  
+- HB → NV  
+- NV → AB  
+- HA → HF  
+- AK → HA  
+
+### Step 2: Start at **NV** and follow the chain
+
+- **1st mapping**: NV → **AB**  
+- **2nd mapping**: AB → **QG**  
+- **3rd mapping**: QG → **PU**  
+- **4th mapping**: PU → **AK**
+
+So after 4 mappings, we land on **AK**.
+
+Answer: AK"
+4,cot,22,KG,KG,1,0,4,FW DH IV FP KG,0,"We are given a mapping table and need to start at **FW** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- FW → DH  
+- HX → FW  
+- JJ → CJ  
+- KE → LF  
+- JM → JJ  
+- LF → JM  
+- CJ → HX  
+- FP → KG  
+- PS → KE  
+- KG → PS  
+- IV → FP  
+- DH → IV  
+
+We’ll trace starting from **FW**, applying the mapping 4 times.
+
+---
+
+### Step 2: Follow the chain
+
+**Start: FW**
+
+1. **FW → DH**  
+2. **DH → IV**  
+3. **IV → FP**  
+4. **FP → KG**
+
+So, after 4 mappings, we land on **KG**.
+
+Answer: KG"
+4,cot,23,GF,GF,1,0,4,WS CP VQ PF GF,0,"We are given a mapping table and need to start at **WS** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- KY → WS  
+- VQ → PF  
+- YH → TV  
+- CD → MM  
+- WR → CD  
+- WS → CP  
+- GF → WR  
+- TV → KY  
+- UP → YH  
+- CP → VQ  
+- MM → UP  
+- PF → GF  
+
+We only need the **forward** mappings (i.e., from left to right as given), since we're following the chain forward.
+
+So extract the usable forward map:
+
+- KY → WS  
+- VQ → PF  
+- YH → TV  
+- CD → MM  
+- WR → CD  
+- **WS → CP**  
+- GF → WR  
+- TV → KY  
+- UP → YH  
+- **CP → VQ**  
+- **MM → UP**  
+- **PF → GF**
+
+Now, start at **WS** and follow **4 steps**:
+
+---
+
+### Step 2: Follow the chain
+
+1. **Start**: WS  
+2. **1st mapping**: WS → **CP**  
+3. **2nd mapping**: CP → **VQ**  
+4. **3rd mapping**: VQ → **PF**  
+5. **4th mapping**: PF → **GF**
+
+So after 4 mappings, we land on **GF**.
+
+Answer: GF"
+4,cot,24,PZ,PZ,1,0,4,LY QB OS ZX PZ,0,"We are given a mapping table and need to start at **LY** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JL → PC  
+- VK → JL  
+- OS → ZX  
+- SH → AD  
+- PC → OF  
+- LY → QB  
+- OF → LH  
+- ZX → PZ  
+- AD → VK  
+- LH → LY  
+- PZ → SH  
+- QB → OS  
+
+We can think of this as a directed graph where each code points to another.
+
+### Step 2: Start at LY and follow the chain
+
+- **Step 0 (start):** LY  
+- **Step 1:** LY → QB  
+- **Step 2:** QB → OS  
+- **Step 3:** OS → ZX  
+- **Step 4:** ZX → PZ  
+
+So after 4 mappings, we land on **PZ**.
+
+Answer: PZ"
+4,cot,25,DA,DA,1,0,4,RU EQ FG FS DA,0,"We are given a mapping table and need to start at **RU** and follow the mapping **4 times**.
+
+### Step 1: Write down the mapping for easy reference:
+- EW → FF  
+- HN → ED  
+- FS → DA  
+- FF → RU  
+- OB → HN  
+- FG → FS  
+- WV → EW  
+- DA → OB  
+- RU → EQ  
+- MM → WV  
+- EQ → FG  
+- ED → MM  
+
+### Step 2: Start at **RU** and follow the chain:
+
+1. **RU → EQ**  
+2. **EQ → FG**  
+3. **FG → FS**  
+4. **FS → DA**
+
+So after 4 mappings, we land on **DA**.
+
+Answer: DA"
+4,cot,26,FU,FU,1,0,4,WZ JC JE JZ FU,0,"We are given a mapping table and need to start at **WZ** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JE → JZ  
+- EH → WZ  
+- RV → EH  
+- UY → RK  
+- FU → UY  
+- ZU → TV  
+- JC → JE  
+- FM → RV  
+- WZ → JC  
+- RK → ZU  
+- TV → FM  
+- JZ → FU  
+
+We can think of this as a directed graph where each code maps to another.
+
+### Step 2: Start at WZ and follow 4 steps
+
+**Step 0 (start):** WZ  
+**Step 1:** WZ → JC  
+**Step 2:** JC → JE  
+**Step 3:** JE → JZ  
+**Step 4:** JZ → FU  
+
+So after 4 mappings, we land on **FU**.
+
+Answer: FU"
+4,cot,27,ZS,ZS,1,0,4,AZ GW AI VD ZS,0,"We are given a mapping table and need to start at **AZ** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- MV → FU  
+- LW → AZ  
+- GW → AI  
+- VD → ZS  
+- ZS → TY  
+- FU → LW  
+- QH → MV  
+- AZ → GW  
+- AI → VD  
+- FC → QH  
+- TY → HD  
+- HD → FC  
+
+We’ll follow the chain starting at **AZ**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: AZ**
+
+1. **AZ → GW**  
+2. **GW → AI**  
+3. **AI → VD**  
+4. **VD → ZS**
+
+We have now applied the mapping **4 times**.
+
+---
+
+### Final Answer:
+Answer: ZS"
+4,cot,28,BQ,BQ,1,0,4,VA WS PG NC BQ,0,"We are given a mapping table and need to start at **VA** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- HJ → AV  
+- LW → FG  
+- QD → SU  
+- WS → PG  
+- PG → NC  
+- NC → BQ  
+- BQ → LC  
+- SU → VA  
+- LC → HJ  
+- FG → QD  
+- AV → LW  
+- VA → WS  
+
+We’ll follow the chain starting at **VA**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: VA**
+
+1. **VA → WS**  
+2. **WS → PG**  
+3. **PG → NC**  
+4. **NC → BQ**
+
+We have now applied the mapping **4 times**.
+
+---
+
+### Final Answer:
+Answer: BQ"
+4,cot,29,KW,KW,1,0,4,FD DM IO LR KW,0,"We are given a mapping table and need to start at **FD** and follow the mapping **4 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- GB → FD  
+- IG → TQ  
+- DM → IO  
+- FD → DM  
+- LR → KW  
+- LW → JV  
+- TQ → GB  
+- JV → IG  
+- VT → TT  
+- IO → LR  
+- TT → LW  
+- KW → VT  
+
+We only need the forward direction (i.e., what each code maps **to**).
+
+So extract the forward mappings:
+
+- FD → DM  
+- DM → IO  
+- IO → LR  
+- LR → KW  
+- KW → VT  
+- VT → TT  
+- TT → LW  
+- LW → JV  
+- JV → IG  
+- IG → TQ  
+- TQ → GB  
+- GB → FD  
+
+This looks like a cycle!
+
+Now, start at **FD** and follow **4 steps**:
+
+### Step-by-step traversal:
+
+1. Start: **FD**  
+2. 1st mapping: FD → **DM**  
+3. 2nd mapping: DM → **IO**  
+4. 3rd mapping: IO → **LR**  
+5. 4th mapping: LR → **KW**
+
+So after 4 mappings, we land on **KW**.
+
+Answer: KW"
+6,immediate,0,JB,SA,0,0,1,TN SA ZG AV CJ ES JB,0,Answer: SA
+6,immediate,1,TZ,YW,0,0,5,KH OJ TV MZ FD YW TZ,0,Answer: YW
+6,immediate,2,IR,JW,0,0,5,GX GF IA QN OH JW IR,0,Answer: JW
+6,immediate,3,CF,JL,0,0,0,JL IO CO TR RA FZ CF,0,Answer: JL
+6,immediate,4,JY,KR,0,0,4,XS YR CP WU KR HA JY,0,Answer: KR
+6,immediate,5,FN,FN,1,0,6,PY QQ JN ZF YC WJ FN,0,Answer: FN
+6,immediate,6,MG,AH,0,0,5,PY TU CK DB SL AH MG,0,Answer: AH
+6,immediate,7,CD,FC,0,0,7,NH RE UN LK NS GI CD,0,Answer: FC
+6,immediate,8,WK,OT,0,0,7,MA SV CM NR EB KN WK,0,Answer: OT
+6,immediate,9,KP,FX,0,0,7,FP XN RZ BV LU ID KP,0,Answer: FX
+6,immediate,10,PJ,QW,0,0,4,BB KA QF NJ QW YY PJ,0,Answer: QW
+6,immediate,11,IH,SG,0,0,5,UO JD LO PI AX SG IH,0,Answer: SG
+6,immediate,12,CS,HG,0,0,9,IR YF WU FQ RM MN CS,0,Answer: HG
+6,immediate,13,WM,XR,0,0,4,DN UN OA NL XR IC WM,0,Answer: XR
+6,immediate,14,XO,ZY,0,0,5,GM HE ZV HI OD ZY XO,0,Answer: ZY
+6,immediate,15,ZK,GX,0,0,1,FZ GX FC NG MB WD ZK,0,Answer: GX
+6,immediate,16,PZ,DS,0,0,11,KQ TH VM TE DH LX PZ,0,Answer: DS
+6,immediate,17,MJ,JM,0,0,8,VZ QU ZP YC SG OC MJ,0,Answer: JM
+6,immediate,18,EZ,HA,0,0,5,OW KI XV LX EW HA EZ,0,Answer: HA
+6,immediate,19,UG,TK,0,0,4,MP NQ HD RZ TK HU UG,0,Answer: TK
+6,immediate,20,LK,AL,0,0,7,DD RY RV SH OO LP LK,0,Answer: AL
+6,immediate,21,OQ,NV,0,0,0,NV FX GV GW YP AV OQ,0,Answer: NV
+6,immediate,22,GK,UB,0,0,5,OV OJ AU EJ ZR UB GK,0,Answer: UB
+6,immediate,23,SM,TK,0,0,9,UZ KA YY PO QE II SM,0,Answer: TK
+6,immediate,24,LU,OL,0,0,5,UZ YB SY GD FX OL LU,0,Answer: OL
+6,immediate,25,DN,ZU,0,0,0,ZU FN JZ JH EC RF DN,0,Answer: ZU
+6,immediate,26,PX,CE,0,0,9,RJ HR UT SR TI LW PX,0,Answer: CE
+6,immediate,27,IY,QM,0,0,9,QU ZI BL WB OK BI IY,0,Answer: QM
+6,immediate,28,EF,EW,0,0,4,RQ ZC NY LQ EW MH EF,0,Answer: EW
+6,immediate,29,OL,FI,0,0,10,WG GQ BF WX ML DX OL,0,Answer: FI
+6,filler,0,JB,SA,0,0,1,TN SA ZG AV CJ ES JB,0,Answer: SA
+6,filler,1,TZ,FD,0,0,4,KH OJ TV MZ FD YW TZ,0,Answer: FD
+6,filler,2,IR,JW,0,0,5,GX GF IA QN OH JW IR,0,Answer: JW
+6,filler,3,CF,JL,0,0,0,JL IO CO TR RA FZ CF,0,Answer: JL
+6,filler,4,JY,YR,0,0,1,XS YR CP WU KR HA JY,0,Answer: YR
+6,filler,5,FN,FN,1,0,6,PY QQ JN ZF YC WJ FN,0,Answer: FN
+6,filler,6,MG,SL,0,0,4,PY TU CK DB SL AH MG,0,Answer: SL
+6,filler,7,CD,FC,0,0,7,NH RE UN LK NS GI CD,0,Answer: FC
+6,filler,8,WK,OT,0,0,7,MA SV CM NR EB KN WK,0,Answer: OT
+6,filler,9,KP,FP,0,0,0,FP XN RZ BV LU ID KP,0,Answer: FP
+6,filler,10,PJ,EX,0,0,8,BB KA QF NJ QW YY PJ,0,Answer: EX
+6,filler,11,IH,SG,0,0,5,UO JD LO PI AX SG IH,0,Answer: SG
+6,filler,12,CS,HG,0,0,9,IR YF WU FQ RM MN CS,0,Answer: HG
+6,filler,13,WM,XR,0,0,4,DN UN OA NL XR IC WM,0,Answer: XR
+6,filler,14,XO,EO,0,0,7,GM HE ZV HI OD ZY XO,0,Answer: EO
+6,filler,15,ZK,GX,0,0,1,FZ GX FC NG MB WD ZK,0,Answer: GX
+6,filler,16,PZ,KQ,0,0,0,KQ TH VM TE DH LX PZ,0,Answer: KQ
+6,filler,17,MJ,VZ,0,0,0,VZ QU ZP YC SG OC MJ,0,Answer: VZ
+6,filler,18,EZ,EW,0,0,4,OW KI XV LX EW HA EZ,0,Answer: EW
+6,filler,19,UG,MP,0,0,0,MP NQ HD RZ TK HU UG,0,Answer: MP
+6,filler,20,LK,AL,0,0,7,DD RY RV SH OO LP LK,0,Answer: AL
+6,filler,21,OQ,NV,0,0,0,NV FX GV GW YP AV OQ,0,Answer: NV
+6,filler,22,GK,MB,0,0,11,OV OJ AU EJ ZR UB GK,0,Answer: MB
+6,filler,23,SM,TK,0,0,9,UZ KA YY PO QE II SM,0,Answer: TK
+6,filler,24,LU,OL,0,0,5,UZ YB SY GD FX OL LU,0,Answer: OL
+6,filler,25,DN,ZU,0,0,0,ZU FN JZ JH EC RF DN,0,Answer: ZU
+6,filler,26,PX,CE,0,0,9,RJ HR UT SR TI LW PX,0,Answer: CE
+6,filler,27,IY,OK,0,0,4,QU ZI BL WB OK BI IY,0,Answer: OK
+6,filler,28,EF,RQ,0,0,0,RQ ZC NY LQ EW MH EF,0,Answer: RQ
+6,filler,29,OL,FI,0,0,10,WG GQ BF WX ML DX OL,0,Answer: FI
+6,cot,0,JB,JB,1,0,6,TN SA ZG AV CJ ES JB,0,"We are given a mapping table and need to start at **TN** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JB → KW  
+- ZG → AV  
+- OU → QA  
+- TN → SA  
+- CJ → ES  
+- XK → KG  
+- KG → OU  
+- QA → TN  
+- AV → CJ  
+- KW → XK  
+- ES → JB  
+- SA → ZG  
+
+This appears to form one or more cycles. Let's follow the chain starting at **TN**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+Start: **TN**
+
+1. **TN → SA**  
+2. **SA → ZG**  
+3. **ZG → AV**  
+4. **AV → CJ**  
+5. **CJ → ES**  
+6. **ES → JB**
+
+We have now applied the mapping **6 times**.
+
+---
+
+### Final Answer:
+Answer: JB"
+6,cot,1,TZ,TZ,1,0,6,KH OJ TV MZ FD YW TZ,0,"We are given a mapping table and need to start at **KH** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- YZ → LB  
+- IJ → KH  
+- FQ → YZ  
+- FD → YW  
+- YW → TZ  
+- TZ → BE  
+- BE → FQ  
+- KH → OJ  
+- MZ → FD  
+- LB → IJ  
+- TV → MZ  
+- OJ → TV  
+
+We’ll now follow the chain starting at **KH**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+1. **Start**: KH  
+2. **1st mapping**: KH → **OJ**  
+3. **2nd**: OJ → **TV**  
+4. **3rd**: TV → **MZ**  
+5. **4th**: MZ → **FD**  
+6. **5th**: FD → **YW**  
+7. **6th**: YW → **TZ**
+
+So after 6 mappings, we land on **TZ**.
+
+Answer: TZ"
+6,cot,2,IR,IR,1,0,6,GX GF IA QN OH JW IR,0,"We are given a mapping table and need to start at **GX** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+
+From the table:
+
+- IA → QN  
+- DQ → GX  
+- IR → MW  
+- EL → MA  
+- OH → JW  
+- MW → HL  
+- QN → OH  
+- MA → DQ  
+- HL → EL  
+- GF → IA  
+- JW → IR  
+- GX → GF  
+
+We’ll follow the chain starting at **GX**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: GX**
+
+1. **GX → GF**  
+2. **GF → IA**  
+3. **IA → QN**  
+4. **QN → OH**  
+5. **OH → JW**  
+6. **JW → IR**
+
+So after 6 mappings, we land on **IR**.
+
+Answer: IR"
+6,cot,3,CF,CF,1,0,6,JL IO CO TR RA FZ CF,0,"We are given a mapping table and need to start at **JL** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+
+From the table:
+
+- CF → TF  
+- PQ → SX  
+- CO → TR  
+- HA → JL  
+- TR → RA  
+- JL → IO  
+- EE → HA  
+- FZ → CF  
+- TF → PQ  
+- SX → EE  
+- IO → CO  
+- RA → FZ  
+
+### Step 2: Start at JL and follow the chain
+
+We'll go step by step, counting each mapping as one step.
+
+1. **Start**: JL  
+2. **Step 1**: JL → **IO**  
+3. **Step 2**: IO → **CO**  
+4. **Step 3**: CO → **TR**  
+5. **Step 4**: TR → **RA**  
+6. **Step 5**: RA → **FZ**  
+7. **Step 6**: FZ → **CF**
+
+So after **6 mappings**, we land on **CF**.
+
+Answer: CF"
+6,cot,4,JY,JY,1,0,6,XS YR CP WU KR HA JY,0,"We are given a mapping table and need to start at **XS** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- YZ → JI  
+- CP → WU  
+- WU → KR  
+- KR → HA  
+- LZ → SS  
+- XS → YR  
+- SS → XS  
+- JI → LZ  
+- HA → JY  
+- JY → RO  
+- RO → YZ  
+- YR → CP  
+
+### Step 2: Start at XS and follow the chain
+
+We’ll go step by step:
+
+1. **Start**: XS  
+2. 1st mapping: XS → **YR**  
+3. 2nd: YR → **CP**  
+4. 3rd: CP → **WU**  
+5. 4th: WU → **KR**  
+6. 5th: KR → **HA**  
+7. 6th: HA → **JY**
+
+So after **6 mappings**, we land on **JY**.
+
+Answer: JY"
+6,cot,5,FN,FN,1,0,6,PY QQ JN ZF YC WJ FN,0,"We are given a mapping table and need to start at **PY** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JN → ZF  
+- BP → CI  
+- JB → QR  
+- QR → XX  
+- QQ → JN  
+- CI → PY  
+- WJ → FN  
+- ZF → YC  
+- YC → WJ  
+- PY → QQ  
+- XX → BP  
+- FN → JB  
+
+We can think of this as a directed graph where each code points to another.
+
+### Step 2: Start at PY and follow the chain
+
+We'll go step by step:
+
+1. **Start**: PY  
+2. **1st mapping**: PY → QQ  
+3. **2nd**: QQ → JN  
+4. **3rd**: JN → ZF  
+5. **4th**: ZF → YC  
+6. **5th**: YC → WJ  
+7. **6th**: WJ → FN  
+
+So after **6 mappings**, we land on **FN**.
+
+Answer: FN"
+6,cot,6,MG,MG,1,0,6,PY TU CK DB SL AH MG,0,"We are given a mapping table and need to start at **PY** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- OL → MR  
+- DB → SL  
+- AH → MG  
+- IT → QM  
+- MR → PY  
+- CK → DB  
+- SL → AH  
+- TU → CK  
+- PY → TU  
+- QM → TB  
+- MG → IT  
+- TB → OL  
+
+### Step 2: Start at PY and follow the chain
+
+We'll go step by step:
+
+1. **Start**: PY  
+2. 1st mapping: PY → **TU**  
+3. 2nd: TU → **CK**  
+4. 3rd: CK → **DB**  
+5. 4th: DB → **SL**  
+6. 5th: SL → **AH**  
+7. 6th: AH → **MG**
+
+So after **6 mappings**, we land on **MG**.
+
+Answer: MG"
+6,cot,7,CD,CD,1,0,6,NH RE UN LK NS GI CD,0,"We are given a mapping table and need to start at **NH** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- LK → NS  
+- CD → FC  
+- RE → UN  
+- NS → GI  
+- GI → CD  
+- FC → UR  
+- NH → RE  
+- XQ → NH  
+- UR → EV  
+- UN → LK  
+- EV → RP  
+- RP → XQ  
+
+We’ll follow the chain starting at **NH**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start: NH**
+
+1. **NH → RE**  
+2. **RE → UN**  
+3. **UN → LK**  
+4. **LK → NS**  
+5. **NS → GI**  
+6. **GI → CD**
+
+So after 6 mappings, we land on **CD**.
+
+Answer: CD"
+6,cot,8,WK,WK,1,0,6,MA SV CM NR EB KN WK,0,"We are given a mapping table and need to start at **MA** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- CM → NR  
+- KN → WK  
+- SQ → AT  
+- JN → MA  
+- WK → OT  
+- EB → KN  
+- MA → SV  
+- GZ → SQ  
+- NR → EB  
+- AT → JN  
+- SV → CM  
+- OT → GZ  
+
+### Step 2: Start at MA and follow the chain
+
+We'll go step by step:
+
+1. **Start**: MA  
+2. MA → **SV**  
+3. SV → **CM**  
+4. CM → **NR**  
+5. NR → **EB**  
+6. EB → **KN**  
+7. KN → **WK**
+
+Wait! We need to follow the mapping **6 times**, meaning we make **6 moves** from the starting point.
+
+Let’s count carefully:
+
+- Step 1: MA → SV  
+- Step 2: SV → CM  
+- Step 3: CM → NR  
+- Step 4: NR → EB  
+- Step 5: EB → KN  
+- Step 6: KN → WK  
+
+So after **6 mappings**, we land on **WK**.
+
+Answer: WK"
+6,cot,9,KP,KP,1,0,6,FP XN RZ BV LU ID KP,0,"We are given a mapping table and need to start at **FP** and follow the mapping **6 times**. Let's proceed step by step.
+
+### Mapping Table:
+- FX → ER  
+- FF → FP  
+- KP → FX  
+- LU → ID  
+- ID → KP  
+- ER → CT  
+- XN → RZ  
+- FP → XN  
+- IZ → FF  
+- CT → IZ  
+- BV → LU  
+- RZ → BV  
+
+---
+
+### Step-by-step traversal:
+
+**Start: FP**
+
+1. **FP → XN**  
+2. **XN → RZ**  
+3. **RZ → BV**  
+4. **BV → LU**  
+5. **LU → ID**  
+6. **ID → KP**
+
+We have now applied the mapping **6 times**.
+
+### Final answer:
+Answer: KP"
+6,cot,10,PJ,PJ,1,0,6,BB KA QF NJ QW YY PJ,0,"We are given a mapping table and need to start at **BB** and follow the mappings **6 times**. Let's proceed step by step.
+
+### Given Mapping Table:
+- BB → KA  
+- PJ → US  
+- KA → QF  
+- NJ → QW  
+- JH → BJ  
+- BJ → TD  
+- EX → JH  
+- QW → YY  
+- YY → PJ  
+- TD → BB  
+- QF → NJ  
+- US → EX  
+
+---
+
+### Step-by-step traversal:
+
+**Start: BB**
+
+1. **BB → KA**
+2. **KA → QF**
+3. **QF → NJ**
+4. **NJ → QW**
+5. **QW → YY**
+6. **YY → PJ**
+
+After 6 mappings, we land on **PJ**.
+
+Answer: PJ"
+6,cot,11,IH,IH,1,0,6,UO JD LO PI AX SG IH,0,"We are given a mapping table and need to start at **UO** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- LO → PI  
+- XY → ET  
+- IH → QN  
+- ET → UO  
+- PI → AX  
+- YW → XY  
+- WN → YW  
+- SG → IH  
+- AX → SG  
+- JD → LO  
+- UO → JD  
+- QN → WN  
+
+### Step 2: Start at UO and follow the chain
+
+We’ll go step by step, counting each mapping as one step.
+
+1. **Start**: UO  
+2. **1st mapping**: UO → JD  
+3. **2nd**: JD → LO  
+4. **3rd**: LO → PI  
+5. **4th**: PI → AX  
+6. **5th**: AX → SG  
+7. **6th**: SG → IH  
+
+So after **6 mappings**, we land on **IH**.
+
+Answer: IH"
+6,cot,12,CS,CS,1,0,6,IR YF WU FQ RM MN CS,0,"We are given a mapping table and need to start at **IR** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- CS → KW  
+- FQ → RM  
+- OQ → HG  
+- HG → KX  
+- MN → CS  
+- KX → VS  
+- WU → FQ  
+- KW → OQ  
+- RM → MN  
+- YF → WU  
+- IR → YF  
+- VS → IR  
+
+This is a cycle of 12 elements. Let's follow the chain starting at **IR**.
+
+---
+
+### Step 2: Follow the chain step by step
+
+Start: **IR**
+
+1. IR → **YF**  
+2. YF → **WU**  
+3. WU → **FQ**  
+4. FQ → **RM**  
+5. RM → **MN**  
+6. MN → **CS**
+
+We have applied the mapping **6 times**, and we land on **CS**.
+
+Answer: CS"
+6,cot,13,WM,WM,1,0,6,DN UN OA NL XR IC WM,0,"We are given a mapping table and need to start at **DN** and follow the mappings **6 times**. Let's proceed step by step.
+
+### Mapping Table:
+- PL → ED  
+- ED → NG  
+- OA → NL  
+- NL → XR  
+- DN → UN  
+- IC → WM  
+- NG → CW  
+- WM → PL  
+- XR → IC  
+- EW → DN  
+- CW → EW  
+- UN → OA  
+
+---
+
+### Step-by-step traversal:
+
+Start: **DN**
+
+1. **DN → UN**  
+2. **UN → OA**  
+3. **OA → NL**  
+4. **NL → XR**  
+5. **XR → IC**  
+6. **IC → WM**
+
+So, after 6 mappings, we land on **WM**.
+
+Answer: WM"
+6,cot,14,XO,XO,1,0,6,GM HE ZV HI OD ZY XO,0,"We are given a mapping table and need to start at **GM** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- HU → XD  
+- XD → ZE  
+- ZV → HI  
+- ZY → XO  
+- GM → HE  
+- XO → EO  
+- EO → VO  
+- VO → HU  
+- ZE → GM  
+- HI → OD  
+- HE → ZV  
+- OD → ZY  
+
+This is a set of directed mappings: each code maps to exactly one other code.
+
+### Step 2: Start at GM and follow 6 steps
+
+We'll go step by step:
+
+1. **Start**: GM  
+2. Step 1: GM → **HE**  
+3. Step 2: HE → **ZV**  
+4. Step 3: ZV → **HI**  
+5. Step 4: HI → **OD**  
+6. Step 5: OD → **ZY**  
+7. Step 6: ZY → **XO**
+
+So after **6 mappings**, we land on **XO**.
+
+### Final Answer:
+Answer: XO"
+6,cot,15,ZK,ZK,1,0,6,FZ GX FC NG MB WD ZK,0,"We are given a mapping table and need to start at **FZ** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- UJ → DH  
+- QB → UJ  
+- WD → ZK  
+- FZ → GX  
+- MB → WD  
+- NG → MB  
+- FC → NG  
+- DH → JS  
+- ZK → QE  
+- JS → FZ  
+- GX → FC  
+- QE → QB  
+
+This is a set of 12 mappings, each code maps to exactly one other code.
+
+We can think of this as a directed graph or chain.
+
+---
+
+### Step 2: Start at FZ and follow the chain
+
+We’ll apply the mapping 6 times, i.e., move 6 steps forward.
+
+**Step 0 (start):** FZ  
+**Step 1:** FZ → GX  
+**Step 2:** GX → FC  
+**Step 3:** FC → NG  
+**Step 4:** NG → MB  
+**Step 5:** MB → WD  
+**Step 6:** WD → ZK  
+
+So after 6 mappings, we land on **ZK**.
+
+Answer: ZK"
+6,cot,16,PZ,PZ,1,0,6,KQ TH VM TE DH LX PZ,0,"We are given a mapping table and need to start at **KQ** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- TE → DH  
+- JO → PV  
+- TH → VM  
+- DH → LX  
+- KQ → TH  
+- DS → KQ  
+- VM → TE  
+- LX → PZ  
+- MB → JO  
+- PV → HB  
+- HB → DS  
+- PZ → MB  
+
+We’ll now follow the chain starting at **KQ**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+1. **Start**: KQ  
+2. **1st mapping**: KQ → **TH**  
+3. **2nd mapping**: TH → **VM**  
+4. **3rd mapping**: VM → **TE**  
+5. **4th mapping**: TE → **DH**  
+6. **5th mapping**: DH → **LX**  
+7. **6th mapping**: LX → **PZ**
+
+So after 6 mappings, we land on **PZ**.
+
+Answer: PZ"
+6,cot,17,MJ,MJ,1,0,6,VZ QU ZP YC SG OC MJ,0,"We are given a mapping table and need to start at **VZ** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- MJ → WU  
+- VZ → QU  
+- WU → JM  
+- RA → HQ  
+- JM → RA  
+- YC → SG  
+- TV → VZ  
+- QU → ZP  
+- ZP → YC  
+- SG → OC  
+- HQ → TV  
+- OC → MJ  
+
+We’ll now follow the chain starting at **VZ**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+1. **Start**: VZ  
+2. 1st mapping: VZ → **QU**  
+3. 2nd: QU → **ZP**  
+4. 3rd: ZP → **YC**  
+5. 4th: YC → **SG**  
+6. 5th: SG → **OC**  
+7. 6th: OC → **MJ**
+
+So after 6 mappings, we land on **MJ**.
+
+Answer: MJ"
+6,cot,18,EZ,EZ,1,0,6,OW KI XV LX EW HA EZ,0,"We are given a mapping table and need to start at **OW** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- WB → GF  
+- HA → EZ  
+- KI → XV  
+- EZ → RX  
+- LX → EW  
+- GF → OW  
+- RX → MX  
+- EW → HA  
+- OW → KI  
+- XV → LX  
+- MX → DE  
+- DE → WB  
+
+We can think of this as a directed graph or chain.
+
+### Step 2: Start at OW and follow 6 steps
+
+We'll track each step carefully.
+
+- **Step 0 (start):** OW  
+- **Step 1:** OW → KI  
+- **Step 2:** KI → XV  
+- **Step 3:** XV → LX  
+- **Step 4:** LX → EW  
+- **Step 5:** EW → HA  
+- **Step 6:** HA → EZ  
+
+So after 6 mappings, we land on **EZ**.
+
+Answer: EZ"
+6,cot,19,UG,UG,1,0,6,MP NQ HD RZ TK HU UG,0,"We are given a mapping table and need to start at **MP** and follow the mappings **6 times**. Let's proceed step by step.
+
+### Mapping Table:
+- HU -> UG  
+- RZ -> TK  
+- MP -> NQ  
+- IY -> BJ  
+- HD -> RZ  
+- NQ -> HD  
+- EE -> TI  
+- AS -> IY  
+- TI -> AS  
+- UG -> EE  
+- BJ -> MP  
+- TK -> HU  
+
+### Step-by-step traversal:
+
+Start at: **MP**
+
+1. **MP** → **NQ**  
+2. **NQ** → **HD**  
+3. **HD** → **RZ**  
+4. **RZ** → **TK**  
+5. **TK** → **HU**  
+6. **HU** → **UG**
+
+So after 6 mappings, we land on **UG**.
+
+Answer: UG"
+6,cot,20,LK,LK,1,0,6,DD RY RV SH OO LP LK,0,"We are given a mapping table and need to start at **DD** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- RV → SH  
+- WQ → DD  
+- AV → WQ  
+- ZG → RR  
+- DD → RY  
+- AL → ZG  
+- SH → OO  
+- LP → LK  
+- RR → AV  
+- OO → LP  
+- LK → AL  
+- RY → RV  
+
+We’ll follow the chain starting at **DD**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start:** DD  
+1. DD → **RY**  
+2. RY → **RV**  
+3. RV → **SH**  
+4. SH → **OO**  
+5. OO → **LP**  
+6. LP → **LK**
+
+So after 6 mappings, we land on **LK**.
+
+Answer: LK"
+6,cot,21,OQ,OQ,1,0,6,NV FX GV GW YP AV OQ,0,"We are given a mapping table and need to start at **NV** and follow the mapping **6 times**. Let's proceed step by step.
+
+### Mapping Table:
+- CN → JE  
+- ZR → XG  
+- OQ → XO  
+- XO → CN  
+- AV → OQ  
+- YP → AV  
+- GV → GW  
+- NV → FX  
+- XG → NV  
+- FX → GV  
+- JE → ZR  
+- GW → YP  
+
+### Step-by-step traversal starting at **NV**:
+
+1. **Start**: NV  
+2. **1st move**: NV → **FX**  
+3. **2nd move**: FX → **GV**  
+4. **3rd move**: GV → **GW**  
+5. **4th move**: GW → **YP**  
+6. **5th move**: YP → **AV**  
+7. **6th move**: AV → **OQ**
+
+We made 6 moves (as required), ending at **OQ**.
+
+Answer: OQ"
+6,cot,22,GK,GK,1,0,6,OV OJ AU EJ ZR UB GK,0,"We are given a mapping table and need to start at **OV** and follow the mapping **6 times**. Let's proceed step by step.
+
+### Mapping Table:
+- GK → GM  
+- OJ → AU  
+- AU → EJ  
+- GC → MB  
+- ZR → UB  
+- UB → GK  
+- MB → OV  
+- GM → LG  
+- LG → ZH  
+- ZH → GC  
+- EJ → ZR  
+- OV → OJ  
+
+---
+
+### Step-by-step traversal:
+
+**Start:** OV  
+1. OV → **OJ**  
+2. OJ → **AU**  
+3. AU → **EJ**  
+4. EJ → **ZR**  
+5. ZR → **UB**  
+6. UB → **GK**
+
+We have now applied the mapping **6 times**.
+
+### Final answer:
+Answer: GK"
+6,cot,23,SM,SM,1,0,6,UZ KA YY PO QE II SM,0,"We are given a mapping table and need to start at **UZ**, then follow the mappings **6 times**. Let's proceed step by step.
+
+### Mapping Table:
+- SM → LW  
+- SW → UZ  
+- II → SM  
+- LW → UJ  
+- YY → PO  
+- OS → SW  
+- **UZ → KA**  
+- UJ → TK  
+- TK → OS  
+- PO → QE  
+- **KA → YY**  
+- QE → II  
+
+---
+
+### Step-by-step traversal:
+
+**Start:** UZ  
+1. UZ → **KA**  
+2. KA → **YY**  
+3. YY → **PO**  
+4. PO → **QE**  
+5. QE → **II**  
+6. II → **SM**
+
+So, after 6 mappings from UZ, we land on **SM**.
+
+Answer: SM"
+6,cot,24,LU,LU,1,0,6,UZ YB SY GD FX OL LU,0,"We are given a mapping table and need to start at **UZ** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- XX → VX  
+- OO → XX  
+- SY → GD  
+- VX → PY  
+- YB → SY  
+- UZ → YB  
+- GD → FX  
+- FX → OL  
+- PY → UZ  
+- NZ → OO  
+- LU → NZ  
+- OL → LU  
+
+We’ll now follow the chain starting at **UZ** for 6 steps.
+
+---
+
+### Step 2: Follow the chain step by step
+
+Start: **UZ**
+
+1. UZ → **YB**  
+2. YB → **SY**  
+3. SY → **GD**  
+4. GD → **FX**  
+5. FX → **OL**  
+6. OL → **LU**
+
+So after 6 mappings, we land on **LU**.
+
+Answer: LU"
+6,cot,25,DN,DN,1,0,6,ZU FN JZ JH EC RF DN,0,"We are given a mapping table and need to start at **ZU** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- FN → JZ  
+- RF → DN  
+- RO → ZU  
+- JH → EC  
+- ZU → FN  
+- JZ → JH  
+- RU → PY  
+- JO → ZO  
+- PY → RO  
+- EC → RF  
+- DN → JO  
+- ZO → RU  
+
+We’ll now follow the chain starting at **ZU**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+1. **Start**: ZU  
+2. 1st mapping: ZU → **FN**  
+3. 2nd: FN → **JZ**  
+4. 3rd: JZ → **JH**  
+5. 4th: JH → **EC**  
+6. 5th: EC → **RF**  
+7. 6th: RF → **DN**
+
+So after 6 mappings, we land on **DN**.
+
+Answer: DN"
+6,cot,26,PX,PX,1,0,6,RJ HR UT SR TI LW PX,0,"We are given a mapping table and need to start at **RJ** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- SR → TI  
+- HR → UT  
+- LW → PX  
+- UT → SR  
+- IJ → CE  
+- WV → RJ  
+- NU → IJ  
+- TI → LW  
+- PX → NU  
+- VL → WV  
+- RJ → HR  
+- CE → VL  
+
+We can think of this as a directed graph where each code points to another.
+
+### Step 2: Start at RJ and follow the chain
+
+We’ll go step by step, counting each mapping as **1 step**.
+
+1. **Start**: RJ  
+2. Step 1: RJ → **HR**  
+3. Step 2: HR → **UT**  
+4. Step 3: UT → **SR**  
+5. Step 4: SR → **TI**  
+6. Step 5: TI → **LW**  
+7. Step 6: LW → **PX**
+
+So after **6 mappings**, we land on **PX**.
+
+Answer: PX"
+6,cot,27,IY,IY,1,0,6,QU ZI BL WB OK BI IY,0,"We are given a mapping table and need to start at **QU** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- ZI → BL  
+- WB → OK  
+- BL → WB  
+- SE → HW  
+- HW → QM  
+- IY → SE  
+- CN → PD  
+- OK → BI  
+- QM → CN  
+- BI → IY  
+- QU → ZI  
+- PD → QU  
+
+### Step 2: Start at QU and follow the chain
+
+We’ll go step by step:
+
+1. **Start**: QU  
+2. **1st mapping**: QU → **ZI**  
+3. **2nd**: ZI → **BL**  
+4. **3rd**: BL → **WB**  
+5. **4th**: WB → **OK**  
+6. **5th**: OK → **BI**  
+7. **6th**: BI → **IY**
+
+So after **6 mappings**, we land on **IY**.
+
+Answer: IY"
+6,cot,28,EF,EF,1,0,6,RQ ZC NY LQ EW MH EF,0,"We are given a mapping table and need to start at **RQ** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- ZC → NY  
+- AX → RQ  
+- NY → LQ  
+- EW → MH  
+- LQ → EW  
+- MR → NU  
+- NU → KY  
+- RQ → ZC  
+- MH → EF  
+- WG → MR  
+- EF → WG  
+- KY → AX  
+
+We’ll now follow the chain starting at **RQ**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+1. **Start**: RQ  
+2. 1st mapping: RQ → **ZC**  
+3. 2nd: ZC → **NY**  
+4. 3rd: NY → **LQ**  
+5. 4th: LQ → **EW**  
+6. 5th: EW → **MH**  
+7. 6th: MH → **EF**
+
+So after 6 mappings, we land on **EF**.
+
+Answer: EF"
+6,cot,29,OL,OL,1,0,6,WG GQ BF WX ML DX OL,0,"We are given a mapping table and need to start at **WG** and follow the mapping **6 times**.
+
+### Step 1: Write down the mappings clearly
+
+From the table:
+
+- DX → OL  
+- HQ → EJ  
+- GQ → BF  
+- ML → DX  
+- WG → GQ  
+- WV → WG  
+- EJ → WM  
+- WM → FI  
+- FI → WV  
+- BF → WX  
+- WX → ML  
+- OL → HQ  
+
+We’ll now follow the chain starting at **WG**, applying the mapping 6 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+**Start:** WG  
+1. WG → **GQ**  
+2. GQ → **BF**  
+3. BF → **WX**  
+4. WX → **ML**  
+5. ML → **DX**  
+6. DX → **OL**
+
+So after 6 mappings, we land on **OL**.
+
+Answer: OL"
+8,immediate,0,GQ,FY,0,0,11,RV VQ UI IU XS CJ LZ VA GQ,0,Answer: FY
+8,immediate,1,RA,SQ,0,0,10,VY JR ES VE TE PP ZK KQ RA,0,Answer: SQ
+8,immediate,2,JA,TD,0,0,3,CV GH UQ TD JX VY WG PK JA,0,Answer: TD
+8,immediate,3,PV,TC,0,0,5,NF SH IL OA MJ TC NB VK PV,0,Answer: TC
+8,immediate,4,KL,WB,0,0,4,GD RA BJ ZU WB LM EK JG KL,0,Answer: WB
+8,immediate,5,QA,SF,0,0,1,VD SF BE DN ET AV WM KS QA,0,Answer: SF
+8,immediate,6,DW,TG,0,0,2,EJ FB TG AB YW ID XD ZU DW,0,Answer: TG
+8,immediate,7,PY,UV,0,0,6,OH MK VN HT BI BP UV PU PY,0,Answer: UV
+8,immediate,8,WA,EX,0,0,6,AD YX RW RA SQ TB EX AY WA,0,Answer: EX
+8,immediate,9,OM,NX,0,0,3,UZ EP PJ NX BF CK WT ZB OM,0,Answer: NX
+8,immediate,10,HR,SK,0,0,4,OQ BX ST ZE SK EH FZ YI HR,0,Answer: SK
+8,immediate,11,KD,KD,1,0,8,EJ FL AG ST RB BR WP NU KD,0,Answer: KD
+8,immediate,12,FO,GA,0,0,11,DB UD TY UZ JC MC ZL QC FO,0,Answer: GA
+8,immediate,13,VF,GU,0,0,3,WV JD IM GU HI EE YW YU VF,0,Answer: GU
+8,immediate,14,KK,KK,1,0,8,RH RW GW WC EK OA EW QD KK,0,Answer: KK
+8,immediate,15,FV,MR,0,0,5,DI TC LU LM CX MR WC ME FV,0,Answer: MR
+8,immediate,16,WJ,RA,0,0,2,FM OL RA PQ AJ OI UM QJ WJ,0,Answer: RA
+8,immediate,17,BD,BD,1,0,8,AI FJ ZS TU ZK TX BL TF BD,0,Answer: BD
+8,immediate,18,TQ,WJ,0,0,3,ML PR UI WJ YU PL LA CC TQ,0,Answer: WJ
+8,immediate,19,CU,AX,0,0,9,GI DV AR GF ZL MB BZ CY CU,0,Answer: AX
+8,immediate,20,RM,LB,0,0,2,JQ UJ LB DT GH BY PP IF RM,0,Answer: LB
+8,immediate,21,PM,LR,0,0,4,VO WA EP AW LR GI GN AP PM,0,Answer: LR
+8,immediate,22,JZ,WC,0,0,4,IJ ON QD PJ WC JB LR LO JZ,0,Answer: WC
+8,immediate,23,LL,LL,1,0,8,SM DI DB VB PI DJ UV QI LL,0,Answer: LL
+8,immediate,24,US,SQ,0,0,5,VG QN IG DA XB SQ NV UL US,0,Answer: SQ
+8,immediate,25,UC,PS,0,0,4,OE HA UF OC PS HK WI MT UC,0,Answer: PS
+8,immediate,26,CF,AO,0,0,9,JP XH PW IW RX JB MJ SQ CF,0,Answer: AO
+8,immediate,27,MK,TR,0,0,2,VW KW TR GU JB JI DQ FC MK,0,Answer: TR
+8,immediate,28,SY,HA,0,0,11,FJ RW LC IP IT LQ GZ WQ SY,0,Answer: HA
+8,immediate,29,LB,QE,0,0,6,DZ JZ ON BC TI RR QE RQ LB,0,Answer: QE
+8,filler,0,GQ,FY,0,0,11,RV VQ UI IU XS CJ LZ VA GQ,0,Answer: FY
+8,filler,1,RA,SQ,0,0,10,VY JR ES VE TE PP ZK KQ RA,0,Answer: SQ
+8,filler,2,JA,TD,0,0,3,CV GH UQ TD JX VY WG PK JA,0,Answer: TD
+8,filler,3,PV,TC,0,0,5,NF SH IL OA MJ TC NB VK PV,0,Answer: TC
+8,filler,4,KL,BJ,0,0,2,GD RA BJ ZU WB LM EK JG KL,0,Answer: BJ
+8,filler,5,QA,SF,0,0,1,VD SF BE DN ET AV WM KS QA,0,Answer: SF
+8,filler,6,DW,XD,0,0,6,EJ FB TG AB YW ID XD ZU DW,0,Answer: XD
+8,filler,7,PY,PY,1,0,8,OH MK VN HT BI BP UV PU PY,0,Answer: PY
+8,filler,8,WA,RW,0,0,2,AD YX RW RA SQ TB EX AY WA,0,Answer: RW
+8,filler,9,OM,NX,0,0,3,UZ EP PJ NX BF CK WT ZB OM,0,Answer: NX
+8,filler,10,HR,SK,0,0,4,OQ BX ST ZE SK EH FZ YI HR,0,Answer: SK
+8,filler,11,KD,KD,1,0,8,EJ FL AG ST RB BR WP NU KD,0,Answer: KD
+8,filler,12,FO,GA,0,0,11,DB UD TY UZ JC MC ZL QC FO,0,Answer: GA
+8,filler,13,VF,GU,0,0,3,WV JD IM GU HI EE YW YU VF,0,Answer: GU
+8,filler,14,KK,KK,1,0,8,RH RW GW WC EK OA EW QD KK,0,Answer: KK
+8,filler,15,FV,WC,0,0,6,DI TC LU LM CX MR WC ME FV,0,Answer: WC
+8,filler,16,WJ,AJ,0,0,4,FM OL RA PQ AJ OI UM QJ WJ,0,Answer: AJ
+8,filler,17,BD,BD,1,0,8,AI FJ ZS TU ZK TX BL TF BD,0,Answer: BD
+8,filler,18,TQ,LA,0,0,6,ML PR UI WJ YU PL LA CC TQ,0,Answer: LA
+8,filler,19,CU,AX,0,0,9,GI DV AR GF ZL MB BZ CY CU,0,Answer: AX
+8,filler,20,RM,LB,0,0,2,JQ UJ LB DT GH BY PP IF RM,0,Answer: LB
+8,filler,21,PM,LR,0,0,4,VO WA EP AW LR GI GN AP PM,0,Answer: LR
+8,filler,22,JZ,PJ,0,0,3,IJ ON QD PJ WC JB LR LO JZ,0,Answer: PJ
+8,filler,23,LL,LL,1,0,8,SM DI DB VB PI DJ UV QI LL,0,Answer: LL
+8,filler,24,US,SQ,0,0,5,VG QN IG DA XB SQ NV UL US,0,Answer: SQ
+8,filler,25,UC,PM,0,0,9,OE HA UF OC PS HK WI MT UC,0,Answer: PM
+8,filler,26,CF,CF,1,0,8,JP XH PW IW RX JB MJ SQ CF,0,Answer: CF
+8,filler,27,MK,GU,0,0,3,VW KW TR GU JB JI DQ FC MK,0,Answer: GU
+8,filler,28,SY,HA,0,0,11,FJ RW LC IP IT LQ GZ WQ SY,0,Answer: HA
+8,filler,29,LB,QE,0,0,6,DZ JZ ON BC TI RR QE RQ LB,0,Answer: QE
+8,cot,0,GQ,GQ,1,0,8,RV VQ UI IU XS CJ LZ VA GQ,0,"We are given a mapping table and need to start at **RV** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+
+From the table:
+
+- IU → XS  
+- KH → NI  
+- NI → FY  
+- GQ → KH  
+- XS → CJ  
+- VQ → UI  
+- FY → RV  
+- VA → GQ  
+- LZ → VA  
+- UI → IU  
+- CJ → LZ  
+- RV → VQ  
+
+So each code maps to exactly one other code — this is a deterministic chain.
+
+### Step 2: Start at RV and follow the chain step by step
+
+We'll count each mapping as **1 step**. Start at **RV** (step 0).
+
+1. **RV → VQ**  
+2. **VQ → UI**  
+3. **UI → IU**  
+4. **IU → XS**  
+5. **XS → CJ**  
+6. **CJ → LZ**  
+7. **LZ → VA**  
+8. **VA → GQ**
+
+After 8 mappings, we land on **GQ**.
+
+Answer: GQ"
+8,cot,1,RA,RA,1,0,8,VY JR ES VE TE PP ZK KQ RA,0,"We are given a mapping table and need to start at **VY** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mappings:
+- BX → VY  
+- ES → VE  
+- ZK → KQ  
+- RA → NS  
+- TE → PP  
+- PP → ZK  
+- NS → SQ  
+- VE → TE  
+- SQ → BX  
+- KQ → RA  
+- JR → ES  
+- VY → JR  
+
+We start at **VY**.
+
+---
+
+### Step-by-step traversal:
+
+1. **Start**: VY  
+2. **1st move**: VY → **JR**  
+3. **2nd move**: JR → **ES**  
+4. **3rd move**: ES → **VE**  
+5. **4th move**: VE → **TE**  
+6. **5th move**: TE → **PP**  
+7. **6th move**: PP → **ZK**  
+8. **7th move**: ZK → **KQ**  
+9. **8th move**: KQ → **RA**
+
+We have now followed the mapping **8 times**, and we land on **RA**.
+
+Answer: RA"
+8,cot,2,JA,JA,1,0,8,CV GH UQ TD JX VY WG PK JA,0,"We are given a mapping table and need to start at **CV** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Given Mappings:
+- CV → GH  
+- PK → JA  
+- UQ → TD  
+- YB → EH  
+- WG → PK  
+- JX → VY  
+- GH → UQ  
+- JA → YB  
+- XJ → CV  
+- EH → XJ  
+- VY → WG  
+- TD → JX  
+
+We can think of this as a directed graph where each code points to another.
+
+### Step-by-step traversal starting at **CV**:
+
+1. **Start**: CV  
+2. 1st move: CV → **GH**  
+3. 2nd move: GH → **UQ**  
+4. 3rd move: UQ → **TD**  
+5. 4th move: TD → **JX**  
+6. 5th move: JX → **VY**  
+7. 6th move: VY → **WG**  
+8. 7th move: WG → **PK**  
+9. 8th move: PK → **JA**
+
+We made 8 moves **after** the starting point, so the 8th code we land on is **JA**.
+
+Answer: JA"
+8,cot,3,PV,PV,1,0,8,NF SH IL OA MJ TC NB VK PV,0,"We are given a mapping table and need to start at **NF** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mapping Table:
+- GU → RH  
+- SH → IL  
+- MJ → TC  
+- NF → SH  
+- RH → NF  
+- AA → GU  
+- IL → OA  
+- PV → AA  
+- OA → MJ  
+- NB → VK  
+- TC → NB  
+- VK → PV  
+
+We’ll build a direct map for easy lookup:
+
+```
+GU → RH  
+SH → IL  
+MJ → TC  
+NF → SH  
+RH → NF  
+AA → GU  
+IL → OA  
+PV → AA  
+OA → MJ  
+NB → VK  
+TC → NB  
+VK → PV
+```
+
+Now, start at **NF** and apply the mapping 8 times:
+
+1. **NF** → **SH**  
+2. **SH** → **IL**  
+3. **IL** → **OA**  
+4. **OA** → **MJ**  
+5. **MJ** → **TC**  
+6. **TC** → **NB**  
+7. **NB** → **VK**  
+8. **VK** → **PV**
+
+So after 8 steps, we land on **PV**.
+
+Answer: PV"
+8,cot,4,KL,KL,1,0,8,GD RA BJ ZU WB LM EK JG KL,0,"We are given a mapping table and need to start at **GD** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- GD → RA  
+- NF → VI  
+- EK → JG  
+- RA → BJ  
+- ZU → WB  
+- LM → EK  
+- VI → KK  
+- KL → NF  
+- WB → LM  
+- BJ → ZU  
+- JG → KL  
+- KK → GD  
+
+---
+
+### Step-by-step traversal:
+
+Start: **GD**
+
+1. GD → **RA**  
+2. RA → **BJ**  
+3. BJ → **ZU**  
+4. ZU → **WB**  
+5. WB → **LM**  
+6. LM → **EK**  
+7. EK → **JG**  
+8. JG → **KL**
+
+We have now applied the mapping **8 times**.
+
+Answer: KL"
+8,cot,5,QA,QA,1,0,8,VD SF BE DN ET AV WM KS QA,0,"We are given a mapping table and need to start at **VD** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mappings:
+- KS → QA  
+- DN → ET  
+- AV → WM  
+- VD → SF  
+- QA → SV  
+- SF → BE  
+- SV → HN  
+- BE → DN  
+- WM → KS  
+- ET → AV  
+- JL → VD  
+- HN → JL  
+
+---
+
+### Step-by-step traversal:
+
+Start at: **VD**
+
+1. **VD → SF**  
+2. **SF → BE**  
+3. **BE → DN**  
+4. **DN → ET**  
+5. **ET → AV**  
+6. **AV → WM**  
+7. **WM → KS**  
+8. **KS → QA**
+
+After 8 mappings, we land on: **QA**
+
+Answer: QA"
+8,cot,6,DW,DW,1,0,8,EJ FB TG AB YW ID XD ZU DW,0,"We are given a mapping table and need to start at **EJ** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- DW → SZ  
+- YW → ID  
+- AB → YW  
+- TG → AB  
+- FB → TG  
+- EJ → FB  
+- ID → XD  
+- XD → ZU  
+- ZO → EJ  
+- SZ → AE  
+- AE → ZO  
+- ZU → DW  
+
+---
+
+### Step-by-step traversal:
+
+Start: **EJ**
+
+1. EJ → **FB**  
+2. FB → **TG**  
+3. TG → **AB**  
+4. AB → **YW**  
+5. YW → **ID**  
+6. ID → **XD**  
+7. XD → **ZU**  
+8. ZU → **DW**
+
+So after 8 mappings, we land on **DW**.
+
+Answer: DW"
+8,cot,7,PY,PY,1,0,8,OH MK VN HT BI BP UV PU PY,0,"We are given a mapping table and need to start at **OH** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mapping Table:
+- VN → HT  
+- PU → PY  
+- UV → PU  
+- MK → VN  
+- PY → DU  
+- PA → OH  
+- HT → BI  
+- DU → OP  
+- BI → BP  
+- BP → UV  
+- OH → MK  
+- OP → PA  
+
+We can rewrite this as a dictionary for clarity:
+
+```
+VN → HT  
+PU → PY  
+UV → PU  
+MK → VN  
+PY → DU  
+PA → OH  
+HT → BI  
+DU → OP  
+BI → BP  
+BP → UV  
+OH → MK  
+OP → PA
+```
+
+Now, start at **OH** and apply the mapping 8 times:
+
+1. **OH** → MK  
+2. **MK** → VN  
+3. **VN** → HT  
+4. **HT** → BI  
+5. **BI** → BP  
+6. **BP** → UV  
+7. **UV** → PU  
+8. **PU** → PY  
+
+So after 8 mappings, we land on **PY**.
+
+Answer: PY"
+8,cot,8,WA,WA,1,0,8,AD YX RW RA SQ TB EX AY WA,0,"We are given a mapping table and need to start at **AD** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+
+From the table:
+
+- XV → AD  
+- AD → YX  
+- AY → WA  
+- YX → RW  
+- RA → SQ  
+- XK → PR  
+- TB → EX  
+- PR → XV  
+- WA → XK  
+- SQ → TB  
+- RW → RA  
+- EX → AY  
+
+We only need the **forward mappings** (i.e., from left to right as given), since we're following the chain forward.
+
+So, usable forward map:
+
+- XV → AD  
+- AD → YX  
+- AY → WA  
+- YX → RW  
+- RA → SQ  
+- XK → PR  
+- TB → EX  
+- PR → XV  
+- WA → XK  
+- SQ → TB  
+- RW → RA  
+- EX → AY  
+
+Now, start at **AD** and apply the mapping 8 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+Start: **AD**
+
+1. AD → **YX**  
+2. YX → **RW**  
+3. RW → **RA**  
+4. RA → **SQ**  
+5. SQ → **TB**  
+6. TB → **EX**  
+7. EX → **AY**  
+8. AY → **WA**
+
+So after 8 mappings, we land on **WA**.
+
+Answer: WA"
+8,cot,9,OM,OM,1,0,8,UZ EP PJ NX BF CK WT ZB OM,0,"We are given a mapping table and need to start at **UZ**, then follow the mappings **8 times** (i.e., apply the mapping 8 steps forward), and find the final code.
+
+### Step 1: Write down the mapping clearly
+
+From the table:
+
+- ZB → OM  
+- BF → CK  
+- EP → PJ  
+- OM → UV  
+- PJ → NX  
+- DD → HA  
+- HA → UZ  
+- UV → DD  
+- WT → ZB  
+- UZ → EP  
+- CK → WT  
+- NX → BF  
+
+We can think of this as a directed graph or chain.
+
+### Step 2: Start at UZ and follow the chain
+
+We'll trace step-by-step:
+
+1. **Start**: UZ  
+2. Step 1: UZ → **EP**  
+3. Step 2: EP → **PJ**  
+4. Step 3: PJ → **NX**  
+5. Step 4: NX → **BF**  
+6. Step 5: BF → **CK**  
+7. Step 6: CK → **WT**  
+8. Step 7: WT → **ZB**  
+9. Step 8: ZB → **OM**
+
+We have now applied the mapping **8 times**, starting from UZ:
+
+- After 1st mapping: EP  
+- 2nd: PJ  
+- 3rd: NX  
+- 4th: BF  
+- 5th: CK  
+- 6th: WT  
+- 7th: ZB  
+- 8th: OM
+
+### Final Answer:
+Answer: OM"
+8,cot,10,HR,HR,1,0,8,OQ BX ST ZE SK EH FZ YI HR,0,"We are given a mapping table and need to start at **OQ** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Given mappings:
+- XD -> OQ  
+- HR -> QB  
+- QB -> AO  
+- ZE -> SK  
+- FZ -> YI  
+- BX -> ST  
+- SK -> EH  
+- OQ -> BX  
+- EH -> FZ  
+- ST -> ZE  
+- AO -> XD  
+- YI -> HR  
+
+We can rewrite this as a dictionary for clarity (each code maps to its image):
+
+```
+XD  → OQ  
+HR  → QB  
+QB  → AO  
+ZE  → SK  
+FZ  → YI  
+BX  → ST  
+SK  → EH  
+OQ  → BX  
+EH  → FZ  
+ST  → ZE  
+AO  → XD  
+YI  → HR
+```
+
+Now, start at **OQ** and apply the mapping 8 times:
+
+1. **OQ** → **BX**  
+2. **BX** → **ST**  
+3. **ST** → **ZE**  
+4. **ZE** → **SK**  
+5. **SK** → **EH**  
+6. **EH** → **FZ**  
+7. **FZ** → **YI**  
+8. **YI** → **HR**
+
+So after 8 mappings, we land on **HR**.
+
+Answer: HR"
+8,cot,11,KD,KD,1,0,8,EJ FL AG ST RB BR WP NU KD,0,"We are given a mapping table and need to start at **EJ** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mapping Table:
+- RB → BR  
+- NU → KD  
+- AG → ST  
+- TA → SY  
+- KD → JI  
+- WP → NU  
+- SY → EJ  
+- ST → RB  
+- BR → WP  
+- FL → AG  
+- EJ → FL  
+- JI → TA  
+
+We can rewrite this as a dictionary for clarity:
+
+```
+RB  → BR  
+NU  → KD  
+AG  → ST  
+TA  → SY  
+KD  → JI  
+WP  → NU  
+SY  → EJ  
+ST  → RB  
+BR  → WP  
+FL  → AG  
+EJ  → FL  
+JI  → TA
+```
+
+### Step-by-step traversal starting at **EJ**:
+
+We will count each mapping as **1 step**. Start at EJ (step 0).
+
+1. **EJ → FL**  
+2. **FL → AG**  
+3. **AG → ST**  
+4. **ST → RB**  
+5. **RB → BR**  
+6. **BR → WP**  
+7. **WP → NU**  
+8. **NU → KD**
+
+So after **8 mappings**, we land on **KD**.
+
+Answer: KD"
+8,cot,12,FO,FO,1,0,8,DB UD TY UZ JC MC ZL QC FO,0,"We are given a mapping table and need to start at **DB** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- UZ -> JC  
+- QC -> FO  
+- FO -> ZU  
+- AT -> GA  
+- UD -> TY  
+- JC -> MC  
+- MC -> ZL  
+- ZU -> AT  
+- TY -> UZ  
+- DB -> UD  
+- GA -> DB  
+- ZL -> QC  
+
+---
+
+### Step-by-step traversal:
+
+Start: **DB**
+
+1. **DB** → **UD**  
+2. **UD** → **TY**  
+3. **TY** → **UZ**  
+4. **UZ** → **JC**  
+5. **JC** → **MC**  
+6. **MC** → **ZL**  
+7. **ZL** → **QC**  
+8. **QC** → **FO**
+
+We have now applied the mapping **8 times**.
+
+### Final answer:
+Answer: FO"
+8,cot,13,VF,VF,1,0,8,WV JD IM GU HI EE YW YU VF,0,"We are given a mapping table and need to start at **WV** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mapping Table:
+- WV → JD  
+- EE → YW  
+- NO → IZ  
+- IM → GU  
+- YU → VF  
+- VF → MS  
+- YW → YU  
+- MS → NO  
+- IZ → WV  
+- HI → EE  
+- JD → IM  
+- GU → HI  
+
+---
+
+### Step-by-step traversal:
+
+Start: **WV**
+
+1. WV → **JD**  
+2. JD → **IM**  
+3. IM → **GU**  
+4. GU → **HI**  
+5. HI → **EE**  
+6. EE → **YW**  
+7. YW → **YU**  
+8. YU → **VF**
+
+So, after 8 mappings, we land on **VF**.
+
+Answer: VF"
+8,cot,14,KK,KK,1,0,8,RH RW GW WC EK OA EW QD KK,0,"We are given a mapping table and need to start at **RH** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- EK → OA  
+- RW → GW  
+- RH → RW  
+- QD → KK  
+- WC → EK  
+- VZ → RH  
+- ZJ → VZ  
+- KK → SH  
+- EW → QD  
+- GW → WC  
+- OA → EW  
+- SH → ZJ  
+
+We can think of this as a directed graph where each code points to another.
+
+### Step 2: Start at RH and follow the chain
+
+We'll go step by step, counting each move:
+
+1. **Start**: RH  
+2. Step 1: RH → **RW**  
+3. Step 2: RW → **GW**  
+4. Step 3: GW → **WC**  
+5. Step 4: WC → **EK**  
+6. Step 5: EK → **OA**  
+7. Step 6: OA → **EW**  
+8. Step 7: EW → **QD**  
+9. Step 8: QD → **KK**
+
+We have now followed the mapping **8 times**, and we land on **KK**.
+
+Answer: KK"
+8,cot,15,FV,FV,1,0,8,DI TC LU LM CX MR WC ME FV,0,"We are given a mapping table and need to start at **DI** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- LU → LM  
+- IJ → WS  
+- MR → WC  
+- PU → IJ  
+- WC → ME  
+- CX → MR  
+- ME → FV  
+- WS → DI  
+- LM → CX  
+- FV → PU  
+- TC → LU  
+- DI → TC  
+
+We’ll now follow the chain starting at **DI**, applying the mapping 8 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+1. **Start**: DI  
+   DI → **TC**
+
+2. TC → **LU**
+
+3. LU → **LM**
+
+4. LM → **CX**
+
+5. CX → **MR**
+
+6. MR → **WC**
+
+7. WC → **ME**
+
+8. ME → **FV**
+
+So after 8 mappings, we land on **FV**.
+
+Answer: FV"
+8,cot,16,WJ,WJ,1,0,8,FM OL RA PQ AJ OI UM QJ WJ,0,"We are given a mapping table and need to start at **FM** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- PQ → AJ  
+- RA → PQ  
+- OI → UM  
+- FM → OL  
+- OL → RA  
+- UM → QJ  
+- VO → NM  
+- NM → FM  
+- JE → VO  
+- AJ → OI  
+- WJ → JE  
+- QJ → WJ  
+
+---
+
+### Step-by-step traversal:
+
+Start: **FM**
+
+1. FM → **OL**  
+2. OL → **RA**  
+3. RA → **PQ**  
+4. PQ → **AJ**  
+5. AJ → **OI**  
+6. OI → **UM**  
+7. UM → **QJ**  
+8. QJ → **WJ**
+
+We have now followed the mapping **8 times**.
+
+Answer: WJ"
+8,cot,17,BD,BD,1,0,8,AI FJ ZS TU ZK TX BL TF BD,0,"We are given a mapping table and need to start at **AI** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mappings:
+- ZK -> TX  
+- ZS -> TU  
+- AI -> FJ  
+- QT -> AI  
+- TF -> BD  
+- FJ -> ZS  
+- TU -> ZK  
+- QO -> XE  
+- XE -> QT  
+- TX -> BL  
+- BD -> QO  
+- BL -> TF  
+
+### Step-by-step traversal starting at **AI**:
+
+1. **Start**: AI  
+2. **1st move**: AI -> **FJ**  
+3. **2nd move**: FJ -> **ZS**  
+4. **3rd move**: ZS -> **TU**  
+5. **4th move**: TU -> **ZK**  
+6. **5th move**: ZK -> **TX**  
+7. **6th move**: TX -> **BL**  
+8. **7th move**: BL -> **TF**  
+9. **8th move**: TF -> **BD**
+
+So after **8 mappings**, we land on **BD**.
+
+Answer: BD"
+8,cot,18,TQ,TQ,1,0,8,ML PR UI WJ YU PL LA CC TQ,0,"We are given a mapping table and need to start at **ML** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- CC → TQ  
+- TQ → CU  
+- PL → LA  
+- UI → WJ  
+- YU → PL  
+- CU → ZW  
+- ZW → WY  
+- WY → ML  
+- WJ → YU  
+- ML → PR  
+- PR → UI  
+- LA → CC  
+
+We’ll now follow the chain starting at **ML**, applying the mapping 8 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+1. **Start**: ML  
+2. ML → **PR**  
+3. PR → **UI**  
+4. UI → **WJ**  
+5. WJ → **YU**  
+6. YU → **PL**  
+7. PL → **LA**  
+8. LA → **CC**  
+9. CC → **TQ**
+
+Wait! We must be careful: the problem says **follow the mapping 8 times**, meaning we make **8 moves**, not list 8 nodes after the start.
+
+So:
+
+- Step 0 (start): ML  
+- Step 1: PR  
+- Step 2: UI  
+- Step 3: WJ  
+- Step 4: YU  
+- Step 5: PL  
+- Step 6: LA  
+- Step 7: CC  
+- Step 8: TQ  
+
+Thus, after **8 mappings**, we land on **TQ**.
+
+Answer: TQ"
+8,cot,19,CU,CU,1,0,8,GI DV AR GF ZL MB BZ CY CU,0,"We are given a mapping table and need to start at **GI** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Mapping Table (rewritten for clarity):
+- ZT → RG  
+- GF → ZL  
+- ZL → MB  
+- AR → GF  
+- RG → GI  
+- MB → BZ  
+- BZ → CY  
+- GI → DV  
+- CU → AX  
+- AX → ZT  
+- CY → CU  
+- DV → AR  
+
+We start at **GI**.
+
+---
+
+### Step-by-step traversal:
+
+1. **Start**: GI  
+2. **1st move**: GI → **DV**  
+3. **2nd move**: DV → **AR**  
+4. **3rd move**: AR → **GF**  
+5. **4th move**: GF → **ZL**  
+6. **5th move**: ZL → **MB**  
+7. **6th move**: MB → **BZ**  
+8. **7th move**: BZ → **CY**  
+9. **8th move**: CY → **CU**
+
+We made 8 moves **from GI**, so the final code is the result after the 8th mapping, which is **CU**.
+
+Answer: CU"
+8,cot,20,RM,RM,1,0,8,JQ UJ LB DT GH BY PP IF RM,0,"We are given a mapping table and need to start at **JQ** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- DT → GH  
+- PP → IF  
+- LB → DT  
+- MK → JQ  
+- GH → BY  
+- UJ → LB  
+- WT → MK  
+- IF → RM  
+- RM → VO  
+- JQ → UJ  
+- VO → WT  
+- BY → PP  
+
+We start at **JQ**.
+
+---
+
+### Step-by-step traversal:
+
+1. **Start**: JQ  
+2. **1st move**: JQ → **UJ**  
+3. **2nd move**: UJ → **LB**  
+4. **3rd move**: LB → **DT**  
+5. **4th move**: DT → **GH**  
+6. **5th move**: GH → **BY**  
+7. **6th move**: BY → **PP**  
+8. **7th move**: PP → **IF**  
+9. **8th move**: IF → **RM**
+
+We made 8 moves **after** the starting point, so the final code is **RM**.
+
+Answer: RM"
+8,cot,21,PM,PM,1,0,8,VO WA EP AW LR GI GN AP PM,0,"We are given a mapping table and need to start at **VO** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- CR → GB  
+- AW → LR  
+- GI → GN  
+- WA → EP  
+- LR → GI  
+- PM → DR  
+- AP → PM  
+- EP → AW  
+- DR → CR  
+- GN → AP  
+- VO → WA  
+- GB → VO  
+
+---
+
+### Step-by-step traversal:
+
+Start: **VO**
+
+1. VO → **WA**  
+2. WA → **EP**  
+3. EP → **AW**  
+4. AW → **LR**  
+5. LR → **GI**  
+6. GI → **GN**  
+7. GN → **AP**  
+8. AP → **PM**
+
+We have now followed the mapping **8 times**.
+
+### Final answer:
+Answer: PM"
+8,cot,22,JZ,JZ,1,0,8,IJ ON QD PJ WC JB LR LO JZ,0,"We are given a mapping table and need to start at **IJ** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- JZ → LS  
+- VJ → FZ  
+- WC → JB  
+- LO → JZ  
+- QD → PJ  
+- IJ → ON  
+- LS → VJ  
+- FZ → IJ  
+- LR → LO  
+- JB → LR  
+- ON → QD  
+- PJ → WC  
+
+This appears to form a cycle. Let's trace it step by step starting from **IJ**.
+
+---
+
+### Step 2: Follow the chain step-by-step
+
+We start at **IJ**.
+
+1. **Step 1**: IJ → **ON**  
+2. **Step 2**: ON → **QD**  
+3. **Step 3**: QD → **PJ**  
+4. **Step 4**: PJ → **WC**  
+5. **Step 5**: WC → **JB**  
+6. **Step 6**: JB → **LR**  
+7. **Step 7**: LR → **LO**  
+8. **Step 8**: LO → **JZ**
+
+So after 8 mappings, we land on **JZ**.
+
+Answer: JZ"
+8,cot,23,LL,LL,1,0,8,SM DI DB VB PI DJ UV QI LL,0,"We are given a mapping table and need to start at **SM** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- DJ → UV  
+- LL → VU  
+- ZU → SM  
+- QI → LL  
+- DI → DB  
+- VB → PI  
+- DL → ZU  
+- DB → VB  
+- SM → DI  
+- PI → DJ  
+- VU → DL  
+- UV → QI  
+
+---
+
+### Step-by-step traversal:
+
+Start at: **SM**
+
+1. **SM → DI**  
+2. **DI → DB**  
+3. **DB → VB**  
+4. **VB → PI**  
+5. **PI → DJ**  
+6. **DJ → UV**  
+7. **UV → QI**  
+8. **QI → LL**
+
+We have now followed the mapping **8 times**.
+
+### Final answer:
+Answer: LL"
+8,cot,24,US,US,1,0,8,VG QN IG DA XB SQ NV UL US,0,"We are given a mapping table and need to start at **VG** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Mapping Table (rewritten for clarity):
+- IG → DA  
+- UL → US  
+- XB → SQ  
+- VG → QN  
+- US → UQ  
+- KZ → CT  
+- DA → XB  
+- SQ → NV  
+- QN → IG  
+- NV → UL  
+- CT → VG  
+- UQ → KZ  
+
+We start at **VG**.
+
+---
+
+### Step-by-step traversal:
+
+1. **Start**: VG  
+2. **1st move**: VG → **QN**  
+3. **2nd move**: QN → **IG**  
+4. **3rd move**: IG → **DA**  
+5. **4th move**: DA → **XB**  
+6. **5th move**: XB → **SQ**  
+7. **6th move**: SQ → **NV**  
+8. **7th move**: NV → **UL**  
+9. **8th move**: UL → **US**
+
+We made 8 moves **after** the starting point, so the final code is **US**.
+
+Answer: US"
+8,cot,25,UC,UC,1,0,8,OE HA UF OC PS HK WI MT UC,0,"We are given a mapping table and need to start at **OE** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- KF → OE  
+- UF → OC  
+- MT → UC  
+- UC → PM  
+- RG → KF  
+- OC → PS  
+- HA → UF  
+- PS → HK  
+- **OE → HA**  
+- WI → MT  
+- PM → RG  
+- HK → WI  
+
+We’ll start at **OE** and apply the mapping 8 times, i.e., move 8 steps forward through the chain.
+
+---
+
+### Step 2: Begin tracing the chain
+
+Start: **OE**
+
+1. OE → **HA**  
+2. HA → **UF**  
+3. UF → **OC**  
+4. OC → **PS**  
+5. PS → **HK**  
+6. HK → **WI**  
+7. WI → **MT**  
+8. MT → **UC**
+
+So after 8 mappings, we land on **UC**.
+
+Answer: UC"
+8,cot,26,CF,CF,1,0,8,JP XH PW IW RX JB MJ SQ CF,0,"We are given a mapping table and need to start at **JP** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Given mappings:
+- SQ → CF  
+- JB → MJ  
+- LH → JP  
+- XH → PW  
+- PW → IW  
+- IW → RX  
+- JP → XH  
+- AO → WD  
+- MJ → SQ  
+- CF → AO  
+- WD → LH  
+- RX → JB  
+
+---
+
+### Step-by-step traversal:
+
+Start at **JP**
+
+1. **JP → XH**  
+2. **XH → PW**  
+3. **PW → IW**  
+4. **IW → RX**  
+5. **RX → JB**  
+6. **JB → MJ**  
+7. **MJ → SQ**  
+8. **SQ → CF**
+
+We have now followed the mapping **8 times**.
+
+### Final answer:
+Answer: CF"
+8,cot,27,MK,MK,1,0,8,VW KW TR GU JB JI DQ FC MK,0,"We are given a mapping table and need to start at **VW** and follow the mapping **8 times**.
+
+### Step 1: Write down the mappings clearly
+From the table:
+
+- VN → UX  
+- JI → DQ  
+- DQ → FC  
+- TR → GU  
+- KW → TR  
+- ZX → VW  
+- FC → MK  
+- VW → KW  
+- JB → JI  
+- MK → VN  
+- UX → ZX  
+- GU → JB  
+
+We’ll follow the chain starting at **VW**, applying the mapping 8 times.
+
+---
+
+### Step 2: Follow the chain step by step
+
+Start: **VW**
+
+1. VW → **KW**  
+2. KW → **TR**  
+3. TR → **GU**  
+4. GU → **JB**  
+5. JB → **JI**  
+6. JI → **DQ**  
+7. DQ → **FC**  
+8. FC → **MK**
+
+So after 8 mappings, we land on **MK**.
+
+Answer: MK"
+8,cot,28,SY,SY,1,0,8,FJ RW LC IP IT LQ GZ WQ SY,0,"We are given a mapping table and need to start at **FJ** and follow the mapping **8 times**. Let's proceed step by step.
+
+### Mapping Table:
+- GZ -> WQ  
+- LS -> CT  
+- LQ -> GZ  
+- SY -> LS  
+- WQ -> SY  
+- FJ -> RW  
+- CT -> HA  
+- HA -> FJ  
+- IT -> LQ  
+- IP -> IT  
+- RW -> LC  
+- LC -> IP  
+
+### Step-by-step traversal starting at **FJ**:
+
+1. **FJ** → **RW**  
+2. **RW** → **LC**  
+3. **LC** → **IP**  
+4. **IP** → **IT**  
+5. **IT** → **LQ**  
+6. **LQ** → **GZ**  
+7. **GZ** → **WQ**  
+8. **WQ** → **SY**
+
+So after **8 mappings**, we land on **SY**.
+
+Answer: SY"
+8,cot,29,LB,LB,1,0,8,DZ JZ ON BC TI RR QE RQ LB,0,"We are given a mapping table and need to start at **DZ** and follow the mappings **8 times**. Let's proceed step by step.
+
+### Given Mappings:
+- WS → CT  
+- CT → AR  
+- DZ → JZ  
+- RR → QE  
+- JZ → ON  
+- RQ → LB  
+- TI → RR  
+- ON → BC  
+- AR → DZ  
+- QE → RQ  
+- BC → TI  
+- LB → WS  
+
+### Step-by-step traversal starting at DZ:
+
+1. **Start**: DZ  
+2. 1st move: DZ → **JZ**  
+3. 2nd move: JZ → **ON**  
+4. 3rd move: ON → **BC**  
+5. 4th move: BC → **TI**  
+6. 5th move: TI → **RR**  
+7. 6th move: RR → **QE**  
+8. 7th move: QE → **RQ**  
+9. 8th move: RQ → **LB**
+
+So after **8 mappings**, we land on **LB**.
+
+Answer: LB"
