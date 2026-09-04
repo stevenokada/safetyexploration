@@ -30,6 +30,8 @@ import argparse, asyncio, csv, os, random, re, string, sys, time
 
 import httpx
 
+import task_arith
+
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 REGISTRY = "models.json"
 
@@ -165,12 +167,13 @@ def parallel_question(lines, starts, letter, k):
 
 def build_messages(rng, k, condition, task, wording):
     """Returns (messages, gold, meta) where meta carries task-specific extras."""
+    fmt = "number" if task in ("parallel_count", "arith") else "code"
     if condition == "cot":
         instr = ("Solve the problem. Think step by step, then give your final "
-                 "answer on its own line in the format 'Answer: XX'.")
+                 f"answer on its own line in the format 'Answer: <{fmt}>'.")
     else:
-        instr = ("Answer immediately. Respond with ONLY the final code in the "
-                 "format 'Answer: XX'. Do not write anything else, do not reason.")
+        instr = (f"Answer immediately. Respond with ONLY the final {fmt} in the "
+                 f"format 'Answer: <{fmt}>'. Do not write anything else, do not reason.")
     messages = [{"role": "system", "content": instr}]
 
     def make(kk):
@@ -180,6 +183,9 @@ def build_messages(rng, k, condition, task, wording):
             steps = " -> ".join(full[:kk + 1])
             reasoning = f"Following the chain: {steps}."
             return q, gold, reasoning, full
+        elif task == "arith":
+            q, gold, inter, reasoning = task_arith.generate(rng, kk)
+            return q, gold, reasoning, None
         elif task == "parallel_count":
             lines, starts, gold = gen_parallel_count(rng, kk)
             q = parallel_count_question(lines, starts, kk)
@@ -214,7 +220,7 @@ def build_messages(rng, k, condition, task, wording):
 # ---------------------------------------------------------------- scoring
 
 def extract_answer(condition, completion, task="serial"):
-    numeric = task == "parallel_count"
+    numeric = task in ("parallel_count", "arith")
     if condition == "cot":
         m = (NUM_ANS_RE if numeric else ANS_RE).findall(completion)
         return m[-1] if m else None
@@ -224,7 +230,7 @@ def extract_answer(condition, completion, task="serial"):
 def leak_flag(condition, completion, task="serial"):
     if condition == "cot":
         return False
-    tokens = CODE_RE.findall(completion) if task != "parallel_count" else NUM_RE.findall(completion)
+    tokens = (NUM_RE if task in ("parallel_count", "arith") else CODE_RE).findall(completion)
     return len(completion.split()) > 4 or len(tokens) > 1
 
 # ---------------------------------------------------------------- api
@@ -289,7 +295,7 @@ async def main():
     ap.add_argument("--allow-unregistered", action="store_true",
                     help="permit a model with no published J-Lens (no internals follow-up possible)")
     ap.add_argument("--task", default="serial",
-                    choices=["serial", "parallel", "parallel_count"])
+                    choices=["serial", "parallel", "parallel_count", "arith"])
     ap.add_argument("--wording", default="default", choices=["default", "explicit"])
     ap.add_argument("--n", type=int, default=30)
     ap.add_argument("--concurrency", type=int, default=20)
