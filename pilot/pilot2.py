@@ -26,7 +26,7 @@ Usage:
   OPENROUTER_API_KEY=... python3 pilot2.py --task serial --wording explicit ...
   OPENROUTER_API_KEY=... python3 pilot2.py --task parallel --conditions immediate,filler ...
 """
-import argparse, asyncio, csv, os, random, re, string, sys, time
+import argparse, asyncio, csv, os, random, re, string, sys, time, zlib
 
 import httpx
 
@@ -69,6 +69,14 @@ NUM_RE = re.compile(r"\b\d+\b")
 NUM_ANS_RE = re.compile(r"Answer:\s*(\d+)\b")
 
 # ---------------------------------------------------------------- shared gen
+
+def set_fewshot(n):
+    """Few-shot count has been fixed at 3 since the first pilot and never varied.
+    It is both a cost lever and a possible confound: every shot shows filler
+    followed immediately by a correct answer, which may teach the model that the
+    filler region is ignorable scaffolding and suppress any benefit from it."""
+    global FEWSHOT
+    FEWSHOT = n
 
 def set_filler(n):
     """Filler length must be settable per run: matching it to the model's actual
@@ -300,6 +308,8 @@ async def run_one(client, sem, model, seed, k, condition, task, wording, idx):
         "error": int(err), "finish": res["finish"],
         "out_tokens": res["out_tokens"], "reasoning_tokens": res["reasoning_tokens"],
         "model": model.split("/")[-1], "completion": completion[:2000],
+        "prompt": messages[-2]["content"][:6000] if condition != "cot" else messages[-1]["content"][:6000],
+        "seed": seed,
     }
 
 # ---------------------------------------------------------------- main
@@ -316,6 +326,8 @@ async def main():
     ap.add_argument("--n", type=int, default=30)
     ap.add_argument("--concurrency", type=int, default=20)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--fewshot", type=int, default=3,
+                    help="number of few-shot examples (was fixed at 3 in all earlier runs)")
     ap.add_argument("--filler-n", type=int, default=100, dest="filler_n",
                     help="number of counting-filler tokens appended before the answer")
     ap.add_argument("--nodes", type=int, default=12, help="mapping table size (must exceed max k)")
@@ -329,6 +341,7 @@ async def main():
     ks = [int(x) for x in args.ks.split(",")]
     set_nodes(args.nodes)
     set_filler(args.filler_n)
+    set_fewshot(args.fewshot)
     if max(ks) >= args.nodes:
         sys.exit(f"--nodes ({args.nodes}) must exceed max k ({max(ks)})")
 
@@ -357,7 +370,12 @@ async def main():
         for k in ks:
             for cond in conds:
                 for i in range(args.n):
-                    seed = hash((args.seed, args.task, k, i)) & 0xFFFFFFFF
+                    # zlib.crc32, NOT hash(): Python randomizes string hashing per
+                    # process, so hash()-derived seeds differ between invocations.
+                    # That silently broke pairing whenever two conditions were run
+                    # as separate processes, and made prompts unreproducible.
+                    key = f"{args.seed}|{args.task}|{k}|{i}".encode()
+                    seed = zlib.crc32(key) & 0xFFFFFFFF
                     tasks.append(run_one(client, sem, args.model, seed, k, cond,
                                          args.task, args.wording, i))
         print(f"Running {len(tasks)} calls | {args.model} | {args.task}/{args.wording}")

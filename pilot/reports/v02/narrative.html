@@ -110,3 +110,19 @@ How many crates does the depot have at the end of the day?</pre>
   </ul>
 </section>
 </div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">07</span><h2>The transcripts themselves</h2></div>
+  <p>Every number above is a count over model responses, and counts hide things. These are real trials as the model saw them &mdash; the prompt it received and the tokens it produced &mdash; searchable so a claim can be checked against the raw material rather than taken on trust.</p>
+  <p>Search matches prompt text, completion text, and the answer fields. The filters below narrow by task, condition, depth, and whether the model got it right.</p>
+</section>
+</div>
+
+<figure>
+  <div class="ftitle">Prompt and response browser</div>
+  <div class="fsub">A representative sample across every task family and condition, on gemma-3-27b-it.</div>
+  <div class="tx-controls" data-tx="controls"></div>
+  <div data-tx="list"></div>
+  <figcaption>Forced-answer trials are capped at 8 output tokens with the turn prefilled with <code>Answer:</code>, which is why completions are terse. Chain-of-thought trials show the model's full working. On the chained-lookup task, <code>landed</code> reports how many hops along the cycle the answer actually sits &mdash; the measure that shows traversal running past the requested stop.</figcaption>
+</figure>

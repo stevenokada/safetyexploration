@@ -1,0 +1,129 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+parallel_count,default,8,immediate,0,4,4,1,-1,0,0,stop,3,0,gemma-3-27b-it, 4,"Mapping table:
+ER -> CP
+WP -> FK
+KJ -> GN
+MN -> FQ
+OA -> KJ
+FK -> MN
+GN -> IQ
+IQ -> OU
+PZ -> ER
+FQ -> PZ
+OU -> WP
+CP -> OA
+
+Consider these 8 codes: CP, KJ, ER, FQ, OU, WP, MN, IQ.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",563747712
+parallel_count,default,8,immediate,1,6,3,0,-1,0,0,stop,3,0,gemma-3-27b-it, 3,"Mapping table:
+YW -> YJ
+JB -> JA
+FE -> IP
+YJ -> KV
+IP -> YW
+MW -> XH
+HQ -> FE
+PP -> KS
+JA -> PP
+KV -> JB
+XH -> HQ
+KS -> MW
+
+Consider these 8 codes: JB, HQ, MW, JA, FE, XH, KV, YJ.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",1453140758
+parallel_count,default,8,immediate,2,5,3,0,-1,0,0,stop,3,0,gemma-3-27b-it, 3,"Mapping table:
+CO -> UL
+HQ -> YZ
+ZZ -> CO
+MF -> CB
+ZW -> IL
+IL -> ZZ
+CU -> HQ
+MP -> MF
+CB -> PJ
+PJ -> CU
+YZ -> ZW
+UL -> MP
+
+Consider these 8 codes: CB, ZZ, CO, UL, MP, PJ, CU, IL.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",3482614444
+parallel_count,default,8,immediate,3,3,5,0,-1,0,0,stop,3,0,gemma-3-27b-it, 5,"Mapping table:
+QK -> MF
+WR -> QK
+FP -> NI
+TP -> PB
+JN -> FP
+QE -> TP
+PB -> ID
+VF -> AM
+AM -> QE
+MF -> JN
+NI -> VF
+ID -> WR
+
+Consider these 8 codes: NI, FP, MF, ID, QE, QK, TP, JN.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",3096660538
+parallel_count,default,8,immediate,4,6,2,0,-1,0,0,stop,3,0,gemma-3-27b-it, 2,"Mapping table:
+KL -> WY
+WN -> VS
+FL -> UR
+WY -> WN
+SY -> CQ
+CP -> SY
+VS -> MO
+BO -> CP
+HH -> BO
+CQ -> KL
+UR -> HH
+MO -> FL
+
+Consider these 8 codes: WY, BO, VS, FL, CQ, UR, HH, MO.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",653778841
+parallel_count,default,8,immediate,5,5,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4,"Mapping table:
+RK -> RA
+UY -> HE
+RA -> FM
+HE -> KY
+UJ -> UY
+GR -> RL
+KY -> GR
+FM -> BI
+CU -> RK
+BI -> BJ
+BJ -> UJ
+RL -> CU
+
+Consider these 8 codes: FM, HE, BI, UJ, RA, UY, BJ, GR.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",1374744335
+parallel_count,default,8,immediate,6,5,2,0,-1,0,0,stop,3,0,gemma-3-27b-it, 2,"Mapping table:
+UY -> DP
+DH -> UY
+EG -> QC
+VK -> DH
+SL -> FX
+IY -> VK
+QR -> DT
+DT -> LC
+FX -> IY
+LC -> SL
+QC -> QR
+DP -> EG
+
+Consider these 8 codes: QR, EG, DT, UY, LC, DH, SL, DP.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",3371810485
+parallel_count,default,8,immediate,7,5,3,0,-1,0,0,stop,3,0,gemma-3-27b-it, 3,"Mapping table:
+EX -> QV
+QV -> FO
+TN -> ZO
+FM -> AT
+KR -> TN
+AT -> YX
+FO -> HJ
+ZI -> EX
+ZD -> ZI
+ZO -> FM
+HJ -> KR
+YX -> ZD
+
+Consider these 8 codes: KR, ZI, ZO, QV, FM, FO, YX, TN.
+Apply the mapping ONCE to each of them. How many of the 8 results begin with a letter in A-M? Answer with just the number.",3221130787

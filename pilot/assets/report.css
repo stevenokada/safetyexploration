@@ -130,3 +130,30 @@ footer{border-top:1px solid var(--rule); margin-top:64px; padding:28px 0 72px;
 .tick{font-family:"IBM Plex Mono",monospace; font-size:10.5px; fill:var(--muted)}
 .axlab{font-family:"IBM Plex Mono",monospace; font-size:10.5px; fill:var(--muted);
   letter-spacing:.05em}
+
+
+/* ---------- transcript browser ---------- */
+.tx-controls{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:14px}
+.tx-controls input[type=search]{flex:1 1 220px; min-width:180px; padding:8px 11px;
+  border:1px solid var(--rule); border-radius:4px; background:var(--ground);
+  color:var(--ink); font-family:"IBM Plex Sans",sans-serif; font-size:14px}
+.tx-controls select{padding:7px 9px; border:1px solid var(--rule); border-radius:4px;
+  background:var(--ground); color:var(--ink); font-family:"IBM Plex Mono",monospace; font-size:12px}
+.tx-controls input:focus-visible,.tx-controls select:focus-visible{outline:2px solid var(--parallel); outline-offset:1px}
+.tx-count{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+.tx-item{border:1px solid var(--rule); border-radius:4px; margin-bottom:9px; background:var(--ground)}
+.tx-head{display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center; padding:9px 13px;
+  cursor:pointer; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink-2)}
+.tx-head:hover{background:var(--surface-2)}
+.tx-pill{padding:2px 8px; border-radius:99px; font-size:10.5px; letter-spacing:.04em}
+.tx-ok{background:var(--parallel-soft); color:var(--parallel)}
+.tx-no{background:var(--serial-soft); color:var(--serial)}
+.tx-body{display:none; border-top:1px solid var(--rule); padding:13px}
+.tx-item[open] .tx-body{display:block}
+.tx-label{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 5px}
+.tx-body pre{margin:0 0 14px; padding:11px; background:var(--surface-2); border-radius:3px;
+  font-family:"IBM Plex Mono",monospace; font-size:12px; line-height:1.6;
+  white-space:pre-wrap; word-break:break-word; max-height:290px; overflow:auto; color:var(--ink-2)}
+.tx-body mark{background:var(--parallel-soft); color:var(--ink); padding:0 2px; border-radius:2px}
+.tx-empty{padding:20px; text-align:center; color:var(--muted); font-size:14px}

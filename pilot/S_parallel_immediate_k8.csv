@@ -1,0 +1,129 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+parallel,default,8,immediate,0,RY,RY,1,-1,0,0,stop,2,0,gemma-3-27b-it, RY,"Mapping table:
+IQ -> ER
+XI -> KI
+PV -> FH
+FR -> HD
+ER -> AV
+FH -> XI
+JO -> RY
+KI -> IQ
+HD -> AF
+AF -> JO
+AV -> FR
+RY -> PV
+
+Consider these 8 codes: KI, AV, XI, JO, ER, RY, FH, PV.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter P. Which of the 8 codes is it? Answer with that starting code.",939313880
+parallel,default,8,immediate,1,MD,MD,1,-1,0,0,stop,2,0,gemma-3-27b-it, MD,"Mapping table:
+MJ -> FJ
+FJ -> SJ
+UL -> QK
+ZP -> MJ
+MD -> ZP
+QK -> HN
+QA -> TY
+SJ -> QA
+BT -> HE
+HE -> MD
+HN -> BT
+TY -> UL
+
+Consider these 8 codes: BT, QA, HE, TY, UL, FJ, MD, QK.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter Z. Which of the 8 codes is it? Answer with that starting code.",1090255438
+parallel,default,8,immediate,2,SB,SB,1,-1,0,0,stop,2,0,gemma-3-27b-it, SB,"Mapping table:
+SB -> UT
+KE -> OW
+IQ -> WZ
+CD -> OI
+UT -> IQ
+MR -> EO
+JG -> MR
+MY -> SB
+WZ -> KE
+OI -> JG
+OW -> CD
+EO -> MY
+
+Consider these 8 codes: SB, KE, WZ, MY, UT, JG, EO, CD.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter U. Which of the 8 codes is it? Answer with that starting code.",3656559604
+parallel,default,8,immediate,3,QW,YX,0,-1,0,0,stop,3,0,gemma-3-27b-it, YX,"Mapping table:
+DA -> DM
+MP -> IA
+YX -> RN
+QW -> YX
+OQ -> QW
+YL -> MP
+DM -> OC
+IA -> CM
+RN -> ZE
+OC -> YL
+CM -> OQ
+ZE -> DA
+
+Consider these 8 codes: QW, OQ, DA, IA, MP, DM, YX, YL.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter Y. Which of the 8 codes is it? Answer with that starting code.",2935331682
+parallel,default,8,immediate,4,YD,YD,1,-1,0,0,stop,3,0,gemma-3-27b-it, YD,"Mapping table:
+WP -> RT
+ON -> XG
+BC -> IP
+XG -> AZ
+PK -> XQ
+IP -> HK
+RT -> BC
+YD -> ON
+AZ -> AA
+HK -> PK
+XQ -> YD
+AA -> WP
+
+Consider these 8 codes: XQ, RT, BC, PK, HK, ON, YD, IP.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter O. Which of the 8 codes is it? Answer with that starting code.",814812865
+parallel,default,8,immediate,5,BC,AH,0,-1,0,0,stop,2,0,gemma-3-27b-it,AH,"Mapping table:
+YP -> MF
+JH -> BC
+MF -> IM
+BX -> SL
+AH -> BE
+BE -> UB
+UB -> TX
+TX -> HN
+BC -> AH
+HN -> BX
+SL -> YP
+IM -> JH
+
+Consider these 8 codes: AH, TX, BX, BC, BE, IM, HN, MF.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter A. Which of the 8 codes is it? Answer with that starting code.",1201028695
+parallel,default,8,immediate,6,BE,BE,1,-1,0,0,stop,2,0,gemma-3-27b-it, BE,"Mapping table:
+FF -> QL
+XN -> XS
+ZW -> AU
+AU -> BR
+QL -> QD
+XS -> ER
+BE -> NX
+NX -> NV
+BR -> XN
+NV -> ZW
+QD -> BE
+ER -> FF
+
+Consider these 8 codes: XS, QL, QD, XN, ER, BR, BE, AU.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter N. Which of the 8 codes is it? Answer with that starting code.",3734990829
+parallel,default,8,immediate,7,KD,KD,1,-1,0,0,stop,2,0,gemma-3-27b-it, KD,"Mapping table:
+RK -> SI
+TQ -> CL
+KD -> ZE
+SF -> GK
+GK -> TT
+KJ -> SF
+KY -> RK
+SI -> KD
+CL -> HK
+TT -> TQ
+HK -> KY
+ZE -> KJ
+
+Consider these 8 codes: GK, TT, KJ, TQ, SI, KY, HK, KD.
+Apply the mapping ONCE to each of them. Exactly one of them maps to a code beginning with the letter Z. Which of the 8 codes is it? Answer with that starting code.",2845335419

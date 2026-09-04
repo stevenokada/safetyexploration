@@ -1,0 +1,137 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+serial,default,4,cot,0,XL,XL,1,4,0,0,stop,20,0,gemma-3-27b-it,"
+Following the chain: SO -> SP -> YA -> MJ -> XL.
+Answer: XL","Mapping table:
+MJ -> XL
+SO -> SP
+XX -> DI
+TJ -> NB
+SP -> YA
+DI -> MC
+NB -> CU
+YA -> MJ
+CG -> SO
+CU -> CG
+XL -> XX
+MC -> TJ
+
+Start at SO and follow the mapping 4 times. What code do you land on?",1487357817
+serial,default,4,cot,1,JB,JB,1,4,0,0,stop,22,0,gemma-3-27b-it,"
+Following the chain: FV -> YZ -> TJ -> YK -> JB.
+Answer: JB","Mapping table:
+UV -> RE
+EZ -> UM
+JB -> EZ
+EP -> RL
+YL -> FV
+YZ -> TJ
+RE -> YL
+UM -> EP
+FV -> YZ
+YK -> JB
+RL -> UV
+TJ -> YK
+
+Start at FV and follow the mapping 4 times. What code do you land on?",799045615
+serial,default,4,cot,2,BY,BY,1,4,0,0,stop,20,0,gemma-3-27b-it,"
+Following the chain: OR -> JG -> PH -> BB -> BY.
+Answer: BY","Mapping table:
+FB -> LF
+BY -> TY
+VG -> ST
+OR -> JG
+BB -> BY
+WA -> VG
+UL -> OR
+JG -> PH
+LF -> WA
+ST -> UL
+TY -> FB
+PH -> BB
+
+Start at OR and follow the mapping 4 times. What code do you land on?",3064538709
+serial,default,4,cot,3,QA,QA,1,4,0,0,stop,20,0,gemma-3-27b-it,"
+Following the chain: GN -> DN -> CE -> WL -> QA.
+Answer: QA","Mapping table:
+DN -> CE
+WK -> MY
+GN -> DN
+OL -> YQ
+WL -> QA
+CE -> WL
+YQ -> WK
+RL -> HU
+HU -> OL
+MQ -> RL
+QA -> MQ
+MY -> GN
+
+Start at GN and follow the mapping 4 times. What code do you land on?",3249411779
+serial,default,4,cot,4,IR,IR,1,4,0,0,stop,20,0,gemma-3-27b-it,"
+Following the chain: KH -> MJ -> PG -> NB -> IR.
+Answer: IR","Mapping table:
+CB -> UJ
+IR -> QW
+KH -> MJ
+DM -> OQ
+NB -> IR
+OQ -> AE
+OF -> DM
+AE -> CB
+QW -> OF
+UJ -> KH
+PG -> NB
+MJ -> PG
+
+Start at KH and follow the mapping 4 times. What code do you land on?",1607107424
+serial,default,4,cot,5,RG,RG,1,4,0,0,stop,20,0,gemma-3-27b-it,"
+Following the chain: JU -> OF -> LA -> ND -> RG.
+Answer: RG","Mapping table:
+RG -> KS
+IS -> GG
+RL -> TT
+TD -> RL
+ND -> RG
+TT -> WZ
+WZ -> IS
+OF -> LA
+JU -> OF
+GG -> JU
+KS -> TD
+LA -> ND
+
+Start at JU and follow the mapping 4 times. What code do you land on?",684569590
+serial,default,4,cot,6,IL,IL,1,4,0,0,stop,20,0,gemma-3-27b-it,"
+Following the chain: LE -> IM -> PY -> EK -> IL.
+Answer: IL","Mapping table:
+JO -> FK
+PF -> LM
+HZ -> JO
+LM -> HZ
+FK -> LE
+EK -> IL
+PY -> EK
+IL -> SH
+QE -> PF
+SH -> QE
+IM -> PY
+LE -> IM
+
+Start at LE and follow the mapping 4 times. What code do you land on?",2982470220
+serial,default,4,cot,7,HG,HG,1,4,0,0,stop,21,0,gemma-3-27b-it,"
+Following the chain: ZL -> PG -> VH -> IO -> HG.
+Answer: HG","Mapping table:
+ZT -> FB
+VH -> IO
+PG -> VH
+AN -> ZE
+UP -> ZL
+FB -> UP
+HG -> AN
+IO -> HG
+ZL -> PG
+ZE -> VE
+YH -> ZT
+VE -> YH
+
+Start at ZL and follow the mapping 4 times. What code do you land on?",3334722266

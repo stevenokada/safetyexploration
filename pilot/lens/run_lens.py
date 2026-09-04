@@ -188,10 +188,15 @@ def run(model, tok, lens, args, device):
                         if lg is None:
                             continue
                         lgf = lg.float()
-                        order = lgf.argsort(dim=-1, descending=True)
+                        # rank = how many vocab entries beat the target. A full
+                        # argsort over a 248k vocab for every (layer, position)
+                        # dominates runtime; a comparison-and-sum is the same
+                        # number and orders of magnitude cheaper.
+                        probs = lgf.softmax(-1)
                         for label, tid in targets.items():
-                            rank = (order == tid).nonzero()[:, 1]
-                            prob = lgf.softmax(-1)[:, tid]
+                            tgt = lgf[:, tid:tid + 1]
+                            rank = (lgf > tgt).sum(dim=-1)
+                            prob = probs[:, tid]
                             for pi, p in enumerate(pos):
                                 rows.append({
                                     "k": k, "condition": cond, "prompt": idx,

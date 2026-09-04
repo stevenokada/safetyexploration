@@ -202,6 +202,7 @@ q(root,'[data-key="leak-inline"]').textContent = leakPct+'% (5 of 8,280)';
 
 
 function renderV2(root, D){
+  if (D.transcripts) buildBrowser(root, D.transcripts);
   const C = {parallel:'var(--parallel)', parallel_count:'var(--count)'};
   // --- width sweep to k=64, one panel per model
   const wm = q(root,'[data-fig="width2"]');
@@ -265,4 +266,57 @@ function renderV2(root, D){
   const xl=el('text',{x:W/2,y:H-4,'text-anchor':'middle',class:'axlab'});
   xl.textContent='filler tokens appended before the forced answer'; svg.appendChild(xl);
   fm.appendChild(svg);
+}
+
+
+function buildBrowser(root, TX){
+  const ctl = root.querySelector('[data-tx="controls"]');
+  const list = root.querySelector('[data-tx="list"]');
+  if (!ctl || !list) return;
+  const uniq = f => [...new Set(TX.map(f))].sort();
+  ctl.innerHTML =
+    `<input type="search" placeholder="search prompts and responses…" aria-label="Search transcripts">
+     <select data-f="task"><option value="">all tasks</option>${uniq(t=>t.task).map(v=>`<option>${v}</option>`).join('')}</select>
+     <select data-f="cond"><option value="">all conditions</option>${uniq(t=>t.cond).map(v=>`<option>${v}</option>`).join('')}</select>
+     <select data-f="k"><option value="">all depths</option>${uniq(t=>t.k).map(v=>`<option>${v}</option>`).join('')}</select>
+     <select data-f="ok"><option value="">correct or not</option><option value="1">correct only</option><option value="0">wrong only</option></select>
+     <span class="tx-count"></span>`;
+
+  const esc = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const hl = (s, q) => {
+    const e = esc(s);
+    if (!q) return e;
+    return e.replace(new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'), m=>`<mark>${m}</mark>`);
+  };
+
+  function draw(){
+    const q = ctl.querySelector('input').value.trim();
+    const f = {};
+    ctl.querySelectorAll('select').forEach(s => { if (s.value) f[s.dataset.f] = s.value; });
+    const hits = TX.filter(t =>
+      (!f.task || t.task === f.task) && (!f.cond || t.cond === f.cond) &&
+      (!f.k || String(t.k) === f.k) && (!f.ok || String(t.ok) === f.ok) &&
+      (!q || (t.prompt + ' ' + t.completion + ' ' + t.gold + ' ' + t.pred).toLowerCase().includes(q.toLowerCase())));
+    ctl.querySelector('.tx-count').textContent = `${hits.length} of ${TX.length}`;
+    if (!hits.length){ list.innerHTML = '<div class="tx-empty">No transcripts match.</div>'; return; }
+    list.innerHTML = hits.slice(0, 60).map(t => `
+      <details class="tx-item">
+        <summary class="tx-head">
+          <span class="tx-pill ${t.ok ? 'tx-ok' : 'tx-no'}">${t.ok ? 'correct' : 'wrong'}</span>
+          <span>${t.task}</span><span>${t.cond}</span><span>k=${t.k}</span>
+          <span>expected ${esc(t.gold)}</span><span>answered ${esc(t.pred || '—')}</span>
+          ${t.eff !== null && t.eff !== undefined && t.task === 'serial' ? `<span>landed ${t.eff} hops</span>` : ''}
+          ${t.toks > 0 ? `<span>${t.toks} tokens out</span>` : ''}
+        </summary>
+        <div class="tx-body">
+          <p class="tx-label">Prompt as the model received it</p>
+          <pre>${hl(t.prompt, q)}</pre>
+          <p class="tx-label">Model response</p>
+          <pre>${hl(t.completion, q) || '<em>(empty)</em>'}</pre>
+        </div>
+      </details>`).join('') +
+      (hits.length > 60 ? `<div class="tx-empty">Showing the first 60 of ${hits.length}. Narrow the search to see more.</div>` : '');
+  }
+  ctl.addEventListener('input', draw);
+  draw();
 }

@@ -1,0 +1,151 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion
+serial,default,2,filler,0,QH,HW,0,3,0,0,stop,2,0,gemma-3-27b-it, HW
+serial,default,2,filler,1,TF,TF,1,2,0,0,stop,2,0,gemma-3-27b-it, TF
+serial,default,2,filler,2,IC,IC,1,2,0,0,stop,2,0,gemma-3-27b-it, IC
+serial,default,2,filler,3,HI,HI,1,2,0,0,stop,2,0,gemma-3-27b-it, HI
+serial,default,2,filler,4,FU,WZ,0,3,0,0,stop,3,0,gemma-3-27b-it, WZ
+serial,default,2,filler,5,JV,YD,0,9,0,0,stop,3,0,gemma-3-27b-it, YD
+serial,default,2,filler,6,IF,MI,0,3,0,0,stop,2,0,gemma-3-27b-it, MI
+serial,default,2,filler,7,WQ,WQ,1,2,0,0,stop,3,0,gemma-3-27b-it, WQ
+serial,default,2,filler,8,JM,JM,1,2,0,0,stop,2,0,gemma-3-27b-it, JM
+serial,default,2,filler,9,ZT,ZT,1,2,0,0,stop,3,0,gemma-3-27b-it, ZT
+serial,default,2,filler,10,MS,ER,0,1,0,0,stop,2,0,gemma-3-27b-it, ER
+serial,default,2,filler,11,HW,HW,1,2,0,0,stop,2,0,gemma-3-27b-it, HW
+serial,default,2,filler,12,GG,XS,0,3,0,0,stop,2,0,gemma-3-27b-it, XS
+serial,default,2,filler,13,AB,QD,0,7,0,0,stop,2,0,gemma-3-27b-it, QD
+serial,default,2,filler,14,CW,CW,1,2,0,0,stop,2,0,gemma-3-27b-it, CW
+serial,default,2,filler,15,ZS,FU,0,1,0,0,stop,2,0,gemma-3-27b-it, FU
+serial,default,2,filler,16,MZ,RD,0,8,0,0,stop,2,0,gemma-3-27b-it, RD
+serial,default,2,filler,17,YM,HU,0,3,0,0,stop,2,0,gemma-3-27b-it, HU
+serial,default,2,filler,18,EP,FF,0,3,0,0,stop,2,0,gemma-3-27b-it, FF
+serial,default,2,filler,19,QQ,RG,0,3,0,0,stop,2,0,gemma-3-27b-it, RG
+serial,default,2,filler,20,GB,EO,0,7,0,0,stop,2,0,gemma-3-27b-it, EO
+serial,default,2,filler,21,GG,TS,0,3,0,0,stop,2,0,gemma-3-27b-it, TS
+serial,default,2,filler,22,DS,DS,1,2,0,0,stop,2,0,gemma-3-27b-it, DS
+serial,default,2,filler,23,NE,BS,0,4,0,0,stop,2,0,gemma-3-27b-it, BS
+serial,default,2,filler,24,EL,CO,0,3,0,0,stop,2,0,gemma-3-27b-it, CO
+serial,default,2,filler,25,MX,PG,0,3,0,0,stop,2,0,gemma-3-27b-it, PG
+serial,default,2,filler,26,HP,MJ,0,6,0,0,stop,2,0,gemma-3-27b-it, MJ
+serial,default,2,filler,27,ET,ET,1,2,0,0,stop,2,0,gemma-3-27b-it,ET
+serial,default,2,filler,28,RF,EO,0,1,0,0,stop,2,0,gemma-3-27b-it, EO
+serial,default,2,filler,29,OL,QQ,0,3,0,0,stop,2,0,gemma-3-27b-it, QQ
+serial,default,2,filler,30,MS,MS,1,2,0,0,stop,2,0,gemma-3-27b-it, MS
+serial,default,2,filler,31,KN,BE,0,0,0,0,stop,2,0,gemma-3-27b-it,BE
+serial,default,2,filler,32,KN,KN,1,2,0,0,stop,2,0,gemma-3-27b-it, KN
+serial,default,2,filler,33,BX,BX,1,2,0,0,stop,2,0,gemma-3-27b-it, BX
+serial,default,2,filler,34,HH,HH,1,2,0,0,stop,2,0,gemma-3-27b-it, HH
+serial,default,2,filler,35,XO,IO,0,7,0,0,stop,2,0,gemma-3-27b-it, IO
+serial,default,2,filler,36,PW,PW,1,2,0,0,stop,2,0,gemma-3-27b-it, PW
+serial,default,2,filler,37,TL,TL,1,2,0,0,stop,2,0,gemma-3-27b-it, TL
+serial,default,2,filler,38,AC,YB,0,1,0,0,stop,3,0,gemma-3-27b-it, YB
+serial,default,2,filler,39,GZ,HC,0,1,0,0,stop,2,0,gemma-3-27b-it, HC
+serial,default,2,filler,40,FS,GG,0,0,0,0,stop,2,0,gemma-3-27b-it, GG
+serial,default,2,filler,41,JR,RW,0,1,0,0,stop,2,0,gemma-3-27b-it, RW
+serial,default,2,filler,42,EF,FD,0,7,0,0,stop,2,0,gemma-3-27b-it, FD
+serial,default,2,filler,43,BD,GZ,0,3,0,0,stop,3,0,gemma-3-27b-it, GZ
+serial,default,2,filler,44,YO,YO,1,2,0,0,stop,2,0,gemma-3-27b-it,YO
+serial,default,2,filler,45,CB,CB,1,2,0,0,stop,2,0,gemma-3-27b-it, CB
+serial,default,2,filler,46,HX,HX,1,2,0,0,stop,2,0,gemma-3-27b-it, HX
+serial,default,2,filler,47,LB,AF,0,1,0,0,stop,2,0,gemma-3-27b-it,AF
+serial,default,2,filler,48,YR,YR,1,2,0,0,stop,3,0,gemma-3-27b-it, YR
+serial,default,2,filler,49,YG,LV,0,0,0,0,stop,2,0,gemma-3-27b-it, LV
+serial,default,2,filler,50,OJ,XK,0,4,0,0,stop,2,0,gemma-3-27b-it, XK
+serial,default,2,filler,51,HK,PI,0,4,0,0,stop,2,0,gemma-3-27b-it,PI
+serial,default,2,filler,52,VY,HJ,0,1,0,0,stop,2,0,gemma-3-27b-it, HJ
+serial,default,2,filler,53,DB,DB,1,2,0,0,stop,2,0,gemma-3-27b-it, DB
+serial,default,2,filler,54,QB,QB,1,2,0,0,stop,2,0,gemma-3-27b-it, QB
+serial,default,2,filler,55,WH,YE,0,3,0,0,stop,2,0,gemma-3-27b-it, YE
+serial,default,2,filler,56,ZV,ZV,1,2,0,0,stop,3,0,gemma-3-27b-it, ZV
+serial,default,2,filler,57,JX,JX,1,2,0,0,stop,3,0,gemma-3-27b-it, JX
+serial,default,2,filler,58,EP,EP,1,2,0,0,stop,2,0,gemma-3-27b-it, EP
+serial,default,2,filler,59,DV,DV,1,2,0,0,stop,2,0,gemma-3-27b-it, DV
+serial,default,2,filler,60,YD,KY,0,5,0,0,stop,2,0,gemma-3-27b-it, KY
+serial,default,2,filler,61,AO,MN,0,0,0,0,stop,2,0,gemma-3-27b-it,MN
+serial,default,2,filler,62,LO,LO,1,2,0,0,stop,2,0,gemma-3-27b-it, LO
+serial,default,2,filler,63,ZO,AN,0,4,0,0,stop,2,0,gemma-3-27b-it, AN
+serial,default,2,filler,64,IZ,HZ,0,0,0,0,stop,3,0,gemma-3-27b-it, HZ
+serial,default,2,filler,65,GC,GC,1,2,0,0,stop,2,0,gemma-3-27b-it, GC
+serial,default,2,filler,66,RT,RT,1,2,0,0,stop,2,0,gemma-3-27b-it, RT
+serial,default,2,filler,67,RW,AS,0,3,0,0,stop,2,0,gemma-3-27b-it, AS
+serial,default,2,filler,68,VN,RP,0,10,0,0,stop,2,0,gemma-3-27b-it,RP
+serial,default,2,filler,69,EN,OD,0,10,0,0,stop,2,0,gemma-3-27b-it, OD
+serial,default,2,filler,70,RD,JP,0,3,0,0,stop,2,0,gemma-3-27b-it, JP
+serial,default,2,filler,71,NK,RZ,0,1,0,0,stop,3,0,gemma-3-27b-it, RZ
+serial,default,2,filler,72,QV,US,0,10,0,0,stop,2,0,gemma-3-27b-it, US
+serial,default,2,filler,73,RI,RI,1,2,0,0,stop,2,0,gemma-3-27b-it, RI
+serial,default,2,filler,74,TI,TI,1,2,0,0,stop,2,0,gemma-3-27b-it, TI
+serial,default,2,filler,75,OS,OB,0,10,0,0,stop,2,0,gemma-3-27b-it, OB
+serial,default,2,filler,76,XH,VA,0,1,0,0,stop,2,0,gemma-3-27b-it, VA
+serial,default,2,filler,77,OZ,OZ,1,2,0,0,stop,2,0,gemma-3-27b-it, OZ
+serial,default,2,filler,78,XK,QP,0,3,0,0,stop,2,0,gemma-3-27b-it, QP
+serial,default,2,filler,79,XU,DE,0,9,0,0,stop,2,0,gemma-3-27b-it,DE
+serial,default,2,filler,80,RN,RN,1,2,0,0,stop,2,0,gemma-3-27b-it, RN
+serial,default,2,filler,81,ZA,MK,0,1,0,0,stop,2,0,gemma-3-27b-it, MK
+serial,default,2,filler,82,IG,MD,0,11,0,0,stop,2,0,gemma-3-27b-it, MD
+serial,default,2,filler,83,AI,AI,1,2,0,0,stop,2,0,gemma-3-27b-it, AI
+serial,default,2,filler,84,PG,PG,1,2,0,0,stop,2,0,gemma-3-27b-it, PG
+serial,default,2,filler,85,ZG,DK,0,5,0,0,stop,2,0,gemma-3-27b-it, DK
+serial,default,2,filler,86,KZ,KZ,1,2,0,0,stop,2,0,gemma-3-27b-it, KZ
+serial,default,2,filler,87,IN,WS,0,4,0,0,stop,2,0,gemma-3-27b-it, WS
+serial,default,2,filler,88,FG,IT,0,1,0,0,stop,2,0,gemma-3-27b-it, IT
+serial,default,2,filler,89,YB,YB,1,2,0,0,stop,3,0,gemma-3-27b-it, YB
+serial,default,2,filler,90,LL,FS,0,1,0,0,stop,2,0,gemma-3-27b-it, FS
+serial,default,2,filler,91,NC,TZ,0,4,0,0,stop,2,0,gemma-3-27b-it, TZ
+serial,default,2,filler,92,BL,BL,1,2,0,0,stop,2,0,gemma-3-27b-it, BL
+serial,default,2,filler,93,TC,TC,1,2,0,0,stop,2,0,gemma-3-27b-it,TC
+serial,default,2,filler,94,TS,TS,1,2,0,0,stop,2,0,gemma-3-27b-it, TS
+serial,default,2,filler,95,MQ,SC,0,1,0,0,stop,2,0,gemma-3-27b-it, SC
+serial,default,2,filler,96,VZ,VZ,1,2,0,0,stop,3,0,gemma-3-27b-it, VZ
+serial,default,2,filler,97,GV,GV,1,2,0,0,stop,2,0,gemma-3-27b-it, GV
+serial,default,2,filler,98,SE,LY,0,5,0,0,stop,2,0,gemma-3-27b-it, LY
+serial,default,2,filler,99,WJ,CB,0,8,0,0,stop,2,0,gemma-3-27b-it,CB
+serial,default,2,filler,100,XO,XO,1,2,0,0,stop,2,0,gemma-3-27b-it, XO
+serial,default,2,filler,101,MG,MG,1,2,0,0,stop,2,0,gemma-3-27b-it, MG
+serial,default,2,filler,102,ZA,BC,0,3,0,0,stop,2,0,gemma-3-27b-it, BC
+serial,default,2,filler,103,XC,CZ,0,5,0,0,stop,2,0,gemma-3-27b-it, CZ
+serial,default,2,filler,104,ND,ND,1,2,0,0,stop,2,0,gemma-3-27b-it, ND
+serial,default,2,filler,105,CD,CD,1,2,0,0,stop,2,0,gemma-3-27b-it, CD
+serial,default,2,filler,106,JA,JA,1,2,0,0,stop,2,0,gemma-3-27b-it, JA
+serial,default,2,filler,107,UB,AR,0,3,0,0,stop,2,0,gemma-3-27b-it, AR
+serial,default,2,filler,108,IK,ML,0,6,0,0,stop,2,0,gemma-3-27b-it, ML
+serial,default,2,filler,109,GN,ET,0,1,0,0,stop,2,0,gemma-3-27b-it, ET
+serial,default,2,filler,110,GZ,BB,0,0,0,0,stop,2,0,gemma-3-27b-it, BB
+serial,default,2,filler,111,DD,QR,0,11,0,0,stop,2,0,gemma-3-27b-it, QR
+serial,default,2,filler,112,GT,WS,0,1,0,0,stop,2,0,gemma-3-27b-it,WS
+serial,default,2,filler,113,PK,TT,0,1,0,0,stop,2,0,gemma-3-27b-it, TT
+serial,default,2,filler,114,BH,BH,1,2,0,0,stop,2,0,gemma-3-27b-it, BH
+serial,default,2,filler,115,MA,EH,0,1,0,0,stop,2,0,gemma-3-27b-it, EH
+serial,default,2,filler,116,ZH,ZH,1,2,0,0,stop,2,0,gemma-3-27b-it, ZH
+serial,default,2,filler,117,DP,DP,1,2,0,0,stop,2,0,gemma-3-27b-it, DP
+serial,default,2,filler,118,HL,KM,0,5,0,0,stop,2,0,gemma-3-27b-it, KM
+serial,default,2,filler,119,KC,KY,0,1,0,0,stop,2,0,gemma-3-27b-it, KY
+serial,default,2,filler,120,IT,IT,1,2,0,0,stop,2,0,gemma-3-27b-it, IT
+serial,default,2,filler,121,CA,RL,0,0,0,0,stop,2,0,gemma-3-27b-it,RL
+serial,default,2,filler,122,UY,AD,0,0,0,0,stop,2,0,gemma-3-27b-it, AD
+serial,default,2,filler,123,ZN,WU,0,3,0,0,stop,2,0,gemma-3-27b-it,WU
+serial,default,2,filler,124,KR,CU,0,1,0,0,stop,2,0,gemma-3-27b-it, CU
+serial,default,2,filler,125,RZ,AQ,0,1,0,0,stop,2,0,gemma-3-27b-it, AQ
+serial,default,2,filler,126,DI,DI,1,2,0,0,stop,2,0,gemma-3-27b-it, DI
+serial,default,2,filler,127,ZV,ZA,0,3,0,0,stop,2,0,gemma-3-27b-it, ZA
+serial,default,2,filler,128,IU,FI,0,9,0,0,stop,2,0,gemma-3-27b-it, FI
+serial,default,2,filler,129,LF,LF,1,2,0,0,stop,2,0,gemma-3-27b-it, LF
+serial,default,2,filler,130,RK,SS,0,1,0,0,stop,2,0,gemma-3-27b-it, SS
+serial,default,2,filler,131,HG,HG,1,2,0,0,stop,2,0,gemma-3-27b-it, HG
+serial,default,2,filler,132,QJ,TE,0,3,0,0,stop,2,0,gemma-3-27b-it, TE
+serial,default,2,filler,133,WQ,KZ,0,1,0,0,stop,2,0,gemma-3-27b-it, KZ
+serial,default,2,filler,134,HP,UH,0,9,0,0,stop,2,0,gemma-3-27b-it, UH
+serial,default,2,filler,135,XN,NT,0,3,0,0,stop,2,0,gemma-3-27b-it, NT
+serial,default,2,filler,136,TY,TY,1,2,0,0,stop,2,0,gemma-3-27b-it, TY
+serial,default,2,filler,137,KQ,GA,0,1,0,0,stop,2,0,gemma-3-27b-it, GA
+serial,default,2,filler,138,FI,FI,1,2,0,0,stop,2,0,gemma-3-27b-it, FI
+serial,default,2,filler,139,VK,VK,1,2,0,0,stop,2,0,gemma-3-27b-it, VK
+serial,default,2,filler,140,JY,LN,0,1,0,0,stop,2,0,gemma-3-27b-it, LN
+serial,default,2,filler,141,SG,SG,1,2,0,0,stop,2,0,gemma-3-27b-it, SG
+serial,default,2,filler,142,XZ,XZ,1,2,0,0,stop,3,0,gemma-3-27b-it, XZ
+serial,default,2,filler,143,YN,YN,1,2,0,0,stop,3,0,gemma-3-27b-it, YN
+serial,default,2,filler,144,CZ,TU,0,1,0,0,stop,2,0,gemma-3-27b-it, TU
+serial,default,2,filler,145,JO,JO,1,2,0,0,stop,2,0,gemma-3-27b-it, JO
+serial,default,2,filler,146,SV,SV,1,2,0,0,stop,2,0,gemma-3-27b-it, SV
+serial,default,2,filler,147,OC,OC,1,2,0,0,stop,2,0,gemma-3-27b-it, OC
+serial,default,2,filler,148,ZI,BQ,0,1,0,0,stop,2,0,gemma-3-27b-it,BQ
+serial,default,2,filler,149,CG,CG,1,2,0,0,stop,2,0,gemma-3-27b-it, CG
