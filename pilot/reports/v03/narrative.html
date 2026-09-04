@@ -74,9 +74,32 @@ k=4  "Which chemical element has the symbol that is the first letter of the
   <figcaption>The un-emitted bridge entity reaches rank 0 — the single most likely token in a 248,000-word vocabulary — while a control entity drawn from an unrelated fact reaches only 57 to 88 with exactly the same number of chances. On solved trials the bridge outranks the control in 100% of cases. The layer profile shows its rank improving steadily through the network rather than appearing all at once.</figcaption>
 </figure>
 
+<figure>
+  <div class="ftitle">Where in the network the hidden hop appears</div>
+  <div class="fsub">Median readout strength by layer, solved trials. Higher means the token sits nearer the top of the vocabulary.</div>
+  <div class="legend" data-leg="layerprof"></div>
+  <div class="panels" data-fig="layerprof"></div>
+  <figcaption>The bridge entity strengthens steadily through the stack rather than appearing at a single point, and separates from the unrelated control early. The answer token follows a flatter path — consistent with the bridge being resolved on the way to producing it rather than alongside it.</figcaption>
+</figure>
+
 <div class="measure">
 <section>
-  <div class="sec-head"><span class="sec-num">04</span><h2>What this establishes, and what it does not</h2></div>
+  <div class="sec-head"><span class="sec-num">04</span><h2>The transcripts</h2></div>
+  <p>The prompts and responses behind these numbers, searchable. Forced-answer trials are capped short and prefilled, so the completions are terse; chain-of-thought trials show the full working. The empty answers at four hops are the model declining, not a parsing failure.</p>
+</section>
+</div>
+
+<figure>
+  <div class="ftitle">Prompt and response browser</div>
+  <div class="fsub">Real trials across depths and conditions, qwen3.6-27b.</div>
+  <div class="tx-controls" data-tx="controls"></div>
+  <div data-tx="list"></div>
+  <figcaption>Filter by depth to see the same chain asked at two, four and five hops, and by correctness to compare what a success and a failure look like at the same depth.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">05</span><h2>What this establishes, and what it does not</h2></div>
   <p>The behavioural result is a clean depth ceiling on ordinary knowledge: three hops silently, four with help, five not at all. The internals result is that at least one un-emitted intermediate is plainly present in the residual stream, on a task where the model demonstrably succeeds.</p>
   <p>The honest limit is that a lens readout is correlational. "Bulgaria" sits close to "lev" in meaning, so associative activation is a live alternative to genuine step-by-step composition. Distinguishing them requires transplanting the residual stream at the positions the lens implicates and checking that the answer moves with it. That test does not depend on the lens being right, and it is the next thing worth doing.</p>
 

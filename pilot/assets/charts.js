@@ -385,5 +385,38 @@ function renderV3(root, D){
   xl.textContent='median best rank in a 248,000-token vocabulary (log scale, shorter is stronger)';
   svg.appendChild(xl); lm.appendChild(svg);
 
+  // layer profile: where in the stack the un-emitted bridge entity emerges
+  const lp = q(root,'[data-fig="layerprof"]');
+  if (lp && D.lens.by_layer) {
+    const byK = {};
+    D.lens.by_layer.forEach(r => { (byK[r.k] = byK[r.k] || []).push(r); });
+    Object.keys(byK).sort().forEach(k => {
+      const rows = byK[k];
+      const div = document.createElement('div'); div.className='panel';
+      div.innerHTML = `<div class="ptitle">${k} hops</div>`;
+      const host = document.createElement('div');
+      const layers = [...new Set(rows.map(r=>r.layer))].sort((a,b)=>a-b);
+      const series = [
+        {t:'hop1', color:'var(--parallel)'},
+        {t:'hop2', color:'var(--count)'},
+        {t:'null', color:'var(--serial)'},
+      ].filter(s => rows.some(r=>r.target===s.t)).map(s => ({
+        k: layers,
+        v: layers.map(L => {
+          const m = rows.find(r=>r.layer===L && r.target===s.t);
+          return m ? 1 - Math.log10(m.rank+1)/Math.log10(250000) : NaN;
+        }),
+        color: s.color}));
+      lineChart(host, series, {xs:layers, xlab:'layer', ylab:'readout strength',
+        w:330, h:230, yfmt:v=>'', aria:`${k} hops: the bridge entity strengthens through the layers.`});
+      div.appendChild(host); lp.appendChild(div);
+    });
+    legend(q(root,'[data-leg="layerprof"]'), [
+      {label:'hop1 — un-emitted bridge', color:'var(--parallel)'},
+      {label:'hop2 — the answer', color:'var(--count)'},
+      {label:'null — unrelated control', color:'var(--serial)'}],
+      'higher = better vocabulary rank (log)');
+  }
+  if (D.transcripts) buildBrowser(root, D.transcripts);
   const kk=q(root,'[data-key="k"]'); if(kk) kk.textContent='3';
 }

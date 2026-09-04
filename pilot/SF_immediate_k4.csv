@@ -1,0 +1,7 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+facts,default,4,immediate,0,Sulfur,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,2951155811
+facts,default,4,immediate,1,Boron,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the yuan?,3638567157
+facts,default,4,immediate,2,Yttrium,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,1105817935
+facts,default,4,immediate,3,Yttrium,Yttrium,1,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,921584089
+facts,default,4,immediate,4,Hydrogen,Vanadium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Vanadium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dong?,2827670650
+facts,default,4,immediate,5,Hydrogen,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dong?,3750618348
