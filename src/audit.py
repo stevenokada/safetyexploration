@@ -28,7 +28,7 @@ from pathlib import Path
 
 import pandas as pd
 
-LABELS_PATH = "labels.jsonl"
+LABELS_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "labels.jsonl")
 
 # ------------------------------------------------------------------ loading
 
@@ -58,7 +58,12 @@ def parse_filename(fn):
     meta["model"] = rest
     return meta
 
-def load(glob_pat="*.csv"):
+DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+
+def load(glob_pat=None):
+    glob_pat = glob_pat or os.path.join(DATA, "*.csv")
+    if not os.path.isabs(glob_pat) and os.sep not in glob_pat:
+        glob_pat = os.path.join(DATA, glob_pat)
     frames = []
     for fn in sorted(globmod.glob(glob_pat)):
         if Path(fn).name in ("labels.jsonl",):
@@ -234,7 +239,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cmd", choices=["audit", "tags", "search", "sample", "label"])
-    ap.add_argument("--glob", default="*.csv")
+    ap.add_argument("--glob", default=None,
+                    help="glob over data/ (default: every result CSV)")
     ap.add_argument("--where", help="pandas query, e.g. \"k>=4 and correct==0\"")
     ap.add_argument("--tag", help="filter by auto-tag; for `label`, the tag to write")
     ap.add_argument("--label", help="filter by manual label")

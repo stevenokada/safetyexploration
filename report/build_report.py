@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
-REPORTS = ROOT / "reports"
+REPORTS = ROOT / "versions"
 
 
 def check_version(vid, narrative, data, legacy):

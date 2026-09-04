@@ -17,7 +17,7 @@ import sys
 
 from tokenizers import Tokenizer
 
-import task_arith
+from tasks import arithmetic as task_arith
 
 # google/gemma-* repos are gated (401 without an HF token). The unsloth mirrors
 # ship the same tokenizer; if you have HF_TOKEN set, prefer the official repo.

@@ -22,7 +22,7 @@ def main():
 
     import pandas as pd
     root = pathlib.Path(__file__).resolve().parent
-    vdir = root / "reports" / f"v{args.version:02d}"
+    vdir = root / "versions" / f"v{args.version:02d}"
     if not vdir.exists():
         sys.exit(f"{vdir} does not exist -- stage the version first")
 
@@ -30,7 +30,7 @@ def main():
     for cell in args.cells.split():
         cond, k = cell.split(":")
         out = root / f"_tx_{args.task}_{cond}_k{k}"
-        subprocess.run([sys.executable, "pilot2.py", "--task", args.task,
+        subprocess.run([sys.executable, str(root.parent / "src" / "harness.py"), "--task", args.task,
                         "--model", args.model, "--conditions", cond, "--ks", k,
                         "--n", str(args.n), "--out", str(out)],
                        cwd=root, check=True, capture_output=True)

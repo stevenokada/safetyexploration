@@ -43,21 +43,42 @@ over the same retrievals moved the model from chance to a steady margin above it
 
 ---
 
+## Start here
+
+```bash
+./reproduce.sh analysis    # re-derive every published number from the committed data
+./reproduce.sh audit       # validity-check every collected cell
+./reproduce.sh smoke       # collect a small fresh sample (needs an API key)
+./reproduce.sh report      # rebuild the HTML report
+```
+
+`reproduce.sh analysis` needs no API key and takes seconds: it recomputes the
+headline figures from the CSVs in `data/`, printing the test used for each.
+
 ## Repository layout
 
 ```
-pilot/
-  pilot2.py               experiment harness: tasks, conditions, scoring, validity audit
-  task_arith.py           chained arithmetic word problems + parallel controls
-  task_facts.py           real-world fact chains (to 6 hops) + parallel control
-  inspect_runs.py         transcript search, auto-tagging, per-cell validity audit
-  check_tokenization.py   precondition check for the interpretability work
-  models.json             model registry, restricted to open-weight models with a published R-lens
-  lens/                   R-lens pipeline for reading intermediates out of the residual stream
-  reports/                one archived version per experiment run, plus the build manifest
+reproduce.sh              the four things you are likely to want
+src/
+  harness.py              runs prompts: builds them, calls the API, scores, writes a CSV
+  analysis.py             turns those CSVs back into the published numbers
+  audit.py                validity checks + transcript search and tagging
+  tokenization.py         precondition check for the interpretability work
+  models.json             permitted models (open weights with a published R-lens)
+  tasks/
+    arithmetic.py         chained arithmetic word problems + parallel controls
+    facts.py              real-world fact chains to 6 hops + parallel control
+  lens/                   reading intermediates out of the residual stream, on a GPU
+experiments/              one script per sweep, numbered in the order they were run
+data/                     every logged trial, with full prompts and completions
+report/                   report builder, archived versions, published HTML
+docs/
   BUGS.md                 every defect found, and whether it changed a conclusion
-  *.csv                   every logged trial, including full prompts and completions
+  gpu_setup.md            the GPU session recipe for the lens work
 ```
+
+The chained-lookup task is defined inside `src/harness.py`; the other two task
+families live in `src/tasks/`.
 
 ## Tasks
 

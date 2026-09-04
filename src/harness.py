@@ -30,12 +30,12 @@ import argparse, asyncio, csv, os, random, re, string, sys, time, zlib
 
 import httpx
 
-import task_arith
-import task_facts
+from tasks import arithmetic as task_arith
+from tasks import facts as task_facts
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 RUN_ID = ""   # set in main(); stamped on every row so results trace to the code that made them
-REGISTRY = "models.json"
+REGISTRY = "models.json"   # sits beside this file
 
 def code_fingerprint():
     """Short hash of the harness + task generators. A stale process running old
@@ -44,7 +44,7 @@ def code_fingerprint():
     import hashlib
     h = hashlib.sha256()
     here = os.path.dirname(os.path.abspath(__file__))
-    for fn in ("pilot2.py", "task_arith.py", "task_facts.py"):
+    for fn in ("harness.py", "tasks/arithmetic.py", "tasks/facts.py"):
         try:
             with open(os.path.join(here, fn), "rb") as f:
                 h.update(f.read())
@@ -427,7 +427,11 @@ async def main():
     global RUN_ID
     RUN_ID = f"{code_fingerprint()}-{int(time.time())}"
     run_id = RUN_ID
-    out = args.out or f"v2_{args.task}_{args.wording}_{args.model.split('/')[-1]}"
+    out = args.out or f"{args.task}_{args.model.split('/')[-1]}"
+    if not os.path.isabs(out) and os.sep not in out:
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+        os.makedirs(data_dir, exist_ok=True)
+        out = os.path.join(data_dir, out)
     if args.tag_run:
         out = f"{out}__{run_id}"
     print(f"run_id {run_id}  ->  {out}.csv")
@@ -470,7 +474,7 @@ async def main():
     print(f"\nWrote {out}.csv")
 
     try:
-        import inspect_runs
+        import audit as inspect_runs
         a = inspect_runs.audit(inspect_runs.load(f"{out}.csv"))
         bad = a[a.status == "FAIL"]
         if len(bad):

@@ -1,7 +1,7 @@
 #!/bin/bash
 export OPENROUTER_API_KEY=$(cat ~/.openrouter_key)
 M=google/gemma-3-27b-it
-run(){ echo "### $*"; python3 pilot2.py --model "$M" --n 8 --out "S_$1_$2_k$3" \
+run(){ echo "### $*"; python3 ../src/harness.py --model "$M" --n 8 --out "S_$1_$2_k$3" \
    --task "$1" --conditions "$2" --ks "$3" "${@:4}" 2>&1 | grep -E "audit|FAIL"; }
 run serial            immediate 2
 run serial            immediate 8

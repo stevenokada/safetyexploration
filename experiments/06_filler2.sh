@@ -9,11 +9,11 @@ for k in 2 3 4 6; do
   c=${COT[$k]}
   for f in 100 $c $((c*2)); do
     echo "### k=$k filler=$f"
-    python3 pilot2.py --task arith --model "$M" --conditions filler --n 30 \
+    python3 ../src/harness.py --task arith --model "$M" --conditions filler --n 30 \
       --ks $k --filler-n $f --out "F_k${k}_f${f}" 2>&1 | grep -E "^ *filler|audit|FAIL"
   done
   echo "### k=$k immediate baseline"
-  python3 pilot2.py --task arith --model "$M" --conditions immediate --n 30 \
+  python3 ../src/harness.py --task arith --model "$M" --conditions immediate --n 30 \
     --ks $k --out "F_k${k}_f0" 2>&1 | grep -E "^ *immediate|audit|FAIL"
 done
 echo "### ALL DONE"

@@ -6,7 +6,7 @@ M=google/gemma-3-27b-it
 for fs in 1 3; do
   for cond in immediate filler; do
     echo "### fewshot=$fs cond=$cond"
-    python3 pilot2.py --task serial --model "$M" --conditions $cond --n 150 --ks 2 \
+    python3 ../src/harness.py --task serial --model "$M" --conditions $cond --n 150 --ks 2 \
       --fewshot $fs --filler-n 100 --out "FS_${fs}_${cond}" 2>&1 | grep -E "^ *(immediate|filler)|audit|FAIL"
   done
 done

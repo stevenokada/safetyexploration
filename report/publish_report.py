@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-REPORTS = ROOT / "reports"
+REPORTS = ROOT / "versions"
 MANIFEST = REPORTS / "manifest.json"
 REPORT_HTML = ROOT / "report.html"
 REPORT_DATA = ROOT / "report_data.json"
@@ -54,7 +54,7 @@ def data_fingerprint():
     """Which result files fed this report, and their content hashes. Lets a past
     version be checked against today's data files for silent drift."""
     files = {}
-    for p in sorted(ROOT.glob("*.csv")):
+    for p in sorted((ROOT.parent / "data").glob("*.csv")):
         if p.name.startswith(("grid", "A_", "B_", "W_", "W2_", "J_", "JW_",
                               "F_", "cotlen", "ar_", "FACTS_", "G_", "FS_", "S_")):
             h = hashlib.sha256(p.read_bytes()).hexdigest()[:12]
