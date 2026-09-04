@@ -1,0 +1,14 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+facts,default,2,cot,0,Baku,Baku,1,-1,0,0,stop,862,804,qwen3.6-27b,"The manat is the currency of Azerbaijan. The capital of Azerbaijan is Baku.
+Answer: Baku",What is the capital city of the country whose currency is the manat?,2875878609
+facts,default,2,cot,1,Astana,Astana,1,-1,0,0,stop,332,294,qwen3.6-27b,"The tenge is the official currency of Kazakhstan. The capital city of Kazakhstan is Astana.
+
+Answer: Astana",What is the capital city of the country whose currency is the tenge?,3698154567
+facts,default,2,cot,2,Kyiv,Kyiv,1,-1,0,0,stop,309,270,qwen3.6-27b,"The hryvnia is the currency of Ukraine. The capital of Ukraine is Kyiv.
+Answer: Kyiv",What is the capital city of the country whose currency is the hryvnia?,1164185085
+facts,default,2,cot,3,Yangon,Naypyidaw,0,-1,0,0,stop,560,479,qwen3.6-27b,"The kyat is the currency of Myanmar. The capital of Myanmar is Naypyidaw.
+Answer: Naypyidaw",What is the capital city of the country whose currency is the kyat?,845364587
+facts,default,2,cot,4,Stockholm,Stockholm,1,-1,0,0,stop,1148,1126,qwen3.6-27b,"The krona is the currency of Sweden. The capital of Sweden is Stockholm.
+Answer: Stockholm",What is the capital city of the country whose currency is the krona?,2886183112
+facts,default,2,cot,5,Beijing,Beijing,1,-1,0,0,stop,532,509,qwen3.6-27b,"The yuan is the official currency of China. The capital city of China is Beijing.
+Answer: Beijing",What is the capital city of the country whose currency is the yuan?,3674249310

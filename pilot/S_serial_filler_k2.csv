@@ -1,0 +1,137 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+serial,default,2,filler,0,DR,BJ,0,9,0,0,stop,2,0,gemma-3-27b-it, BJ,"Mapping table:
+PN -> ED
+PX -> PN
+UB -> HE
+DR -> GH
+GH -> RI
+UZ -> DR
+RI -> UY
+US -> BJ
+ED -> UZ
+UY -> UB
+BJ -> PX
+HE -> US
+
+Start at ED and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",1546271691
+serial,default,2,filler,1,AK,ZZ,0,1,0,0,stop,2,0,gemma-3-27b-it, ZZ,"Mapping table:
+AK -> WQ
+WK -> OB
+AR -> CX
+WQ -> QJ
+BX -> AR
+ZZ -> AK
+CX -> HJ
+OB -> BQ
+QJ -> WK
+BQ -> BX
+HI -> ZZ
+HJ -> HI
+
+Start at HI and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",724372317
+serial,default,2,filler,2,NM,YD,0,1,0,0,stop,3,0,gemma-3-27b-it, YD,"Mapping table:
+UN -> OC
+XS -> YD
+NM -> MR
+ZA -> HF
+MR -> JU
+OC -> ZA
+HF -> IV
+JU -> TM
+TM -> DW
+YD -> NM
+IV -> XS
+DW -> UN
+
+Start at XS and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",2988727015
+serial,default,2,filler,3,WB,WB,1,2,0,0,stop,2,0,gemma-3-27b-it, WB,"Mapping table:
+YO -> FP
+PJ -> AG
+JJ -> NT
+EJ -> JJ
+FP -> PJ
+WB -> EJ
+CG -> OL
+AG -> CO
+NT -> CG
+CO -> WB
+OL -> OU
+OU -> YO
+
+Start at AG and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",3307432561
+serial,default,2,filler,4,FZ,FZ,1,2,0,0,stop,3,0,gemma-3-27b-it, FZ,"Mapping table:
+FZ -> ES
+WR -> WE
+ZB -> CG
+KT -> FG
+JY -> KT
+KW -> GL
+WE -> JY
+GL -> WR
+ES -> LO
+FG -> FZ
+CG -> KW
+LO -> ZB
+
+Start at KT and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",1531445202
+serial,default,2,filler,5,UI,VQ,0,3,0,0,stop,3,0,gemma-3-27b-it, VQ,"Mapping table:
+SX -> GA
+PU -> YP
+SZ -> BO
+XY -> SX
+GA -> AI
+TO -> UI
+YP -> GR
+UI -> VQ
+AI -> SZ
+BO -> TO
+VQ -> PU
+GR -> XY
+
+Start at BO and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",742444868
+serial,default,2,filler,6,BY,BY,1,2,0,0,stop,2,0,gemma-3-27b-it, BY,"Mapping table:
+JV -> GQ
+BY -> SE
+JE -> MA
+GQ -> KB
+II -> OZ
+KB -> AU
+AU -> TB
+MM -> JE
+OZ -> JV
+TB -> BY
+MA -> II
+SE -> MM
+
+Start at AU and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",3041500926
+serial,default,2,filler,7,MW,TL,0,11,0,0,stop,2,0,gemma-3-27b-it, TL,"Mapping table:
+RG -> MW
+PR -> XZ
+XZ -> TL
+XA -> NF
+JC -> RG
+NF -> ZJ
+RW -> GK
+ZJ -> AP
+GK -> PR
+TL -> JC
+MW -> XA
+AP -> RW
+
+Start at JC and follow the mapping 2 times. What code do you land on?
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100",3259936360

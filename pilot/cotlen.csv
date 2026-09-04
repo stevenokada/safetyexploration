@@ -1,0 +1,248 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion
+arith,default,1,cot,0,27,27,1,-1,0,0,stop,949,921,qwen3.6-27b,"Start at 46. 46 is even, so the count becomes 27.
+Answer: 27"
+arith,default,1,cot,1,86,86,1,-1,0,0,stop,671,524,qwen3.6-27b,"Start at 76. 76 is even, so the count becomes 86.
+Answer: 86"
+arith,default,1,cot,2,17,17,1,-1,0,0,stop,1014,983,qwen3.6-27b,"Start at 28. 28 is even, so the count becomes 17.
+Answer: 17"
+arith,default,1,cot,3,93,93,1,-1,0,0,stop,972,937,qwen3.6-27b,"Start at 80. 80 is even, so 13 more crates arrive. The count becomes 93.
+Answer: 93"
+arith,default,1,cot,4,28,28,1,-1,0,0,stop,1001,973,qwen3.6-27b,"Start at 18. 18 is even, so the count becomes 28.
+Answer: 28"
+arith,default,1,cot,5,28,28,1,-1,0,0,stop,1319,1276,qwen3.6-27b,"Start at 34. 34 is even, so half are shipped out (17) and then 11 arrive, making the count 28.
+Answer: 28"
+arith,default,1,cot,6,34,34,1,-1,0,0,stop,1264,954,qwen3.6-27b,"Start with 10 crates.
+The count is even, so 24 more crates arrive.
+10 + 24 = 34.
+All other steps are administrative and do not change the number of crates.
+Answer: 34"
+arith,default,1,cot,7,77,77,1,-1,0,0,stop,885,681,qwen3.6-27b,"Start at 89. 89 is odd, so the count becomes 77.
+Answer: 77"
+arith,default,1,cot,8,70,70,1,-1,0,0,stop,896,868,qwen3.6-27b,"Start at 60. 60 is even, so the count becomes 70.
+Answer: 70"
+arith,default,1,cot,9,74,74,1,-1,0,0,stop,357,316,qwen3.6-27b,"Start at 85. Since 85 is odd, 11 crates are shipped out.
+85 - 11 = 74.
+
+Answer: 74"
+arith,default,1,cot,10,99,99,1,-1,0,0,stop,701,515,qwen3.6-27b,"
+
+Start at 86. 86 is even, so the count becomes 99.
+Answer: 99"
+arith,default,1,cot,11,43,43,1,-1,0,0,stop,771,591,qwen3.6-27b,"Start at 18. 18 is even, so the count becomes 43.
+Answer: 43"
+arith,default,1,cot,12,43,43,1,-1,0,0,stop,707,673,qwen3.6-27b,"Start at 61. 61 is odd, so 18 crates are shipped out, leaving 43.
+Answer: 43"
+arith,default,1,cot,13,71,71,1,-1,0,0,stop,1367,1339,qwen3.6-27b,"Start at 43. 43 is odd, so the count becomes 71.
+Answer: 71"
+arith,default,1,cot,14,98,98,1,-1,0,0,stop,658,515,qwen3.6-27b,"Start at 83. 83 is odd, so the count becomes 98.
+Answer: 98"
+arith,default,1,cot,15,68,68,1,-1,0,0,stop,1814,1770,qwen3.6-27b,"Start at 87. 87 is odd, so 19 crates are shipped out. 87 - 19 = 68.
+Answer: 68"
+arith,default,1,cot,16,10,10,1,-1,0,0,stop,833,760,qwen3.6-27b,"Start with 25 crates.
+Check the parity of the count: 25 is odd.
+According to the given rule, if the count is odd, 15 crates are shipped out.
+Subtract 15 from the starting amount: 25 - 15 = 10.
+
+Answer: 10"
+arith,default,1,cot,17,64,64,1,-1,0,0,stop,674,520,qwen3.6-27b,"Start at 75. 75 is odd, so 11 crates are shipped out. The count becomes 64.
+Answer: 64"
+arith,default,1,cot,18,11,11,1,-1,0,0,stop,828,800,qwen3.6-27b,"Start at 38. 38 is even, so the count becomes 11.
+Answer: 11"
+arith,default,1,cot,19,64,64,1,-1,0,0,stop,510,469,qwen3.6-27b,"Start at 91. Since 91 is odd, 27 crates are shipped out. 
+91 - 27 = 64.
+Answer: 64"
+arith,default,2,cot,0,50,50,1,-1,0,0,stop,608,563,qwen3.6-27b,"Start at 28. 28 is even, so the count becomes 34; 34 is even, so the count becomes 50.
+Answer: 50"
+arith,default,2,cot,1,34,34,1,-1,0,0,stop,781,739,qwen3.6-27b,"Start at 67. 67 is odd, so the count becomes 44; 44 is even, so the count becomes 34.
+Answer: 34"
+arith,default,2,cot,2,75,75,1,-1,0,0,stop,1338,1001,qwen3.6-27b,"Start at 67. 67 is odd, so the count becomes 82; 82 is even, so the count becomes 75.
+Answer: 75"
+arith,default,2,cot,3,56,56,1,-1,0,0,stop,1717,1379,qwen3.6-27b,"Start at 44. 44 is even, so the count becomes 72; 72 is even, so the count becomes 56.
+Answer: 56"
+arith,default,2,cot,4,27,27,1,-1,0,0,stop,1388,1012,qwen3.6-27b,"Start at 39. 39 is odd, so the count becomes 16; 16 is even, so the count becomes 27.
+Answer: 27"
+arith,default,2,cot,5,43,43,1,-1,0,0,stop,1509,1180,qwen3.6-27b,"Start at 25. 25 is odd, so the count becomes 33; 33 is odd, so the count becomes 43.
+Answer: 43"
+arith,default,2,cot,6,74,74,1,-1,0,0,stop,1350,1006,qwen3.6-27b,"Start at 68. 68 is even, so the count becomes 46; 46 is even, so the count becomes 74.
+Answer: 74"
+arith,default,2,cot,7,26,26,1,-1,0,0,stop,1479,1437,qwen3.6-27b,"Start at 19. 19 is odd, so the count becomes 34; 34 is even, so the count becomes 26.
+Answer: 26"
+arith,default,2,cot,8,60,60,1,-1,0,0,stop,1645,1603,qwen3.6-27b,"Start at 96. 96 is even, so the count becomes 58; 58 is even, so the count becomes 60.
+Answer: 60"
+arith,default,2,cot,9,74,74,1,-1,0,0,stop,1090,1048,qwen3.6-27b,"Start at 61. 61 is odd, so the count becomes 82; 82 is even, so the count becomes 74.
+Answer: 74"
+arith,default,2,cot,10,70,70,1,-1,0,0,stop,1111,1069,qwen3.6-27b,"Start at 56. 56 is even, so the count becomes 45; 45 is odd, so the count becomes 70.
+Answer: 70"
+arith,default,2,cot,11,39,39,1,-1,0,0,stop,1208,1166,qwen3.6-27b,"Start at 96. 96 is even, so the count becomes 66; 66 is even, so the count becomes 39.
+Answer: 39"
+arith,default,2,cot,12,94,94,1,-1,0,0,stop,781,520,qwen3.6-27b,"Start at 73. 73 is odd, so the count becomes 82; 82 is even, so the count becomes 94.
+Answer: 94"
+arith,default,2,cot,13,56,56,1,-1,0,0,stop,1159,1117,qwen3.6-27b,"Start at 10. 10 is even, so the count becomes 30; 30 is even, so the count becomes 56.
+Answer: 56"
+arith,default,2,cot,14,13,13,1,-1,0,0,stop,1399,1357,qwen3.6-27b,"Start at 34. 34 is even, so the count becomes 24; 24 is even, so the count becomes 13.
+Answer: 13"
+arith,default,2,cot,15,12,12,1,-1,0,0,stop,1477,1109,qwen3.6-27b,"Start at 35. 35 is odd, so the count becomes 27; 27 is odd, so the count becomes 12.
+Answer: 12"
+arith,default,2,cot,16,33,33,1,-1,0,0,stop,1630,1242,qwen3.6-27b,"Start at 90. 90 is even, so the count becomes 56; 56 is even, so the count becomes 33.
+Answer: 33"
+arith,default,2,cot,17,30,30,1,-1,0,0,stop,1608,1566,qwen3.6-27b,"Start at 41. 41 is odd, so the count becomes 55; 55 is odd, so the count becomes 30.
+Answer: 30"
+arith,default,2,cot,18,72,72,1,-1,0,0,stop,1263,885,qwen3.6-27b,"Start at 98. 98 is even, so the count becomes 64; 64 is even, so the count becomes 72.
+Answer: 72"
+arith,default,2,cot,19,39,39,1,-1,0,0,stop,792,573,qwen3.6-27b,"
+
+Start at 70. 70 is even, so the count becomes 59; 59 is odd, so the count becomes 39.
+Answer: 39"
+arith,default,3,cot,0,56,56,1,-1,0,0,stop,1476,1420,qwen3.6-27b,"Start at 40. 40 is even, so the count becomes 68; 68 is even, so the count becomes 77; 77 is odd, so the count becomes 56.
+Answer: 56"
+arith,default,3,cot,1,78,78,1,-1,0,0,stop,1837,1781,qwen3.6-27b,"Start at 85. 85 is odd, so the count becomes 61; 61 is odd, so the count becomes 58; 58 is even, so the count becomes 78.
+Answer: 78"
+arith,default,3,cot,2,77,77,1,-1,0,0,stop,1583,1506,qwen3.6-27b,"Start at 24. 24 is even, so half are shipped out (12) and then 24 arrive, making 36; 36 is even, so 20 more arrive, making 56; 56 is even, so 21 more arrive, making 77.
+Answer: 77"
+arith,default,3,cot,3,43,43,1,-1,0,0,stop,1599,1121,qwen3.6-27b,"Start at 77. 77 is odd, so the count becomes 94; 94 is even, so the count becomes 80; 80 is even, so the count becomes 43.
+Answer: 43"
+arith,default,3,cot,4,58,58,1,-1,0,0,stop,1394,1338,qwen3.6-27b,"Start at 14. 14 is even, so the count becomes 40; 40 is even, so the count becomes 64; 64 is even, so the count becomes 58.
+Answer: 58"
+arith,default,3,cot,5,44,44,1,-1,0,0,stop,2019,1361,qwen3.6-27b,"Start at 80. 80 is even, so the count becomes 67; 67 is odd, so the count becomes 73; 73 is odd, so the count becomes 44.
+Answer: 44"
+arith,default,3,cot,6,38,38,1,-1,0,0,stop,2252,1530,qwen3.6-27b,"Start at 78. 78 is even, so the count becomes 67; 67 is odd, so the count becomes 53; 53 is odd, so the count becomes 38.
+Answer: 38"
+arith,default,3,cot,7,43,43,1,-1,0,0,stop,1869,1387,qwen3.6-27b,"Start at 31. 31 is odd, so the count becomes 12; 12 is even, so the count becomes 23; 23 is odd, so the count becomes 43.
+Answer: 43"
+arith,default,3,cot,8,47,47,1,-1,0,0,stop,1611,867,qwen3.6-27b,"Start at 91.
+1. ""The count is read aloud for the record."" (No change) -> 91
+2. ""If the count is even, 8 crates are shipped out; if it is odd, 23 crates are shipped out."" (91 is odd) -> $91 - 23 = 68$
+3. ""The tally is copied onto the whiteboard."" (No change) -> 68
+4. ""The shift lead confirms the page number."" (No change) -> 68
+5. ""If the count is even, 18 more crates arrive; if it is odd, 29 more crates arrive."" (68 is even) -> $68 + 18 = 86$
+6. ""The logbook is passed to the next shift."" (No change) -> 86
+7. ""If the count is even, half of them are shipped out and then 4 crates arrive; if it is odd, 22 more crates arrive."" (86 is even) -> $86 / 2 = 43$, then $43 + 4 = 47$
+8. ""The clerk stamps the page."" (No change) -> 47
+9. ""A photo of the ledger is filed."" (No change) -> 47
+10. ""A supervisor initials the log."" (No change) -> 47
+
+Answer: 47"
+arith,default,3,cot,9,61,61,1,-1,0,0,stop,1837,1317,qwen3.6-27b,"Start at 74. 74 is even, so the count becomes 87; 87 is odd, so the count becomes 96; 96 is even, so half are shipped out leaving 48, then 13 arrive making it 61.
+Answer: 61"
+arith,default,3,cot,10,39,39,1,-1,0,0,stop,1830,1774,qwen3.6-27b,"Start at 59. 59 is odd, so the count becomes 47; 47 is odd, so the count becomes 64; 64 is even, so the count becomes 39.
+Answer: 39"
+arith,default,3,cot,11,33,33,1,-1,0,0,stop,1690,1634,qwen3.6-27b,"Start at 87. 87 is odd, so the count becomes 58; 58 is even, so the count becomes 47; 47 is odd, so the count becomes 33.
+Answer: 33"
+arith,default,3,cot,12,70,70,1,-1,0,0,stop,563,346,qwen3.6-27b,"Start at 58. 58 is even, so the count becomes 66; 66 is even, so the count becomes 81; 81 is odd, so the count becomes 70.
+Answer: 70"
+arith,default,3,cot,13,95,95,1,-1,0,0,stop,1872,1341,qwen3.6-27b,"Start at 43. 43 is odd, so the count becomes 39; 39 is odd, so the count becomes 67; 67 is odd, so the count becomes 95.
+Answer: 95"
+arith,default,3,cot,14,34,34,1,-1,0,0,stop,1369,1260,qwen3.6-27b,"Start at 78. 
+78 is even, so 28 crates are shipped out: 78 - 28 = 50.
+50 is even, so 21 crates are shipped out: 50 - 21 = 29.
+29 is odd, so 5 more crates arrive: 29 + 5 = 34.
+The remaining steps are administrative and do not change the crate count.
+
+Answer: 34"
+arith,default,3,cot,15,27,27,1,-1,0,0,stop,1996,1937,qwen3.6-27b,"Start at 16. 16 is even, so the count becomes 37; 37 is odd, so the count becomes 45; 45 is odd, so the count becomes 27.
+Answer: 27"
+arith,default,3,cot,16,96,96,1,-1,0,0,stop,1086,722,qwen3.6-27b,"Start at 79. 79 is odd, so the count becomes 56; 56 is even, so the count becomes 83; 83 is odd, so the count becomes 96.
+Answer: 96"
+arith,default,3,cot,17,94,94,1,-1,0,0,stop,941,640,qwen3.6-27b,"Start at 67. 67 is odd, so the count becomes 57; 57 is odd, so the count becomes 78; 78 is even, so the count becomes 94.
+Answer: 94"
+arith,default,3,cot,18,39,39,1,-1,0,0,stop,1699,1242,qwen3.6-27b,"Start at 14.
+14 is even, so half are shipped out (7) and then 20 arrive, making the count 27.
+27 is odd, so 20 more crates arrive, making the count 47.
+47 is odd, so 8 crates are shipped out, making the count 39.
+Answer: 39"
+arith,default,3,cot,19,97,97,1,-1,0,0,stop,530,474,qwen3.6-27b,"Start at 18. 18 is even, so the count becomes 44; 44 is even, so the count becomes 70; 70 is even, so the count becomes 97.
+Answer: 97"
+arith,default,4,cot,0,77,77,1,-1,0,0,stop,1920,1850,qwen3.6-27b,"Start at 42. 42 is even, so the count becomes 28; 28 is even, so the count becomes 37; 37 is odd, so the count becomes 51; 51 is odd, so the count becomes 77.
+Answer: 77"
+arith,default,4,cot,1,80,80,1,-1,0,0,stop,2450,2377,qwen3.6-27b,"Start at 12. 12 is even, so the count becomes 23; 23 is odd, so the count becomes 41; 41 is odd, so the count becomes 61; 61 is odd, so the count becomes 80.
+Answer: 80"
+arith,default,4,cot,2,13,13,1,-1,0,0,stop,1705,1172,qwen3.6-27b,"Start at 95. 95 is odd, so the count becomes 77; 77 is odd, so the count becomes 69; 69 is odd, so the count becomes 42; 42 is even, so the count becomes 13.
+Answer: 13"
+arith,default,4,cot,3,65,65,1,-1,0,0,stop,1981,1344,qwen3.6-27b,"Start at 56. 56 is even, so 19 are shipped out, leaving 37; 37 is odd, so 13 are shipped out, leaving 24; 24 is even, so 19 arrive, making 43; 43 is odd, so 22 arrive, making 65.
+Answer: 65"
+arith,default,4,cot,4,48,48,1,-1,0,0,stop,1846,1188,qwen3.6-27b,"Start at 98. 98 is even, so the count becomes 55; 55 is odd, so the count becomes 80; 80 is even, so the count becomes 76; 76 is even, so the count becomes 48.
+Answer: 48"
+arith,default,4,cot,5,46,46,1,-1,0,0,stop,1803,1260,qwen3.6-27b,"Start at 90. 90 is even, so the count becomes 85; 85 is odd, so the count becomes 65; 65 is odd, so the count becomes 70; 70 is even, so the count becomes 46.
+Answer: 46"
+arith,default,4,cot,6,84,84,1,-1,0,0,stop,2514,1770,qwen3.6-27b,"Start at 12. 12 is even, so the count becomes 20; 20 is even, so the count becomes 43; 43 is odd, so the count becomes 67; 67 is odd, so the count becomes 84.
+Answer: 84"
+arith,default,4,cot,7,27,27,1,-1,0,0,stop,2511,2441,qwen3.6-27b,"Start at 90. 90 is even, so the count becomes 65; 65 is odd, so the count becomes 49; 49 is odd, so the count becomes 51; 51 is odd, so the count becomes 27.
+Answer: 27"
+arith,default,4,cot,8,17,17,1,-1,0,0,stop,1866,1796,qwen3.6-27b,"Start at 90. 90 is even, so the count becomes 84; 84 is even, so the count becomes 53; 53 is odd, so the count becomes 27; 27 is odd, so the count becomes 17.
+Answer: 17"
+arith,default,4,cot,9,96,96,1,-1,0,0,stop,1995,1870,qwen3.6-27b,"Start at 41. 
+- 41 is odd, so 23 more crates arrive: 41 + 23 = 64.
+- 64 is even, so 5 crates are shipped out: 64 - 5 = 59.
+- 59 is odd, so 26 more crates arrive: 59 + 26 = 85.
+- 85 is odd, so 11 more crates arrive: 85 + 11 = 96.
+
+Answer: 96"
+arith,default,4,cot,10,58,58,1,-1,0,0,stop,1978,1348,qwen3.6-27b,"Start at 83. 83 is odd, so the count becomes 64; 64 is even, so the count becomes 91; 91 is odd, so the count becomes 78; 78 is even, so the count becomes 58.
+Answer: 58"
+arith,default,4,cot,11,60,60,1,-1,0,0,stop,1180,771,qwen3.6-27b,"Start at 57. 57 is odd, so the count becomes 70; 70 is even, so the count becomes 81; 81 is odd, so the count becomes 94; 94 is even, so the count becomes 60.
+Answer: 60"
+arith,default,4,cot,12,65,65,1,-1,0,0,stop,1445,1375,qwen3.6-27b,"Start at 37. 37 is odd, so the count becomes 44; 44 is even, so the count becomes 54; 54 is even, so the count becomes 73; 73 is odd, so the count becomes 65.
+Answer: 65"
+arith,default,4,cot,13,67,67,1,-1,0,0,stop,1464,980,qwen3.6-27b,"Start at 82. 82 is even, so the count becomes 95; 95 is odd, so the count becomes 77; 77 is odd, so the count becomes 50; 50 is even, so the count becomes 67.
+Answer: 67"
+arith,default,4,cot,14,57,57,1,-1,0,0,stop,2463,2393,qwen3.6-27b,"Start at 25. 25 is odd, so the count becomes 46; 46 is even, so the count becomes 62; 62 is even, so the count becomes 90; 90 is even, so the count becomes 57.
+Answer: 57"
+arith,default,4,cot,15,74,74,1,-1,0,0,stop,1565,1495,qwen3.6-27b,"Start at 32. 32 is even, so the count becomes 28; 28 is even, so the count becomes 54; 54 is even, so the count becomes 64; 64 is even, so the count becomes 74.
+Answer: 74"
+arith,default,4,cot,16,62,62,1,-1,0,0,stop,2629,1797,qwen3.6-27b,"Start at 30. 30 is even, so the count becomes 20; 20 is even, so the count becomes 47; 47 is odd, so the count becomes 70; 70 is even, so the count becomes 62.
+Answer: 62"
+arith,default,4,cot,17,65,65,1,-1,0,0,stop,1905,1835,qwen3.6-27b,"Start at 36. 36 is even, so the count becomes 48; 48 is even, so the count becomes 77; 77 is odd, so the count becomes 57; 57 is odd, so the count becomes 65.
+Answer: 65"
+arith,default,4,cot,18,73,73,1,-1,0,0,stop,1487,935,qwen3.6-27b,"Start at 84.
+1. The count is 84 (even). 18 crates are shipped out: $84 - 18 = 66$.
+2. The count is 66 (even). 23 crates are shipped out: $66 - 23 = 43$.
+3. The count is 43 (odd). 16 more crates arrive: $43 + 16 = 59$.
+4. The count is 59 (odd). 14 more crates arrive: $59 + 14 = 73$.
+
+Answer: 73"
+arith,default,4,cot,19,75,75,1,-1,0,0,stop,1882,1396,qwen3.6-27b,"Start at 25. 25 is odd, so the count becomes 37; 37 is odd, so the count becomes 49; 49 is odd, so the count becomes 65; 65 is odd, so the count becomes 75.
+Answer: 75"
+arith,default,6,cot,0,11,11,1,-1,0,0,stop,2882,1963,qwen3.6-27b,"
+
+Start at 50. 50 is even, so the count becomes 44; 44 is even, so the count becomes 61; 61 is odd, so the count becomes 85; 85 is odd, so the count becomes 70; 70 is even, so the count becomes 38; 38 is even, so the count becomes 11.
+Answer: 11"
+arith,default,6,cot,1,19,19,1,-1,0,0,stop,3554,2453,qwen3.6-27b,"Start at 58. 58 is even, so the count becomes 84; 84 is even, so the count becomes 94; 94 is even, so the count becomes 72; 72 is even, so the count becomes 63; 63 is odd, so the count becomes 48; 48 is even, so the count becomes 19.
+Answer: 19"
+arith,default,6,cot,2,18,18,1,-1,0,0,stop,2763,1849,qwen3.6-27b,"Start at 48. 48 is even, so the count becomes 74; 74 is even, so the count becomes 96; 96 is even, so the count becomes 88; 88 is even, so the count becomes 57; 57 is odd, so the count becomes 38; 38 is even, so the count becomes 18.
+Answer: 18"
+arith,default,6,cot,3,46,46,1,-1,0,0,stop,1916,1270,qwen3.6-27b,"Start at 61. 61 is odd, so the count becomes 89; 89 is odd, so the count becomes 76; 76 is even, so the count becomes 50; 50 is even, so the count becomes 38; 38 is even, so the count becomes 24; 24 is even, so the count becomes 46.
+Answer: 46"
+arith,default,6,cot,4,75,75,1,-1,0,0,stop,2667,2510,qwen3.6-27b,"Start at 60. 60 is even, so 3 are shipped out, leaving 57; 57 is odd, so 26 are shipped out, leaving 31; the next two steps do not change the count; 31 is odd, so 3 are shipped out, leaving 28; the next step does not change the count; 28 is even, so half are shipped out (14) and then 5 arrive, leaving 19; the next step does not change the count; 19 is odd, so 29 arrive, leaving 48; 48 is even, so 27 arrive, leaving 75.
+
+Answer: 75"
+arith,default,6,cot,5,86,,0,-1,0,0,length,4000,2483,qwen3.6-27b,
+arith,default,6,cot,6,59,59,1,-1,0,0,stop,2947,1957,qwen3.6-27b,"Start at 11. 11 is odd, so the count becomes 39; 39 is odd, so the count becomes 60; 60 is even, so the count becomes 73; 73 is odd, so the count becomes 87; 87 is odd, so the count becomes 98; 98 is even, so the count becomes 59.
+Answer: 59"
+arith,default,6,cot,7,82,82,1,-1,0,0,stop,2614,1753,qwen3.6-27b,"Start at 10. 10 is even, so the count becomes 21; 21 is odd, so the count becomes 37; 37 is odd, so the count becomes 48; 48 is even, so the count becomes 68; 68 is even, so the count becomes 90; 90 is even, so the count becomes 82.
+Answer: 82"
+arith,default,6,cot,8,48,48,1,-1,0,0,stop,1942,1841,qwen3.6-27b,"Start at 99. 99 is odd, so the count becomes 82; 82 is even, so the count becomes 59; 59 is odd, so the count becomes 35; 35 is odd, so the count becomes 13; 13 is odd, so the count becomes 27; 27 is odd, so the count becomes 48.
+Answer: 48"
+arith,default,6,cot,9,80,80,1,-1,0,0,stop,2335,1530,qwen3.6-27b,"Start at 99. 99 is odd, so the count becomes 78; 78 is even, so the count becomes 55; 55 is odd, so the count becomes 33; 33 is odd, so the count becomes 43; 43 is odd, so the count becomes 65; 65 is odd, so the count becomes 80.
+Answer: 80"
+arith,default,6,cot,10,64,64,1,-1,0,0,stop,2093,1445,qwen3.6-27b,"Start at 39. 39 is odd, so the count becomes 59; 59 is odd, so the count becomes 44; 44 is even, so the count becomes 73; 73 is odd, so the count becomes 88; 88 is even, so the count becomes 90; 90 is even, so the count becomes 64.
+Answer: 64"
+arith,default,6,cot,11,34,34,1,-1,0,0,stop,1958,1308,qwen3.6-27b,"Start at 72. 72 is even, so the count becomes 93; 93 is odd, so the count becomes 83; 83 is odd, so the count becomes 57; 57 is odd, so the count becomes 28; 28 is even, so the count becomes 48; 48 is even, so the count becomes 34.
+Answer: 34"
+arith,default,6,cot,12,21,21,1,-1,0,0,stop,2333,2235,qwen3.6-27b,"Start at 51. 51 is odd, so the count becomes 45; 45 is odd, so the count becomes 61; 61 is odd, so the count becomes 70; 70 is even, so the count becomes 37; 37 is odd, so the count becomes 12; 12 is even, so the count becomes 21.
+Answer: 21"
+arith,default,6,cot,13,45,45,1,-1,0,0,stop,2521,1673,qwen3.6-27b,"Start at 56. 56 is even, so half are shipped out and 4 arrive: 56/2 + 4 = 32; 32 is even, so 29 arrive: 32 + 29 = 61; 61 is odd, so 21 arrive: 61 + 21 = 82; 82 is even, so 12 arrive: 82 + 12 = 94; 94 is even, so 16 are shipped out: 94 - 16 = 78; 78 is even, so half are shipped out and 6 arrive: 78/2 + 6 = 45.
+Answer: 45"
+arith,default,6,cot,14,45,45,1,-1,0,0,stop,2565,1655,qwen3.6-27b,"
+
+Start at 78. 78 is even, so the count becomes 56; 56 is even, so the count becomes 81; 81 is odd, so the count becomes 65; 65 is odd, so the count becomes 38; 38 is even, so the count becomes 18; 18 is even, so the count becomes 45.
+Answer: 45"
+arith,default,6,cot,15,39,39,1,-1,0,0,stop,1990,1230,qwen3.6-27b,"Start at 91. 91 is odd, so the count becomes 86; 86 is even, so the count becomes 46; 46 is even, so the count becomes 54; 54 is even, so the count becomes 68; 68 is even, so the count becomes 72; 72 is even, so the count becomes 39.
+Answer: 39"
+arith,default,6,cot,16,99,99,1,-1,0,0,stop,1979,1260,qwen3.6-27b,"Start at 11. 11 is odd, so the count becomes 38; 38 is even, so the count becomes 58; 58 is even, so the count becomes 40; 40 is even, so the count becomes 61; 61 is odd, so the count becomes 74; 74 is even, so the count becomes 99.
+Answer: 99"
+arith,default,6,cot,17,77,77,1,-1,0,0,stop,2299,2201,qwen3.6-27b,"Start at 45. 45 is odd, so the count becomes 22; 22 is even, so the count becomes 13; 13 is odd, so the count becomes 36; 36 is even, so the count becomes 60; 60 is even, so the count becomes 81; 81 is odd, so the count becomes 77.
+Answer: 77"
+arith,default,6,cot,18,64,64,1,-1,0,0,stop,2508,2410,qwen3.6-27b,"Start at 46. 46 is even, so the count becomes 72; 72 is even, so the count becomes 55; 55 is odd, so the count becomes 29; 29 is odd, so the count becomes 15; 15 is odd, so the count becomes 37; 37 is odd, so the count becomes 64.
+Answer: 64"
+arith,default,6,cot,19,54,54,1,-1,0,0,stop,899,801,qwen3.6-27b,"Start at 18. 18 is even, so the count becomes 39; 39 is odd, so the count becomes 60; 60 is even, so the count becomes 47; 47 is odd, so the count becomes 76; 76 is even, so the count becomes 82; 82 is even, so the count becomes 54.
+Answer: 54"

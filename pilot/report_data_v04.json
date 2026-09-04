@@ -1,0 +1,104 @@
+{
+ "serial": [
+  {
+   "k": 1,
+   "cot": 1.0,
+   "immediate": 1.0
+  },
+  {
+   "k": 2,
+   "cot": 1.0,
+   "immediate": 1.0,
+   "filler": 1.0,
+   "budget": 722,
+   "diff": 0.0,
+   "p": 1.0
+  },
+  {
+   "k": 3,
+   "cot": 1.0,
+   "immediate": 0.383,
+   "filler": 0.658,
+   "budget": 454,
+   "diff": 0.275,
+   "p": 0.0
+  },
+  {
+   "k": 4,
+   "cot": 1.0,
+   "immediate": 0.017,
+   "filler": 0.017,
+   "budget": 405,
+   "diff": 0.0,
+   "p": 1.0
+  },
+  {
+   "k": 5,
+   "cot": 1.0,
+   "immediate": 0.017,
+   "filler": 0.058,
+   "budget": 1032,
+   "diff": 0.042,
+   "p": 0.125
+  },
+  {
+   "k": 6,
+   "cot": 1.0,
+   "immediate": 0.008,
+   "filler": 0.083,
+   "budget": 1345,
+   "diff": 0.075,
+   "p": 0.0039
+  }
+ ],
+ "dose": {
+  "baseline": 0.017,
+  "rows": [
+   {
+    "budget": 405,
+    "acc": 0.017,
+    "p": 1.0
+   },
+   {
+    "budget": 1345,
+    "acc": 0.092,
+    "p": 0.0117
+   },
+   {
+    "budget": 2688,
+    "acc": 0.092,
+    "p": 0.0039
+   }
+  ]
+ },
+ "parallel": [
+  {
+   "k": 2,
+   "cot": 0.992,
+   "cheap": 0.65,
+   "ordering": 0.475,
+   "chance": 0.5
+  },
+  {
+   "k": 4,
+   "cot": 1.0,
+   "cheap": 0.45,
+   "ordering": 0.25,
+   "chance": 0.25
+  },
+  {
+   "k": 8,
+   "cot": 1.0,
+   "cheap": 0.225,
+   "ordering": 0.075,
+   "chance": 0.125
+  },
+  {
+   "k": 16,
+   "cot": 0.992,
+   "cheap": 0.117,
+   "ordering": 0.217,
+   "chance": 0.062
+  }
+ ]
+}

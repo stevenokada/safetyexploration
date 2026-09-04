@@ -1,0 +1,157 @@
+### deepseek/deepseek-chat
+Done in 38s
+
+condition  k      acc  on_chain  eff_hops  leaks  errs
+      cot  1 1.000000  1.000000  1.000000      0     0
+      cot  2 1.000000  1.000000  2.000000      0     0
+      cot  3 1.000000  1.000000  3.000000      0     0
+      cot  4 1.000000  1.000000  4.000000      0     0
+      cot  6 1.000000  1.000000  6.000000      0     0
+      cot  8 1.000000  1.000000  8.000000      0     0
+   filler  1 1.000000  1.000000  1.000000      0     0
+   filler  2 0.433333  0.433333  2.000000      0     0
+   filler  3 0.233333  0.366667  2.545455      0     0
+   filler  4 0.166667  0.466667  3.214286      0     0
+   filler  6 0.100000  0.566667  4.176471      0     0
+   filler  8 0.166667  0.766667  4.739130      0     0
+immediate  1 1.000000  1.000000  1.000000      0     0
+immediate  2 0.233333  0.233333  2.000000      0     0
+immediate  3 0.133333  0.200000  2.666667      0     0
+immediate  4 0.166667  0.366667  3.454545      0     0
+immediate  6 0.166667  0.600000  4.388889      0     0
+immediate  8 0.133333  0.800000  5.000000      0     0
+
+(chance ~= 0.09; leak = forced-answer response that verbalized reasoning)
+
+Wrote grid_deepseek-chat.csv and grid_deepseek-chat.png
+### google/gemini-2.5-flash
+Done in 15s
+
+condition  k      acc  on_chain  eff_hops  leaks  errs
+      cot  1 1.000000  1.000000  1.000000      0     0
+      cot  2 1.000000  1.000000  2.000000      0     0
+      cot  3 1.000000  1.000000  3.000000      0     0
+      cot  4 1.000000  1.000000  4.000000      0     0
+      cot  6 1.000000  1.000000  6.000000      0     0
+      cot  8 0.966667  0.966667  8.000000      0     0
+   filler  1 1.000000  1.000000  1.000000      0     0
+   filler  2 0.700000  0.700000  2.000000      0     0
+   filler  3 0.333333  0.333333  3.000000      0     0
+   filler  4 0.333333  0.433333  3.769231      0     0
+   filler  6 0.166667  0.433333  5.000000      0     0
+   filler  8 0.133333  0.700000  5.904762      0     0
+immediate  1 1.000000  1.000000  1.000000      0     0
+immediate  2 0.566667  0.566667  2.000000      0     0
+immediate  3 0.466667  0.566667  2.823529      0     0
+immediate  4 0.333333  0.466667  3.500000      0     0
+immediate  6 0.100000  0.500000  4.266667      0     0
+immediate  8 0.066667  0.766667  5.086957      0     0
+
+(chance ~= 0.09; leak = forced-answer response that verbalized reasoning)
+
+Wrote grid_gemini-2.5-flash.csv and grid_gemini-2.5-flash.png
+### anthropic/claude-opus-4.5
+Done in 52s
+
+condition  k      acc  on_chain  eff_hops  leaks  errs
+      cot  1 1.000000  1.000000  1.000000      0     0
+      cot  2 1.000000  1.000000  2.000000      0     0
+      cot  3 1.000000  1.000000  3.000000      0     0
+      cot  4 1.000000  1.000000  4.000000      0     0
+      cot  6 1.000000  1.000000  6.000000      0     0
+      cot  8 1.000000  1.000000  8.000000      0     0
+   filler  1 1.000000  1.000000  1.000000      0     0
+   filler  2 0.400000  0.400000  2.000000      0     0
+   filler  3 0.200000  0.200000  3.000000      0     0
+   filler  4 0.300000  0.300000  4.000000      0     0
+   filler  6 0.433333  0.500000  5.866667      0     0
+   filler  8 0.300000  0.666667  7.400000      0     0
+immediate  1 1.000000  1.000000  1.000000      0     0
+immediate  2 0.300000  0.300000  2.000000      0     0
+immediate  3 0.033333  0.033333  3.000000      0     0
+immediate  4 0.366667  0.366667  4.000000      0     0
+immediate  6 0.433333  0.533333  5.750000      0     0
+immediate  8 0.200000  0.600000  6.777778      0     0
+
+(chance ~= 0.09; leak = forced-answer response that verbalized reasoning)
+
+Wrote grid_claude-opus-4.5.csv and grid_claude-opus-4.5.png
+### qwen/qwen3-max
+Done in 179s
+
+condition  k      acc  on_chain  eff_hops  leaks  errs
+      cot  1 1.000000  1.000000  1.000000      0     0
+      cot  2 0.066667  0.066667  2.000000      0    28
+      cot  3 0.200000  0.200000  3.000000      0    24
+      cot  4 0.800000  0.800000  4.000000      0     6
+      cot  6 0.566667  0.566667  6.000000      0    13
+      cot  8 0.633333  0.633333  8.000000      0    11
+   filler  1 1.000000  1.000000  1.000000      0     0
+   filler  2 0.200000  0.233333  1.857143      0    20
+   filler  3 0.000000  0.000000       NaN      0    29
+   filler  4 0.066667  0.133333  3.250000      0    14
+   filler  6 0.000000  0.400000  1.500000      0    11
+   filler  8 0.066667  0.533333  4.312500      0    12
+immediate  1 1.000000  1.000000  1.000000      0     0
+immediate  2 0.400000  0.400000  2.000000      0     5
+immediate  3 0.000000  0.000000       NaN      0    27
+immediate  4 0.066667  0.100000  3.666667      0    15
+immediate  6 0.033333  0.400000  2.500000      0    14
+immediate  8 0.000000  0.366667  4.090909      0    15
+
+(chance ~= 0.09; leak = forced-answer response that verbalized reasoning)
+
+Wrote grid_qwen3-max.csv and grid_qwen3-max.png
+### moonshotai/kimi-k2-0905
+Done in 57s
+
+condition  k      acc  on_chain  eff_hops  leaks  errs
+      cot  1 1.000000  1.000000  1.000000      0     0
+      cot  2 1.000000  1.000000  2.000000      0     0
+      cot  3 1.000000  1.000000  3.000000      0     0
+      cot  4 1.000000  1.000000  4.000000      0     0
+      cot  6 1.000000  1.000000  6.000000      0     0
+      cot  8 1.000000  1.000000  8.000000      0     0
+   filler  1 0.933333  0.933333  1.000000      0     0
+   filler  2 0.300000  0.300000  2.000000      0     0
+   filler  3 0.366667  0.400000  2.750000      0     0
+   filler  4 0.500000  0.666667  3.750000      0     0
+   filler  6 0.100000  0.600000  3.611111      0     0
+   filler  8 0.033333  0.733333  3.272727      2     0
+immediate  1 1.000000  1.000000  1.000000      0     0
+immediate  2 0.266667  0.266667  2.000000      0     0
+immediate  3 0.300000  0.300000  3.000000      0     0
+immediate  4 0.266667  0.433333  3.615385      0     0
+immediate  6 0.033333  0.500000  3.333333      1     0
+immediate  8 0.033333  0.766667  3.391304      4     0
+
+(chance ~= 0.09; leak = forced-answer response that verbalized reasoning)
+
+Wrote grid_kimi-k2-0905.csv and grid_kimi-k2-0905.png
+### openai/gpt-5.1
+Done in 33s
+
+condition  k      acc  on_chain  eff_hops  leaks  errs
+      cot  1 1.000000  1.000000  1.000000      0     0
+      cot  2 0.866667  0.933333  1.928571      0     0
+      cot  3 0.633333  0.966667  2.655172      0     0
+      cot  4 0.500000  0.933333  3.250000      0     0
+      cot  6 0.433333  0.733333  4.954545      0     0
+      cot  8 0.433333  0.866667  6.038462      0     0
+   filler  1 1.000000  1.000000  1.000000      0     0
+   filler  2 0.766667  0.900000  1.851852      0     0
+   filler  3 0.366667  0.700000  2.476190      0     0
+   filler  4 0.100000  0.566667  3.000000      0     0
+   filler  6 0.000000  0.500000  3.600000      0     0
+   filler  8 0.066667  0.700000  3.619048      0     0
+immediate  1 1.000000  1.000000  1.000000      0     0
+immediate  2 0.766667  0.866667  1.884615      0     0
+immediate  3 0.300000  0.866667  2.346154      0     0
+immediate  4 0.166667  0.633333  2.789474      0     0
+immediate  6 0.033333  0.566667  3.588235      0     0
+immediate  8 0.033333  0.666667  4.450000      0     0
+
+(chance ~= 0.09; leak = forced-answer response that verbalized reasoning)
+
+Wrote grid_gpt-5.1.csv and grid_gpt-5.1.png
+### ALL DONE

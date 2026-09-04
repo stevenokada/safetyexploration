@@ -1,0 +1,105 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+arith_parallel_max,default,4,immediate,0,Echo,Echo,1,-1,0,0,stop,2,0,gemma-3-27b-it, Echo,"A warehouse keeps its crates in separate depots.
+- The entry is underlined in the register.
+- The clerk stamps the page.
+- Depot Alpha starts the day with 61 crates. If the count is even, half of them are shipped out and then 12 crates arrive; if it is odd, 7 more crates arrive.
+- The count is read aloud for the record.
+- The shift lead confirms the page number.
+- A supervisor initials the log.
+- Depot Bravo starts the day with 31 crates. If the count is even, half of them are shipped out and then 15 crates arrive; if it is odd, 11 more crates arrive.
+- Depot Delta starts the day with 89 crates. If the count is even, 14 crates are shipped out; if it is odd, 7 crates are shipped out.
+- Depot Echo starts the day with 69 crates. If the count is even, half of them are shipped out and then 23 crates arrive; if it is odd, 22 more crates arrive.
+- The record is initialled and set aside.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",1247322660
+arith_parallel_max,default,4,immediate,1,Alpha,Bravo,0,-1,0,0,stop,2,0,gemma-3-27b-it, Bravo,"A warehouse keeps its crates in separate depots.
+- The shift lead confirms the page number.
+- Depot Alpha starts the day with 93 crates. If the count is even, 24 crates are shipped out; if it is odd, 12 crates are shipped out.
+- The tally is copied onto the whiteboard.
+- Depot Bravo starts the day with 82 crates. If the count is even, half of them are shipped out and then 13 crates arrive; if it is odd, 7 more crates arrive.
+- A supervisor initials the log.
+- The count is read aloud for the record.
+- Depot Delta starts the day with 17 crates. If the count is even, half of them are shipped out and then 12 crates arrive; if it is odd, 15 more crates arrive.
+- The entry is underlined in the register.
+- Depot Echo starts the day with 46 crates. If the count is even, 21 more crates arrive; if it is odd, 17 more crates arrive.
+- The record is initialled and set aside.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",1029673650
+arith_parallel_max,default,4,immediate,2,Delta,Delta,1,-1,0,0,stop,2,0,gemma-3-27b-it, Delta,"A warehouse keeps its crates in separate depots.
+- The tally is copied onto the whiteboard.
+- Depot Alpha starts the day with 61 crates. If the count is even, 16 crates are shipped out; if it is odd, 7 crates are shipped out.
+- Depot Bravo starts the day with 12 crates. If the count is even, half of them are shipped out and then 20 crates arrive; if it is odd, 10 more crates arrive.
+- The record is initialled and set aside.
+- Depot Delta starts the day with 45 crates. If the count is even, 22 more crates arrive; if it is odd, 22 more crates arrive.
+- The logbook is passed to the next shift.
+- The entry is underlined in the register.
+- A supervisor initials the log.
+- The clerk stamps the page.
+- Depot Echo starts the day with 21 crates. If the count is even, 24 crates are shipped out; if it is odd, 6 crates are shipped out.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",2757149448
+arith_parallel_max,default,4,immediate,3,Echo,Bravo,0,-1,0,0,stop,2,0,gemma-3-27b-it, Bravo,"A warehouse keeps its crates in separate depots.
+- Depot Alpha starts the day with 31 crates. If the count is even, 5 crates are shipped out; if it is odd, 21 crates are shipped out.
+- The night shift signs the ledger.
+- A supervisor initials the log.
+- Depot Bravo starts the day with 22 crates. If the count is even, 21 more crates arrive; if it is odd, 27 more crates arrive.
+- A photo of the ledger is filed.
+- The logbook is passed to the next shift.
+- The shift lead confirms the page number.
+- The clerk stamps the page.
+- Depot Delta starts the day with 50 crates. If the count is even, half of them are shipped out and then 5 crates arrive; if it is odd, 8 more crates arrive.
+- Depot Echo starts the day with 97 crates. If the count is even, 28 crates are shipped out; if it is odd, 25 crates are shipped out.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",3545363358
+arith_parallel_max,default,4,immediate,4,Delta,Delta,1,-1,0,0,stop,2,0,gemma-3-27b-it, Delta,"A warehouse keeps its crates in separate depots.
+- Depot Alpha starts the day with 15 crates. If the count is even, half of them are shipped out and then 19 crates arrive; if it is odd, 24 more crates arrive.
+- Depot Bravo starts the day with 19 crates. If the count is even, 25 more crates arrive; if it is odd, 26 more crates arrive.
+- Depot Delta starts the day with 81 crates. If the count is even, 24 more crates arrive; if it is odd, 4 more crates arrive.
+- The count is read aloud for the record.
+- Depot Echo starts the day with 66 crates. If the count is even, 16 crates are shipped out; if it is odd, 20 crates are shipped out.
+- A photo of the ledger is filed.
+- The record is initialled and set aside.
+- The clerk stamps the page.
+- The tally is copied onto the whiteboard.
+- The night shift signs the ledger.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",1295345213
+arith_parallel_max,default,4,immediate,5,Delta,Delta,1,-1,0,0,stop,2,0,gemma-3-27b-it,Delta,"A warehouse keeps its crates in separate depots.
+- Depot Alpha starts the day with 28 crates. If the count is even, half of them are shipped out and then 13 crates arrive; if it is odd, 14 more crates arrive.
+- The count is read aloud for the record.
+- The logbook is passed to the next shift.
+- Depot Bravo starts the day with 73 crates. If the count is even, 24 crates are shipped out; if it is odd, 10 crates are shipped out.
+- Depot Delta starts the day with 73 crates. If the count is even, 7 more crates arrive; if it is odd, 26 more crates arrive.
+- A supervisor initials the log.
+- Depot Echo starts the day with 74 crates. If the count is even, 9 more crates arrive; if it is odd, 20 more crates arrive.
+- The record is initialled and set aside.
+- The clerk stamps the page.
+- The night shift signs the ledger.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",976377515
+arith_parallel_max,default,4,immediate,6,Bravo,Bravo,1,-1,0,0,stop,2,0,gemma-3-27b-it, Bravo,"A warehouse keeps its crates in separate depots.
+- The entry is underlined in the register.
+- Depot Alpha starts the day with 39 crates. If the count is even, 6 crates are shipped out; if it is odd, 17 crates are shipped out.
+- The shift lead confirms the page number.
+- Depot Bravo starts the day with 29 crates. If the count is even, half of them are shipped out and then 26 crates arrive; if it is odd, 26 more crates arrive.
+- The night shift signs the ledger.
+- The record is initialled and set aside.
+- Depot Delta starts the day with 17 crates. If the count is even, 27 more crates arrive; if it is odd, 27 more crates arrive.
+- Depot Echo starts the day with 21 crates. If the count is even, 24 crates are shipped out; if it is odd, 3 crates are shipped out.
+- The clerk stamps the page.
+- A supervisor initials the log.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",2738554641
+arith_parallel_max,default,4,immediate,7,Delta,Echo,0,-1,0,0,stop,2,0,gemma-3-27b-it, Echo,"A warehouse keeps its crates in separate depots.
+- The count is read aloud for the record.
+- The logbook is passed to the next shift.
+- The shift lead confirms the page number.
+- Depot Alpha starts the day with 97 crates. If the count is even, 19 crates are shipped out; if it is odd, 14 crates are shipped out.
+- Depot Bravo starts the day with 61 crates. If the count is even, 15 more crates arrive; if it is odd, 15 more crates arrive.
+- The entry is underlined in the register.
+- A supervisor initials the log.
+- Depot Delta starts the day with 86 crates. If the count is even, 12 more crates arrive; if it is odd, 8 more crates arrive.
+- The record is initialled and set aside.
+- Depot Echo starts the day with 29 crates. If the count is even, half of them are shipped out and then 16 crates arrive; if it is odd, 22 more crates arrive.
+
+Which depot has the most crates at the end of the day? Answer with just the depot name.",3560716167

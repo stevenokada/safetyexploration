@@ -1,0 +1,121 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+serial,default,8,immediate,0,QB,UI,0,0,0,0,stop,2,0,gemma-3-27b-it, UI,"Mapping table:
+FN -> DG
+VA -> UI
+JG -> QB
+QB -> LE
+UI -> MQ
+DG -> UR
+XP -> VA
+VG -> BN
+BN -> JG
+LE -> XP
+UR -> VG
+MQ -> FN
+
+Start at UI and follow the mapping 8 times. What code do you land on?",1371389469
+serial,default,8,immediate,1,PT,HI,0,0,0,0,stop,2,0,gemma-3-27b-it, HI,"Mapping table:
+PT -> SV
+HL -> LZ
+HI -> JO
+UC -> PA
+RR -> BH
+JO -> HH
+HH -> UC
+SZ -> HL
+SV -> RR
+PA -> SZ
+LZ -> PT
+BH -> HI
+
+Start at HI and follow the mapping 8 times. What code do you land on?",649760395
+serial,default,8,immediate,2,PM,BB,0,1,0,0,stop,2,0,gemma-3-27b-it, BB,"Mapping table:
+JM -> UA
+EY -> KE
+XZ -> VM
+HV -> JM
+MX -> BB
+DC -> XZ
+UA -> BG
+BB -> HV
+BG -> EY
+VM -> MX
+PM -> DC
+KE -> PM
+
+Start at MX and follow the mapping 8 times. What code do you land on?",3216236337
+serial,default,8,immediate,3,DS,HR,0,0,0,0,stop,2,0,gemma-3-27b-it, HR,"Mapping table:
+XQ -> HR
+XM -> XT
+DB -> XM
+HE -> SJ
+UC -> ZR
+GN -> HE
+JY -> DS
+DS -> UC
+SJ -> JY
+XT -> GN
+HR -> DB
+ZR -> XQ
+
+Start at HR and follow the mapping 8 times. What code do you land on?",3367301031
+serial,default,8,immediate,4,NY,NZ,0,0,0,0,stop,2,0,gemma-3-27b-it, NZ,"Mapping table:
+VY -> NZ
+NZ -> DF
+VO -> NY
+MD -> UU
+DF -> JJ
+BY -> VO
+NY -> MD
+MS -> QK
+JJ -> AM
+AM -> MS
+UU -> VY
+QK -> BY
+
+Start at NZ and follow the mapping 8 times. What code do you land on?",1456503300
+serial,default,8,immediate,5,JX,WF,0,0,0,0,stop,2,0,gemma-3-27b-it, WF,"Mapping table:
+OE -> OK
+PO -> OE
+OT -> ET
+PB -> JX
+ET -> FB
+WF -> FA
+FB -> WF
+FA -> SL
+JX -> OT
+SL -> PO
+FR -> PB
+OK -> FR
+
+Start at WF and follow the mapping 8 times. What code do you land on?",567757458
+serial,default,8,immediate,6,KW,ZK,0,0,0,0,stop,3,0,gemma-3-27b-it, ZK,"Mapping table:
+TT -> YW
+EM -> TT
+QK -> ZK
+CE -> QK
+KW -> XG
+ZZ -> RM
+ZK -> EM
+LW -> KW
+XG -> CE
+RM -> LW
+NV -> ZZ
+YW -> NV
+
+Start at ZK and follow the mapping 8 times. What code do you land on?",3101563688
+serial,default,8,immediate,7,KB,EF,0,0,0,0,stop,2,0,gemma-3-27b-it, EF,"Mapping table:
+KB -> VB
+BM -> YL
+YL -> VI
+VB -> UM
+UM -> TU
+TU -> EF
+FR -> BM
+EF -> FR
+KX -> LO
+OP -> KX
+VI -> OP
+LO -> KB
+
+Start at EF and follow the mapping 8 times. What code do you land on?",3487116222

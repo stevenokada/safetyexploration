@@ -1,0 +1,13 @@
+### fewshot=1 cond=immediate
+immediate  2 0.52      0     0      2.78   0.3   0.18
+validity audit: all 1 cells passed
+### fewshot=1 cond=filler
+   filler  2 0.427      0     0     2.827  0.34  0.233
+validity audit: all 1 cells passed
+### fewshot=3 cond=immediate
+immediate  2 0.373      0     0     3.653 0.607   0.02
+validity audit: all 1 cells passed
+### fewshot=3 cond=filler
+   filler  2 0.46      0     0      3.64 0.433  0.107
+validity audit: all 1 cells passed
+### ALL DONE

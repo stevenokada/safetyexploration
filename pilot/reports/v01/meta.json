@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "date": "2026-09-04T04:28:27+00:00",
+  "summary": "Initial published findings: serial-vs-parallel control across 6 models, wording control, landing-position analysis, width sweep to k=24. Predates the J-Lens-only model restriction, so includes closed models.",
+  "git_commit": "cbc4ed4",
+  "git_dirty": false,
+  "git_branch": "stevenokada/larvacean",
+  "n_files": 36,
+  "total_rows": 24914,
+  "data_files": {
+    "A_default_claude-opus-4.5.csv": {
+      "sha256": "ae7ce1541acd",
+      "rows": 240
+    },
+    "A_default_deepseek-chat.csv": {
+      "sha256": "d9ccad7c6866",
+      "rows": 240
+    },
+    "A_default_gemini-2.5-flash.csv": {
+      "sha256": "79fd834209bf",
+      "rows": 240
+    },
+    "A_explicit_claude-opus-4.5.csv": {
+      "sha256": "a60322d2dfa1",
+      "rows": 240
+    },
+    "A_explicit_deepseek-chat.csv": {
+      "sha256": "90c0be6cd030",
+      "rows": 240
+    },
+    "A_explicit_gemini-2.5-flash.csv": {
+      "sha256": "cc1927b13df3",
+      "rows": 240
+    },
+    "B_parallel_claude-opus-4.5.csv": {
+      "sha256": "2243abd9a3af",
+      "rows": 400
+    },
+    "B_parallel_count_claude-opus-4.5.csv": {
+      "sha256": "39713c9e2125",
+      "rows": 400
+    },
+    "B_parallel_count_deepseek-chat.csv": {
+      "sha256": "274079e6130c",
+      "rows": 400
+    },
+    "B_parallel_count_gemini-2.5-flash.csv": {
+      "sha256": "957b344dab6f",
+      "rows": 400
+    },
+    "B_parallel_deepseek-chat.csv": {
+      "sha256": "44a105a90ddb",
+      "rows": 400
+    },
+    "B_parallel_gemini-2.5-flash.csv": {
+      "sha256": "5e8cd56fd229",
+      "rows": 400
+    },
+    "B_serial_claude-opus-4.5.csv": {
+      "sha256": "86903b305caa",
+      "rows": 400
+    },
+    "B_serial_deepseek-chat.csv": {
+      "sha256": "90f715d60fc4",
+      "rows": 400
+    },
+    "B_serial_gemini-2.5-flash.csv": {
+      "sha256": "fb2e3f7ab6bf",
+      "rows": 400
+    },
+    "W_parallel_claude-opus-4.5.csv": {
+      "sha256": "64e59af2f835",
+      "rows": 280
+    },
+    "W_parallel_count_claude-opus-4.5.csv": {
+      "sha256": "fcf6ed8de177",
+      "rows": 280
+    },
+    "W_parallel_count_deepseek-chat.csv": {
+      "sha256": "976d458c69d7",
+      "rows": 280
+    },
+    "W_parallel_count_gemini-2.5-flash.csv": {
+      "sha256": "820cb7fdc2f1",
+      "rows": 280
+    },
+    "W_parallel_deepseek-chat.csv": {
+      "sha256": "6224c2e66c8d",
+      "rows": 280
+    },
+    "W_parallel_gemini-2.5-flash.csv": {
+      "sha256": "e232f3f639e1",
+      "rows": 280
+    },
+    "W_serial_claude-opus-4.5.csv": {
+      "sha256": "e01080276afc",
+      "rows": 280
+    },
+    "W_serial_deepseek-chat.csv": {
+      "sha256": "3ca3e882c1b9",
+      "rows": 280
+    },
+    "W_serial_gemini-2.5-flash.csv": {
+      "sha256": "d46985faef1b",
+      "rows": 280
+    },
+    "grid2_claude-opus-4.5.csv": {
+      "sha256": "07749fb2b559",
+      "rows": 1725
+    },
+    "grid2_deepseek-chat.csv": {
+      "sha256": "3864e8554c19",
+      "rows": 839
+    },
+    "grid2_gemini-2.5-flash.csv": {
+      "sha256": "fddc53b0af70",
+      "rows": 720
+    },
+    "grid2_gpt-5.1.csv": {
+      "sha256": "09cf394a6a76",
+      "rows": 728
+    },
+    "grid2_kimi-k2-0905.csv": {
+      "sha256": "cff3151daf9c",
+      "rows": 753
+    },
+    "grid2_qwen3-max.csv": {
+      "sha256": "637498a996ff",
+      "rows": 5069
+    },
+    "grid_claude-opus-4.5.csv": {
+      "sha256": "73ff5b310736",
+      "rows": 1728
+    },
+    "grid_deepseek-chat.csv": {
+      "sha256": "f9c892023de5",
+      "rows": 742
+    },
+    "grid_gemini-2.5-flash.csv": {
+      "sha256": "b5289ace162c",
+      "rows": 720
+    },
+    "grid_gpt-5.1.csv": {
+      "sha256": "b7a2fb17c9e8",
+      "rows": 688
+    },
+    "grid_kimi-k2-0905.csv": {
+      "sha256": "b081b9dbf8a5",
+      "rows": 759
+    },
+    "grid_qwen3-max.csv": {
+      "sha256": "446ae701af14",
+      "rows": 2883
+    }
+  },
+  "headline": {
+    "Claude Opus 4.5 serial k=8": 0.275,
+    "Claude Opus 4.5 parallel k=8": 0.825,
+    "Gemini 2.5 Flash serial k=8": 0.05,
+    "Gemini 2.5 Flash parallel k=8": 0.75,
+    "DeepSeek V3 serial k=8": 0.125,
+    "DeepSeek V3 parallel k=8": 0.8,
+    "Claude Opus 4.5 parallel k=24": 0.675,
+    "Gemini 2.5 Flash parallel k=24": 0.525,
+    "DeepSeek V3 parallel k=24": 0.475,
+    "overshoot k=4 (default)": 0.717
+  },
+  "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b",
+  "tab_label": "Pilot \u00b7 6 mixed models"
+}

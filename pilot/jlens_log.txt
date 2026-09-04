@@ -1,0 +1,2 @@
+########## depth sweep (serial: immediate / filler / cot) ##########
+### qwen/qwen3.6-27b

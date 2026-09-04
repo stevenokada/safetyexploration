@@ -1,0 +1,105 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+arith,default,4,immediate,0,77,91,0,-1,0,0,stop,4,0,gemma-3-27b-it, 91,"A depot starts the day with 51 crates.
+- If the count is even, half of them are shipped out and then 19 crates arrive; if it is odd, 18 more crates arrive.
+- The clerk stamps the page.
+- The night shift signs the ledger.
+- The shift lead confirms the page number.
+- If the count is even, 25 more crates arrive; if it is odd, 12 more crates arrive.
+- A supervisor initials the log.
+- If the count is even, 28 more crates arrive; if it is odd, 15 more crates arrive.
+- A photo of the ledger is filed.
+- If the count is even, half of them are shipped out and then 29 crates arrive; if it is odd, 26 more crates arrive.
+- The record is initialled and set aside.
+
+How many crates does the depot have at the end of the day?",2331161279
+arith,default,4,immediate,1,34,111,0,-1,0,0,stop,5,0,gemma-3-27b-it, 111,"A depot starts the day with 91 crates.
+- The shift lead confirms the page number.
+- If the count is even, 23 crates are shipped out; if it is odd, 3 crates are shipped out.
+- If the count is even, half of them are shipped out and then 18 crates arrive; if it is odd, 25 more crates arrive.
+- If the count is even, half of them are shipped out and then 23 crates arrive; if it is odd, 16 more crates arrive.
+- The entry is underlined in the register.
+- If the count is even, half of them are shipped out and then 7 crates arrive; if it is odd, 20 more crates arrive.
+- The logbook is passed to the next shift.
+- The night shift signs the ledger.
+- The tally is copied onto the whiteboard.
+- The count is read aloud for the record.
+
+How many crates does the depot have at the end of the day?",4260725289
+arith,default,4,immediate,2,79,48,0,-1,0,0,stop,4,0,gemma-3-27b-it, 48,"A depot starts the day with 33 crates.
+- If the count is even, half of them are shipped out and then 21 crates arrive; if it is odd, 22 more crates arrive.
+- The tally is copied onto the whiteboard.
+- The entry is underlined in the register.
+- The shift lead confirms the page number.
+- If the count is even, 9 more crates arrive; if it is odd, 26 more crates arrive.
+- If the count is even, 24 crates are shipped out; if it is odd, 19 crates are shipped out.
+- A photo of the ledger is filed.
+- If the count is even, 17 more crates arrive; if it is odd, 22 more crates arrive.
+- A supervisor initials the log.
+- The logbook is passed to the next shift.
+
+How many crates does the depot have at the end of the day?",1694290835
+arith,default,4,immediate,3,40,71,0,-1,0,0,stop,4,0,gemma-3-27b-it, 71,"A depot starts the day with 69 crates.
+- If the count is even, half of them are shipped out and then 7 crates arrive; if it is odd, 12 more crates arrive.
+- The entry is underlined in the register.
+- The clerk stamps the page.
+- A supervisor initials the log.
+- The count is read aloud for the record.
+- The night shift signs the ledger.
+- If the count is even, 20 crates are shipped out; if it is odd, 4 crates are shipped out.
+- If the count is even, 18 crates are shipped out; if it is odd, 25 crates are shipped out.
+- The record is initialled and set aside.
+- If the count is even, half of them are shipped out and then 14 crates arrive; if it is odd, 12 more crates arrive.
+
+How many crates does the depot have at the end of the day?",335274757
+arith,default,4,immediate,4,79,68,0,-1,0,0,stop,4,0,gemma-3-27b-it, 68,"A depot starts the day with 80 crates.
+- If the count is even, half of them are shipped out and then 4 crates arrive; if it is odd, 18 more crates arrive.
+- If the count is even, 24 more crates arrive; if it is odd, 9 more crates arrive.
+- If the count is even, half of them are shipped out and then 22 crates arrive; if it is odd, 13 more crates arrive.
+- The tally is copied onto the whiteboard.
+- The record is initialled and set aside.
+- The logbook is passed to the next shift.
+- A photo of the ledger is filed.
+- If the count is even, 23 more crates arrive; if it is odd, 25 more crates arrive.
+- A supervisor initials the log.
+- The night shift signs the ledger.
+
+How many crates does the depot have at the end of the day?",2376038054
+arith,default,4,immediate,5,39,73,0,-1,0,0,stop,4,0,gemma-3-27b-it, 73,"A depot starts the day with 94 crates.
+- A supervisor initials the log.
+- If the count is even, 16 crates are shipped out; if it is odd, 11 crates are shipped out.
+- The tally is copied onto the whiteboard.
+- The night shift signs the ledger.
+- If the count is even, 8 more crates arrive; if it is odd, 3 more crates arrive.
+- If the count is even, 18 crates are shipped out; if it is odd, 9 crates are shipped out.
+- The entry is underlined in the register.
+- If the count is even, half of them are shipped out and then 5 crates arrive; if it is odd, 22 more crates arrive.
+- A photo of the ledger is filed.
+- The logbook is passed to the next shift.
+
+How many crates does the depot have at the end of the day?",4204283440
+arith,default,4,immediate,6,77,27,0,-1,0,0,stop,4,0,gemma-3-27b-it, 27,"A depot starts the day with 12 crates.
+- If the count is even, 29 more crates arrive; if it is odd, 27 more crates arrive.
+- A photo of the ledger is filed.
+- The entry is underlined in the register.
+- The record is initialled and set aside.
+- If the count is even, 15 more crates arrive; if it is odd, 12 more crates arrive.
+- The shift lead confirms the page number.
+- The tally is copied onto the whiteboard.
+- If the count is even, half of them are shipped out and then 3 crates arrive; if it is odd, 27 more crates arrive.
+- The clerk stamps the page.
+- If the count is even, 3 crates are shipped out; if it is odd, 24 crates are shipped out.
+
+How many crates does the depot have at the end of the day?",1670453130
+arith,default,4,immediate,7,77,43,0,-1,0,0,stop,4,0,gemma-3-27b-it, 43,"A depot starts the day with 40 crates.
+- The count is read aloud for the record.
+- A supervisor initials the log.
+- A photo of the ledger is filed.
+- If the count is even, 15 crates are shipped out; if it is odd, 12 crates are shipped out.
+- If the count is even, half of them are shipped out and then 6 crates arrive; if it is odd, 9 more crates arrive.
+- If the count is even, 29 more crates arrive; if it is odd, 3 more crates arrive.
+- The record is initialled and set aside.
+- The logbook is passed to the next shift.
+- If the count is even, half of them are shipped out and then 22 crates arrive; if it is odd, 14 more crates arrive.
+- The clerk stamps the page.
+
+How many crates does the depot have at the end of the day?",345384732

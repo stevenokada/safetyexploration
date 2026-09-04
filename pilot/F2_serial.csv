@@ -1,0 +1,721 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+facts,default,1,immediate,0,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,2838286984
+facts,default,1,immediate,1,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,3727417886
+facts,default,1,immediate,2,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,1193456548
+facts,default,1,immediate,3,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,807764786
+facts,default,1,immediate,4,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2923501201
+facts,default,1,immediate,5,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,3645253127
+facts,default,1,immediate,6,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,1078949821
+facts,default,1,immediate,7,74,74,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,927483691
+facts,default,1,immediate,8,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,2818005690
+facts,default,1,immediate,9,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,3505416748
+facts,default,1,immediate,10,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,235588000
+facts,default,1,immediate,11,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,2030958902
+facts,default,1,immediate,12,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,3758401676
+facts,default,1,immediate,13,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,2533595162
+facts,default,1,immediate,14,8,8,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,157748665
+facts,default,1,immediate,15,6,6,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2120236335
+facts,default,1,immediate,16,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,3882445973
+facts,default,1,immediate,17,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,2423151619
+facts,default,1,immediate,18,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,13713810
+facts,default,1,immediate,19,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,2010542340
+facts,default,1,immediate,20,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,623352419
+facts,default,1,immediate,21,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,1377872629
+facts,default,1,immediate,22,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,3408526159
+facts,default,1,immediate,23,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,3157183449
+facts,default,1,immediate,24,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,575299194
+facts,default,1,immediate,25,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,1431138028
+facts,default,1,immediate,26,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,3427024726
+facts,default,1,immediate,27,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,3141734336
+facts,default,1,immediate,28,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,737940049
+facts,default,1,immediate,29,23,23,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,1559962311
+facts,default,1,immediate,30,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,1010608930
+facts,default,1,immediate,31,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,1262197684
+facts,default,1,immediate,32,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,3526543886
+facts,default,1,immediate,33,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,2771778200
+facts,default,1,immediate,34,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,995192635
+facts,default,1,immediate,35,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,1280729005
+facts,default,1,immediate,36,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,3579776535
+facts,default,1,immediate,37,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2723692161
+facts,default,1,immediate,38,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,854008592
+facts,default,1,immediate,39,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,1172312966
+facts,default,1,immediate,40,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,1937587685
+facts,default,1,immediate,41,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,75107699
+facts,default,1,immediate,42,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2641583305
+facts,default,1,immediate,43,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,3933498463
+facts,default,1,immediate,44,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,1947269628
+facts,default,1,immediate,45,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,51890538
+facts,default,1,immediate,46,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,2585696464
+facts,default,1,immediate,47,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,3977881670
+facts,default,1,immediate,48,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,2108077527
+facts,default,1,immediate,49,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,178357569
+facts,default,1,immediate,50,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,1785072804
+facts,default,1,immediate,51,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,492911666
+facts,default,1,immediate,52,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2221436296
+facts,default,1,immediate,53,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,4084161822
+facts,default,1,immediate,54,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,1829488829
+facts,default,1,immediate,55,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,437057579
+facts,default,1,immediate,56,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,2198186385
+facts,default,1,immediate,57,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,4093810951
+facts,default,1,immediate,58,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,1690141846
+facts,default,1,immediate,59,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,331002880
+facts,default,1,immediate,60,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,1095458663
+facts,default,1,immediate,61,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,910979057
+facts,default,1,immediate,62,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2940550731
+facts,default,1,immediate,63,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,3628207837
+facts,default,1,immediate,64,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,1176935294
+facts,default,1,immediate,65,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,824290280
+facts,default,1,immediate,66,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2821257810
+facts,default,1,immediate,67,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,3744451268
+facts,default,1,immediate,68,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,1334892373
+facts,default,1,immediate,69,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,949479363
+facts,default,1,immediate,70,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,1481666086
+facts,default,1,immediate,71,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,794255024
+facts,default,1,immediate,72,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,3059617546
+facts,default,1,immediate,73,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,3243851676
+facts,default,1,immediate,74,6,6,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,1597876799
+facts,default,1,immediate,75,1,1,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,674929321
+facts,default,1,immediate,76,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,2972961555
+facts,default,1,immediate,77,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,3325361029
+facts,default,1,immediate,78,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,1452008980
+facts,default,1,immediate,79,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,562878082
+facts,default,1,immediate,80,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,3754455785
+facts,default,1,immediate,81,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,2832155263
+facts,default,1,immediate,82,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,835064773
+facts,default,1,immediate,83,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,1187062611
+facts,default,1,immediate,84,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,3634738928
+facts,default,1,immediate,85,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,2946664038
+facts,default,1,immediate,86,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,917231580
+facts,default,1,immediate,87,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,1101850442
+facts,default,1,immediate,88,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,3507747547
+facts,default,1,immediate,89,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,2786380365
+facts,default,1,immediate,90,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,3335734184
+facts,default,1,immediate,91,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,2983490366
+facts,default,1,immediate,92,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,685580932
+facts,default,1,immediate,93,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,1608126994
+facts,default,1,immediate,94,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,3250489265
+facts,default,1,immediate,95,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,3065624359
+facts,default,1,immediate,96,23,23,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,800122525
+facts,default,1,immediate,97,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,1488442891
+facts,default,1,immediate,98,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,3356019610
+facts,default,1,immediate,99,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,3205495564
+facts,default,1,immediate,100,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,570652160
+facts,default,1,immediate,101,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,1426343574
+facts,default,1,immediate,102,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,3423409964
+facts,default,1,immediate,103,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element Tungsten?,3138004922
+facts,default,1,immediate,104,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,628011545
+facts,default,1,immediate,105,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,1382646415
+facts,default,1,immediate,106,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,3412120373
+facts,default,1,immediate,107,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,3160925091
+facts,default,1,immediate,108,8,8,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,752418354
+facts,default,1,immediate,109,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element Vanadium?,1541394084
+facts,default,1,immediate,110,6,6,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,991446849
+facts,default,1,immediate,111,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,1277130711
+facts,default,1,immediate,112,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element Phosphorus?,3574998637
+facts,default,1,immediate,113,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,2719028987
+facts,default,1,immediate,114,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,1014334296
+facts,default,1,immediate,115,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,1265808334
+facts,default,1,immediate,116,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element Hydrogen?,3531334260
+facts,default,1,immediate,117,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element Carbon?,2776421090
+facts,default,1,immediate,118,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,902025075
+facts,default,1,immediate,119,8,8,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element Oxygen?,1120206821
+facts,default,2,immediate,0,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,2875878609
+facts,default,2,immediate,1,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,3698154567
+facts,default,2,immediate,2,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1164185085
+facts,default,2,immediate,3,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,845364587
+facts,default,2,immediate,4,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,2886183112
+facts,default,2,immediate,5,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,3674249310
+facts,default,2,immediate,6,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1107937764
+facts,default,2,immediate,7,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,890173810
+facts,default,2,immediate,8,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,2779899107
+facts,default,2,immediate,9,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,3535197301
+facts,default,2,immediate,10,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,482305614
+facts,default,2,immediate,11,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,1807242968
+facts,default,2,immediate,12,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,4071688034
+facts,default,2,immediate,13,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,2243311604
+facts,default,2,immediate,14,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,466788951
+facts,default,2,immediate,15,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,1825936065
+facts,default,2,immediate,16,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,4124885883
+facts,default,2,immediate,17,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,2195452909
+facts,default,2,immediate,18,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,308604540
+facts,default,2,immediate,19,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,1701043946
+facts,default,2,immediate,20,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,932328845
+facts,default,2,immediate,21,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,1083507995
+facts,default,2,immediate,22,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,3650901153
+facts,default,2,immediate,23,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,2929419319
+facts,default,2,immediate,24,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,822079892
+facts,default,2,immediate,25,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,1207484674
+facts,default,2,immediate,26,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,3740373176
+facts,default,2,immediate,27,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,2851512366
+facts,default,2,immediate,28,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,961134015
+facts,default,2,immediate,29,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,1313770793
+facts,default,2,immediate,30,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,780731596
+facts,default,2,immediate,31,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,1502491738
+facts,default,2,immediate,32,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,3230098912
+facts,default,2,immediate,33,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3078641014
+facts,default,2,immediate,34,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,702857429
+facts,default,2,immediate,35,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,1591996483
+facts,default,2,immediate,36,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,3354042873
+facts,default,2,immediate,37,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,2968359279
+facts,default,2,immediate,38,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,542280958
+facts,default,2,immediate,39,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1465236584
+facts,default,2,immediate,40,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1640534539
+facts,default,2,immediate,41,1,1,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,382706333
+facts,default,2,immediate,42,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,2412180263
+facts,default,2,immediate,43,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,4173448113
+facts,default,2,immediate,44,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1722111506
+facts,default,2,immediate,45,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,295855748
+facts,default,2,immediate,46,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,2292922174
+facts,default,2,immediate,47,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,4289464232
+facts,default,2,immediate,48,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,1863522873
+facts,default,2,immediate,49,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,403974831
+facts,default,2,immediate,50,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,2027135818
+facts,default,2,immediate,51,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,265589724
+facts,default,2,immediate,52,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,2531115622
+facts,default,2,immediate,53,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3789222640
+facts,default,2,immediate,54,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,2143184723
+facts,default,2,immediate,55,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,146364357
+facts,default,2,immediate,56,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,2444232319
+facts,default,2,immediate,57,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3870766825
+facts,default,2,immediate,58,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1980246904
+facts,default,2,immediate,59,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,17767406
+facts,default,2,immediate,60,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,1409216649
+facts,default,2,immediate,61,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,620347423
+facts,default,2,immediate,62,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3186659749
+facts,default,2,immediate,63,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3405226291
+facts,default,2,immediate,64,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,1418933392
+facts,default,2,immediate,65,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,596902918
+facts,default,2,immediate,66,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3130873276
+facts,default,2,immediate,67,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,3449447722
+facts,default,2,immediate,68,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,1562736827
+facts,default,2,immediate,69,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,706889773
+facts,default,2,immediate,70,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1256571336
+facts,default,2,immediate,71,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1038283102
+facts,default,2,immediate,72,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,2766905572
+facts,default,2,immediate,73,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,3555496050
+facts,default,2,immediate,74,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,1300760017
+facts,default,2,immediate,75,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,982463815
+facts,default,2,immediate,76,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,2743493885
+facts,default,2,immediate,77,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,3565245547
+facts,default,2,immediate,78,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,1144932858
+facts,default,2,immediate,79,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,859404652
+facts,default,2,immediate,80,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,3447577863
+facts,default,2,immediate,81,15,15,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,3128618385
+facts,default,2,immediate,82,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,594787371
+facts,default,2,immediate,83,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,1416924349
+facts,default,2,immediate,84,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,3390052638
+facts,default,2,immediate,85,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3172411784
+facts,default,2,immediate,86,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,605976626
+facts,default,2,immediate,87,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,1394165924
+facts,default,2,immediate,88,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3282457909
+facts,default,2,immediate,89,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,3030476195
+facts,default,2,immediate,90,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,3563514950
+facts,default,2,immediate,91,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,2741099728
+facts,default,2,immediate,92,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,979930474
+facts,default,2,immediate,93,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,1299168764
+facts,default,2,immediate,94,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3540723807
+facts,default,2,immediate,95,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,2752256201
+facts,default,2,immediate,96,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1023756659
+facts,default,2,immediate,97,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,1241676261
+facts,default,2,immediate,98,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3669845108
+facts,default,2,immediate,99,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,2914669794
+facts,default,2,immediate,100,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,1705184464
+facts,default,2,immediate,101,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,312753222
+facts,default,2,immediate,102,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,2343398908
+facts,default,2,immediate,103,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is C?,4239023466
+facts,default,2,immediate,104,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,1657718985
+facts,default,2,immediate,105,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,365557855
+facts,default,2,immediate,106,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is W?,2361436645
+facts,default,2,immediate,107,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,4224162163
+facts,default,2,immediate,108,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,1803060450
+facts,default,2,immediate,109,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,478131316
+facts,default,2,immediate,110,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,2092449169
+facts,default,2,immediate,111,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,197070087
+facts,default,2,immediate,112,23,23,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,2461424829
+facts,default,2,immediate,113,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3853610027
+facts,default,2,immediate,114,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,2077620616
+facts,default,2,immediate,115,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is P?,215140638
+facts,default,2,immediate,116,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is H?,2514196644
+facts,default,2,immediate,117,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,3806111794
+facts,default,2,immediate,118,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is O?,1919137187
+facts,default,2,immediate,119,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is V?,90473781
+facts,default,3,immediate,0,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,2863138534
+facts,default,3,immediate,1,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,3719247472
+facts,default,3,immediate,2,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,1151756234
+facts,default,3,immediate,3,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,866211676
+facts,default,3,immediate,4,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,2915418879
+facts,default,3,immediate,5,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,3670209129
+facts,default,3,immediate,6,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,1137419219
+facts,default,3,immediate,7,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,885822277
+facts,default,3,immediate,8,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,2759036628
+facts,default,3,immediate,9,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,3547643458
+facts,default,3,immediate,10,15,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,2751660331
+facts,default,3,immediate,11,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,3540267453
+facts,default,3,immediate,12,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,1242390535
+facts,default,3,immediate,13,23,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Vienna?,1024086161
+facts,default,3,immediate,14,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,2741945650
+facts,default,3,immediate,15,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,3563713956
+facts,default,3,immediate,16,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,1298179102
+facts,default,3,immediate,17,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,979866760
+facts,default,3,immediate,18,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,2866317593
+facts,default,3,immediate,19,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,3722426767
+facts,default,3,immediate,20,23,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of Vienna?,2402177768
+facts,default,3,immediate,21,8,76,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 76,What is the atomic number of the element whose symbol is the first letter of Oslo?,4163461758
+facts,default,3,immediate,22,23,74,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Vienna?,1629500356
+facts,default,3,immediate,23,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,371655506
+facts,default,3,immediate,24,15,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,2286130929
+facts,default,3,immediate,25,23,2,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Vienna?,4282689127
+facts,default,3,immediate,26,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,1716385757
+facts,default,3,immediate,27,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,290113355
+facts,default,3,immediate,28,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,2180373210
+facts,default,3,immediate,29,23,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of Vienna?,4143114828
+facts,default,3,immediate,30,23,73,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 73,What is the atomic number of the element whose symbol is the first letter of Vienna?,2520081321
+facts,default,3,immediate,31,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,3778171711
+facts,default,3,immediate,32,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,2017133189
+facts,default,3,immediate,33,23,0,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 0,What is the atomic number of the element whose symbol is the first letter of Vienna?,255603219
+facts,default,3,immediate,34,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,2438506416
+facts,default,3,immediate,35,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,3865024294
+facts,default,3,immediate,36,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,2136393372
+facts,default,3,immediate,37,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,139589130
+facts,default,3,immediate,38,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,2565794715
+facts,default,3,immediate,39,15,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,4025080589
+facts,default,3,immediate,40,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,3648320878
+facts,default,3,immediate,41,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,2926822904
+facts,default,3,immediate,42,23,74,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Vienna?,930780226
+facts,default,3,immediate,43,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,1081976020
+facts,default,3,immediate,44,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,3726193015
+facts,default,3,immediate,45,23,74,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Vienna?,2837316065
+facts,default,3,immediate,46,15,9,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 9,What is the atomic number of the element whose symbol is the first letter of Prague?,806834267
+facts,default,3,immediate,47,74,74,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,1192255693
+facts,default,3,immediate,48,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,3618602332
+facts,default,3,immediate,49,15,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,2695384522
+facts,default,3,immediate,50,23,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of Vienna?,3228550191
+facts,default,3,immediate,51,23,74,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Vienna?,3077108921
+facts,default,3,immediate,52,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Helsinki?,778151171
+facts,default,3,immediate,53,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,1499895189
+facts,default,3,immediate,54,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,3338797110
+facts,default,3,immediate,55,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of Prague?,2953130144
+facts,default,3,immediate,56,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,688677146
+facts,default,3,immediate,57,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,1577800076
+facts,default,3,immediate,58,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,3467922461
+facts,default,3,immediate,59,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of Prague?,3115547787
+facts,default,3,immediate,60,15,8,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,3947010028
+facts,default,3,immediate,61,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,2621810554
+facts,default,3,immediate,62,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,88929984
+facts,default,3,immediate,63,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,1917568598
+facts,default,3,immediate,64,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,3962524661
+facts,default,3,immediate,65,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,2603115363
+facts,default,3,immediate,66,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,35730137
+facts,default,3,immediate,67,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,1965425231
+facts,default,3,immediate,68,23,74,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Vienna?,3852017630
+facts,default,3,immediate,69,23,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of Vienna?,2459840328
+facts,default,3,immediate,70,15,9,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 9,What is the atomic number of the element whose symbol is the first letter of Prague?,4065961645
+facts,default,3,immediate,71,23,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of Vienna?,2237568571
+facts,default,3,immediate,72,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,475514753
+facts,default,3,immediate,73,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,1800468247
+facts,default,3,immediate,74,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,4113851060
+facts,default,3,immediate,75,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,2184401442
+facts,default,3,immediate,76,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,456786840
+facts,default,3,immediate,77,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,1815950094
+facts,default,3,immediate,78,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,4236390047
+facts,default,3,immediate,79,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,2340757001
+facts,default,3,immediate,80,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,1975630434
+facts,default,3,immediate,81,15,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,46566132
+facts,default,3,immediate,82,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,2614090574
+facts,default,3,immediate,83,74,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Warsaw?,3972590552
+facts,default,3,immediate,84,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,1923907195
+facts,default,3,immediate,85,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,95112941
+facts,default,3,immediate,86,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,2627870551
+facts,default,3,immediate,87,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,3953471425
+facts,default,3,immediate,88,23,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Vienna?,2065314384
+facts,default,3,immediate,89,23,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of Vienna?,203227846
+facts,default,3,immediate,90,15,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,1826261795
+facts,default,3,immediate,91,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,467516341
+facts,default,3,immediate,92,23,73,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 73,What is the atomic number of the element whose symbol is the first letter of Vienna?,2194991631
+facts,default,3,immediate,93,23,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of Vienna?,4124301977
+facts,default,3,immediate,94,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,1807175482
+facts,default,3,immediate,95,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of Prague?,481329068
+facts,default,3,immediate,96,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,2243505686
+facts,default,3,immediate,97,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,4072545920
+facts,default,3,immediate,98,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,1644233489
+facts,default,3,immediate,99,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,352727943
+facts,default,3,immediate,100,74,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Warsaw?,1489184096
+facts,default,3,immediate,101,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,801379830
+facts,default,3,immediate,102,23,73,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 73,What is the atomic number of the element whose symbol is the first letter of Vienna?,3066905676
+facts,default,3,immediate,103,15,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Prague?,3251270874
+facts,default,3,immediate,104,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,1605296505
+facts,default,3,immediate,105,1,72,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 72,What is the atomic number of the element whose symbol is the first letter of Helsinki?,682217967
+facts,default,3,immediate,106,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,2980085845
+facts,default,3,immediate,107,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,3332878531
+facts,default,3,immediate,108,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,1444457810
+facts,default,3,immediate,109,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of Prague?,555720132
+facts,default,3,immediate,110,74,74,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of Warsaw?,1104679969
+facts,default,3,immediate,111,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,920593591
+facts,default,3,immediate,112,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,2950067469
+facts,default,3,immediate,113,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of Warsaw?,3637593499
+facts,default,3,immediate,114,6,6,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,1186320440
+facts,default,3,immediate,115,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,833806510
+facts,default,3,immediate,116,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of Helsinki?,2830872852
+facts,default,3,immediate,117,6,27,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 27,What is the atomic number of the element whose symbol is the first letter of Copenhagen?,3753673090
+facts,default,3,immediate,118,15,9,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 9,What is the atomic number of the element whose symbol is the first letter of Prague?,1325636627
+facts,default,3,immediate,119,8,8,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of Oslo?,939830405
+facts,default,4,immediate,0,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2951155811
+facts,default,4,immediate,1,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,3638567157
+facts,default,4,immediate,2,6,35,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 35,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1105817935
+facts,default,4,immediate,3,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,921584089
+facts,default,4,immediate,4,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,2827670650
+facts,default,4,immediate,5,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3750618348
+facts,default,4,immediate,6,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,1183102294
+facts,default,4,immediate,7,6,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,830703040
+facts,default,4,immediate,8,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2705102929
+facts,default,4,immediate,9,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,3594234055
+facts,default,4,immediate,10,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,970209682
+facts,default,4,immediate,11,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,1322453252
+facts,default,4,immediate,12,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,3621411006
+facts,default,4,immediate,13,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,2698864680
+facts,default,4,immediate,14,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,1052376459
+facts,default,4,immediate,15,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,1237241117
+facts,default,4,immediate,16,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,3501694119
+facts,default,4,immediate,17,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,2813373489
+facts,default,4,immediate,18,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,923775392
+facts,default,4,immediate,19,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,1074299190
+facts,default,4,immediate,20,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,318335569
+facts,default,4,immediate,21,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,1711168199
+facts,default,4,immediate,22,15,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,4244048765
+facts,default,4,immediate,23,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,2347777003
+facts,default,4,immediate,24,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,362065480
+facts,default,4,immediate,25,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1653841630
+facts,default,4,immediate,26,74,82,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 82,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,4221226852
+facts,default,4,immediate,27,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2359164914
+facts,default,4,immediate,28,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,472048227
+facts,default,4,immediate,29,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1797640949
+facts,default,4,immediate,30,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,199383824
+facts,default,4,immediate,31,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,2095410054
+facts,default,4,immediate,32,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3857463868
+facts,default,4,immediate,33,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,2464877226
+facts,default,4,immediate,34,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,210738953
+facts,default,4,immediate,35,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2072555423
+facts,default,4,immediate,36,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,3800170021
+facts,default,4,immediate,37,6,26,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,2508639923
+facts,default,4,immediate,38,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,87675682
+facts,default,4,immediate,39,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,1916724148
+facts,default,4,immediate,40,6,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1151585751
+facts,default,4,immediate,41,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,866450753
+facts,default,4,immediate,42,15,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,2863508731
+facts,default,4,immediate,43,6,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3718945901
+facts,default,4,immediate,44,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,1137576398
+facts,default,4,immediate,45,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,885602648
+facts,default,4,immediate,46,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,2915068130
+facts,default,4,immediate,47,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,3670497396
+facts,default,4,immediate,48,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,1249396197
+facts,default,4,immediate,49,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,1031763315
+facts,default,4,immediate,50,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,1572404374
+facts,default,4,immediate,51,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,717212672
+facts,default,4,immediate,52,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,3015089594
+facts,default,4,immediate,53,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,3299978540
+facts,default,4,immediate,54,15,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,1523923087
+facts,default,4,immediate,55,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,768739353
+facts,default,4,immediate,56,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,3034274211
+facts,default,4,immediate,57,6,35,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 35,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3286001973
+facts,default,4,immediate,58,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,1399026852
+facts,default,4,immediate,59,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,610550834
+facts,default,4,immediate,60,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1989521237
+facts,default,4,immediate,61,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,26386371
+facts,default,4,immediate,62,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,2560347769
+facts,default,4,immediate,63,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,4020043503
+facts,default,4,immediate,64,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,1912105804
+facts,default,4,immediate,65,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,117398490
+facts,default,4,immediate,66,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2683701856
+facts,default,4,immediate,67,6,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3908123382
+facts,default,4,immediate,68,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,2018387815
+facts,default,4,immediate,69,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,256448497
+facts,default,4,immediate,70,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,1871617556
+facts,default,4,immediate,71,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,411676290
+facts,default,4,immediate,72,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,2172714808
+facts,default,4,immediate,73,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,4136095662
+facts,default,4,immediate,74,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,1759730189
+facts,default,4,immediate,75,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,535063195
+facts,default,4,immediate,76,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2263694113
+facts,default,4,immediate,77,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,4058647479
+facts,default,4,immediate,78,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1632966182
+facts,default,4,immediate,79,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,374482608
+facts,default,4,immediate,80,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3893789403
+facts,default,4,immediate,81,6,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,2668737101
+facts,default,4,immediate,82,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,102294519
+facts,default,4,immediate,83,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,1897911137
+facts,default,4,immediate,84,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,4017833666
+facts,default,4,immediate,85,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2558293588
+facts,default,4,immediate,86,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,24455150
+facts,default,4,immediate,87,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,1987188600
+facts,default,4,immediate,88,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,3872197353
+facts,default,4,immediate,89,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2445949567
+facts,default,4,immediate,90,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,4044207002
+facts,default,4,immediate,91,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,2248835852
+facts,default,4,immediate,92,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,520344246
+facts,default,4,immediate,93,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,1745150496
+facts,default,4,immediate,94,15,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Czechia?,4133517187
+facts,default,4,immediate,95,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,2171029269
+facts,default,4,immediate,96,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,409867951
+facts,default,4,immediate,97,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1869162041
+facts,default,4,immediate,98,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,4292230056
+facts,default,4,immediate,99,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,2295401278
+facts,default,4,immediate,100,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3940809072
+facts,default,4,immediate,101,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,2649016806
+facts,default,4,immediate,102,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,82679900
+facts,default,4,immediate,103,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,1944758474
+facts,default,4,immediate,104,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,3985522025
+facts,default,4,immediate,105,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,2592673279
+facts,default,4,immediate,106,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,58743877
+facts,default,4,immediate,107,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,1955032275
+facts,default,4,immediate,108,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,3828904258
+facts,default,4,immediate,109,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,2470396372
+facts,default,4,immediate,110,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of Finland?,4093167665
+facts,default,4,immediate,111,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,2231367847
+facts,default,4,immediate,112,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,502704413
+facts,default,4,immediate,113,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,1794218379
+facts,default,4,immediate,114,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,4103408680
+facts,default,4,immediate,115,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Austria?,2207399102
+facts,default,4,immediate,116,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Denmark?,446393604
+facts,default,4,immediate,117,74,8,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,1838964114
+facts,default,4,immediate,118,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of Norway?,4246945795
+facts,default,4,immediate,119,74,82,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 82,What is the atomic number of the element whose symbol is the first letter of the capital city of Poland?,2317643925
+facts,default,5,immediate,0,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,2921691732
+facts,default,5,immediate,1,23,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3642903234
+facts,default,5,immediate,2,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1076566904
+facts,default,5,immediate,3,74,35,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 35,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,925641710
+facts,default,5,immediate,4,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,2840116813
+facts,default,5,immediate,5,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,3729755867
+facts,default,5,immediate,6,8,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,1195827041
+facts,default,5,immediate,7,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,809627639
+facts,default,5,immediate,8,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,2701062758
+facts,default,5,immediate,9,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,3623469808
+facts,default,5,immediate,10,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,2171100919
+facts,default,5,immediate,11,8,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,4134497889
+facts,default,5,immediate,12,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,1868971995
+facts,default,5,immediate,13,8,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,409014093
+facts,default,5,immediate,14,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,2248514286
+facts,default,5,immediate,15,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,4043483768
+facts,default,5,immediate,16,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1745615810
+facts,default,5,immediate,17,15,3,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 3,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,520932180
+facts,default,5,immediate,18,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,2410927813
+facts,default,5,immediate,19,15,2,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,4172605011
+facts,default,5,immediate,20,6,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,2856652084
+facts,default,5,immediate,21,1,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,3712105890
+facts,default,5,immediate,22,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,1145793560
+facts,default,5,immediate,23,8,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,860642446
+facts,default,5,immediate,24,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,2905131309
+facts,default,5,immediate,25,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,3660577211
+facts,default,5,immediate,26,8,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,1126606849
+facts,default,5,immediate,27,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,874616983
+facts,default,5,immediate,28,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,2761852166
+facts,default,5,immediate,29,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3550066064
+facts,default,5,immediate,30,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,3009297525
+facts,default,5,immediate,31,8,7,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 7,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,3294170339
+facts,default,5,immediate,32,23,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1565547865
+facts,default,5,immediate,33,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,710372815
+facts,default,5,immediate,34,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3023304812
+facts,default,5,immediate,35,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,3275016442
+facts,default,5,immediate,36,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,1513986368
+facts,default,5,immediate,37,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,758819286
+facts,default,5,immediate,38,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3179656263
+facts,default,5,immediate,39,6,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3397551313
+facts,default,5,immediate,40,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,4229933746
+facts,default,5,immediate,41,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,2333645348
+facts,default,5,immediate,42,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,303156126
+facts,default,5,immediate,43,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1696004872
+facts,default,5,immediate,44,23,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,4218580651
+facts,default,5,immediate,45,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,2356502077
+facts,default,5,immediate,46,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,360451975
+facts,default,5,immediate,47,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,1652244241
+facts,default,5,immediate,48,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,4072940160
+facts,default,5,immediate,49,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,2244153878
+facts,default,5,immediate,50,74,15,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,3842284531
+facts,default,5,immediate,51,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,2449714021
+facts,default,5,immediate,52,8,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,185268959
+facts,default,5,immediate,53,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,2081278537
+facts,default,5,immediate,54,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3798556650
+facts,default,5,immediate,55,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,2507042684
+facts,default,5,immediate,56,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,208092870
+facts,default,5,immediate,57,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,2069892688
+facts,default,5,immediate,58,8,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,3957265345
+facts,default,5,immediate,59,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,2631410519
+facts,default,5,immediate,60,1,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,3458844720
+facts,default,5,immediate,61,8,26,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,3106863270
+facts,default,5,immediate,62,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,539470108
+facts,default,5,immediate,63,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,1461754250
+facts,default,5,immediate,64,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3376679977
+facts,default,5,immediate,65,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3192077503
+facts,default,5,immediate,66,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,659188997
+facts,default,5,immediate,67,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,1347247507
+facts,default,5,immediate,68,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3237101570
+facts,default,5,immediate,69,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,3086315668
+facts,default,5,immediate,70,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,3610442097
+facts,default,5,immediate,71,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,2687879655
+facts,default,5,immediate,72,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,960272477
+facts,default,5,immediate,73,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1312532683
+facts,default,5,immediate,74,6,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3495902568
+facts,default,5,immediate,75,8,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,2807565822
+facts,default,5,immediate,76,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,1045519428
+facts,default,5,immediate,77,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,1230400722
+facts,default,5,immediate,78,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,3655954755
+facts,default,5,immediate,79,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,2934850005
+facts,default,5,immediate,80,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1353377214
+facts,default,5,immediate,81,8,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,665703720
+facts,default,5,immediate,82,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,3198452882
+facts,default,5,immediate,83,74,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,3382948868
+facts,default,5,immediate,84,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1472668071
+facts,default,5,immediate,85,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,549458225
+facts,default,5,immediate,86,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,3116974219
+facts,default,5,immediate,87,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,3469635613
+facts,default,5,immediate,88,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,1584491916
+facts,default,5,immediate,89,8,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,695622938
+facts,default,5,immediate,90,8,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,1236391167
+facts,default,5,immediate,91,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1052173417
+facts,default,5,immediate,92,74,3,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 3,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,2814358995
+facts,default,5,immediate,93,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3501753669
+facts,default,5,immediate,94,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,1323045094
+facts,default,5,immediate,95,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,970662000
+facts,default,5,immediate,96,8,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,2698146250
+facts,default,5,immediate,97,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,3621077340
+facts,default,5,immediate,98,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,1198152909
+facts,default,5,immediate,99,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,812477531
+facts,default,5,immediate,100,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,3615740096
+facts,default,5,immediate,101,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,2693062742
+facts,default,5,immediate,102,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,965587436
+facts,default,5,immediate,103,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Sibelius was born?,1317699962
+facts,default,5,immediate,104,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3505263833
+facts,default,5,immediate,105,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,2817074255
+facts,default,5,immediate,106,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1054897653
+facts,default,5,immediate,107,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,1239893347
+facts,default,5,immediate,108,8,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,3646445810
+facts,default,5,immediate,109,74,15,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Chopin was born?,2925488228
+facts,default,5,immediate,110,6,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3466125697
+facts,default,5,immediate,111,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,3114258711
+facts,default,5,immediate,112,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,546734253
+facts,default,5,immediate,113,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1469165627
+facts,default,5,immediate,114,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3388286360
+facts,default,5,immediate,115,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Ibsen was born?,3203536142
+facts,default,5,immediate,116,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Andersen was born?,670778548
+facts,default,5,immediate,117,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,1358722082
+facts,default,5,immediate,118,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Kafka was born?,3225643443
+facts,default,5,immediate,119,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where Mozart was born?,3074709797
+facts,default,6,immediate,0,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,2892219405
+facts,default,6,immediate,1,15,3,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 3,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,3680826523
+facts,default,6,immediate,2,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,1114481953
+facts,default,6,immediate,3,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,896177591
+facts,default,6,immediate,4,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,2869821460
+facts,default,6,immediate,5,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,3691589762
+facts,default,6,immediate,6,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,1157652792
+facts,default,6,immediate,7,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,839340462
+facts,default,6,immediate,8,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,2729987135
+facts,default,6,immediate,9,6,26,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,3586096297
+facts,default,6,immediate,10,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2480795929
+facts,default,6,immediate,11,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,3839541647
+facts,default,6,immediate,12,1,15,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2111017013
+facts,default,6,immediate,13,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,181706915
+facts,default,6,immediate,14,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,2494575872
+facts,default,6,immediate,15,8,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,3820422550
+facts,default,6,immediate,16,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,2059293740
+facts,default,6,immediate,17,1,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,230253754
+facts,default,6,immediate,18,8,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,2634447147
+facts,default,6,immediate,19,74,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,3925952957
+facts,default,6,immediate,20,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,3102778074
+facts,default,6,immediate,21,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,3489108556
+facts,default,6,immediate,22,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,1459536886
+facts,default,6,immediate,23,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,570028896
+facts,default,6,immediate,24,8,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,3214763715
+facts,default,6,immediate,25,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,3365557845
+facts,default,6,immediate,26,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,1368590319
+facts,default,6,immediate,27,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,647247737
+facts,default,6,immediate,28,8,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,3056282344
+facts,default,6,immediate,29,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,3240893054
+facts,default,6,immediate,30,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,2716570523
+facts,default,6,immediate,31,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,3605832461
+facts,default,6,immediate,32,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,1340469943
+facts,default,6,immediate,33,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,954384929
+facts,default,6,immediate,34,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,2793822082
+facts,default,6,immediate,35,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,3514918676
+facts,default,6,immediate,36,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,1216886446
+facts,default,6,immediate,37,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,1066337848
+facts,default,6,immediate,38,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,2939165609
+facts,default,6,immediate,39,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,3627494207
+facts,default,6,immediate,40,1,2,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,4004119900
+facts,default,6,immediate,41,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2578265546
+facts,default,6,immediate,42,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,10773616
+facts,default,6,immediate,43,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,2007192806
+facts,default,6,immediate,44,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,3922182469
+facts,default,6,immediate,45,1,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2663444947
+facts,default,6,immediate,46,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,130654313
+facts,default,6,immediate,47,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,1892585727
+facts,default,6,immediate,48,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,3765538158
+facts,default,6,immediate,49,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,2541141496
+facts,default,6,immediate,50,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,4155585565
+facts,default,6,immediate,51,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,2159412363
+facts,default,6,immediate,52,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,431969585
+facts,default,6,immediate,53,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,1857578407
+facts,default,6,immediate,54,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,4041011204
+facts,default,6,immediate,55,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2279325842
+facts,default,6,immediate,56,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,517116200
+facts,default,6,immediate,57,1,74,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 74,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,1775608254
+facts,default,6,immediate,58,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,4184521775
+facts,default,6,immediate,59,1,6,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 6,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2389544121
+facts,default,6,immediate,60,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,3701237726
+facts,default,6,immediate,61,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,2879084360
+facts,default,6,immediate,62,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,848430834
+facts,default,6,immediate,63,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,1167406692
+facts,default,6,immediate,64,15,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,3690046407
+facts,default,6,immediate,65,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,2901840721
+facts,default,6,immediate,66,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,905954027
+facts,default,6,immediate,67,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,1123611261
+facts,default,6,immediate,68,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,3527929836
+facts,default,6,immediate,69,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2772492154
+facts,default,6,immediate,70,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,3313981087
+facts,default,6,immediate,71,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2994759177
+facts,default,6,immediate,72,8,23,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,730412979
+facts,default,6,immediate,73,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,1552811813
+facts,default,6,immediate,74,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,3270152838
+facts,default,6,immediate,75,6,15,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,3052249616
+facts,default,6,immediate,76,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,753202090
+facts,default,6,immediate,77,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,1541653308
+facts,default,6,immediate,78,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,3411861165
+facts,default,6,immediate,79,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,3160141371
+facts,default,6,immediate,80,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,1109346896
+facts,default,6,immediate,81,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,890796742
+facts,default,6,immediate,82,23,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,2886806396
+facts,default,6,immediate,83,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,3675659242
+facts,default,6,immediate,84,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,1165135433
+facts,default,6,immediate,85,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,846577375
+facts,default,6,immediate,86,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,2877091685
+facts,default,6,immediate,87,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,3699105779
+facts,default,6,immediate,88,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,1287963234
+facts,default,6,immediate,89,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,1002697460
+facts,default,6,immediate,90,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,1527020305
+facts,default,6,immediate,91,6,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,738413447
+facts,default,6,immediate,92,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,3037338173
+facts,default,6,immediate,93,6,8,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 8,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,3255642795
+facts,default,6,immediate,94,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,1550434056
+facts,default,6,immediate,95,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,728666014
+facts,default,6,immediate,96,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,2993151524
+facts,default,6,immediate,97,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,3311464114
+facts,default,6,immediate,98,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,1440740131
+facts,default,6,immediate,99,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,584631221
+facts,default,6,immediate,100,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2418256400
+facts,default,6,immediate,101,1,15,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,3877935750
+facts,default,6,immediate,102,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,2116930364
+facts,default,6,immediate,103,74,2,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 2,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,153811882
+facts,default,6,immediate,104,15,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,2538499593
+facts,default,6,immediate,105,1,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,3762904735
+facts,default,6,immediate,106,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,2034241317
+facts,default,6,immediate,107,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,239550387
+facts,default,6,immediate,108,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,2667061794
+facts,default,6,immediate,109,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,3925807796
+facts,default,6,immediate,110,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,2302188369
+facts,default,6,immediate,111,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Snow Queen was born?,4265585607
+facts,default,6,immediate,112,15,26,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 26,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,1731656317
+facts,default,6,immediate,113,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of the Minute Waltz was born?,271698667
+facts,default,6,immediate,114,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of Finlandia was born?,2387959624
+facts,default,6,immediate,115,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,4182929374
+facts,default,6,immediate,116,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,1616592484
+facts,default,6,immediate,117,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the composer of The Magic Flute was born?,391909106
+facts,default,6,immediate,118,8,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of A Doll's House was born?,2279805795
+facts,default,6,immediate,119,15,23,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the element whose symbol is the first letter of the capital city of the country where the author of The Metamorphosis was born?,4041483253

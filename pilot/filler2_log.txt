@@ -1,0 +1,49 @@
+### k=2 filler=100
+   filler  2  0.4      0     0
+validity audit: all 1 cells passed
+### k=2 filler=1344
+   filler  2 0.333      0     0
+validity audit: all 1 cells passed
+### k=2 filler=2688
+   filler  2  0.4      0     0
+validity audit: all 1 cells passed
+### k=2 immediate baseline
+immediate  2  0.4      0     0
+validity audit: all 1 cells passed
+### k=3 filler=100
+   filler  3 0.033      0     0
+validity audit: all 1 cells passed
+### k=3 filler=1650
+   filler  3 0.033      0     0
+validity audit: all 1 cells passed
+### k=3 filler=3300
+   filler  3  0.1      0     0
+validity audit: all 1 cells passed
+### k=3 immediate baseline
+immediate  3 0.067      0     0
+validity audit: all 1 cells passed
+### k=4 filler=100
+   filler  4  0.0      0     0
+validity audit: all 1 cells passed
+### k=4 filler=1894
+   filler  4  0.0      0     0
+validity audit: all 1 cells passed
+### k=4 filler=3788
+   filler  4  0.0      0     0
+validity audit: all 1 cells passed
+### k=4 immediate baseline
+immediate  4  0.0      0     0
+validity audit: all 1 cells passed
+### k=6 filler=100
+   filler  6  0.0      0     0
+validity audit: all 1 cells passed
+### k=6 filler=2422
+   filler  6 0.033      0     0
+validity audit: all 1 cells passed
+### k=6 filler=4844
+   filler  6  0.0      0     0
+validity audit: all 1 cells passed
+### k=6 immediate baseline
+immediate  6  0.0      0     0
+validity audit: all 1 cells passed
+### ALL DONE

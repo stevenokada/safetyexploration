@@ -1,0 +1,121 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+serial,default,2,immediate,0,UZ,UY,0,8,0,0,stop,3,0,gemma-3-27b-it, UY,"Mapping table:
+PX -> US
+HE -> PX
+DR -> RI
+UZ -> BJ
+BJ -> ED
+GH -> UZ
+ED -> UB
+UY -> PN
+US -> GH
+UB -> DR
+PN -> HE
+RI -> UY
+
+Start at US and follow the mapping 2 times. What code do you land on?",1546271691
+serial,default,2,immediate,1,OB,AK,0,10,0,0,stop,2,0,gemma-3-27b-it, AK,"Mapping table:
+OB -> BQ
+QJ -> ZZ
+HJ -> AK
+BQ -> CX
+WK -> HJ
+AR -> OB
+AK -> BX
+ZZ -> WQ
+CX -> QJ
+WQ -> WK
+HI -> AR
+BX -> HI
+
+Start at HI and follow the mapping 2 times. What code do you land on?",724372317
+serial,default,2,immediate,2,TM,TM,1,2,0,0,stop,2,0,gemma-3-27b-it, TM,"Mapping table:
+YD -> IV
+ZA -> JU
+TM -> UN
+OC -> DW
+UN -> NM
+IV -> OC
+DW -> HF
+NM -> MR
+MR -> XS
+JU -> TM
+HF -> ZA
+XS -> YD
+
+Start at ZA and follow the mapping 2 times. What code do you land on?",2988727015
+serial,default,2,immediate,3,PJ,PJ,1,2,0,0,stop,2,0,gemma-3-27b-it, PJ,"Mapping table:
+EJ -> JJ
+CG -> OU
+FP -> NT
+AG -> FP
+JJ -> CG
+PJ -> AG
+OL -> YO
+OU -> CO
+NT -> OL
+CO -> PJ
+YO -> WB
+WB -> EJ
+
+Start at OU and follow the mapping 2 times. What code do you land on?",3307432561
+serial,default,2,immediate,4,WR,WR,1,2,0,0,stop,2,0,gemma-3-27b-it, WR,"Mapping table:
+WR -> LO
+FG -> GL
+WE -> KT
+KW -> ES
+FZ -> KW
+CG -> ZB
+GL -> FZ
+ZB -> FG
+LO -> JY
+ES -> WR
+KT -> CG
+JY -> WE
+
+Start at KW and follow the mapping 2 times. What code do you land on?",1531445202
+serial,default,2,immediate,5,BO,GR,0,3,0,0,stop,2,0,gemma-3-27b-it, GR,"Mapping table:
+TO -> XY
+PU -> UI
+YP -> GA
+AI -> TO
+XY -> SZ
+VQ -> BO
+UI -> SX
+BO -> GR
+SZ -> YP
+GA -> VQ
+GR -> PU
+SX -> AI
+
+Start at GA and follow the mapping 2 times. What code do you land on?",742444868
+serial,default,2,immediate,6,MM,MM,1,2,0,0,stop,2,0,gemma-3-27b-it, MM,"Mapping table:
+SE -> JE
+MM -> MA
+KB -> JV
+JE -> TB
+II -> BY
+TB -> GQ
+GQ -> OZ
+AU -> KB
+BY -> SE
+OZ -> MM
+JV -> II
+MA -> AU
+
+Start at GQ and follow the mapping 2 times. What code do you land on?",3041500926
+serial,default,2,immediate,7,ZJ,XA,0,4,0,0,stop,5,0,gemma-3-27b-it,Answer: XA,"Mapping table:
+XZ -> ZJ
+GK -> RG
+RG -> TL
+PR -> XA
+RW -> XZ
+XA -> NF
+MW -> AP
+NF -> JC
+AP -> GK
+TL -> RW
+ZJ -> PR
+JC -> MW
+
+Start at RW and follow the mapping 2 times. What code do you land on?",3259936360

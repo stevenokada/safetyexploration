@@ -1,0 +1,241 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,completion
+serial,default,1,immediate,0,EI,EI,1,1,0,0, EI
+serial,default,1,immediate,1,EK,EK,1,1,0,0, EK
+serial,default,1,immediate,2,VO,VO,1,1,0,0,Answer: VO
+serial,default,1,immediate,3,GM,GM,1,1,0,0,GM
+serial,default,1,immediate,4,QP,QP,1,1,0,0,Answer: QP
+serial,default,1,immediate,5,IH,IH,1,1,0,0, IH
+serial,default,1,immediate,6,NE,NE,1,1,0,0, NE
+serial,default,1,immediate,7,FA,FA,1,1,0,0,Answer: FA
+serial,default,1,immediate,8,KF,KF,1,1,0,0,KF
+serial,default,1,immediate,9,OE,OE,1,1,0,0,Answer: OE
+serial,default,1,immediate,10,FR,FR,1,1,0,0,FR
+serial,default,1,immediate,11,HZ,HZ,1,1,0,0,Answer: HZ
+serial,default,1,immediate,12,OC,OC,1,1,0,0,OC
+serial,default,1,immediate,13,PC,PC,1,1,0,0, PC
+serial,default,1,immediate,14,ST,ST,1,1,0,0,ST
+serial,default,1,immediate,15,UO,UO,1,1,0,0,Answer: UO
+serial,default,1,immediate,16,KC,KC,1,1,0,0,Answer: KC
+serial,default,1,immediate,17,YE,YE,1,1,0,0,Answer: YE
+serial,default,1,immediate,18,ZL,ZL,1,1,0,0,Answer: ZL
+serial,default,1,immediate,19,AX,AX,1,1,0,0, AX
+serial,default,1,immediate,20,LY,LY,1,1,0,0, LY
+serial,default,1,immediate,21,FJ,FJ,1,1,0,0,Answer: FJ
+serial,default,1,immediate,22,QJ,QJ,1,1,0,0,Answer: QJ
+serial,default,1,immediate,23,ZV,ZV,1,1,0,0,ZV
+serial,default,1,immediate,24,ZX,ZX,1,1,0,0,Answer: ZX
+serial,default,1,immediate,25,MO,MO,1,1,0,0,Answer: MO
+serial,default,1,immediate,26,AM,AM,1,1,0,0,AM
+serial,default,1,immediate,27,XY,XY,1,1,0,0,Answer: XY
+serial,default,1,immediate,28,FA,FA,1,1,0,0,Answer: FA
+serial,default,1,immediate,29,SE,SE,1,1,0,0,Answer: SE
+serial,default,1,immediate,30,XW,XW,1,1,0,0,Answer: XW
+serial,default,1,immediate,31,YP,YP,1,1,0,0,Answer: YP
+serial,default,1,immediate,32,HH,HH,1,1,0,0,Answer: HH
+serial,default,1,immediate,33,GA,GA,1,1,0,0,Answer: GA
+serial,default,1,immediate,34,WP,WP,1,1,0,0,Answer: WP
+serial,default,1,immediate,35,IV,IV,1,1,0,0,IV
+serial,default,1,immediate,36,UP,UP,1,1,0,0,Answer: UP
+serial,default,1,immediate,37,XI,XI,1,1,0,0,Answer: XI
+serial,default,1,immediate,38,OM,OM,1,1,0,0,Answer: OM
+serial,default,1,immediate,39,FZ,FZ,1,1,0,0,Answer: FZ
+serial,default,2,immediate,0,SK,TG,0,5,0,0,Answer: TG
+serial,default,2,immediate,1,KK,JB,0,4,0,0,Answer: JB
+serial,default,2,immediate,2,US,US,1,2,0,0,US
+serial,default,2,immediate,3,AH,LD,0,3,0,0,Answer: LD
+serial,default,2,immediate,4,VL,FN,0,3,0,0, FN
+serial,default,2,immediate,5,UC,FB,0,3,0,0,Answer: FB
+serial,default,2,immediate,6,KV,KV,1,2,0,0,Answer: KV
+serial,default,2,immediate,7,SF,RR,0,3,0,0,Answer: RR
+serial,default,2,immediate,8,KT,KT,1,2,0,0,KT
+serial,default,2,immediate,9,XN,XN,1,2,0,0,Answer: XN
+serial,default,2,immediate,10,JJ,JJ,1,2,0,0,JJ
+serial,default,2,immediate,11,GE,GE,1,2,0,0, GE
+serial,default,2,immediate,12,IO,BF,0,4,0,0,Answer: BF
+serial,default,2,immediate,13,YZ,YZ,1,2,0,0,Answer: YZ
+serial,default,2,immediate,14,LE,LE,1,2,0,0,Answer: LE
+serial,default,2,immediate,15,XQ,XZ,0,4,0,0,XZ
+serial,default,2,immediate,16,KQ,RS,0,4,0,0,Answer: RS
+serial,default,2,immediate,17,PL,UX,0,3,0,0,Answer: UX
+serial,default,2,immediate,18,TI,HA,0,3,0,0,Answer: HA
+serial,default,2,immediate,19,VN,KM,0,3,0,0,Answer: KM
+serial,default,2,immediate,20,UK,UK,1,2,0,0,Answer: UK
+serial,default,2,immediate,21,YA,FG,0,3,0,0,Answer: FG
+serial,default,2,immediate,22,QN,ND,0,3,0,0,ND
+serial,default,2,immediate,23,CH,SE,0,4,0,0,Answer: SE
+serial,default,2,immediate,24,PP,OG,0,5,0,0,Answer: OG
+serial,default,2,immediate,25,DU,OJ,0,3,0,0,Answer: OJ
+serial,default,2,immediate,26,BN,BN,1,2,0,0,BN
+serial,default,2,immediate,27,KQ,YK,0,3,0,0,Answer: YK
+serial,default,2,immediate,28,RG,RG,1,2,0,0,RG
+serial,default,2,immediate,29,FR,NJ,0,3,0,0,Answer: NJ
+serial,default,2,immediate,30,SZ,XG,0,5,0,0,Answer: XG
+serial,default,2,immediate,31,OV,HS,0,5,0,0, HS
+serial,default,2,immediate,32,UG,GK,0,3,0,0,Answer: GK
+serial,default,2,immediate,33,CS,CS,1,2,0,0,Answer: CS
+serial,default,2,immediate,34,XM,CK,0,3,0,0,Answer: CK
+serial,default,2,immediate,35,KG,YY,0,4,0,0,Answer: YY
+serial,default,2,immediate,36,AS,RW,0,3,0,0,RW
+serial,default,2,immediate,37,DU,AF,0,11,0,0,Answer: AF
+serial,default,2,immediate,38,UW,UW,1,2,0,0,Answer: UW
+serial,default,2,immediate,39,QR,SL,0,3,0,0,Answer: SL
+serial,default,3,immediate,0,PN,OX,0,6,0,0, OX
+serial,default,3,immediate,1,KR,JD,0,5,0,0,Answer: JD
+serial,default,3,immediate,2,WB,CW,0,7,0,0,Answer: CW
+serial,default,3,immediate,3,HU,EE,0,6,0,0,Answer: EE
+serial,default,3,immediate,4,NO,KZ,0,4,0,0,Answer: KZ
+serial,default,3,immediate,5,JH,DG,0,7,0,0,Answer: DG
+serial,default,3,immediate,6,GN,YE,0,4,0,0,Answer: YE
+serial,default,3,immediate,7,QE,FE,0,6,0,0,FE
+serial,default,3,immediate,8,ZU,ZB,0,7,0,0,Answer: ZB
+serial,default,3,immediate,9,MH,GW,0,4,0,0,Answer: GW
+serial,default,3,immediate,10,XZ,XZ,1,3,0,0,Answer: XZ
+serial,default,3,immediate,11,ED,OL,0,9,0,0,Answer: OL
+serial,default,3,immediate,12,AP,HC,0,9,0,0,Answer: HC
+serial,default,3,immediate,13,OC,KN,0,7,0,0,Answer: KN
+serial,default,3,immediate,14,EU,BS,0,5,0,0,Answer: BS
+serial,default,3,immediate,15,QV,YM,0,10,0,0,Answer: YM
+serial,default,3,immediate,16,LD,SC,0,5,0,0,Answer: SC
+serial,default,3,immediate,17,WY,RP,0,5,0,0, RP
+serial,default,3,immediate,18,UG,KF,0,6,0,0,Answer: KF
+serial,default,3,immediate,19,DE,YE,0,4,0,0, YE
+serial,default,3,immediate,20,DQ,UD,0,6,0,0,Answer: UD
+serial,default,3,immediate,21,VU,KB,0,10,0,0,Answer: KB
+serial,default,3,immediate,22,BE,HE,0,6,0,0,Answer: HE
+serial,default,3,immediate,23,NM,YE,0,4,0,0, YE
+serial,default,3,immediate,24,FE,ML,0,4,0,0,Answer: ML
+serial,default,3,immediate,25,XX,XX,1,3,0,0,Answer: XX
+serial,default,3,immediate,26,VZ,KO,0,9,0,0,Answer: KO
+serial,default,3,immediate,27,NO,YK,0,4,0,0,Answer: YK
+serial,default,3,immediate,28,DE,HL,0,8,0,0,Answer: HL
+serial,default,3,immediate,29,WM,HV,0,8,0,0,Answer: HV
+serial,default,3,immediate,30,CV,PH,0,4,0,0,Answer: PH
+serial,default,3,immediate,31,JH,VP,0,5,0,0,Answer: VP
+serial,default,3,immediate,32,HB,HB,1,3,0,0,Answer: HB
+serial,default,3,immediate,33,JF,NN,0,4,0,0,Answer: NN
+serial,default,3,immediate,34,EU,HI,0,5,0,0,Answer: HI
+serial,default,3,immediate,35,KZ,HH,0,10,0,0,Answer: HH
+serial,default,3,immediate,36,NT,NT,1,3,0,0,Answer: NT
+serial,default,3,immediate,37,MO,MO,1,3,0,0,Answer: MO
+serial,default,3,immediate,38,LE,HM,0,8,0,0,Answer: HM
+serial,default,3,immediate,39,CW,CW,1,3,0,0,Answer: CW
+serial,default,4,immediate,0,BX,HG,0,6,0,0,Answer: HG
+serial,default,4,immediate,1,BY,UZ,0,5,0,0,Answer: UZ
+serial,default,4,immediate,2,ED,NH,0,5,0,0,Answer: NH
+serial,default,4,immediate,3,VM,EF,0,6,0,0,Answer: EF
+serial,default,4,immediate,4,SP,KN,0,3,0,0,Answer: KN
+serial,default,4,immediate,5,XE,LC,0,5,0,0,Answer: LC
+serial,default,4,immediate,6,VV,FO,0,5,0,0, FO
+serial,default,4,immediate,7,GX,GX,1,4,0,0,Answer: GX
+serial,default,4,immediate,8,DG,SG,0,5,0,0,Answer: SG
+serial,default,4,immediate,9,PF,AA,0,7,0,0,Answer: AA
+serial,default,4,immediate,10,FU,DN,0,10,0,0,Answer: DN
+serial,default,4,immediate,11,VJ,LR,0,8,0,0,Answer: LR
+serial,default,4,immediate,12,ZT,DB,0,8,0,0,Answer: DB
+serial,default,4,immediate,13,YV,RB,0,3,0,0,Answer: RB
+serial,default,4,immediate,14,BG,VE,0,6,0,0, VE
+serial,default,4,immediate,15,TB,FU,0,5,0,0,Answer: FU
+serial,default,4,immediate,16,QW,TW,0,5,0,0,Answer: TW
+serial,default,4,immediate,17,DG,QF,0,5,0,0,Answer: QF
+serial,default,4,immediate,18,FD,HW,0,7,0,0,Answer: HW
+serial,default,4,immediate,19,UN,YB,0,7,0,0,Answer: YB
+serial,default,4,immediate,20,LX,GD,0,6,0,0,Answer: GD
+serial,default,4,immediate,21,RU,TK,0,5,0,0,Answer: TK
+serial,default,4,immediate,22,TS,XW,0,7,0,0,Answer: XW
+serial,default,4,immediate,23,CN,JV,0,10,0,0,Answer: JV
+serial,default,4,immediate,24,KE,ZN,0,5,0,0,Answer: ZN
+serial,default,4,immediate,25,GB,BW,0,6,0,0,Answer: BW
+serial,default,4,immediate,26,ET,QZ,0,10,0,0,Answer: QZ
+serial,default,4,immediate,27,KF,KF,1,4,0,0,Answer: KF
+serial,default,4,immediate,28,ZY,WB,0,9,0,0,Answer: WB
+serial,default,4,immediate,29,UZ,XM,0,11,0,0,Answer: XM
+serial,default,4,immediate,30,HW,HW,1,4,0,0, HW
+serial,default,4,immediate,31,UD,OG,0,9,0,0,Answer: OG
+serial,default,4,immediate,32,CV,YE,0,9,0,0,Answer: YE
+serial,default,4,immediate,33,BH,BH,1,4,0,0,Answer: BH
+serial,default,4,immediate,34,RP,PB,0,10,0,0,Answer: PB
+serial,default,4,immediate,35,ZX,ZK,0,5,0,0, ZK
+serial,default,4,immediate,36,VL,FS,0,7,0,0,Answer: FS
+serial,default,4,immediate,37,CK,TH,0,3,0,0,Answer: TH
+serial,default,4,immediate,38,CR,JZ,0,5,0,0,Answer: JZ
+serial,default,4,immediate,39,MK,LF,0,11,0,0,Answer: LF
+serial,default,6,immediate,0,ME,ME,1,6,0,0,Answer: ME
+serial,default,6,immediate,1,QW,OU,0,2,0,0,Answer: OU
+serial,default,6,immediate,2,MQ,CP,0,11,0,0,Answer: CP
+serial,default,6,immediate,3,CW,CW,1,6,0,0,Answer: CW
+serial,default,6,immediate,4,DP,DP,1,6,0,0, DP
+serial,default,6,immediate,5,PZ,NB,0,3,0,0,Answer: NB
+serial,default,6,immediate,6,SG,TE,0,9,0,0,Answer: TE
+serial,default,6,immediate,7,RS,OU,0,8,0,0,Answer: OU
+serial,default,6,immediate,8,EZ,WJ,0,5,0,0,Answer: WJ
+serial,default,6,immediate,9,NK,VC,0,7,0,0,Answer: VC
+serial,default,6,immediate,10,DP,HM,0,3,0,0,Answer: HM
+serial,default,6,immediate,11,BI,BI,1,6,0,0, BI
+serial,default,6,immediate,12,NJ,BC,0,4,0,0,Answer: BC
+serial,default,6,immediate,13,ED,FE,0,4,0,0,Answer: FE
+serial,default,6,immediate,14,UY,TC,0,9,0,0,Answer: TC
+serial,default,6,immediate,15,OQ,NL,0,8,0,0,Answer: NL
+serial,default,6,immediate,16,AN,LP,0,10,0,0,Answer: LP
+serial,default,6,immediate,17,NN,XT,0,8,0,0,XT
+serial,default,6,immediate,18,BU,GT,0,9,0,0, GT
+serial,default,6,immediate,19,QH,IC,0,4,0,0,Answer: IC
+serial,default,6,immediate,20,SJ,SJ,1,6,0,0, SJ
+serial,default,6,immediate,21,HO,LP,0,10,0,0,Answer: LP
+serial,default,6,immediate,22,AP,RO,0,8,0,0,Answer: RO
+serial,default,6,immediate,23,YM,CE,0,9,0,0,Answer: CE
+serial,default,6,immediate,24,KQ,XQ,0,8,0,0,Answer: XQ
+serial,default,6,immediate,25,UG,IA,0,5,0,0,Answer: IA
+serial,default,6,immediate,26,AE,TL,0,7,0,0,Answer: TL
+serial,default,6,immediate,27,PH,HI,0,5,0,0,Answer: HI
+serial,default,6,immediate,28,NO,TD,0,5,0,0,Answer: TD
+serial,default,6,immediate,29,FK,HU,0,5,0,0,Answer: HU
+serial,default,6,immediate,30,UK,UK,1,6,0,0,Answer: UK
+serial,default,6,immediate,31,RT,HD,0,4,0,0,Answer: HD
+serial,default,6,immediate,32,LE,WB,0,7,0,0,Answer: WB
+serial,default,6,immediate,33,JB,BB,0,4,0,0, BB
+serial,default,6,immediate,34,OZ,YO,0,4,0,0,Answer: YO
+serial,default,6,immediate,35,LI,HE,0,4,0,0,HE
+serial,default,6,immediate,36,NY,LH,0,0,0,0,Answer: LH
+serial,default,6,immediate,37,GM,OU,0,7,0,0,Answer: OU
+serial,default,6,immediate,38,AM,UF,0,3,0,0,UF
+serial,default,6,immediate,39,LY,MK,0,7,0,0,Answer: MK
+serial,default,8,immediate,0,LC,IP,0,1,0,0, IP
+serial,default,8,immediate,1,SP,KI,0,2,0,0,Answer: KI
+serial,default,8,immediate,2,CC,DF,0,11,0,0,Answer: DF
+serial,default,8,immediate,3,RG,JO,0,4,0,0,Answer: JO
+serial,default,8,immediate,4,HH,HH,1,8,0,0,Answer: HH
+serial,default,8,immediate,5,SS,XK,0,7,0,0,Answer: XK
+serial,default,8,immediate,6,AN,DK,0,5,0,0,Answer: DK
+serial,default,8,immediate,7,BQ,EC,0,3,0,0,Answer: EC
+serial,default,8,immediate,8,LW,UC,0,4,0,0,Answer: UC
+serial,default,8,immediate,9,ZB,RW,0,11,0,0,Answer: RW
+serial,default,8,immediate,10,EY,OX,0,9,0,0, OX
+serial,default,8,immediate,11,VN,NU,0,6,0,0,Answer: NU
+serial,default,8,immediate,12,DK,AV,0,10,0,0,AV
+serial,default,8,immediate,13,ZO,MK,0,3,0,0,Answer: MK
+serial,default,8,immediate,14,VN,HV,0,7,0,0,Answer: HV
+serial,default,8,immediate,15,SK,WV,0,6,0,0,Answer: WV
+serial,default,8,immediate,16,FU,EF,0,3,0,0,Answer: EF
+serial,default,8,immediate,17,CL,PY,0,5,0,0, PY
+serial,default,8,immediate,18,OA,CG,0,7,0,0,Answer: CG
+serial,default,8,immediate,19,NL,BC,0,11,0,0,Answer: BC
+serial,default,8,immediate,20,UU,NP,0,6,0,0,Answer: NP
+serial,default,8,immediate,21,RA,CX,0,10,0,0,Answer: CX
+serial,default,8,immediate,22,TS,EZ,0,10,0,0,Answer: EZ
+serial,default,8,immediate,23,RR,RR,1,8,0,0,RR
+serial,default,8,immediate,24,ZD,YD,0,9,0,0, YD
+serial,default,8,immediate,25,SR,LM,0,5,0,0,LM
+serial,default,8,immediate,26,GY,HH,0,4,0,0,Answer: HH
+serial,default,8,immediate,27,YA,FI,0,10,0,0,Answer: FI
+serial,default,8,immediate,28,VP,ZU,0,7,0,0,Answer: ZU
+serial,default,8,immediate,29,ML,ML,1,8,0,0,Answer: ML
+serial,default,8,immediate,30,YZ,MM,0,7,0,0,Answer: MM
+serial,default,8,immediate,31,KK,FW,0,9,0,0,Answer: FW
+serial,default,8,immediate,32,EC,IC,0,7,0,0,Answer: IC
+serial,default,8,immediate,33,YD,FU,0,7,0,0, FU
+serial,default,8,immediate,34,PW,UK,0,10,0,0,Answer: UK
+serial,default,8,immediate,35,YC,WC,0,6,0,0,Answer: WC
+serial,default,8,immediate,36,VP,DP,0,7,0,0,Answer: DP
+serial,default,8,immediate,37,EC,YP,0,2,0,0,Answer: YP
+serial,default,8,immediate,38,MW,MW,1,8,0,0, MW
+serial,default,8,immediate,39,NE,XM,0,7,0,0,Answer: XM

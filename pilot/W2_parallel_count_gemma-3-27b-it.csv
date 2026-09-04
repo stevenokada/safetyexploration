@@ -1,0 +1,181 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion
+parallel_count,default,8,immediate,0,6,4,0,-1,0,0,stop,5,0,gemma-3-27b-it,Answer: 4
+parallel_count,default,8,immediate,1,4,5,0,-1,0,0,stop,3,0,gemma-3-27b-it, 5
+parallel_count,default,8,immediate,2,3,6,0,-1,0,0,stop,3,0,gemma-3-27b-it, 6
+parallel_count,default,8,immediate,3,4,6,0,-1,0,0,stop,3,0,gemma-3-27b-it, 6
+parallel_count,default,8,immediate,4,6,7,0,-1,0,0,stop,2,0,gemma-3-27b-it,7
+parallel_count,default,8,immediate,5,4,3,0,-1,0,0,stop,3,0,gemma-3-27b-it, 3
+parallel_count,default,8,immediate,6,3,5,0,-1,0,0,stop,3,0,gemma-3-27b-it, 5
+parallel_count,default,8,immediate,7,3,3,1,-1,0,0,stop,3,0,gemma-3-27b-it, 3
+parallel_count,default,8,immediate,8,2,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,9,3,6,0,-1,0,0,stop,3,0,gemma-3-27b-it, 6
+parallel_count,default,8,immediate,10,3,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,11,3,5,0,-1,0,0,stop,2,0,gemma-3-27b-it,5
+parallel_count,default,8,immediate,12,2,3,0,-1,0,0,stop,3,0,gemma-3-27b-it, 3
+parallel_count,default,8,immediate,13,2,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,14,6,5,0,-1,0,0,stop,3,0,gemma-3-27b-it, 5
+parallel_count,default,8,immediate,15,2,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,16,3,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,17,5,5,1,-1,0,0,stop,3,0,gemma-3-27b-it, 5
+parallel_count,default,8,immediate,18,5,5,1,-1,0,0,stop,3,0,gemma-3-27b-it, 5
+parallel_count,default,8,immediate,19,5,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,20,5,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,21,3,4,0,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,22,4,4,1,-1,0,0,stop,3,0,gemma-3-27b-it, 4
+parallel_count,default,8,immediate,23,2,3,0,-1,0,0,stop,3,0,gemma-3-27b-it, 3
+parallel_count,default,8,immediate,24,4,6,0,-1,0,0,stop,3,0,gemma-3-27b-it, 6
+parallel_count,default,8,immediate,25,3,4,0,-1,0,0,stop,2,0,gemma-3-27b-it,4
+parallel_count,default,8,immediate,26,4,4,1,-1,0,0,stop,2,0,gemma-3-27b-it,4
+parallel_count,default,8,immediate,27,3,5,0,-1,0,0,stop,3,0,gemma-3-27b-it, 5
+parallel_count,default,8,immediate,28,3,6,0,-1,0,0,stop,3,0,gemma-3-27b-it, 6
+parallel_count,default,8,immediate,29,5,5,1,-1,0,0,stop,3,0,gemma-3-27b-it, 5
+parallel_count,default,16,immediate,0,9,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,1,3,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,2,8,7,0,-1,0,0,stop,2,0,gemma-3-27b-it,7
+parallel_count,default,16,immediate,3,8,11,0,-1,0,0,stop,4,0,gemma-3-27b-it, 11
+parallel_count,default,16,immediate,4,11,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,5,10,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,6,12,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,7,7,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,8,5,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,9,7,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,10,8,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,11,10,10,1,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,12,8,11,0,-1,0,0,stop,4,0,gemma-3-27b-it, 11
+parallel_count,default,16,immediate,13,11,11,1,-1,0,0,stop,4,0,gemma-3-27b-it, 11
+parallel_count,default,16,immediate,14,7,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,15,9,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,16,10,12,0,-1,0,0,stop,3,0,gemma-3-27b-it,12
+parallel_count,default,16,immediate,17,9,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,18,8,7,0,-1,0,0,stop,2,0,gemma-3-27b-it,7
+parallel_count,default,16,immediate,19,6,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,20,10,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,21,6,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,22,6,11,0,-1,0,0,stop,4,0,gemma-3-27b-it, 11
+parallel_count,default,16,immediate,23,9,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,16,immediate,24,9,8,0,-1,0,0,stop,3,0,gemma-3-27b-it, 8
+parallel_count,default,16,immediate,25,7,11,0,-1,0,0,stop,3,0,gemma-3-27b-it,11
+parallel_count,default,16,immediate,26,12,8,0,-1,0,0,stop,2,0,gemma-3-27b-it,8
+parallel_count,default,16,immediate,27,6,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,28,7,10,0,-1,0,0,stop,4,0,gemma-3-27b-it, 10
+parallel_count,default,16,immediate,29,8,11,0,-1,0,0,stop,4,0,gemma-3-27b-it, 11
+parallel_count,default,24,immediate,0,12,14,0,-1,0,0,stop,4,0,gemma-3-27b-it, 14
+parallel_count,default,24,immediate,1,12,11,0,-1,0,0,stop,3,0,gemma-3-27b-it,11
+parallel_count,default,24,immediate,2,7,13,0,-1,0,0,stop,3,0,gemma-3-27b-it,13
+parallel_count,default,24,immediate,3,12,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,4,9,14,0,-1,0,0,stop,3,0,gemma-3-27b-it,14
+parallel_count,default,24,immediate,5,9,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,6,11,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,7,11,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,8,9,14,0,-1,0,0,stop,4,0,gemma-3-27b-it, 14
+parallel_count,default,24,immediate,9,13,13,1,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,10,11,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,11,9,11,0,-1,0,0,stop,3,0,gemma-3-27b-it,11
+parallel_count,default,24,immediate,12,16,17,0,-1,0,0,stop,4,0,gemma-3-27b-it, 17
+parallel_count,default,24,immediate,13,6,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,14,11,11,1,-1,0,0,stop,4,0,gemma-3-27b-it, 11
+parallel_count,default,24,immediate,15,9,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,16,11,14,0,-1,0,0,stop,4,0,gemma-3-27b-it, 14
+parallel_count,default,24,immediate,17,10,13,0,-1,0,0,stop,3,0,gemma-3-27b-it,13
+parallel_count,default,24,immediate,18,13,11,0,-1,0,0,stop,4,0,gemma-3-27b-it, 11
+parallel_count,default,24,immediate,19,14,17,0,-1,0,0,stop,4,0,gemma-3-27b-it, 17
+parallel_count,default,24,immediate,20,11,14,0,-1,0,0,stop,4,0,gemma-3-27b-it, 14
+parallel_count,default,24,immediate,21,12,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,22,14,13,0,-1,0,0,stop,3,0,gemma-3-27b-it,13
+parallel_count,default,24,immediate,23,15,14,0,-1,0,0,stop,4,0,gemma-3-27b-it, 14
+parallel_count,default,24,immediate,24,12,14,0,-1,0,0,stop,4,0,gemma-3-27b-it, 14
+parallel_count,default,24,immediate,25,11,13,0,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,26,14,15,0,-1,0,0,stop,4,0,gemma-3-27b-it, 15
+parallel_count,default,24,immediate,27,12,13,0,-1,0,0,stop,3,0,gemma-3-27b-it,13
+parallel_count,default,24,immediate,28,13,13,1,-1,0,0,stop,4,0,gemma-3-27b-it, 13
+parallel_count,default,24,immediate,29,11,11,1,-1,0,0,stop,3,0,gemma-3-27b-it,11
+parallel_count,default,32,immediate,0,14,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,1,18,21,0,-1,0,0,stop,4,0,gemma-3-27b-it, 21
+parallel_count,default,32,immediate,2,10,21,0,-1,0,0,stop,4,0,gemma-3-27b-it, 21
+parallel_count,default,32,immediate,3,19,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,4,20,21,0,-1,0,0,stop,4,0,gemma-3-27b-it, 21
+parallel_count,default,32,immediate,5,15,18,0,-1,0,0,stop,3,0,gemma-3-27b-it,18
+parallel_count,default,32,immediate,6,15,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,7,18,18,1,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,8,19,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,9,21,16,0,-1,0,0,stop,4,0,gemma-3-27b-it, 16
+parallel_count,default,32,immediate,10,13,18,0,-1,0,0,stop,3,0,gemma-3-27b-it,18
+parallel_count,default,32,immediate,11,16,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,12,14,18,0,-1,0,0,stop,3,0,gemma-3-27b-it,18
+parallel_count,default,32,immediate,13,20,17,0,-1,0,0,stop,4,0,gemma-3-27b-it, 17
+parallel_count,default,32,immediate,14,20,16,0,-1,0,0,stop,4,0,gemma-3-27b-it, 16
+parallel_count,default,32,immediate,15,20,21,0,-1,0,0,stop,4,0,gemma-3-27b-it, 21
+parallel_count,default,32,immediate,16,22,17,0,-1,0,0,stop,4,0,gemma-3-27b-it, 17
+parallel_count,default,32,immediate,17,17,18,0,-1,0,0,stop,3,0,gemma-3-27b-it,18
+parallel_count,default,32,immediate,18,16,21,0,-1,0,0,stop,4,0,gemma-3-27b-it, 21
+parallel_count,default,32,immediate,19,17,17,1,-1,0,0,stop,4,0,gemma-3-27b-it, 17
+parallel_count,default,32,immediate,20,11,23,0,-1,0,0,stop,4,0,gemma-3-27b-it, 23
+parallel_count,default,32,immediate,21,15,17,0,-1,0,0,stop,4,0,gemma-3-27b-it, 17
+parallel_count,default,32,immediate,22,20,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,23,18,18,1,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,24,17,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,25,12,21,0,-1,0,0,stop,3,0,gemma-3-27b-it,21
+parallel_count,default,32,immediate,26,16,16,1,-1,0,0,stop,4,0,gemma-3-27b-it, 16
+parallel_count,default,32,immediate,27,14,18,0,-1,0,0,stop,4,0,gemma-3-27b-it, 18
+parallel_count,default,32,immediate,28,15,18,0,-1,0,0,stop,3,0,gemma-3-27b-it,18
+parallel_count,default,32,immediate,29,13,20,0,-1,0,0,stop,3,0,gemma-3-27b-it,20
+parallel_count,default,48,immediate,0,20,24,0,-1,0,0,stop,4,0,gemma-3-27b-it, 24
+parallel_count,default,48,immediate,1,27,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,2,31,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,3,23,26,0,-1,0,0,stop,3,0,gemma-3-27b-it,26
+parallel_count,default,48,immediate,4,24,23,0,-1,0,0,stop,3,0,gemma-3-27b-it,23
+parallel_count,default,48,immediate,5,23,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,6,30,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,7,29,28,0,-1,0,0,stop,3,0,gemma-3-27b-it,28
+parallel_count,default,48,immediate,8,26,24,0,-1,0,0,stop,4,0,gemma-3-27b-it, 24
+parallel_count,default,48,immediate,9,30,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,10,22,28,0,-1,0,0,stop,3,0,gemma-3-27b-it,28
+parallel_count,default,48,immediate,11,28,21,0,-1,0,0,stop,4,0,gemma-3-27b-it, 21
+parallel_count,default,48,immediate,12,24,24,1,-1,0,0,stop,4,0,gemma-3-27b-it, 24
+parallel_count,default,48,immediate,13,19,24,0,-1,0,0,stop,4,0,gemma-3-27b-it, 24
+parallel_count,default,48,immediate,14,25,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,15,22,23,0,-1,0,0,stop,4,0,gemma-3-27b-it, 23
+parallel_count,default,48,immediate,16,21,24,0,-1,0,0,stop,4,0,gemma-3-27b-it, 24
+parallel_count,default,48,immediate,17,25,23,0,-1,0,0,stop,4,0,gemma-3-27b-it, 23
+parallel_count,default,48,immediate,18,27,28,0,-1,0,0,stop,4,0,gemma-3-27b-it, 28
+parallel_count,default,48,immediate,19,25,24,0,-1,0,0,stop,4,0,gemma-3-27b-it, 24
+parallel_count,default,48,immediate,20,20,28,0,-1,0,0,stop,4,0,gemma-3-27b-it, 28
+parallel_count,default,48,immediate,21,21,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,22,29,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,23,23,28,0,-1,0,0,stop,3,0,gemma-3-27b-it,28
+parallel_count,default,48,immediate,24,24,24,1,-1,0,0,stop,4,0,gemma-3-27b-it, 24
+parallel_count,default,48,immediate,25,27,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,26,28,28,1,-1,0,0,stop,3,0,gemma-3-27b-it,28
+parallel_count,default,48,immediate,27,26,26,1,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,48,immediate,28,22,27,0,-1,0,0,stop,4,0,gemma-3-27b-it, 27
+parallel_count,default,48,immediate,29,26,26,1,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,64,immediate,0,28,34,0,-1,0,0,stop,4,0,gemma-3-27b-it, 34
+parallel_count,default,64,immediate,1,27,38,0,-1,0,0,stop,3,0,gemma-3-27b-it,38
+parallel_count,default,64,immediate,2,29,29,1,-1,0,0,stop,4,0,gemma-3-27b-it, 29
+parallel_count,default,64,immediate,3,32,33,0,-1,0,0,stop,4,0,gemma-3-27b-it, 33
+parallel_count,default,64,immediate,4,33,38,0,-1,0,0,stop,4,0,gemma-3-27b-it, 38
+parallel_count,default,64,immediate,5,29,38,0,-1,0,0,stop,3,0,gemma-3-27b-it,38
+parallel_count,default,64,immediate,6,33,34,0,-1,0,0,stop,4,0,gemma-3-27b-it, 34
+parallel_count,default,64,immediate,7,27,38,0,-1,0,0,stop,3,0,gemma-3-27b-it,38
+parallel_count,default,64,immediate,8,32,26,0,-1,0,0,stop,4,0,gemma-3-27b-it, 26
+parallel_count,default,64,immediate,9,30,33,0,-1,0,0,stop,4,0,gemma-3-27b-it, 33
+parallel_count,default,64,immediate,10,33,38,0,-1,0,0,stop,4,0,gemma-3-27b-it, 38
+parallel_count,default,64,immediate,11,31,34,0,-1,0,0,stop,4,0,gemma-3-27b-it, 34
+parallel_count,default,64,immediate,12,30,38,0,-1,0,0,stop,3,0,gemma-3-27b-it,38
+parallel_count,default,64,immediate,13,30,28,0,-1,0,0,stop,4,0,gemma-3-27b-it, 28
+parallel_count,default,64,immediate,14,29,29,1,-1,0,0,stop,4,0,gemma-3-27b-it, 29
+parallel_count,default,64,immediate,15,28,38,0,-1,0,0,stop,3,0,gemma-3-27b-it,38
+parallel_count,default,64,immediate,16,32,33,0,-1,0,0,stop,4,0,gemma-3-27b-it, 33
+parallel_count,default,64,immediate,17,34,38,0,-1,0,0,stop,4,0,gemma-3-27b-it, 38
+parallel_count,default,64,immediate,18,31,34,0,-1,0,0,stop,4,0,gemma-3-27b-it, 34
+parallel_count,default,64,immediate,19,29,38,0,-1,0,0,stop,3,0,gemma-3-27b-it,38
+parallel_count,default,64,immediate,20,30,29,0,-1,0,0,stop,4,0,gemma-3-27b-it, 29
+parallel_count,default,64,immediate,21,36,38,0,-1,0,0,stop,4,0,gemma-3-27b-it, 38
+parallel_count,default,64,immediate,22,26,33,0,-1,0,0,stop,4,0,gemma-3-27b-it, 33
+parallel_count,default,64,immediate,23,30,38,0,-1,0,0,stop,4,0,gemma-3-27b-it, 38
+parallel_count,default,64,immediate,24,25,33,0,-1,0,0,stop,4,0,gemma-3-27b-it, 33
+parallel_count,default,64,immediate,25,35,38,0,-1,0,0,stop,4,0,gemma-3-27b-it, 38
+parallel_count,default,64,immediate,26,40,38,0,-1,0,0,stop,4,0,gemma-3-27b-it, 38
+parallel_count,default,64,immediate,27,32,38,0,-1,0,0,stop,3,0,gemma-3-27b-it,38
+parallel_count,default,64,immediate,28,28,31,0,-1,0,0,stop,4,0,gemma-3-27b-it, 31
+parallel_count,default,64,immediate,29,42,35,0,-1,0,0,stop,4,0,gemma-3-27b-it, 35

@@ -1,0 +1,181 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion
+parallel,default,8,immediate,0,RV,RV,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,RV
+parallel,default,8,immediate,1,KM,ES,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: ES
+parallel,default,8,immediate,2,YY,QR,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: QR
+parallel,default,8,immediate,3,BP,BP,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: BP
+parallel,default,8,immediate,4,DU,MS,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: MS
+parallel,default,8,immediate,5,HD,HD,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: HD
+parallel,default,8,immediate,6,VH,VH,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,VH
+parallel,default,8,immediate,7,RV,FU,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FU
+parallel,default,8,immediate,8,FA,NI,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: NI
+parallel,default,8,immediate,9,YV,SF,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: SF
+parallel,default,8,immediate,10,DR,DR,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: DR
+parallel,default,8,immediate,11,VQ,VQ,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,VQ
+parallel,default,8,immediate,12,SN,PX,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: PX
+parallel,default,8,immediate,13,SM,SM,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,SM
+parallel,default,8,immediate,14,PD,PD,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: PD
+parallel,default,8,immediate,15,EY,PX,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,Answer: PX
+parallel,default,8,immediate,16,BI,PP,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,PP
+parallel,default,8,immediate,17,NK,NK,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: NK
+parallel,default,8,immediate,18,IJ,HK,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: HK
+parallel,default,8,immediate,19,JT,JM,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,JM
+parallel,default,8,immediate,20,RC,PK,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,PK
+parallel,default,8,immediate,21,SG,SG,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,SG
+parallel,default,8,immediate,22,DW,XO,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: XO
+parallel,default,8,immediate,23,RC,KA,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: KA
+parallel,default,8,immediate,24,ZX,YM,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: YM
+parallel,default,8,immediate,25,YP,YP,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: YP
+parallel,default,8,immediate,26,CT,CT,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: CT
+parallel,default,8,immediate,27,ZH,GW,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: GW
+parallel,default,8,immediate,28,HW,HW,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: HW
+parallel,default,8,immediate,29,VA,VA,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,VA
+parallel,default,16,immediate,0,II,XD,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: XD
+parallel,default,16,immediate,1,TI,PI,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,PI
+parallel,default,16,immediate,2,TY,FT,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FT
+parallel,default,16,immediate,3,QV,BZ,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: BZ
+parallel,default,16,immediate,4,JF,DV,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,DV
+parallel,default,16,immediate,5,IW,EZ,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: EZ
+parallel,default,16,immediate,6,LH,SR,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: SR
+parallel,default,16,immediate,7,QE,FV,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: FV
+parallel,default,16,immediate,8,SV,SV,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: SV
+parallel,default,16,immediate,9,UB,CG,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: CG
+parallel,default,16,immediate,10,RB,RB,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,RB
+parallel,default,16,immediate,11,EH,FE,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FE
+parallel,default,16,immediate,12,PC,SR,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,SR
+parallel,default,16,immediate,13,AA,AA,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,AA
+parallel,default,16,immediate,14,YD,ZH,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: ZH
+parallel,default,16,immediate,15,QD,QD,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: QD
+parallel,default,16,immediate,16,NE,NE,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: NE
+parallel,default,16,immediate,17,PJ,PW,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,PW
+parallel,default,16,immediate,18,HW,HW,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: HW
+parallel,default,16,immediate,19,HM,HM,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: HM
+parallel,default,16,immediate,20,JL,GZ,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: GZ
+parallel,default,16,immediate,21,WC,WC,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: WC
+parallel,default,16,immediate,22,KD,DR,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,DR
+parallel,default,16,immediate,23,DT,KC,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: KC
+parallel,default,16,immediate,24,JX,XX,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,XX
+parallel,default,16,immediate,25,YH,CQ,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: CQ
+parallel,default,16,immediate,26,MH,JZ,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: JZ
+parallel,default,16,immediate,27,CZ,JC,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: JC
+parallel,default,16,immediate,28,XL,PA,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: PA
+parallel,default,16,immediate,29,WY,DO,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: DO
+parallel,default,24,immediate,0,KS,KS,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: KS
+parallel,default,24,immediate,1,ZF,IP,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,IP
+parallel,default,24,immediate,2,OZ,ZY,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: ZY
+parallel,default,24,immediate,3,DP,LS,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: LS
+parallel,default,24,immediate,4,VG,BI,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: BI
+parallel,default,24,immediate,5,HS,KO,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: KO
+parallel,default,24,immediate,6,YR,GZ,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: GZ
+parallel,default,24,immediate,7,PN,PN,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: PN
+parallel,default,24,immediate,8,GS,GS,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: GS
+parallel,default,24,immediate,9,NL,NM,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,Answer: NM
+parallel,default,24,immediate,10,BB,OS,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: OS
+parallel,default,24,immediate,11,FB,FB,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FB
+parallel,default,24,immediate,12,BK,YA,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: YA
+parallel,default,24,immediate,13,GA,FF,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FF
+parallel,default,24,immediate,14,YF,VA,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,VA
+parallel,default,24,immediate,15,GL,GL,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: GL
+parallel,default,24,immediate,16,JD,JD,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: JD
+parallel,default,24,immediate,17,MN,MN,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: MN
+parallel,default,24,immediate,18,DP,WI,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,WI
+parallel,default,24,immediate,19,TX,WO,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,Answer: WO
+parallel,default,24,immediate,20,XF,GM,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: GM
+parallel,default,24,immediate,21,UE,GD,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: GD
+parallel,default,24,immediate,22,BO,BO,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: BO
+parallel,default,24,immediate,23,NY,IM,0,-1,0,0,stop,1,0,qwen3.6-35b-a3b,IM
+parallel,default,24,immediate,24,EU,RV,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: RV
+parallel,default,24,immediate,25,DC,ZS,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: ZS
+parallel,default,24,immediate,26,OB,MF,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: MF
+parallel,default,24,immediate,27,OP,BN,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,BN
+parallel,default,24,immediate,28,FE,FE,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FE
+parallel,default,24,immediate,29,VU,TD,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: TD
+parallel,default,32,immediate,0,DQ,DQ,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: DQ
+parallel,default,32,immediate,1,XE,XN,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: XN
+parallel,default,32,immediate,2,SU,DG,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: DG
+parallel,default,32,immediate,3,DQ,KP,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: KP
+parallel,default,32,immediate,4,AU,AU,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: AU
+parallel,default,32,immediate,5,OA,XA,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: XA
+parallel,default,32,immediate,6,WE,XJ,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: XJ
+parallel,default,32,immediate,7,NL,NL,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: NL
+parallel,default,32,immediate,8,MR,OJ,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,OJ
+parallel,default,32,immediate,9,VA,VG,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: VG
+parallel,default,32,immediate,10,LX,QT,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: QT
+parallel,default,32,immediate,11,TB,AM,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: AM
+parallel,default,32,immediate,12,AA,KQ,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,KQ
+parallel,default,32,immediate,13,LN,VO,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: VO
+parallel,default,32,immediate,14,GO,MO,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: MO
+parallel,default,32,immediate,15,XA,SW,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,SW
+parallel,default,32,immediate,16,OO,AG,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: AG
+parallel,default,32,immediate,17,TJ,RV,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: RV
+parallel,default,32,immediate,18,NL,NL,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: NL
+parallel,default,32,immediate,19,HS,YS,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,YS
+parallel,default,32,immediate,20,CV,ZR,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: ZR
+parallel,default,32,immediate,21,WI,KX,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: KX
+parallel,default,32,immediate,22,DI,LK,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,LK
+parallel,default,32,immediate,23,ZD,ZD,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: ZD
+parallel,default,32,immediate,24,XY,HW,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,HW
+parallel,default,32,immediate,25,EV,EV,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: EV
+parallel,default,32,immediate,26,TL,GV,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: GV
+parallel,default,32,immediate,27,GB,XP,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: XP
+parallel,default,32,immediate,28,OJ,OJ,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: OJ
+parallel,default,32,immediate,29,PD,SY,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: SY
+parallel,default,48,immediate,0,NS,TX,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: TX
+parallel,default,48,immediate,1,CO,CO,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: CO
+parallel,default,48,immediate,2,YP,YP,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: YP
+parallel,default,48,immediate,3,JC,YE,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: YE
+parallel,default,48,immediate,4,TL,IB,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,IB
+parallel,default,48,immediate,5,XD,BC,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: BC
+parallel,default,48,immediate,6,QM,IF,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: IF
+parallel,default,48,immediate,7,FQ,FF,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FF
+parallel,default,48,immediate,8,FE,HW,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,HW
+parallel,default,48,immediate,9,OM,OM,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: OM
+parallel,default,48,immediate,10,ZY,CF,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,CF
+parallel,default,48,immediate,11,RL,RL,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,RL
+parallel,default,48,immediate,12,CR,FK,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FK
+parallel,default,48,immediate,13,AW,FT,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: FT
+parallel,default,48,immediate,14,HO,BA,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: BA
+parallel,default,48,immediate,15,CY,JG,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: JG
+parallel,default,48,immediate,16,CI,CM,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: CM
+parallel,default,48,immediate,17,JS,CZ,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: CZ
+parallel,default,48,immediate,18,JS,ZF,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: ZF
+parallel,default,48,immediate,19,EA,FY,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,FY
+parallel,default,48,immediate,20,EN,KL,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: KL
+parallel,default,48,immediate,21,DO,DO,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: DO
+parallel,default,48,immediate,22,ZO,HM,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: HM
+parallel,default,48,immediate,23,ZL,ZL,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: ZL
+parallel,default,48,immediate,24,MN,ME,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: ME
+parallel,default,48,immediate,25,AB,JE,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: JE
+parallel,default,48,immediate,26,AH,RF,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,RF
+parallel,default,48,immediate,27,TL,TL,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: TL
+parallel,default,48,immediate,28,XD,XD,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: XD
+parallel,default,48,immediate,29,IY,PY,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: PY
+parallel,default,64,immediate,0,RE,PG,0,-1,0,0,stop,1,0,qwen3.6-35b-a3b,PG
+parallel,default,64,immediate,1,EC,EC,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: EC
+parallel,default,64,immediate,2,IV,IV,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,IV
+parallel,default,64,immediate,3,KU,NQ,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: NQ
+parallel,default,64,immediate,4,BW,SI,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: SI
+parallel,default,64,immediate,5,GE,IF,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: IF
+parallel,default,64,immediate,6,RK,NA,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,NA
+parallel,default,64,immediate,7,RU,RU,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,Answer: RU
+parallel,default,64,immediate,8,UB,FA,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,FA
+parallel,default,64,immediate,9,HZ,HZ,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,HZ
+parallel,default,64,immediate,10,HQ,QY,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: QY
+parallel,default,64,immediate,11,PR,IS,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: IS
+parallel,default,64,immediate,12,XR,WY,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,WY
+parallel,default,64,immediate,13,ZR,ZR,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,ZR
+parallel,default,64,immediate,14,WG,WG,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,WG
+parallel,default,64,immediate,15,NJ,LO,0,-1,1,0,length,8,0,qwen3.6-35b-a3b,LO is not in the list. Let
+parallel,default,64,immediate,16,GE,GE,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,GE
+parallel,default,64,immediate,17,DL,DL,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: DL
+parallel,default,64,immediate,18,TY,VL,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: VL
+parallel,default,64,immediate,19,QH,QH,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: QH
+parallel,default,64,immediate,20,CS,AX,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,AX
+parallel,default,64,immediate,21,DZ,YS,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: YS
+parallel,default,64,immediate,22,AK,RA,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: RA
+parallel,default,64,immediate,23,RQ,DN,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,DN
+parallel,default,64,immediate,24,XI,OM,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,OM
+parallel,default,64,immediate,25,WB,HT,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,HT
+parallel,default,64,immediate,26,GV,MC,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: MC
+parallel,default,64,immediate,27,PG,PG,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: PG
+parallel,default,64,immediate,28,DW,DW,1,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: DW
+parallel,default,64,immediate,29,QL,QL,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,QL

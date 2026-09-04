@@ -1,0 +1,100 @@
+### anthropic/claude-opus-4.5 | parallel | nodes=32
+condition  k   acc  leaks  errs
+immediate  2 1.000      0     0
+immediate  4 0.925      0     0
+immediate  8 0.850      0     0
+immediate 12 0.800      0     0
+immediate 16 0.600      0     0
+immediate 20 0.600      0     0
+immediate 24 0.675      0     0
+
+Wrote W_parallel_claude-opus-4.5.csv
+### anthropic/claude-opus-4.5 | parallel_count | nodes=32
+condition  k   acc  leaks  errs
+immediate  2 0.950      0     0
+immediate  4 0.600      0     0
+immediate  8 0.300      0     0
+immediate 12 0.325      0     0
+immediate 16 0.275      0     0
+immediate 20 0.250      0     0
+immediate 24 0.150      0     0
+
+Wrote W_parallel_count_claude-opus-4.5.csv
+### anthropic/claude-opus-4.5 | serial | nodes=32
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  2 0.300      0     0      2.70 0.700  0.000
+immediate  4 0.025      0     0      5.75 0.975  0.000
+immediate  8 0.150      0     0     13.30 0.625  0.225
+immediate 12 0.025      0     0     18.35 0.800  0.175
+immediate 16 0.025      0     0     14.90 0.425  0.550
+immediate 20 0.075      0     0     18.90 0.375  0.550
+immediate 24 0.025      0     0     17.65 0.225  0.750
+
+Wrote W_serial_claude-opus-4.5.csv
+### google/gemini-2.5-flash | parallel | nodes=32
+condition  k   acc  leaks  errs
+immediate  2 1.000      0     0
+immediate  4 0.800      0     0
+immediate  8 0.650      0     0
+immediate 12 0.625      0     0
+immediate 16 0.575      0     0
+immediate 20 0.700      0     0
+immediate 24 0.525      0     0
+
+Wrote W_parallel_gemini-2.5-flash.csv
+### google/gemini-2.5-flash | parallel_count | nodes=32
+condition  k   acc  leaks  errs
+immediate  2 0.325      0     0
+immediate  4 0.450      0     0
+immediate  8 0.300      0     0
+immediate 12 0.300      0     0
+immediate 16 0.200      0     0
+immediate 20 0.325      0     0
+immediate 24 0.100      0     0
+
+Wrote W_parallel_count_gemini-2.5-flash.csv
+### google/gemini-2.5-flash | serial | nodes=32
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  2 0.475      0     0     2.475 0.500  0.025
+immediate  4 0.075      0     0    11.650 0.700  0.225
+immediate  8 0.050      0     0    14.425 0.725  0.225
+immediate 12 0.050      0     0    19.100 0.725  0.225
+immediate 16 0.000      0     0    16.175 0.500  0.500
+immediate 20 0.000      0     0    12.550 0.175  0.825
+immediate 24 0.025      0     0    16.375 0.225  0.750
+
+Wrote W_serial_gemini-2.5-flash.csv
+### deepseek/deepseek-chat | parallel | nodes=32
+condition  k   acc  leaks  errs
+immediate  2 0.950      0     0
+immediate  4 0.850      0     0
+immediate  8 0.700      0     0
+immediate 12 0.725      0     0
+immediate 16 0.550      0     0
+immediate 20 0.525      0     0
+immediate 24 0.475      0     0
+
+Wrote W_parallel_deepseek-chat.csv
+### deepseek/deepseek-chat | parallel_count | nodes=32
+condition  k   acc  leaks  errs
+immediate  2 0.950      0     0
+immediate  4 0.525      0     0
+immediate  8 0.200      0     0
+immediate 12 0.250      0     0
+immediate 16 0.150      0     0
+immediate 20 0.200      0     0
+immediate 24 0.075      0     0
+
+Wrote W_parallel_count_deepseek-chat.csv
+### deepseek/deepseek-chat | serial | nodes=32
+condition  k   acc  leaks  errs  eff_hops  over  under
+immediate  2 0.275      0     0     3.400 0.675  0.050
+immediate  4 0.150      0     0    12.725 0.750  0.100
+immediate  8 0.100      0     0    15.600 0.700  0.200
+immediate 12 0.025      0     0    13.225 0.450  0.525
+immediate 16 0.000      0     0    14.925 0.425  0.575
+immediate 20 0.025      0     0    15.300 0.375  0.600
+immediate 24 0.025      0     0    16.000 0.250  0.725
+
+Wrote W_serial_deepseek-chat.csv
+### ALL DONE

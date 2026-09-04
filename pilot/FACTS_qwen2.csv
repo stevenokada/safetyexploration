@@ -1,0 +1,401 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,prompt,seed
+facts,default,1,immediate,0,Hanoi,Hanoi,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Hanoi,What is the capital city of Vietnam?,2838286984
+facts,default,1,immediate,1,Jakarta,Jakarta,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jakarta,What is the capital city of Indonesia?,3727417886
+facts,default,1,immediate,2,Kyiv,Kyiv,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of Ukraine?,1193456548
+facts,default,1,immediate,3,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of Kazakhstan?,807764786
+facts,default,1,immediate,4,Dhaka,Dhaka,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Dhaka,What is the capital city of Bangladesh?,2923501201
+facts,default,1,immediate,5,Budapest,Budapest,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Budapest,What is the capital city of Hungary?,3645253127
+facts,default,1,immediate,6,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of Kazakhstan?,1078949821
+facts,default,1,immediate,7,Pretoria,Pretoria,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Pretoria,What is the capital city of South Africa?,927483691
+facts,default,1,immediate,8,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of Azerbaijan?,2818005690
+facts,default,1,immediate,9,Warsaw,Warsaw,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Warsaw,What is the capital city of Poland?,3505416748
+facts,default,1,immediate,10,Sofia,Sofia,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Sofia,What is the capital city of Bulgaria?,235588000
+facts,default,1,immediate,11,Sofia,Sofia,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Sofia,What is the capital city of Bulgaria?,2030958902
+facts,default,1,immediate,12,Sofia,Sofia,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Sofia,What is the capital city of Bulgaria?,3758401676
+facts,default,1,immediate,13,Sofia,Sofia,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Sofia,What is the capital city of Bulgaria?,2533595162
+facts,default,1,immediate,14,Abuja,Abuja,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Abuja,What is the capital city of Nigeria?,157748665
+facts,default,1,immediate,15,Sofia,Sofia,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Sofia,What is the capital city of Bulgaria?,2120236335
+facts,default,1,immediate,16,Tokyo,Tokyo,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Tokyo,What is the capital city of Japan?,3882445973
+facts,default,1,immediate,17,Seoul,Seoul,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Seoul,What is the capital city of South Korea?,2423151619
+facts,default,1,immediate,18,Jakarta,Jakarta,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Jakarta,What is the capital city of Indonesia?,13713810
+facts,default,1,immediate,19,Seoul,Seoul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Seoul,What is the capital city of South Korea?,2010542340
+facts,default,1,immediate,20,Accra,Accra,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Accra,What is the capital city of Ghana?,623352419
+facts,default,1,immediate,21,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of Kazakhstan?,1377872629
+facts,default,1,immediate,22,Phnom Penh,Phnom,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Phnom Penh,What is the capital city of Cambodia?,3408526159
+facts,default,1,immediate,23,Seoul,Seoul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Seoul,What is the capital city of South Korea?,3157183449
+facts,default,1,immediate,24,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of Romania?,575299194
+facts,default,1,immediate,25,Accra,Accra,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Accra,What is the capital city of Ghana?,1431138028
+facts,default,1,immediate,26,Tbilisi,Tbilisi,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Tbilisi,What is the capital city of Georgia?,3427024726
+facts,default,1,immediate,27,Abuja,Abuja,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Abuja,What is the capital city of Nigeria?,3141734336
+facts,default,1,immediate,28,Jerusalem,Jerusalem,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jerusalem,What is the capital city of Israel?,737940049
+facts,default,1,immediate,29,Yangon,Naypyidaw,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Naypyidaw,What is the capital city of Myanmar?,1559962311
+facts,default,1,immediate,30,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of Peru?,1010608930
+facts,default,1,immediate,31,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of Czechia?,1262197684
+facts,default,1,immediate,32,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of Czechia?,3526543886
+facts,default,1,immediate,33,Jerusalem,Jerusalem,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jerusalem,What is the capital city of Israel?,2771778200
+facts,default,1,immediate,34,Abuja,Abuja,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Abuja,What is the capital city of Nigeria?,995192635
+facts,default,1,immediate,35,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of Azerbaijan?,1280729005
+facts,default,1,immediate,36,Moscow,Moscow,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Moscow,What is the capital city of Russia?,3579776535
+facts,default,1,immediate,37,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of Peru?,2723692161
+facts,default,1,immediate,38,Moscow,Moscow,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Moscow,What is the capital city of Russia?,854008592
+facts,default,1,immediate,39,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of Azerbaijan?,1172312966
+facts,default,1,immediate,40,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of Czechia?,1937587685
+facts,default,1,immediate,41,Moscow,Moscow,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Moscow,What is the capital city of Russia?,75107699
+facts,default,1,immediate,42,Vientiane,Vientiane,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Vientiane,What is the capital city of Laos?,2641583305
+facts,default,1,immediate,43,Warsaw,Warsaw,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Warsaw,What is the capital city of Poland?,3933498463
+facts,default,1,immediate,44,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of Azerbaijan?,1947269628
+facts,default,1,immediate,45,Hanoi,Hanoi,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Hanoi,What is the capital city of Vietnam?,51890538
+facts,default,1,immediate,46,Tbilisi,Tbilisi,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Tbilisi,What is the capital city of Georgia?,2585696464
+facts,default,1,immediate,47,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of Peru?,3977881670
+facts,default,1,immediate,48,Dhaka,Dhaka,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Dhaka,What is the capital city of Bangladesh?,2108077527
+facts,default,1,immediate,49,Seoul,Seoul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Seoul,What is the capital city of South Korea?,178357569
+facts,default,1,immediate,50,Kyiv,Kyiv,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of Ukraine?,1785072804
+facts,default,1,immediate,51,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of Kazakhstan?,492911666
+facts,default,1,immediate,52,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of Czechia?,2221436296
+facts,default,1,immediate,53,Tbilisi,Tbilisi,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Tbilisi,What is the capital city of Georgia?,4084161822
+facts,default,1,immediate,54,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of Czechia?,1829488829
+facts,default,1,immediate,55,Jerusalem,Jerusalem,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jerusalem,What is the capital city of Israel?,437057579
+facts,default,1,immediate,56,Kabul,Kabul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Kabul,What is the capital city of Afghanistan?,2198186385
+facts,default,1,immediate,57,Addis Ababa,Addis,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Addis Ababa,What is the capital city of Ethiopia?,4093810951
+facts,default,1,immediate,58,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of Kazakhstan?,1690141846
+facts,default,1,immediate,59,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of Peru?,331002880
+facts,default,1,immediate,60,Stockholm,Stockholm,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Stockholm,What is the capital city of Sweden?,1095458663
+facts,default,1,immediate,61,Vientiane,Vientiane,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Vientiane,What is the capital city of Laos?,910979057
+facts,default,1,immediate,62,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of Azerbaijan?,2940550731
+facts,default,1,immediate,63,Vientiane,Vientiane,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Vientiane,What is the capital city of Laos?,3628207837
+facts,default,1,immediate,64,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of Azerbaijan?,1176935294
+facts,default,1,immediate,65,Jerusalem,Jerusalem,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jerusalem,What is the capital city of Israel?,824290280
+facts,default,1,immediate,66,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of Romania?,2821257810
+facts,default,1,immediate,67,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of Romania?,3744451268
+facts,default,1,immediate,68,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of Romania?,1334892373
+facts,default,1,immediate,69,Tokyo,Tokyo,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Tokyo,What is the capital city of Japan?,949479363
+facts,default,1,immediate,70,Accra,Accra,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Accra,What is the capital city of Ghana?,1481666086
+facts,default,1,immediate,71,Sofia,Sofia,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Sofia,What is the capital city of Bulgaria?,794255024
+facts,default,1,immediate,72,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of Peru?,3059617546
+facts,default,1,immediate,73,Pretoria,Pretoria,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Pretoria,What is the capital city of South Africa?,3243851676
+facts,default,1,immediate,74,Lima,Lima,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Lima,What is the capital city of Peru?,1597876799
+facts,default,1,immediate,75,Kyiv,Kyiv,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of Ukraine?,674929321
+facts,default,1,immediate,76,Stockholm,Stockholm,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Stockholm,What is the capital city of Sweden?,2972961555
+facts,default,1,immediate,77,Phnom Penh,Phnom,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Phnom Penh,What is the capital city of Cambodia?,3325361029
+facts,default,1,immediate,78,Stockholm,Stockholm,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Stockholm,What is the capital city of Sweden?,1452008980
+facts,default,1,immediate,79,Vientiane,Vientiane,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Vientiane,What is the capital city of Laos?,562878082
+facts,default,2,immediate,0,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of the country whose currency is the manat?,2875878609
+facts,default,2,immediate,1,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of the country whose currency is the tenge?,3698154567
+facts,default,2,immediate,2,Kyiv,Kyiv,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of the country whose currency is the hryvnia?,1164185085
+facts,default,2,immediate,3,Yangon,Naypyidaw,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Naypyidaw,What is the capital city of the country whose currency is the kyat?,845364587
+facts,default,2,immediate,4,Stockholm,Stockholm,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Stockholm,What is the capital city of the country whose currency is the krona?,2886183112
+facts,default,2,immediate,5,Beijing,Beijing,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Beijing,What is the capital city of the country whose currency is the yuan?,3674249310
+facts,default,2,immediate,6,Bangkok,Bangkok,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Bangkok,What is the capital city of the country whose currency is the baht?,1107937764
+facts,default,2,immediate,7,Jakarta,Jakarta,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jakarta,What is the capital city of the country whose currency is the rupiah?,890173810
+facts,default,2,immediate,8,Budapest,Budapest,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Budapest,What is the capital city of the country whose currency is the forint?,2779899107
+facts,default,2,immediate,9,Addis Ababa,Addis,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Addis Ababa,What is the capital city of the country whose currency is the birr?,3535197301
+facts,default,2,immediate,10,Jerusalem,Jerusalem,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jerusalem,What is the capital city of the country whose currency is the shekel?,482305614
+facts,default,2,immediate,11,Jakarta,Jakarta,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jakarta,What is the capital city of the country whose currency is the rupiah?,1807242968
+facts,default,2,immediate,12,Vientiane,Vientiane,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Vientiane,What is the capital city of the country whose currency is the kip?,4071688034
+facts,default,2,immediate,13,Stockholm,Reykjavik,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Reykjavik,What is the capital city of the country whose currency is the krona?,2243311604
+facts,default,2,immediate,14,Tokyo,Tokyo,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Tokyo,What is the capital city of the country whose currency is the yen?,466788951
+facts,default,2,immediate,15,Moscow,Moscow,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Moscow,What is the capital city of the country whose currency is the ruble?,1825936065
+facts,default,2,immediate,16,Seoul,Seoul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Seoul,What is the capital city of the country whose currency is the won?,4124885883
+facts,default,2,immediate,17,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of the country whose currency is the manat?,2195452909
+facts,default,2,immediate,18,Bangkok,Bangkok,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Bangkok,What is the capital city of the country whose currency is the baht?,308604540
+facts,default,2,immediate,19,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of the country whose currency is the manat?,1701043946
+facts,default,2,immediate,20,Sofia,Sofia,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Sofia,What is the capital city of the country whose currency is the lev?,932328845
+facts,default,2,immediate,21,Hanoi,Hanoi,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Hanoi,What is the capital city of the country whose currency is the dong?,1083507995
+facts,default,2,immediate,22,Addis Ababa,Addis,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Addis Ababa,What is the capital city of the country whose currency is the birr?,3650901153
+facts,default,2,immediate,23,Dhaka,Dhaka,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Dhaka,What is the capital city of the country whose currency is the taka?,2929419319
+facts,default,2,immediate,24,Accra,Accra,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Accra,What is the capital city of the country whose currency is the cedi?,822079892
+facts,default,2,immediate,25,Kyiv,Kyiv,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of the country whose currency is the hryvnia?,1207484674
+facts,default,2,immediate,26,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of the country whose currency is the manat?,3740373176
+facts,default,2,immediate,27,Sofia,Sofia,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Sofia,What is the capital city of the country whose currency is the lev?,2851512366
+facts,default,2,immediate,28,Sofia,Sofia,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Sofia,What is the capital city of the country whose currency is the lev?,961134015
+facts,default,2,immediate,29,Jakarta,Jakarta,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jakarta,What is the capital city of the country whose currency is the rupiah?,1313770793
+facts,default,2,immediate,30,Budapest,Budapest,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Budapest,What is the capital city of the country whose currency is the forint?,780731596
+facts,default,2,immediate,31,Accra,Accra,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Accra,What is the capital city of the country whose currency is the cedi?,1502491738
+facts,default,2,immediate,32,Tokyo,Tokyo,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Tokyo,What is the capital city of the country whose currency is the yen?,3230098912
+facts,default,2,immediate,33,Budapest,Budapest,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Budapest,What is the capital city of the country whose currency is the forint?,3078641014
+facts,default,2,immediate,34,Dhaka,Dhaka,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Dhaka,What is the capital city of the country whose currency is the taka?,702857429
+facts,default,2,immediate,35,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of the country whose currency is the manat?,1591996483
+facts,default,2,immediate,36,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of the country whose currency is the leu?,3354042873
+facts,default,2,immediate,37,Kyiv,Kyiv,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of the country whose currency is the hryvnia?,2968359279
+facts,default,2,immediate,38,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of the country whose currency is the leu?,542280958
+facts,default,2,immediate,39,Seoul,Seoul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Seoul,What is the capital city of the country whose currency is the won?,1465236584
+facts,default,2,immediate,40,Tokyo,Tokyo,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Tokyo,What is the capital city of the country whose currency is the yen?,1640534539
+facts,default,2,immediate,41,Bangkok,Bangkok,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Bangkok,What is the capital city of the country whose currency is the baht?,382706333
+facts,default,2,immediate,42,Bangkok,Bangkok,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Bangkok,What is the capital city of the country whose currency is the baht?,2412180263
+facts,default,2,immediate,43,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of the country whose currency is the koruna?,4173448113
+facts,default,2,immediate,44,Accra,Accra,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Accra,What is the capital city of the country whose currency is the cedi?,1722111506
+facts,default,2,immediate,45,Addis Ababa,Addis,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Addis Ababa,What is the capital city of the country whose currency is the birr?,295855748
+facts,default,2,immediate,46,Kyiv,Kyiv,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of the country whose currency is the hryvnia?,2292922174
+facts,default,2,immediate,47,Tokyo,Tokyo,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Tokyo,What is the capital city of the country whose currency is the yen?,4289464232
+facts,default,2,immediate,48,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of the country whose currency is the tenge?,1863522873
+facts,default,2,immediate,49,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of the country whose currency is the leu?,403974831
+facts,default,2,immediate,50,Yangon,Naypyidaw,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Naypyidaw,What is the capital city of the country whose currency is the kyat?,2027135818
+facts,default,2,immediate,51,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of the country whose currency is the koruna?,265589724
+facts,default,2,immediate,52,Yerevan,Yerevan,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Yerevan,What is the capital city of the country whose currency is the dram?,2531115622
+facts,default,2,immediate,53,Jakarta,Jakarta,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Jakarta,What is the capital city of the country whose currency is the rupiah?,3789222640
+facts,default,2,immediate,54,Dhaka,Dhaka,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Dhaka,What is the capital city of the country whose currency is the taka?,2143184723
+facts,default,2,immediate,55,Stockholm,Stockholm,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Stockholm,What is the capital city of the country whose currency is the krona?,146364357
+facts,default,2,immediate,56,Astana,Astana,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Astana,What is the capital city of the country whose currency is the tenge?,2444232319
+facts,default,2,immediate,57,Caracas,Caracas,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Caracas,What is the capital city of the country whose currency is the bolivar?,3870766825
+facts,default,2,immediate,58,Phnom Penh,Phnom,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Phnom Penh,What is the capital city of the country whose currency is the riel?,1980246904
+facts,default,2,immediate,59,Beijing,Beijing,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Beijing,What is the capital city of the country whose currency is the yuan?,17767406
+facts,default,2,immediate,60,Yangon,Naypyidaw,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Naypyidaw,What is the capital city of the country whose currency is the kyat?,1409216649
+facts,default,2,immediate,61,Yangon,Naypyidaw,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Naypyidaw,What is the capital city of the country whose currency is the kyat?,620347423
+facts,default,2,immediate,62,Kabul,Kabul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Kabul,What is the capital city of the country whose currency is the afghani?,3186659749
+facts,default,2,immediate,63,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of the country whose currency is the sol?,3405226291
+facts,default,2,immediate,64,Beijing,Beijing,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Beijing,What is the capital city of the country whose currency is the yuan?,1418933392
+facts,default,2,immediate,65,Kabul,Kabul,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Kabul,What is the capital city of the country whose currency is the afghani?,596902918
+facts,default,2,immediate,66,Caracas,Caracas,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Caracas,What is the capital city of the country whose currency is the bolivar?,3130873276
+facts,default,2,immediate,67,Bangkok,Bangkok,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Bangkok,What is the capital city of the country whose currency is the baht?,3449447722
+facts,default,2,immediate,68,Baku,Baku,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Baku,What is the capital city of the country whose currency is the manat?,1562736827
+facts,default,2,immediate,69,Bucharest,Bucharest,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Bucharest,What is the capital city of the country whose currency is the leu?,706889773
+facts,default,2,immediate,70,Prague,Prague,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Prague,What is the capital city of the country whose currency is the koruna?,1256571336
+facts,default,2,immediate,71,Stockholm,Stockholm,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Stockholm,What is the capital city of the country whose currency is the krona?,1038283102
+facts,default,2,immediate,72,Kabul,Kabul,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: Kabul,What is the capital city of the country whose currency is the afghani?,2766905572
+facts,default,2,immediate,73,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of the country whose currency is the sol?,3555496050
+facts,default,2,immediate,74,Vientiane,Vientiane,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Vientiane,What is the capital city of the country whose currency is the kip?,1300760017
+facts,default,2,immediate,75,Phnom Penh,Phnom,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Phnom Penh,What is the capital city of the country whose currency is the riel?,982463815
+facts,default,2,immediate,76,Lima,Lima,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Lima,What is the capital city of the country whose currency is the sol?,2743493885
+facts,default,2,immediate,77,Dhaka,Dhaka,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Dhaka,What is the capital city of the country whose currency is the taka?,3565245547
+facts,default,2,immediate,78,Kyiv,Kyiv,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Kyiv,What is the capital city of the country whose currency is the hryvnia?,1144932858
+facts,default,2,immediate,79,Beijing,Beijing,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Beijing,What is the capital city of the country whose currency is the yuan?,859404652
+facts,default,3,immediate,0,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the tenge?,2863138534
+facts,default,3,immediate,1,T,T,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: T,What is the first letter of the capital city of the country whose currency is the lari?,3719247472
+facts,default,3,immediate,2,P,P,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: P,What is the first letter of the capital city of the country whose currency is the koruna?,1151756234
+facts,default,3,immediate,3,L,L,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: L,What is the first letter of the capital city of the country whose currency is the sol?,866211676
+facts,default,3,immediate,4,D,D,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: D,What is the first letter of the capital city of the country whose currency is the taka?,2915418879
+facts,default,3,immediate,5,Y,Y,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Y,What is the first letter of the capital city of the country whose currency is the dram?,3670209129
+facts,default,3,immediate,6,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the yuan?,1137419219
+facts,default,3,immediate,7,K,K,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: K,What is the first letter of the capital city of the country whose currency is the afghani?,885822277
+facts,default,3,immediate,8,W,W,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: W,What is the first letter of the capital city of the country whose currency is the zloty?,2759036628
+facts,default,3,immediate,9,P,P,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: P,What is the first letter of the capital city of the country whose currency is the rand?,3547643458
+facts,default,3,immediate,10,S,R,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: R,What is the first letter of the capital city of the country whose currency is the krona?,2751660331
+facts,default,3,immediate,11,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the yuan?,3540267453
+facts,default,3,immediate,12,J,J,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the shekel?,1242390535
+facts,default,3,immediate,13,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the tenge?,1024086161
+facts,default,3,immediate,14,V,V,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: V,What is the first letter of the capital city of the country whose currency is the kip?,2741945650
+facts,default,3,immediate,15,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the leu?,3563713956
+facts,default,3,immediate,16,K,K,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: K,What is the first letter of the capital city of the country whose currency is the afghani?,1298179102
+facts,default,3,immediate,17,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the manat?,979866760
+facts,default,3,immediate,18,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the yuan?,2866317593
+facts,default,3,immediate,19,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the forint?,3722426767
+facts,default,3,immediate,20,L,L,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: L,What is the first letter of the capital city of the country whose currency is the sol?,2402177768
+facts,default,3,immediate,21,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the cedi?,4163461758
+facts,default,3,immediate,22,J,J,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the rupiah?,1629500356
+facts,default,3,immediate,23,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the naira?,371655506
+facts,default,3,immediate,24,S,S,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: S,What is the first letter of the capital city of the country whose currency is the lev?,2286130929
+facts,default,3,immediate,25,T,T,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: T,What is the first letter of the capital city of the country whose currency is the yen?,4282689127
+facts,default,3,immediate,26,M,M,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: M,What is the first letter of the capital city of the country whose currency is the ruble?,1716385757
+facts,default,3,immediate,27,H,H,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: H,What is the first letter of the capital city of the country whose currency is the dong?,290113355
+facts,default,3,immediate,28,W,W,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: W,What is the first letter of the capital city of the country whose currency is the zloty?,2180373210
+facts,default,3,immediate,29,K,K,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: K,What is the first letter of the capital city of the country whose currency is the afghani?,4143114828
+facts,default,3,immediate,30,J,J,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the rupiah?,2520081321
+facts,default,3,immediate,31,D,D,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: D,What is the first letter of the capital city of the country whose currency is the taka?,3778171711
+facts,default,3,immediate,32,W,W,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: W,What is the first letter of the capital city of the country whose currency is the zloty?,2017133189
+facts,default,3,immediate,33,K,K,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: K,What is the first letter of the capital city of the country whose currency is the hryvnia?,255603219
+facts,default,3,immediate,34,T,T,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: T,What is the first letter of the capital city of the country whose currency is the lari?,2438506416
+facts,default,3,immediate,35,M,M,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: M,What is the first letter of the capital city of the country whose currency is the ruble?,3865024294
+facts,default,3,immediate,36,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the yuan?,2136393372
+facts,default,3,immediate,37,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the tenge?,139589130
+facts,default,3,immediate,38,M,M,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: M,What is the first letter of the capital city of the country whose currency is the ruble?,2565794715
+facts,default,3,immediate,39,Y,Y,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Y,What is the first letter of the capital city of the country whose currency is the dram?,4025080589
+facts,default,3,immediate,40,Y,N,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: N,What is the first letter of the capital city of the country whose currency is the kyat?,3648320878
+facts,default,3,immediate,41,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the birr?,2926822904
+facts,default,3,immediate,42,M,M,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: M,What is the first letter of the capital city of the country whose currency is the ruble?,930780226
+facts,default,3,immediate,43,A,A,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the cedi?,1081976020
+facts,default,3,immediate,44,P,P,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: P,What is the first letter of the capital city of the country whose currency is the koruna?,3726193015
+facts,default,3,immediate,45,L,L,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: L,What is the first letter of the capital city of the country whose currency is the sol?,2837316065
+facts,default,3,immediate,46,K,K,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: K,What is the first letter of the capital city of the country whose currency is the hryvnia?,806834267
+facts,default,3,immediate,47,D,D,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: D,What is the first letter of the capital city of the country whose currency is the taka?,1192255693
+facts,default,3,immediate,48,W,W,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: W,What is the first letter of the capital city of the country whose currency is the zloty?,3618602332
+facts,default,3,immediate,49,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the naira?,2695384522
+facts,default,3,immediate,50,S,S,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: S,What is the first letter of the capital city of the country whose currency is the won?,3228550191
+facts,default,3,immediate,51,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the tenge?,3077108921
+facts,default,3,immediate,52,J,J,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the rupiah?,778151171
+facts,default,3,immediate,53,K,K,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: K,What is the first letter of the capital city of the country whose currency is the afghani?,1499895189
+facts,default,3,immediate,54,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the tenge?,3338797110
+facts,default,3,immediate,55,L,L,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: L,What is the first letter of the capital city of the country whose currency is the sol?,2953130144
+facts,default,3,immediate,56,J,J,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the shekel?,688677146
+facts,default,3,immediate,57,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the cedi?,1577800076
+facts,default,3,immediate,58,J,J,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the rupiah?,3467922461
+facts,default,3,immediate,59,L,L,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: L,What is the first letter of the capital city of the country whose currency is the sol?,3115547787
+facts,default,3,immediate,60,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the yuan?,3947010028
+facts,default,3,immediate,61,M,M,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: M,What is the first letter of the capital city of the country whose currency is the ruble?,2621810554
+facts,default,3,immediate,62,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the baht?,88929984
+facts,default,3,immediate,63,L,L,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: L,What is the first letter of the capital city of the country whose currency is the sol?,1917568598
+facts,default,3,immediate,64,C,C,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: C,What is the first letter of the capital city of the country whose currency is the bolivar?,3962524661
+facts,default,3,immediate,65,J,J,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the rupiah?,2603115363
+facts,default,3,immediate,66,D,D,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: D,What is the first letter of the capital city of the country whose currency is the taka?,35730137
+facts,default,3,immediate,67,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the cedi?,1965425231
+facts,default,3,immediate,68,M,M,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: M,What is the first letter of the capital city of the country whose currency is the ruble?,3852017630
+facts,default,3,immediate,69,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the naira?,2459840328
+facts,default,3,immediate,70,A,A,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: A,What is the first letter of the capital city of the country whose currency is the cedi?,4065961645
+facts,default,3,immediate,71,J,J,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the rupiah?,2237568571
+facts,default,3,immediate,72,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the yuan?,475514753
+facts,default,3,immediate,73,P,P,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: P,What is the first letter of the capital city of the country whose currency is the koruna?,1800468247
+facts,default,3,immediate,74,V,V,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: V,What is the first letter of the capital city of the country whose currency is the kip?,4113851060
+facts,default,3,immediate,75,B,B,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: B,What is the first letter of the capital city of the country whose currency is the baht?,2184401442
+facts,default,3,immediate,76,L,L,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: L,What is the first letter of the capital city of the country whose currency is the sol?,456786840
+facts,default,3,immediate,77,J,J,1,-1,0,0,stop,3,0,qwen3.6-27b,Answer: J,What is the first letter of the capital city of the country whose currency is the rupiah?,1815950094
+facts,default,3,immediate,78,P,P,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: P,What is the first letter of the capital city of the country whose currency is the koruna?,4236390047
+facts,default,3,immediate,79,P,P,1,-1,0,0,stop,4,0,qwen3.6-27b,Answer: P,What is the first letter of the capital city of the country whose currency is the rand?,2340757001
+facts,default,4,immediate,0,Sulfur,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,2951155811
+facts,default,4,immediate,1,Boron,Carbon,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Carbon,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the yuan?,3638567157
+facts,default,4,immediate,2,Yttrium,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,1105817935
+facts,default,4,immediate,3,Yttrium,Yttrium,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,921584089
+facts,default,4,immediate,4,Hydrogen,Vanadium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Vanadium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dong?,2827670650
+facts,default,4,immediate,5,Hydrogen,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dong?,3750618348
+facts,default,4,immediate,6,Phosphorus,Carbon,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Carbon,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the koruna?,1183102294
+facts,default,4,immediate,7,Phosphorus,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the rand?,830703040
+facts,default,4,immediate,8,Boron,Boron,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the leu?,2705102929
+facts,default,4,immediate,9,Hydrogen,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dong?,3594234055
+facts,default,4,immediate,10,Phosphorus,Phosphorus,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Phosphorus,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the riel?,970209682
+facts,default,4,immediate,11,Phosphorus,Phosphorus,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Phosphorus,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the riel?,1322453252
+facts,default,4,immediate,12,Boron,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the baht?,3621411006
+facts,default,4,immediate,13,Phosphorus,Phosphorus,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Phosphorus,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the riel?,2698864680
+facts,default,4,immediate,14,Sulfur,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,1052376459
+facts,default,4,immediate,15,Tungsten,Potassium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Potassium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the zloty?,1237241117
+facts,default,4,immediate,16,Sulfur,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,3501694119
+facts,default,4,immediate,17,Potassium,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the afghani?,2813373489
+facts,default,4,immediate,18,Boron,Thorium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Thorium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the baht?,923775392
+facts,default,4,immediate,19,Sulfur,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,1074299190
+facts,default,4,immediate,20,Sulfur,Seoul,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Seoul,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,318335569
+facts,default,4,immediate,21,Sulfur,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,1711168199
+facts,default,4,immediate,22,Vanadium,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the kip?,4244048765
+facts,default,4,immediate,23,Sulfur,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,2347777003
+facts,default,4,immediate,24,Boron,Boron,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the baht?,362065480
+facts,default,4,immediate,25,Boron,Beryllium,0,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Beryllium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the manat?,1653841630
+facts,default,4,immediate,26,Hydrogen,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dong?,4221226852
+facts,default,4,immediate,27,Phosphorus,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the riel?,2359164914
+facts,default,4,immediate,28,Yttrium,Yttrium,1,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,472048227
+facts,default,4,immediate,29,Boron,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the baht?,1797640949
+facts,default,4,immediate,30,Boron,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the leu?,199383824
+facts,default,4,immediate,31,Yttrium,Yttrium,1,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the kyat?,2095410054
+facts,default,4,immediate,32,Carbon,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the bolivar?,3857463868
+facts,default,4,immediate,33,Yttrium,Yttrium,1,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the kyat?,2464877226
+facts,default,4,immediate,34,Sulfur,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the lev?,210738953
+facts,default,4,immediate,35,Boron,Nitrogen,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the manat?,2072555423
+facts,default,4,immediate,36,Phosphorus,Phosphorus,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Phosphorus,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the koruna?,3800170021
+facts,default,4,immediate,37,Carbon,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the bolivar?,2508639923
+facts,default,4,immediate,38,Phosphorus,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the koruna?,87675682
+facts,default,4,immediate,39,Tungsten,Potassium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Potassium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the zloty?,1916724148
+facts,default,4,immediate,40,Yttrium,Yttrium,1,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,1151585751
+facts,default,4,immediate,41,Boron,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the manat?,866450753
+facts,default,4,immediate,42,Carbon,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the bolivar?,2863508731
+facts,default,4,immediate,43,Boron,Boron,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the manat?,3718945901
+facts,default,4,immediate,44,Boron,Carbon,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Carbon,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the yuan?,1137576398
+facts,default,4,immediate,45,Sulfur,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the lev?,885602648
+facts,default,4,immediate,46,Phosphorus,Phosphorus,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Phosphorus,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the riel?,2915068130
+facts,default,4,immediate,47,Tungsten,Polonium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Polonium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the zloty?,3670497396
+facts,default,4,immediate,48,Potassium,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the afghani?,1249396197
+facts,default,4,immediate,49,Boron,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the yuan?,1031763315
+facts,default,4,immediate,50,Phosphorus,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the koruna?,1572404374
+facts,default,4,immediate,51,Sulfur,,0,-1,0,0,stop,2,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,717212672
+facts,default,4,immediate,52,Sulfur,Helium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Helium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the krona?,3015089594
+facts,default,4,immediate,53,Yttrium,Y,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Y,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,3299978540
+facts,default,4,immediate,54,Yttrium,Helium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Helium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,1523923087
+facts,default,4,immediate,55,Boron,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the baht?,768739353
+facts,default,4,immediate,56,Tungsten,Tungsten,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Tungsten,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the zloty?,3034274211
+facts,default,4,immediate,57,Sulfur,Helium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Helium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the lev?,3286001973
+facts,default,4,immediate,58,Tungsten,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the zloty?,1399026852
+facts,default,4,immediate,59,Carbon,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the bolivar?,610550834
+facts,default,4,immediate,60,Yttrium,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the kyat?,1989521237
+facts,default,4,immediate,61,Sulfur,Nitrogen,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Nitrogen,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,26386371
+facts,default,4,immediate,62,Phosphorus,Argon,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Argon,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the rand?,2560347769
+facts,default,4,immediate,63,Yttrium,Yttrium,1,-1,0,0,stop,7,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dram?,4020043503
+facts,default,4,immediate,64,Carbon,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the bolivar?,1912105804
+facts,default,4,immediate,65,Boron,Boron,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the baht?,117398490
+facts,default,4,immediate,66,Tungsten,Boron,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the zloty?,2683701856
+facts,default,4,immediate,67,Potassium,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the hryvnia?,3908123382
+facts,default,4,immediate,68,Sulfur,Carbon,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: Carbon,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the won?,2018387815
+facts,default,4,immediate,69,Phosphorus,Phosphorus,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Phosphorus,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the riel?,256448497
+facts,default,4,immediate,70,Boron,Uranium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Uranium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the leu?,1871617556
+facts,default,4,immediate,71,Sulfur,Helium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Helium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the krona?,411676290
+facts,default,4,immediate,72,Vanadium,Vanadium,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Vanadium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the kip?,2172714808
+facts,default,4,immediate,73,Carbon,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the bolivar?,4136095662
+facts,default,4,immediate,74,Boron,Boron,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Boron,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the leu?,1759730189
+facts,default,4,immediate,75,Hydrogen,Helium,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: Helium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the dong?,535063195
+facts,default,4,immediate,76,Phosphorus,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the koruna?,2263694113
+facts,default,4,immediate,77,Boron,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the baht?,4058647479
+facts,default,4,immediate,78,Sulfur,,0,-1,0,0,stop,3,0,qwen3.6-27b,Answer:,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the lev?,1632966182
+facts,default,4,immediate,79,Yttrium,Yttrium,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: Yttrium,Which chemical element has the symbol that is the first letter of the capital city of the country whose currency is the kyat?,374482608
+facts,default,5,immediate,0,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the hryvnia?,2921691732
+facts,default,5,immediate,1,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the bolivar?,3642903234
+facts,default,5,immediate,2,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the yuan?,1076566904
+facts,default,5,immediate,3,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the yuan?,925641710
+facts,default,5,immediate,4,6,15,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the bolivar?,2840116813
+facts,default,5,immediate,5,16,5,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 5,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the krona?,3729755867
+facts,default,5,immediate,6,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the afghani?,1195827041
+facts,default,5,immediate,7,15,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the rand?,809627639
+facts,default,5,immediate,8,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the zloty?,2701062758
+facts,default,5,immediate,9,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the hryvnia?,3623469808
+facts,default,5,immediate,10,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,2171100919
+facts,default,5,immediate,11,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the lev?,4134497889
+facts,default,5,immediate,12,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the lev?,1868971995
+facts,default,5,immediate,13,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the leu?,409014093
+facts,default,5,immediate,14,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the riel?,2248514286
+facts,default,5,immediate,15,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the manat?,4043483768
+facts,default,5,immediate,16,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the yuan?,1745615810
+facts,default,5,immediate,17,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the afghani?,520932180
+facts,default,5,immediate,18,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,2410927813
+facts,default,5,immediate,19,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the bolivar?,4172605011
+facts,default,5,immediate,20,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,2856652084
+facts,default,5,immediate,21,5,13,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 13,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the manat?,3712105890
+facts,default,5,immediate,22,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the baht?,1145793560
+facts,default,5,immediate,23,15,16,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 16,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the koruna?,860642446
+facts,default,5,immediate,24,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the koruna?,2905131309
+facts,default,5,immediate,25,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the won?,3660577211
+facts,default,5,immediate,26,1,16,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 16,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,1126606849
+facts,default,5,immediate,27,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the forint?,874616983
+facts,default,5,immediate,28,15,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the koruna?,2761852166
+facts,default,5,immediate,29,15,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the koruna?,3550066064
+facts,default,5,immediate,30,74,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the zloty?,3009297525
+facts,default,5,immediate,31,5,5,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 5,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the manat?,3294170339
+facts,default,5,immediate,32,5,16,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 16,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the baht?,1565547865
+facts,default,5,immediate,33,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the afghani?,710372815
+facts,default,5,immediate,34,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the hryvnia?,3023304812
+facts,default,5,immediate,35,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kip?,3275016442
+facts,default,5,immediate,36,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the won?,1513986368
+facts,default,5,immediate,37,39,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kyat?,758819286
+facts,default,5,immediate,38,39,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kyat?,3179656263
+facts,default,5,immediate,39,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the leu?,3397551313
+facts,default,5,immediate,40,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the krona?,4229933746
+facts,default,5,immediate,41,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the won?,2333645348
+facts,default,5,immediate,42,5,5,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 5,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the yuan?,303156126
+facts,default,5,immediate,43,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the baht?,1696004872
+facts,default,5,immediate,44,5,16,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 16,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the leu?,4218580651
+facts,default,5,immediate,45,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kip?,2356502077
+facts,default,5,immediate,46,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,360451975
+facts,default,5,immediate,47,5,39,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 39,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the baht?,1652244241
+facts,default,5,immediate,48,39,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dram?,4072940160
+facts,default,5,immediate,49,15,15,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the riel?,2244153878
+facts,default,5,immediate,50,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the forint?,3842284531
+facts,default,5,immediate,51,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the rand?,2449714021
+facts,default,5,immediate,52,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the krona?,185268959
+facts,default,5,immediate,53,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,2081278537
+facts,default,5,immediate,54,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kip?,3798556650
+facts,default,5,immediate,55,16,16,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 16,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the lev?,2507042684
+facts,default,5,immediate,56,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the lev?,208092870
+facts,default,5,immediate,57,39,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kyat?,2069892688
+facts,default,5,immediate,58,23,15,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 15,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kip?,3957265345
+facts,default,5,immediate,59,39,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dram?,2631410519
+facts,default,5,immediate,60,39,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kyat?,3458844720
+facts,default,5,immediate,61,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the lev?,3106863270
+facts,default,5,immediate,62,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the afghani?,539470108
+facts,default,5,immediate,63,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the won?,1461754250
+facts,default,5,immediate,64,5,1,0,-1,0,0,stop,4,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the forint?,3376679977
+facts,default,5,immediate,65,39,5,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 5,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kyat?,3192077503
+facts,default,5,immediate,66,15,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the rand?,659188997
+facts,default,5,immediate,67,5,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the baht?,1347247507
+facts,default,5,immediate,68,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,3237101570
+facts,default,5,immediate,69,23,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kip?,3086315668
+facts,default,5,immediate,70,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the bolivar?,3610442097
+facts,default,5,immediate,71,19,16,0,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 16,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the hryvnia?,2687879655
+facts,default,5,immediate,72,1,1,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the dong?,960272477
+facts,default,5,immediate,73,6,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the bolivar?,1312532683
+facts,default,5,immediate,74,19,2,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 2,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the hryvnia?,3495902568
+facts,default,5,immediate,75,74,74,1,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 74,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the zloty?,2807565822
+facts,default,5,immediate,76,16,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the won?,1045519428
+facts,default,5,immediate,77,39,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kyat?,1230400722
+facts,default,5,immediate,78,23,23,1,-1,0,0,stop,6,0,qwen3.6-27b,Answer: 23,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the kip?,3655954755
+facts,default,5,immediate,79,19,1,0,-1,0,0,stop,5,0,qwen3.6-27b,Answer: 1,What is the atomic number of the chemical element whose symbol is the first letter of the capital city of the country whose currency is the afghani?,2934850005

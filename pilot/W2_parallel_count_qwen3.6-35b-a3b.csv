@@ -1,0 +1,190 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion
+parallel_count,default,8,immediate,0,4,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,1,4,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,2,3,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,3,3,5,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,4,3,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,5,5,5,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,6,4,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,7,2,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,8,5,5,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,9,4,4,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,4
+parallel_count,default,8,immediate,10,6,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,11,3,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,12,4,4,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 4
+parallel_count,default,8,immediate,13,4,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,14,2,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,15,3,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,16,4,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,17,7,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,18,3,5,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,5
+parallel_count,default,8,immediate,19,4,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,20,4,5,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,5
+parallel_count,default,8,immediate,21,5,5,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,5
+parallel_count,default,8,immediate,22,5,5,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,23,2,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,24,5,5,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,25,3,5,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,5
+parallel_count,default,8,immediate,26,5,5,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,27,2,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,28,3,5,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 5
+parallel_count,default,8,immediate,29,5,5,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,5
+parallel_count,default,16,immediate,0,6,9,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,9
+parallel_count,default,16,immediate,1,9,9,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 9
+parallel_count,default,16,immediate,2,7,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,3,6,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,4,10,9,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,9
+parallel_count,default,16,immediate,5,12,8,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 8
+parallel_count,default,16,immediate,6,10,9,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 9
+parallel_count,default,16,immediate,7,10,10,1,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,8,4,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,9,9,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,10,8,9,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,9
+parallel_count,default,16,immediate,11,5,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,12,10,8,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,8
+parallel_count,default,16,immediate,13,8,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,14,9,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,15,5,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,16,10,10,1,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,17,9,7,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 7
+parallel_count,default,16,immediate,18,9,9,1,-1,0,0,stop,2,0,qwen3.6-35b-a3b,9
+parallel_count,default,16,immediate,19,6,12,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,12
+parallel_count,default,16,immediate,20,11,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,21,8,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,22,3,8,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 8
+parallel_count,default,16,immediate,23,13,10,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,10
+parallel_count,default,16,immediate,24,8,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,25,9,9,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 9
+parallel_count,default,16,immediate,26,9,8,0,-1,0,0,stop,4,0,qwen3.6-35b-a3b,Answer: 8
+parallel_count,default,16,immediate,27,7,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,16,immediate,28,9,6,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 6
+parallel_count,default,16,immediate,29,7,10,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 10
+parallel_count,default,24,immediate,0,13,13,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,13
+parallel_count,default,24,immediate,1,9,15,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 15
+"
+parallel_count,default,24,immediate,2,10,13,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 13
+parallel_count,default,24,immediate,3,14,14,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,14
+parallel_count,default,24,immediate,4,13,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,5,11,13,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 13
+parallel_count,default,24,immediate,6,10,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,7,12,13,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 13
+parallel_count,default,24,immediate,8,9,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,9,11,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,10,15,14,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,14
+parallel_count,default,24,immediate,11,14,16,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 16
+"
+parallel_count,default,24,immediate,12,15,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,13,13,14,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 14
+"
+parallel_count,default,24,immediate,14,13,12,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 12
+"
+parallel_count,default,24,immediate,15,13,13,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,13
+parallel_count,default,24,immediate,16,15,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,17,7,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,18,15,11,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 11
+"
+parallel_count,default,24,immediate,19,12,14,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 14
+"
+parallel_count,default,24,immediate,20,9,14,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 14
+parallel_count,default,24,immediate,21,15,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,22,15,14,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 14
+"
+parallel_count,default,24,immediate,23,12,14,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 14
+parallel_count,default,24,immediate,24,8,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,25,10,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,26,11,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,24,immediate,27,9,14,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,14
+parallel_count,default,24,immediate,28,15,14,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,14
+parallel_count,default,24,immediate,29,10,12,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,12
+parallel_count,default,32,immediate,0,22,18,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,18
+parallel_count,default,32,immediate,1,16,18,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,18
+parallel_count,default,32,immediate,2,16,17,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,17
+parallel_count,default,32,immediate,3,17,17,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,17
+parallel_count,default,32,immediate,4,9,18,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,18
+parallel_count,default,32,immediate,5,16,18,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 18
+parallel_count,default,32,immediate,6,15,15,1,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 15
+parallel_count,default,32,immediate,7,16,17,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 17
+parallel_count,default,32,immediate,8,15,18,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 18
+parallel_count,default,32,immediate,9,18,17,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,17
+parallel_count,default,32,immediate,10,15,18,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 18
+parallel_count,default,32,immediate,11,18,16,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 16
+parallel_count,default,32,immediate,12,20,20,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,20
+parallel_count,default,32,immediate,13,16,17,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,17
+parallel_count,default,32,immediate,14,16,15,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 15
+parallel_count,default,32,immediate,15,17,18,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,18
+parallel_count,default,32,immediate,16,18,18,1,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 18
+parallel_count,default,32,immediate,17,17,18,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,18
+parallel_count,default,32,immediate,18,18,18,1,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 18
+parallel_count,default,32,immediate,19,9,16,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 16
+parallel_count,default,32,immediate,20,13,16,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,16
+parallel_count,default,32,immediate,21,15,17,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,17
+parallel_count,default,32,immediate,22,14,18,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 18
+parallel_count,default,32,immediate,23,18,18,1,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 18
+parallel_count,default,32,immediate,24,13,17,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,17
+parallel_count,default,32,immediate,25,16,16,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,16
+parallel_count,default,32,immediate,26,16,17,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 17
+parallel_count,default,32,immediate,27,15,17,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,17
+parallel_count,default,32,immediate,28,21,18,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,18
+parallel_count,default,32,immediate,29,9,18,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,18
+parallel_count,default,48,immediate,0,22,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,1,19,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,2,25,24,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,3,20,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,4,27,26,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,26
+parallel_count,default,48,immediate,5,18,24,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 24
+parallel_count,default,48,immediate,6,21,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,7,22,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,8,31,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,9,27,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,10,24,24,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,11,15,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,12,15,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,13,23,23,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,23
+parallel_count,default,48,immediate,14,26,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,15,24,25,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 25
+parallel_count,default,48,immediate,16,23,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,17,19,26,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,26
+parallel_count,default,48,immediate,18,27,28,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,28
+parallel_count,default,48,immediate,19,22,26,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,26
+parallel_count,default,48,immediate,20,25,24,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,21,19,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,22,22,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,23,24,30,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 30
+parallel_count,default,48,immediate,24,22,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,25,24,24,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,26,28,25,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,25
+parallel_count,default,48,immediate,27,25,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,48,immediate,28,26,25,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,25
+parallel_count,default,48,immediate,29,36,24,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,24
+parallel_count,default,64,immediate,0,32,32,1,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 32
+parallel_count,default,64,immediate,1,29,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,2,35,30,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,30
+parallel_count,default,64,immediate,3,27,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,4,27,33,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,5,30,32,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,6,37,33,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,7,36,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,8,37,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,9,34,32,0,-1,0,0,stop,6,0,qwen3.6-35b-a3b,Answer: 32
+parallel_count,default,64,immediate,10,33,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,11,34,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,12,31,32,0,-1,0,0,stop,5,0,qwen3.6-35b-a3b,Answer: 32
+parallel_count,default,64,immediate,13,31,32,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 32
+"
+parallel_count,default,64,immediate,14,34,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,15,29,33,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,16,34,33,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,17,33,33,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,18,35,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,19,30,33,0,-1,0,0,length,8,0,qwen3.6-35b-a3b,"Answer: 33
+"
+parallel_count,default,64,immediate,20,38,32,0,-1,0,0,stop,2,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,21,32,33,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,22,35,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,23,33,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,24,35,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,25,32,33,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,26,32,32,1,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
+parallel_count,default,64,immediate,27,30,33,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,33
+parallel_count,default,64,immediate,28,32,34,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,34
+parallel_count,default,64,immediate,29,25,32,0,-1,0,0,stop,3,0,qwen3.6-35b-a3b,32
