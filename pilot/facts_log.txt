@@ -1,0 +1,47 @@
+### qwen/qwen3.6-27b
+      cot  3 0.933      0     0
+      cot  4 0.893      0     0
+      cot  5 0.860      0     0
+   filler  1 0.953      0     0
+   filler  2 0.893      0     0
+   filler  3 0.960      0     0
+   filler  4 0.453      0     0
+   filler  5 0.193      0     0
+immediate  1 0.953      0     0
+immediate  2 0.880      0     0
+immediate  3 0.940      0     0
+immediate  4 0.307      0     0
+immediate  5 0.187      0     0
+
+Wrote FACTS_qwen3.6-27b.csv
+
+!! VALIDITY AUDIT: 4/15 cells FAILED — do not treat these as depth measurements
+cond  k   n   acc  cot_reasoned  leak                             why
+ cot  2 150 0.893         0.993   NaN                 cot_ceiling=89%
+ cot  3 150 0.933         0.953   NaN                  unparseable=4%
+ cot  4 150 0.893         0.960   NaN unparseable=4%; cot_ceiling=89%
+ cot  5 150 0.860         0.927   NaN unparseable=7%; cot_ceiling=86%
+### google/gemma-3-27b-it
+Running 2250 calls | google/gemma-3-27b-it | facts/default
+Done in 829s
+
+condition  k   acc  leaks  errs
+      cot  1 0.947      0     0
+      cot  2 0.900      0     0
+      cot  3 0.973      0     0
+      cot  4 0.933      0     0
+      cot  5 0.933      0     0
+   filler  1 0.953      0     0
+   filler  2 0.900      0     0
+   filler  3 0.980      0     0
+   filler  4 0.373      0     0
+   filler  5 0.127      0     0
+immediate  1 0.947      0     0
+immediate  2 0.900      0     0
+immediate  3 0.973      0     0
+immediate  4 0.220      0     0
+immediate  5 0.127      0     0
+
+Wrote FACTS_gemma-3-27b-it.csv
+validity audit: all 15 cells passed
+### ALL DONE

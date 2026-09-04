@@ -1,0 +1,92 @@
+<div class="keys">
+  <div class="key"><div class="n p" data-key="k">3</div><div class="l">Memorised facts a model chains silently before collapsing</div></div>
+  <div class="key"><div class="n s">+15</div><div class="l">Points that filler tokens buy, but only at the depth where it matters</div></div>
+  <div class="key"><div class="n p">0</div><div class="l">Vocabulary rank of the un-emitted bridge entity, read from the residual stream</div></div>
+  <div class="key"><div class="n">100%</div><div class="l">Solved trials where the hidden intermediate outranks a control</div></div>
+</div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">01</span><h2>Leaving the synthetic tasks behind</h2></div>
+  <p>The first two runs measured latent computation on tasks built for the purpose: chained symbol lookup, then chained arithmetic. Both are contamination-proof and cleanly depth-parameterised, and neither is anything a person would ask. This run asks the same question about ordinary world knowledge, and it is also the run where reading the model's internals finally worked.</p>
+  <p>The chain composes memorised facts, none of them supplied in the prompt:</p>
+</section>
+</div>
+
+<div class="specimen">
+  <div class="cap"><span>Real-world chain</span><span class="tag p">nothing given in context</span></div>
+  <pre>currency  →  country  →  capital  →  first letter  →  element  →  atomic number
+   lev     → Bulgaria  →  Sofia    →      S         →  Sulfur   →      16
+
+k=2  "What is the capital city of the country whose currency is the lev?"
+k=4  "Which chemical element has the symbol that is the first letter of the
+      capital city of the country whose currency is the leu?"</pre>
+</div>
+
+<div class="measure">
+  <p>Two filters keep the questions honest. Each currency belongs to <em>exactly one</em> country, because "the country whose currency is the euro" has about twenty right answers. And the country and capital are single tokens in both models, so a single-token readout of an intermediate is unambiguous — the constraint that the previous run's digit-valued intermediates could not satisfy.</p>
+</div>
+
+<figure>
+  <div class="ftitle">Three hops silently, then a cliff</div>
+  <div class="fsub">n=150 per cell. Chain-of-thought stays at ceiling throughout, so every depth is solvable.</div>
+  <div class="legend" data-leg="facts"></div>
+  <div class="panels" data-fig="facts"></div>
+  <figcaption>Answering with no chain of thought holds near 90% through three hops and collapses at four — closely matching the four-hop ceiling reported for natural-fact composition elsewhere. Because chain-of-thought remains at 86–97% at every depth, the collapse is a limit on unwritten computation rather than on knowledge or comprehension.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">02</span><h2>Filler tokens help, in exactly one place</h2></div>
+  <p>Earlier runs found no benefit from filler tokens and could not say why. Here the effect appears, replicates across both models, and is confined to a single depth.</p>
+</section>
+</div>
+
+<div class="tablewrap measure">
+<table>
+  <thead><tr><th>Depth</th><th>No filler</th><th>Filler</th><th>Difference</th><th>Paired p</th></tr></thead>
+  <tbody data-tbl="filler"></tbody>
+</table>
+</div>
+
+<div class="measure">
+  <p>At one to three hops the model is already near ceiling and filler has nothing to add. At five hops it is at the floor and filler has nothing to work with. At <strong>four hops</strong> — the only depth in the sensitive middle of the curve — filler is worth about fifteen points in both models, at p&lt;0.001.</p>
+  <p>This is the shape the mechanism predicts. Extra tokens add parallel width to a forward pass, not extra layers, so they can make a computation the model can nearly do more reliable without extending how deep it can go. The five-hop cell is the test that matters: if filler bought serial depth, the ceiling would move. It does not.</p>
+
+  <div class="callout">
+    <span class="lab">A prediction, and how it went</span>
+    <p>Before running this, the stated expectation was that filler would do nothing here, with the caveat that four hops was the only cell where an effect could show. The reasoning was right and the conclusion was wrong: the sensitive cell was correctly identified, and it is precisely where a large effect appeared.</p>
+  </div>
+</div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">03</span><h2>Reading the hop the model never writes</h2></div>
+  <p>Three earlier attempts to read intermediates out of the residual stream with an R-lens found nothing. All three used the arithmetic task, whose intermediates are single digits — a case the lens authors specifically warn about, since small integers may be computed outside the structure the lens reads.</p>
+  <p>This task puts words back in. Asked for the capital of the country whose currency is the lev, a model answering in one shot never writes "Bulgaria" — but if it is composing two facts, Bulgaria should be somewhere in the forward pass.</p>
+</section>
+</div>
+
+<figure>
+  <div class="ftitle">The bridge entity is there, at the top of the vocabulary</div>
+  <div class="fsub">Median best rank across layers and positions, 200 trials per depth, qwen3.6-27b. Lower is stronger.</div>
+  <div class="chart-scroll"><div data-fig="lens"></div></div>
+  <figcaption>The un-emitted bridge entity reaches rank 0 — the single most likely token in a 248,000-word vocabulary — while a control entity drawn from an unrelated fact reaches only 57 to 88 with exactly the same number of chances. On solved trials the bridge outranks the control in 100% of cases. The layer profile shows its rank improving steadily through the network rather than appearing all at once.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">04</span><h2>What this establishes, and what it does not</h2></div>
+  <p>The behavioural result is a clean depth ceiling on ordinary knowledge: three hops silently, four with help, five not at all. The internals result is that at least one un-emitted intermediate is plainly present in the residual stream, on a task where the model demonstrably succeeds.</p>
+  <p>The honest limit is that a lens readout is correlational. "Bulgaria" sits close to "lev" in meaning, so associative activation is a live alternative to genuine step-by-step composition. Distinguishing them requires transplanting the residual stream at the positions the lens implicates and checking that the answer moves with it. That test does not depend on the lens being right, and it is the next thing worth doing.</p>
+
+  <h3>Limits</h3>
+  <ul>
+    <li><strong>Small fact pool.</strong> Thirty facts, nineteen of which support the deeper chain, so questions repeat across trials.</li>
+    <li><strong>Latent retrieval, not latent arithmetic.</strong> A different quantity from the earlier runs; it complements them rather than replacing them.</li>
+    <li><strong>The lens is used outside its fitted range.</strong> It was estimated over 25 prompts of at most 128 tokens; these prompts are longer, and the filler condition much longer.</li>
+    <li><strong>One model for the internals.</strong> The lens run covers qwen3.6-27b only.</li>
+    <li><strong>Declined answers.</strong> At four hops qwen returns an empty answer on a quarter of trials — scored wrong, and a real behaviour rather than a parsing failure, but it makes that cell noisier than the others.</li>
+  </ul>
+</section>
+</div>

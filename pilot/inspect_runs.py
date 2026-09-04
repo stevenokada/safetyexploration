@@ -108,7 +108,13 @@ def add_tags(df):
 
     mark(df["error"] == 1, "api_error")
     mark((df["out_len"] == 0) & (df["error"] == 0), "empty_response")
-    mark(df["pred"].isna() & (df["error"] == 0), "unparseable")
+    # a forced-answer trial that emitted the prefill and stopped is the MODEL
+    # declining to answer, not a parser failure. Score it wrong, report it, but
+    # do not count it against the harness's parse rate.
+    declined = (df["pred"].isna() & (df["error"] == 0)
+                & df["completion"].str.strip().str.fullmatch(r"Answer:?", na=False))
+    mark(declined, "model_declined")
+    mark(df["pred"].isna() & (df["error"] == 0) & ~declined, "unparseable")
     # a CoT trial that produced no visible reasoning is not a CoT trial
     mark(is_cot & (df["out_len"] <= 15) & (df["error"] == 0), "cot_no_reasoning")
     mark(is_cot & ~df["has_chain_markup"] & (df["out_len"] > 15), "cot_prose_only")
@@ -170,7 +176,9 @@ def audit(df, min_cot_reasoning=0.80, min_cot_acc=0.90, max_leak=0.05,
         if err > max_err:
             fails.append(f"api_errors={err:.0%}")
         ok = g[g["error"] == 0]
-        parse = ok["pred"].notna().mean() if len(ok) else 1.0
+        declined = ok["tags"].str.contains("model_declined")
+        rec["declined"] = round(declined.mean(), 3) if len(ok) else 0.0
+        parse = (ok["pred"].notna() | declined).mean() if len(ok) else 1.0
         if parse < min_parse:
             fails.append(f"unparseable={1-parse:.0%}")
         if cond == "cot":
@@ -242,7 +250,7 @@ def main():
     if args.cmd == "audit":
         a = audit(df)
         bad = a[a.status == "FAIL"]
-        cols = [c for c in ["run","model","cond","k","n","acc","cot_reasoned","leak","why"]
+        cols = [c for c in ["run","model","cond","k","n","acc","cot_reasoned","leak","declined","why"]
                 if c in a.columns]
         if args.all:
             print(a[cols].to_string(index=False))

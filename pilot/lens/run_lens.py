@@ -36,13 +36,28 @@ import torch
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 import task_arith  # noqa: E402
+import task_facts  # noqa: E402
 
 
 # ---------------------------------------------------------------- prompts
 
-def build_prompt(tok, rng, k, condition, filler_n=100):
+def build_prompt(tok, rng, k, condition, filler_n=100, task="arith"):
     """Same generator as the behavioral runs, so lens results line up with the
     accuracy curves rather than describing a slightly different task."""
+    if task == "facts":
+        q, gold, inter, reasoning = task_facts.generate(rng, k)
+        # intermediates are WORDS here, and " Tokyo" is a single token, so the
+        # prefill must NOT include the trailing space (unlike the digit task,
+        # where " 47" tokenizes as space|4|7)
+        fmt = {1:"city name",2:"city name",3:"single letter",
+               4:"element name",5:"number"}[k]
+        msgs = [{"role":"system","content":
+                 f"Answer immediately. Respond with ONLY the final {fmt} in the "
+                 f"format 'Answer: <{fmt}>'. Do not write anything else, do not reason."},
+                {"role":"user","content": q + ("\n\n" + " ".join(str(i) for i in range(1,filler_n+1))
+                                              if condition=="filler" else "")}]
+        text = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True) + "Answer:"
+        return text, gold, inter
     q, gold, inter, reasoning = task_arith.generate(rng, k)
     if condition == "filler":
         q += "\n\n" + " ".join(str(i) for i in range(1, filler_n + 1))
@@ -59,11 +74,18 @@ def build_prompt(tok, rng, k, condition, filler_n=100):
     return text, gold, inter
 
 
-def first_token_id(tok, value):
-    """The token a number's leading digit maps to. Intermediates are two digits
-    with distinct tens digits, so this id identifies which hop it is."""
-    ids = tok.encode(str(value), add_special_tokens=False)
-    return ids[0]
+def first_token_id(tok, value, task="arith"):
+    """The token that identifies an intermediate.
+
+    arith: intermediates are two-digit numbers whose FIRST token is the tens digit,
+           and the generator forces those digits distinct, so one token = one hop.
+    facts: intermediates are words, and " Tokyo" is a single token, so the leading
+           space form is the identifier.
+    """
+    if task == "facts":
+        ids = tok.encode(" " + str(value), add_special_tokens=False)
+        return ids[0]
+    return tok.encode(str(value), add_special_tokens=False)[0]
 
 
 # ---------------------------------------------------------------- lens
@@ -164,7 +186,7 @@ def run(model, tok, lens, args, device):
         for cond in args.conditions:
             batch, meta = [], []
             for i in range(args.n):
-                text, gold, inter = build_prompt(tok, rng, k, cond, args.filler_n)
+                text, gold, inter = build_prompt(tok, rng, k, cond, args.filler_n, args.task)
                 batch.append(text); meta.append((i, gold, inter))
                 if len(batch) < args.batch and i < args.n - 1:
                     continue
@@ -184,12 +206,19 @@ def run(model, tok, lens, args, device):
                 pred_tok = final_logits.argmax(dim=-1).tolist()
 
                 for bi, (idx, gold, inter) in enumerate(meta):
-                    solved = int(pred_tok[bi] == first_token_id(tok, gold))
-                    targets = {f"hop{m+1}": first_token_id(tok, v)
+                    solved = int(pred_tok[bi] == first_token_id(tok, gold, args.task))
+                    targets = {f"hop{m+1}": first_token_id(tok, v, args.task)
                                for m, v in enumerate(inter)}
                     # null control: a two-digit value that is not any intermediate
-                    nulls = [v for v in range(10, 100) if str(v) not in inter]
-                    targets["null"] = first_token_id(tok, rng.choice(nulls))
+                    if args.task == "facts":
+                        # a country/capital from a DIFFERENT fact: same kind of
+                        # token, unrelated to this question
+                        pool = [x for f in task_facts.FACTS for x in (f[1], f[2])
+                                if x not in inter]
+                        targets["null"] = first_token_id(tok, rng.choice(pool), "facts")
+                    else:
+                        nulls = [v for v in range(10, 100) if str(v) not in inter]
+                        targets["null"] = first_token_id(tok, rng.choice(nulls))
 
                     for layer in layers:
                         h = out.hidden_states[layer][bi, pos].to(lens.dtype)
@@ -235,6 +264,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True)
     ap.add_argument("--lens", required=True)
+    ap.add_argument("--task", default="arith", choices=["arith", "facts"])
     ap.add_argument("--out", default="lens_out")
     ap.add_argument("--n", type=int, default=100)
     ap.add_argument("--batch", type=int, default=8)

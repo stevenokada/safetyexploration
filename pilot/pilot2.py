@@ -31,6 +31,7 @@ import argparse, asyncio, csv, os, random, re, string, sys, time, zlib
 import httpx
 
 import task_arith
+import task_facts
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 REGISTRY = "models.json"
@@ -182,7 +183,9 @@ def parallel_question(lines, starts, letter, k):
 
 def build_messages(rng, k, condition, task, wording):
     """Returns (messages, gold, meta) where meta carries task-specific extras."""
-    fmt = ("depot name" if task == "arith_parallel_max" else
+    fmt = ({1: "city name", 2: "city name", 3: "single letter",
+            4: "element name", 5: "number"}[k] if task == "facts" else
+           "depot name" if task == "arith_parallel_max" else
            "number" if task in ("parallel_count", "arith", "arith_parallel") else "code")
     if condition == "cot":
         instr = ("Solve the problem. Think step by step, then give your final "
@@ -199,6 +202,9 @@ def build_messages(rng, k, condition, task, wording):
             steps = " -> ".join(full[:kk + 1])
             reasoning = f"Following the chain: {steps}."
             return q, gold, reasoning, full
+        elif task == "facts":
+            q, gold, chain, reasoning = task_facts.generate(rng, kk)
+            return q, gold, reasoning, None
         elif task == "arith":
             q, gold, inter, reasoning = task_arith.generate(rng, kk)
             return q, gold, reasoning, None
@@ -234,13 +240,24 @@ def build_messages(rng, k, condition, task, wording):
         q += "\n\n" + FILLER_TEXT
     messages.append({"role": "user", "content": q})
     if condition != "cot":
-        messages.append({"role": "assistant", "content": "Answer:"})
+        # trailing space matters: a prefill ending at ":" lets the model treat the
+        # turn as complete and emit EOS, which produced 30% empty answers on the
+        # facts task. With the space it continues into the answer.
+        prefill = "Answer: " if task == "facts" else "Answer:"
+        messages.append({"role": "assistant", "content": prefill})
     return messages, gold, full
 
 # ---------------------------------------------------------------- scoring
 
 def extract_answer(condition, completion, task="serial"):
     numeric = task in ("parallel_count", "arith", "arith_parallel")
+    if task == "facts":
+        # strip the echoed prefill first: "Answer" matches the name pattern below
+        # and silently became every trial's prediction
+        body = re.sub(r"^\s*Answer\s*:?\s*", "", completion)
+        m = re.findall(r"\b([A-Z][a-zA-Z]{2,})\b|\b([A-Z])\b|\b(\d+)\b", body)
+        vals = [a or b or c for a, b, c in m if (a or b or c) != "Answer"]
+        return (vals[-1] if condition == "cot" else vals[0]) if vals else None
     if task == "arith_parallel_max":
         m = re.findall(r"\b(Alpha|Bravo|Delta|Echo|Golf|Hotel|India|Ridge)\b", completion)
         return m[-1] if (condition == "cot" and m) else (m[0] if m else None)
@@ -291,7 +308,8 @@ async def call_api(client, sem, model, messages, max_tokens, temperature=0.0,
 async def run_one(client, sem, model, seed, k, condition, task, wording, idx):
     rng = random.Random(seed)
     messages, gold, full = build_messages(rng, k, condition, task, wording)
-    max_tokens = 4000 if condition == "cot" else 8
+    # 8 tokens truncated multi-token answers such as element names ("Sul|fur")
+    max_tokens = 4000 if condition == "cot" else (16 if task == "facts" else 8)
     res = await call_api(client, sem, model, messages, max_tokens,
                          allow_reasoning=(condition == "cot"))
     completion = res["text"]
@@ -321,7 +339,7 @@ async def main():
                     help="permit a model with no published J-Lens (no internals follow-up possible)")
     ap.add_argument("--task", default="serial",
                     choices=["serial", "parallel", "parallel_count",
-                             "arith", "arith_parallel", "arith_parallel_max"])
+                             "arith", "arith_parallel", "arith_parallel_max", "facts"])
     ap.add_argument("--wording", default="default", choices=["default", "explicit"])
     ap.add_argument("--n", type=int, default=30)
     ap.add_argument("--concurrency", type=int, default=20)

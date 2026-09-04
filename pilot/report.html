@@ -742,6 +742,7 @@ q(root,'[data-key="leak-inline"]').textContent = leakPct+'% (5 of 8,280)';
 
 
 function renderV2(root, D){
+  if (D.facts) { renderV3(root, D); return; }
   if (D.transcripts) buildBrowser(root, D.transcripts);
   const C = {parallel:'var(--parallel)', parallel_count:'var(--count)'};
   // --- width sweep to k=64, one panel per model
@@ -859,6 +860,72 @@ function buildBrowser(root, TX){
   }
   ctl.addEventListener('input', draw);
   draw();
+}
+
+
+function renderV3(root, D){
+  const models = Object.keys(D.facts);
+  // depth curves, one panel per model
+  const mount = q(root,'[data-fig="facts"]');
+  models.forEach(m => {
+    const rows = D.facts[m];
+    const div = document.createElement('div'); div.className='panel';
+    div.innerHTML = `<div class="ptitle">${m}</div>`;
+    const host = document.createElement('div');
+    const xs = rows.map(r=>r.k);
+    lineChart(host, [
+      {k:xs, v:rows.map(r=>r.cot), color:'var(--count)'},
+      {k:xs, v:rows.map(r=>r.immediate), color:'var(--serial)'},
+      {k:xs, v:rows.map(r=>r.filler), color:'var(--parallel)', dash:true},
+    ], {xs, xlab:'hops of real-world fact composition', ylab:'accuracy', w:330, h:230,
+        aria:`${m}: no-CoT accuracy holds to three hops then collapses.`});
+    div.appendChild(host); mount.appendChild(div);
+  });
+  legend(q(root,'[data-leg="facts"]'), [
+    {label:'chain of thought', color:'var(--count)'},
+    {label:'no CoT', color:'var(--serial)'},
+    {label:'no CoT + filler', color:'var(--parallel)'}]);
+
+  // filler table
+  const tb = q(root,'[data-tbl="filler"]');
+  const rows = D.facts[models[0]];
+  tb.innerHTML = rows.map(r => {
+    const sig = r.p < 0.001;
+    const other = D.facts[models[1]] ? D.facts[models[1]].find(x=>x.k===r.k) : null;
+    return `<tr><td class="num">${r.k}</td><td class="num">${r.immediate.toFixed(3)}</td>
+      <td class="num">${r.filler.toFixed(3)}</td>
+      <td class="num" style="color:${sig?'var(--parallel)':'var(--muted)'}">
+        ${r.diff>=0?'+':''}${r.diff.toFixed(3)}${other?` / ${other.diff>=0?'+':''}${other.diff.toFixed(3)}`:''}</td>
+      <td class="num">${r.p<0.001?'&lt;0.001':r.p.toFixed(3)}</td></tr>`;
+  }).join('');
+
+  // lens: best rank per hop, log-ish bars
+  const lm = q(root,'[data-fig="lens"]');
+  const br = D.lens.best_rank.filter(r=>r.solved===1);
+  const ks = [...new Set(br.map(r=>r.k))].sort();
+  const W=660,H=250,M={l:120,r:20,t:14,b:44};
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img'});
+  svg.setAttribute('aria-label','The un-emitted bridge entity reaches rank 0 while the control reaches 57 to 88.');
+  const items=[];
+  ks.forEach(k => br.filter(r=>r.k===k).sort((a,b)=>a.target.localeCompare(b.target))
+     .forEach(r => items.push({label:`k=${k} ${r.target}`, v:r.rank, t:r.target})));
+  const max=Math.max(...items.map(i=>i.v),100);
+  const bh=(H-M.t-M.b)/items.length;
+  items.forEach((it,i)=>{
+    const y=M.t+i*bh;
+    const w=Math.max((Math.log10(it.v+1)/Math.log10(max+1))*(W-M.l-M.r),2);
+    svg.appendChild(el('rect',{x:M.l,y:y+2,width:w,height:bh-5,rx:2,
+      fill: it.t==='null' ? 'var(--serial)' : 'var(--parallel)'}));
+    const lb=el('text',{x:M.l-8,y:y+bh/2+3,'text-anchor':'end',class:'tick'});
+    lb.textContent=it.label; svg.appendChild(lb);
+    const vl=el('text',{x:M.l+w+6,y:y+bh/2+3,class:'tick'});
+    vl.textContent='rank '+Math.round(it.v); svg.appendChild(vl);
+  });
+  const xl=el('text',{x:W/2,y:H-6,'text-anchor':'middle',class:'axlab'});
+  xl.textContent='median best rank in a 248,000-token vocabulary (log scale, shorter is stronger)';
+  svg.appendChild(xl); lm.appendChild(svg);
+
+  const kk=q(root,'[data-key="k"]'); if(kk) kk.textContent='3';
 }
 
 
