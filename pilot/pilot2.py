@@ -227,7 +227,7 @@ def build_messages(rng, k, condition, task, wording):
 def extract_answer(condition, completion, task="serial"):
     numeric = task in ("parallel_count", "arith", "arith_parallel")
     if task == "arith_parallel_max":
-        m = re.findall(r"\b(Alpha|Bravo|Delta|Echo|Foxtrot|Golf|Hotel|India)\b", completion)
+        m = re.findall(r"\b(Alpha|Bravo|Delta|Echo|Golf|Hotel|India|Ridge)\b", completion)
         return m[-1] if (condition == "cot" and m) else (m[0] if m else None)
     if condition == "cot":
         m = (NUM_ANS_RE if numeric else ANS_RE).findall(completion)

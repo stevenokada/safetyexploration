@@ -230,7 +230,10 @@ if __name__ == "__main__":
 
 # ---------------------------------------------------------------- parallel control
 
-DEPOTS = ["Alpha", "Bravo", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India"]
+# Every name is a single token in Qwen 3.6 and Gemma 3 (verified by
+# check_tokenization.py), so the max-variant ANSWER is lens-readable too.
+# "Foxtrot" was dropped: it tokenizes as Fo|xt|rot in both.
+DEPOTS = ["Alpha", "Bravo", "Delta", "Echo", "Golf", "Hotel", "India", "Ridge"]
 
 
 def generate_parallel(rng, k, max_tries=200, agg="sum"):
