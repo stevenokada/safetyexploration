@@ -1,0 +1,602 @@
+task,wording,k,condition,idx,gold,pred,correct,eff_hops,leak,error,finish,out_tokens,reasoning_tokens,model,completion,run_id,prompt,seed
+facts_parallel,default,2,cot,0,Finland,Finland,1,-1,0,0,stop,226,195,qwen3.6-27b,"Finland's capital is Helsinki; Japan's capital is Tokyo. Alphabetically first is Helsinki, so the answer is Finland.
+Answer: Finland",78f1a5c1-1788557324,"Consider these 2 countries: Finland, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",873036808
+facts_parallel,default,2,cot,1,Finland,Finland,1,-1,0,0,stop,852,804,qwen3.6-27b,"Finland's capital is Helsinki, and Bulgaria's capital is Sofia. Comparing the two names alphabetically, Helsinki comes before Sofia. Therefore, the country with the capital that comes first alphabetically is Finland.
+
+Answer: Finland",78f1a5c1-1788557324,"Consider these 2 countries: Finland, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1125010590
+facts_parallel,default,2,cot,2,Thailand,Thailand,1,-1,0,0,stop,229,201,qwen3.6-27b,"Thailand's capital is Bangkok; Egypt's capital is Cairo. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 2 countries: Egypt, Thailand.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3657899300
+facts_parallel,default,2,cot,3,Greece,Greece,1,-1,0,0,stop,238,196,qwen3.6-27b,"
+
+Greece's capital is Athens; Bulgaria's capital is Sofia. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 2 countries: Greece, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2902470066
+facts_parallel,default,2,cot,4,Ireland,Ireland,1,-1,0,0,stop,375,326,qwen3.6-27b,"Ireland's capital is Dublin; Japan's capital is Tokyo. Comparing the names alphabetically, Dublin comes before Tokyo. Therefore, the country with the capital that comes first alphabetically is Ireland.
+
+Answer: Ireland",78f1a5c1-1788557324,"Consider these 2 countries: Ireland, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",862238737
+facts_parallel,default,2,cot,5,Finland,Finland,1,-1,0,0,stop,1137,1106,qwen3.6-27b,"Peru's capital is Lima; Finland's capital is Helsinki. Alphabetically first is Helsinki, so the answer is Finland.
+Answer: Finland",78f1a5c1-1788557324,"Consider these 2 countries: Peru, Finland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1147373703
+facts_parallel,default,2,cot,6,China,China,1,-1,0,0,stop,687,648,qwen3.6-27b,"Russia's capital is Moscow; China's capital is Beijing. Alphabetically, Beijing comes before Moscow, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 2 countries: Russia, China.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3714767165
+facts_parallel,default,2,cot,7,Norway,Norway,1,-1,0,0,stop,203,165,qwen3.6-27b,"Norway's capital is Oslo; Bulgaria's capital is Sofia. Alphabetically first is Oslo, so the answer is Norway.
+Answer: Norway",78f1a5c1-1788557324,"Consider these 2 countries: Norway, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2859329963
+facts_parallel,default,2,cot,8,Czechia,Czechia,1,-1,0,0,stop,232,198,qwen3.6-27b,"Czechia's capital is Prague; Austria's capital is Vienna. Alphabetically first is Prague, so the answer is Czechia.
+Answer: Czechia",78f1a5c1-1788557324,"Consider these 2 countries: Czechia, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",986903610
+facts_parallel,default,2,cot,9,Hungary,Hungary,1,-1,0,0,stop,226,197,qwen3.6-27b,"Hungary's capital is Budapest; Sweden's capital is Stockholm. Alphabetically first is Budapest, so the answer is Hungary.
+Answer: Hungary",78f1a5c1-1788557324,"Consider these 2 countries: Hungary, Sweden.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1305855148
+facts_parallel,default,2,cot,10,Egypt,Egypt,1,-1,0,0,stop,859,812,qwen3.6-27b,"Egypt's capital is Cairo; Austria's capital is Vienna. Comparing the two names alphabetically, Cairo comes before Vienna. Therefore, the country with the capital that comes first is Egypt.
+
+Answer: Egypt",78f1a5c1-1788557324,"Consider these 2 countries: Egypt, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3811536686
+facts_parallel,default,2,cot,11,Thailand,Thailand,1,-1,0,0,stop,819,792,qwen3.6-27b,"
+
+Cuba's capital is Havana; Thailand's capital is Bangkok. Comparing the two names alphabetically, Bangkok comes before Havana. Therefore, Thailand is the country with the capital that comes first alphabetically.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 2 countries: Cuba, Thailand.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2485673912
+facts_parallel,default,2,cot,12,Denmark,Denmark,1,-1,0,0,stop,1104,1064,qwen3.6-27b,"Denmark's capital is Copenhagen; Finland's capital is Helsinki. Comparing the two names alphabetically, Copenhagen comes before Helsinki. Therefore, Denmark is the correct country.
+Answer: Denmark",78f1a5c1-1788557324,"Consider these 2 countries: Denmark, Finland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",220270082
+facts_parallel,default,2,cot,13,Kenya,Kenya,1,-1,0,0,stop,901,877,qwen3.6-27b,"Kenya's capital is Nairobi; Bulgaria's capital is Sofia. Comparing the two names alphabetically, Nairobi comes before Sofia. Therefore, the country with the capital that comes first alphabetically is Kenya.
+
+Answer: Kenya",78f1a5c1-1788557324,"Consider these 2 countries: Kenya, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2049326740
+facts_parallel,default,2,cot,14,Germany,Germany,1,-1,0,0,stop,234,201,qwen3.6-27b,"Germany's capital is Berlin; Bulgaria's capital is Sofia. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 2 countries: Bulgaria, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3829574455
+facts_parallel,default,2,cot,15,Russia,Russia,1,-1,0,0,stop,787,729,qwen3.6-27b,"Kenya's capital is Nairobi; Russia's capital is Moscow. Comparing the two names alphabetically, Moscow comes before Nairobi. Therefore, the country with the capital that comes first alphabetically is Russia.
+Answer: Russia",78f1a5c1-1788557324,"Consider these 2 countries: Kenya, Russia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2470812577
+facts_parallel,default,2,cot,16,Denmark,Denmark,1,-1,0,0,stop,720,714,qwen3.6-27b,"Denmark's capital is Copenhagen, and Kenya's capital is Nairobi. Comparing the two names alphabetically, Copenhagen comes before Nairobi. Therefore, Denmark is the country with the capital that comes first alphabetically.
+
+Answer: Denmark",78f1a5c1-1788557324,"Consider these 2 countries: Denmark, Kenya.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",172804635
+facts_parallel,default,2,cot,17,Portugal,Portugal,1,-1,0,0,stop,204,171,qwen3.6-27b,"Russia's capital is Moscow; Portugal's capital is Lisbon. Alphabetically first is Lisbon, so the answer is Portugal.
+Answer: Portugal",78f1a5c1-1788557324,"Consider these 2 countries: Russia, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2102131341
+facts_parallel,default,2,cot,18,Germany,Germany,1,-1,0,0,stop,233,202,qwen3.6-27b,"
+
+Germany's capital is Berlin; Norway's capital is Oslo. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 2 countries: Germany, Norway.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3992250140
+facts_parallel,default,2,cot,19,Germany,Germany,1,-1,0,0,stop,725,686,qwen3.6-27b,"Germany's capital is Berlin; Israel's capital is Jerusalem. Comparing the two names alphabetically, Berlin comes before Jerusalem. Therefore, Germany is the correct country.
+
+Answer: Germany",78f1a5c1-1788557324,"Consider these 2 countries: Germany, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2599671690
+facts_parallel,default,2,cot,20,Thailand,Thailand,1,-1,0,0,stop,371,338,qwen3.6-27b,"Thailand's capital is Bangkok; Cuba's capital is Havana. Alphabetically, Bangkok comes before Havana, so the corresponding country is Thailand.
+
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 2 countries: Thailand, Cuba.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3355589869
+facts_parallel,default,2,cot,21,Israel,Israel,1,-1,0,0,stop,260,244,qwen3.6-27b,"Morocco's capital is Rabat; Israel's capital is Jerusalem. Alphabetically first is Jerusalem, so the answer is Israel.
+Answer: Israel",78f1a5c1-1788557324,"Consider these 2 countries: Morocco, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3204779131
+facts_parallel,default,2,cot,22,Morocco,Morocco,1,-1,0,0,stop,245,212,qwen3.6-27b,"Morocco's capital is Rabat; Japan's capital is Tokyo. Alphabetically first is Rabat, so the answer is Morocco.
+Answer: Morocco",78f1a5c1-1788557324,"Consider these 2 countries: Morocco, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",638344641
+facts_parallel,default,2,cot,23,Cuba,Cuba,1,-1,0,0,stop,336,262,qwen3.6-27b,"Austria's capital is Vienna; Cuba's capital is Havana. Alphabetically first is Havana, so the answer is Cuba.
+Answer: Cuba",78f1a5c1-1788557324,"Consider these 2 countries: Austria, Cuba.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1359703383
+facts_parallel,default,2,cot,24,Ireland,Ireland,1,-1,0,0,stop,214,183,qwen3.6-27b,"Russia's capital is Moscow; Ireland's capital is Dublin. Alphabetically first is Dublin, so the answer is Ireland.
+Answer: Ireland",78f1a5c1-1788557324,"Consider these 2 countries: Russia, Ireland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3480221940
+facts_parallel,default,2,cot,25,Peru,Peru,1,-1,0,0,stop,280,248,qwen3.6-27b,"Peru's capital is Lima; Morocco's capital is Rabat. Alphabetically first is Lima, so the answer is Peru.
+Answer: Peru",78f1a5c1-1788557324,"Consider these 2 countries: Morocco, Peru.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3093874786
+facts_parallel,default,2,cot,26,Germany,Germany,1,-1,0,0,stop,718,669,qwen3.6-27b,"Morocco's capital is Rabat. Germany's capital is Berlin. Comparing the two names alphabetically, Berlin comes before Rabat. Therefore, Germany is the country with the capital that comes first alphabetically.
+
+Answer: Germany",78f1a5c1-1788557324,"Consider these 2 countries: Morocco, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",560044504
+facts_parallel,default,2,cot,27,Germany,Germany,1,-1,0,0,stop,171,141,qwen3.6-27b,"Sweden's capital is Stockholm; Germany's capital is Berlin. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 2 countries: Sweden, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1449568590
+facts_parallel,default,2,cot,28,Israel,Israel,1,-1,0,0,stop,609,561,qwen3.6-27b,"Sweden's capital is Stockholm, and Israel's capital is Jerusalem. Comparing the two capital names alphabetically, Jerusalem comes before Stockholm. Therefore, Israel is the country with the capital that comes first alphabetically.
+
+Answer: Israel",78f1a5c1-1788557324,"Consider these 2 countries: Sweden, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3336156383
+facts_parallel,default,2,cot,29,Cuba,Cuba,1,-1,0,0,stop,1118,1079,qwen3.6-27b,"Finland's capital is Helsinki; Cuba's capital is Havana. Comparing the two names alphabetically, Havana comes before Helsinki. Therefore, the country is Cuba.
+Answer: Cuba",78f1a5c1-1788557324,"Consider these 2 countries: Finland, Cuba.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2984150089
+facts_parallel,default,2,cot,30,Israel,Israel,1,-1,0,0,stop,204,172,qwen3.6-27b,"Israel's capital is Jerusalem; Peru's capital is Lima. Alphabetically first is Jerusalem, so the answer is Israel.
+Answer: Israel",78f1a5c1-1788557324,"Consider these 2 countries: Peru, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3508080044
+facts_parallel,default,2,cot,31,Indonesia,Indonesia,1,-1,0,0,stop,895,928,qwen3.6-27b,"
+
+Israel's capital is Jerusalem; Indonesia's capital is Jakarta. Alphabetically first is Jakarta, so the answer is Indonesia.
+Answer: Indonesia",78f1a5c1-1788557324,"Consider these 2 countries: Israel, Indonesia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2786999610
+facts_parallel,default,2,cot,32,Morocco,Morocco,1,-1,0,0,stop,247,209,qwen3.6-27b,"Austria's capital is Vienna; Morocco's capital is Rabat. Alphabetically first is Rabat, so the answer is Morocco.
+Answer: Morocco",78f1a5c1-1788557324,"Consider these 2 countries: Austria, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1058499712
+facts_parallel,default,2,cot,33,Portugal,Portugal,1,-1,0,0,stop,838,805,qwen3.6-27b,"Norway's capital is Oslo; Portugal's capital is Lisbon. Alphabetically, Lisbon comes before Oslo, so the answer is Portugal.
+Answer: Portugal",78f1a5c1-1788557324,"Consider these 2 countries: Norway, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1209031702
+facts_parallel,default,2,cot,34,Peru,Peru,1,-1,0,0,stop,211,179,qwen3.6-27b,"Peru's capital is Lima; Morocco's capital is Rabat. Alphabetically first is Lima, so the answer is Peru.
+Answer: Peru",78f1a5c1-1788557324,"Consider these 2 countries: Peru, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3597978037
+facts_parallel,default,2,cot,35,Indonesia,Indonesia,1,-1,0,0,stop,238,207,qwen3.6-27b,"Norway's capital is Oslo; Indonesia's capital is Jakarta. Alphabetically first is Jakarta, so the answer is Indonesia.
+Answer: Indonesia",78f1a5c1-1788557324,"Consider these 2 countries: Norway, Indonesia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2708732195
+facts_parallel,default,2,cot,36,Bulgaria,Bulgaria,1,-1,0,0,stop,850,830,qwen3.6-27b,"Poland's capital is Warsaw; Bulgaria's capital is Sofia. Comparing the two names alphabetically, Sofia comes before Warsaw. Therefore, the country with the capital that comes first alphabetically is Bulgaria.
+Answer: Bulgaria",78f1a5c1-1788557324,"Consider these 2 countries: Poland, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",947562649
+facts_parallel,default,2,cot,37,Russia,Russia,1,-1,0,0,stop,987,1001,qwen3.6-27b,"Russia's capital is Moscow; Bulgaria's capital is Sofia. Alphabetically first is Moscow, so the answer is Russia.
+Answer: Russia",78f1a5c1-1788557324,"Consider these 2 countries: Russia, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1333630991
+facts_parallel,default,2,cot,38,Indonesia,Indonesia,1,-1,0,0,stop,815,785,qwen3.6-27b,"Indonesia's capital is Jakarta; Japan's capital is Tokyo. Alphabetically first is Jakarta, so the answer is Indonesia.
+Answer: Indonesia",78f1a5c1-1788557324,"Consider these 2 countries: Indonesia, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3754067358
+facts_parallel,default,2,cot,39,Ireland,Ireland,1,-1,0,0,stop,380,333,qwen3.6-27b,"Ireland's capital is Dublin; Poland's capital is Warsaw. Comparing the two names alphabetically, Dublin comes before Warsaw. Therefore, the country with the capital that comes first alphabetically is Ireland.
+
+Answer: Ireland",78f1a5c1-1788557324,"Consider these 2 countries: Ireland, Poland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2831529224
+facts_parallel,default,4,cot,0,Greece,Greece,1,-1,0,0,stop,886,847,qwen3.6-27b,"Japan's capital is Tokyo; Thailand's capital is Bangkok; Bulgaria's capital is Sofia; Greece's capital is Athens. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Japan, Thailand, Bulgaria, Greece.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",813957306
+facts_parallel,default,4,cot,1,Greece,Greece,1,-1,0,0,stop,935,890,qwen3.6-27b,"Morocco's capital is Rabat; Czechia's capital is Prague; Poland's capital is Warsaw; Greece's capital is Athens. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Morocco, Czechia, Poland, Greece.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1199779884
+facts_parallel,default,4,cot,2,Cuba,Cuba,1,-1,0,0,stop,916,872,qwen3.6-27b,"Czechia's capital is Prague; Bulgaria's capital is Sofia; Finland's capital is Helsinki; Cuba's capital is Havana. Alphabetically first is Havana, so the answer is Cuba.
+Answer: Cuba",78f1a5c1-1788557324,"Consider these 4 countries: Czechia, Bulgaria, Finland, Cuba.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3733610902
+facts_parallel,default,4,cot,3,Greece,Greece,1,-1,0,0,stop,860,841,qwen3.6-27b,"Finland's capital is Helsinki; China's capital is Beijing; Greece's capital is Athens; Austria's capital is Vienna. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Finland, China, Greece, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2844610816
+facts_parallel,default,4,cot,4,Egypt,Egypt,1,-1,0,0,stop,987,960,qwen3.6-27b,"Russia's capital is Moscow; Bulgaria's capital is Sofia; Egypt's capital is Cairo; Japan's capital is Tokyo. Alphabetically first is Cairo, so the answer is Egypt.
+Answer: Egypt",78f1a5c1-1788557324,"Consider these 4 countries: Russia, Bulgaria, Egypt, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",938067107
+facts_parallel,default,4,cot,5,Thailand,Thailand,1,-1,0,0,stop,1030,986,qwen3.6-27b,"Sweden's capital is Stockholm; Thailand's capital is Bangkok; Russia's capital is Moscow; Poland's capital is Warsaw. Alphabetically, Bangkok comes first, so the corresponding country is Thailand.
+
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 4 countries: Sweden, Thailand, Russia, Poland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1089401909
+facts_parallel,default,4,cot,6,Egypt,Egypt,1,-1,0,0,stop,1043,1013,qwen3.6-27b,"Egypt's capital is Cairo; Cuba's capital is Havana; Denmark's capital is Copenhagen; Finland's capital is Helsinki. Alphabetically first is Cairo, so the answer is Egypt.
+Answer: Egypt",78f1a5c1-1788557324,"Consider these 4 countries: Egypt, Cuba, Denmark, Finland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3655837071
+facts_parallel,default,4,cot,7,Greece,Greece,1,-1,0,0,stop,699,694,qwen3.6-27b,Answer: Greece,78f1a5c1-1788557324,"Consider these 4 countries: Bulgaria, Hungary, Greece, Egypt.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2933953817
+facts_parallel,default,4,cot,8,Hungary,Hungary,1,-1,0,0,stop,1111,1066,qwen3.6-27b,"Israel's capital is Jerusalem; Norway's capital is Oslo; Hungary's capital is Budapest; Austria's capital is Vienna. Alphabetically first is Budapest, so the answer is Hungary.
+Answer: Hungary",78f1a5c1-1788557324,"Consider these 4 countries: Israel, Norway, Hungary, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1046448264
+facts_parallel,default,4,cot,9,Israel,Israel,1,-1,0,0,stop,964,955,qwen3.6-27b,"Morocco's capital is Rabat; Russia's capital is Moscow; Portugal's capital is Lisbon; Israel's capital is Jerusalem. Alphabetically first is Jerusalem, so the answer is Israel.
+Answer: Israel",78f1a5c1-1788557324,"Consider these 4 countries: Morocco, Russia, Portugal, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1230551070
+facts_parallel,default,4,cot,10,Israel,Israel,1,-1,0,0,stop,793,738,qwen3.6-27b,"Japan's capital is Tokyo; Israel's capital is Jerusalem; Austria's capital is Vienna; Bulgaria's capital is Sofia. Alphabetically first is Jerusalem, so the answer is Israel.
+Answer: Israel",78f1a5c1-1788557324,"Consider these 4 countries: Japan, Israel, Austria, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3326357746
+facts_parallel,default,4,cot,11,Germany,Germany,1,-1,0,0,stop,860,809,qwen3.6-27b,"Denmark's capital is Copenhagen. Japan's capital is Tokyo. Morocco's capital is Rabat. Germany's capital is Berlin. Comparing these capital names alphabetically, Berlin comes first. Berlin is the capital of Germany.
+
+Answer: Germany",78f1a5c1-1788557324,"Consider these 4 countries: Denmark, Japan, Morocco, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2973958244
+facts_parallel,default,4,cot,12,Greece,Greece,1,-1,0,0,stop,275,224,qwen3.6-27b,"Finland's capital is Helsinki; Peru's capital is Lima; Greece's capital is Athens; Bulgaria's capital is Sofia. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Finland, Peru, Greece, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",675959262
+facts_parallel,default,4,cot,13,Greece,Greece,1,-1,0,0,stop,851,839,qwen3.6-27b,"Kenya's capital is Nairobi; Greece's capital is Athens; Ireland's capital is Dublin; Portugal's capital is Lisbon. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Kenya, Greece, Ireland, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1598906696
+facts_parallel,default,4,cot,14,Thailand,Thailand,1,-1,0,0,stop,881,837,qwen3.6-27b,"Thailand's capital is Bangkok; Czechia's capital is Prague; Hungary's capital is Budapest; Peru's capital is Lima. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 4 countries: Thailand, Czechia, Hungary, Peru.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3240752363
+facts_parallel,default,4,cot,15,Greece,Greece,1,-1,0,0,stop,841,782,qwen3.6-27b,"Cuba's capital is Havana; Greece's capital is Athens; Russia's capital is Moscow; Kenya's capital is Nairobi. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Cuba, Greece, Russia, Kenya.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3056518269
+facts_parallel,default,4,cot,16,Israel,Israel,1,-1,0,0,stop,943,938,qwen3.6-27b,"
+
+Norway's capital is Oslo; Russia's capital is Moscow; Israel's capital is Jerusalem; Czechia's capital is Prague. Alphabetically first is Jerusalem, so the answer is Israel.
+Answer: Israel",78f1a5c1-1788557324,"Consider these 4 countries: Norway, Russia, Israel, Czechia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",791123399
+facts_parallel,default,4,cot,17,Indonesia,Indonesia,1,-1,0,0,stop,1005,995,qwen3.6-27b,"Russia's capital is Moscow; Indonesia's capital is Jakarta; Norway's capital is Oslo; Israel's capital is Jerusalem. Alphabetically first is Jakarta, so the answer is Indonesia.
+Answer: Indonesia",78f1a5c1-1788557324,"Consider these 4 countries: Russia, Indonesia, Norway, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1478534481
+facts_parallel,default,4,cot,18,Thailand,Thailand,1,-1,0,0,stop,783,740,qwen3.6-27b,"Finland's capital is Helsinki; Kenya's capital is Nairobi; China's capital is Beijing; Thailand's capital is Bangkok. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 4 countries: Finland, Kenya, China, Thailand.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3365910720
+facts_parallel,default,4,cot,19,Russia,Russia,1,-1,0,0,stop,669,629,qwen3.6-27b,"Sweden's capital is Stockholm; Russia's capital is Moscow; Austria's capital is Vienna; Bulgaria's capital is Sofia. Alphabetically first is Moscow, so the answer is Russia.
+Answer: Russia",78f1a5c1-1788557324,"Consider these 4 countries: Sweden, Russia, Austria, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3214444630
+facts_parallel,default,4,cot,20,Russia,Russia,1,-1,0,0,stop,1117,1072,qwen3.6-27b,"Bulgaria's capital is Sofia; Sweden's capital is Stockholm; Morocco's capital is Rabat; Russia's capital is Moscow. Alphabetically first is Moscow, so the answer is Russia.
+Answer: Russia",78f1a5c1-1788557324,"Consider these 4 countries: Bulgaria, Sweden, Morocco, Russia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3983106865
+facts_parallel,default,4,cot,21,Germany,Germany,1,-1,0,0,stop,853,842,qwen3.6-27b,"Denmark's capital is Copenhagen; Russia's capital is Moscow; Norway's capital is Oslo; Germany's capital is Berlin. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 4 countries: Denmark, Russia, Norway, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2590921639
+facts_parallel,default,4,cot,22,Greece,Greece,1,-1,0,0,stop,911,877,qwen3.6-27b,"Sweden's capital is Stockholm; Cuba's capital is Havana; Greece's capital is Athens; Hungary's capital is Budapest. Comparing the capital names alphabetically: Athens, Budapest, Havana, Stockholm. Athens comes first, which is the capital of Greece.
+
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Sweden, Cuba, Greece, Hungary.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",57082397
+facts_parallel,default,4,cot,23,Thailand,Thailand,1,-1,0,0,stop,685,705,qwen3.6-27b,Answer: Thailand,78f1a5c1-1788557324,"Consider these 4 countries: Russia, Israel, Thailand, Denmark.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1952461451
+facts_parallel,default,4,cot,24,Greece,Greece,1,-1,0,0,stop,989,958,qwen3.6-27b,"Greece's capital is Athens; Ireland's capital is Dublin; Israel's capital is Jerusalem; Egypt's capital is Cairo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 4 countries: Greece, Ireland, Israel, Egypt.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3926173480
+facts_parallel,default,4,cot,25,Germany,Germany,1,-1,0,0,stop,738,689,qwen3.6-27b,"Ireland's capital is Dublin; Cuba's capital is Havana; Germany's capital is Berlin; Norway's capital is Oslo. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 4 countries: Ireland, Cuba, Germany, Norway.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2634258366
+facts_parallel,default,4,cot,26,China,China,1,-1,0,0,stop,746,741,qwen3.6-27b,Answer: China,78f1a5c1-1788557324,"Consider these 4 countries: Russia, Peru, Egypt, China.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",67814916
+facts_parallel,default,4,cot,27,Russia,Russia,1,-1,0,0,stop,450,388,qwen3.6-27b,"Norway's capital is Oslo; Japan's capital is Tokyo; Russia's capital is Moscow; Bulgaria's capital is Sofia. Alphabetically first is Moscow, so the answer is Russia.
+Answer: Russia",78f1a5c1-1788557324,"Consider these 4 countries: Norway, Japan, Russia, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1930294930
+facts_parallel,default,4,cot,28,Germany,Germany,1,-1,0,0,stop,618,618,qwen3.6-27b,Answer: Germany,78f1a5c1-1788557324,"Consider these 4 countries: Peru, Germany, Indonesia, Ireland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3820153603
+facts_parallel,default,4,cot,29,Finland,Finland,1,-1,0,0,stop,774,730,qwen3.6-27b,"Czechia's capital is Prague; Finland's capital is Helsinki; Austria's capital is Vienna; Portugal's capital is Lisbon. Alphabetically first is Helsinki, so the answer is Finland.
+Answer: Finland",78f1a5c1-1788557324,"Consider these 4 countries: Czechia, Finland, Austria, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2494946197
+facts_parallel,default,4,cot,30,Germany,Germany,1,-1,0,0,stop,1323,1281,qwen3.6-27b,"Indonesia's capital is Jakarta; Sweden's capital is Stockholm; Germany's capital is Berlin; Israel's capital is Jerusalem. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 4 countries: Indonesia, Sweden, Germany, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4101132912
+facts_parallel,default,4,cot,31,Hungary,Hungary,1,-1,0,0,stop,800,758,qwen3.6-27b,"Indonesia's capital is Jakarta; Hungary's capital is Budapest; Finland's capital is Helsinki; Russia's capital is Moscow. Alphabetically first is Budapest, so the answer is Hungary.
+Answer: Hungary",78f1a5c1-1788557324,"Consider these 4 countries: Indonesia, Hungary, Finland, Russia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2205508326
+facts_parallel,default,4,cot,32,Ireland,Ireland,1,-1,0,0,stop,731,688,qwen3.6-27b,"Poland's capital is Warsaw; Cuba's capital is Havana; Finland's capital is Helsinki; Ireland's capital is Dublin. Alphabetically first is Dublin, so the answer is Ireland.
+Answer: Ireland",78f1a5c1-1788557324,"Consider these 4 countries: Poland, Cuba, Finland, Ireland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",444347228
+facts_parallel,default,4,cot,33,Indonesia,Indonesia,1,-1,0,0,stop,745,740,qwen3.6-27b,Answer: Indonesia,78f1a5c1-1788557324,"Consider these 4 countries: Indonesia, Bulgaria, Czechia, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1836778442
+facts_parallel,default,4,cot,34,Germany,Germany,1,-1,0,0,stop,777,744,qwen3.6-27b,"Germany's capital is Berlin; Austria's capital is Vienna; Japan's capital is Tokyo; Morocco's capital is Rabat. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 4 countries: Germany, Austria, Japan, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4078933609
+facts_parallel,default,4,cot,35,Germany,Germany,1,-1,0,0,stop,961,918,qwen3.6-27b,"Israel's capital is Jerusalem; Morocco's capital is Rabat; Hungary's capital is Budapest; Germany's capital is Berlin. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 4 countries: Israel, Morocco, Hungary, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2216208127
+facts_parallel,default,4,cot,36,Thailand,Thailand,1,-1,0,0,stop,942,899,qwen3.6-27b,"Thailand's capital is Bangkok; Egypt's capital is Cairo; Sweden's capital is Stockholm; Ireland's capital is Dublin. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 4 countries: Thailand, Egypt, Sweden, Ireland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",487716677
+facts_parallel,default,4,cot,37,Thailand,Thailand,1,-1,0,0,stop,1116,1073,qwen3.6-27b,"Thailand's capital is Bangkok; Portugal's capital is Lisbon; China's capital is Beijing; Sweden's capital is Stockholm. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 4 countries: Portugal, China, Thailand, Sweden.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1779877843
+facts_parallel,default,4,cot,38,Hungary,Hungary,1,-1,0,0,stop,1102,1069,qwen3.6-27b,"Hungary's capital is Budapest; Egypt's capital is Cairo; Ireland's capital is Dublin; Cuba's capital is Havana. Alphabetically first is Budapest, so the answer is Hungary.
+Answer: Hungary",78f1a5c1-1788557324,"Consider these 4 countries: Egypt, Ireland, Hungary, Cuba.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4205435458
+facts_parallel,default,4,cot,39,Egypt,Egypt,1,-1,0,0,stop,921,875,qwen3.6-27b,"Denmark's capital is Copenhagen; Poland's capital is Warsaw; Egypt's capital is Cairo; Norway's capital is Oslo. Alphabetically first is Cairo, so the answer is Egypt.
+Answer: Egypt",78f1a5c1-1788557324,"Consider these 4 countries: Denmark, Poland, Egypt, Norway.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2377050836
+facts_parallel,default,8,cot,0,Thailand,Thailand,1,-1,0,0,stop,1303,1236,qwen3.6-27b,"Sweden's capital is Stockholm; Austria's capital is Vienna; China's capital is Beijing; Cuba's capital is Havana; Israel's capital is Jerusalem; Ireland's capital is Dublin; Thailand's capital is Bangkok; Germany's capital is Berlin. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Sweden, Austria, China, Cuba, Israel, Ireland, Thailand, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",966719966
+facts_parallel,default,8,cot,1,Germany,Germany,1,-1,0,0,stop,1409,1384,qwen3.6-27b,"Egypt's capital is Cairo; Kenya's capital is Nairobi; Russia's capital is Moscow; Japan's capital is Tokyo; Germany's capital is Berlin; Poland's capital is Warsaw; Norway's capital is Oslo; Bulgaria's capital is Sofia. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 8 countries: Egypt, Kenya, Russia, Japan, Germany, Poland, Norway, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1318701384
+facts_parallel,default,8,cot,2,Germany,Germany,1,-1,0,0,stop,974,908,qwen3.6-27b,"Germany's capital is Berlin; Ireland's capital is Dublin; Indonesia's capital is Jakarta; Cuba's capital is Havana; Portugal's capital is Lisbon; Kenya's capital is Nairobi; Sweden's capital is Stockholm; Russia's capital is Moscow. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 8 countries: Germany, Ireland, Indonesia, Cuba, Portugal, Kenya, Sweden, Russia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3616577778
+facts_parallel,default,8,cot,3,Thailand,Thailand,1,-1,0,0,stop,872,806,qwen3.6-27b,"Egypt's capital is Cairo; Portugal's capital is Lisbon; Denmark's capital is Copenhagen; Austria's capital is Vienna; Thailand's capital is Bangkok; Indonesia's capital is Jakarta; Cuba's capital is Havana; Russia's capital is Moscow. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Egypt, Portugal, Denmark, Austria, Thailand, Indonesia, Cuba, Russia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2694293604
+facts_parallel,default,8,cot,4,Cuba,Cuba,1,-1,0,0,stop,1315,1262,qwen3.6-27b,"Peru's capital is Lima; Indonesia's capital is Jakarta; Cuba's capital is Havana; Bulgaria's capital is Sofia; Czechia's capital is Prague; Morocco's capital is Rabat; Portugal's capital is Lisbon; Israel's capital is Jerusalem. Alphabetically first is Havana, so the answer is Cuba.
+Answer: Cuba",78f1a5c1-1788557324,"Consider these 8 countries: Peru, Indonesia, Cuba, Bulgaria, Czechia, Morocco, Portugal, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1056128455
+facts_parallel,default,8,cot,5,Thailand,Thailand,1,-1,0,0,stop,1103,1035,qwen3.6-27b,"Poland's capital is Warsaw; Czechia's capital is Prague; Norway's capital is Oslo; Thailand's capital is Bangkok; Austria's capital is Vienna; Germany's capital is Berlin; Ireland's capital is Dublin; Portugal's capital is Lisbon. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Poland, Czechia, Norway, Thailand, Austria, Germany, Ireland, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1240730961
+facts_parallel,default,8,cot,6,Greece,Greece,1,-1,0,0,stop,925,827,qwen3.6-27b,"Bulgaria's capital is Sofia; Peru's capital is Lima; Ireland's capital is Dublin; Sweden's capital is Stockholm; Russia's capital is Moscow; Morocco's capital is Rabat; Greece's capital is Athens; Egypt's capital is Cairo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Bulgaria, Peru, Ireland, Sweden, Russia, Morocco, Greece, Egypt.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3506265323
+facts_parallel,default,8,cot,7,Thailand,Thailand,1,-1,0,0,stop,1337,1246,qwen3.6-27b,"Thailand's capital is Bangkok; Germany's capital is Berlin; Czechia's capital is Prague; Japan's capital is Tokyo; Ireland's capital is Dublin; Israel's capital is Jerusalem; Bulgaria's capital is Sofia; Indonesia's capital is Jakarta. Sorting these capitals alphabetically gives: Bangkok, Berlin, Dublin, Jakarta, Jerusalem, Prague, Sofia, Tokyo. The first is Bangkok, which is the capital of Thailand.
+
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Thailand, Germany, Czechia, Japan, Ireland, Israel, Bulgaria, Indonesia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2818206845
+facts_parallel,default,8,cot,8,China,China,1,-1,0,0,stop,1352,1285,qwen3.6-27b,"Ireland's capital is Dublin; Indonesia's capital is Jakarta; Denmark's capital is Copenhagen; China's capital is Beijing; Poland's capital is Warsaw; Israel's capital is Jerusalem; Kenya's capital is Nairobi; Japan's capital is Tokyo. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Ireland, Indonesia, Denmark, China, Poland, Israel, Kenya, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",927298028
+facts_parallel,default,8,cot,9,Thailand,Thailand,1,-1,0,0,stop,719,652,qwen3.6-27b,"Poland's capital is Warsaw; Portugal's capital is Lisbon; Finland's capital is Helsinki; Norway's capital is Oslo; Thailand's capital is Bangkok; China's capital is Beijing; Egypt's capital is Cairo; Russia's capital is Moscow. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Poland, Portugal, Finland, Norway, Thailand, China, Egypt, Russia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1078083962
+facts_parallel,default,8,cot,10,Greece,Greece,1,-1,0,0,stop,1049,982,qwen3.6-27b,"Cuba's capital is Havana; Indonesia's capital is Jakarta; Greece's capital is Athens; Egypt's capital is Cairo; Sweden's capital is Stockholm; Austria's capital is Vienna; Finland's capital is Helsinki; Kenya's capital is Nairobi. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Cuba, Indonesia, Greece, Egypt, Sweden, Austria, Finland, Kenya.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2358415178
+facts_parallel,default,8,cot,11,Germany,Germany,1,-1,0,0,stop,1126,1058,qwen3.6-27b,"Czechia's capital is Prague; Ireland's capital is Dublin; Kenya's capital is Nairobi; Egypt's capital is Cairo; Austria's capital is Vienna; Germany's capital is Berlin; Norway's capital is Oslo; Israel's capital is Jerusalem. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 8 countries: Czechia, Ireland, Kenya, Egypt, Austria, Germany, Norway, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4220895196
+facts_parallel,default,8,cot,12,Germany,Germany,1,-1,0,0,stop,1020,950,qwen3.6-27b,"Norway's capital is Oslo; Japan's capital is Tokyo; Bulgaria's capital is Sofia; Germany's capital is Berlin; Kenya's capital is Nairobi; Morocco's capital is Rabat; Poland's capital is Warsaw; Sweden's capital is Stockholm. Alphabetically first is Berlin, so the answer is Germany.
+Answer: Germany",78f1a5c1-1788557324,"Consider these 8 countries: Norway, Japan, Bulgaria, Germany, Kenya, Morocco, Poland, Sweden.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1654451814
+facts_parallel,default,8,cot,13,China,China,1,-1,0,0,stop,1156,1117,qwen3.6-27b,"Ireland's capital is Dublin; Egypt's capital is Cairo; Finland's capital is Helsinki; Kenya's capital is Nairobi; Israel's capital is Jerusalem; Czechia's capital is Prague; China's capital is Beijing; Germany's capital is Berlin. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Ireland, Egypt, Finland, Kenya, Israel, Czechia, China, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",362536688
+facts_parallel,default,8,cot,14,China,China,1,-1,0,0,stop,1041,959,qwen3.6-27b,"Czechia's capital is Prague; Ireland's capital is Dublin; Cuba's capital is Havana; China's capital is Beijing; Japan's capital is Tokyo; Egypt's capital is Cairo; Kenya's capital is Nairobi; Morocco's capital is Rabat. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Czechia, Ireland, Cuba, China, Japan, Egypt, Kenya, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2348763987
+facts_parallel,default,8,cot,15,Greece,Greece,1,-1,0,0,stop,1302,1234,qwen3.6-27b,"Morocco's capital is Rabat; Portugal's capital is Lisbon; Japan's capital is Tokyo; Israel's capital is Jerusalem; Cuba's capital is Havana; Austria's capital is Vienna; Greece's capital is Athens; Norway's capital is Oslo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Morocco, Portugal, Japan, Israel, Cuba, Austria, Greece, Norway.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4244143045
+facts_parallel,default,8,cot,16,Thailand,Thailand,1,-1,0,0,stop,1304,1234,qwen3.6-27b,"Thailand's capital is Bangkok; Israel's capital is Jerusalem; Peru's capital is Lima; Sweden's capital is Stockholm; Egypt's capital is Cairo; Russia's capital is Moscow; Indonesia's capital is Jakarta; Denmark's capital is Copenhagen. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Thailand, Israel, Peru, Sweden, Egypt, Russia, Indonesia, Denmark.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1710303871
+facts_parallel,default,8,cot,17,Greece,Greece,1,-1,0,0,stop,1353,1356,qwen3.6-27b,Answer: Greece,78f1a5c1-1788557324,"Consider these 8 countries: Germany, Israel, Poland, Cuba, Denmark, Greece, Sweden, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",318118633
+facts_parallel,default,8,cot,18,China,China,1,-1,0,0,stop,1033,966,qwen3.6-27b,"Austria's capital is Vienna; Norway's capital is Oslo; Peru's capital is Lima; Hungary's capital is Budapest; Poland's capital is Warsaw; Finland's capital is Helsinki; China's capital is Beijing; Israel's capital is Jerusalem. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Austria, Norway, Peru, Hungary, Poland, Finland, China, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2185824120
+facts_parallel,default,8,cot,19,Hungary,Hungary,1,-1,0,0,stop,1032,965,qwen3.6-27b,"Peru's capital is Lima; Portugal's capital is Lisbon; Hungary's capital is Budapest; Denmark's capital is Copenhagen; Norway's capital is Oslo; Russia's capital is Moscow; Cuba's capital is Havana; Poland's capital is Warsaw. Alphabetically first is Budapest, so the answer is Hungary.
+Answer: Hungary",78f1a5c1-1788557324,"Consider these 8 countries: Peru, Portugal, Hungary, Denmark, Norway, Russia, Cuba, Poland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4115544046
+facts_parallel,default,8,cot,20,Denmark,Denmark,1,-1,0,0,stop,1521,1488,qwen3.6-27b,"Cuba's capital is Havana; Austria's capital is Vienna; Norway's capital is Oslo; Israel's capital is Jerusalem; Ireland's capital is Dublin; Denmark's capital is Copenhagen; Portugal's capital is Lisbon; Morocco's capital is Rabat. Alphabetically first is Copenhagen, so the answer is Denmark.
+Answer: Denmark",78f1a5c1-1788557324,"Consider these 8 countries: Cuba, Austria, Norway, Israel, Ireland, Denmark, Portugal, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2814368905
+facts_parallel,default,8,cot,21,Thailand,Thailand,1,-1,0,0,stop,822,753,qwen3.6-27b,"Morocco's capital is Rabat; Finland's capital is Helsinki; Poland's capital is Warsaw; Thailand's capital is Bangkok; Indonesia's capital is Jakarta; Czechia's capital is Prague; Sweden's capital is Stockholm; Austria's capital is Vienna. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Morocco, Finland, Poland, Thailand, Indonesia, Czechia, Sweden, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3501779999
+facts_parallel,default,8,cot,22,China,China,1,-1,0,0,stop,781,710,qwen3.6-27b,"Norway's capital is Oslo; Egypt's capital is Cairo; Portugal's capital is Lisbon; Peru's capital is Lima; Indonesia's capital is Jakarta; Bulgaria's capital is Sofia; Morocco's capital is Rabat; China's capital is Beijing. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Norway, Egypt, Portugal, Peru, Indonesia, Bulgaria, Morocco, China.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1236385189
+facts_parallel,default,8,cot,23,Greece,Greece,1,-1,0,0,stop,1121,1054,qwen3.6-27b,"Peru's capital is Lima; Poland's capital is Warsaw; Indonesia's capital is Jakarta; Greece's capital is Athens; Finland's capital is Helsinki; Egypt's capital is Cairo; Ireland's capital is Dublin; Hungary's capital is Budapest. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Peru, Poland, Indonesia, Greece, Finland, Egypt, Ireland, Hungary.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1052151091
+facts_parallel,default,8,cot,24,China,China,1,-1,0,0,stop,1145,1078,qwen3.6-27b,"Russia's capital is Moscow; Denmark's capital is Copenhagen; Peru's capital is Lima; Egypt's capital is Cairo; Czechia's capital is Prague; China's capital is Beijing; Norway's capital is Oslo; Austria's capital is Vienna. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Russia, Denmark, Peru, Egypt, Czechia, China, Norway, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2698123408
+facts_parallel,default,8,cot,25,Greece,Greece,1,-1,0,0,stop,854,782,qwen3.6-27b,"Ireland's capital is Dublin; Finland's capital is Helsinki; Czechia's capital is Prague; Cuba's capital is Havana; Germany's capital is Berlin; Greece's capital is Athens; Morocco's capital is Rabat; Austria's capital is Vienna. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Ireland, Finland, Czechia, Cuba, Germany, Greece, Morocco, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3621070854
+facts_parallel,default,8,cot,26,Greece,Greece,1,-1,0,0,stop,979,911,qwen3.6-27b,"Poland's capital is Warsaw; Czechia's capital is Prague; Ireland's capital is Dublin; Norway's capital is Oslo; Indonesia's capital is Jakarta; Israel's capital is Jerusalem; Cuba's capital is Havana; Greece's capital is Athens. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Poland, Czechia, Ireland, Norway, Indonesia, Israel, Cuba, Greece.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1323071932
+facts_parallel,default,8,cot,27,Denmark,Denmark,1,-1,0,0,stop,1218,1204,qwen3.6-27b,"Denmark's capital is Copenhagen; Austria's capital is Vienna; Norway's capital is Oslo; Finland's capital is Helsinki; Portugal's capital is Lisbon; Russia's capital is Moscow; Indonesia's capital is Jakarta; Japan's capital is Tokyo. Alphabetically first is Copenhagen, so the answer is Denmark.
+Answer: Denmark",78f1a5c1-1788557324,"Consider these 8 countries: Denmark, Austria, Norway, Finland, Portugal, Russia, Indonesia, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",970672426
+facts_parallel,default,8,cot,28,Greece,Greece,1,-1,0,0,stop,1312,1246,qwen3.6-27b,"Japan's capital is Tokyo; Hungary's capital is Budapest; Greece's capital is Athens; Peru's capital is Lima; China's capital is Beijing; Sweden's capital is Stockholm; Cuba's capital is Havana; Germany's capital is Berlin. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Japan, Hungary, Greece, Peru, China, Sweden, Cuba, Germany.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2841924795
+facts_parallel,default,8,cot,29,Germany,Germany,1,-1,0,0,stop,1183,1089,qwen3.6-27b,"Cuba's capital is Havana; Poland's capital is Warsaw; Germany's capital is Berlin; Norway's capital is Oslo; Kenya's capital is Nairobi; Denmark's capital is Copenhagen; Israel's capital is Jerusalem; Portugal's capital is Lisbon. Sorting these capital names alphabetically gives: Berlin, Copenhagen, Havana, Jerusalem, Lisbon, Nairobi, Oslo, Warsaw. The first is Berlin, which is the capital of Germany.
+
+Answer: Germany",78f1a5c1-1788557324,"Consider these 8 countries: Cuba, Poland, Germany, Norway, Kenya, Denmark, Israel, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3731055661
+facts_parallel,default,8,cot,30,China,China,1,-1,0,0,stop,1855,1786,qwen3.6-27b,"Bulgaria's capital is Sofia; Norway's capital is Oslo; Austria's capital is Vienna; Israel's capital is Jerusalem; China's capital is Beijing; Denmark's capital is Copenhagen; Czechia's capital is Prague; Peru's capital is Lima. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Bulgaria, Norway, Austria, Israel, China, Denmark, Czechia, Peru.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3198479816
+facts_parallel,default,8,cot,31,Denmark,Denmark,1,-1,0,0,stop,777,769,qwen3.6-27b,Answer: Denmark,78f1a5c1-1788557324,"Consider these 8 countries: Portugal, Bulgaria, Denmark, Austria, Czechia, Indonesia, Morocco, Peru.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3382959454
+facts_parallel,default,8,cot,32,Greece,Greece,1,-1,0,0,stop,1405,1337,qwen3.6-27b,"Austria's capital is Vienna; Ireland's capital is Dublin; Egypt's capital is Cairo; Thailand's capital is Bangkok; Finland's capital is Helsinki; Greece's capital is Athens; Israel's capital is Jerusalem; Czechia's capital is Prague. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Austria, Ireland, Egypt, Thailand, Finland, Greece, Israel, Czechia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1353354468
+facts_parallel,default,8,cot,33,Thailand,Thailand,1,-1,0,0,stop,1750,1683,qwen3.6-27b,"Thailand's capital is Bangkok; Ireland's capital is Dublin; Japan's capital is Tokyo; Cuba's capital is Havana; Finland's capital is Helsinki; Israel's capital is Jerusalem; China's capital is Beijing; Indonesia's capital is Jakarta. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Thailand, Ireland, Japan, Cuba, Finland, Israel, China, Indonesia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",665697394
+facts_parallel,default,8,cot,34,Greece,Greece,1,-1,0,0,stop,1100,1053,qwen3.6-27b,"
+
+Greece's capital is Athens; Austria's capital is Vienna; Czechia's capital is Prague; Russia's capital is Moscow; Peru's capital is Lima; Sweden's capital is Stockholm; Norway's capital is Oslo; Bulgaria's capital is Sofia. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Greece, Austria, Czechia, Russia, Peru, Sweden, Norway, Bulgaria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3116968401
+facts_parallel,default,8,cot,35,China,China,1,-1,0,0,stop,1767,1717,qwen3.6-27b,"Ireland's capital is Dublin; Peru's capital is Lima; Egypt's capital is Cairo; Denmark's capital is Copenhagen; Russia's capital is Moscow; Norway's capital is Oslo; Morocco's capital is Rabat; China's capital is Beijing. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 8 countries: Ireland, Peru, Egypt, Denmark, Russia, Norway, Morocco, China.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3469613383
+facts_parallel,default,8,cot,36,Thailand,Thailand,1,-1,0,0,stop,1225,1157,qwen3.6-27b,"Thailand's capital is Bangkok; Denmark's capital is Copenhagen; Peru's capital is Lima; Russia's capital is Moscow; Morocco's capital is Rabat; Portugal's capital is Lisbon; Poland's capital is Warsaw; Israel's capital is Jerusalem. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 8 countries: Thailand, Denmark, Peru, Russia, Morocco, Portugal, Poland, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1472678141
+facts_parallel,default,8,cot,37,Greece,Greece,1,-1,0,0,stop,1118,1070,qwen3.6-27b,"Russia's capital is Moscow; Indonesia's capital is Jakarta; China's capital is Beijing; Sweden's capital is Stockholm; Ireland's capital is Dublin; Egypt's capital is Cairo; Poland's capital is Warsaw; Greece's capital is Athens. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Russia, Indonesia, China, Sweden, Ireland, Egypt, Poland, Greece.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",549484651
+facts_parallel,default,8,cot,38,Greece,Greece,1,-1,0,0,stop,1183,1115,qwen3.6-27b,"Bulgaria's capital is Sofia; Germany's capital is Berlin; Egypt's capital is Cairo; Greece's capital is Athens; Sweden's capital is Stockholm; Poland's capital is Warsaw; Ireland's capital is Dublin; Norway's capital is Oslo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 8 countries: Bulgaria, Germany, Egypt, Greece, Sweden, Poland, Ireland, Norway.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2961139194
+facts_parallel,default,8,cot,39,Hungary,Hungary,1,-1,0,0,stop,1099,1033,qwen3.6-27b,"Indonesia's capital is Jakarta; Egypt's capital is Cairo; Cuba's capital is Havana; Norway's capital is Oslo; Hungary's capital is Budapest; Japan's capital is Tokyo; Portugal's capital is Lisbon; Ireland's capital is Dublin. Alphabetically first is Budapest, so the answer is Hungary.
+Answer: Hungary",78f1a5c1-1788557324,"Consider these 8 countries: Indonesia, Egypt, Cuba, Norway, Hungary, Japan, Portugal, Ireland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3346552172
+facts_parallel,default,16,cot,0,Thailand,Thailand,1,-1,0,0,stop,2327,2169,qwen3.6-27b,"Ireland's capital is Dublin; Japan's capital is Tokyo; Egypt's capital is Cairo; Cuba's capital is Havana; Peru's capital is Lima; Denmark's capital is Copenhagen; Finland's capital is Helsinki; Poland's capital is Warsaw; Portugal's capital is Lisbon; Morocco's capital is Rabat; Israel's capital is Jerusalem; China's capital is Beijing; Thailand's capital is Bangkok; Russia's capital is Moscow; Kenya's capital is Nairobi; Sweden's capital is Stockholm. Sorting these capitals alphabetically gives: Bangkok, Beijing, Cairo, Copenhagen, Dublin, Helsinki, Havana, Jerusalem, Lima, Lisbon, Moscow, Nairobi, Rabat, Stockholm, Tokyo, Warsaw. The first alphabetically is Bangkok, which is the capital of Thailand.
+
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Ireland, Japan, Egypt, Cuba, Peru, Denmark, Finland, Poland, Portugal, Morocco, Israel, China, Thailand, Russia, Kenya, Sweden.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3376478622
+facts_parallel,default,16,cot,1,Greece,Greece,1,-1,0,0,stop,1772,1594,qwen3.6-27b,"To find the country with the capital that comes first alphabetically, let's list the capital city for each of the 16 countries:
+- Thailand: Bangkok
+- Austria: Vienna
+- Japan: Tokyo
+- Portugal: Lisbon
+- Peru: Lima
+- Sweden: Stockholm
+- Germany: Berlin
+- Cuba: Havana
+- Egypt: Cairo
+- Ireland: Dublin
+- Norway: Oslo
+- Hungary: Budapest
+- Russia: Moscow
+- Greece: Athens
+- Kenya: Nairobi
+- Poland: Warsaw
+
+Now, arrange these capital names in alphabetical order:
+Athens, Bangkok, Berlin, Budapest, Cairo, Dublin, Havana, Lima, Lisbon, Moscow, Nairobi, Oslo, Stockholm, Tokyo, Vienna, Warsaw.
+
+The capital that appears first is Athens, which is the capital of Greece.
+
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Thailand, Austria, Japan, Portugal, Peru, Sweden, Germany, Cuba, Egypt, Ireland, Norway, Hungary, Russia, Greece, Kenya, Poland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3192375560
+facts_parallel,default,16,cot,2,Greece,Greece,1,-1,0,0,stop,1912,1762,qwen3.6-27b,"Let's list the capital city for each of the 16 countries:
+- Cuba: Havana
+- Israel: Jerusalem
+- Indonesia: Jakarta
+- Hungary: Budapest
+- Japan: Tokyo
+- Egypt: Cairo
+- Portugal: Lisbon
+- Ireland: Dublin
+- Russia: Moscow
+- Poland: Warsaw
+- Sweden: Stockholm
+- Peru: Lima
+- China: Beijing
+- Greece: Athens
+- Thailand: Bangkok
+- Morocco: Rabat
+
+Now, arrange these capital names in alphabetical order:
+Athens, Bangkok, Beijing, Budapest, Cairo, Dublin, Havana, Jakarta, Jerusalem, Lima, Lisbon, Moscow, Rabat, Stockholm, Tokyo, Warsaw.
+
+The capital that comes first alphabetically is Athens, which belongs to Greece.
+
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Cuba, Israel, Indonesia, Hungary, Japan, Egypt, Portugal, Ireland, Russia, Poland, Sweden, Peru, China, Greece, Thailand, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",659462322
+facts_parallel,default,16,cot,3,Greece,Greece,1,-1,0,0,stop,1993,1830,qwen3.6-27b,"Poland's capital is Warsaw; Kenya's capital is Nairobi; Thailand's capital is Bangkok; Russia's capital is Moscow; Indonesia's capital is Jakarta; Egypt's capital is Cairo; Germany's capital is Berlin; Austria's capital is Vienna; Norway's capital is Oslo; Cuba's capital is Havana; China's capital is Beijing; Greece's capital is Athens; Sweden's capital is Stockholm; Japan's capital is Tokyo; Finland's capital is Helsinki; Czechia's capital is Prague. 
+
+Listing these capitals in alphabetical order: Athens, Bangkok, Beijing, Berlin, Cairo, Havana, Helsinki, Jakarta, Moscow, Nairobi, Oslo, Prague, Stockholm, Tokyo, Vienna, Warsaw. 
+
+The capital that comes first alphabetically is Athens, which belongs to Greece.
+
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Poland, Kenya, Thailand, Russia, Indonesia, Egypt, Germany, Austria, Norway, Cuba, China, Greece, Sweden, Japan, Finland, Czechia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1347004452
+facts_parallel,default,16,cot,4,Greece,Greece,1,-1,0,0,stop,1679,1572,qwen3.6-27b,"Sweden's capital is Stockholm; Egypt's capital is Cairo; Greece's capital is Athens; Cuba's capital is Havana; Kenya's capital is Nairobi; Ireland's capital is Dublin; Denmark's capital is Copenhagen; Japan's capital is Tokyo; Finland's capital is Helsinki; Austria's capital is Vienna; Portugal's capital is Lisbon; Czechia's capital is Prague; Poland's capital is Warsaw; Israel's capital is Jerusalem; Thailand's capital is Bangkok; Morocco's capital is Rabat. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Sweden, Egypt, Greece, Cuba, Kenya, Ireland, Denmark, Japan, Finland, Austria, Portugal, Czechia, Poland, Israel, Thailand, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3459071367
+facts_parallel,default,16,cot,5,Greece,Greece,1,-1,0,0,stop,1624,1506,qwen3.6-27b,"Thailand's capital is Bangkok; Norway's capital is Oslo; Bulgaria's capital is Sofia; Ireland's capital is Dublin; Cuba's capital is Havana; Portugal's capital is Lisbon; Indonesia's capital is Jakarta; Denmark's capital is Copenhagen; Sweden's capital is Stockholm; Peru's capital is Lima; Finland's capital is Helsinki; Germany's capital is Berlin; Greece's capital is Athens; Hungary's capital is Budapest; Austria's capital is Vienna; Israel's capital is Jerusalem. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Thailand, Norway, Bulgaria, Ireland, Cuba, Portugal, Indonesia, Denmark, Sweden, Peru, Finland, Germany, Greece, Hungary, Austria, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3106540817
+facts_parallel,default,16,cot,6,Thailand,Thailand,1,-1,0,0,stop,1815,1696,qwen3.6-27b,"Egypt's capital is Cairo; Norway's capital is Oslo; Portugal's capital is Lisbon; Israel's capital is Jerusalem; Morocco's capital is Rabat; Hungary's capital is Budapest; Bulgaria's capital is Sofia; Czechia's capital is Prague; Cuba's capital is Havana; Germany's capital is Berlin; Finland's capital is Helsinki; Denmark's capital is Copenhagen; Thailand's capital is Bangkok; Poland's capital is Warsaw; Peru's capital is Lima; Kenya's capital is Nairobi. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Egypt, Norway, Portugal, Israel, Morocco, Hungary, Bulgaria, Czechia, Cuba, Germany, Finland, Denmark, Thailand, Poland, Peru, Kenya.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",539188395
+facts_parallel,default,16,cot,7,Greece,Greece,1,-1,0,0,stop,1483,1415,qwen3.6-27b,"Cuba's capital is Havana; Czechia's capital is Prague; Hungary's capital is Budapest; Greece's capital is Athens; Japan's capital is Tokyo; China's capital is Beijing; Germany's capital is Berlin; Russia's capital is Moscow; Denmark's capital is Copenhagen; Indonesia's capital is Jakarta; Morocco's capital is Rabat; Thailand's capital is Bangkok; Portugal's capital is Lisbon; Sweden's capital is Stockholm; Bulgaria's capital is Sofia; Israel's capital is Jerusalem. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Cuba, Czechia, Hungary, Greece, Japan, China, Germany, Russia, Denmark, Indonesia, Morocco, Thailand, Portugal, Sweden, Bulgaria, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1462004797
+facts_parallel,default,16,cot,8,Thailand,Thailand,1,-1,0,0,stop,1753,1637,qwen3.6-27b,"Thailand's capital is Bangkok; Egypt's capital is Cairo; Denmark's capital is Copenhagen; Hungary's capital is Budapest; Japan's capital is Tokyo; Israel's capital is Jerusalem; Austria's capital is Vienna; Portugal's capital is Lisbon; Sweden's capital is Stockholm; Kenya's capital is Nairobi; Cuba's capital is Havana; Norway's capital is Oslo; Finland's capital is Helsinki; China's capital is Beijing; Czechia's capital is Prague; Poland's capital is Warsaw. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Egypt, Denmark, Hungary, Japan, Israel, Austria, Portugal, Sweden, Thailand, Kenya, Cuba, Norway, Finland, China, Czechia, Poland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3348853164
+facts_parallel,default,16,cot,9,Greece,Greece,1,-1,0,0,stop,1595,1479,qwen3.6-27b,"Greece's capital is Athens; Israel's capital is Jerusalem; Norway's capital is Oslo; Japan's capital is Tokyo; Bulgaria's capital is Sofia; Finland's capital is Helsinki; Czechia's capital is Prague; Thailand's capital is Bangkok; Indonesia's capital is Jakarta; Ireland's capital is Dublin; Russia's capital is Moscow; China's capital is Beijing; Cuba's capital is Havana; Portugal's capital is Lisbon; Denmark's capital is Copenhagen; Hungary's capital is Budapest. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Greece, Israel, Norway, Japan, Bulgaria, Finland, Czechia, Thailand, Indonesia, Ireland, Russia, China, Cuba, Portugal, Denmark, Hungary.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2963030330
+facts_parallel,default,16,cot,10,China,China,1,-1,0,0,stop,2011,1857,qwen3.6-27b,"Morocco's capital is Rabat; Indonesia's capital is Jakarta; Denmark's capital is Copenhagen; Cuba's capital is Havana; Kenya's capital is Nairobi; Israel's capital is Jerusalem; Egypt's capital is Cairo; Portugal's capital is Lisbon; Japan's capital is Tokyo; Finland's capital is Helsinki; Norway's capital is Oslo; Bulgaria's capital is Sofia; China's capital is Beijing; Sweden's capital is Stockholm; Russia's capital is Moscow; Austria's capital is Vienna. Sorting these capitals alphabetically gives: Beijing, Cairo, Copenhagen, Helsinki, Havana, Jakarta, Jerusalem, Lisbon, Moscow, Nairobi, Oslo, Rabat, Sofia, Stockholm, Tokyo, Vienna. The first is Beijing, which is the capital of China.
+
+Answer: China",78f1a5c1-1788557324,"Consider these 16 countries: Morocco, Indonesia, Denmark, Cuba, Kenya, Israel, Egypt, Portugal, Japan, Finland, Norway, Bulgaria, China, Sweden, Russia, Austria.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4206760154
+facts_parallel,default,16,cot,11,Greece,Greece,1,-1,0,0,stop,1674,1555,qwen3.6-27b,"China's capital is Beijing; Austria's capital is Vienna; Ireland's capital is Dublin; Czechia's capital is Prague; Poland's capital is Warsaw; Morocco's capital is Rabat; Denmark's capital is Copenhagen; Russia's capital is Moscow; Greece's capital is Athens; Thailand's capital is Bangkok; Bulgaria's capital is Sofia; Norway's capital is Oslo; Germany's capital is Berlin; Japan's capital is Tokyo; Cuba's capital is Havana; Kenya's capital is Nairobi. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: China, Austria, Ireland, Czechia, Poland, Morocco, Denmark, Russia, Greece, Thailand, Bulgaria, Norway, Germany, Japan, Cuba, Kenya.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2377719884
+facts_parallel,default,16,cot,12,Greece,Greece,1,-1,0,0,stop,1605,1470,qwen3.6-27b,"Portugal's capital is Lisbon; Norway's capital is Oslo; Germany's capital is Berlin; Czechia's capital is Prague; Israel's capital is Jerusalem; Ireland's capital is Dublin; Greece's capital is Athens; Thailand's capital is Bangkok; Indonesia's capital is Jakarta; Russia's capital is Moscow; Cuba's capital is Havana; Hungary's capital is Budapest; Finland's capital is Helsinki; Egypt's capital is Cairo; Peru's capital is Lima; Japan's capital is Tokyo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Portugal, Norway, Germany, Czechia, Israel, Ireland, Greece, Thailand, Indonesia, Russia, Cuba, Hungary, Finland, Egypt, Peru, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",347107830
+facts_parallel,default,16,cot,13,Greece,Greece,1,-1,0,0,stop,1609,1437,qwen3.6-27b,"To determine which country has the capital that comes first alphabetically, let's list each country with its capital city:
+- Peru: Lima
+- Czechia: Prague
+- Poland: Warsaw
+- Sweden: Stockholm
+- Egypt: Cairo
+- Israel: Jerusalem
+- Greece: Athens
+- Finland: Helsinki
+- Hungary: Budapest
+- Morocco: Rabat
+- Bulgaria: Sofia
+- China: Beijing
+- Denmark: Copenhagen
+- Austria: Vienna
+- Cuba: Havana
+- Indonesia: Jakarta
+
+Now, arrange the capital names alphabetically:
+Athens, Beijing, Budapest, Cairo, Copenhagen, Helsinki, Havana, Jakarta, Jerusalem, Lima, Prague, Rabat, Sofia, Stockholm, Vienna, Warsaw.
+
+The first capital alphabetically is Athens, which is the capital of Greece.
+
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Peru, Czechia, Poland, Sweden, Egypt, Israel, Greece, Finland, Hungary, Morocco, Bulgaria, China, Denmark, Austria, Cuba, Indonesia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1672954208
+facts_parallel,default,16,cot,14,Greece,Greece,1,-1,0,0,stop,1882,1766,qwen3.6-27b,"Israel's capital is Jerusalem; Thailand's capital is Bangkok; Morocco's capital is Rabat; Bulgaria's capital is Sofia; Poland's capital is Warsaw; Russia's capital is Moscow; Czechia's capital is Prague; Indonesia's capital is Jakarta; Sweden's capital is Stockholm; Greece's capital is Athens; Cuba's capital is Havana; Denmark's capital is Copenhagen; Norway's capital is Oslo; Germany's capital is Berlin; Peru's capital is Lima; Japan's capital is Tokyo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Israel, Thailand, Morocco, Bulgaria, Poland, Russia, Czechia, Indonesia, Sweden, Greece, Cuba, Denmark, Norway, Germany, Peru, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4258518211
+facts_parallel,default,16,cot,15,Greece,Greece,1,-1,0,0,stop,1856,1812,qwen3.6-27b,"Hungary's capital is Budapest; Bulgaria's capital is Sofia; Indonesia's capital is Jakarta; Poland's capital is Warsaw; Japan's capital is Tokyo; Denmark's capital is Copenhagen; Morocco's capital is Rabat; Portugal's capital is Lisbon; Peru's capital is Lima; Austria's capital is Vienna; Thailand's capital is Bangkok; Greece's capital is Athens; Ireland's capital is Dublin; Kenya's capital is Nairobi; Israel's capital is Jerusalem; Czechia's capital is Prague. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Hungary, Bulgaria, Indonesia, Poland, Japan, Denmark, Morocco, Portugal, Peru, Austria, Thailand, Greece, Ireland, Kenya, Israel, Czechia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2329207893
+facts_parallel,default,16,cot,16,Greece,Greece,1,-1,0,0,stop,1424,1307,qwen3.6-27b,"Czechia's capital is Prague; Indonesia's capital is Jakarta; Morocco's capital is Rabat; Thailand's capital is Bangkok; Sweden's capital is Stockholm; Hungary's capital is Budapest; Japan's capital is Tokyo; Israel's capital is Jerusalem; Greece's capital is Athens; Germany's capital is Berlin; Cuba's capital is Havana; Portugal's capital is Lisbon; Finland's capital is Helsinki; Egypt's capital is Cairo; Peru's capital is Lima; Poland's capital is Warsaw. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Czechia, Indonesia, Morocco, Thailand, Sweden, Hungary, Japan, Israel, Greece, Germany, Cuba, Portugal, Finland, Egypt, Peru, Poland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",333297135
+facts_parallel,default,16,cot,17,Thailand,Thailand,1,-1,0,0,stop,2142,1983,qwen3.6-27b,"Thailand's capital is Bangkok; Hungary's capital is Budapest; Israel's capital is Jerusalem; Denmark's capital is Copenhagen; Kenya's capital is Nairobi; Austria's capital is Vienna; Norway's capital is Oslo; Peru's capital is Lima; Russia's capital is Moscow; Ireland's capital is Dublin; Czechia's capital is Prague; Cuba's capital is Havana; Egypt's capital is Cairo; Morocco's capital is Rabat; Germany's capital is Berlin; Portugal's capital is Lisbon. Sorting these capital names alphabetically gives: Bangkok, Berlin, Budapest, Cairo, Copenhagen, Dublin, Havana, Jerusalem, Lima, Lisbon, Moscow, Nairobi, Oslo, Prague, Rabat, Vienna. The first is Bangkok, which belongs to Thailand.
+
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Thailand, Hungary, Israel, Denmark, Kenya, Austria, Norway, Peru, Russia, Ireland, Czechia, Cuba, Egypt, Morocco, Germany, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1692042617
+facts_parallel,default,16,cot,18,Greece,Greece,1,-1,0,0,stop,1817,1661,qwen3.6-27b,"Here are the capital cities for each of the 16 countries:
+- Hungary: Budapest
+- Thailand: Bangkok
+- Egypt: Cairo
+- Israel: Jerusalem
+- Kenya: Nairobi
+- Germany: Berlin
+- Portugal: Lisbon
+- Russia: Moscow
+- Poland: Warsaw
+- Peru: Lima
+- Ireland: Dublin
+- China: Beijing
+- Cuba: Havana
+- Norway: Oslo
+- Greece: Athens
+- Indonesia: Jakarta
+
+Listing these capitals in alphabetical order: Athens, Bangkok, Beijing, Berlin, Budapest, Cairo, Dublin, Havana, Jakarta, Jerusalem, Lima, Lisbon, Moscow, Nairobi, Oslo, Warsaw.
+
+The first capital alphabetically is Athens, which is the capital of Greece.
+
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Hungary, Thailand, Egypt, Israel, Kenya, Germany, Portugal, Russia, Poland, Peru, Ireland, China, Cuba, Norway, Greece, Indonesia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",4100298984
+facts_parallel,default,16,cot,19,China,China,1,-1,0,0,stop,1808,1693,qwen3.6-27b,"Denmark's capital is Copenhagen; Hungary's capital is Budapest; Japan's capital is Tokyo; Indonesia's capital is Jakarta; Cuba's capital is Havana; Portugal's capital is Lisbon; Ireland's capital is Dublin; Austria's capital is Vienna; Sweden's capital is Stockholm; Germany's capital is Berlin; Bulgaria's capital is Sofia; Norway's capital is Oslo; Morocco's capital is Rabat; Peru's capital is Lima; China's capital is Beijing; Czechia's capital is Prague. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 16 countries: Denmark, Hungary, Japan, Indonesia, Cuba, Portugal, Ireland, Austria, Sweden, Germany, Bulgaria, Norway, Morocco, Peru, China, Czechia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2204280958
+facts_parallel,default,16,cot,20,Greece,Greece,1,-1,0,0,stop,1643,1448,qwen3.6-27b,"Japan's capital is Tokyo; Indonesia's capital is Jakarta; Germany's capital is Berlin; Poland's capital is Warsaw; Peru's capital is Lima; Norway's capital is Oslo; Portugal's capital is Lisbon; Morocco's capital is Rabat; Bulgaria's capital is Sofia; Egypt's capital is Cairo; Greece's capital is Athens; Denmark's capital is Copenhagen; Kenya's capital is Nairobi; Cuba's capital is Havana; Sweden's capital is Stockholm; China's capital is Beijing. 
+
+Sorting these capital cities alphabetically gives: Athens, Beijing, Berlin, Cairo, Copenhagen, Havana, Jakarta, Lima, Lisbon, Nairobi, Oslo, Rabat, Sofia, Stockholm, Tokyo, Warsaw. The first alphabetically is Athens, which is the capital of Greece.
+
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Japan, Indonesia, Germany, Poland, Peru, Norway, Portugal, Morocco, Bulgaria, Egypt, Greece, Denmark, Kenya, Cuba, Sweden, China.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3516089113
+facts_parallel,default,16,cot,21,Thailand,Thailand,1,-1,0,0,stop,2206,2090,qwen3.6-27b,"Kenya's capital is Nairobi; Denmark's capital is Copenhagen; Hungary's capital is Budapest; Austria's capital is Vienna; Czechia's capital is Prague; China's capital is Beijing; Thailand's capital is Bangkok; Bulgaria's capital is Sofia; Portugal's capital is Lisbon; Indonesia's capital is Jakarta; Japan's capital is Tokyo; Norway's capital is Oslo; Egypt's capital is Cairo; Finland's capital is Helsinki; Russia's capital is Moscow; Israel's capital is Jerusalem. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Kenya, Denmark, Hungary, Austria, Czechia, China, Thailand, Bulgaria, Portugal, Indonesia, Japan, Norway, Egypt, Finland, Russia, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2794746767
+facts_parallel,default,16,cot,22,Greece,Greece,1,-1,0,0,stop,1749,1599,qwen3.6-27b,"Thailand's capital is Bangkok; Hungary's capital is Budapest; Peru's capital is Lima; Russia's capital is Moscow; Greece's capital is Athens; Morocco's capital is Rabat; Germany's capital is Berlin; Egypt's capital is Cairo; Czechia's capital is Prague; Japan's capital is Tokyo; Ireland's capital is Dublin; Bulgaria's capital is Sofia; Finland's capital is Helsinki; Sweden's capital is Stockholm; Cuba's capital is Havana; Norway's capital is Oslo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Thailand, Hungary, Peru, Russia, Greece, Morocco, Germany, Egypt, Czechia, Japan, Ireland, Bulgaria, Finland, Sweden, Cuba, Norway.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1067262517
+facts_parallel,default,16,cot,23,Greece,Greece,1,-1,0,0,stop,2230,2085,qwen3.6-27b,"Poland's capital is Warsaw; Ireland's capital is Dublin; Japan's capital is Tokyo; Israel's capital is Jerusalem; China's capital is Beijing; Austria's capital is Vienna; Greece's capital is Athens; Thailand's capital is Bangkok; Kenya's capital is Nairobi; Indonesia's capital is Jakarta; Hungary's capital is Budapest; Germany's capital is Berlin; Bulgaria's capital is Sofia; Denmark's capital is Copenhagen; Morocco's capital is Rabat; Peru's capital is Lima. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Poland, Ireland, Japan, Israel, China, Austria, Greece, Thailand, Kenya, Indonesia, Hungary, Germany, Bulgaria, Denmark, Morocco, Peru.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1218056867
+facts_parallel,default,16,cot,24,Greece,Greece,1,-1,0,0,stop,1662,1545,qwen3.6-27b,"Greece's capital is Athens; Sweden's capital is Stockholm; Ireland's capital is Dublin; Denmark's capital is Copenhagen; China's capital is Beijing; Poland's capital is Warsaw; Israel's capital is Jerusalem; Austria's capital is Vienna; Russia's capital is Moscow; Indonesia's capital is Jakarta; Morocco's capital is Rabat; Kenya's capital is Nairobi; Portugal's capital is Lisbon; Germany's capital is Berlin; Finland's capital is Helsinki; Czechia's capital is Prague. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Greece, Sweden, Ireland, Denmark, China, Poland, Israel, Austria, Russia, Indonesia, Morocco, Kenya, Portugal, Germany, Finland, Czechia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3607004928
+facts_parallel,default,16,cot,25,Thailand,Thailand,1,-1,0,0,stop,1751,1578,qwen3.6-27b,"Norway's capital is Oslo; Israel's capital is Jerusalem; Denmark's capital is Copenhagen; Sweden's capital is Stockholm; Peru's capital is Lima; Germany's capital is Berlin; Japan's capital is Tokyo; Morocco's capital is Rabat; Austria's capital is Vienna; Indonesia's capital is Jakarta; Ireland's capital is Dublin; Egypt's capital is Cairo; Portugal's capital is Lisbon; Czechia's capital is Prague; Kenya's capital is Nairobi; Thailand's capital is Bangkok. 
+
+Listing the capitals alphabetically: Bangkok, Berlin, Cairo, Copenhagen, Dublin, Jakarta, Jerusalem, Lima, Lisbon, Nairobi, Oslo, Prague, Rabat, Stockholm, Tokyo, Vienna. The first alphabetically is Bangkok, which is the capital of Thailand.
+
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Norway, Israel, Denmark, Sweden, Peru, Germany, Japan, Morocco, Austria, Indonesia, Ireland, Egypt, Portugal, Czechia, Kenya, Thailand.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2717497238
+facts_parallel,default,16,cot,26,Greece,Greece,1,-1,0,0,stop,1855,1739,qwen3.6-27b,"Denmark's capital is Copenhagen; Portugal's capital is Lisbon; Norway's capital is Oslo; Finland's capital is Helsinki; Bulgaria's capital is Sofia; Cuba's capital is Havana; Japan's capital is Tokyo; Greece's capital is Athens; Sweden's capital is Stockholm; Czechia's capital is Prague; Peru's capital is Lima; Russia's capital is Moscow; Germany's capital is Berlin; Indonesia's capital is Jakarta; Kenya's capital is Nairobi; Egypt's capital is Cairo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Denmark, Portugal, Norway, Finland, Bulgaria, Cuba, Japan, Greece, Sweden, Czechia, Peru, Russia, Germany, Indonesia, Kenya, Egypt.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",955311660
+facts_parallel,default,16,cot,27,Greece,Greece,1,-1,0,0,stop,1615,1532,qwen3.6-27b,"Sweden's capital is Stockholm; Bulgaria's capital is Sofia; Egypt's capital is Cairo; Greece's capital is Athens; Japan's capital is Tokyo; Denmark's capital is Copenhagen; Norway's capital is Oslo; Indonesia's capital is Jakarta; Germany's capital is Berlin; Ireland's capital is Dublin; Peru's capital is Lima; Morocco's capital is Rabat; Thailand's capital is Bangkok; Portugal's capital is Lisbon; Russia's capital is Moscow; Israel's capital is Jerusalem. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Sweden, Bulgaria, Egypt, Greece, Japan, Denmark, Norway, Indonesia, Germany, Ireland, Peru, Morocco, Thailand, Portugal, Russia, Israel.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1341642426
+facts_parallel,default,16,cot,28,Thailand,Thailand,1,-1,0,0,stop,1432,1314,qwen3.6-27b,"Bulgaria's capital is Sofia; Finland's capital is Helsinki; Thailand's capital is Bangkok; Czechia's capital is Prague; Ireland's capital is Dublin; Morocco's capital is Rabat; Poland's capital is Warsaw; Hungary's capital is Budapest; Japan's capital is Tokyo; Norway's capital is Oslo; Egypt's capital is Cairo; Sweden's capital is Stockholm; China's capital is Beijing; Germany's capital is Berlin; Peru's capital is Lima; Cuba's capital is Havana. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Bulgaria, Finland, Thailand, Czechia, Ireland, Morocco, Poland, Hungary, Japan, Norway, Egypt, Sweden, China, Germany, Peru, Cuba.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3746089771
+facts_parallel,default,16,cot,29,China,China,1,-1,0,0,stop,1607,1473,qwen3.6-27b,"Sweden's capital is Stockholm; China's capital is Beijing; Hungary's capital is Budapest; Czechia's capital is Prague; Russia's capital is Moscow; Kenya's capital is Nairobi; Finland's capital is Helsinki; Denmark's capital is Copenhagen; Cuba's capital is Havana; Peru's capital is Lima; Portugal's capital is Lisbon; Israel's capital is Jerusalem; Morocco's capital is Rabat; Ireland's capital is Dublin; Japan's capital is Tokyo; Poland's capital is Warsaw. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 16 countries: Sweden, China, Hungary, Czechia, Russia, Kenya, Finland, Denmark, Cuba, Peru, Portugal, Israel, Morocco, Ireland, Japan, Poland.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2823814077
+facts_parallel,default,16,cot,30,Greece,Greece,1,-1,0,0,stop,1907,1791,qwen3.6-27b,"Austria's capital is Vienna; Bulgaria's capital is Sofia; Finland's capital is Helsinki; Sweden's capital is Stockholm; Thailand's capital is Bangkok; Israel's capital is Jerusalem; Greece's capital is Athens; Poland's capital is Warsaw; Hungary's capital is Budapest; Kenya's capital is Nairobi; Egypt's capital is Cairo; Ireland's capital is Dublin; Norway's capital is Oslo; Peru's capital is Lima; Czechia's capital is Prague; Cuba's capital is Havana. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Austria, Bulgaria, Finland, Sweden, Thailand, Israel, Greece, Poland, Hungary, Kenya, Egypt, Ireland, Norway, Peru, Czechia, Cuba.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3364385368
+facts_parallel,default,16,cot,31,Greece,Greece,1,-1,0,0,stop,1709,1568,qwen3.6-27b,"Norway's capital is Oslo; Finland's capital is Helsinki; China's capital is Beijing; Egypt's capital is Cairo; Russia's capital is Moscow; Poland's capital is Warsaw; Israel's capital is Jerusalem; Indonesia's capital is Jakarta; Hungary's capital is Budapest; Thailand's capital is Bangkok; Morocco's capital is Rabat; Germany's capital is Berlin; Ireland's capital is Dublin; Czechia's capital is Prague; Sweden's capital is Stockholm; Greece's capital is Athens. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Norway, Finland, China, Egypt, Russia, Poland, Israel, Indonesia, Hungary, Thailand, Morocco, Germany, Ireland, Czechia, Sweden, Greece.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3213837006
+facts_parallel,default,16,cot,32,Greece,Greece,1,-1,0,0,stop,1401,1287,qwen3.6-27b,"Czechia's capital is Prague; Cuba's capital is Havana; Japan's capital is Tokyo; Poland's capital is Warsaw; China's capital is Beijing; Norway's capital is Oslo; Russia's capital is Moscow; Finland's capital is Helsinki; Hungary's capital is Budapest; Morocco's capital is Rabat; Greece's capital is Athens; Egypt's capital is Cairo; Austria's capital is Vienna; Germany's capital is Berlin; Portugal's capital is Lisbon; Denmark's capital is Copenhagen. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Czechia, Cuba, Japan, Poland, China, Norway, Russia, Finland, Hungary, Morocco, Greece, Egypt, Austria, Germany, Portugal, Denmark.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",646321012
+facts_parallel,default,16,cot,33,Thailand,Thailand,1,-1,0,0,stop,2139,1957,qwen3.6-27b,"Kenya's capital is Nairobi; Peru's capital is Lima; Poland's capital is Warsaw; Israel's capital is Jerusalem; Cuba's capital is Havana; Sweden's capital is Stockholm; Norway's capital is Oslo; Germany's capital is Berlin; Indonesia's capital is Jakarta; Portugal's capital is Lisbon; China's capital is Beijing; Egypt's capital is Cairo; Japan's capital is Tokyo; Hungary's capital is Budapest; Russia's capital is Moscow; Thailand's capital is Bangkok. Alphabetically first is Bangkok, so the answer is Thailand.
+Answer: Thailand",78f1a5c1-1788557324,"Consider these 16 countries: Kenya, Peru, Poland, Israel, Cuba, Sweden, Norway, Germany, Indonesia, Portugal, China, Egypt, Japan, Hungary, Russia, Thailand.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1367417826
+facts_parallel,default,16,cot,34,Greece,Greece,1,-1,0,0,stop,1115,998,qwen3.6-27b,"Peru's capital is Lima; Thailand's capital is Bangkok; Czechia's capital is Prague; Finland's capital is Helsinki; Germany's capital is Berlin; Portugal's capital is Lisbon; Morocco's capital is Rabat; Greece's capital is Athens; Israel's capital is Jerusalem; Norway's capital is Oslo; Hungary's capital is Budapest; Japan's capital is Tokyo; China's capital is Beijing; Denmark's capital is Copenhagen; Egypt's capital is Cairo; Sweden's capital is Stockholm. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Peru, Thailand, Czechia, Finland, Germany, Portugal, Morocco, Greece, Israel, Norway, Hungary, Japan, China, Denmark, Egypt, Sweden.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3487938113
+facts_parallel,default,16,cot,35,Greece,Greece,1,-1,0,0,stop,1240,1121,qwen3.6-27b,"Kenya's capital is Nairobi; Czechia's capital is Prague; Cuba's capital is Havana; Indonesia's capital is Jakarta; Norway's capital is Oslo; Sweden's capital is Stockholm; Germany's capital is Berlin; Finland's capital is Helsinki; Bulgaria's capital is Sofia; Poland's capital is Warsaw; Thailand's capital is Bangkok; Portugal's capital is Lisbon; Hungary's capital is Budapest; Denmark's capital is Copenhagen; Greece's capital is Athens; Japan's capital is Tokyo. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Kenya, Czechia, Cuba, Indonesia, Norway, Sweden, Germany, Finland, Bulgaria, Poland, Thailand, Portugal, Hungary, Denmark, Greece, Japan.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3101853399
+facts_parallel,default,16,cot,36,Greece,Greece,1,-1,0,0,stop,1555,1439,qwen3.6-27b,"Kenya's capital is Nairobi; Portugal's capital is Lisbon; Israel's capital is Jerusalem; Poland's capital is Warsaw; Cuba's capital is Havana; Indonesia's capital is Jakarta; Greece's capital is Athens; China's capital is Beijing; Morocco's capital is Rabat; Bulgaria's capital is Sofia; Ireland's capital is Dublin; Russia's capital is Moscow; Hungary's capital is Budapest; Japan's capital is Tokyo; Norway's capital is Oslo; Thailand's capital is Bangkok. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Kenya, Portugal, Israel, Poland, Cuba, Indonesia, Greece, China, Morocco, Bulgaria, Ireland, Russia, Hungary, Japan, Norway, Thailand.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",569104237
+facts_parallel,default,16,cot,37,Greece,Greece,1,-1,0,0,stop,1668,1592,qwen3.6-27b,"Denmark's capital is Copenhagen; Sweden's capital is Stockholm; Peru's capital is Lima; Indonesia's capital is Jakarta; Greece's capital is Athens; Germany's capital is Berlin; Ireland's capital is Dublin; China's capital is Beijing; Portugal's capital is Lisbon; Finland's capital is Helsinki; Austria's capital is Vienna; Norway's capital is Oslo; Israel's capital is Jerusalem; Japan's capital is Tokyo; Thailand's capital is Bangkok; Morocco's capital is Rabat. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: Denmark, Sweden, Peru, Indonesia, Greece, Germany, Ireland, China, Portugal, Finland, Austria, Norway, Israel, Japan, Thailand, Morocco.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",1458366459
+facts_parallel,default,16,cot,38,Greece,Greece,1,-1,0,0,stop,1988,1873,qwen3.6-27b,"China's capital is Beijing; Indonesia's capital is Jakarta; Israel's capital is Jerusalem; Morocco's capital is Rabat; Cuba's capital is Havana; Sweden's capital is Stockholm; Kenya's capital is Nairobi; Hungary's capital is Budapest; Japan's capital is Tokyo; Finland's capital is Helsinki; Greece's capital is Athens; Portugal's capital is Lisbon; Norway's capital is Oslo; Thailand's capital is Bangkok; Poland's capital is Warsaw; Russia's capital is Moscow. Alphabetically first is Athens, so the answer is Greece.
+Answer: Greece",78f1a5c1-1788557324,"Consider these 16 countries: China, Indonesia, Israel, Morocco, Cuba, Sweden, Kenya, Hungary, Japan, Finland, Greece, Portugal, Norway, Thailand, Poland, Russia.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",3327392362
+facts_parallel,default,16,cot,39,China,China,1,-1,0,0,stop,2170,2053,qwen3.6-27b,"Finland's capital is Helsinki; Kenya's capital is Nairobi; Norway's capital is Oslo; China's capital is Beijing; Denmark's capital is Copenhagen; Israel's capital is Jerusalem; Czechia's capital is Prague; Hungary's capital is Budapest; Cuba's capital is Havana; Sweden's capital is Stockholm; Poland's capital is Warsaw; Indonesia's capital is Jakarta; Morocco's capital is Rabat; Egypt's capital is Cairo; Peru's capital is Lima; Portugal's capital is Lisbon. Alphabetically first is Beijing, so the answer is China.
+Answer: China",78f1a5c1-1788557324,"Consider these 16 countries: Finland, Kenya, Norway, China, Denmark, Israel, Czechia, Hungary, Cuba, Sweden, Poland, Indonesia, Morocco, Egypt, Peru, Portugal.
+Which one has the capital city whose name comes first alphabetically? Answer with just the country name.",2975124220

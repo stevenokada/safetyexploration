@@ -1,96 +1,143 @@
 """
-Real-world multi-hop fact composition, up to 5 hops.
+Real-world multi-hop fact composition, up to 6 hops, plus a matched parallel control.
 
-Why: three lens runs on the synthetic tasks found nothing, most likely because
-their intermediates are single DIGITS -- flagged by the workspace paper as poorly
-lens-aligned. Published work that DID decode intermediates (Brauer et al., 80-95%)
-used word-valued intermediates. This puts intermediates back in the vocabulary.
+Reformulation that unlocks depth
+--------------------------------
+The first version asked "what is the capital of the country whose currency is X",
+which caps out at three hops because the answer type changes as you extend it
+(city, then letter, then element, then number) and the currency->country relation
+has nowhere further back to go.
 
-Chain (each step a real, memorised fact, none given in context):
-  currency -> country -> capital -> first letter -> element -> atomic number
-  e.g.  lev -> Bulgaria -> Sofia -> S -> Sulfur -> 16
+Fixing the ANSWER and extending backwards removes both limits. The answer is
+always the atomic number; k controls how far back the question starts:
 
-  k=1  capital of a named country
-  k=2  + currency to country
-  k=3  + first letter of the capital
-  k=4  + element whose symbol is that letter
-  k=5  + that element's atomic number
+  k=1  atomic number of Vanadium
+  k=2  ... of the element whose symbol is V
+  k=3  ... whose symbol is the first letter of Vienna
+  k=4  ... the first letter of the capital of Austria
+  k=5  ... the capital of the country where Mozart was born
+  k=6  ... where the composer of The Magic Flute was born
 
-Design notes
-  * Currencies are restricted to those belonging to EXACTLY ONE country, or
-    "the country whose currency is the X" has several correct answers.
-  * Single-token-ness is RECORDED PER HOP rather than required. Requiring every
-    hop to be single-token left one usable fact, because element names are mostly
-    multi-token. The lens can read whichever hops are single tokens; the rest
-    still serve the behavioural depth measurement.
-  * k>=4 needs the capital's first letter to be a single-letter element symbol,
-    so the pool shrinks with depth. Available pool size per k is reported below.
+Every depth answers with a number, so one answer-format instruction serves all of
+them, and each added hop is a genuine memorised lookup rather than a rephrasing.
+
+The parallel control
+--------------------
+Same fact pool, same kind of retrieval, k of them, but independent: given k
+countries, name the one whose capital comes first alphabetically. Work is k
+lookups; serial depth is 2 (retrieve, then compare) however large k gets.
 """
 import random
 
-ELEM = {"B":("Boron",5), "C":("Carbon",6), "F":("Fluorine",9), "H":("Hydrogen",1),
-        "I":("Iodine",53), "K":("Potassium",19), "N":("Nitrogen",7), "O":("Oxygen",8),
-        "P":("Phosphorus",15), "S":("Sulfur",16), "U":("Uranium",92),
-        "V":("Vanadium",23), "W":("Tungsten",74), "Y":("Yttrium",39)}
+# work, relation word, creator, country, capital, letter, element, atomic number
+#
+# The relation word matters: an earlier version asked for "the composer of The
+# Metamorphosis" (a novella) and "the composer of the Ninth Symphony" (Beethoven,
+# Mahler, Dvorak, Bruckner and Schubert all wrote one). Chain-of-thought accuracy
+# at the deepest level was 0.575, which is a malformed-question rate, not a depth
+# measurement. Works are now paired with the right relation, and works with more
+# than one famous claimant are removed.
+CHAINS = [
+    ("The Magic Flute",    "composer", "Mozart",    "Austria", "Vienna",     "V", "Vanadium",   23),
+    ("The Metamorphosis",  "author",   "Kafka",     "Czechia", "Prague",     "P", "Phosphorus", 15),
+    ("A Doll's House",     "author",   "Ibsen",     "Norway",  "Oslo",       "O", "Oxygen",      8),
+    ("The Snow Queen",     "author",   "Andersen",  "Denmark", "Copenhagen", "C", "Carbon",      6),
+    ("Finlandia",          "composer", "Sibelius",  "Finland", "Helsinki",   "H", "Hydrogen",    1),
+    ("the Minute Waltz",   "composer", "Chopin",    "Poland",  "Warsaw",     "W", "Tungsten",   74),
+    ("The Cherry Orchard", "author",   "Chekhov",   "Russia",  "Moscow",     "M", None,          0),
+]
+CHAINS = [c for c in CHAINS if c[6]]   # drop any whose letter is not an element symbol
 
-# (currency, country, capital) -- currency unique to that one country
-FACTS = [
-    ("yen","Japan","Tokyo"), ("baht","Thailand","Bangkok"), ("zloty","Poland","Warsaw"),
-    ("forint","Hungary","Budapest"), ("shekel","Israel","Jerusalem"),
-    ("rupiah","Indonesia","Jakarta"), ("sol","Peru","Lima"), ("lev","Bulgaria","Sofia"),
-    ("ruble","Russia","Moscow"), ("krona","Sweden","Stockholm"),
-    ("yuan","China","Beijing"), ("koruna","Czechia","Prague"), ("leu","Romania","Bucharest"),
-    ("dram","Armenia","Yerevan"), ("manat","Azerbaijan","Baku"),
-    ("bolivar","Venezuela","Caracas"), ("afghani","Afghanistan","Kabul"),
-    ("hryvnia","Ukraine","Kyiv"), ("tenge","Kazakhstan","Astana"),
-    ("naira","Nigeria","Abuja"), ("cedi","Ghana","Accra"), ("kyat","Myanmar","Yangon"),
-    ("dong","Vietnam","Hanoi"), ("taka","Bangladesh","Dhaka"), ("kip","Laos","Vientiane"),
-    ("won","South Korea","Seoul"), ("rand","South Africa","Pretoria"),
-    ("lari","Georgia","Tbilisi"), ("birr","Ethiopia","Addis Ababa"),
-    ("riel","Cambodia","Phnom Penh"),
+# country -> capital, for the parallel control (a wider pool: no element constraint)
+CAPITALS = [
+    ("Austria","Vienna"), ("Czechia","Prague"), ("Norway","Oslo"), ("Denmark","Copenhagen"),
+    ("Hungary","Budapest"), ("Finland","Helsinki"), ("Germany","Berlin"), ("Poland","Warsaw"),
+    ("Japan","Tokyo"), ("Thailand","Bangkok"), ("Israel","Jerusalem"), ("Indonesia","Jakarta"),
+    ("Peru","Lima"), ("Bulgaria","Sofia"), ("Russia","Moscow"), ("Sweden","Stockholm"),
+    ("China","Beijing"), ("Egypt","Cairo"), ("Kenya","Nairobi"), ("Cuba","Havana"),
+    ("Portugal","Lisbon"), ("Greece","Athens"), ("Ireland","Dublin"), ("Morocco","Rabat"),
 ]
 
-def pool(k):
-    """Facts that can support a chain of this depth."""
-    if k <= 3:
-        return FACTS
-    return [f for f in FACTS if f[2][0] in ELEM]
+MAX_K = 6
 
 def generate(rng, k):
-    """Returns (question, gold, intermediates, reasoning)."""
-    if not 1 <= k <= 5:
-        raise ValueError("k must be 1..5")
-    p = pool(k)
-    if not p:
-        raise RuntimeError(f"no facts support k={k}")
-    cur, country, capital = rng.choice(p)
-    L = capital[0]
-    if k == 1:
-        q = f"What is the capital city of {country}?"
-        chain = [capital]
-        r = f"The capital of {country} is {capital}."
-        return q, capital, chain, r
-    base = f"the country whose currency is the {cur}"
-    r2 = f"The {cur} is the currency of {country}. The capital of {country} is {capital}."
-    if k == 2:
-        return f"What is the capital city of {base}?", capital, [country, capital], r2
-    if k == 3:
-        return (f"What is the first letter of the capital city of {base}?",
-                L, [country, capital, L], r2 + f" Its first letter is {L}.")
-    el, num = ELEM[L]
-    r3 = r2 + f" Its first letter is {L}, and {L} is the symbol for {el}."
-    if k == 4:
-        return (f"Which chemical element has the symbol that is the first letter "
-                f"of the capital city of {base}?", el, [country, capital, L, el], r3)
-    return (f"What is the atomic number of the chemical element whose symbol is the "
-            f"first letter of the capital city of {base}?",
-            str(num), [country, capital, L, el, str(num)],
-            r3 + f" The atomic number of {el} is {num}.")
+    """Serial chain. Returns (question, gold, intermediates, reasoning)."""
+    if not 1 <= k <= MAX_K:
+        raise ValueError(f"k must be 1..{MAX_K}")
+    work, relation, creator, country, capital, letter, element, num = rng.choice(CHAINS)
+    stem = {
+        1: f"the element {element}",
+        2: f"the element whose symbol is {letter}",
+        3: f"the element whose symbol is the first letter of {capital}",
+        4: f"the element whose symbol is the first letter of the capital city of {country}",
+        5: (f"the element whose symbol is the first letter of the capital city of "
+            f"the country where {creator} was born"),
+        6: (f"the element whose symbol is the first letter of the capital city of "
+            f"the country where the {relation} of {work} was born"),
+    }[k]
+    q = f"What is the atomic number of {stem}?"
+    # Intermediates are what the model must resolve that the prompt does NOT name.
+    # At depth k the prompt names full[5-k], so everything after it is un-emitted.
+    full = [creator, country, capital, letter, element]
+    chain = full[6 - k:]
+    steps = []
+    if k >= 6: steps.append(f"the {relation} of {work} is {creator}")
+    if k >= 5: steps.append(f"{creator} was born in {country}")
+    if k >= 4: steps.append(f"the capital of {country} is {capital}")
+    if k >= 3: steps.append(f"the first letter of {capital} is {letter}")
+    if k >= 2: steps.append(f"{letter} is the symbol for {element}")
+    steps.append(f"the atomic number of {element} is {num}")
+    return q, str(num), chain + [str(num)], "; ".join(steps).capitalize() + "."
+
+def generate_parallel(rng, k, agg="unique_letter"):
+    """agg="unique_letter" (default): exactly one capital starts with letter L --
+    which country? A single-character test per item, no ordering to maintain.
+
+    agg="alphabetical": which capital comes first alphabetically. This was the
+    first design and it FAILED as a control -- the model sat at or below chance
+    from k=2 to k=12 even though chain-of-thought solved it every time, because a
+    k-way character-level comparison is itself beyond latent reach. Kept so the
+    two aggregations can be compared: same retrievals, different combining cost.
+    """
+    if agg == "unique_letter":
+        for _ in range(400):
+            picks = rng.sample(CAPITALS, k)
+            first = [cap[0] for _, cap in picks]
+            uniq = [i for i, L in enumerate(first) if first.count(L) == 1]
+            if not uniq:
+                continue
+            i = rng.choice(uniq)
+            country, capital = picks[i]
+            names = ", ".join(c for c, _ in picks)
+            q = (f"Consider these {k} countries: {names}.\n"
+                 f"Exactly one of them has a capital city beginning with the letter "
+                 f"{capital[0]}. Which country is it? Answer with just the country name.")
+            reasoning = ("; ".join(f"{c}'s capital is {cap}" for c, cap in picks) +
+                         f". Only {capital} begins with {capital[0]}, so the answer is {country}.")
+            return q, country, [cap for _, cap in picks], reasoning
+        raise RuntimeError(f"could not build a unique-letter instance at k={k}")
+    return _generate_parallel_alpha(rng, k)
+
+
+def _generate_parallel_alpha(rng, k):
+    """Matched parallel control: k independent capital lookups, then one comparison.
+    Serial depth 2 regardless of k. Returns (question, gold, intermediates, reasoning)."""
+    if k < 2:
+        raise ValueError("parallel control needs k >= 2")
+    picks = rng.sample(CAPITALS, k)
+    winner = min(picks, key=lambda p: p[1])
+    names = ", ".join(c for c, _ in picks)
+    q = (f"Consider these {k} countries: {names}.\n"
+         f"Which one has the capital city whose name comes first alphabetically? "
+         f"Answer with just the country name.")
+    reasoning = ("; ".join(f"{c}'s capital is {cap}" for c, cap in picks) +
+                 f". Alphabetically first is {winner[1]}, so the answer is {winner[0]}.")
+    return q, winner[0], [cap for _, cap in picks], reasoning
 
 if __name__ == "__main__":
-    for k in range(1, 6):
-        print(f"pool at k={k}: {len(pool(k))} facts")
+    for k in range(1, MAX_K + 1):
+        q, g, c, r = generate(random.Random(2), k)
+        print(f"k={k}: {q}\n   gold={g}  intermediates={c}")
     print()
-    for k in range(1, 6):
-        q, g, c, r = generate(random.Random(4), k)
-        print(f"k={k}: {q}\n   gold={g!r}  chain={c}\n")
+    q, g, c, r = generate_parallel(random.Random(1), 5)
+    print(f"parallel k=5: {q}\n   gold={g}  capitals={c}")

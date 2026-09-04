@@ -762,6 +762,345 @@
       },
       "headline": {},
       "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b"
+    },
+    {
+      "version": 4,
+      "date": "2026-09-04T21:50:33+00:00",
+      "summary": "Real-world fact chains reformulated to reach six hops with a constant answer type. Clean ceiling at two hops (CoT perfect at all six). Filler is worth +27 points at three hops; its four-hop null was a dosing error, and the effect saturates. A parallel control on the same retrievals holds ~1.8x chance to sixteen, while an ordering-based control sits at chance \u2014 isolating aggregation cost from retrieval count. Corrects a 41% few-shot answer-leakage bug affecting all earlier fact results.",
+      "tab_label": "Facts v2: depth, filler, control",
+      "git_commit": "c75de98",
+      "git_dirty": true,
+      "git_branch": "stevenokada/larvacean",
+      "n_files": 81,
+      "total_rows": 31680,
+      "data_files": {
+        "A_default_claude-opus-4.5.csv": {
+          "sha256": "ae7ce1541acd",
+          "rows": 240
+        },
+        "A_default_deepseek-chat.csv": {
+          "sha256": "d9ccad7c6866",
+          "rows": 240
+        },
+        "A_default_gemini-2.5-flash.csv": {
+          "sha256": "79fd834209bf",
+          "rows": 240
+        },
+        "A_explicit_claude-opus-4.5.csv": {
+          "sha256": "a60322d2dfa1",
+          "rows": 240
+        },
+        "A_explicit_deepseek-chat.csv": {
+          "sha256": "90c0be6cd030",
+          "rows": 240
+        },
+        "A_explicit_gemini-2.5-flash.csv": {
+          "sha256": "cc1927b13df3",
+          "rows": 240
+        },
+        "B_parallel_claude-opus-4.5.csv": {
+          "sha256": "2243abd9a3af",
+          "rows": 400
+        },
+        "B_parallel_count_claude-opus-4.5.csv": {
+          "sha256": "39713c9e2125",
+          "rows": 400
+        },
+        "B_parallel_count_deepseek-chat.csv": {
+          "sha256": "274079e6130c",
+          "rows": 400
+        },
+        "B_parallel_count_gemini-2.5-flash.csv": {
+          "sha256": "957b344dab6f",
+          "rows": 400
+        },
+        "B_parallel_deepseek-chat.csv": {
+          "sha256": "44a105a90ddb",
+          "rows": 400
+        },
+        "B_parallel_gemini-2.5-flash.csv": {
+          "sha256": "5e8cd56fd229",
+          "rows": 400
+        },
+        "B_serial_claude-opus-4.5.csv": {
+          "sha256": "86903b305caa",
+          "rows": 400
+        },
+        "B_serial_deepseek-chat.csv": {
+          "sha256": "90f715d60fc4",
+          "rows": 400
+        },
+        "B_serial_gemini-2.5-flash.csv": {
+          "sha256": "fb2e3f7ab6bf",
+          "rows": 400
+        },
+        "FACTS_gemma-3-27b-it.csv": {
+          "sha256": "ff911cbef727",
+          "rows": 2250
+        },
+        "FACTS_qwen.csv": {
+          "sha256": "cd8e37cb21aa",
+          "rows": 800
+        },
+        "FACTS_qwen2.csv": {
+          "sha256": "85c4dcd014c6",
+          "rows": 400
+        },
+        "FACTS_qwen3.6-27b.csv": {
+          "sha256": "62fb286ef0ab",
+          "rows": 2250
+        },
+        "FS_1_filler.csv": {
+          "sha256": "ed8f4a84414c",
+          "rows": 150
+        },
+        "FS_1_immediate.csv": {
+          "sha256": "b20fbc8f0707",
+          "rows": 150
+        },
+        "FS_3_filler.csv": {
+          "sha256": "aa7f53975be8",
+          "rows": 150
+        },
+        "FS_3_immediate.csv": {
+          "sha256": "184381268be6",
+          "rows": 150
+        },
+        "F_k2_f0.csv": {
+          "sha256": "022509a137ad",
+          "rows": 30
+        },
+        "F_k2_f100.csv": {
+          "sha256": "c0910a02fa6f",
+          "rows": 30
+        },
+        "F_k2_f1344.csv": {
+          "sha256": "ea8db86b3418",
+          "rows": 30
+        },
+        "F_k2_f2688.csv": {
+          "sha256": "c8f0905d1760",
+          "rows": 30
+        },
+        "F_k3_f0.csv": {
+          "sha256": "4edf07a0c8fb",
+          "rows": 30
+        },
+        "F_k3_f100.csv": {
+          "sha256": "00b8fab9f1de",
+          "rows": 30
+        },
+        "F_k3_f1650.csv": {
+          "sha256": "4d3e2df651b2",
+          "rows": 30
+        },
+        "F_k3_f3300.csv": {
+          "sha256": "14610b324dbe",
+          "rows": 30
+        },
+        "F_k4_f0.csv": {
+          "sha256": "310e7f64a29b",
+          "rows": 30
+        },
+        "F_k4_f100.csv": {
+          "sha256": "38b761279e2c",
+          "rows": 30
+        },
+        "F_k4_f1894.csv": {
+          "sha256": "0d489da6ec7a",
+          "rows": 30
+        },
+        "F_k4_f3788.csv": {
+          "sha256": "2ebbc4a6c76c",
+          "rows": 30
+        },
+        "F_k6_f0.csv": {
+          "sha256": "a100d5276522",
+          "rows": 30
+        },
+        "F_k6_f100.csv": {
+          "sha256": "9b5133ffbbed",
+          "rows": 30
+        },
+        "F_k6_f2422.csv": {
+          "sha256": "658578f5c484",
+          "rows": 30
+        },
+        "F_k6_f4844.csv": {
+          "sha256": "d94e21977146",
+          "rows": 30
+        },
+        "G_fs1_gemma-3-27b-it.csv": {
+          "sha256": "60783393c9d2",
+          "rows": 2400
+        },
+        "G_fs1_qwen3.6-27b.csv": {
+          "sha256": "30431e1775d9",
+          "rows": 2400
+        },
+        "G_fs3_gemma-3-27b-it.csv": {
+          "sha256": "8f020d76317f",
+          "rows": 2400
+        },
+        "G_fs3_qwen3.6-27b.csv": {
+          "sha256": "40688a3b3a7d",
+          "rows": 2400
+        },
+        "S_arith_cot_k3.csv": {
+          "sha256": "d934e582a0a9",
+          "rows": 8
+        },
+        "S_arith_immediate_k2.csv": {
+          "sha256": "004811195b20",
+          "rows": 8
+        },
+        "S_arith_immediate_k4.csv": {
+          "sha256": "fb0f8b90bf22",
+          "rows": 8
+        },
+        "S_arith_parallel_max_immediate_k4.csv": {
+          "sha256": "5188e7df9795",
+          "rows": 8
+        },
+        "S_parallel_count_immediate_k8.csv": {
+          "sha256": "41ac0b04fc96",
+          "rows": 8
+        },
+        "S_parallel_immediate_k8.csv": {
+          "sha256": "ddd0a764dc1d",
+          "rows": 8
+        },
+        "S_serial_cot_k4.csv": {
+          "sha256": "3a8723d68402",
+          "rows": 8
+        },
+        "S_serial_filler_k2.csv": {
+          "sha256": "42ec2762cedd",
+          "rows": 8
+        },
+        "S_serial_immediate_k2.csv": {
+          "sha256": "cbca8b24da8a",
+          "rows": 8
+        },
+        "S_serial_immediate_k8.csv": {
+          "sha256": "7eeb0d5d483b",
+          "rows": 8
+        },
+        "W2_parallel_count_gemma-3-27b-it.csv": {
+          "sha256": "b13ae140de8c",
+          "rows": 180
+        },
+        "W2_parallel_count_qwen3.6-27b.csv": {
+          "sha256": "48b4e8af6850",
+          "rows": 180
+        },
+        "W2_parallel_count_qwen3.6-35b-a3b.csv": {
+          "sha256": "f0a8c1aa61ec",
+          "rows": 180
+        },
+        "W2_parallel_gemma-3-27b-it.csv": {
+          "sha256": "414980e46b98",
+          "rows": 180
+        },
+        "W2_parallel_qwen3.6-27b.csv": {
+          "sha256": "41127208011a",
+          "rows": 180
+        },
+        "W2_parallel_qwen3.6-35b-a3b.csv": {
+          "sha256": "5339e020e333",
+          "rows": 180
+        },
+        "W_parallel_claude-opus-4.5.csv": {
+          "sha256": "64e59af2f835",
+          "rows": 280
+        },
+        "W_parallel_count_claude-opus-4.5.csv": {
+          "sha256": "fcf6ed8de177",
+          "rows": 280
+        },
+        "W_parallel_count_deepseek-chat.csv": {
+          "sha256": "976d458c69d7",
+          "rows": 280
+        },
+        "W_parallel_count_gemini-2.5-flash.csv": {
+          "sha256": "820cb7fdc2f1",
+          "rows": 280
+        },
+        "W_parallel_deepseek-chat.csv": {
+          "sha256": "6224c2e66c8d",
+          "rows": 280
+        },
+        "W_parallel_gemini-2.5-flash.csv": {
+          "sha256": "e232f3f639e1",
+          "rows": 280
+        },
+        "W_serial_claude-opus-4.5.csv": {
+          "sha256": "e01080276afc",
+          "rows": 280
+        },
+        "W_serial_deepseek-chat.csv": {
+          "sha256": "3ca3e882c1b9",
+          "rows": 280
+        },
+        "W_serial_gemini-2.5-flash.csv": {
+          "sha256": "d46985faef1b",
+          "rows": 280
+        },
+        "cotlen.csv": {
+          "sha256": "375b2813de49",
+          "rows": 100
+        },
+        "grid2_claude-opus-4.5.csv": {
+          "sha256": "07749fb2b559",
+          "rows": 540
+        },
+        "grid2_deepseek-chat.csv": {
+          "sha256": "3864e8554c19",
+          "rows": 540
+        },
+        "grid2_gemini-2.5-flash.csv": {
+          "sha256": "fddc53b0af70",
+          "rows": 540
+        },
+        "grid2_gpt-5.1.csv": {
+          "sha256": "09cf394a6a76",
+          "rows": 540
+        },
+        "grid2_kimi-k2-0905.csv": {
+          "sha256": "cff3151daf9c",
+          "rows": 540
+        },
+        "grid2_qwen3-max.csv": {
+          "sha256": "637498a996ff",
+          "rows": 540
+        },
+        "grid_claude-opus-4.5.csv": {
+          "sha256": "73ff5b310736",
+          "rows": 540
+        },
+        "grid_deepseek-chat.csv": {
+          "sha256": "f9c892023de5",
+          "rows": 540
+        },
+        "grid_gemini-2.5-flash.csv": {
+          "sha256": "b5289ace162c",
+          "rows": 540
+        },
+        "grid_gpt-5.1.csv": {
+          "sha256": "b7a2fb17c9e8",
+          "rows": 540
+        },
+        "grid_kimi-k2-0905.csv": {
+          "sha256": "b081b9dbf8a5",
+          "rows": 540
+        },
+        "grid_qwen3-max.csv": {
+          "sha256": "446ae701af14",
+          "rows": 540
+        }
+      },
+      "headline": {},
+      "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b"
     }
   ]
 }

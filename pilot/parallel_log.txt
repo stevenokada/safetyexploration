@@ -1,0 +1,16 @@
+### parallel immediate k=2..16
+run_id 78f1a5c1-1788557231  ->  F2_parallel.csv
+immediate  2 0.475      0     0
+immediate  3 0.383      0     0
+immediate  4 0.250      0     0
+immediate  6 0.142      0     0
+immediate  8 0.075      0     0
+immediate 12 0.050      0     0
+immediate 16 0.217      0     0
+### parallel cot (validity)
+run_id 78f1a5c1-1788557324  ->  F2_parallel_cot.csv
+      cot  2  1.0      0     0
+      cot  4  1.0      0     0
+      cot  8  1.0      0     0
+      cot 16  1.0      0     0
+### DONE

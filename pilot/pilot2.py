@@ -34,7 +34,24 @@ import task_arith
 import task_facts
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
+RUN_ID = ""   # set in main(); stamped on every row so results trace to the code that made them
 REGISTRY = "models.json"
+
+def code_fingerprint():
+    """Short hash of the harness + task generators. A stale process running old
+    code cannot then collide with a fresh run's output file, which is exactly how
+    a pre-bugfix orphan nearly overwrote clean data with leaky data."""
+    import hashlib
+    h = hashlib.sha256()
+    here = os.path.dirname(os.path.abspath(__file__))
+    for fn in ("pilot2.py", "task_arith.py", "task_facts.py"):
+        try:
+            with open(os.path.join(here, fn), "rb") as f:
+                h.update(f.read())
+        except FileNotFoundError:
+            pass
+    return h.hexdigest()[:8]
+
 
 def load_registry():
     import json as _json
@@ -183,8 +200,8 @@ def parallel_question(lines, starts, letter, k):
 
 def build_messages(rng, k, condition, task, wording):
     """Returns (messages, gold, meta) where meta carries task-specific extras."""
-    fmt = ({1: "city name", 2: "city name", 3: "single letter",
-            4: "element name", 5: "number"}[k] if task == "facts" else
+    fmt = ("number" if task == "facts" else
+           "country name" if task == "facts_parallel" else
            "depot name" if task == "arith_parallel_max" else
            "number" if task in ("parallel_count", "arith", "arith_parallel") else "code")
     if condition == "cot":
@@ -202,6 +219,9 @@ def build_messages(rng, k, condition, task, wording):
             steps = " -> ".join(full[:kk + 1])
             reasoning = f"Following the chain: {steps}."
             return q, gold, reasoning, full
+        elif task == "facts_parallel":
+            q, gold, chain, reasoning = task_facts.generate_parallel(rng, kk)
+            return q, gold, reasoning, None
         elif task == "facts":
             q, gold, chain, reasoning = task_facts.generate(rng, kk)
             return q, gold, reasoning, None
@@ -226,16 +246,28 @@ def build_messages(rng, k, condition, task, wording):
                          + f". The one landing on a code starting with {letter} is {gold}.")
             return q, gold, reasoning, None
 
-    for _ in range(FEWSHOT):
-        q, gold, reasoning, _ = make(k)
-        if condition == "filler":
-            q += "\n\n" + FILLER_TEXT
-        messages.append({"role": "user", "content": q})
-        messages.append({"role": "assistant",
-                         "content": (f"{reasoning}\nAnswer: {gold}" if condition == "cot"
-                                     else f"Answer: {gold}")})
-
+    # Draw the TARGET first, then few-shot examples that differ from it. Drawing
+    # shots first meant that with a small fact pool the target question could
+    # appear verbatim in its own few-shot block -- 41% of facts trials -- handing
+    # the model the answer to copy.
     q, gold, _, full = make(k)
+    target_q = q
+
+    shots, guard = [], 0
+    while len(shots) < FEWSHOT and guard < 500:
+        guard += 1
+        fq, fgold, freasoning, _ = make(k)
+        if fq == target_q or any(fq == s[0] for s in shots):
+            continue
+        shots.append((fq, fgold, freasoning))
+    for fq, fgold, freasoning in shots:
+        if condition == "filler":
+            fq += "\n\n" + FILLER_TEXT
+        messages.append({"role": "user", "content": fq})
+        messages.append({"role": "assistant",
+                         "content": (f"{freasoning}\nAnswer: {fgold}" if condition == "cot"
+                                     else f"Answer: {fgold}")})
+
     if condition == "filler":
         q += "\n\n" + FILLER_TEXT
     messages.append({"role": "user", "content": q})
@@ -243,7 +275,7 @@ def build_messages(rng, k, condition, task, wording):
         # trailing space matters: a prefill ending at ":" lets the model treat the
         # turn as complete and emit EOS, which produced 30% empty answers on the
         # facts task. With the space it continues into the answer.
-        prefill = "Answer: " if task == "facts" else "Answer:"
+        prefill = "Answer:" if task == "facts_parallel" else "Answer: "
         messages.append({"role": "assistant", "content": prefill})
     return messages, gold, full
 
@@ -251,12 +283,16 @@ def build_messages(rng, k, condition, task, wording):
 
 def extract_answer(condition, completion, task="serial"):
     numeric = task in ("parallel_count", "arith", "arith_parallel")
+    if task == "facts_parallel":
+        body = re.sub(r"^\s*Answer\s*:?\s*", "", completion)
+        m = re.findall(r"\b([A-Z][a-zA-Z]{2,})\b", body)
+        m = [x for x in m if x != "Answer"]
+        return (m[-1] if condition == "cot" else m[0]) if m else None
     if task == "facts":
         # strip the echoed prefill first: "Answer" matches the name pattern below
         # and silently became every trial's prediction
         body = re.sub(r"^\s*Answer\s*:?\s*", "", completion)
-        m = re.findall(r"\b([A-Z][a-zA-Z]{2,})\b|\b([A-Z])\b|\b(\d+)\b", body)
-        vals = [a or b or c for a, b, c in m if (a or b or c) != "Answer"]
+        vals = re.findall(r"\b\d+\b", body)
         return (vals[-1] if condition == "cot" else vals[0]) if vals else None
     if task == "arith_parallel_max":
         m = re.findall(r"\b(Alpha|Bravo|Delta|Echo|Golf|Hotel|India|Ridge)\b", completion)
@@ -309,7 +345,10 @@ async def run_one(client, sem, model, seed, k, condition, task, wording, idx):
     rng = random.Random(seed)
     messages, gold, full = build_messages(rng, k, condition, task, wording)
     # 8 tokens truncated multi-token answers such as element names ("Sul|fur")
-    max_tokens = 4000 if condition == "cot" else (16 if task == "facts" else 8)
+    # deep fact chains reason for 3500+ tokens; a 4000 cap truncated 43% of them
+    # at k=6, which the audit correctly flagged as a validity failure
+    cot_cap = 12000 if task in ("facts", "facts_parallel") else 4000
+    max_tokens = cot_cap if condition == "cot" else (16 if task == "facts" else 8)
     res = await call_api(client, sem, model, messages, max_tokens,
                          allow_reasoning=(condition == "cot"))
     completion = res["text"]
@@ -326,6 +365,7 @@ async def run_one(client, sem, model, seed, k, condition, task, wording, idx):
         "error": int(err), "finish": res["finish"],
         "out_tokens": res["out_tokens"], "reasoning_tokens": res["reasoning_tokens"],
         "model": model.split("/")[-1], "completion": completion[:2000],
+        "run_id": RUN_ID,
         "prompt": messages[-2]["content"][:6000] if condition != "cot" else messages[-1]["content"][:6000],
         "seed": seed,
     }
@@ -339,7 +379,8 @@ async def main():
                     help="permit a model with no published J-Lens (no internals follow-up possible)")
     ap.add_argument("--task", default="serial",
                     choices=["serial", "parallel", "parallel_count",
-                             "arith", "arith_parallel", "arith_parallel_max", "facts"])
+                             "arith", "arith_parallel", "arith_parallel_max",
+                             "facts", "facts_parallel"])
     ap.add_argument("--wording", default="default", choices=["default", "explicit"])
     ap.add_argument("--n", type=int, default=30)
     ap.add_argument("--concurrency", type=int, default=20)
@@ -352,6 +393,9 @@ async def main():
     ap.add_argument("--conditions", default="immediate,filler,cot")
     ap.add_argument("--ks", default="1,2,3,4,6,8")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--tag-run", action="store_true", dest="tag_run",
+                    help="append the run id to the output filename so a stale "
+                         "process cannot overwrite a fresh run's results")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -360,7 +404,9 @@ async def main():
     set_nodes(args.nodes)
     set_filler(args.filler_n)
     set_fewshot(args.fewshot)
-    if max(ks) >= args.nodes:
+    # only the lookup-table tasks are bounded by table size; the fact tasks have
+    # no table, and this guard silently killed every parallel cell at k>=12
+    if args.task in ("serial", "parallel", "parallel_count") and max(ks) >= args.nodes:
         sys.exit(f"--nodes ({args.nodes}) must exceed max k ({max(ks)})")
 
     if args.dry_run:
@@ -378,7 +424,13 @@ async def main():
     if not key:
         sys.exit("Set OPENROUTER_API_KEY")
 
+    global RUN_ID
+    RUN_ID = f"{code_fingerprint()}-{int(time.time())}"
+    run_id = RUN_ID
     out = args.out or f"v2_{args.task}_{args.wording}_{args.model.split('/')[-1]}"
+    if args.tag_run:
+        out = f"{out}__{run_id}"
+    print(f"run_id {run_id}  ->  {out}.csv")
     sem = asyncio.Semaphore(args.concurrency)
     headers = {"Authorization": f"Bearer {key}",
                "HTTP-Referer": "https://localhost", "X-Title": "serial-depth-pilot"}

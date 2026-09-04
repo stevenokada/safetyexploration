@@ -46,7 +46,9 @@ def check_version(vid, narrative, data, legacy):
     # a version whose data shape matches no renderer falls through and throws,
     # which silently blanks every chart on that tab
     renderer_js = (ASSETS / "charts.js").read_text()
-    shapes = re.findall(r"if \(D\.(\w+)\)\s*\{\s*render", renderer_js)
+    shapes = set(re.findall(r"if \(D\.(\w+)[^)]*\)\s*\{\s*render", renderer_js))
+    shapes |= set(re.findall(r"D\.(\w+)\s*&&\s*D\.\w+\)\s*\{\s*render", renderer_js))
+    shapes = sorted(shapes)
     if shapes and not any(k in data for k in shapes) and not ("grid" in data and "meta" in data):
         problems.append(f"data shape matches no renderer (has {sorted(data)[:4]}; "
                         f"renderers dispatch on {shapes})")

@@ -63,6 +63,7 @@ function renderReport(root, D){
   // Dispatch on the data shape. Each version has its own renderer, and a version
   // whose shape matches none of them would fall through into the v01 code and
   // throw on the first missing key, taking every chart on that tab with it.
+  if (D.serial && D.parallel) { renderV4(root, D); return; }  // v04: facts depth + control
   if (D.facts)  { renderV3(root, D); return; }   // v03: real-world facts + lens
   if (D.width2) { renderV2(root, D); return; }   // v02: width sweep, bounds, filler
   if (!D.grid || !D.meta) {                      // unknown shape: fail loudly, not silently
@@ -429,4 +430,70 @@ function renderV3(root, D){
   }
   if (D.transcripts) buildBrowser(root, D.transcripts);
   const kk=q(root,'[data-key="k"]'); if(kk) kk.textContent='3';
+}
+
+
+function renderV4(root, D){
+  const S = D.serial, xs = S.map(r=>r.k);
+  lineChart(q(root,'[data-fig="serial"]'), [
+    {k:xs, v:S.map(r=>r.cot), color:'var(--count)'},
+    {k:xs, v:S.map(r=>r.immediate), color:'var(--serial)'},
+    {k:xs, v:S.map(r=>r.filler===undefined?NaN:r.filler), color:'var(--parallel)', dash:true},
+  ], {xs, xlab:'hops of real-world fact composition', ylab:'accuracy', w:660, h:300,
+      aria:'Chain of thought is perfect at every depth; one-shot answering collapses after two hops.'});
+  legend(q(root,'[data-leg="serial"]'), [
+    {label:'chain of thought', color:'var(--count)'},
+    {label:'one shot, no filler', color:'var(--serial)'},
+    {label:'one shot + filler', color:'var(--parallel)'}]);
+
+  q(root,'[data-tbl="serial"]').innerHTML = S.map(r =>
+    r.filler===undefined ? `<tr><td class="num">${r.k}</td><td class="num">${r.immediate.toFixed(3)}</td>
+      <td colspan="4" style="color:var(--muted)">no filler condition at this depth</td></tr>`
+    : `<tr><td class="num">${r.k}</td><td class="num">${r.immediate.toFixed(3)}</td>
+      <td class="num">${r.filler.toFixed(3)}</td><td class="num">${r.budget}</td>
+      <td class="num" style="color:${r.p<0.05?'var(--parallel)':'var(--muted)'}">
+        ${r.diff>=0?'+':''}${r.diff.toFixed(3)}</td>
+      <td class="num">${r.p<0.001?'&lt;0.001':r.p.toFixed(3)}</td></tr>`).join('');
+
+  // dose-response at k=4
+  const dm=q(root,'[data-fig="dose"]'), rows=D.dose.rows;
+  const W=560,H=210,M={l:60,r:20,t:14,b:44};
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img'});
+  svg.setAttribute('aria-label','Filler accuracy at four hops rises once the budget is large enough, then saturates.');
+  const maxv=0.12, bw=(W-M.l-M.r)/rows.length;
+  const base=D.dose.baseline;
+  const ybase=(H-M.b)-(base/maxv)*(H-M.b-M.t);
+  svg.appendChild(el('line',{x1:M.l,x2:W-M.r,y1:ybase,y2:ybase,stroke:'var(--serial)',
+    'stroke-width':1.5,'stroke-dasharray':'4 4'}));
+  const bl=el('text',{x:W-M.r,y:ybase-5,'text-anchor':'end',class:'tick'});
+  bl.textContent='no filler '+base.toFixed(3); svg.appendChild(bl);
+  rows.forEach((r,i)=>{
+    const h=(r.acc/maxv)*(H-M.b-M.t), x=M.l+i*bw+bw*0.22;
+    svg.appendChild(el('rect',{x,y:(H-M.b)-h,width:bw*0.56,height:h,rx:2,
+      fill: r.p<0.05?'var(--parallel)':'var(--muted)'}));
+    const v=el('text',{x:x+bw*0.28,y:(H-M.b)-h-6,'text-anchor':'middle',class:'tick'});
+    v.textContent=r.acc.toFixed(3); svg.appendChild(v);
+    const lab=el('text',{x:x+bw*0.28,y:H-M.b+15,'text-anchor':'middle',class:'tick'});
+    lab.textContent=r.budget+' tok'; svg.appendChild(lab);
+  });
+  const xl=el('text',{x:W/2,y:H-6,'text-anchor':'middle',class:'axlab'});
+  xl.textContent='filler budget at four hops (blue = significant vs no filler)';
+  svg.appendChild(xl); dm.appendChild(svg);
+
+  // parallel: cheap vs ordering aggregation, against chance
+  const P=D.parallel, pxs=P.map(r=>r.k);
+  lineChart(q(root,'[data-fig="parallel"]'), [
+    {k:pxs, v:P.map(r=>r.cot), color:'var(--count)'},
+    {k:pxs, v:P.map(r=>r.cheap), color:'var(--parallel)'},
+    {k:pxs, v:P.map(r=>r.ordering), color:'var(--serial)'},
+    {k:pxs, v:P.map(r=>r.chance), color:'var(--muted)', dash:true},
+  ], {xs:pxs, xlab:'independent retrievals (k)', ylab:'accuracy', w:660, h:300,
+      aria:'Cheap aggregation holds a steady margin over chance; ordering sits at chance.'});
+  legend(q(root,'[data-leg="parallel"]'), [
+    {label:'chain of thought', color:'var(--count)'},
+    {label:'cheap aggregation (one-letter test)', color:'var(--parallel)'},
+    {label:'ordering (failed control)', color:'var(--serial)'}], 'dashed = chance (1/k)');
+
+  if (D.transcripts) buildBrowser(root, D.transcripts);
+  const kk=q(root,'[data-key="k"]'); if(kk) kk.textContent='2';
 }

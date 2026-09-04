@@ -1,0 +1,30 @@
+### serial immediate k=1..6
+immediate  1 1.000      0     0
+immediate  2 1.000      0     0
+immediate  3 0.383      0     0
+immediate  4 0.017      0     0
+immediate  5 0.017      0     0
+immediate  6 0.008      0     0
+### serial cot (validity)
+      cot  1 1.00      0     0
+      cot  2 1.00      0     0
+      cot  3 1.00      0     0
+      cot  4 1.00      0     0
+      cot  5 0.95      0     0
+      cot  6 0.95      0     0
+!! VALIDITY AUDIT: 2/6 cells FAILED — do not treat these as depth measurements
+ cot  5 40 0.95          0.95 unparseable=5%
+ cot  6 40 0.95          0.95 unparseable=5%
+### filler k=2 n=722
+   filler  2  1.0      0     0
+### filler k=3 n=454
+   filler  3 0.658      0     0
+### filler k=4 n=405
+   filler  4 0.017      0     0
+### filler k=5 n=1032
+   filler  5 0.058      0     0
+### filler k=6 n=1345
+   filler  6 0.083      0     0
+### parallel immediate k=2..16
+### parallel cot (validity)
+### ALL DONE

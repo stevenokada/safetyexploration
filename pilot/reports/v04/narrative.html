@@ -1,0 +1,113 @@
+<div class="keys">
+  <div class="key"><div class="n p" data-key="k">2</div><div class="l">Memorised facts chained silently before accuracy falls away</div></div>
+  <div class="key"><div class="n s">+27</div><div class="l">Points filler tokens buy at the one depth still within reach</div></div>
+  <div class="key"><div class="n p">16</div><div class="l">Independent retrievals that hold a steady margin over chance</div></div>
+  <div class="key"><div class="n">41%</div><div class="l">Trials in the previous run that leaked their own answer</div></div>
+</div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">01</span><h2>A deeper chain, and a correction</h2></div>
+  <p>The previous run measured real-world fact composition to three hops and reported a collapse at four. Two problems have since surfaced, and both change the numbers.</p>
+  <p>The chain itself was shallow by construction: it answered with a city, then a letter, then an element, then a number, so each added hop changed what the question was asking. Fixing the answer to a single type and extending <em>backwards</em> removes that limit. The answer is always an atomic number; depth controls only how far back the question starts.</p>
+</section>
+</div>
+
+<div class="specimen">
+  <div class="cap"><span>The chain</span><span class="tag p">nothing supplied in context</span></div>
+  <pre>work → creator → country → capital → first letter → element → atomic number
+The Magic Flute → Mozart → Austria → Vienna → V → Vanadium → 23
+
+k=2  "atomic number of the element whose symbol is V"
+k=3  "... whose symbol is the first letter of Copenhagen"
+k=6  "... the capital of the country where the composer of The Magic Flute was born"</pre>
+</div>
+
+<div class="measure">
+  <div class="callout">
+    <span class="lab">The correction</span>
+    <p>Few-shot examples were drawn before the target question, independently, from a small pool. The target could therefore appear verbatim in its own few-shot block, with the answer attached — <strong>41% of trials</strong>. Every fact-task number published previously is inflated by this, most severely at the depths where the limit actually lives. The generator now draws the target first and rejects any example matching it; leakage is zero. Everything below is from clean runs.</p>
+  </div>
+</div>
+
+<figure>
+  <div class="ftitle">Two hops silently, then a cliff</div>
+  <div class="fsub">n=120 forced-answer, n=40 chain-of-thought. Reasoning aloud succeeds at every depth.</div>
+  <div class="legend" data-leg="serial"></div>
+  <div class="chart-scroll"><div data-fig="serial"></div></div>
+  <figcaption>Chain-of-thought is perfect at all six depths, so each one is solvable and the collapse is a limit on unwritten computation alone. Answering in one shot holds at ceiling through two hops, reaches 0.383 at three, and is at the floor from four onward. The earlier run put the ceiling a full hop higher; that was the answer leakage.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">02</span><h2>Filler tokens, and how much is enough</h2></div>
+  <p>Filler was given a budget matched to how many tokens the model spends reasoning aloud at each depth, rather than an arbitrary fixed count.</p>
+</section>
+</div>
+
+<div class="tablewrap measure">
+<table>
+  <thead><tr><th>Depth</th><th>No filler</th><th>Filler</th><th>Budget</th><th>Difference</th><th>Paired p</th></tr></thead>
+  <tbody data-tbl="serial"></tbody>
+</table>
+</div>
+
+<div class="measure">
+  <p>The effect is largest at three hops — the only depth sitting in the sensitive middle of the curve — and small everywhere past it. At two hops there is no room to improve; from four on, there is little to rescue.</p>
+  <p>Four hops initially showed nothing at all, which looked like a clean ceiling effect. It was not.</p>
+</div>
+
+<figure>
+  <div class="ftitle">The four-hop null was a dosing error</div>
+  <div class="fsub">Filler budget against accuracy at four hops. Baseline without filler is 0.017.</div>
+  <div class="chart-scroll"><div data-fig="dose"></div></div>
+  <figcaption>Matching the budget to chain-of-thought length per depth seemed principled, but chain-of-thought length is not monotonic in depth — it ran 722, 454, 405, 1032, 1345 tokens for two through six hops. Four hops therefore received the smallest budget of any depth. Given a budget comparable to its neighbours the effect appears, and it saturates: 1345 and 2688 tokens give identical accuracy.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">03</span><h2>The same retrievals, unchained</h2></div>
+  <p>The previous run had no parallel control on real-world knowledge, so its depth claim rested on synthetic tasks alone. The control asks for the same kind of retrieval, k times, with nothing feeding anything else: given k countries, identify one by a property of its capital. Serial depth stays at two however large k grows.</p>
+  <p>The first attempt asked which capital comes first alphabetically. It failed, and the failure is worth showing.</p>
+</section>
+</div>
+
+<figure>
+  <div class="ftitle">Aggregation cost, isolated</div>
+  <div class="fsub">Identical retrievals in both conditions; only the final question differs. Dashed line is chance (1/k).</div>
+  <div class="legend" data-leg="parallel"></div>
+  <div class="chart-scroll"><div data-fig="parallel"></div></div>
+  <figcaption>Asked to order the retrieved capitals alphabetically, the model sits at or below chance from two retrievals to twelve, even though reasoning aloud solves it every time — a character-level comparison across several items is itself out of latent reach. Asked instead which capital begins with a given letter, a single-character test per item, it holds a steady margin of roughly 1.8 times chance from four retrievals to sixteen. The retrievals are the same; only the cost of combining them changed.</figcaption>
+</figure>
+
+<div class="measure">
+  <p>Against the serial task at matched work, the contrast is direct: at four real-world retrievals, chaining them yields 0.017 while performing them independently yields 0.450. Depth is the binding constraint, not the amount of retrieval — the same conclusion the synthetic tasks reached, now on ordinary world knowledge.</p>
+</div>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">04</span><h2>The transcripts</h2></div>
+  <p>Prompts and responses behind these numbers, for both the chained task and the parallel control. Forced-answer trials are prefilled and capped short, so completions are terse; reasoning trials show the full working.</p>
+</section>
+</div>
+
+<figure>
+  <div class="ftitle">Prompt and response browser</div>
+  <div class="fsub">Real trials across depths, conditions and both task shapes.</div>
+  <div class="tx-controls" data-tx="controls"></div>
+  <div data-tx="list"></div>
+  <figcaption>Filter to the chained task at three hops to see where the model still succeeds, and to four to see the same chain fail. The parallel entries show the matched control at four and sixteen retrievals.</figcaption>
+</figure>
+
+<div class="measure">
+<section>
+  <div class="sec-head"><span class="sec-num">05</span><h2>Limits</h2></div>
+  <ul>
+    <li><strong>One model.</strong> Everything here is qwen3.6-27b. The synthetic tasks were run across three.</li>
+    <li><strong>Small pool.</strong> Six chains for the serial task, twenty-four country–capital pairs for the control, so questions repeat across trials.</li>
+    <li><strong>The hops are not homogeneous.</strong> One step extracts a word's first letter, a character-level operation that tokenised models find much harder than retrieval. The collapse between two and three hops may partly reflect that step rather than depth alone.</li>
+    <li><strong>The two tasks are matched on retrieval count, not on total difficulty.</strong> The parallel control carries a scan-and-test structure the chained task lacks, which is why it sits below the chained task at two retrievals.</li>
+    <li><strong>Chain-of-thought needed a large token budget.</strong> At six hops the median reasoning trace is 1345 tokens and a minority run past 12,000; those are scored as failures.</li>
+  </ul>
+</section>
+</div>

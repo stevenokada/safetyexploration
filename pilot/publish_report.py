@@ -130,7 +130,15 @@ def cmd_stage(args):
     vdir = REPORTS / f"v{ver:02d}"
     vdir.mkdir(parents=True, exist_ok=True)
     if REPORT_DATA.exists():
-        shutil.copy2(REPORT_DATA, vdir / "report_data.json")
+        # preserve transcripts already collected for this version: staging used to
+        # copy the working data file over them, silently emptying the browser
+        dest = vdir / "report_data.json"
+        incoming = json.loads(REPORT_DATA.read_text())
+        if dest.exists():
+            existing = json.loads(dest.read_text())
+            if existing.get("transcripts") and not incoming.get("transcripts"):
+                incoming["transcripts"] = existing["transcripts"]
+        dest.write_text(json.dumps(incoming))
     narrative = vdir / "narrative.html"
     if not narrative.exists():
         # a new version needs its own prose; start from the previous version's
