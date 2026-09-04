@@ -14,7 +14,12 @@
           "NLA: ceselder/qwen3.6-27b-nla-rl @ layer 42"
         ],
         "gpu": "1x80GB bf16 / 4-bit on 24GB",
-        "why": "richest tooling of any J-Lens model: single-token lens, multi-token template lens, and a natural-language autoencoder. Primary subject."
+        "why": "richest tooling of any J-Lens model: single-token lens, multi-token template lens, and a natural-language autoencoder. Primary subject.",
+        "lenses": {
+          "j-lens": "j-lens/lens.pt",
+          "r-lens": "r-lens/lens.pt",
+          "note": "dense 27B; R-lens expected to help on early layers"
+        }
       },
       "qwen/qwen3.6-35b-a3b": {
         "hf": "Qwen/Qwen3.6-35B-A3B",
@@ -23,7 +28,12 @@
         "arch": "moe",
         "openrouter": true,
         "gpu": "1x80GB bf16 / 4-bit on 24GB",
-        "why": "MoE counterpart to qwen3.6-27b at matched scale and generation, both lensed. Enables a behavioral test of the prediction that MoE has lower opaque serial depth than dense."
+        "why": "MoE counterpart to qwen3.6-27b at matched scale and generation, both lensed. Enables a behavioral test of the prediction that MoE has lower opaque serial depth than dense.",
+        "lenses": {
+          "j-lens": "j-lens/lens.pt",
+          "r-lens": "r-lens/lens.pt (swept-winner MoE config: LRP rules on all routed experts, frozen routing)",
+          "note": "CAUTION: the R-lens writeup reports no R-lens advantage on its two smallest dense and MoE models; verify empirically on this one before trusting an early-layer null"
+        }
       },
       "google/gemma-3-27b-it": {
         "hf": "google/gemma-3-27b-it",
@@ -32,9 +42,15 @@
         "arch": "dense",
         "openrouter": true,
         "gpu": "1x80GB bf16 / 4-bit on 24GB",
-        "why": "only non-Qwen lensed model. Required to show results are not a Qwen-family artifact. Well supported in TransformerLens and nnsight."
+        "why": "only non-Qwen lensed model. Required to show results are not a Qwen-family artifact. Well supported in TransformerLens and nnsight.",
+        "lenses": {
+          "j-lens": "j-lens/lens.pt",
+          "r-lens": "r-lens/lens.pt",
+          "note": "dense 27B, non-Qwen lineage"
+        }
       }
-    }
+    },
+    "_lens_policy": "Read with R-lens as primary (LRP-modified backward graph, RelP arXiv:2508.21258; cleaner and earlier reads on the first half of layers). Keep J-lens as the matched control: forward values are bit-identical and only gradients differ, so agreement between the two is a free artifact check. Report both; a claim resting on one lens alone is not established."
   },
   "excluded": {
     "_note": "Dropped by the open-weights + J-Lens requirement. Kept for provenance: pilot results on these are in the repo but cannot be followed up mechanistically.",
