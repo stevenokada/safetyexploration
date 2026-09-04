@@ -101,13 +101,16 @@ def cmd_stage(args):
         sys.exit(f"missing {REPORT_HTML}")
     m = load_manifest()
     ver = len(m["versions"]) + 1
+    # capture git state BEFORE staging writes anything, otherwise the stamp and
+    # the archive dirty the tree and every version reports itself as dirty
+    dirty = bool(git("status", "--porcelain"))
     fp = data_fingerprint()
     meta = {
         "version": ver,
         "date": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "summary": args.summary,
         "git_commit": git("rev-parse", "--short", "HEAD", default="uncommitted"),
-        "git_dirty": bool(git("status", "--porcelain")),
+        "git_dirty": dirty,
         "git_branch": git("branch", "--show-current", default="?"),
         "n_files": len(fp),
         "total_rows": sum(v["rows"] for v in fp.values()),
