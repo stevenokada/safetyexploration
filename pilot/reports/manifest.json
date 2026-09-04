@@ -168,7 +168,8 @@
         "DeepSeek V3 parallel k=24": 0.475,
         "overshoot k=4 (default)": 0.717
       },
-      "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b"
+      "artifact_url": "https://claude.ai/code/artifact/17c0cd78-a8b1-4378-b7ea-24daa7337a1b",
+      "tab_label": "Pilot \u00b7 6 mixed models"
     }
   ]
 }

@@ -132,6 +132,29 @@ ul{margin:0 0 16px; padding-left:20px}
 li{margin-bottom:9px}
 footer{border-top:1px solid var(--rule); margin-top:64px; padding:28px 0 72px;
   font-size:13.5px; color:var(--muted)}
+
+.tick{font-family:"IBM Plex Mono",monospace; font-size:10.5px; fill:var(--muted)}
+.axlab{font-family:"IBM Plex Mono",monospace; font-size:10.5px; fill:var(--muted);
+  letter-spacing:.05em}
+
+
+/* ---------- run tabs ---------- */
+.tabs{display:flex; gap:6px; flex-wrap:wrap; border-bottom:1px solid var(--rule);
+  margin:0 0 30px; padding-bottom:0}
+.tabs button{appearance:none; background:none; border:0; border-bottom:2px solid transparent;
+  padding:10px 14px 11px; cursor:pointer; text-align:left; color:var(--muted);
+  font-family:"IBM Plex Sans",sans-serif; display:flex; flex-direction:column; gap:2px;
+  border-radius:3px 3px 0 0}
+.tabs button:hover{background:var(--surface-2); color:var(--ink-2)}
+.tabs button[aria-selected="true"]{color:var(--ink); border-bottom-color:var(--serial)}
+.tabs button:focus-visible{outline:2px solid var(--parallel); outline-offset:-2px}
+.tabs .tv{font-weight:600; font-size:14.5px}
+.tabs .td{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.03em}
+.provenance{font-family:"IBM Plex Mono",monospace; font-size:11.5px; line-height:1.7;
+  color:var(--muted); background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:4px; padding:12px 16px; margin:0 0 34px; max-width:660px;
+  margin-left:auto; margin-right:auto}
+.provenance code{background:none; padding:0}
 </style>
 
 <div class="wrap">
@@ -145,11 +168,17 @@ footer{border-top:1px solid var(--rule); margin-top:64px; padding:28px 0 72px;
   </div>
 </header>
 
+<div class="tabs" role="tablist" aria-label="Experiment runs">
+<button role="tab" id="tab-v01" aria-controls="panel-v01" aria-selected="true" data-tab="v01"><span class="tv">Pilot · 6 mixed models</span><span class="td">2026-09-04 · 24,914 trials</span></button>
+</div>
+
+<div role="tabpanel" id="panel-v01" aria-labelledby="tab-v01" data-panel="v01">
+<p class="provenance">Current run · 2026-09-04 · commit <code>cbc4ed4</code> · 24,914 logged trials across 36 result files<br>Initial published findings: serial-vs-parallel control across 6 models, wording control, landing-position analysis, width sweep to k=24. Predates the J-Lens-only model restriction, so includes closed models.</p>
 <div class="keys">
-  <div class="key"><div class="n s" id="k-serial">—</div><div class="l">Chained lookups a model completes reliably with no chain of thought</div></div>
-  <div class="key"><div class="n p" id="k-parallel">—</div><div class="l">Independent lookups still solved at the same accuracy</div></div>
-  <div class="key"><div class="n" id="k-over">—</div><div class="l">Answers landing <em>past</em> the requested stop at k=4</div></div>
-  <div class="key"><div class="n" id="k-leak">—</div><div class="l">Forced-answer responses that leaked visible reasoning</div></div>
+  <div class="key"><div class="n s" data-key="serial">—</div><div class="l">Chained lookups a model completes reliably with no chain of thought</div></div>
+  <div class="key"><div class="n p" data-key="parallel">—</div><div class="l">Independent lookups still solved at the same accuracy</div></div>
+  <div class="key"><div class="n" data-key="over">—</div><div class="l">Answers landing <em>past</em> the requested stop at k=4</div></div>
+  <div class="key"><div class="n" data-key="leak">—</div><div class="l">Forced-answer responses that leaked visible reasoning</div></div>
 </div>
 
 <div class="measure">
@@ -191,14 +220,14 @@ begin with a letter in A-M? Answer with just the number.</pre>
 
   <h3>Three conditions</h3>
   <p><strong>Immediate</strong> forces an answer with no reasoning: the assistant turn is prefilled with <code>Answer:</code>, generation is capped at 8 tokens, and provider-side hidden reasoning is disabled. <strong>Filler</strong> appends 100 counting tokens before that same forced answer, following the filler-token literature. <strong>CoT</strong> lets the model reason freely, establishing that the task is solvable at all.</p>
-  <p>Compliance was near-perfect: across all forced-answer trials, <span id="leak-inline">—</span> leaked visible reasoning, and CoT accuracy stayed at or near ceiling through k=8 for five of six models — so any collapse in the immediate condition is a limit on unwritten computation, not on task comprehension.</p>
+  <p>Compliance was near-perfect: across all forced-answer trials, <span data-key="leak-inline">—</span> leaked visible reasoning, and CoT accuracy stayed at or near ceiling through k=8 for five of six models — so any collapse in the immediate condition is a limit on unwritten computation, not on task comprehension.</p>
 </div>
 
 <figure>
   <div class="ftitle">Accuracy falls away within two or three hops</div>
   <div class="fsub">Serial task, immediate condition. Every model is perfect at one hop and near the floor by four.</div>
-  <div class="legend" id="leg-grid"></div>
-  <div class="chart-scroll"><div id="fig-grid"></div></div>
+  <div class="legend" data-leg="grid"></div>
+  <div class="chart-scroll"><div data-fig="grid"></div></div>
   <figcaption>All six models solve a single lookup perfectly. By k=3 the best model is answering roughly a third of trials correctly, and the curves flatten into a low band rather than decaying smoothly — the failure arrives early and then stops getting worse.</figcaption>
 </figure>
 
@@ -213,7 +242,7 @@ begin with a letter in A-M? Answer with just the number.</pre>
 <figure>
   <div class="ftitle">Where answers actually land</div>
   <div class="fsub">Serial, immediate, pooled across three models (n=120 per depth). Bars show the distribution of landing positions; the marked bar is correct.</div>
-  <div class="chart-scroll"><div id="fig-landing"></div></div>
+  <div class="chart-scroll"><div data-fig="landing"></div></div>
   <figcaption>At k=2 the most common answer is three hops out, not two. By k=3 the distribution smears across positions 3 through 10. This is not a counter that is off by one — it is traversal that overshoots and then loses its place.</figcaption>
 </figure>
 
@@ -224,7 +253,7 @@ begin with a letter in A-M? Answer with just the number.</pre>
 <div class="tablewrap measure">
 <table>
   <thead><tr><th>Depth k</th><th>Overshoot, default wording</th><th>Overshoot, explicit wording</th><th>Difference</th></tr></thead>
-  <tbody id="tbl-wording"></tbody>
+  <tbody data-tbl="wording"></tbody>
 </table>
 </div>
 
@@ -240,8 +269,8 @@ begin with a letter in A-M? Answer with just the number.</pre>
 <figure>
   <div class="ftitle">Traversal continues past the point of accuracy</div>
   <div class="fsub">Mean landing position versus requested depth, serial task, immediate condition. The dashed line is a perfectly controlled walk.</div>
-  <div class="legend" id="leg-eff"></div>
-  <div class="chart-scroll"><div id="fig-eff"></div></div>
+  <div class="legend" data-leg="eff"></div>
+  <div class="chart-scroll"><div data-fig="eff"></div></div>
   <figcaption>Curves sit above the diagonal at low k (overshoot) and fall below it at high k (undershoot), crossing near six to seven hops. Read as a capability estimate rather than an accuracy score, latent traversal reaches considerably further than the accuracy curves suggest.</figcaption>
 </figure>
 
@@ -255,8 +284,8 @@ begin with a letter in A-M? Answer with just the number.</pre>
 <figure>
   <div class="ftitle">Same lookups, different shape, opposite outcomes</div>
   <div class="fsub">Immediate condition, n=40 per cell. Solid lines: no filler. Dashed: 100 filler tokens.</div>
-  <div class="legend" id="leg-task"></div>
-  <div class="panels" id="fig-task"></div>
+  <div class="legend" data-leg="task"></div>
+  <div class="panels" data-fig="task"></div>
   <figcaption>The parallel task holds between 75% and 92% out to eight lookups on every model, while the serial task is already at or below 65% at two. The count variant sits between them: it forbids the reverse-search shortcut available in the other parallel task, so its decline reflects the cost of aggregating many results rather than of chaining them.</figcaption>
 </figure>
 
@@ -274,9 +303,9 @@ begin with a letter in A-M? Answer with just the number.</pre>
 <figure>
   <div class="ftitle">Width degrades gracefully; depth does not degrade — it is already gone</div>
   <div class="fsub">Immediate condition on a 32-code table, k up to 24, n=40 per cell.</div>
-  <div class="legend" id="leg-width"></div>
-  <div class="panels" id="fig-width"></div>
-  <figcaption id="cap-width"></figcaption>
+  <div class="legend" data-leg="width"></div>
+  <div class="panels" data-fig="width"></div>
+  <figcaption data-cap="width"></figcaption>
 </figure>
 
 <div class="measure">
@@ -303,1205 +332,19 @@ begin with a letter in A-M? Answer with just the number.</pre>
 </section>
 </div>
 
+</div>
+
 <footer class="measure">
   <p>Pilot run September 2026. All conditions temperature 0 via OpenRouter, three-shot prompting, provider-side reasoning disabled for forced-answer conditions. Models: Claude Opus 4.5, Gemini 2.5 Flash, DeepSeek V3, Kimi K2, Qwen3-Max, GPT-5.1.</p>
 <!--version-stamp--><p style="font-family:'IBM Plex Mono',monospace;font-size:12px;opacity:.75">Version 1 · 2026-09-04 · commit cbc4ed4 · 24,914 logged trials across 36 result files</p><!--version-stamp-->
 </footer>
+
 </div>
 
-<script id="data" type="application/json">{
- "grid": {
-  "Claude Opus 4.5": {
-   "cot": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0
-    ],
-    "eff": [
-     1.0,
-     2.0,
-     3.0,
-     4.0,
-     6.0,
-     8.0
-    ]
-   },
-   "filler": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.4,
-     0.133,
-     0.267,
-     0.267,
-     0.367
-    ],
-    "eff": [
-     1.0,
-     2.6,
-     3.9,
-     4.87,
-     6.67,
-     8.17
-    ]
-   },
-   "immediate": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.267,
-     0.1,
-     0.333,
-     0.4,
-     0.233
-    ],
-    "eff": [
-     1.0,
-     2.73,
-     4.03,
-     4.97,
-     6.5,
-     7.83
-    ]
-   }
-  },
-  "Gemini 2.5 Flash": {
-   "cot": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     0.967
-    ],
-    "eff": [
-     1.0,
-     2.0,
-     3.0,
-     4.0,
-     6.0,
-     8.03
-    ]
-   },
-   "filler": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.667,
-     0.533,
-     0.333,
-     0.167,
-     0.167
-    ],
-    "eff": [
-     1.0,
-     2.33,
-     3.97,
-     5.13,
-     6.37,
-     6.33
-    ]
-   },
-   "immediate": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.533,
-     0.367,
-     0.267,
-     0.133,
-     0.133
-    ],
-    "eff": [
-     1.0,
-     2.53,
-     4.6,
-     5.37,
-     6.2,
-     6.63
-    ]
-   }
-  },
-  "DeepSeek V3": {
-   "cot": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     0.967,
-     1.0
-    ],
-    "eff": [
-     1.0,
-     2.0,
-     3.0,
-     4.0,
-     6.07,
-     8.0
-    ]
-   },
-   "filler": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.467,
-     0.4,
-     0.233,
-     0.1,
-     0.033
-    ],
-    "eff": [
-     1.0,
-     2.43,
-     4.5,
-     5.63,
-     6.1,
-     5.3
-    ]
-   },
-   "immediate": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     0.933,
-     0.233,
-     0.233,
-     0.1,
-     0.133,
-     0.067
-    ],
-    "eff": [
-     1.07,
-     3.03,
-     5.9,
-     5.77,
-     5.67,
-     6.2
-    ]
-   }
-  },
-  "GPT-5.1": {
-   "cot": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.9,
-     0.667,
-     0.567,
-     0.533,
-     0.5
-    ],
-    "eff": [
-     1.0,
-     1.97,
-     2.67,
-     3.97,
-     5.57,
-     6.6
-    ]
-   },
-   "filler": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.7,
-     0.433,
-     0.2,
-     0.133,
-     0.133
-    ],
-    "eff": [
-     1.0,
-     1.83,
-     3.57,
-     5.47,
-     6.33,
-     6.4
-    ]
-   },
-   "immediate": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.733,
-     0.267,
-     0.033,
-     0.233,
-     0.2
-    ],
-    "eff": [
-     1.0,
-     2.0,
-     3.03,
-     4.57,
-     6.07,
-     5.87
-    ]
-   }
-  },
-  "Kimi K2": {
-   "cot": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0
-    ],
-    "eff": [
-     1.0,
-     2.0,
-     3.0,
-     4.0,
-     6.0,
-     8.0
-    ]
-   },
-   "filler": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.267,
-     0.433,
-     0.3,
-     0.1,
-     0.067
-    ],
-    "eff": [
-     1.0,
-     2.79,
-     3.59,
-     4.43,
-     5.34,
-     4.9
-    ]
-   },
-   "immediate": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.133,
-     0.267,
-     0.3,
-     0.067,
-     0.2
-    ],
-    "eff": [
-     1.0,
-     3.1,
-     4.38,
-     4.87,
-     5.8,
-     6.1
-    ]
-   }
-  },
-  "Qwen3-Max": {
-   "cot": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0
-    ],
-    "eff": [
-     1.0,
-     2.0,
-     3.0,
-     4.0,
-     6.0,
-     8.0
-    ]
-   },
-   "filler": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.567,
-     0.3,
-     0.067,
-     0.033,
-     0.2
-    ],
-    "eff": [
-     1.0,
-     2.6,
-     6.27,
-     6.57,
-     4.27,
-     5.9
-    ]
-   },
-   "immediate": {
-    "k": [
-     1,
-     2,
-     3,
-     4,
-     6,
-     8
-    ],
-    "acc": [
-     1.0,
-     0.5,
-     0.2,
-     0.067,
-     0.033,
-     0.133
-    ],
-    "eff": [
-     1.0,
-     2.93,
-     6.1,
-     6.9,
-     5.37,
-     5.57
-    ]
-   }
-  }
- },
- "wording": {
-  "default": {
-   "k": [
-    1,
-    2,
-    3,
-    4,
-    6,
-    8
-   ],
-   "acc": [
-    1.0,
-    0.367,
-    0.267,
-    0.225,
-    0.175,
-    0.175
-   ],
-   "over": [
-    0.0,
-    0.625,
-    0.708,
-    0.717,
-    0.458,
-    0.333
-   ],
-   "n": [
-    120,
-    120,
-    120,
-    120,
-    120,
-    120
-   ]
-  },
-  "explicit": {
-   "k": [
-    1,
-    2,
-    3,
-    4,
-    6,
-    8
-   ],
-   "acc": [
-    1.0,
-    0.433,
-    0.283,
-    0.167,
-    0.2,
-    0.158
-   ],
-   "over": [
-    0.0,
-    0.567,
-    0.683,
-    0.725,
-    0.458,
-    0.275
-   ],
-   "n": [
-    120,
-    120,
-    120,
-    120,
-    120,
-    120
-   ]
-  }
- },
- "landing": {
-  "2": {
-   "pos": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    11
-   ],
-   "frac": [
-    0.008,
-    0.367,
-    0.508,
-    0.075,
-    0.033,
-    0.008
-   ]
-  },
-  "3": {
-   "pos": [
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11
-   ],
-   "frac": [
-    0.025,
-    0.267,
-    0.425,
-    0.075,
-    0.05,
-    0.033,
-    0.033,
-    0.042,
-    0.033,
-    0.017
-   ]
-  },
-  "4": {
-   "pos": [
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11
-   ],
-   "frac": [
-    0.008,
-    0.05,
-    0.225,
-    0.383,
-    0.125,
-    0.092,
-    0.033,
-    0.025,
-    0.042,
-    0.017
-   ]
-  },
-  "6": {
-   "pos": [
-    0,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11
-   ],
-   "frac": [
-    0.017,
-    0.05,
-    0.042,
-    0.108,
-    0.15,
-    0.175,
-    0.167,
-    0.108,
-    0.05,
-    0.092,
-    0.042
-   ]
-  },
-  "8": {
-   "pos": [
-    0,
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11
-   ],
-   "frac": [
-    0.008,
-    0.008,
-    0.05,
-    0.05,
-    0.05,
-    0.067,
-    0.092,
-    0.167,
-    0.175,
-    0.133,
-    0.142,
-    0.058
-   ]
-  }
- },
- "taskcmp": {
-  "Claude Opus 4.5": {
-   "serial": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.55,
-      0.275,
-      0.275,
-      0.475,
-      0.3
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.4,
-      0.075,
-      0.225,
-      0.5,
-      0.275
-     ]
-    }
-   },
-   "parallel": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.975,
-      1.0,
-      1.0,
-      0.95,
-      0.85
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.975,
-      0.95,
-      0.875,
-      0.925,
-      0.825
-     ]
-    }
-   },
-   "parallel_count": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      1.0,
-      0.8,
-      0.7,
-      0.575,
-      0.45
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.875,
-      0.8,
-      0.6,
-      0.475,
-      0.35
-     ]
-    }
-   }
-  },
-  "Gemini 2.5 Flash": {
-   "serial": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.7,
-      0.35,
-      0.15,
-      0.1,
-      0.125
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.65,
-      0.45,
-      0.075,
-      0.05,
-      0.05
-     ]
-    }
-   },
-   "parallel": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.975,
-      0.95,
-      0.875,
-      0.8,
-      0.8
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.95,
-      0.95,
-      0.875,
-      0.85,
-      0.75
-     ]
-    }
-   },
-   "parallel_count": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.6,
-      0.475,
-      0.375,
-      0.525,
-      0.275
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.525,
-      0.475,
-      0.475,
-      0.35,
-      0.275
-     ]
-    }
-   }
-  },
-  "DeepSeek V3": {
-   "serial": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.475,
-      0.325,
-      0.225,
-      0.025,
-      0.125
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.225,
-      0.25,
-      0.2,
-      0.025,
-      0.125
-     ]
-    }
-   },
-   "parallel": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.975,
-      0.9,
-      0.85,
-      0.75,
-      0.725
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.925,
-      0.9,
-      0.9,
-      0.725,
-      0.8
-     ]
-    }
-   },
-   "parallel_count": {
-    "filler": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      1.0,
-      0.65,
-      0.3,
-      0.375,
-      0.25
-     ]
-    },
-    "immediate": {
-     "k": [
-      2,
-      3,
-      4,
-      6,
-      8
-     ],
-     "acc": [
-      0.925,
-      0.6,
-      0.375,
-      0.3,
-      0.25
-     ]
-    }
-   }
-  }
- },
- "meta": {
-  "total_calls": 8280,
-  "leak_rate": 0.0006,
-  "error_rate": 0.0001
- },
- "width": {
-  "Claude Opus 4.5": {
-   "serial": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     0.3,
-     0.025,
-     0.15,
-     0.025,
-     0.025,
-     0.075,
-     0.025
-    ]
-   },
-   "parallel": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     1.0,
-     0.925,
-     0.85,
-     0.8,
-     0.6,
-     0.6,
-     0.675
-    ]
-   },
-   "parallel_count": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     0.95,
-     0.6,
-     0.3,
-     0.325,
-     0.275,
-     0.25,
-     0.15
-    ]
-   }
-  },
-  "Gemini 2.5 Flash": {
-   "serial": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     0.475,
-     0.075,
-     0.05,
-     0.05,
-     0.0,
-     0.0,
-     0.025
-    ]
-   },
-   "parallel": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     1.0,
-     0.8,
-     0.65,
-     0.625,
-     0.575,
-     0.7,
-     0.525
-    ]
-   },
-   "parallel_count": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     0.325,
-     0.45,
-     0.3,
-     0.3,
-     0.2,
-     0.325,
-     0.1
-    ]
-   }
-  },
-  "DeepSeek V3": {
-   "serial": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     0.275,
-     0.15,
-     0.1,
-     0.025,
-     0.0,
-     0.025,
-     0.025
-    ]
-   },
-   "parallel": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     0.95,
-     0.85,
-     0.7,
-     0.725,
-     0.55,
-     0.525,
-     0.475
-    ]
-   },
-   "parallel_count": {
-    "k": [
-     2,
-     4,
-     8,
-     12,
-     16,
-     20,
-     24
-    ],
-    "acc": [
-     0.95,
-     0.525,
-     0.2,
-     0.25,
-     0.15,
-     0.2,
-     0.075
-    ]
-   }
-  }
- }
-}</script>
+<script id="data" type="application/json">{"v01": {"grid": {"Claude Opus 4.5": {"cot": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "eff": [1.0, 2.0, 3.0, 4.0, 6.0, 8.0]}, "filler": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.4, 0.133, 0.267, 0.267, 0.367], "eff": [1.0, 2.6, 3.9, 4.87, 6.67, 8.17]}, "immediate": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.267, 0.1, 0.333, 0.4, 0.233], "eff": [1.0, 2.73, 4.03, 4.97, 6.5, 7.83]}}, "Gemini 2.5 Flash": {"cot": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 1.0, 1.0, 1.0, 1.0, 0.967], "eff": [1.0, 2.0, 3.0, 4.0, 6.0, 8.03]}, "filler": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.667, 0.533, 0.333, 0.167, 0.167], "eff": [1.0, 2.33, 3.97, 5.13, 6.37, 6.33]}, "immediate": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.533, 0.367, 0.267, 0.133, 0.133], "eff": [1.0, 2.53, 4.6, 5.37, 6.2, 6.63]}}, "DeepSeek V3": {"cot": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 1.0, 1.0, 1.0, 0.967, 1.0], "eff": [1.0, 2.0, 3.0, 4.0, 6.07, 8.0]}, "filler": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.467, 0.4, 0.233, 0.1, 0.033], "eff": [1.0, 2.43, 4.5, 5.63, 6.1, 5.3]}, "immediate": {"k": [1, 2, 3, 4, 6, 8], "acc": [0.933, 0.233, 0.233, 0.1, 0.133, 0.067], "eff": [1.07, 3.03, 5.9, 5.77, 5.67, 6.2]}}, "GPT-5.1": {"cot": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.9, 0.667, 0.567, 0.533, 0.5], "eff": [1.0, 1.97, 2.67, 3.97, 5.57, 6.6]}, "filler": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.7, 0.433, 0.2, 0.133, 0.133], "eff": [1.0, 1.83, 3.57, 5.47, 6.33, 6.4]}, "immediate": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.733, 0.267, 0.033, 0.233, 0.2], "eff": [1.0, 2.0, 3.03, 4.57, 6.07, 5.87]}}, "Kimi K2": {"cot": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "eff": [1.0, 2.0, 3.0, 4.0, 6.0, 8.0]}, "filler": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.267, 0.433, 0.3, 0.1, 0.067], "eff": [1.0, 2.79, 3.59, 4.43, 5.34, 4.9]}, "immediate": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.133, 0.267, 0.3, 0.067, 0.2], "eff": [1.0, 3.1, 4.38, 4.87, 5.8, 6.1]}}, "Qwen3-Max": {"cot": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "eff": [1.0, 2.0, 3.0, 4.0, 6.0, 8.0]}, "filler": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.567, 0.3, 0.067, 0.033, 0.2], "eff": [1.0, 2.6, 6.27, 6.57, 4.27, 5.9]}, "immediate": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.5, 0.2, 0.067, 0.033, 0.133], "eff": [1.0, 2.93, 6.1, 6.9, 5.37, 5.57]}}}, "wording": {"default": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.367, 0.267, 0.225, 0.175, 0.175], "over": [0.0, 0.625, 0.708, 0.717, 0.458, 0.333], "n": [120, 120, 120, 120, 120, 120]}, "explicit": {"k": [1, 2, 3, 4, 6, 8], "acc": [1.0, 0.433, 0.283, 0.167, 0.2, 0.158], "over": [0.0, 0.567, 0.683, 0.725, 0.458, 0.275], "n": [120, 120, 120, 120, 120, 120]}}, "landing": {"2": {"pos": [1, 2, 3, 4, 5, 11], "frac": [0.008, 0.367, 0.508, 0.075, 0.033, 0.008]}, "3": {"pos": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "frac": [0.025, 0.267, 0.425, 0.075, 0.05, 0.033, 0.033, 0.042, 0.033, 0.017]}, "4": {"pos": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "frac": [0.008, 0.05, 0.225, 0.383, 0.125, 0.092, 0.033, 0.025, 0.042, 0.017]}, "6": {"pos": [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "frac": [0.017, 0.05, 0.042, 0.108, 0.15, 0.175, 0.167, 0.108, 0.05, 0.092, 0.042]}, "8": {"pos": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "frac": [0.008, 0.008, 0.05, 0.05, 0.05, 0.067, 0.092, 0.167, 0.175, 0.133, 0.142, 0.058]}}, "taskcmp": {"Claude Opus 4.5": {"serial": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [0.55, 0.275, 0.275, 0.475, 0.3]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.4, 0.075, 0.225, 0.5, 0.275]}}, "parallel": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [0.975, 1.0, 1.0, 0.95, 0.85]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.975, 0.95, 0.875, 0.925, 0.825]}}, "parallel_count": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [1.0, 0.8, 0.7, 0.575, 0.45]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.875, 0.8, 0.6, 0.475, 0.35]}}}, "Gemini 2.5 Flash": {"serial": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [0.7, 0.35, 0.15, 0.1, 0.125]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.65, 0.45, 0.075, 0.05, 0.05]}}, "parallel": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [0.975, 0.95, 0.875, 0.8, 0.8]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.95, 0.95, 0.875, 0.85, 0.75]}}, "parallel_count": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [0.6, 0.475, 0.375, 0.525, 0.275]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.525, 0.475, 0.475, 0.35, 0.275]}}}, "DeepSeek V3": {"serial": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [0.475, 0.325, 0.225, 0.025, 0.125]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.225, 0.25, 0.2, 0.025, 0.125]}}, "parallel": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [0.975, 0.9, 0.85, 0.75, 0.725]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.925, 0.9, 0.9, 0.725, 0.8]}}, "parallel_count": {"filler": {"k": [2, 3, 4, 6, 8], "acc": [1.0, 0.65, 0.3, 0.375, 0.25]}, "immediate": {"k": [2, 3, 4, 6, 8], "acc": [0.925, 0.6, 0.375, 0.3, 0.25]}}}}, "meta": {"total_calls": 8280, "leak_rate": 0.0006, "error_rate": 0.0001}, "width": {"Claude Opus 4.5": {"serial": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [0.3, 0.025, 0.15, 0.025, 0.025, 0.075, 0.025]}, "parallel": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [1.0, 0.925, 0.85, 0.8, 0.6, 0.6, 0.675]}, "parallel_count": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [0.95, 0.6, 0.3, 0.325, 0.275, 0.25, 0.15]}}, "Gemini 2.5 Flash": {"serial": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [0.475, 0.075, 0.05, 0.05, 0.0, 0.0, 0.025]}, "parallel": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [1.0, 0.8, 0.65, 0.625, 0.575, 0.7, 0.525]}, "parallel_count": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [0.325, 0.45, 0.3, 0.3, 0.2, 0.325, 0.1]}}, "DeepSeek V3": {"serial": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [0.275, 0.15, 0.1, 0.025, 0.0, 0.025, 0.025]}, "parallel": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [0.95, 0.85, 0.7, 0.725, 0.55, 0.525, 0.475]}, "parallel_count": {"k": [2, 4, 8, 12, 16, 20, 24], "acc": [0.95, 0.525, 0.2, 0.25, 0.15, 0.2, 0.075]}}}}}</script>
 <script>
-const D = JSON.parse(document.getElementById('data').textContent);
+const ALL = JSON.parse(document.getElementById('data').textContent);
+
 const CSS = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const PAL = ['#A83246','#2E6E8E','#B07D2B','#4B6B4A','#7A4E8C','#3F5B8C'];
 const NS = 'http://www.w3.org/2000/svg';
@@ -1561,22 +404,25 @@ function legend(mount,items,note){
     + (note?`<span class="dashnote">${note}</span>`:'');
 }
 
+function q(root, sel){ return root.querySelector(sel) || document.createElement('div'); }
+
+function renderReport(root, D){
 /* ---- key figures ---- */
 const leakPct = (D.meta.leak_rate*100).toFixed(2).replace(/0+$/,'').replace(/\.$/,'');
-document.getElementById('k-leak').textContent = leakPct+'%';
-document.getElementById('leak-inline').textContent = leakPct+'% (5 of 8,280)';
+q(root,'[data-key="leak"]').textContent = leakPct+'%';
+q(root,'[data-key="leak-inline"]').textContent = leakPct+'% (5 of 8,280)';
 
 /* ---- fig: grid (6-model depth sweep) ---- */
 {
   const names=Object.keys(D.grid);
   const series=names.map((n,i)=>({k:D.grid[n].immediate.k,v:D.grid[n].immediate.acc,color:PAL[i]}));
-  lineChart(document.getElementById('fig-grid'),series,
+  lineChart(q(root,'[data-fig="grid"]'),series,
     {xs:[1,2,3,4,6,8],xlab:'requested serial depth  k  (hops)',ylab:'accuracy',w:660,h:300,
      aria:'Accuracy versus serial depth for six models, falling from 100 percent at one hop to under 30 percent by four hops.'});
-  legend(document.getElementById('leg-grid'),names.map((n,i)=>({label:n,color:PAL[i]})));
+  legend(q(root,'[data-leg="grid"]'),names.map((n,i)=>({label:n,color:PAL[i]})));
   const best=Math.max(...names.map(n=>{
     const g=D.grid[n].immediate; const i=g.k.indexOf(3); return g.acc[i];}));
-  document.getElementById('k-serial').textContent='1';
+  q(root,'[data-key="serial"]').textContent='1';
 }
 
 /* ---- fig: landing distributions ---- */
@@ -1612,9 +458,9 @@ document.getElementById('leak-inline').textContent = leakPct+'% (5 of 8,280)';
   });
   const xl=el('text',{x:W/2,y:H-1,'text-anchor':'middle',class:'axlab'});
   xl.textContent='landing position (hops travelled)'; svg.appendChild(xl);
-  document.getElementById('fig-landing').appendChild(svg);
+  q(root,'[data-fig="landing"]').appendChild(svg);
   const d2=D.landing['2'], i3=d2.pos.indexOf(3);
-  document.getElementById('k-over').textContent=Math.round(D.wording.default.over[3]*100)+'%';
+  q(root,'[data-key="over"]').textContent=Math.round(D.wording.default.over[3]*100)+'%';
 }
 
 /* ---- table: wording control ---- */
@@ -1626,25 +472,25 @@ document.getElementById('leak-inline').textContent = leakPct+'% (5 of 8,280)';
       <td class="num">${(b*100).toFixed(1)}%</td>
       <td class="num" style="color:var(--muted)">${((b-a)*100>=0?'+':'')}${((b-a)*100).toFixed(1)} pts</td></tr>`;
   }).join('');
-  document.getElementById('tbl-wording').innerHTML=rows;
+  q(root,'[data-tbl="wording"]').innerHTML=rows;
 }
 
 /* ---- fig: effective hops ---- */
 {
   const names=Object.keys(D.grid);
   const series=names.map((n,i)=>({k:D.grid[n].immediate.k,v:D.grid[n].immediate.eff,color:PAL[i]}));
-  lineChart(document.getElementById('fig-eff'),series,
+  lineChart(q(root,'[data-fig="eff"]'),series,
     {xs:[1,2,3,4,6,8],ymax:9,xlab:'requested serial depth  k  (hops)',ylab:'mean landing position',
      w:660,h:300,diag:true,yfmt:v=>v.toFixed(0),
      aria:'Mean landing position versus requested depth, above the diagonal at low k and below at high k.'});
-  legend(document.getElementById('leg-eff'),names.map((n,i)=>({label:n,color:PAL[i]})),
+  legend(q(root,'[data-leg="eff"]'),names.map((n,i)=>({label:n,color:PAL[i]})),
     'dashed = perfectly controlled walk');
 }
 
 /* ---- fig: task comparison panels ---- */
 {
   const C={serial:'var(--serial)',parallel:'var(--parallel)',parallel_count:'var(--count)'};
-  const mount=document.getElementById('fig-task');
+  const mount=q(root,'[data-fig="task"]');
   Object.keys(D.taskcmp).forEach(model=>{
     const div=document.createElement('div'); div.className='panel';
     div.innerHTML=`<div class="ptitle">${model}</div>`;
@@ -1659,7 +505,7 @@ document.getElementById('leak-inline').textContent = leakPct+'% (5 of 8,280)';
       aria:`${model}: parallel tasks stay high while the serial task collapses.`});
     div.appendChild(host); mount.appendChild(div);
   });
-  legend(document.getElementById('leg-task'),[
+  legend(q(root,'[data-leg="task"]'),[
     {label:'serial (depth k)',color:'var(--serial)'},
     {label:'parallel (depth 2)',color:'var(--parallel)'},
     {label:'parallel-count (depth 2, no shortcut)',color:'var(--count)'}],
@@ -1669,7 +515,7 @@ document.getElementById('leak-inline').textContent = leakPct+'% (5 of 8,280)';
 /* ---- fig: width sweep to k=24 ---- */
 {
   const C={serial:'var(--serial)',parallel:'var(--parallel)',parallel_count:'var(--count)'};
-  const mount=document.getElementById('fig-width');
+  const mount=q(root,'[data-fig="width"]');
   const xs=[2,4,8,12,16,20,24];
   Object.keys(D.width).forEach(model=>{
     const div=document.createElement('div'); div.className='panel';
@@ -1682,7 +528,7 @@ document.getElementById('leak-inline').textContent = leakPct+'% (5 of 8,280)';
       aria:`${model}: parallel accuracy stays far above chance out to 24 lookups while serial sits at the floor.`});
     div.appendChild(host); mount.appendChild(div);
   });
-  legend(document.getElementById('leg-width'),[
+  legend(q(root,'[data-leg="width"]'),[
     {label:'serial (depth k)',color:'var(--serial)'},
     {label:'parallel (depth 2)',color:'var(--parallel)'},
     {label:'parallel-count (depth 2)',color:'var(--count)'}],
@@ -1690,16 +536,37 @@ document.getElementById('leak-inline').textContent = leakPct+'% (5 of 8,280)';
 
   const P=Object.keys(D.width).map(m=>D.width[m].parallel.acc.slice(-1)[0]);
   const S=Object.keys(D.width).map(m=>D.width[m].serial.acc.slice(-1)[0]);
-  document.getElementById('cap-width').textContent =
+  q(root,'[data-cap="width"]').textContent =
     `Width does not break inside the tested range. At 24 independent lookups the parallel task still scores `
     + `${Math.round(Math.min(...P)*100)}–${Math.round(Math.max(...P)*100)}% against a chance rate of 4%, `
     + `while the serial task sits at ${Math.round(Math.max(...S)*100)}% or below from k=4 onward. `
     + `The count variant declines steadily, placing the cost of aggregating many results between the two.`;
-  document.getElementById('k-parallel').textContent='24+';
+  q(root,'[data-key="parallel"]').textContent='24+';
 }
+
+}
+
+
+const rendered = new Set();
+function activate(vid, push){
+  document.querySelectorAll('[data-panel]').forEach(p => {
+    const on = p.dataset.panel === vid;
+    p.hidden = !on;
+  });
+  document.querySelectorAll('[data-tab]').forEach(b =>
+    b.setAttribute('aria-selected', String(b.dataset.tab === vid)));
+  if (!rendered.has(vid)) {           // charts draw once, on first view
+    const root = document.querySelector(`[data-panel="${vid}"]`);
+    if (root && ALL[vid]) renderReport(root, ALL[vid]);
+    rendered.add(vid);
+  }
+  if (push) history.replaceState(null, '', '#' + vid);
+}
+
+document.querySelectorAll('[data-tab]').forEach(b =>
+  b.addEventListener('click', () => activate(b.dataset.tab, true)));
+
+const initial = location.hash.slice(1);
+const first = document.querySelector('[data-tab]').dataset.tab;
+activate(ALL[initial] ? initial : first, false);
 </script>
-<style>
-.tick{font-family:"IBM Plex Mono",monospace; font-size:10.5px; fill:var(--muted)}
-.axlab{font-family:"IBM Plex Mono",monospace; font-size:10.5px; fill:var(--muted);
-  letter-spacing:.05em}
-</style>

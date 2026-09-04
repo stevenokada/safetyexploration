@@ -82,7 +82,7 @@ def headline_numbers():
     return out
 
 
-def stamp_html(html, ver, meta):
+def _unused_stamp_html(html, ver, meta):
     """Insert a provenance line into the report footer. Idempotent: an existing
     stamp is replaced, so re-staging never accumulates stamps."""
     stamp = (f'{STAMP_MARK}<p style="font-family:\'IBM Plex Mono\',monospace;'
@@ -111,6 +111,7 @@ def cmd_stage(args):
         "version": ver,
         "date": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "summary": args.summary,
+        "tab_label": args.tab_label,
         "git_commit": git("rev-parse", "--short", "HEAD", default="uncommitted"),
         "git_dirty": dirty,
         "git_branch": git("branch", "--show-current", default="?"),
@@ -121,18 +122,29 @@ def cmd_stage(args):
         "artifact_url": None,
     }
 
-    html = stamp_html(REPORT_HTML.read_text(), ver, meta)
-    REPORT_HTML.write_text(html)
-
     vdir = REPORTS / f"v{ver:02d}"
     vdir.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(REPORT_HTML, vdir / "report.html")
     if REPORT_DATA.exists():
         shutil.copy2(REPORT_DATA, vdir / "report_data.json")
+    narrative = vdir / "narrative.html"
+    if not narrative.exists():
+        # a new version needs its own prose; start from the previous version's
+        prev = REPORTS / f"v{ver-1:02d}" / "narrative.html"
+        if prev.exists():
+            shutil.copy2(prev, narrative)
+            print(f"  NOTE: copied v{ver-1:02d} narrative as a starting point — "
+                  f"edit {narrative.relative_to(ROOT)} to describe THIS run")
+        else:
+            sys.exit(f"create {narrative} first (the prose for this version)")
     (vdir / "meta.json").write_text(json.dumps(meta, indent=2) + "\n")
 
     m["versions"].append(meta)
     save_manifest(m)
+
+    # rebuild the multi-tab page so every archived run stays reachable
+    import build_report
+    build_report.main()
+    shutil.copy2(REPORT_HTML, vdir / "report.html")
 
     print(f"staged v{ver:02d} -> {vdir.relative_to(ROOT)}")
     print(f"  {meta['total_rows']:,} trials across {meta['n_files']} files, "
@@ -209,7 +221,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    s = sub.add_parser("stage"); s.add_argument("--summary", required=True); s.set_defaults(f=cmd_stage)
+    s = sub.add_parser("stage"); s.add_argument("--summary", required=True)
+    s.add_argument("--tab-label", required=True, dest="tab_label",
+                   help="short tab name, e.g. 'J-Lens · 3 models'")
+    s.set_defaults(f=cmd_stage)
     s = sub.add_parser("record"); s.add_argument("--url", required=True); s.set_defaults(f=cmd_record)
     s = sub.add_parser("log"); s.set_defaults(f=cmd_log)
     s = sub.add_parser("show"); s.add_argument("--version", type=int, required=True); s.set_defaults(f=cmd_show)
